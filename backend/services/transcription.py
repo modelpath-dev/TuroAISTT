@@ -1,27 +1,46 @@
-import whisper
 import os
 from typing import List, Dict
+from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class TranscriptionService:
-    def __init__(self, model_name: str = "tiny"):  # Changed from "base" to "tiny" for lower memory usage
-        self.model = whisper.load_model(model_name)
+    def __init__(self):
+        # Initialize OpenAI client
+        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     def transcribe_with_timestamps(self, audio_path: str) -> List[Dict[str, any]]:
         """
-        Transcribes audio and returns segments with timestamps.
-        Format: [{"start": 0.0, "end": 2.0, "text": "Hello world"}]
+        Transcribes audio using OpenAI Whisper API and returns segments (simulated timestamps if not provided by verbose_json).
         """
         if not os.path.exists(audio_path):
             raise FileNotFoundError(f"Audio file not found: {audio_path}")
             
-        result = self.model.transcribe(audio_path)
+        with open(audio_path, "rb") as audio_file:
+            transcript = self.client.audio.transcriptions.create(
+                model="whisper-1", 
+                file=audio_file,
+                response_format="verbose_json"
+            )
+        
+        # Extract segments from verbose_json response
         segments = []
-        for segment in result['segments']:
+        if hasattr(transcript, 'segments'):
+            for segment in transcript.segments:
+                segments.append({
+                    "start": segment.start,
+                    "end": segment.end,
+                    "text": segment.text
+                })
+        else:
+            # Fallback if no segments returned (shouldn't happen with verbose_json)
             segments.append({
-                "start": segment['start'],
-                "end": segment['end'],
-                "text": segment['text']
+                "start": 0.0,
+                "end": 0.0,
+                "text": transcript.text
             })
+            
         return segments
 
     def format_segments_to_string(self, segments: List[Dict[str, any]]) -> str:

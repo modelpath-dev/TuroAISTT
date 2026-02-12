@@ -18,11 +18,59 @@ function App() {
   const [templateDetails, setTemplateDetails] = useState(null);
   const [downloadUrl, setDownloadUrl] = useState('');
 
+  // Recorder State
+  const [isRecordingMode, setIsRecordingMode] = useState(false);
+  const [isRecording, setIsRecording] = useState(false);
+  const [mediaRecorder, setMediaRecorder] = useState(null);
+  const [recordingTime, setRecordingTime] = useState(0);
+  const [timerInterval, setTimerInterval] = useState(null);
+
   // Chat State
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [chatMessages, setChatMessages] = useState([]);
   const [chatInput, setChatInput] = useState('');
   const [chatLoading, setChatLoading] = useState(false);
+
+  // Recording Logic
+  const startRecording = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const recorder = new MediaRecorder(stream);
+      const chunks = [];
+
+      recorder.ondataavailable = e => chunks.push(e.data);
+      recorder.onstop = () => {
+        const blob = new Blob(chunks, { type: 'audio/webm' });
+        const file = new File([blob], "recording.webm", { type: 'audio/webm' });
+        setAudioFile(file);
+        stream.getTracks().forEach(track => track.stop()); // Stop mic access
+      };
+
+      recorder.start();
+      setMediaRecorder(recorder);
+      setIsRecording(true);
+      setRecordingTime(0);
+
+      const interval = setInterval(() => {
+        setRecordingTime(prev => prev + 1);
+      }, 1000);
+      setTimerInterval(interval);
+
+    } catch (err) {
+      console.error("Error accessing microphone:", err);
+      alert("Microphone access denied or not available.");
+    }
+  };
+
+  const stopRecording = () => {
+    if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+      mediaRecorder.stop();
+      setIsRecording(false);
+      clearInterval(timerInterval);
+    }
+  };
+
+
 
   useEffect(() => {
     fetch(`${API_BASE}/templates`)
@@ -168,21 +216,71 @@ function App() {
               </div>
 
               <div className="form-group">
-                <label>Voice Dictation (Audio File)</label>
-                <div className="upload-zone" onClick={() => document.getElementById('audio-upload').click()}>
-                  {audioFile ? (
-                    <p>✅ {audioFile.name} selected</p>
-                  ) : (
-                    <p>Drop radiology recording here or click to browse</p>
-                  )}
-                  <input
-                    id="audio-upload"
-                    type="file"
-                    hidden
-                    accept="audio/*"
-                    onChange={(e) => setAudioFile(e.target.files[0])}
-                  />
+                <label>Input Method</label>
+                <div className="toggle-group" style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
+                  <button
+                    className={`btn ${!isRecordingMode ? 'btn-primary' : ''}`}
+                    onClick={() => setIsRecordingMode(false)}
+                    style={{ flex: 1, border: '1px solid var(--border)' }}
+                  >
+                    📁 File Upload
+                  </button>
+                  <button
+                    className={`btn ${isRecordingMode ? 'btn-primary' : ''}`}
+                    onClick={() => setIsRecordingMode(true)}
+                    style={{ flex: 1, border: '1px solid var(--border)' }}
+                  >
+                    🎙️ Record Voice
+                  </button>
                 </div>
+
+                {isRecordingMode ? (
+                  <div className="recorder-zone" style={{ textAlign: 'center', padding: '2rem', border: '2px dashed var(--border)', borderRadius: 'var(--radius)' }}>
+                    {!isRecording ? (
+                      <button
+                        className="btn btn-danger"
+                        onClick={startRecording}
+                        style={{ fontSize: '1.2rem', padding: '1rem 2rem', background: '#dc3545', color: 'white', border: 'none', borderRadius: '50px' }}
+                      >
+                        🔴 Start Recording
+                      </button>
+                    ) : (
+                      <div className="recording-active">
+                        <div className="pulse-ring" style={{ width: '60px', height: '60px', background: '#dc3545', borderRadius: '50%', margin: '0 auto 1rem', animation: 'pulse 1.5s infinite' }}></div>
+                        <p style={{ color: '#dc3545', fontWeight: 'bold' }}>Recording... {recordingTime}s</p>
+                        <button
+                          className="btn"
+                          onClick={stopRecording}
+                          style={{ marginTop: '1rem', border: '1px solid var(--border)' }}
+                        >
+                          ⏹️ Stop & Use This
+                        </button>
+                      </div>
+                    )}
+
+                    {audioFile && (
+                      <div style={{ marginTop: '1rem', padding: '0.5rem', background: '#e9ecef', borderRadius: 'var(--radius)' }}>
+                        <p>✅ Audio Captured ({audioFile.size ? (audioFile.size / 1024 / 1024).toFixed(2) : 0} MB)</p>
+                        <audio controls src={URL.createObjectURL(audioFile)} style={{ marginTop: '0.5rem', width: '100%' }} />
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="upload-zone" onClick={() => document.getElementById('audio-upload').click()}>
+                    {audioFile ? (
+                      <p>✅ {audioFile.name} selected</p>
+                    ) : (
+                      <p>Drop radiology recording here or click to browse</p>
+                    )}
+                    <input
+                      id="audio-upload"
+                      type="file"
+                      hidden
+                      accept="audio/*"
+                      onChange={(e) => setAudioFile(e.target.files[0])}
+                    />
+                  </div>
+                )}
               </div>
 
               <button

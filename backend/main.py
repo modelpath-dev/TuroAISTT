@@ -37,7 +37,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-TEMPLATES_DIR = Path("CAP templates/JSON_Output")
+TEMPLATES_DIR = Path("../CAP templates/JSON_Output")
 TEMP_AUDIO_DIR = Path("temp_audio")
 TEMP_AUDIO_DIR.mkdir(exist_ok=True)
 
