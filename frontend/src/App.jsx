@@ -223,14 +223,14 @@ function App() {
                     onClick={() => setIsRecordingMode(false)}
                     style={{ flex: 1, border: '1px solid var(--border)' }}
                   >
-                    📁 File Upload
+                    Upload Audio File
                   </button>
                   <button
                     className={`btn ${isRecordingMode ? 'btn-primary' : ''}`}
                     onClick={() => setIsRecordingMode(true)}
                     style={{ flex: 1, border: '1px solid var(--border)' }}
                   >
-                    🎙️ Record Voice
+                    Record Voice
                   </button>
                 </div>
 
@@ -242,7 +242,7 @@ function App() {
                         onClick={startRecording}
                         style={{ fontSize: '1.2rem', padding: '1rem 2rem', background: '#dc3545', color: 'white', border: 'none', borderRadius: '50px' }}
                       >
-                        🔴 Start Recording
+                        Start Recording
                       </button>
                     ) : (
                       <div className="recording-active">
@@ -253,14 +253,14 @@ function App() {
                           onClick={stopRecording}
                           style={{ marginTop: '1rem', border: '1px solid var(--border)' }}
                         >
-                          ⏹️ Stop & Use This
+                          Stop & Use
                         </button>
                       </div>
                     )}
 
                     {audioFile && (
                       <div style={{ marginTop: '1rem', padding: '0.5rem', background: '#e9ecef', borderRadius: 'var(--radius)' }}>
-                        <p>✅ Audio Captured ({audioFile.size ? (audioFile.size / 1024 / 1024).toFixed(2) : 0} MB)</p>
+                        <p>Audio Captured ({audioFile.size ? (audioFile.size / 1024 / 1024).toFixed(2) : 0} MB)</p>
                         <audio controls src={URL.createObjectURL(audioFile)} style={{ marginTop: '0.5rem', width: '100%' }} />
                       </div>
                     )}
@@ -268,7 +268,7 @@ function App() {
                 ) : (
                   <div className="upload-zone" onClick={() => document.getElementById('audio-upload').click()}>
                     {audioFile ? (
-                      <p>✅ {audioFile.name} selected</p>
+                      <p>{audioFile.name} selected</p>
                     ) : (
                       <p>Drop radiology recording here or click to browse</p>
                     )}
@@ -399,7 +399,7 @@ function App() {
 
         {step === 4 && (
           <div className="step-container" style={{ textAlign: 'center', padding: '4rem 0' }}>
-            <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>📄</div>
+
             <h1>Report Generated Successfully</h1>
             <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>
               The final CAP-compliant document is ready for download.
@@ -454,7 +454,7 @@ function App() {
               </div>
             ) : (
               <div className="chat-toggle" onClick={() => setIsChatOpen(true)}>
-                💬
+                Chat
               </div>
             )}
           </>
