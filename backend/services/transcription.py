@@ -3,7 +3,7 @@ import os
 from typing import List, Dict
 
 class TranscriptionService:
-    def __init__(self, model_name: str = "base"):
+    def __init__(self, model_name: str = "tiny"):  # Changed from "base" to "tiny" for lower memory usage
         self.model = whisper.load_model(model_name)
 
     def transcribe_with_timestamps(self, audio_path: str) -> List[Dict[str, any]]:
