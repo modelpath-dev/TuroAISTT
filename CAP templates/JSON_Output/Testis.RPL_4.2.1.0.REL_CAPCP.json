@@ -1,0 +1,1085 @@
+{
+  "template_id": "Testis.RPL_4.2.1.0.REL_CAPCP",
+  "organ": "TESTIS: Retroperitoneal Lymphadenectomy",
+  "protocol_posting_date": "June 2024",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "prelymphadenectomy_treatment",
+          "label": "Prelymphadenectomy Treatment",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "no_known_preresection_therapy",
+              "label": "No known preresection therapy"
+            },
+            {
+              "value": "chemotherapy_performed",
+              "label": "Chemotherapy performed"
+            },
+            {
+              "value": "radiation_therapy_performed",
+              "label": "Radiation therapy performed"
+            },
+            {
+              "value": "therapy_performed_type_not_specified",
+              "label": "Therapy performed, type not specified"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "regional_nodal_sites_examined_specify",
+          "label": "Regional Nodal Site(s) Examined (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "number_of_regional_nodal_groups_examined",
+          "label": "Number of Regional Nodal Groups Examined",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_number",
+              "label": "Specify number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nonregional_nodal_sites_examined_specify",
+          "label": "Nonregional Nodal Site(s) Examined (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "number_of_nonregional_nodal_groups_examined",
+          "label": "Number of Nonregional Nodal Groups Examined",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_number",
+              "label": "Specify number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "histologic_type_of_metastatic_tumor",
+          "label": "Histologic Type of Metastatic Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "seminoma",
+              "label": "Seminoma (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "seminoma_with_syncytiotrophoblastic_cells",
+              "label": "Seminoma with syncytiotrophoblastic cells (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "embryonal_carcinoma",
+              "label": "Embryonal carcinoma (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "yolk_sac_tumor_postpubertal_type",
+              "label": "Yolk sac tumor, postpubertal-type (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "choriocarcinoma",
+              "label": "Choriocarcinoma (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "placental_site_trophoblastic_tumor",
+              "label": "Placental site trophoblastic tumor (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "epithelioid_trophoblastic_tumor",
+              "label": "Epithelioid trophoblastic tumor (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "cystic_trophoblastic_tumor",
+              "label": "Cystic trophoblastic tumor (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "teratoma_postpubertal_type",
+              "label": "Teratoma, postpubertal-type (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "teratoma_with_somatic_type_malignancy",
+              "label": "Teratoma with somatic-type malignancy"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma"
+            },
+            {
+              "value": "embryonic_type_neuroectodermal_tumor",
+              "label": "Embryonic-type neuroectodermal tumor"
+            },
+            {
+              "value": "rhabdomyosarcoma",
+              "label": "Rhabdomyosarcoma"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "spermatocytic_tumor",
+              "label": "Spermatocytic tumor"
+            },
+            {
+              "value": "spermatocytic_tumor_with_a_sarcomatous_component",
+              "label": "Spermatocytic tumor with a sarcomatous component"
+            },
+            {
+              "value": "yolk_sac_tumor_prepubertal_type",
+              "label": "Yolk sac tumor, prepubertal-type"
+            },
+            {
+              "value": "leydig_cell_tumor",
+              "label": "Leydig cell tumor"
+            },
+            {
+              "value": "sertoli_cell_tumor",
+              "label": "Sertoli cell tumor"
+            },
+            {
+              "value": "sertoli_cell_tumor_large_cell_calcifying",
+              "label": "Sertoli cell tumor, large cell calcifying"
+            },
+            {
+              "value": "granulosa_cell_tumor_adult_type",
+              "label": "Granulosa cell tumor, adult type"
+            },
+            {
+              "value": "sex_cord_stromal_tumor_type_mixed",
+              "label": "Sex cord-stromal tumor type, mixed"
+            },
+            {
+              "value": "sex_cord_stromal_tumor_type_unclassified",
+              "label": "Sex cord-stromal tumor type, unclassified"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_viability_of_tumor_if_applicable",
+          "label": "Histologic Viability of Tumor (if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "viable_teratoma_present",
+              "label": "Viable teratoma present"
+            },
+            {
+              "value": "viable_non_teratomatous_tumor_present",
+              "label": "Viable non-teratomatous tumor present"
+            },
+            {
+              "value": "viable_tumor_not_identified",
+              "label": "Viable tumor not identified"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "lymph_nodes",
+          "label": "LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_involvement",
+          "label": "Regional Lymph Node Involvement",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "number_of_regional_lymph_nodes_with_tumor",
+          "label": "Number of Regional Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_nodal_sites_with_tumor",
+          "label": "Regional Nodal Site(s) with Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "interaortocaval",
+              "label": "Interaortocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paraaortic",
+              "label": "Paraaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paracaval",
+              "label": "Paracaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "preaortic",
+              "label": "Preaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "precaval",
+              "label": "Precaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retroaortic",
+              "label": "Retroaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retrocaval",
+              "label": "Retrocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "site_of_largest_nodal_metastatic_deposit",
+          "label": "Site of Largest Nodal Metastatic Deposit",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "interaortocaval",
+              "label": "Interaortocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paraaortic",
+              "label": "Paraaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paracaval",
+              "label": "Paracaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "preaortic",
+              "label": "Preaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "precaval",
+              "label": "Precaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retroaortic",
+              "label": "Retroaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retrocaval",
+              "label": "Retrocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_lymph_node_or_nodal_mass",
+          "label": "Size of Largest Lymph Node or Nodal Mass",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "histologic_subtype_of_tumor_in_largest_involved_lymph_node_if_applicable",
+          "label": "Histologic Subtype of Tumor in Largest Involved Lymph Node (if applicable)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "ENE"
+        },
+        {
+          "field_id": "number_of_regional_lymph_nodes_examined",
+          "label": "Number of Regional Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nonregional_lymph_node_status",
+          "label": "Nonregional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_nonregional_lymph_nodes_negative_for_tumor_metastasis",
+              "label": "All nonregional lymph nodes negative for tumor metastasis"
+            },
+            {
+              "value": "tumor_metastasis_present_in_nonregional_lymph_node",
+              "label": "Tumor metastasis present in nonregional lymph node(s) (M1a, AJCC 8th edition)"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "number_of_nonregional_lymph_nodes_with_tumor",
+          "label": "Number of Nonregional Lymph Nodes with Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nonregional_nodal_sites_with_tumor",
+          "label": "Nonregional Nodal Site(s) with Tumor: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "number_of_nonregional_lymph_nodes_examined",
+          "label": "Number of Nonregional Lymph Nodes Examined",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "pnm_classification",
+          "label": "pNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis with a lymph node mass 2 cm or smaller in greatest dimension and less than or"
+            }
+          ]
+        },
+        {
+          "field_id": "equal_to_five_nodes_positive_none_larger_than_2_cm_in_greatest_dimension",
+          "label": "equal to five nodes positive, none larger than 2 cm in greatest dimension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2",
+              "label": "pN2: Metastasis with a lymph node mass larger than 2 cm but not larger than 5 cm in greatest"
+            }
+          ]
+        },
+        {
+          "field_id": "extension_of_tumor",
+          "label": "extension of tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn3",
+              "label": "pN3: Metastasis with a lymph node mass larger than 5 cm in greatest dimension"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_distant_metastasis",
+          "label": "pM1: Distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Non-retroperitoneal nodal or pulmonary metastases"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Non-pulmonary visceral metastases"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_mainly_applies_to_metastatic_tumors_of_the_testis_the_vast_majority_of_which_are_of_ger",
+          "label": "The protocol mainly applies to metastatic tumors of the testis, the vast majority of which are of germ cell origin.1,2,3,4 It may also be applied to metastatic sex cord stromal tumors of the testis included in the classification shown below.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "often_the_most_important_distinction_in_patients_with_metastatic_testicular_germ_cell_tumor_followin",
+          "label": "Often the most important distinction in patients with metastatic testicular germ cell tumor following initial chemotherapy is the differentiation of metastatic residual teratoma from nonteratomatous types of germ cell tumor. Pure teratomatous metastasis, unless accompanied by somatic-type malignancy, is generally treated by surgical excision alone, whereas patients who have other residual germ cell tumor components are usually treated with additional chemotherapy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_tumors_derived_from_germ_cell_neoplasia_in_situ",
+          "label": "Germ cell tumors derived from germ cell neoplasia in situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "non_invasive_germ_cell_neoplasia",
+          "label": "Non-invasive germ cell neoplasia",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_neoplasia_in_situ",
+          "label": "Germ cell neoplasia in situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specific_forms_of_intratubular_germ_cell_neoplasia",
+          "label": "Specific forms of intratubular germ cell neoplasia",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gonadoblastoma",
+          "label": "Gonadoblastoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_germinoma_family_of_tumors",
+          "label": "The germinoma family of tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "seminoma",
+          "label": "Seminoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "non_seminomatous_germ_cell_tumors",
+          "label": "Non-seminomatous germ cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "embryonal_carcinoma",
+          "label": "Embryonal carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yolk_sac_tumor_postpubertal_type",
+          "label": "Yolk sac tumor, postpubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "choriocarcinoma",
+          "label": "Choriocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "placental_site_trophoblastic_tumor",
+          "label": "Placental site trophoblastic tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epithelioid_trophoblastic_tumor",
+          "label": "Epithelioid trophoblastic tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cystic_trophoblastic_tumor",
+          "label": "Cystic trophoblastic tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "teratoma_postpubertal_type",
+          "label": "Teratoma, postpubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "teratoma_with_somatic_type_malignancy",
+          "label": "Teratoma with somatic-type malignancy",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_germ_cell_tumors_of_the_testis",
+          "label": "Mixed germ cell tumors of the testis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_germ_cell_tumors",
+          "label": "Mixed germ cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_tumors_of_unknown_type",
+          "label": "Germ cell tumors of unknown type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regressed_germ_cell_tumors",
+          "label": "Regressed germ cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_tumors_unrelated_to_germ_cell_neoplasia_in_situ",
+          "label": "Germ cell tumors unrelated to germ cell neoplasia in situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spermatocytic_tumor",
+          "label": "Spermatocytic tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yolk_sac_tumor_prepubertal_type",
+          "label": "Yolk sac tumor, prepubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "testicular_neuroendocrine_tumor_prepubertal_type",
+          "label": "Testicular neuroendocrine tumor, prepubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_teratoma_and_yolk_sac_tumor_prepubertal_type",
+          "label": "Mixed teratoma and yolk sac tumor, prepubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sex_cord_stromal_tumors_of_the_testis",
+          "label": "Sex cord-stromal tumors of the testis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leydig_cell_tumor",
+          "label": "Leydig cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leydig_cell_tumor",
+          "label": "Leydig cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sertoli_cell_tumors",
+          "label": "Sertoli cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sertoli_cell_tumor",
+          "label": "Sertoli cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "large_cell_calcifying_sertoli_cell_tumor",
+          "label": "Large cell calcifying Sertoli cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "granulosa_cell_tumors",
+          "label": "Granulosa cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adult_granulosa_cell_tumor",
+          "label": "Adult granulosa cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_and_other_sex_cord_stromal_tumors",
+          "label": "Mixed and other sex cord-stromal tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_sex_cord_stromal_tumor",
+          "label": "Mixed sex cord-stromal tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sex_cord_stromal_tumor_nos",
+          "label": "Sex cord stromal tumor NOS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moch_h_humphrey_pa_ulbright_tm_reuter_ve_tumours_of_the_testis_and_paratesticular_tissue_in_who_clas",
+          "label": "Moch H, Humphrey PA, Ulbright TM, Reuter VE. Tumours of the testis and paratesticular tissue In: WHO Classification of Tumours of the Urinary System and Male Genital Organs. Geneva, Switzerland: WHO Press; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eble_jn_sauter_g_epstein_ji_sesterhenn_ia_world_health_organization_classification_of_tumours_pathol",
+          "label": "Eble JN, Sauter G, Epstein JI, Sesterhenn IA. World Health Organization Classification of Tumours: Pathology and Genetics of Tumours of the Urinary System and Male Genital Organs. Lyon, France: IARC Press; 2004.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ulbright_tm_amin_mb_young_rh_tumors_of_the_testis_adnexa_spermatic_cord_and_scrotum_third_series_fas",
+          "label": "Ulbright TM, Amin MB, Young RH. Tumors of the Testis, Adnexa, Spermatic Cord, and Scrotum. Third Series. Fascicle 25. Washington, DC: Armed Forces Institute of Pathology; 1999.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_testicular_lymphatic_drainage_follows_the_testicular_veins_in_the_spermatic_cord_and_drains_into",
+          "label": "The testicular lymphatic drainage follows the testicular veins in the spermatic cord and drains into the retroperitoneal lumbar nodes (Figures 1 and 2).1 These lymph nodes, i.e., interaortocaval, paraaortic, periaortic, paracaval, preaortic, precaval, retroaortic, and retrocaval are considered regional lymph nodes, usually termed “landing zones” of testicular tumors. The intrapelvic, external iliac, and inguinal lymph nodes can be considered regional if there is bulky lumbar lymphadenopathy, if the tumor extends to the scrotum, or if there is prior scrotal or inguinal surgery. Nodes along the spermatic vein are also considered regional. All nodes outside the regional nodes, including the nodes above the diaphragm, are considered non-regional and their involvement should be labeled as M1a.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_regional_lymph_nodes_of_the_testis_from_amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_sta",
+          "label": "Figure 1. Regional lymph nodes of the testis. From: Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017. Reproduced with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_regional_lymph_nodes_of_the_testis_from_amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_sta",
+          "label": "Figure 2. Regional lymph nodes of the testis. From: Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017. Reproduced with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_n_categories_are_distinguished_by_the_size_of_lymph_node_mass_andor_number_of_positive_lymph_nod",
+          "label": "The N categories are distinguished by the size of lymph node mass and/or number of positive lymph nodes. The size cut-offs in the N category refer to the size of the involved lymph node on imaging or by histological examination and not the size of the metastatic deposit.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_s_greene_f_et_al_eds_ajcc_cancer_staging_manual_8th_ed_springer_2017",
+          "label": "Amin MB, Edge S, Greene F, et al., eds. AJCC cancer staging manual, 8th ed. Springer, 2017",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

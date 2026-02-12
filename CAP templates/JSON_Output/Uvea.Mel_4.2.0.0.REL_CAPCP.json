@@ -1,0 +1,2160 @@
+{
+  "template_id": "Uvea.Mel_4.2.0.0.REL_CAPCP",
+  "organ": "UVEAL MELANOMA",
+  "protocol_posting_date": "September 2025",
+  "standards": [
+    "AJCC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "treatment_history",
+          "label": "Treatment History",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_preoperative_therapy",
+              "label": "No known preoperative therapy"
+            },
+            {
+              "value": "preoperative_therapy_given",
+              "label": "Preoperative therapy given (specify, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen",
+          "label": "SPECIMEN",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "local_resection",
+              "label": "Local resection"
+            },
+            {
+              "value": "enucleation",
+              "label": "Enucleation"
+            },
+            {
+              "value": "limited_exenteration",
+              "label": "Limited exenteration"
+            },
+            {
+              "value": "complete_exenteration",
+              "label": "Complete exenteration"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_sampling_for_molecular_studies",
+          "label": "Tumor Sampling for Molecular Studies",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site_macroscopic_examination_transillumination",
+          "label": "Tumor Site (macroscopic examination / transillumination)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "superotemporal_quadrant_of_globe",
+              "label": "Superotemporal quadrant of globe"
+            },
+            {
+              "value": "superonasal_quadrant_of_globe",
+              "label": "Superonasal quadrant of globe"
+            },
+            {
+              "value": "inferotemporal_quadrant_of_globe",
+              "label": "Inferotemporal quadrant of globe"
+            },
+            {
+              "value": "inferonasal_quadrant_of_globe",
+              "label": "Inferonasal quadrant of globe"
+            },
+            {
+              "value": "superior_quadrant_of_globe",
+              "label": "Superior quadrant of globe"
+            },
+            {
+              "value": "inferior_quadrant_of_globe",
+              "label": "Inferior quadrant of globe"
+            },
+            {
+              "value": "nasal_quadrant_of_globe",
+              "label": "Nasal quadrant of globe"
+            },
+            {
+              "value": "temporal_quadrant_of_globe",
+              "label": "Temporal quadrant of globe"
+            },
+            {
+              "value": "anterior_chamber",
+              "label": "Anterior chamber"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "tumor_site_after_sectioning",
+          "label": "Tumor Site after Sectioning",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "superonasal",
+              "label": "Superonasal"
+            },
+            {
+              "value": "inferonasal",
+              "label": "Inferonasal"
+            },
+            {
+              "value": "superotemporal",
+              "label": "Superotemporal"
+            },
+            {
+              "value": "inferotemporal",
+              "label": "Inferotemporal"
+            },
+            {
+              "value": "superior_quadrant_of_globe",
+              "label": "Superior quadrant of globe"
+            },
+            {
+              "value": "inferior_quadrant_of_globe",
+              "label": "Inferior quadrant of globe"
+            },
+            {
+              "value": "nasal_quadrant_of_globe",
+              "label": "Nasal quadrant of globe"
+            },
+            {
+              "value": "temporal_quadrant_of_globe",
+              "label": "Temporal quadrant of globe"
+            },
+            {
+              "value": "anterior_chamber",
+              "label": "Anterior chamber"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "distance_from_anterior_edge_of_tumor_to_limbus_at_cut_edge",
+          "label": "Distance from Anterior Edge of Tumor to Limbus at Cut Edge",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "distance_from_posterior_margin_of_tumor_base_to_edge_of_optic_disc",
+          "label": "Distance from Posterior Margin of Tumor Base to Edge of Optic Disc",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "tumor_size_after_sectioning",
+          "label": "Tumor Size after Sectioning",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "size_can_be_determined",
+              "label": "Size can be determined"
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "greatest_basal_diameter_of_tumor",
+          "label": "Greatest Basal Diameter of Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "basal_diameter_at_cut_edge_of_tumor",
+          "label": "Basal Diameter at Cut Edge of Tumor",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "greatest_thickness_of_tumor",
+          "label": "Greatest Thickness of Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "thickness_at_cut_edge_of_tumor",
+          "label": "Thickness at Cut Edge of Tumor",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "tumor_growth_pattern",
+          "label": "Tumor Growth Pattern",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "solid_mass",
+              "label": "Solid mass"
+            },
+            {
+              "value": "cavitary",
+              "label": "Cavitary"
+            },
+            {
+              "value": "dome_shape",
+              "label": "Dome shape"
+            },
+            {
+              "value": "mushroom_shape",
+              "label": "Mushroom shape"
+            },
+            {
+              "value": "diffuse",
+              "label": "Diffuse (ciliary body ring)"
+            },
+            {
+              "value": "diffuse",
+              "label": "Diffuse (flat)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size_in_microscopic_sections",
+          "label": "Tumor Size in Microscopic Sections",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "size_can_be_determined",
+              "label": "Size can be determined"
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "greatest_basal_diameter_of_tumor",
+          "label": "Greatest Basal Diameter of Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "microscopic"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "greatest_thickness_of_tumor",
+          "label": "Greatest Thickness of Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "microscopic"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "spindle_cell_melanoma",
+              "label": "Spindle cell melanoma (greater than 90% spindle cells)"
+            },
+            {
+              "value": "mixed_cell_melanoma",
+              "label": "Mixed cell melanoma (greater than 10% epithelioid cells and less than 90% spindle cells)"
+            },
+            {
+              "value": "epithelioid_cell_melanoma",
+              "label": "Epithelioid cell melanoma (greater than 90% epithelioid cells)"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_ocular_structures_involved_by_tumor",
+          "label": "Other Ocular Structures Involved by Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "sclera",
+              "label": "Sclera (direct invasion)"
+            },
+            {
+              "value": "sclera",
+              "label": "Sclera (within intrascleral emissarial canals)"
+            },
+            {
+              "value": "vortex_vein",
+              "label": "Vortex vein(s)"
+            },
+            {
+              "value": "optic_nerve_head",
+              "label": "Optic nerve head"
+            },
+            {
+              "value": "vitreous",
+              "label": "Vitreous"
+            },
+            {
+              "value": "choroid",
+              "label": "Choroid"
+            },
+            {
+              "value": "ciliary_body",
+              "label": "Ciliary body"
+            },
+            {
+              "value": "iris",
+              "label": "Iris"
+            },
+            {
+              "value": "lens",
+              "label": "Lens"
+            },
+            {
+              "value": "anterior_chamber",
+              "label": "Anterior chamber"
+            },
+            {
+              "value": "extrascleral_extension",
+              "label": "Extrascleral extension (anterior)"
+            },
+            {
+              "value": "extrascleral_extension",
+              "label": "Extrascleral extension (posterior)"
+            },
+            {
+              "value": "angle_schlemms_canal",
+              "label": "Angle / Schlemm's canal"
+            },
+            {
+              "value": "optic_nerve",
+              "label": "Optic nerve"
+            },
+            {
+              "value": "retina",
+              "label": "Retina"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_location",
+          "label": "Tumor Location",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "anterior_margin_between_ciliary_body_and_iris",
+              "label": "Anterior margin between ciliary body and iris (sulcus)"
+            },
+            {
+              "value": "anterior_margin_between_equator_and_ciliary_body",
+              "label": "Anterior margin between equator and ciliary body"
+            },
+            {
+              "value": "anterior_margin_between_disc_and_equator",
+              "label": "Anterior margin between disc and equator"
+            },
+            {
+              "value": "posterior_margin_between_ciliary_body_and_iris",
+              "label": "Posterior margin between ciliary body and iris (sulcus)"
+            },
+            {
+              "value": "posterior_margin_between_equator_and_ciliary_body",
+              "label": "Posterior margin between equator and ciliary body"
+            },
+            {
+              "value": "posterior_margin_between_disc_and_equator",
+              "label": "Posterior margin between disc and equator"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "scleral_involvement",
+          "label": "Scleral Involvement",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "intrascleral_within_intrascleral_emissarial_canals",
+              "label": "Intrascleral, within intrascleral emissarial canals"
+            },
+            {
+              "value": "intrascleral_direct_invasion",
+              "label": "Intrascleral, direct invasion"
+            },
+            {
+              "value": "extrascleral_less_than_or_equal_to_5mm_in_largest_diameter",
+              "label": "Extrascleral, less than or equal to 5mm in largest diameter"
+            },
+            {
+              "value": "extrascleral_greater_than_5mm_in_largest_diameter",
+              "label": "Extrascleral, greater than 5mm in largest diameter"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_melanoma",
+              "label": "All margins negative for melanoma"
+            },
+            {
+              "value": "extrascleral_extension_of_melanoma_present",
+              "label": "Extrascleral extension of melanoma present (for enucleation specimens)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "discrete_tumor_deposits_in_orbit",
+          "label": "Discrete Tumor Deposits in Orbit",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "specify_site",
+              "label": "Specify site(s): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "largest_diameter_of_largest_distant_metastasis_in_centimeters",
+          "label": "Largest Diameter of Largest Distant Metastasis in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_centimeters",
+              "label": "Specify in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_or_equal_to_3_cm",
+              "label": "Less than or equal to 3 cm"
+            },
+            {
+              "value": "31_to_80_cm",
+              "label": "3.1 to 8.0 cm"
+            },
+            {
+              "value": "greater_than_or_equal_to_81_cm",
+              "label": "Greater than or equal to 8.1 cm"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "iris",
+          "label": "Iris",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pt1_tumor_limited_to_the_iris",
+          "label": "pT1: Tumor limited to the iris",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor limited to the iris, not more than 3 clock hours in size"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor limited to the iris, more than 3 clock hours in size"
+            },
+            {
+              "value": "pt1c",
+              "label": "pT1c: Tumor limited to the iris with secondary glaucoma"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt2_tumor_confluent_with_or_extending_into_the_ciliary_body_choroid_or_both",
+          "label": "pT2: Tumor confluent with or extending into the ciliary body, choroid, or both",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Tumor confluent with or extending into the ciliary body, without secondary glaucoma"
+            },
+            {
+              "value": "pt2b",
+              "label": "pT2b: Tumor confluent with or extending into the ciliary body and choroid, without secondary"
+            }
+          ]
+        },
+        {
+          "field_id": "glaucoma",
+          "label": "glaucoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2c",
+              "label": "pT2c: Tumor confluent with or extending into the ciliary body, choroid, or both, with secondary"
+            }
+          ]
+        },
+        {
+          "field_id": "glaucoma",
+          "label": "glaucoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor confluent with or extending into the ciliary body, choroid, or both, with scleral extension"
+            }
+          ]
+        },
+        {
+          "field_id": "pt4_tumor_with_extrascleral_extension",
+          "label": "pT4: Tumor with extrascleral extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Tumor with extrascleral extension less than or equal to 5 mm in largest diameter"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Tumor with extrascleral extension greater than 5 mm in largest diameter"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "iris_melanomas_originate_from_and_are_predominantly_located_in_this_region_of_the_uvea_if_less_than_",
+          "label": "Iris melanomas originate from, and are predominantly located in, this region of the uvea. If less than half the tumor volume is located within the iris, the tumor may have originated in the ciliary body, and consideration should be given to classifying it accordingly.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ciliary_body_and_choroid",
+          "label": "Ciliary Body and Choroid",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pt1_tumor_size_category_1",
+          "label": "pT1: Tumor size category 1",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor size category 1 without ciliary body involvement and extraocular extension"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor size category 1 with ciliary body involvement"
+            },
+            {
+              "value": "pt1c",
+              "label": "pT1c: Tumor size category 1 without ciliary body involvement but with extraocular extension less than"
+            }
+          ]
+        },
+        {
+          "field_id": "or_equal_to_5_mm_in_largest_diameter",
+          "label": "or equal to 5 mm in largest diameter",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1d",
+              "label": "pT1d: Tumor size category 1 with ciliary body involvement and extraocular extension less than or"
+            }
+          ]
+        },
+        {
+          "field_id": "equal_to_5_mm_in_largest_diameter",
+          "label": "equal to 5 mm in largest diameter",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt2_tumor_size_category_2",
+          "label": "pT2: Tumor size category 2",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Tumor size category 2 without ciliary body involvement and extraocular extension"
+            },
+            {
+              "value": "pt2b",
+              "label": "pT2b: Tumor size category 2 with ciliary body involvement"
+            },
+            {
+              "value": "pt2c",
+              "label": "pT2c: Tumor size category 2 without ciliary body involvement but with extraocular extension less than"
+            }
+          ]
+        },
+        {
+          "field_id": "or_equal_to_5_mm_in_largest_diameter",
+          "label": "or equal to 5 mm in largest diameter",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2d",
+              "label": "pT2d: Tumor size category 2 with ciliary body involvement and extraocular extension less than or"
+            }
+          ]
+        },
+        {
+          "field_id": "equal_to_5_mm_in_largest_diameter",
+          "label": "equal to 5 mm in largest diameter",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_tumor_size_category_3",
+          "label": "pT3: Tumor size category 3",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Tumor size category 3 without ciliary body involvement and extraocular extension"
+            },
+            {
+              "value": "pt3b",
+              "label": "pT3b: Tumor size category 3 with ciliary body involvement"
+            },
+            {
+              "value": "pt3c",
+              "label": "pT3c: Tumor size category 3 without ciliary body involvement but with extraocular extension less than"
+            }
+          ]
+        },
+        {
+          "field_id": "or_equal_to_5_mm_in_largest_diameter",
+          "label": "or equal to 5 mm in largest diameter",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3d",
+              "label": "pT3d: Tumor size category 3 with ciliary body involvement and extraocular extension less than or"
+            }
+          ]
+        },
+        {
+          "field_id": "equal_to_5_mm_in_largest_diameter",
+          "label": "equal to 5 mm in largest diameter",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt4_tumor_size_category_4",
+          "label": "pT4: Tumor size category 4",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Tumor size category 4 without ciliary body involvement and extraocular extension"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Tumor size category 4 with ciliary body involvement"
+            },
+            {
+              "value": "pt4c",
+              "label": "pT4c: Tumor size category 4 without ciliary body involvement but with extraocular extension less than"
+            }
+          ]
+        },
+        {
+          "field_id": "or_equal_to_5_mm_in_largest_diameter",
+          "label": "or equal to 5 mm in largest diameter",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4d",
+              "label": "pT4d: Tumor size category 4 with ciliary body involvement and extraocular extension less than or"
+            }
+          ]
+        },
+        {
+          "field_id": "equal_to_5_mm_in_largest_diameter",
+          "label": "equal to 5 mm in largest diameter",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4e",
+              "label": "pT4e: Any tumor size category with extraocular extension greater than 5 mm in largest diameter"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "primary_ciliary_body_and_choroidal_melanomas_are_classified_according_to_the_four_tumor_size_categor",
+          "label": "Primary ciliary body and choroidal melanomas are classified according to the four tumor size categories defined in Figure 3 (CAP Cancer Protocol Explanatory Notes).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_clinical_practice_the_largest_tumor_basal_diameter_may_be_estimated_in_optic_disc_diameters_dd_av",
+          "label": "In clinical practice, the largest tumor basal diameter may be estimated in optic disc diameters (DD; average: 1 DD = 1.5 mm), and tumor thickness may be estimated in diopters (average: 2.5 diopters = 1 mm). Ultrasonography and fundus photography are used to provide more accurate measurements.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_histopathologic_measurements_are_recorded_after_fixation_tumor_diameter_and_thickness_may_be_un",
+          "label": "When histopathologic measurements are recorded after fixation, tumor diameter and thickness may be underestimated because of tissue shrinkage.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            }
+          ]
+        },
+        {
+          "field_id": "pn1_regional_lymph_node_metastasis_or_discrete_tumor_deposits_in_the_orbit",
+          "label": "pN1: Regional lymph node metastasis or discrete tumor deposits in the orbit",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1a",
+              "label": "pN1a: Metastasis in one or more regional lymph node(s)"
+            },
+            {
+              "value": "pn1b",
+              "label": "pN1b: No regional lymph nodes are positive, but there are discrete tumor deposits in the orbit that"
+            }
+          ]
+        },
+        {
+          "field_id": "are_not_contiguous_to_the_eye",
+          "label": "are not contiguous to the eye",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1",
+              "label": "pN1 (subcategory cannot be determined)"
+            }
+          ],
+          "condition": "choroidal and ciliary body"
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_distant_metastasis",
+          "label": "pM1: Distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Largest diameter of the largest metastasis less than or equal to 3 cm"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Largest diameter of the largest metastasis 3.1-8.0 cm"
+            },
+            {
+              "value": "pm1c",
+              "label": "pM1c: Largest diameter of the largest metastasis greater than or equal to 8.1 cm"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "mitotic_rate",
+              "label": "Mitotic rate (number of mitoses per 40 fields determined by using a 40X objective with a field area of"
+            }
+          ]
+        },
+        {
+          "field_id": "0152_mm2_specify___________________mitoses_per_40_high_power_fields",
+          "label": "0.152 mm2) (specify): _________________ mitoses per 40 high-power fields",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "vasculogenic_mimicry_patterns",
+              "label": "Vasculogenic mimicry patterns (extracellular closed loops and networks, the latter defined as at least"
+            }
+          ],
+          "condition": "HPF"
+        },
+        {
+          "field_id": "3_back_to_back_closed_loops_is_associated_with_death_from_metastatic_disease",
+          "label": "3 back-to-back closed loops, is associated with death from metastatic disease)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "vascular_invasion",
+              "label": "Vascular invasion (tumor vessels or other vessels)"
+            },
+            {
+              "value": "degree_of_pigmentation",
+              "label": "Degree of pigmentation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_infiltrating_lymphocytes",
+              "label": "Tumor infiltrating lymphocytes"
+            },
+            {
+              "value": "tumor_infiltrating_macrophages",
+              "label": "Tumor infiltrating macrophages"
+            },
+            {
+              "value": "drusen",
+              "label": "Drusen"
+            },
+            {
+              "value": "retinal_detachment",
+              "label": "Retinal detachment"
+            },
+            {
+              "value": "rupture_of_bruchs_membrane",
+              "label": "Rupture of Bruch's membrane"
+            },
+            {
+              "value": "nevus",
+              "label": "Nevus"
+            },
+            {
+              "value": "hemorrhage",
+              "label": "Hemorrhage (specify site): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "neovascularization",
+              "label": "Neovascularization"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "gene_expression_profile",
+          "label": "Gene Expression Profile",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "class_1",
+              "label": "Class 1"
+            },
+            {
+              "value": "class_2",
+              "label": "Class 2"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "GEP"
+        },
+        {
+          "field_id": "tcga_classification",
+          "label": "TCGA Classification",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "group_a",
+              "label": "Group A"
+            },
+            {
+              "value": "group_b",
+              "label": "Group B"
+            },
+            {
+              "value": "group_c",
+              "label": "Group C"
+            },
+            {
+              "value": "group_d",
+              "label": "Group D"
+            }
+          ]
+        },
+        {
+          "field_id": "bap1_result_by_immunohistochemistry",
+          "label": "BAP1 Result by Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "bap1_mutational_analysis",
+          "label": "BAP1 Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutation_detected",
+              "label": "No mutation detected"
+            },
+            {
+              "value": "mutation",
+              "label": "Mutation(s) identified: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "prame_expression_status",
+          "label": "PRAME Expression Status",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        },
+        {
+          "field_id": "other_special_studies_specify",
+          "label": "Other Special Studies (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_minimum_recommended_fixation_time_for_whole_globes_with_intraocular_tumors_is_24_to_48_hours_the",
+          "label": "The minimum recommended fixation time for whole globes with intraocular tumors is 24 to 48 hours. The globe should be fixed in an adequate volume of fixative, with a 10:1 ratio of fixative volume to specimen volume recommended. Incisions or windows in the globe are not necessary for adequate penetration of fixative and are not recommended. Injection of fixative into the globe is also not recommended.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_orientation_of_a_globe_may_be_determined_by_identification_of_extraocular_muscle_insertions_the_",
+          "label": "The orientation of a globe may be determined by identification of extraocular muscle insertions, the optic nerve, and other landmarks, as illustrated in Figure 1. The terms temporal and nasal are generally used in place of lateral and medial with reference to ocular anatomy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_anatomic_landmarks_of_the_posterior_aspect_of_the_globe_right_eye_the_position_of_the_infer",
+          "label": "Figure 1. Anatomic landmarks of the posterior aspect of the globe (right eye). The position of the inferior oblique muscle relative to the optic nerve is most helpful in orienting the globe. The inferior oblique muscle insertion is located temporal (lateral) to the optic nerve on the sclera, and its fibers travel inferonasally from its insertion. The long posterior ciliary artery is often seen as a blue-gray line in the sclera on either side of the optic nerve and marks the horizontal meridian of the globe. Reprinted with permission from WB Saunders Company.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_globe_is_generally_sectioned_in_the_meridian_to_include_the_largest_or_the_most_informative_port",
+          "label": "The globe is generally sectioned in the meridian to include the largest (or the most informative) portion of the tumor, with care to include the pupil and optic nerve in the section to be submitted for microscopic examination, as illustrated in Figure 2. Alternative methods of sectioning have been described.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_the_most_common_methods_of_sectioning_a_globe_after_transillumination_the_tumor_base_is_mar",
+          "label": "Figure 2. The most common methods of sectioning a globe. After transillumination, the tumor base is marked, if possible, and included in the pupil-optic (p-o) nerve section and submitted for processing. If tumor is found in either of the calottes, these may also be submitted for sectioning. The meridian in which the globe was sectioned should be included in the gross description of the pathology report. It is not uncommon to induce an artifactitious retinal detachment while sectioning the globe. This can be minimized by gentle handling and by avoiding a sawing motion with the blade. When a scleral window has been created to retrieve fresh tumor, this window should be included in one of the calottes to allow for an intact PO section. Reprinted with permission from WB Saunders Company.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kujala_e_damato_b_coupland_se_et_al_staging_of_ciliary_body_and_choroidal_melanomas_based_on_anatomi",
+          "label": "Kujala E, Damato B, Coupland SE, et al. Staging of ciliary body and choroidal melanomas based on anatomic extent. J Clin Oncol. 2013; 31:2825-2831.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_a_y_millman_t_pathological_examination_of_ocular_specimens_in_tumors_",
+          "label": "Folberg R, Chévez-Barrios P, Lin A Y, Millman T. Pathological examination of ocular specimens. In: Tumors of the Eye and Ocular Adnexa, Fifth Series of the AFIP Atlases of Tumor and Non-tumor Pathology. Arlington, Virginia: American Registry of Pathology; 2020. p. 1-9.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_a_y_millman_t_tumors_of_the_uvea_in_tumors_of_the_eye_and_ocular_adne",
+          "label": "Folberg R, Chévez-Barrios P, Lin A Y, Millman T. Tumors of the Uvea. In: Tumors of the Eye and Ocular Adnexa, Fifth Series of the AFIP Atlases of Tumor and Non-tumor Pathology. Arlington, Virginia: American Registry of Pathology; 2020. p. 167-178.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_greatest_basal_diameter_is_measured_as_the_greatest_arc_of_contact_of_the_tumor_base_with_the_",
+          "label": "Tumor greatest basal diameter is measured as the greatest arc of contact of the tumor base with the sclera. The tumor height is measured perpendicular to the sclera from the base of the tumor to its apex. See Figure 3. Tumor size can be also measured on a microscopic slide in accordance with the same guidelines. In general, the largest dimensions (either gross or microscopic) are recorded for T category.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_the_dotted_red_line_designates_the_measurement_of_largest_basal_diameter_the_dotted_black_l",
+          "label": "Figure 3. The dotted red line designates the measurement of largest basal diameter. The dotted black line designates the measurement of apical height. Courtesy of Ralph C. Eagle, Jr. M.D.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_size_has_prognostic_significance_many_studies_of_choroidal_and_ciliary_body_melanoma_have_defi",
+          "label": "Tumor size has prognostic significance. Many studies of choroidal and ciliary body melanoma have defined small tumors as being less than 10 mm in greatest diameter.2 More recently, an ongoing study started in 1986, the Collaborative Ocular Melanoma Study,3,4 defined the following size classification based on clinical measurements.",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Small tumors have a more favorable prognosis.5,6"
+        },
+        {
+          "field_id": "since_then_the_ajcc_tnm_system_defined_empirically_4_tumor_sizes_figure_3_small_t1_medium_t2_large_t",
+          "label": "Since then, the AJCC TNM system defined empirically 4 tumor sizes (Figure 3) – small (T1), medium (T2), large (T3), and very large (T4) – that differ significantly in survival prognosis.7,8 This size classification was externally validated and is now recommended.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_a_y_millman_t_tumors_of_the_uvea_in_tumors_of_the_eye_and_ocular_adne",
+          "label": "Folberg R, Chévez-Barrios P, Lin A Y, Millman T. Tumors of the Uvea. In: Tumors of the Eye and Ocular Adnexa, Fifth Series of the AFIP Atlases of Tumor and Non-tumor Pathology. Arlington, Virginia: American Registry of Pathology; 2020:167-178.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zimmerman_le_malignant_melanoma_of_the_uveal_tract_in_spencer_wh_ed_ophthalmic_pathology_an_atlas_an",
+          "label": "Zimmerman LE. Malignant melanoma of the uveal tract. In: Spencer WH, ed. Ophthalmic Pathology: An Atlas and Textbook. 3rd ed. Philadelphia, PA: WB Saunders Co; 1986:2072-2139.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diener_west_m_hawkins_bs_fine_sl_et_al_the_collaborative_ocular_melanoma_study_group_design_and_meth",
+          "label": "Diener-West M, Hawkins BS, Fine SL, et al. The Collaborative Ocular Melanoma Study Group. Design and methods of a clinical trial for a rare condition: COMS report no. 3. Control Clin Trials. 1993; 14:362-391.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diener_west_m_earle_jd_fine_sl_et_al_the_collaborative_ocular_melanoma_study_group_coms_manual_of_pr",
+          "label": "Diener-West M, Earle JD, Fine SL, et al. The Collaborative Ocular Melanoma Study Group. COMS Manual of Procedures. Springfield, VA: National Technical Information Service; 1989. NTIS Accession No. PB90-115536.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mclean_iw_foster_wd_zimmerman_le_prognostic_factors_in_small_malignant_melanomas_of_choroid_and_cili",
+          "label": "McLean IW, Foster WD, Zimmerman LE. Prognostic factors in small malignant melanomas of choroid and ciliary body. Arch Ophthalmol. 1977; 95:48-58.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "affeldt_jc_minckler_ds_azen_sp_yeh_l_prognosis_in_uveal_melanoma_with_extraocular_extension_arch_oph",
+          "label": "Affeldt JC, Minckler DS, Azen SP, Yeh L. Prognosis in uveal melanoma with extraocular extension. Arch Ophthalmol. 1980; 98:1975-1979.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kujala_e_damato_b_coupland_se_et_al_staging_of_ciliary_body_and_choroidal_melanomas_based_on_anatomi",
+          "label": "Kujala E, Damato B, Coupland SE, et al. Staging of ciliary body and choroidal melanomas based on anatomic extent. J Clin Oncol. 2013; 31:2825-2831.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "simpson_er_gallie_bl_saakyan_s_et_al_ajcc_ophthalmic_oncology_task_force_international_validation_of",
+          "label": "Simpson ER, Gallie BL, Saakyan S, et al. AJCC Ophthalmic Oncology Task Force. International validation of the American Joint Committee on Cancer's 7th edition classification of uveal melanoma. JAMA Ophthalmol. 2015; 133:376-383.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_modified_callender_classification_shown_below_is_used_for_determining_cell_type_but_has_prognost",
+          "label": "The modified Callender classification shown below is used for determining cell type but has prognostic significance only for tumors of the choroid and ciliary body, not those of the iris, which generally have a benign course unless they invade the chamber angle.1,2,3,4,5,6 The American Joint Committee on Cancer (AJCC) defined the histopathologic types# as follows:4",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Spindle cell melanomas have the most favorable prognosis, and epithelioid cell melanomas the least favorable in terms of survival."
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "free_text",
+          "condition": "G"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zimmerman_le_malignant_melanoma_of_the_uveal_tract_in_spencer_wh_ed_ophthalmic_pathology_an_atlas_an",
+          "label": "Zimmerman LE. Malignant melanoma of the uveal tract. In: Spencer WH, ed. Ophthalmic Pathology: An Atlas and Textbook. 3rd ed. Philadelphia, PA: WB Saunders Co; 1986:2072-2139.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_verdick_r_weingeist_ta_montague_pr_the_gross_examination_of_eyes_removed_for_choroidal_and",
+          "label": "Folberg R, Verdick R, Weingeist TA, Montague PR. The gross examination of eyes removed for choroidal and ciliary body melanomas. Ophthalmology. 1986; 93:1643-1647.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "callender_gr_malignant_melanotic_tumors_of_the_eye_a_study_of_histologic_types_in_111_cases_trans_am",
+          "label": "Callender GR. Malignant melanotic tumors of the eye: a study of histologic types in 111 cases. Trans Am Acad Ophthalmol Otolaryngol. 1931; 36:131-142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mclean_iw_zimmerman_le_evans_rm_reappraisal_of_callenders_spindle_a_type_of_malignant_melanoma_of_ch",
+          "label": "McLean IW, Zimmerman LE, Evans RM. Reappraisal of Callender’s spindle a type of malignant melanoma of choroid and ciliary body. Am J Ophthalmol. 1978; 86:557-564.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mclean_iw_foster_wd_zimmerman_le_modifications_of_callenders_classification_of_uveal_melanoma_at_the",
+          "label": "McLean IW, Foster WD, Zimmerman LE. Modifications of Callender’s classification of uveal melanoma at the Armed Forces Institute of Pathology. Am J Ophthalmol. 1983; 96:502-509.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_a_y_millman_t_tumors_of_the_uvea_in_tumors_of_the_eye_and_ocular_adne",
+          "label": "Folberg R, Chévez-Barrios P, Lin A Y, Millman T. Tumors of the Uvea. In: Tumors of the Eye and Ocular Adnexa, Fifth Series of the AFIP Atlases of Tumor and Non-tumor Pathology. Arlington, Virginia: American Registry of Pathology; 2020. p. 167-178.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_american_joint_committee_on_cancer_ajcc_and_the_international_union_against_cancer_uicc_tnm_stag",
+          "label": "The American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) TNM staging systems for uveal melanoma of the iris, ciliary body, and choroid are shown below.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_trea",
+          "label": "By AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (eg, when technically unfeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i,e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval, and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_descriptors_residual_tumor",
+          "label": "Additional Descriptors\nResidual Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "R"
+        },
+        {
+          "field_id": "tumor_remaining_in_a_patient_after_therapy_with_curative_intent_eg_surgical_resection_for_cure_is_ca",
+          "label": "Tumor remaining in a patient after therapy with curative intent (e.g., surgical resection for cure) is categorized by a system known as R classification, shown below",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_the_surgeon_the_r_classification_may_be_useful_to_indicate_the_known_or_assumed_status_of_the_co",
+          "label": "For the surgeon, the R classification may be useful to indicate the known or assumed status of the completeness of a surgical excision. For the pathologist, the R classification is relevant to the status of the margins of a surgical resection specimen. That is, tumor involving the resection margin on pathologic examination may be assumed to correspond to residual tumor in the patient and may be classified as macroscopic or microscopic according to the findings at the specimen margin(s).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "iris_melanomas_originate_from_and_are_predominantly_located_in_this_region_of_the_uvea_if_less_than_",
+          "label": "Iris melanomas originate from, and are predominantly located in, this region of the uvea. If less than half of the tumor volume is located within the iris, the tumor may have originated in the ciliary body, and consideration should be given to classifying it accordingly.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ciliary_body_and_choroid",
+          "label": "Ciliary Body and Choroid",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "primary_ciliary_body_and_choroidal_melanomas_are_classified_according_to_the_4_tumor_size_categories",
+          "label": "Primary ciliary body and choroidal melanomas are classified according to the 4 tumor size categories below1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_in_clinical_practice_the_largest_tumor_basal_diameter_may_be_estimated_in_optic_disc_diamet",
+          "label": "Figure 3.  In clinical practice, the largest tumor basal diameter may be estimated in optic disc diameters (dd, average: 1 dd = 1.5 mm). Tumor thickness may be estimated in diopters (average: 2.5 diopters = 1 mm). However, techniques such as ultrasonography and fundus photography are used to provide more accurate measurements. Ciliary body involvement can be evaluated by the slit-lamp, ophthalmoscopy, gonioscopy, and transillumination. However, high-frequency ultrasonography (ultrasound biomicroscopy) is used for more accurate assessment. Extension through the sclera is evaluated visually before and during surgery, and with ultrasonography, computed tomography, or magnetic resonance imaging.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_histopathologic_measurements_are_recorded_after_fixation_tumor_diameter_and_thickness_may_be_un",
+          "label": "When histopathologic measurements are recorded after fixation, tumor diameter and thickness may be underestimated because of tissue shrinkage.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_vascular_invasion",
+          "label": "Lymph-Vascular Invasion",
+          "required": true,
+          "type": "free_text",
+          "condition": "LVI"
+        },
+        {
+          "field_id": "stage_grouping",
+          "label": "Stage Grouping",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_histologic_features_with_prognostic_significance_in_choroidal_and_ciliary_body_melanoma_includ",
+          "label": "Other histologic features with prognostic significance in choroidal and ciliary body melanoma include the number of mitoses in 40 high-powered fields, pigmentation, tumor infiltrating lymphocytes, tumor infiltrating macrophages, growth pattern (diffuse choroidal melanomas and ring melanomas of the ciliary body have a much less favorable prognosis), location of anterior margin of tumor, degree and patterns of vascularity, blood vessel invasion (both tumor vessels and normal vessels), tumor necrosis, extraocular extension, optic nerve involvement, and lack of nuclear BAP1 immunostaining.1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zimmerman_le_malignant_melanoma_of_the_uveal_tract_in_spencer_wh_ed_ophthalmic_pathology_an_atlas_an",
+          "label": "Zimmerman LE. Malignant melanoma of the uveal tract. In: Spencer WH, ed. Ophthalmic Pathology: An Atlas and Textbook. 3rd ed. Philadelphia, PA: WB Saunders Co; 1986:2072-2139.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "font_rl_spaulding_ag_zimmerman_le_diffuse_malignant_melanoma_of_the_uveal_tract_a_clinicopathologic_",
+          "label": "Font RL, Spaulding AG, Zimmerman LE. Diffuse malignant melanoma of the uveal tract: a clinicopathologic report of 54 cases. Trans Am Acad Ophthalmol Otolaryngol. 1968; 72:877-894.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mclean_iw_foster_wd_zimmerman_le_uveal_melanoma_location_size_cell_type_and_enucleation_as_risk_fact",
+          "label": "McLean IW, Foster WD, Zimmerman LE. Uveal melanoma: location, size, cell type, and enucleation as risk factors in metastasis. Hum Pathol. 1982; 13:123-132.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weinhaus_rs_seddon_jm_albert_dm_gragoudas_es_robinson_n_prognostic_factor_study_of_survival_after_en",
+          "label": "Weinhaus RS, Seddon JM, Albert DM, Gragoudas ES, Robinson N. Prognostic factor study of survival after enucleation for juxtapapillary melanomas. Arch Ophthalmol. 1985; 103:1673-1677.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gamel_jw_mccurdy_jb_mclean_iw_a_comparison_of_prognostic_covariates_for_uveal_melanoma_invest_ophtha",
+          "label": "Gamel JW, McCurdy JB, McLean IW. A comparison of prognostic covariates for uveal melanoma. Invest Ophthalmol Vis Sci. 1992; 33:1919-1922.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_peer_j_gruman_lm_et_al_the_morphologic_characteristics_of_tumor_blood_vessels_as_a_marker_",
+          "label": "Folberg R, Peer J, Gruman LM, et al. The morphologic characteristics of tumor blood vessels as a marker of tumor progression in primary human uveal melanoma: a matched case-control study. Hum Pathol. 1992; 23:1298-1305.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "coleman_k_baak_jp_van_diest_p_et_al_prognostic_factors_following_enucleation_of_111_uveal_melanomas_",
+          "label": "Coleman K, Baak JP, Van Diest P, et al. Prognostic factors following enucleation of 111 uveal melanomas. Br J Ophthalmol. 1993; 77:688-692.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_rummelt_v_parys_van_ginderdeuren_r_et_al_the_prognostic_value_of_tumor_blood_vessel_morpho",
+          "label": "Folberg R, Rummelt V, Parys-Van Ginderdeuren R, et al. The prognostic value of tumor blood vessel morphology in primary uveal melanoma. Ophthalmology. 1993; 100:1389-1398.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_rummelt_v_gruman_lm_et_al_microcirculation_architecture_of_melanocytic_nevi_and_malignant_",
+          "label": "Folberg R, Rummelt V, Gruman LM, et al. Microcirculation architecture of melanocytic nevi and malignant melanomas of the ciliary body and choroid: a comparative histopathologic and ultrastructural study. Ophthalmology. 1994; 101:718-727.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rummelt_v_folberg_r_woolson_rf_hwang_t_peíer_j_relation_between_the_microcirculation_architecture_an",
+          "label": "Rummelt V, Folberg R, Woolson RF, Hwang T, Peíer J. Relation between the microcirculation architecture and the aggressive behavior of ciliary body melanomas. Ophthalmology. 1995; 102:844-851.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "finger_pt_intraocular_melanoma_in_devita_jr_vt_lawrence_ts_rosenberg_sa_eds_devita_hellman_and_rosen",
+          "label": "Finger PT. Intraocular melanoma. In: DeVita Jr. VT, Lawrence TS, Rosenberg SA, eds. DeVita, Hellman, and Rosenberg’s Cancer: Principles & Practice of Oncology. 10th ed. Riverwoods, IL: Wolters Kluwer Health; 2015.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mäkitie_t_summanen_p_tarkkanen_a_kivelä_t_tumor_infiltrating_macrophages_cd68_cells_and_prognosis_in",
+          "label": "Mäkitie T, Summanen P, Tarkkanen A, Kivelä T. Tumor-infiltrating macrophages (CD68(+) cells) and prognosis in malignant uveal melanoma. Invest Ophthalmol Vis Sci. 2001; 42:1414-1421.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bronkhorst_ih_ly_lv_jordanova_es_et_al_detection_of_m2_macrophages_in_uveal_melanoma_and_relation_wi",
+          "label": "Bronkhorst IH, Ly LV, Jordanova ES, et al. Detection of M2-macrophages in uveal melanoma and relation with survival. Invest Ophthalmol Vis Sci. 2011; 52:643-650.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "koopmans_ae_verdijk_rm_brouwer_rw_et_al_clinical_significance_of_immunohistochemistry_for_detection_",
+          "label": "Koopmans AE, Verdijk RM, Brouwer RW, et al. Clinical significance of immunohistochemistry for detection of BAP1 mutations in uveal melanoma. Mod Pathol. 2014; 27:1321-1330.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kalirai_h_dodson_a_faqir_s_damato_be_coupland_se_lack_of_bap1_protein_expression_in_uveal_melanoma_i",
+          "label": "Kalirai H, Dodson A, Faqir S, Damato BE, Coupland SE. Lack of BAP1 protein expression in uveal melanoma is associated with increased metastatic risk and has utility in routine prognostic testing. Br J Cancer. 2014; 111:1373-1380.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_de_nes_ja_nelles_j_kreis_s_et_al_comparing_the_prognostic_value_of_bap1_mutation_pattern_chromos",
+          "label": "Van de Nes JA, Nelles J, Kreis S, et al. Comparing the prognostic value of BAP1 mutation pattern, chromosome 3 status, and BAP1 immunohistochemistry in uveal melanoma. Am J Surg Pathol. 2016; 40:796-805.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_a_y_millman_t_tumors_of_the_uvea_in_tumors_of_the_eye_and_ocular_adne",
+          "label": "Folberg R, Chévez-Barrios P, Lin A Y, Millman T. Tumors of the Uvea. In: Tumors of the Eye and Ocular Adnexa, Fifth Series of the AFIP Atlases of Tumor and Non-tumor Pathology. Arlington, Virginia: American Registry of Pathology; 2020. p. 167-178.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grossniklaus_he_eagle_rc_albert_d_et_al_choroidal_and_ciliary_body_melanomas_in_grossniklaus_he_eber",
+          "label": "Grossniklaus HE, Eagle RC, Albert D, et al. Choroidal and ciliary body melanomas. In: Grossniklaus HE, Eberhart CG, Kivelä TT, eds. WHO Classification of Tumours of the Eye, 4th edition. Lyon: International Agency for Research on Cancer; 2018;87-92.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1764 @@
+{
+  "template_id": "Uterus.Sarc_4.4.0.0.REL_CAPCP",
+  "organ": "UTERUS (SARCOMA",
+  "protocol_posting_date": "March 2022",
+  "standards": [
+    "AJCC-UICC 8",
+    "FIGO Cancer Report 2018"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_information_about_lymph_node_sampling_please_refer_to_the_regional_lymph_node_section",
+          "label": "For information about lymph node sampling, please refer to the Regional Lymph Node section.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "total_hysterectomy_and_bilateral_salpingo_oophorectomy",
+              "label": "Total hysterectomy and bilateral salpingo-oophorectomy"
+            },
+            {
+              "value": "radical_hysterectomy",
+              "label": "Radical hysterectomy"
+            },
+            {
+              "value": "simple_hysterectomy",
+              "label": "Simple hysterectomy"
+            },
+            {
+              "value": "supracervical_hysterectomy",
+              "label": "Supracervical hysterectomy"
+            },
+            {
+              "value": "bilateral_salpingo_oophorectomy",
+              "label": "Bilateral salpingo-oophorectomy"
+            },
+            {
+              "value": "right_salpingo_oophorectomy",
+              "label": "Right salpingo-oophorectomy"
+            },
+            {
+              "value": "left_salpingo_oophorectomy",
+              "label": "Left salpingo-oophorectomy"
+            },
+            {
+              "value": "salpingo_oophorectomy_side_not_specified",
+              "label": "Salpingo-oophorectomy, side not specified"
+            },
+            {
+              "value": "right_oophorectomy",
+              "label": "Right oophorectomy"
+            },
+            {
+              "value": "left_oophorectomy",
+              "label": "Left oophorectomy"
+            },
+            {
+              "value": "oophorectomy_side_not_specified",
+              "label": "Oophorectomy, side not specified"
+            },
+            {
+              "value": "bilateral_salpingectomy",
+              "label": "Bilateral salpingectomy"
+            },
+            {
+              "value": "right_salpingectomy",
+              "label": "Right salpingectomy"
+            },
+            {
+              "value": "left_salpingectomy",
+              "label": "Left salpingectomy"
+            },
+            {
+              "value": "salpingectomy_side_not_specified",
+              "label": "Salpingectomy, side not specified"
+            },
+            {
+              "value": "omentectomy",
+              "label": "Omentectomy"
+            },
+            {
+              "value": "peritoneal_biopsy",
+              "label": "Peritoneal biopsy(ies)"
+            },
+            {
+              "value": "peritoneal_washing",
+              "label": "Peritoneal washing"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hysterectomy_type",
+          "label": "Hysterectomy Type",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "abdominal",
+              "label": "Abdominal"
+            },
+            {
+              "value": "vaginal",
+              "label": "Vaginal"
+            },
+            {
+              "value": "vaginal_laparoscopic_assisted",
+              "label": "Vaginal, laparoscopic-assisted"
+            },
+            {
+              "value": "laparoscopic",
+              "label": "Laparoscopic"
+            },
+            {
+              "value": "laparoscopic_robotic_assisted",
+              "label": "Laparoscopic, robotic-assisted"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_integrity",
+          "label": "Specimen Integrity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "opened",
+              "label": "Opened"
+            },
+            {
+              "value": "morcellated",
+              "label": "Morcellated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "uterine_corpus",
+              "label": "Uterine corpus: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "uterine_cervix",
+              "label": "Uterine cervix: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "uterus_not_otherwise_specified",
+              "label": "Uterus, not otherwise specified: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "leiomyosarcoma_nos",
+              "label": "Leiomyosarcoma NOS"
+            },
+            {
+              "value": "spindle",
+              "label": "Spindle (conventional) leiomyosarcoma"
+            },
+            {
+              "value": "epithelioid_leiomyosarcoma",
+              "label": "Epithelioid leiomyosarcoma"
+            },
+            {
+              "value": "myxoid_leiomyosarcoma",
+              "label": "Myxoid leiomyosarcoma"
+            },
+            {
+              "value": "endometrial_stromal_sarcoma_low_grade",
+              "label": "Endometrial stromal sarcoma, low-grade#"
+            },
+            {
+              "value": "endometrial_stromal_sarcoma_high_grade",
+              "label": "Endometrial stromal sarcoma, high-grade"
+            },
+            {
+              "value": "undifferentiated_sarcoma",
+              "label": "Undifferentiated sarcoma"
+            },
+            {
+              "value": "adenosarcoma",
+              "label": "Adenosarcoma"
+            },
+            {
+              "value": "adenosarcoma_nos",
+              "label": "Adenosarcoma, NOS"
+            },
+            {
+              "value": "adenosarcoma_with_sarcomatous_overgrowth",
+              "label": "Adenosarcoma with sarcomatous overgrowth"
+            },
+            {
+              "value": "rhabdomyosarcoma",
+              "label": "Rhabdomyosarcoma"
+            },
+            {
+              "value": "malignant_perivascular_epithelioid_cell_tumor",
+              "label": "Malignant perivascular epithelioid cell tumor"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "A"
+          ],
+          "guidance": "Low-grade endometrial stromal sarcoma is distinguished from benign endometrial stromal nodule by depth of myometrial invasion greater than or equal to 3 mm, lymphovascular invasion, or greater than or equal to 3 foci of myometrial invasion of any depth. Minor marginal irregularity in the form of tongues less than 3 mm is allowable for an endometrial stromal nodule. This checklist does not apply to endometrial stromal nodules."
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "required_only_for_adenosarcoma_adenosarcoma_with_sarcomatous_overgrowth_is_usually_high_grade_and_sh",
+          "label": "Required only for adenosarcoma. Adenosarcoma with sarcomatous overgrowth is usually high grade and should be considered high grade because of a poorer prognosis.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "low_grade",
+              "label": "Low grade"
+            },
+            {
+              "value": "high_grade",
+              "label": "High grade"
+            },
+            {
+              "value": "cannot_be_assessed",
+              "label": "Cannot be assessed: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "myometrial_invasion",
+          "label": "Myometrial Invasion",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "required_only_for_adenosarcoma",
+          "label": "Required only for adenosarcoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ]
+        },
+        {
+          "field_id": "depth_of_myometrial_invasion",
+          "label": "Depth of Myometrial Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "myometrial_thickness",
+          "label": "Myometrial Thickness",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_myometrial_invasion",
+          "label": "Percentage of Myometrial Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify Percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "estimated_to_be_less_than_50",
+              "label": "Estimated to be less than 50%"
+            },
+            {
+              "value": "estimated_to_be_50_or_greater",
+              "label": "Estimated to be 50% or greater"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_tissue_organ_involvement",
+          "label": "Other Tissue / Organ Involvement#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "adnexa",
+              "label": "Adnexa: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_pelvic_tissue",
+              "label": "Other pelvic tissue (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "abdominal_tissue_in_one_site",
+              "label": "Abdominal tissue in one site (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "abdominal_tissue_in_multiple_sites",
+              "label": "Abdominal tissue in multiple sites (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bladder_mucosa",
+              "label": "Bladder mucosa"
+            },
+            {
+              "value": "rectal_mucosa",
+              "label": "Rectal mucosa"
+            },
+            {
+              "value": "other_organs_tissue",
+              "label": "Other organs / tissue (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ],
+          "guidance": "Any organ not selected is either not involved or was not submitted."
+        },
+        {
+          "field_id": "lymphovascular_invasion",
+          "label": "Lymphovascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "peritoneal_ascitic_fluid_involvement",
+          "label": "Peritoneal / Ascitic Fluid Involvement",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_submitted_unknown",
+              "label": "Not submitted / unknown"
+            },
+            {
+              "value": "malignant_cells_not_identified",
+              "label": "Malignant cells not identified"
+            },
+            {
+              "value": "atypical",
+              "label": "Atypical (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "suspicious",
+              "label": "Suspicious (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malignant_cells_present",
+              "label": "Malignant cells present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "results_pending",
+              "label": "Results pending"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margins_status",
+          "label": "Margins Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_sarcoma",
+              "label": "All margins negative for sarcoma"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_sarcoma_to_closest_margin",
+          "label": "Distance from Sarcoma to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "closest_margins_to_sarcoma",
+          "label": "Closest Margin(s) to Sarcoma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_closest_margin",
+              "label": "Specify closest margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "sarcoma_present_at_margin",
+              "label": "Sarcoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_sarcoma",
+          "label": "Margin(s) Involved by Sarcoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ],
+          "guidance": "Lymph nodes designated as pelvic, parametrial, obturator, internal iliac (hypogastric), external iliac, common iliac, sacral, presacral, and para-aortic are considered regional lymph nodes. Any other involved nodes should be categorized as metastases (pM1) and commented on in the distant metastasis section. Presence of isolated tumor cells no greater than 0.2 mm in regional lymph node(s) is considered N0 (i+)."
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_isolated_tumor_cells",
+          "label": "Number of Lymph Nodes with Isolated Tumor Cells#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "0.2 mm or less",
+          "guidance": "Reporting the number of lymph nodes with isolated tumor cells is required only in the absence of macrometastasis or micrometastasis in other lymph nodes."
+        },
+        {
+          "field_id": "nodal_sites_with_tumor",
+          "label": "Nodal Site(s) with Tumor",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_pelvic",
+              "label": "Right pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_pelvic",
+              "label": "Left pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pelvic_nos",
+              "label": "Pelvic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_para_aortic",
+              "label": "Right para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_para_aortic",
+              "label": "Left para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "para_aortic_nos",
+              "label": "Para-aortic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_examined",
+          "label": "Nodal Site(s) Examined",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_pelvic",
+              "label": "Right pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_pelvic",
+              "label": "Left pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pelvic_nos",
+              "label": "Pelvic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_para_aortic",
+              "label": "Right para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_para_aortic",
+              "label": "Left para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "para_aortic_nos",
+              "label": "Para-aortic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "pathologic_stage_classification",
+          "label": "PATHOLOGIC STAGE CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ],
+          "condition": "pTNM, AJCC 8th ed."
+        },
+        {
+          "field_id": "tnm_descriptors",
+          "label": "TNM Descriptors",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "r",
+              "label": "r (recurrent)"
+            },
+            {
+              "value": "y",
+              "label": "y (post-treatment)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "for_all_sarcomas_excluding_adenosarcoma",
+              "label": "For All Sarcomas Excluding Adenosarcoma (including Leiomyosarcoma, Endometrial Stromal Sarcoma, and Undifferentiated Endometrial Sarcoma / Uterine Sarcoma)."
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_limited_to_the_uterus",
+          "label": "pT1: Tumor limited to the uterus",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor 5 cm or less in greatest dimension"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor more than 5 cm"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt2_tumor_extends_beyond_the_uterus_within_the_pelvis",
+          "label": "pT2: Tumor extends beyond the uterus, within the pelvis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Tumor involves adnexa"
+            },
+            {
+              "value": "pt2b",
+              "label": "pT2b: Tumor involves other pelvic tissues"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_tumor_infiltrates_abdominal_tissues",
+          "label": "pT3: Tumor infiltrates abdominal tissues",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Tumor infiltrates abdominal tissues in one site"
+            },
+            {
+              "value": "pt3b",
+              "label": "pT3b: Tumor infiltrates abdominal tissues in more than one site"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor invades bladder or rectum"
+            },
+            {
+              "value": "for_adenosarcoma",
+              "label": "For Adenosarcoma"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_limited_to_the_uterus",
+          "label": "pT1: Tumor limited to the uterus",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor limited to the endometrium / endocervix"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor invades to less than half of the myometrium"
+            },
+            {
+              "value": "pt1c",
+              "label": "pT1c: Tumor invades one half or more of the myometrium"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt2_tumor_extends_beyond_the_uterus_within_the_pelvis",
+          "label": "pT2: Tumor extends beyond the uterus, within the pelvis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Tumor involves adnexa"
+            },
+            {
+              "value": "pt2b",
+              "label": "pT2b: Tumor involves other pelvic tissues"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_tumor_infiltrates_abdominal_tissues",
+          "label": "pT3: Tumor infiltrates abdominal tissues",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Tumor infiltrates abdominal tissues in one site"
+            },
+            {
+              "value": "pt3b",
+              "label": "pT3b: Tumor infiltrates abdominal tissues in more than one site"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor invades bladder or rectum"
+            }
+          ]
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0(i+): Isolated tumor cells in regional lymph node(s) no greater than 0.2 mm"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Regional lymph node metastasis"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis (excluding adnexa, pelvic, abdominal tissues, and regional lymph nodes)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        }
+      ]
+    },
+    {
+      "section_id": "figo_stage",
+      "section_name": "FIGO STAGE",
+      "fields": [
+        {
+          "field_id": "figo_stage_2018_figo_cancer_report_for_all_sarcomas_except_adenosarcoma",
+          "label": "FIGO Stage (2018 FIGO Cancer Report) for All Sarcomas Except Adenosarcoma#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I: Tumor limited to uterus"
+            },
+            {
+              "value": "ia",
+              "label": "IA: Less than or equal to 5 cm"
+            },
+            {
+              "value": "ib",
+              "label": "IB: More than 5 cm"
+            },
+            {
+              "value": "ii",
+              "label": "II: Tumor extends beyond the uterus, within the pelvis"
+            },
+            {
+              "value": "iia",
+              "label": "IIA: Adnexal involvement"
+            },
+            {
+              "value": "iib",
+              "label": "IIB: Involvement of other pelvic tissues"
+            },
+            {
+              "value": "iii",
+              "label": "III: Tumor invades abdominal tissues (not just protruding into the abdomen)"
+            },
+            {
+              "value": "iiia",
+              "label": "IIIA: One site"
+            },
+            {
+              "value": "iiib",
+              "label": "IIIB: More than one site"
+            },
+            {
+              "value": "iiic",
+              "label": "IIIC: Metastasis to pelvic and / or para-aortic lymph nodes"
+            },
+            {
+              "value": "iv",
+              "label": "IV: Tumor invades bladder and / or rectum and / or distant metastasis"
+            },
+            {
+              "value": "iva",
+              "label": "IVA: Tumor invades bladder and / or rectal mucosa"
+            },
+            {
+              "value": "ivb",
+              "label": "IVB: Distant metastasis"
+            }
+          ],
+          "guidance": "Including leiomyosarcoma, endometrial stromal sarcoma, and undifferentiated endometrial sarcoma / uterine sarcoma"
+        },
+        {
+          "field_id": "figo_stage_2018_figo_cancer_report_for_adenosarcoma",
+          "label": "FIGO Stage (2018 FIGO Cancer Report) for Adenosarcoma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I: Tumor limited to uterus"
+            },
+            {
+              "value": "ia",
+              "label": "IA: Tumor limited to endometrium / endocervix with no myometrial invasion"
+            },
+            {
+              "value": "ib",
+              "label": "IB: Less than or equal to half myometrial invasion"
+            },
+            {
+              "value": "ic",
+              "label": "IC: More than half myometrial invasion"
+            },
+            {
+              "value": "ii",
+              "label": "II: Tumor extends beyond the uterus, within the pelvis"
+            },
+            {
+              "value": "iia",
+              "label": "IIA: Adnexal involvement"
+            },
+            {
+              "value": "iib",
+              "label": "IIB: Tumor extends to extrauterine pelvic tissue"
+            },
+            {
+              "value": "iii",
+              "label": "III: Tumor invades abdominal tissues (not just protruding into the abdomen)"
+            },
+            {
+              "value": "iiia",
+              "label": "IIIA: One site"
+            },
+            {
+              "value": "iiib",
+              "label": "IIIB: More than one site"
+            },
+            {
+              "value": "iiic",
+              "label": "IIIC: Metastasis to pelvic and / or para-aortic lymph nodes"
+            },
+            {
+              "value": "iv",
+              "label": "IV: Tumor invades bladder and / or rectum and / or distant metastasis"
+            },
+            {
+              "value": "iva",
+              "label": "IVA: Tumor invades bladder and / or rectal mucosa"
+            },
+            {
+              "value": "ivb",
+              "label": "IVB: Distant metastasis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "ancillary_studies",
+          "label": "Ancillary Studies",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify",
+              "label": "Specify: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinosarcoma",
+          "label": "Carcinosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinosarcoma_malignant_mixed_müllerian_tumor_is_excluded_from_the_uterine_sarcoma_diagnostic_categ",
+          "label": "Carcinosarcoma (malignant mixed Müllerian tumor) is excluded from the uterine sarcoma diagnostic category as it is considered in tumors of the endometrial epithelium.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenosarcoma123456",
+          "label": "Adenosarcoma1,2,3,4,5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenosarcoma_is_a_biphasic_neoplasm_composed_of_a_benign_epithelial_component_and_a_malignant_stroma",
+          "label": "Adenosarcoma is a biphasic neoplasm composed of a benign epithelial component and a malignant stromal component. Classically, the tumor has phyllodes (leaf like) architecture, cleft-like or dilated glands that are lined by benign endometrial or ciliated epithelium and surrounded by a proliferative stroma, which is typically hypercellular relative to nearby benign tissue. Stromal proliferation and atypia are present but may be minimal. Stromal mitotic activity can be minimal or even absent. The epithelial component may show some cytological atypia and often displays metaplastic changes. The sarcomatous component is often of the homologous type, but rhabdomyosarcomatous differentiation is possible and rarely there is sex cord differentiation. There may be transformation to high-grade sarcoma. There may be sarcomatous overgrowth, defined as the presence of pure sarcoma, usually high grade and without an epithelial component, occupying at least 25% of the tumor. Immunohistochemically, the tumors are often positive for CD10, ER, and PR, although these are often negative in sarcomatous overgrowth. The stroma in conventional adenosarcoma is p53 “wild-type” and exhibits a low MIB1 proliferation index. Thus, the immunophenotype resembles that of low-grade endometrial stromal sarcoma. Smooth muscle actin and desmin may also be positive. In areas of high-grade sarcoma and of sarcomatous overgrowth, the mesenchymal component exhibits a higher MIB1 proliferation index and may be p53 positive/aberrant.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "endometrial_stromal_sarcoma",
+          "label": "Endometrial Stromal Sarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "low_grade_endometrial_stromal_sarcoma_lg_ess78910_shows_proliferative_phase_endometrial_stromal_type",
+          "label": "Low-grade endometrial stromal sarcoma (LG-ESS)7,8,9,10 shows proliferative-phase endometrial stromal-type tumor cells infiltrating the myometrium with or without lymphovascular invasion. About 60% of LG-ESS have genetic fusions with JAZF1-SUZ12 being most common, followed by JAZF1-PHF1, EPC1-PHF1, and MEAF6-PHF1. Tumors usually show diffuse strong expression of CD10, IFITM1, ER, and PR, with focal cyclin D1 positivity.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_grade_ess_hg_ess8910_is_malignant_endometrial_stromal_tumor_with_uniform_high_grade_round_andor",
+          "label": "High-grade ESS (HG-ESS)8,9,10 is malignant endometrial stromal tumor with uniform high-grade round and/or spindle morphology. A low-grade component may be present. They usually show lymphovascular invasion, brisk mitotic activity, and necrosis. Invasion may be expansile, permeative, or infiltrative in pattern. Tumors harbor YWHAE-NUTM2A/B fusions, ZC3H7B-BCOR fusions, or BCOR ITD (internal tandem duplications). For a diagnosis of HG-ESS it is essential to see a tumor with monomorphic high-grade round and/or spindle cells, brisk mitotic activity, cyclin D1 and BCOR immunohistochemical positivity if associated withYWHAE-NUTM2A/B, ZC3H7B-BCOR fusion, BCOR ITD or a low-grade endometrial stromal component (if HG-ESS is NOS). The ZC3H7B-BCOR variant often mimics myxoid leiomyosarcoma but usually has more uniform nuclei and contains more collagen bands; BCOR molecular analysis will usually identify this variant.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leiomyosarcoma111213141516",
+          "label": "Leiomyosarcoma11,12,13,14,15,16",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leiomyosarcoma_is_the_most_common_uterine_sarcoma_4050_and_patients_are_generally_50_years_of_age_co",
+          "label": "Leiomyosarcoma is the most common uterine sarcoma (~40–50%) and patients are generally > 50 years of age. Conventional uterine LMS is a cellular tumor composed of fascicles of spindle-shaped cells exhibiting smooth muscle differentiation with moderate to severe pleomorphism. Two of the following three features: tumor cell necrosis, marked cytological atypia, and ≥ 4 mitoses/mm2 (equal to or greater than 10 mitoses/10 HPF of 0.55 mm in diameter and 0.24 mm2 in area) are required to make a diagnosis of spindle leiomyosarcoma. Tumor cell necrosis is characterized by an abrupt transition from viable to non-viable tumor cells. Epithelioid leiomyosarcoma (E-LMS) is composed predominantly (> 50%) of round or polygonal cells with eosinophilic to clear cytoplasm exhibiting nested, plexiform, corded, nodular, or diffuse growth patterns. Focally, cells with rhabdoid morphology or cells mimicking signet-ring cells may be present. Pseudo-glandular spaces may be seen. Tumors may occasionally be extensively hyalinized. Diagnostic criteria include moderate to severe cytological atypia and/or tumor cell necrosis or ≥ 1.6 mitoses/mm2 (equal to or greater than 4 mitoses/10 HPF of 0.55 mm in diameter and 0.24 mm2 in area). Myxoid tumors contain abundant myxoid stroma and are often paucicellular with fewer mitoses. They may display vague fascicular or nodular growth. Extensive sampling may be required to identify regions diagnostic of malignancy. The presence of any degree of cytological atypia, tumor cell necrosis, or > 0.4 mitoses/mm2 (equating to > 1 mitosis/10 HPF of 0.55 mm in diameter and 0.24 mm2 in area) is considered sufficient for a diagnosis of myxoid leiomyosarcoma. In LMS, tumor cells express h-caldesmon (more specific), desmin, and SMA, but expression may be weak and/or patchy if the tumor is poorly differentiated or myxoid. It is common for tumors to be positive for CD10, EMA, and cytokeratin. EMA and cytokeratin positivity is more frequent in epithelioid tumors. Spindle cell leiomyosarcomas often express ER and PR; p16 and/or p53 overexpression is also common.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "undifferentiated_uterineendometrial_sarcoma17",
+          "label": "Undifferentiated Uterine/Endometrial Sarcoma17",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "undifferentiated_uterineendometrial_sarcoma_is_a_high_grade_sarcoma_that_lacks_specific_differentiat",
+          "label": "Undifferentiated uterine/endometrial sarcoma is a high-grade sarcoma that lacks specific differentiation and due to molecular analysis, is a shrinking category. Adequate sampling is important to exclude poorly differentiated carcinoma, carcinosarcoma, HGESS, and sarcomatous overgrowth in adenosarcoma before rendering this diagnosis.  Histopathologically, these tumors show marked cellular pleomorphism and abundant mitotic activity with atypical forms. They lack the typical infiltrative growth pattern and vascularity of low-grade ESS and displace the myometrium. They often resemble the sarcomatous component of a carcinosarcoma. These sarcomas are most often aneuploid and are negative for ER and PgR.  Immunohistochemistry for diagnosis of ZC3H7B-BCOR, YWHAE-NUTM2 (FAM22), and BCOR ITD high-grade endometrial stromal sarcomas and NTRK sarcomas is required and employment of molecular tests to exclude fusion genes associated with other sarcoma types are desirable before making a diagnosis of undifferentiated sarcoma.17",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_histologic_types",
+          "label": "Other Histologic Types",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_differential_diagnostic_considerations_included_in_spindlesarcomatous_lesions_primary_to_the_u",
+          "label": "Other differential diagnostic considerations included in spindle/sarcomatous lesions primary to the uterus include perivascular epithelioid cell tumor (PEComa) and rhabdomyosarcoma. PEComa belongs to a group of tumors characterized by both melanocytic and smooth muscle differentiation, and should be recognized separately from smooth muscle tumors. Conventional PEComas are composed of epithelioid and/or spindled cells with clear to eosinophilic granular cytoplasm. Conventional PEComas variably express HMB45, melan-A, and smooth muscle markers (SMA, desmin, and h-caldesmon). HMB45 is most sensitive, being positive in nearly all tumors, whereas melan-A is more specific, being positive (sometimes only focally) in at least half of the tumors. Cathepsin K is positive in essentially all tumors. TFE3 translocation–associated PEComas are diffusely positive for TFE3. It has been proposed that the benign category of PEComa be eliminated and that the tumor be classified as malignant PEComa if there are three or more of the following features: ≥ 5 cm, high nuclear grade, mitotic count of > 1 mitosis/50 hpf (>1 mitosis/12 mm2), necrosis, vascular invasion. If there are less than 3 features it is considered to be of uncertain malignant potential18,19,20 Rhabdomyosarcoma is rare but is the most common uterine heterologous sarcoma. Pleomorphic and embryonal subtypes are most frequent, while the alveolar and spindled variants are extremely rare. Rhabdomyosarcomas are usually positive for desmin, muscle-specific actin, myogenin, Myo D1, and myoglobin, and negative for smooth muscle actin. Pleomorphic and alveolar subtypes have a worse prognosis than the embryonal subtype.21,22",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "uterine_inflammatory_myofibroblastic_tumors_imt_are_rare_and_while_the_majority_are_benign_a_minorit",
+          "label": "Uterine inflammatory myofibroblastic tumors (IMT) are rare and while the majority are benign, a minority may have an aggressive course. Necrosis, tumour size > 7 cm, moderate to severe atypia, high mitotic activity, and lymphovascular invasion have been associated with aggressive course. ~95% of IMTs are positive for ALK by immunohistochemistry typically correlating with alterations of the ALK gene rearrangements with IGFBP5, THBS1, and TIMP3 being common fusion partners.23",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smarca4_deficient_uterine_sarcoma_sdus_is_a_recently_described_entity_that_may_mimic_adenosarcoma_by",
+          "label": "SMARCA4 deficient uterine sarcoma (SDUS) is a recently described entity that may mimic adenosarcoma by protruding from the cervix, forming leaf-like architecture and entrapping benign glands in an expanded, malignant stroma that may exhibit hyalinization.24 These occur in a younger age group (median 42 years), present at advanced stage, are aggressive and uniformly fatal. The tumor cells have a monotonous uniformity without marked size or shape variation and are loosely cohesive with frequent rhabdoid morphology. They are negative for pankeratin, CAM5.2, PAX8, S100, EMA (rare cells may be positive), CD10, ER, PR, claudin-4, SOX10, S100, SMA and desmin. They are positive for cyclin D1 (though often patchy), show intact mismatch repair proteins, are microsatellite stable, and have a loss of SMARCA4. These tumors have inactivated SWI/SNF genes (SMARCA4 or SMARCB1) and rare patients may harbor germline mutations for loss of function mutations of SMARCA4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "uterine_tumor_resembling_ovarian_sex_cord_tumor_should_be_staged_as_a_uterine_sarcoma_other_malignan",
+          "label": "Uterine tumor resembling ovarian sex cord tumor should be staged as a uterine sarcoma. Other malignant sarcomas that may also occur in the uterine corpus include angiosarcoma, liposarcoma, and alveolar soft part sarcoma.26",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clement_pb_scully_re_mullerian_adenosarcoma_of_the_uterus_a_clinicopathologic_analysis_of_100_cases_",
+          "label": "Clement PB, Scully RE. Mullerian adenosarcoma of the uterus: a clinicopathologic analysis of 100 cases with a review of the literature. Hum Pathol. 1990; 21:363-381.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gallardo_a_prat_j_mullerian_adenosarcoma_a_clinicopathologic_and_immunohistochemical_study_of_55_cas",
+          "label": "Gallardo A, Prat J. Mullerian adenosarcoma: a clinicopathologic and immunohistochemical study of 55 cases challenging the existence of adenofibroma. Am J Surg Pathol. 2009; 33:278-288.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mccluggage_wg_mullerian_adenosarcoma_of_the_female_genital_tract_adv_anat_pathol_2010_17122_129",
+          "label": "McCluggage WG. Mullerian adenosarcoma of the female genital tract. Adv Anat Pathol. 2010; 17:122-129.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "soslow_ra_ali_a_oliva_e_mullerian_adenosarcomas_an_immunophenotypic_analysis_of_35_cases_am_j_surg_p",
+          "label": "Soslow RA, Ali A, Oliva E. Mullerian adenosarcomas: an immunophenotypic analysis of 35 cases. Am J Surg Pathol. 2008; 32:1013-1021.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clement_pb_mullerian_adenosarcomas_of_the_uterus_with_sarcomatous_overgrowth_a_clinicopathological_a",
+          "label": "Clement PB. Mullerian adenosarcomas of the uterus with sarcomatous overgrowth: a clinicopathological analysis of 10 cases. Am J Surg Pathol. 1989;13:28-38.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "howitt_be_quade_bj_carlson_jw_adenosarcoma_of_the_uterine_corpus_httpstumourclassificationiarcwhoint",
+          "label": "Howitt BE, Quade BJ, Carlson JW. Adenosarcoma of the uterine corpus. https://tumourclassification.iarc.who.int/chaptercontent/34/259",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "koontz_ji_soreng_al_nucci_m_et_al_frequent_fusion_of_the_jazf1_and_jjaz1_genes_in_endometrial_stroma",
+          "label": "Koontz JI, Soreng AL, Nucci M, et al. Frequent fusion of the JAZF1 and JJAZ1 genes in endometrial stromal tumors. Proc Natl Acad Sci USA. 2001; 98(11):6348-6353.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chiang_s_ali_r_melnyk_n_et_al_frequency_of_known_gene_rearrangements_in_endometrial_stromal_tumors_a",
+          "label": "Chiang S, Ali R, Melnyk N, et al. Frequency of known gene rearrangements in endometrial stromal tumors. Am J Surg Pathol. 2011; 35(9):1364-1372.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lee_ch_nucci_mr_endometrial_stromal_sarcoma_the_new_genetic_paradigm_histopathology_2015_671_19",
+          "label": "Lee Ch, Nucci MR: Endometrial stromal sarcoma-the new genetic paradigm. Histopathology. 2015; 67:1-19",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lee_ch_chiang_s_httpstumourclassificationiarcwhointchaptercontent34245_46",
+          "label": "Lee CH, Chiang S: https://tumourclassification.iarc.who.int/chaptercontent/34/245-46",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "longacre_ta_parra_herran_c_lim_d_uterine_leiomyosarcoma_httpstumourclassificationiarcwhointchapterco",
+          "label": "Longacre TA, Parra-Herran C, Lim D: Uterine Leiomyosarcoma. https://tumourclassification.iarc.who.int/chaptercontent/34/242",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bell_sw_kempson_rl_hendrickson_mr_problematic_uterine_smooth_muscle_neoplasms_a_clinicopathologic_st",
+          "label": "Bell SW, Kempson RL, Hendrickson MR. Problematic uterine smooth muscle neoplasms: a clinicopathologic study of 213 cases. Am J Surg Pathol. 1994; 18:535-558.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oliva_e_young_rh_amin_mb_clement_pb_an_immunohistochemical_analysis_of_endometrial_stromal_and_smoot",
+          "label": "Oliva E, Young RH, Amin MB, Clement PB. An immunohistochemical analysis of endometrial stromal and smooth muscle tumors of the uterus: a study of 54 cases emphasizing the importance of using a panel because of overlap in immunoreactivity for individual antibodies. Am J Surg Pathol. 2002; 26:403-412.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oliva_e_practical_issues_in_uterine_pathology_from_banal_to_bewildering_the_remarkable_spectrum_of_s",
+          "label": "Oliva E: Practical issues in uterine pathology from banal to bewildering: the remarkable spectrum of smooth muscle neoplasia. Mod Pathol. 2016; 29(Suppl 1):S104-20",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_l_yang_b_immunohistochemical_analysis_of_p16_p53_and_ki_67_expression_in_uterine_smooth_muscle_",
+          "label": "Chen L, Yang B. Immunohistochemical analysis of p16, p53, and Ki-67 expression in uterine smooth muscle tumors. Int J Gynecol Pathol. 2008; 27:326-332.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chiang_s_carlson_jw_kurihara_s_undifferentiated_uterine_sarcoma_httpstumourclassificationiarcwhointc",
+          "label": "Chiang S, Carlson JW, Kurihara S: Undifferentiated uterine sarcoma. https://tumourclassification.iarc.who.int/chaptercontent/34/247",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folpe_al_mentzel_t_lehr_ha_et_al_perivascular_epithelioid_cell_neoplasms_of_soft_tissue_and_gynecolo",
+          "label": "Folpe AL, Mentzel T, Lehr HA, et al. Perivascular epithelioid cell neoplasms of soft tissue and gynecologic origin: a clinicopathologic study of 26 cases and review of the literature. Am J Surg Pathol. 2005; 29:1558-1575.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hornick_jl_fletcher_cd_pecoma_what_do_we_know_so_far_histopathology_2006_4875_82",
+          "label": "Hornick JL, Fletcher CD. PEComa: what do we know so far? Histopathology. 2006; 48:75-82.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bennett_ja_schoolmeester_jk_perivascular_epithelioid_cell_tumor_pecoma_httpstumourclassificationiarc",
+          "label": "Bennett JA, Schoolmeester JK: Perivascular epithelioid cell tumor (PEComa). https://tumourclassification.iarc.who.int/chaptercontent/34/251",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ferguson_se_gerald_w_barakat_rr_chi_ds_soslow_ra_clinicopathologic_features_of_rhabdomyosarcoma_of_g",
+          "label": "Ferguson SE, Gerald W, Barakat RR, Chi DS, Soslow RA. Clinicopathologic features of rhabdomyosarcoma of gynecologic origin in adults. Am J Surg Pathol. 2007; 31:382-389.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fadare_o_heterologous_and_rare_homologous_sarcomas_of_the_of_the_uterine_corpus_a_clinicopathologic_",
+          "label": "Fadare O. Heterologous and rare homologous sarcomas of the of the uterine corpus: a clinicopathologic review. Adv Anat Pathol. 2011; 18:60-74.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "parra_herran_c_lee_c_rabban_jt_bennett_ja_inflammatory_myofibroblastic_tumor_httpstumourclassificati",
+          "label": "Parra-Herran C, Lee C, Rabban JT, Bennett JA. Inflammatory myofibroblastic tumor. https://tumourclassification.iarc.who.int/chaptercontent/34/252",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kolin_dl_quick_cm_dong_f_et_al_smarca4_deficient_uterine_sarcoma_and_undifferentiated_endometrial_ca",
+          "label": "Kolin DL, Quick CM, Dong F, et al. SMARCA4-deficient uterine sarcoma and undifferentiated endometrial carcinoma are distinct clinicopathologic entities, Am J Surg Pathol. 2020; 44(2):263-270.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "longacre_t_chiang_s_ntrk_rearranged_spindle_cell_neoplasm_httpstumourclassificationiarcwhointchapter",
+          "label": "Longacre T, Chiang S: NTRK rearranged spindle cell neoplasm. https://tumourclassification.iarc.who.int/chaptercontent/34/425",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oliva_e_other_mesenchymal_tumors_of_the_uterus_httpstumourclassificationiarcwhointparagraphcontent34",
+          "label": "Oliva E: Other mesenchymal tumors of the uterus. https://tumourclassification.iarc.who.int/paragraphcontent/34/253",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nathenson_mj_conley_ap_lin_h_fleming_n_lazar_a_wang_w_ravi_v_the_importance_of_lymphovascular_invasi",
+          "label": "Nathenson MJ,  Conley  AP,  Lin H,  Fleming N, Lazar A, Wang W, Ravi V:  The Importance of Lymphovascular Invasion in Uterine Adenosarcomas: Analysis of Clinical, Prognostic, and Treatment Outcomes. Int J Gynecol Cancer. 2018; 28(7):1297-1310.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roma_aa_barbuto_da_samimi_sa_stolnicu_s_alvarado_cabrero_i_chanona_vilchis_j_aguilera_barrantes_i_et",
+          "label": "Roma AA,  Barbuto DA, Samimi SA, Stolnicu S, Alvarado-Cabrero I, Chanona-Vilchis J, Aguilera-Barrantes I et al. Hum Pathol. 2015; 46(11):1712-21.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_for_uterine_sarcoma_endorsed_by_the_american_joint_committee_on_cancer_ajcc_a",
+          "label": "The TNM staging system for uterine sarcoma endorsed by the American Joint Committee on Cancer (AJCC) and the parallel system formulated by the International Federation of Gynecology and Obstetrics (FIGO) are recommended, as shown below.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccinternational_union_against_cancer_uicc_convention_the_designation_t_refers_to_a_pr",
+          "label": "According to AJCC/International Union Against Cancer (UICC) convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis. Single tumor cells or small clusters of cells not more than 0.2 mm in greatest diameter are classified as isolated tumor cells. These may be detected by routine histology or by immunohistochemical methods and are designated N0(i+). pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (eg, when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_y_r_and_a_prefixes_are_used_altho",
+          "label": "For identification of special cases of TNM or pTNM classifications, “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (ie, before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_descriptors",
+          "label": "Additional Descriptors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "residual_tumor",
+          "label": "Residual Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "R"
+        },
+        {
+          "field_id": "tumor_remaining_in_a_patient_after_therapy_with_curative_intent_eg_surgical_resection_for_cure_is_ca",
+          "label": "Tumor remaining in a patient after therapy with curative intent (eg, surgical resection for cure) is categorized by a system known as R classification, shown below.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_the_surgeon_the_r_classification_may_be_useful_to_indicate_the_known_or_assumed_status_of_the_co",
+          "label": "For the surgeon, the R classification may be useful to indicate the known or assumed status of the completeness of a surgical excision. For the pathologist, the R classification is relevant to the status of the margins of a surgical resection specimen. That is, tumor involving the resection margin on pathologic examination may be assumed to correspond to residual tumor in the patient and may be classified as macroscopic or microscopic according to the findings at the specimen margin(s).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_important_to_note_that_in_uterine_sarcoma_as_in_cancer_of_other_organs_the_validity_of_t_stage",
+          "label": "It is important to note that in uterine sarcoma, as in cancer of other organs, the validity of T stage depends upon the adequacy and completeness of the surgical staging.",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Regional lymph nodes include the pelvic, obturator, internal iliac (hypogastric), external iliac, common iliac, para-aortic, presacral, and parametrial lymph nodes."
+        },
+        {
+          "field_id": "adenosarcoma",
+          "label": "Adenosarcoma",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Regional lymph nodes include the pelvic, obturator, internal iliac (hypogastric), external iliac, common iliac, para-aortic, presacral, and parametrial lymph nodes."
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mbatani_n_olawaiye_ab_prat_j_uterine_sarcomas_figo_cancer_report_2018_int_j_gynecol_obstet_2018_143_",
+          "label": "Mbatani N, Olawaiye AB, Prat J: Uterine sarcomas FIGO cancer report 2018. Int J Gynecol Obstet 2018; 143 (Suppl. 2): 51–58",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

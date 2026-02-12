@@ -1,0 +1,1081 @@
+{
+  "template_id": "Prostate.TURP_4.2.0.0.REL_CAPCP",
+  "organ": "PROSTATE GLAND: Transurethral Prostatic Resection (TURP",
+  "protocol_posting_date": "September 2023",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "transurethral_resection_of_the_prostate",
+              "label": "Transurethral resection of the prostate (TURP)"
+            },
+            {
+              "value": "enucleation",
+              "label": "Enucleation (simple or subtotal prostatectomy)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "glandular",
+          "label": "Glandular",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "acinar_adenocarcinoma_conventional",
+              "label": "Acinar adenocarcinoma, conventional (usual)"
+            },
+            {
+              "value": "acinar_adenocarcinoma_signet_ring_like_cell",
+              "label": "Acinar adenocarcinoma, signet-ring-like cell"
+            },
+            {
+              "value": "acinar_adenocarcinoma_pleomorphic_giant_cell",
+              "label": "Acinar adenocarcinoma, pleomorphic giant cell"
+            },
+            {
+              "value": "acinar_adenocarcinoma_sarcomatoid",
+              "label": "Acinar adenocarcinoma, sarcomatoid"
+            },
+            {
+              "value": "acinar_adenocarcinoma_prostatic_intraepithelial_neoplasia_like",
+              "label": "Acinar adenocarcinoma, prostatic intraepithelial neoplasia-like"
+            },
+            {
+              "value": "isolated_intraductal_carcinoma",
+              "label": "Isolated intraductal carcinoma"
+            },
+            {
+              "value": "ductal_adenocarcinoma",
+              "label": "Ductal adenocarcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "squamous",
+          "label": "Squamous",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma"
+            },
+            {
+              "value": "basal_cell",
+              "label": "Basal cell (adenoid cystic) carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "neuroendocrine",
+          "label": "Neuroendocrine",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma_with_neuroendocrine_differentiation",
+              "label": "Adenocarcinoma with neuroendocrine differentiation"
+            },
+            {
+              "value": "well_differentiated_neuroendocrine_tumor",
+              "label": "Well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "grade",
+          "label": "Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_assessed",
+              "label": "Cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "grade_group_1",
+              "label": "Grade group 1 (Gleason Score 3 + 3 = 6)"
+            },
+            {
+              "value": "grade_group_2",
+              "label": "Grade group 2 (Gleason Score 3 + 4 = 7)"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_pattern_4",
+          "label": "Percentage of Pattern 4",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_or_equal_to_5",
+              "label": "Less than or equal to 5%"
+            },
+            {
+              "value": "6_10",
+              "label": "6 - 10%"
+            },
+            {
+              "value": "11_20",
+              "label": "11 - 20%"
+            },
+            {
+              "value": "21_30",
+              "label": "21 - 30%"
+            },
+            {
+              "value": "31_40",
+              "label": "31 - 40%"
+            },
+            {
+              "value": "greater_than_40",
+              "label": "Greater than 40%"
+            },
+            {
+              "value": "grade_group_3",
+              "label": "Grade group 3 (Gleason Score 4 + 3 = 7)"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_pattern_4",
+          "label": "Percentage of Pattern 4",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_61",
+              "label": "Less than 61%"
+            },
+            {
+              "value": "61_70",
+              "label": "61 - 70%"
+            },
+            {
+              "value": "71_80",
+              "label": "71 - 80%"
+            },
+            {
+              "value": "81_90",
+              "label": "81 - 90%"
+            },
+            {
+              "value": "greater_than_90",
+              "label": "Greater than 90%"
+            },
+            {
+              "value": "grade_group_4",
+              "label": "Grade group 4 (Gleason Score 4 + 4 = 8)"
+            },
+            {
+              "value": "grade_group_4",
+              "label": "Grade group 4 (Gleason Score 3 + 5 = 8)"
+            },
+            {
+              "value": "grade_group_4",
+              "label": "Grade group 4 (Gleason Score 5 + 3 = 8)"
+            },
+            {
+              "value": "grade_group_5",
+              "label": "Grade group 5 (Gleason Score 4 + 5 = 9)"
+            },
+            {
+              "value": "grade_group_5",
+              "label": "Grade group 5 (Gleason Score 5 + 4 = 9)"
+            },
+            {
+              "value": "grade_group_5",
+              "label": "Grade group 5 (Gleason Score 5 + 5 = 10)"
+            }
+          ]
+        },
+        {
+          "field_id": "if_gleason_score_is_greater_than_7_specify_percentage_of_pattern_4",
+          "label": "If Gleason Score is Greater Than 7 Specify Percentage of Pattern 4: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_gleason_score_is_greater_than_7_specify_percentage_of_pattern_5",
+          "label": "If Gleason Score is Greater Than 7 Specify Percentage of Pattern 5: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intraductal_carcinoma",
+          "label": "Intraductal Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "condition": "IDC"
+        },
+        {
+          "field_id": "idc_incorporated_into_grade",
+          "label": "IDC Incorporated into Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "cribriform_glands",
+          "label": "Cribriform Glands",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "applicable to Gleason score 7 or 8 cancer only"
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "radiation_therapy_effect_present",
+              "label": "Radiation therapy effect present: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "hormonal_therapy_effect_present",
+              "label": "Hormonal therapy effect present: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_therapy_effect",
+              "label": "Other therapy effect(s) present (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_quantitation",
+          "label": "TUMOR QUANTITATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "tumor_quantitation",
+          "label": "Tumor Quantitation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "for_turp_specimens",
+              "label": "For TURP Specimens"
+            }
+          ]
+        },
+        {
+          "field_id": "estimated_percentage_of_prostate_involved_by_tumor",
+          "label": "Estimated Percentage of Prostate Involved by Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_1",
+              "label": "Less than 1%"
+            },
+            {
+              "value": "1_5",
+              "label": "1 - 5%"
+            },
+            {
+              "value": "6_10",
+              "label": "6 - 10%"
+            },
+            {
+              "value": "11_20",
+              "label": "11 - 20%"
+            },
+            {
+              "value": "21_30",
+              "label": "21 - 30%"
+            },
+            {
+              "value": "31_40",
+              "label": "31 - 40%"
+            },
+            {
+              "value": "41_50",
+              "label": "41 - 50%"
+            },
+            {
+              "value": "51_60",
+              "label": "51 - 60%"
+            },
+            {
+              "value": "61_70",
+              "label": "61 - 70%"
+            },
+            {
+              "value": "71_80",
+              "label": "71 - 80%"
+            },
+            {
+              "value": "81_90",
+              "label": "81 - 90%"
+            },
+            {
+              "value": "greater_than_90",
+              "label": "Greater than 90%"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_positive_chips",
+          "label": "Number of Positive Chips: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "total_number_of_chips",
+          "label": "Total Number of Chips: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "for_enucleation_and_other_specimens",
+              "label": "For Enucleation and Other Specimens"
+            }
+          ]
+        },
+        {
+          "field_id": "greatest_dimension_of_dominant_nodule_in_millimeters_mm_if_present",
+          "label": "Greatest Dimension of Dominant Nodule in Millimeters (mm) (if present): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_dimension_of_dominant_nodule_in_millimeters_mm______x______mm",
+          "label": "Additional Dimension of Dominant Nodule in Millimeters (mm): ____ x ____ mm",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_estimated_percentage_of_prostatic_tissue_involved_by_tumor",
+          "label": "Specify Estimated Percentage of Prostatic Tissue Involved by Tumor: _________________ %",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "periprostatic_fat_invasion",
+          "label": "Periprostatic Fat Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "report if identified in specimen"
+        },
+        {
+          "field_id": "seminal_vesicle_invasion",
+          "label": "Seminal Vesicle Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "report if identified in specimen"
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "atypical_intraductal_proliferation",
+              "label": "Atypical intraductal proliferation (AIP)"
+            },
+            {
+              "value": "high_grade_prostatic_intraepithelial_neoplasia",
+              "label": "High-grade prostatic intraepithelial neoplasia (PIN)"
+            },
+            {
+              "value": "atypical_adenomatous_hyperplasia",
+              "label": "Atypical adenomatous hyperplasia (adenosis)"
+            },
+            {
+              "value": "nodular_prostatic_hyperplasia",
+              "label": "Nodular prostatic hyperplasia"
+            },
+            {
+              "value": "inflammation",
+              "label": "Inflammation (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "transurethral_resection_specimens_that_weigh_12_grams_or_less_should_be_submitted_in_their_entirety1",
+          "label": "Transurethral resection specimens that weigh 12 grams or less should be submitted in their entirety.1 For specimens that weigh more than 12g, the initial 12g are submitted, and 1 cassette may be submitted for every additional 5 g of remaining tissue.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_general_random_chips_are_submitted_however_if_some_chips_are_firmer_or_have_a_yellow_or_orange_ye",
+          "label": "In general, random chips are submitted; however, if some chips are firmer or have a yellow or orange-yellow appearance, they should be submitted preferentially.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_an_unsuspected_carcinoma_is_found_in_tissue_submitted_and_it_involves_5_or_less_of_the_tissue_exa",
+          "label": "If an unsuspected carcinoma is found in tissue submitted, and it involves 5% or less of the tissue examined, the remaining tissue may be submitted for microscopic examination, especially in younger patients.3 Involvement in 5% or less of the tissue is considered as T1a, whereas involvement in greater than 5% is considered as T1b.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "humphrey_pa_walther_pj_adenocarcinoma_of_the_prostate_i_sampling_considerations_am_j_clin_pathol_199",
+          "label": "Humphrey PA, Walther PJ. Adenocarcinoma of the prostate, I: sampling considerations. Am J Clin Pathol. 1993;99:746-759.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trpkov_k_thompson_j_kulaga_a_yilmaz_a_how_much_tissue_sampling_is_required_when_minimal_prostate_car",
+          "label": "Trpkov K, Thompson J, Kulaga A, Yilmaz A. How much tissue sampling is required when minimal prostate carcinoma is identified on transurethral resection? Arch Path Lab Med. 2008;132(8):1313-1316.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_magi_galluzzi_c_amin_mb_srigley_jr_adenocarcinoma_of_the_prostate_in_amin_mb_grignon_dj_sri",
+          "label": "Paner GP, Magi-Galluzzi C, Amin MB, Srigley JR: Adenocarcinoma of the prostate. In: Amin MB, Grignon DJ, Srigley JR, Eble JN,eds. Urological Pathology. Philadelphia, PA: Lippincott William & Wilkins; 2014:559-673.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to_invasive_adenocarcinomas_and_other_carcinomas_of_the_prostate_gland1_carcin",
+          "label": "This protocol applies to invasive adenocarcinomas and other carcinomas of the prostate gland.1 Carcinomas other than adenocarcinoma are exceptionally uncommon, accounting for less than 1% of prostatic tumors. Tumors such as neuroendocrine and squamous cell carcinomas may occur in pure form or are admixed with adenocarcinoma. This protocol does not apply to urothelial carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "some_adenocarcinoma_subtypes_and_unusual_patterns_have_percentage_cut_offs_to_render_their_diagnosis",
+          "label": "Some adenocarcinoma subtypes and unusual patterns have percentage cut-offs to render their diagnosis. Since examination of the entire tumor may not be amenable in TURP, a descriptive approach in their diagnosis should also be considered (e.g., adenocarcinoma with mucinous features, adenocarcinoma with signet ring-like cell features).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_kench_jg_rubin_ma_et_al_tumours_of_the_prostate_in_who_classification_of_tumours_editorial_b",
+          "label": "Amin MB, Kench JG, Rubin MA, et al. Tumours of the prostate. In: WHO Classification of Tumours Editorial Board, eds. Urinary and Male Genital Tumours. WHO Classification of Tumours. Geneva, Switzerland: WHO Press; 2022:193-234.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gleason_score",
+          "label": "Gleason Score",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_gleason_grading_system_is_recommended_for_use_in_all_prostatic_specimens_containing_adenocarcino",
+          "label": "The Gleason grading system is recommended for use in all prostatic specimens containing adenocarcinoma, with the exception of those showing treatment effects, usually in the setting of androgen deprivation and radiation therapy.1,2,3,4,5,6,7,8,9 Readers are referred to the recommendations of three ISUP consensus conferences and the GUPS position paper dealing with the contemporary usage of the Gleason system (also see Figure 1).4,5,6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_gleason_score_is_the_sum_of_the_primary_most_predominant_in_terms_of_surface_area_of_involvement",
+          "label": "The Gleason score is the sum of the primary (most predominant in terms of surface area of involvement) Gleason grade and the secondary (second most predominant) Gleason grade. Where no secondary Gleason grade exists, the primary Gleason grade is doubled to determine a Gleason score. The primary and secondary grades should be reported in addition to the Gleason score, that is, Gleason score 7(3+4) or 7(3+4). In TURP or enucleation specimens, Gleason score is the sum of the primary (most predominant) Gleason grade and highest Gleason grade.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_2015_modified_isup_gleason_schematic_diagram5",
+          "label": "Figure 1. 2015 modified ISUP Gleason schematic diagram.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_turp_specimens_with_a_minor_secondary_component_less_than_5_of_tumor_and_where_the_secondary_comp",
+          "label": "In TURP specimens, with a minor secondary component (less than 5% of tumor) and where the secondary component is of higher grade, the latter should be reported. For instance, a case showing more than 95% Gleason pattern 3 and less than 5% Gleason pattern 4 should be reported as Gleason score 7(3+4). Conversely, if a minor secondary pattern is of lower grade, it need not be reported. For instance, where there is greater than 95% Gleason pattern 4 and less than 5% Gleason pattern 3, the score should be reported as Gleason score 8(4+4).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_turp_specimens_where_more_than_2_patterns_are_present_and_the_worst_grade_is_neither_the_predomin",
+          "label": "In TURP specimens where more than 2 patterns are present, and the worst grade is neither the predominant nor the secondary grade, the predominant and highest grade should be chosen to arrive at a score (e.g., 75% pattern 3, 20-25% pattern 4, less than 5% pattern 5 is scored as 3+5=8).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "another_recommendation_is_that_the_percentage_of_pattern_4_should_be_reported_in_all_gleason_score_7",
+          "label": "Another recommendation is that the percentage of pattern 4 should be reported in all Gleason score 7(3+4, 4+3) cases.6,7,10,11,12 This measurement further stratifies Gleason score 7 and allows identification of cases with limited pattern 4 (e.g., <10%) or extensive pattern 4 (e.g., >80%).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_now_recognized_that_gleason_pattern_4_has_four_basic_architectures_in_cribriform_fused_poorly_",
+          "label": "It is now recognized that Gleason pattern 4 has four basic architectures in cribriform, fused, poorly-formed and glomeruloid glands.12,13,14 Among these architectures, cribriform has been shown to be an independent predictor of poorer outcome particularly in Gleason score 7 tumors and its presence is now recommended to be reported in Gleason pattern 4 cancer. There are recent attempts to standardize the definition of cribriform pattern.15 ISUP defines cribriform patterns as a confluent sheet of contiguous malignant epithelial cells with multiple glandular lumina that are easily visible at low power (objective magnification x10) and with no intervening stroma or mucin separating individual or fused glandular structures.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_treatment_effects_to_cancer_should_be_reported_and_is_important_especially_if_gleason_g",
+          "label": "The presence treatment effects to cancer should be reported and is important especially if Gleason grading is rendered not applicable.3,4 It should be recognized that in post-treatment settings, grading may still be applied for prostate cancers lacking treatment effects particularly in new onset (de novo) cancers.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_group",
+          "label": "Grade Group",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_recognized_that_contemporary_gleason_scores_can_be_grouped_into_five_prognostic_categories_gra",
+          "label": "It is recognized that contemporary Gleason scores can be grouped into five prognostic categories, Grade groups 1-5.16 This grade grouping has also been subsequently validated by other independent studies in surgical cohorts showing significant correlation with outcome.17,18 The new grade grouping has been endorsed by ISUP, GUPS and in the 2016 WHO classification. The grade group is also referred to as ISUP grade or WHO grade in other publications.1,5,6,7 The grade group should be reported in parallel with the Gleason score.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_grade_groups",
+          "label": "Table: Grade Groups",
+          "required": true,
+          "type": "free_text",
+          "guidance": "For cases with greater than 95% poorly formed/fused/cribriform glands on a core or at radical prostatectomy, the component of less than 5% well-formed glands is not factored into the grade; should therefore be graded as grade group 4. Poorly formed/fused/cribriform glands can be a more minor component."
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "humphrey_p_amin_mb_berney_d_billis_a_et_al_acinar_adenocarcinoma_in_moch_h_humphrey_pa_ulbright_t_re",
+          "label": "Humphrey P, Amin MB, Berney D, Billis A, et al. Acinar adenocarcinoma. In: Moch H, Humphrey PA, Ulbright T, Reuter VE, eds. Pathology and Genetics: Tumors of the Urinary System and Male Genital Organs. 4th edition. WHO Classification of Tumors. Zurich, Switzerland: WHO Press; 2015:3-28.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gleason_dr_mellinger_gt_the_veterans_administration_cooperative_urological_research_group_prediction",
+          "label": "Gleason DR, Mellinger GT, the Veterans Administration Cooperative Urological Research Group. Prediction of prognosis for prostate adenocarcinoma by combined histological grading and clinical staging. J Urol. 1974;111:58-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_magi_galluzzi_c_amin_mb_srigley_jr_adenocarcinoma_of_the_prostate_in_amin_mb_grignon_dj_sri",
+          "label": "Paner GP, Magi-Galluzzi C, Amin MB, Srigley JR: Adenocarcinoma of the prostate. In: Amin MB, Grignon DJ, Srigley JR, Eble JN, eds. Urological Pathology. Philadelphia, PA: Lippincott William & Wilkins; 2014:559-673.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_allsbrook_jr_wc_amin_mb_egevad_l_isup_grading_committee_the_2005_international_society_of",
+          "label": "Epstein JI, Allsbrook Jr WC, Amin MB, Egevad L, ISUP Grading Committee. The 2005 International Society of Urological Pathology (ISUP) Consensus Conference on Gleason Grading of Prostatic Carcinoma. Am J Surg Pathol. 2005;29:1228-1242.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_egevad_l_amin_mb_delahunt_b_srigley_jr_humphrey_pa_and_the_grading_committee_the_2014_int",
+          "label": "Epstein JI, Egevad L, Amin MB, Delahunt B, Srigley JR, Humphrey PA; and the Grading Committee The 2014 International Society of Urological Pathology (ISUP) Consensus Conference on Gleason Grading of Prostatic Carcinoma: definition of grading patterns and proposal for a new grading system. Am J Surg Pathol. 2016; 40: 244-252.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_amin_mb_fine_sw_et_al_the_2019_genitourinary_pathology_society_gups_white_paper_on_contem",
+          "label": "Epstein JI, Amin MB, Fine SW, et al. The 2019 Genitourinary Pathology Society (GUPS) White Paper on Contemporary Grading of Prostate Cancer. Arch Path Lab Med. 2021;145:461-493.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_leenders_gjlh_van_der_kwast_th_grignon_dj_et_al_the_2019_international_society_of_urological_pat",
+          "label": "van Leenders GJLH, van der Kwast TH, Grignon DJ, et al. The 2019 International Society of Urological Pathology (ISUP) Consensus Conference on Grading of Prostatic Carcinoma. Am J Surg Pathol. 2020;44:e87-e99.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_amin_mb_reuter_ve_et_al_contemporary_gleason_grading_of_prostate_carcinoma_an_update_with",
+          "label": "Epstein JI, Amin MB, Reuter VE, et al. Contemporary Gleason grading of prostate carcinoma. An update with discussion on practical issues to implement the International Society of Urological Pathology (ISUP) consensus conference on Gleason grading of prostatic carcinoma. Am J Surg Pathol. 2017;41:e1-e7.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_gandhi_j_choy_b_et_al_essential_updates_in_grading_morphotyping_reporting_and_staging_of_pr",
+          "label": "Paner GP, Gandhi J, Choy B, et al. Essential updates in grading, morphotyping, reporting and staging of prostate carcinoma for general surgical pathologists. Arch Pathol Lab Med. 2019;140:55-564.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sauter_g_steurer_s_clauditz_ts_et_al_clinical_utility_of_quantitative_gleason_grading_in_prostate_bi",
+          "label": "Sauter G, Steurer S, Clauditz TS, et al. Clinical Utility of Quantitative Gleason Grading in Prostate Biopsies and Prostatectomy Specimens. Eur Urol. 2016;69:592-598.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cole_ai_morgan_tm_spratt_de_et_al_prognostic_value_of_percent_gleason_grade_4_at_prostate_biopsy_in_",
+          "label": "Cole AI, Morgan TM, Spratt DE, et al. Prognostic value of percent Gleason grade 4 at prostate biopsy in predicting prostatectomy pathology and recurrence. J Urol. 2016;196:405-411.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "choy_b_pearce_sm_anderson_bb_et_al_prognostic_significance_of_percentages_and_architectural_types_of",
+          "label": "Choy B, Pearce SM, Anderson BB, et al. Prognostic significance of percentages and architectural types of contemporary Gleason pattern 4 prostate cancer in radical prostatectomy. Am J Surg Pathol. 2016;40:1400-6.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "iczkowski_ka_torkko_kc_kotnis_gr_et_al_digital_quantification_of_five_high_grade_prostate_cancer_pat",
+          "label": "Iczkowski KA, Torkko KC, Kotnis GR, et al. Digital quantification of five high-grade prostate cancer patterns, including the cribriform pattern, and their association with adverse outcome. Am J Clin Pathol. 2011;136:98-107.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kweldam_cf_wildhagen_mf_steyerberg_ew_et_al_cribriform_growth_is_highly_predictive_for_postoperative",
+          "label": "Kweldam CF, Wildhagen MF, Steyerberg EW, et al. Cribriform growth is highly predictive for postoperative metastasis and disease-specific death in Gleason score 7 prostate cancer. Mod Pathol. 2015;28:457-464.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pierorazio_pm_walsh_pc_partin_aw_epstein_ji_prognostic_gleason_grade_grouping_data_based_on_the_modi",
+          "label": "Pierorazio PM, Walsh PC, Partin AW, Epstein JI. Prognostic Gleason grade grouping: data based on the modified Gleason scoring system. BJU Int. 2013;111:753-760.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_zelefsky_mj_sjoberg_dd_et_al_a_contemporary_prostate_cancer_grading_system_a_validated_al",
+          "label": "Epstein JI, Zelefsky MJ, Sjoberg DD, et al. A contemporary prostate cancer grading system: a validated alternative to the Gleason score. Eur Urol. 2016;69:428-435.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "berney_dm_beltran_l_fisher_g_et_al_validation_of_a_contemporary_prostate_cancer_grading_system_using",
+          "label": "Berney DM, Beltran L, Fisher G, et al. Validation of a contemporary prostate cancer grading system using prostate cancer death as outcome. Br J Cancer. 2016;114(10):1078-1083.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "d_intraductal_carcinoma",
+          "label": "D. Intraductal Carcinoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "IDC"
+        },
+        {
+          "field_id": "intraductal_carcinoma_idc_has_independent_prognostic_significance_and_its_reporting_is_recommended12",
+          "label": "Intraductal carcinoma (IDC) has independent prognostic significance and its reporting is recommended.1,2,3,4,5 Intraductal carcinoma is uncommon in TURP specimens and when present it is usually found within an invasive tumor. It is important to distinguish IDC from high-grade prostatic intraepithelial neoplasia (PIN) and atypical intraductal proliferation (AIP).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "both_isup_and_gups_recommend_that_gleason_scores_or_grade_groups_should_not_be_assigned_to_pure_idc6",
+          "label": "Both ISUP and GUPS recommend that Gleason scores or grade groups should not be assigned to pure IDC.6,7,8 However, grading invasive cancer with concomitant IDC is controversial. ISUP recommends incorporating IDC in determining the grade while GUPS recommends not to include IDC in determining the grade. It is recommended to specify which of these two approaches is applied when grading invasive cancer with concomitant IDC.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distinction_between_idc_and_invasive_cribriform_or_comedonecrosis_patterns_should_be_based_on_morpho",
+          "label": "Distinction between IDC and invasive cribriform or comedonecrosis patterns should be based on morphological examination. In the approach where IDC is not incorporated in grading, immunohistochemistry for basal cells can be used if the results will change the grade.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "guo_cc_and_epstein_ji_intraductal_carcinoma_of_the_prostate_on_needle_biopsy_histologic_features_and",
+          "label": "Guo CC and Epstein JI. Intraductal carcinoma of the prostate on needle biopsy: Histologic features and clinical significance. Mod Pathol. 2006;19(12):1528-1535.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cohen_rj_wheeler_tm_bonkhoff_h_and_rubin_ma_a_proposal_on_the_identification_histologic_reporting_an",
+          "label": "Cohen RJ, Wheeler TM, Bonkhoff H and Rubin MA. A proposal on the identification, histologic reporting, and implications of intraductal prostatic carcinoma. Arch Pathol Lab Med. 2007;131(7):1103-1109.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zhou_m_intraductal_carcinoma_of_the_prostate_the_whole_story_pathology_2013456533_539",
+          "label": "Zhou M. Intraductal carcinoma of the prostate: the whole story. Pathology. 2013;45(6):533-539.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "montironi_r_zhou_m_magi_galluzzi_c_epstein_ji_features_and_prognostic_significance_of_intraductal_ca",
+          "label": "Montironi R, Zhou M, Magi-Galluzzi C, Epstein JI. Features and prognostic significance of intraductal carcinoma of the prostate. Eur Urol Oncol. 2018;1:21-28.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "varma_m_intraductal_carcinoma_of_the_prostate_a_guide_for_practicing_pathologist_adv_anat_pathol_202",
+          "label": "Varma M. Intraductal carcinoma of the prostate: A guide for practicing pathologist. Adv Anat Pathol. 2021. Online ahead of print.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_egevad_l_amin_mb_delahunt_b_srigley_jr_humphrey_pa_and_the_grading_committee_the_2014_int",
+          "label": "Epstein JI, Egevad L, Amin MB, Delahunt B, Srigley JR, Humphrey PA; and the Grading Committee The 2014 International Society of Urological Pathology (ISUP) Consensus Conference on Gleason Grading of Prostatic Carcinoma: definition of grading patterns and proposal for a new grading system. Am J Surg Pathol. 2016; 40: 244-252.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_amin_mb_fine_sw_et_al_the_2019_genitourinary_pathology_society_gups_white_paper_on_contem",
+          "label": "Epstein JI, Amin MB, Fine SW, et al. The 2019 Genitourinary Pathology Society (GUPS) White Paper on Contemporary Grading of Prostate Cancer. Arch Path Lab Med. 2021;145:461-493.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_leenders_gjlh_van_der_kwast_th_girgnon_dj_et_al_the_2019_international_society_of_urological_pat",
+          "label": "van Leenders GJLH, van der Kwast TH, Girgnon DJ, et al. The 2019 International Society of Urological Pathology (ISUP) Consensus Conference on Grading of Prostatic Carcinoma. Am J Surg Pathol. 2020;44:e87-e99.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "studies_have_shown_that_prostate_cancer_volume_is_a_prognostic_factor_although_the_data_on_its_indep",
+          "label": "Studies have shown that prostate cancer volume is a prognostic factor, although the data on its independent prognostic significance is conflicting.1,2,3,4,5The designation of the percentage of cancer tissue in transurethral samples is important. When prostate cancer is discovered incidentally (i.e., discovered in specimens submitted for clinically benign disease, usually benign prostatic hyperplasia [BPH]), the percentage involvement is used to determine the clinical T1 substage, with less than or equal to 5% involvement being T1a and greater than 5% being T1b.6 In TURP and enucleations specimens, the percentage of tissue involved by tumor can also be quantified by simple visual inspection.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stamey_t_mcneal_j_yemoto_c_et_al_biological_determinants_of_cancer_progression_in_men_with_prostate_",
+          "label": "Stamey T, McNeal J, Yemoto C, et al. Biological determinants of cancer progression in men with prostate cancer. JAMA. 1999;281:1395-1400.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "salomon_l_levrel_o_anastasiadis_a_et_al_prognostic_significance_of_tumor_volume_after_radical_prosta",
+          "label": "Salomon L, Levrel O, Anastasiadis A, et al. Prognostic significance of tumor volume after radical prostatectomy: a multivariate analysis of pathological prognostic factors. Eur Urol. 2003;43:39-44.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_prognostic_significance_of_tumor_volume_in_radical_prostatectomy_and_needle_biopsy_j_urol",
+          "label": "Epstein JI. Prognostic significance of tumor volume in radical prostatectomy and needle biopsy. J Urol. 2011;187:790-7.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_magi_galluzzi_c_amin_mb_srigley_jr_adenocarcinoma_of_the_prostate_in_amin_mb_grignon_dj_sri",
+          "label": "Paner GP, Magi-Galluzzi C, Amin MB, Srigley JR: Adenocarcinoma of the prostate. In: Amin MB, Grignon DJ, Srigley JR, Eble JN,eds. Urological Pathology. Philadelphia, PA: Lippincott William & Wilkins; 2014:559-673.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ito_y_vertosick_ea_sjoberg_dd_et_al_in_organ_confined_prostate_cancer_tumor_quantitation_not_found_t",
+          "label": "Ito Y, Vertosick EA, Sjoberg DD, et al. In organ-confined prostate cancer, tumor quantitation not found to aid in prediction of biochemical recurrence. Am J Surg Pathol. 2019;43:1061-1065.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perineural_invasion_pni_in_needle_core_biopsies_has_been_associated_with_extraprostatic_extension_in",
+          "label": "Perineural invasion (PNI) in needle core biopsies has been associated with extraprostatic extension in some correlative radical prostatectomy studies. However, the significance of this finding as a predictor of stage and outcome is questionable in multivariate analysis.1,2,3,4,5 Presence of perineural invasion may also be reported in TURP specimens.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bismar_ta_lewis_js_jr_vollmer_rt_humphrey_pa_multiple_measures_of_carcinoma_extent_versus_perineural",
+          "label": "Bismar TA, Lewis JS, JR, Vollmer RT, Humphrey PA. Multiple measures of carcinoma extent versus perineural invasion in prostate needle biopsy tissue in prediction of pathologic stage in a screening population. Am J Surg Pathol. 2003;27:432-440.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "harnden_p_shelley_md_clements_h_et_al_the_prognostic_significance_of_perineural_invasion_in_prostati",
+          "label": "Harnden P, Shelley MD, Clements H, et al. The prognostic significance of perineural invasion in prostatic carcinoma biopsies: a systematic review.Cancer. 2007;109:13-24.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "loeb_s_epstein_j_humphreys_e_et_al_does_perineural_invasion_on_prostate_biopsy_predict_adverse_prost",
+          "label": "Loeb S, Epstein J, Humphreys E, et al. Does perineural invasion on prostate biopsy predict adverse prostatectomy outcomes?BJU Int. 2010;105:1510–1513.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_magi_galluzzi_c_amin_mb_srigley_jr_adenocarcinoma_of_the_prostate_in_amin_mb_grignon_dj_sri",
+          "label": "Paner GP, Magi-Galluzzi C, Amin MB, Srigley JR: Adenocarcinoma of the prostate. In: Amin MB, Grignon DJ, Srigley JR, Eble JN,eds. Urological Pathology. Philadelphia, PA: Lippincott William & Wilkins; 2014:559-673.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

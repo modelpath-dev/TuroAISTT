@@ -1,0 +1,1101 @@
+{
+  "template_id": "UreterRenalPelvis.Bx_2.4.0.0.REL.CAPCP",
+  "organ": "URETER, RENAL PELVIS: Biopsy",
+  "protocol_posting_date": "March 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "specimen",
+          "label": "Specimen",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "renal_pelvis",
+              "label": "Renal pelvis"
+            },
+            {
+              "value": "ureter",
+              "label": "Ureter"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "urothelial",
+          "label": "Urothelial",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "papillary_urothelial_carcinoma_non_invasive",
+              "label": "Papillary urothelial carcinoma, non-invasive"
+            },
+            {
+              "value": "urothelial_carcinoma_in_situ",
+              "label": "Urothelial carcinoma in situ"
+            },
+            {
+              "value": "urothelial_carcinoma_invasive",
+              "label": "Urothelial carcinoma, invasive (conventional)"
+            },
+            {
+              "value": "urothelial_carcinoma_micropapillary",
+              "label": "Urothelial carcinoma, micropapillary"
+            },
+            {
+              "value": "urothelial_carcinoma_nested",
+              "label": "Urothelial carcinoma, nested"
+            },
+            {
+              "value": "urothelial_carcinoma_tubular_and_microcystic",
+              "label": "Urothelial carcinoma, tubular and microcystic"
+            },
+            {
+              "value": "urothelial_carcinoma_lymphoepithelioma_like",
+              "label": "Urothelial carcinoma, lymphoepithelioma-like"
+            },
+            {
+              "value": "urothelial_carcinoma_plasmacytoid",
+              "label": "Urothelial carcinoma, plasmacytoid"
+            },
+            {
+              "value": "urothelial_carcinoma_sarcomatoid",
+              "label": "Urothelial carcinoma, sarcomatoid"
+            },
+            {
+              "value": "urothelial_carcinoma_giant_cell",
+              "label": "Urothelial carcinoma, giant cell"
+            },
+            {
+              "value": "urothelial_carcinoma_poorly_differentiated",
+              "label": "Urothelial carcinoma, poorly differentiated"
+            },
+            {
+              "value": "urothelial_carcinoma_lipid_rich",
+              "label": "Urothelial carcinoma, lipid-rich"
+            },
+            {
+              "value": "urothelial_carcinoma_clear_cell",
+              "label": "Urothelial carcinoma, clear cell (glycogen-rich)"
+            },
+            {
+              "value": "urothelial_carcinoma_with_squamous_differentiation",
+              "label": "Urothelial carcinoma with squamous differentiation"
+            },
+            {
+              "value": "urothelial_carcinoma_with_glandular_differentiation",
+              "label": "Urothelial carcinoma with glandular differentiation"
+            },
+            {
+              "value": "urothelial_carcinoma_with_trophoblastic_differentiation",
+              "label": "Urothelial carcinoma with trophoblastic differentiation"
+            },
+            {
+              "value": "urothelial_carcinoma_with_müllerian_differentiation",
+              "label": "Urothelial carcinoma with Müllerian differentiation"
+            }
+          ]
+        },
+        {
+          "field_id": "squamous",
+          "label": "Squamous",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma"
+            },
+            {
+              "value": "verrucous_carcinoma",
+              "label": "Verrucous carcinoma"
+            },
+            {
+              "value": "squamous_cell_carcinoma_in_situ",
+              "label": "Squamous cell carcinoma in situ (no invasive carcinoma identified)"
+            }
+          ]
+        },
+        {
+          "field_id": "glandular",
+          "label": "Glandular",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma_nos",
+              "label": "Adenocarcinoma, NOS"
+            },
+            {
+              "value": "adenocarcinoma_enteric",
+              "label": "Adenocarcinoma, enteric"
+            },
+            {
+              "value": "adenocarcinoma_mucinous",
+              "label": "Adenocarcinoma, mucinous"
+            },
+            {
+              "value": "adenocarcinoma_mixed",
+              "label": "Adenocarcinoma, mixed"
+            },
+            {
+              "value": "adenocarcinoma_signet_ring_cell",
+              "label": "Adenocarcinoma, signet-ring cell"
+            },
+            {
+              "value": "adenocarcinoma_in_situ",
+              "label": "Adenocarcinoma in situ (no invasive carcinoma identified)"
+            }
+          ]
+        },
+        {
+          "field_id": "müllerian",
+          "label": "Müllerian",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "clear_cell_adenocarcinoma",
+              "label": "Clear cell adenocarcinoma"
+            },
+            {
+              "value": "endometrioid_carcinoma",
+              "label": "Endometrioid carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "neuroendocrine",
+          "label": "Neuroendocrine",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "well_differentiated_neuroendocrine_tumor",
+              "label": "Well-differentiated neuroendocrine tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentages_of_histologic_subtypes_and_divergent_differentiations_present_totaling_100",
+          "label": "Specify Percentages of Histologic Subtypes and Divergent Differentiations Present (totaling 100%)#",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "urothelial_carcinoma_invasive",
+              "label": "Urothelial carcinoma, invasive (conventional): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_micropapillary",
+              "label": "Urothelial carcinoma, micropapillary: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_nested",
+              "label": "Urothelial carcinoma, nested: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_large_nested",
+              "label": "Urothelial carcinoma, large nested: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_tubular_and_microcystic",
+              "label": "Urothelial carcinoma, tubular and microcystic: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_lymphoepithelioma_like",
+              "label": "Urothelial carcinoma, lymphoepithelioma-like: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_plasmacytoid",
+              "label": "Urothelial carcinoma, plasmacytoid: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_sarcomatoid",
+              "label": "Urothelial carcinoma, sarcomatoid: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_giant_cell",
+              "label": "Urothelial carcinoma, giant cell: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_poorly_differentiated",
+              "label": "Urothelial carcinoma, poorly differentiated: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "urothelial_carcinoma_lipid_rich",
+              "label": "Urothelial carcinoma, lipid-rich: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "clear_cell",
+              "label": "Clear cell (glycogen-rich): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "squamous_differentiation",
+              "label": "Squamous differentiation: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "glandular",
+              "label": "Glandular (adenocarcinoma) differentiation: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "trophoblastic_differentiation",
+              "label": "Trophoblastic differentiation: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "müllerian_differentiation",
+              "label": "Müllerian differentiation: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Applicable for mixed subtypes, divergent differentiations, and other carcinomas"
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "for_urothelial_carcinoma_other_variants_or_divergent_differentiation",
+          "label": "For urothelial carcinoma, other variants, or divergent differentiation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "low_grade",
+              "label": "Low-grade"
+            },
+            {
+              "value": "high_grade",
+              "label": "High-grade"
+            }
+          ]
+        },
+        {
+          "field_id": "for_squamous_cell_carcinoma_or_adenocarcinoma",
+          "label": "For squamous cell carcinoma or adenocarcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well-differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_assessed",
+              "label": "Cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "non_invasive_papillary_carcinoma",
+              "label": "Non-invasive papillary carcinoma"
+            },
+            {
+              "value": "carcinoma_in_situ",
+              "label": "Carcinoma in situ"
+            },
+            {
+              "value": "invades_subepithelial_connective_tissue",
+              "label": "Invades subepithelial connective tissue"
+            },
+            {
+              "value": "invades_muscularis",
+              "label": "Invades muscularis"
+            },
+            {
+              "value": "invades_beyond_muscularis_into_peripelvic_fat_or_renal_parenchyma",
+              "label": "Invades beyond muscularis into peripelvic fat or renal parenchyma (for renal pelvis only)"
+            },
+            {
+              "value": "invades_beyond_muscularis_into_periureteric_fat",
+              "label": "Invades beyond muscularis into periureteric fat (for ureter only)"
+            },
+            {
+              "value": "invades_adjacent_organs_or_through_the_kidney_into_perinephric_fat",
+              "label": "Invades adjacent organs or through the kidney into perinephric fat: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_configuration",
+          "label": "Tumor Configuration",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "papillary",
+              "label": "Papillary"
+            },
+            {
+              "value": "solid_nodule",
+              "label": "Solid / nodule"
+            },
+            {
+              "value": "flat",
+              "label": "Flat"
+            },
+            {
+              "value": "ulcerated",
+              "label": "Ulcerated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "muscularis",
+          "label": "Muscularis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_in_specimen",
+              "label": "Present in specimen"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "associated_epithelial_lesions",
+          "label": "Associated Epithelial Lesions",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "urothelial_papilloma",
+              "label": "Urothelial papilloma"
+            },
+            {
+              "value": "urothelial_papilloma_inverted_type",
+              "label": "Urothelial papilloma, inverted type"
+            },
+            {
+              "value": "papillary_urothelial_neoplasm_low_malignant_potential",
+              "label": "Papillary urothelial neoplasm, low malignant potential (PUNLMP)"
+            },
+            {
+              "value": "urothelial_dysplasia",
+              "label": "Urothelial dysplasia"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "inflammation_regenerative_changes",
+              "label": "Inflammation / regenerative changes"
+            },
+            {
+              "value": "therapy_related_changes",
+              "label": "Therapy-related changes"
+            },
+            {
+              "value": "cautery_artifact",
+              "label": "Cautery artifact"
+            },
+            {
+              "value": "ureteritis_cystica_et_glandularis",
+              "label": "Ureteritis cystica et glandularis"
+            },
+            {
+              "value": "non_keratinizing_squamous_metaplasia",
+              "label": "Non-keratinizing squamous metaplasia"
+            },
+            {
+              "value": "keratinizing_squamous_metaplasia",
+              "label": "Keratinizing squamous metaplasia"
+            },
+            {
+              "value": "intestinal_metaplasia",
+              "label": "Intestinal metaplasia"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_relevant_history_is_important_for_interpretation_of_all_upper_urinary_tract_renal_pelvis_and_urete",
+          "label": "A relevant history is important for interpretation of all upper urinary tract (renal pelvis and ureter) specimens.  A history of renal stones, recent urinary tract procedures, infections, or obstruction can influence the interpretation of random biopsies obtained from patients with hematuria. Any neoplasms previously diagnosed should be specified, including the histologic type, primary site, and histologic grade. Primary tumors may be associated with hereditary nonpolyposis colon cancer (HNPCC) syndrome (Lynch syndrome II). Renal pelvic tumors are more often seen in analgesic abusers, who often have analgesic nephropathy, including papillary necrosis. If prior therapy has been given, it should be described (systemic or intravesical chemotherapy, immunotherapy, radiation, etc.). The method of collection and date also should be specified in urine cytology specimens. Cytologic specimens from the ureter or renal pelvis may be over-interpreted if their site of sampling is not stated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "like_the_urinary_bladder_the_vast_majority_more_than_95_of_carcinomas_of_the_renal_pelvis_and_ureter",
+          "label": "Like the urinary bladder, the vast majority (more than 95%) of carcinomas of the renal pelvis and ureter are urothelial in origin.1,2,3,4,5 The most recent 2022 World Health Organization (WHO) classification of tumors of the urinary tract, including for ureter and renal pelvis, is provided in this note. Benign tumors are included in this classification because, within the same patient, a spectrum of differentiation from benign to malignant tumors may be seen, either at the same time or over the clinical course of the disease. The full spectrum of invasive urothelial carcinoma and its subtypes (variants) as found in the urinary bladder may also be found in the upper tract. In cases of mixed urothelial subtypes and/or divergent differentiations, each component should be reported, including admixed neuroendocrine carcinoma if present. The distinction between a urothelial carcinoma with divergent squamous, glandular, or Müllerian differentiation, and a pure squamous cell carcinoma, adenocarcinoma or Müllerian is important. The 2022 WHO classification, requires a pure histology of squamous cell carcinoma, adenocarcinoma or Müllerian to designate a tumor as such, all others with recognizable papillary, invasive, or flat carcinoma in situ (CIS) urothelial component being considered as urothelial carcinoma with divergent differentiation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lynch_syndrome_also_known_as_hereditary_nonpolyposis_colorectal_cancer_predisposes_patients_to_urolo",
+          "label": "Lynch syndrome, also known as hereditary nonpolyposis colorectal cancer, predisposes patients to urological cancer, particularly upper tract urothelial carcinoma.6,7,8 Upper tract urothelial carcinoma develops in up to 28% of patients with known Lynch syndrome. Therefore, pathologists should be aware of Lynch syndrome and their important role in identifying Lynch syndrome patients by considering appropriate tissue tests. Recently several guidelines have been published regarding when and what tissue testing is appropriate for screening patients with upper tract urothelial carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urothelial_tumors",
+          "label": "Urothelial tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "invasive_urothelial_carcinoma",
+          "label": "Invasive urothelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "conventional_urothelial_carcinoma",
+          "label": "Conventional urothelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urothelial_carcinoma_with_squamous_differentiation",
+          "label": "Urothelial carcinoma with squamous differentiation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urothelial_carcinoma_with_glandular_differentiation",
+          "label": "Urothelial carcinoma with glandular differentiation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urothelial_carcinoma_with_trophoblastic_differentiation",
+          "label": "Urothelial carcinoma with trophoblastic differentiation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nested_urothelial_carcinoma",
+          "label": "Nested urothelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tubular_and_microcystic_urothelial_carcinomas",
+          "label": "Tubular and microcystic urothelial carcinomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "micropapillary_urothelial_carcinoma",
+          "label": "Micropapillary urothelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphoepithelioma_like_urothelial_carcinoma",
+          "label": "Lymphoepithelioma-like urothelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "plasmacytoid_urothelial_carcinoma",
+          "label": "Plasmacytoid urothelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "giant_cell_urothelial_carcinoma",
+          "label": "Giant cell urothelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lipid_rich_urothelial_carcinoma",
+          "label": "Lipid-rich urothelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_glycogen_rich_urothelial_carcinoma",
+          "label": "Clear cell (glycogen-rich) urothelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urothelial_carcinoma_poorly_differentiated",
+          "label": "Urothelial carcinoma, poorly differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "noninvasive_urothelial_lesions",
+          "label": "Noninvasive urothelial lesions",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urothelial_carcinoma_in_situ",
+          "label": "Urothelial carcinoma in situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "noninvasive_papillary_urothelial_carcinoma_high_grade",
+          "label": "Noninvasive papillary urothelial carcinoma, high grade",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "noninvasive_papillary_urothelial_carcinoma_low_grade",
+          "label": "Noninvasive papillary urothelial carcinoma, low grade",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "papillary_urothelial_neoplasm_of_low_malignant_potential",
+          "label": "Papillary urothelial neoplasm of low malignant potential",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urothelial_papilloma",
+          "label": "Urothelial papilloma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "inverted_urothelial_papilloma",
+          "label": "Inverted urothelial papilloma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_cell_neoplasms",
+          "label": "Squamous cell neoplasms",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_cell_carcinoma",
+          "label": "Squamous cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "verrucous_carcinoma",
+          "label": "Verrucous carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_papilloma",
+          "label": "Squamous papilloma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "glandular_neoplasms",
+          "label": "Glandular neoplasms",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenocarcinoma_nos",
+          "label": "Adenocarcinoma, NOS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "enteric",
+          "label": "Enteric",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucinous",
+          "label": "Mucinous",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed",
+          "label": "Mixed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "signet_ring_cell",
+          "label": "Signet-ring cell",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenocarcinoma_in_situ",
+          "label": "Adenocarcinoma in situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "villous_adenoma",
+          "label": "Villous adenoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urachal_and_diverticular_neoplasms",
+          "label": "Urachal and diverticular neoplasms",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urachal_carcinoma",
+          "label": "Urachal carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diverticular_carcinoma",
+          "label": "Diverticular carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_of_mullerian_type",
+          "label": "Tumors of Mullerian type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_adenocarcinoma",
+          "label": "Clear cell adenocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "endometrioid_carcinoma",
+          "label": "Endometrioid carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_neoplasms",
+          "label": "Neuroendocrine neoplasms",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "small_cell_neuroendocrine_carcinoma",
+          "label": "Small cell neuroendocrine carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "large_cell_neuroendocrine_carcinoma",
+          "label": "Large cell neuroendocrine carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_neuroendocrine_neoplasm",
+          "label": "Mixed neuroendocrine neoplasm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "well_differentiated_neuroendocrine_tumor",
+          "label": "Well-differentiated neuroendocrine tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paraganglioma",
+          "label": "Paraganglioma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moch_h_humphrey_pa_ulbright_tm_reuter_ve_who_classification_of_tumours_of_the_urinary_system_and_mal",
+          "label": "Moch H, Humphrey PA, Ulbright TM, Reuter VE. WHO Classification of Tumours of the Urinary System and Male Genital Organs. Geneva, Switzerland: WHO Press; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "murphy_wm_grignon_dj_perlman_ej_tumors_of_the_ureters_and_renal_pelves_in_tumors_of_the_kidney_bladd",
+          "label": "Murphy WM, Grignon DJ, Perlman EJ. Tumors of the ureters and renal pelves. In: Tumors of the Kidney, Bladder, and Related Urinary Structures. AFIP Atlas of Tumor Pathology. Series 4. Washington, DC: American Registry of Pathology; 2004:375-379.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "delahunt_b_amin_mb_hofstader_f_hartmann_a_tyczynski_je_tumours_of_the_renal_pelvis_and_ureter_in_ebl",
+          "label": "Delahunt B, Amin MB, Hofstader F, Hartmann A, Tyczynski JE. Tumours of the renal pelvis and ureter. In: Eble JN, Sauter G, Epstein JI, Sesterhenn IA, eds. World Health Organization Classification of Tumours: Pathology and Genetics of Tumours of the Urinary System and Male Genital Organs. Lyon, France: IARC Press; 2004:150-153.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_amin_mb_reuter_vr_mostofi_fk_the_bladder_consensus_conference_committee_the_world_health_",
+          "label": "Epstein JI, Amin MB, Reuter VR, Mostofi FK, the Bladder Consensus Conference Committee. The World Health Organization/International Society of Urological Pathology Consensus classification of urothelial (transitional cell) neoplasms of the urinary bladder. Am J Surg Pathol. 1998; 22:1435-1448.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roupret_m_seisen_t_birtle_aj_et_al_european_association_of_urology_guidelines_on_upper_tract_urothel",
+          "label": "Roupret M, Seisen T, Birtle AJ, et al. European Association of Urology Guidelines on Upper Tract Urothelial Carcinoma: 2023 Update. Eur Urol. 2023; 84:49-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mork_m_hubosky_sg_rouprêt_m_et_al_lynch_syndrome_a_primer_for_urologists_and_panel_recommendations_j",
+          "label": "Mork M, Hubosky SG, Rouprêt M, et al. Lynch syndrome: a primer for urologists and panel recommendations. J Urol. 2015;194(1):21-29.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lonati_c_necchi_a_rivas_jg_et_al_upper_tract_urothelial_carcinoma_in_the_lynch_syndrome_tumour_spect",
+          "label": "Lonati C, Necchi A, Rivas JG, et al. Upper tract urothelial carcinoma in the Lynch Syndrome tumour spectrum: a comprehensive overview from the European Association of Urology – Young Academic Urologists and the Global Society of Rare Genitourinary Tumors. Eur Urol Oncol. 2022; 5:30-41.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "flat_intraepithelial_lesions_and_papillary_and_invasive_lesions_are_graded_separately123456_in_the_1",
+          "label": "Flat intraepithelial lesions and papillary and invasive lesions are graded separately.1,2,3,4,5,6 In the 1973 WHO classification, papillary lesions were classified as papillomas and transitional cell carcinomas, grades 1, 2, and 3. Due to the need for a universally acceptable system, the World Health Organization/International Society of Urological Pathology (WHO/ISUP) consensus classification was proposed in 1998. This system is adopted in the 2004 WHO classification and has been validated by many studies to be prognostically significant. The 2016 WHO and 2022 WHO systems used essentially the same classification with minor modifications. Other systems may still be used according to institutional preference. Tumor grade according to both the 2004 WHO system and the 1973 WHO system may be concurrently used.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_vast_majority_of_invasive_urothelial_carcinoma_are_high_grade_with_uncommon_cases_of_invasive_lo",
+          "label": "The vast majority of invasive urothelial carcinoma are high-grade with uncommon cases of invasive low-grade tumors reported. Invasive urothelial carcinoma subtypes are graded as high-grade tumors, although these tumors should not be considered as a homogenous group in terms of behavior. Pure squamous carcinomas and adenocarcinomas are graded based on tumor differentiation as well-differentiated, moderately differentiated, and poorly differentiated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moch_h_humphrey_pa_ulbright_tm_reuter_ve_who_classification_of_tumours_of_the_urinary_system_and_mal",
+          "label": "Moch H, Humphrey PA, Ulbright TM, Reuter VE. WHO Classification of Tumours of the Urinary System and Male Genital Organs. Geneva, Switzerland: WHO Press; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "delahunt_b_amin_mb_hofstader_f_hartmann_a_tyczynski_je_tumours_of_the_renal_pelvis_and_ureter_in_ebl",
+          "label": "Delahunt B, Amin MB, Hofstader F, Hartmann A, Tyczynski JE. Tumours of the renal pelvis and ureter. In: Eble JN, Sauter G, Epstein JI, Sesterhenn IA, eds. World Health Organization Classification of Tumours: Pathology and Genetics of Tumours of the Urinary System and Male Genital Organs. Lyon, France: IARC Press; 2004:150-153.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "murphy_wm_grignon_dj_perlman_ej_tumors_of_the_ureters_and_renal_pelves_in_tumors_of_the_kidney_bladd",
+          "label": "Murphy WM, Grignon DJ, Perlman EJ. Tumors of the ureters and renal pelves. In: Tumors of the Kidney, Bladder, and Related Urinary Structures. AFIP Atlas of Tumor Pathology. Series 4. Washington, DC: American Registry of Pathology; 2004:375-379.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_amin_mb_reuter_vr_mostofi_fk_the_bladder_consensus_conference_committee_the_world_health_",
+          "label": "Epstein JI, Amin MB, Reuter VR, Mostofi FK, the Bladder Consensus Conference Committee. The World Health Organization/International Society of Urological Pathology Consensus classification of urothelial (transitional cell) neoplasms of the urinary bladder. Am J Surg Pathol. 1998; 22:1435-1448.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mostofi_fk_histological_typing_of_urinary_bladder_tumours_in_who_histological_classification_of_tumo",
+          "label": "Mostofi FK. Histological typing of urinary bladder tumours. In: WHO Histological Classification of Tumours. No. 10. Geneva, Switzerland: World Health Organization; 1973.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "depth_of_invasion_and_pathologic_stage_are_the_most_important_prognostic_indicators_for_patients_wit",
+          "label": "Depth of invasion and pathologic stage are the most important prognostic indicators for patients with neoplasms of the upper urinary tract.1,2,3 A critical role of the surgical pathologist is to diagnose the depth and extent of invasion into the subepithelial connective tissue/lamina propria (T1), muscularis propria (T2). The patterns of invasion are similar to the urinary bladder, except that for renal pelvis carcinoma, the type of tumor involvement of the kidney, when present, impacts stage. Also, it is important to note that, 1) the lamina propria is absent beneath the urothelium lining the renal papillae in the pelvis and is thin along the minor calyces and 2) the muscularis mucosae is essentially absent in the ureter/renal pelvis and any muscle invasion is considered pT2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "as_in_the_urinary_bladder_in_papillary_tumors_invasion_occurs_most_often_at_the_base_of_the_tumor_an",
+          "label": "As in the urinary bladder, in papillary tumors, invasion occurs most often at the base of the tumor and very infrequently in the stalk. Tumor infiltrating the lamina propria is T1, and like the urinary bladder, there is no accepted approach for assessing depth of lamina propria invasion. Designation of a tumor if muscularis propria muscle-invasive or not is important. Upper tract papillary urothelial carcinoma may also have inverted non-invasive growth pushing into subepithelial structures (Ta) that must be distinguished from true invasion of subepithelial structures. For renal pelvic tumors, in-situ extension of carcinoma into renal collecting ducts and renal tubules does not affect stage, while carcinoma invading into the renal parenchyma is T3.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roupret_m_seisen_t_birtle_aj_et_al_european_association_of_urology_guidelines_on_upper_tract_urothel",
+          "label": "Roupret M, Seisen T, Birtle AJ, et al. European Association of Urology Guidelines on Upper Tract Urothelial Carcinoma: 2023 Update. Eur Urol. 2023; 84:49-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gupta_r_paner_gp_amin_mb_neoplasms_of_the_upper_urinary_tract_a_review_with_focus_on_urothelial_carc",
+          "label": "Gupta R, Paner GP, Amin MB. Neoplasms of the upper urinary tract: a review with focus on urothelial carcinoma of the pelvicalyceal system and aspects related to its diagnosis and reporting. Adv Anat Pathol. 2008;15(3):127-139.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

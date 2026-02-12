@@ -1,0 +1,521 @@
+{
+  "template_id": "Breast.DCIS.Bx_1.0.1.0.REL_CAPCP_(1)",
+  "organ": "DCIS OF THE BREAST: Biopsy",
+  "protocol_posting_date": "June 2021",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "needle_biopsy",
+              "label": "Needle biopsy"
+            },
+            {
+              "value": "fine_needle_aspiration",
+              "label": "Fine needle aspiration"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "upper_outer_quadrant",
+              "label": "Upper outer quadrant"
+            },
+            {
+              "value": "lower_outer_quadrant",
+              "label": "Lower outer quadrant"
+            },
+            {
+              "value": "upper_inner_quadrant",
+              "label": "Upper inner quadrant"
+            },
+            {
+              "value": "lower_inner_quadrant",
+              "label": "Lower inner quadrant"
+            },
+            {
+              "value": "central",
+              "label": "Central"
+            },
+            {
+              "value": "nipple",
+              "label": "Nipple"
+            },
+            {
+              "value": "clock_position",
+              "label": "Clock position"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_clock_position",
+          "label": "Specify Clock Position",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "1_oclock",
+              "label": "1 o'clock"
+            },
+            {
+              "value": "2_oclock",
+              "label": "2 o'clock"
+            },
+            {
+              "value": "3_oclock",
+              "label": "3 o'clock"
+            },
+            {
+              "value": "4_oclock",
+              "label": "4 o'clock"
+            },
+            {
+              "value": "5_oclock",
+              "label": "5 o'clock"
+            },
+            {
+              "value": "6_oclock",
+              "label": "6 o'clock"
+            },
+            {
+              "value": "7_oclock",
+              "label": "7 o'clock"
+            },
+            {
+              "value": "8_oclock",
+              "label": "8 o'clock"
+            },
+            {
+              "value": "9_oclock",
+              "label": "9 o'clock"
+            },
+            {
+              "value": "10_oclock",
+              "label": "10 o'clock"
+            },
+            {
+              "value": "11_oclock",
+              "label": "11 o'clock"
+            },
+            {
+              "value": "12_oclock",
+              "label": "12 o'clock"
+            },
+            {
+              "value": "specify_distance_from_nipple_in_centimeters",
+              "label": "Specify distance from nipple in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ductal_carcinoma_in_situ",
+              "label": "Ductal carcinoma in situ (DCIS)"
+            },
+            {
+              "value": "paget_disease",
+              "label": "Paget disease"
+            },
+            {
+              "value": "encapsulated_papillary_carcinoma_without_invasive_carcinoma",
+              "label": "Encapsulated papillary carcinoma without invasive carcinoma"
+            },
+            {
+              "value": "solid_papillary_carcinoma_without_invasive_carcinoma",
+              "label": "Solid papillary carcinoma without invasive carcinoma"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "architectural_patterns",
+          "label": "Architectural Patterns",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "comedo",
+              "label": "Comedo"
+            },
+            {
+              "value": "paget_disease",
+              "label": "Paget disease (DCIS involving nipple skin)"
+            },
+            {
+              "value": "cribriform",
+              "label": "Cribriform"
+            },
+            {
+              "value": "micropapillary",
+              "label": "Micropapillary"
+            },
+            {
+              "value": "papillary",
+              "label": "Papillary"
+            },
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "nuclear_grade",
+          "label": "Nuclear Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "grade_i",
+              "label": "Grade I (low)"
+            },
+            {
+              "value": "grade_ii",
+              "label": "Grade II (intermediate)"
+            },
+            {
+              "value": "grade_iii",
+              "label": "Grade III (high)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "necrosis",
+          "label": "Necrosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_focal",
+              "label": "Present, focal (small foci or single cell necrosis)"
+            },
+            {
+              "value": "present_central",
+              "label": "Present, central (expansive \"comedo\" necrosis)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "microcalcifications",
+          "label": "Microcalcifications",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_in_dcis",
+              "label": "Present in DCIS"
+            },
+            {
+              "value": "present_in_non_neoplastic_tissue",
+              "label": "Present in non-neoplastic tissue"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "additional_findings_specify",
+          "label": "Additional Findings (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "for_hormone_receptor_and_her2_reporting_the_cap_breast_biomarker_template_should_be_used_wwwcaporgca",
+          "label": "For hormone receptor and HER2 reporting, the CAP Breast Biomarker Template should be used. www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "breast_biomarker_studies_specify_pending_studies",
+          "label": "Breast Biomarker Studies (specify pending studies): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_only_to_cases_of_dcis_the_protocol_for_invasive_carcinoma_of_the_breast_applie",
+          "label": "This protocol applies only to cases of DCIS.  The protocol for invasive carcinoma of the breast applies if invasion or microinvasion (less than or equal to 1 mm) is present. Pleomorphic lobular carcinoma in situ (LCIS) has overlapping features with DCIS and may be treated similarly, but at present there is insufficient evidence to establish definitive recommendations for treatment. Thus, pleomorphic LCIS is not currently included in the pTis classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_dcis_involves_nipple_skin_only_without_underlying_invasive_carcinoma_or_dcis_the_classification",
+          "label": "When DCIS involves nipple skin only, without underlying invasive carcinoma or DCIS, the classification is DCIS (ie, pTis [Paget]). The majority of these cases are strongly positive for HER2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_architectural_pattern_has_been_reported_traditionally_for_dcis12_however_nuclear_grade_and_the_p",
+          "label": "The architectural pattern has been reported traditionally for DCIS.1,2 However, nuclear grade and the presence of necrosis are more predictive of clinical outcome.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schwartz_gf_lagios_md_carter_d_et_al_consensus_conference_on_the_classification_of_ductal_carcinoma_",
+          "label": "Schwartz GF, Lagios MD, Carter D, et al. Consensus conference on the classification of ductal carcinoma in situ. Cancer. 1997;80:1798-1802.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silverstein_mj_lagios_md_recht_a_et_al_image_detected_breast_cancer_state_of_the_art_diagnosis_and_t",
+          "label": "Silverstein MJ, Lagios MD, Recht A, et al. Image-detected breast cancer: state of the art diagnosis and treatment. J Am Coll Surg. 2005;201:586-597.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_nuclear_grade_of_dcis_is_determined_using_6_morphologic_features_table_112",
+          "label": "The nuclear grade of DCIS is determined using 6 morphologic features (Table 1).1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_nuclear_grade_of_ductal_carcinoma_in_situ",
+          "label": "Table 1. Nuclear Grade of Ductal Carcinoma In Situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "definition_rbc_red_blood_cell",
+          "label": "Definition: RBC, red blood cell.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schwartz_gf_lagios_md_carter_d_et_al_consensus_conference_on_the_classification_of_ductal_carcinoma_",
+          "label": "Schwartz GF, Lagios MD, Carter D, et al. Consensus conference on the classification of ductal carcinoma in situ. Cancer. 1997;80:1798-1802.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radiation_therapy_oncology_group_rtog_evaluation_of_breast_specimens_removed_by_needle_localization_",
+          "label": "Radiation Therapy Oncology Group (RTOG). Evaluation of Breast Specimens Removed by Needle Localization Technique. Available at: https://www.rtog.org/LinkClick.aspx?fileticket=G4Pamvh2mBg%3D&tabid=290. Accessed September 18, 2018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_necrosis1_is_correlated_with_the_finding_of_mammographic_calcifications_ie_most_area",
+          "label": "The presence of necrosis1 is correlated with the finding of mammographic calcifications (ie, most areas of necrosis will calcify).  DCIS that presents as mammographic calcifications often recurs as calcifications.  Necrosis can be classified as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "central_comedo_the_central_portion_of_an_involved_ductal_space_is_replaced_by_an_area_of_expansive_n",
+          "label": "Central (“comedo”): The central portion of an involved ductal space is replaced by an area of expansive necrosis that is easily detected at low magnification. Ghost cells and karyorrhectic debris are generally present.  Although central necrosis is generally associated with high-grade nuclei (ie, comedo DCIS), it can also occur with DCIS of low or intermediate nuclear grade. This type of necrosis often correlates with a linear and/or branching pattern of calcifications on mammography.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "focal_punctate_small_foci_indistinct_at_low_magnification_or_single_cell_necrosis",
+          "label": "Focal (punctate): Small foci, indistinct at low magnification, or single cell necrosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "necrosis_should_be_distinguished_from_secretory_material_which_can_also_be_associated_with_calcifica",
+          "label": "Necrosis should be distinguished from secretory material, which can also be associated with calcifications, cytoplasmic blebs, and histiocytes, but does not include nuclear debris.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schwartz_gf_lagios_md_carter_d_et_al_consensus_conference_on_the_classification_of_ductal_carcinoma_",
+          "label": "Schwartz GF, Lagios MD, Carter D, et al. Consensus conference on the classification of ductal carcinoma in situ. Cancer. 1997;80:1798-1802.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "owings_dv_hann_l_schnitt_sj_how_thoroughly_should_needle_localization_breast_biopsies_be_sampled_for",
+          "label": "Owings DV, Hann L, Schnitt SJ, How thoroughly should needle localization breast biopsies be sampled for microscopic examination?  A prospective mammographic/pathologic correlative study. Am J Surg Pathol. 1990;14:578-583.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "association_of_directors_of_anatomic_and_surgical_pathology_recommendations_for_the_reporting_of_bre",
+          "label": "Association of Directors of Anatomic and Surgical Pathology. Recommendations for the Reporting of Breast Carcinoma. Updated September 2004, Version 1.1. www.adasp.org/Checklists/Checklists.htm. Accessed June 18, 2008.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silverstein_mj_lagios_md_recht_a_et_al_image_detected_breast_cancer_state_of_the_art_diagnosis_and_t",
+          "label": "Silverstein MJ, Lagios MD, Recht A, et al. Image-detected breast cancer: state of the art diagnosis and treatment. J Am Coll Surg. 2005;201:586-597.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_biopsy_was_performed_for_a_benign_lesion_and_the_dcis_is_an_incidental_finding_this_should_be",
+          "label": "If the biopsy was performed for a benign lesion and the DCIS is an incidental finding, this should be documented. An example would be the finding of DCIS in an excision for a palpable fibroadenoma. In some cases, other pathologic findings are important for the clinical management of patients.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

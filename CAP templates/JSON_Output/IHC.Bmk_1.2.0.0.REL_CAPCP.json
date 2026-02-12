@@ -1,0 +1,1122 @@
+{
+  "template_id": "IHC.Bmk_1.2.0.0.REL_CAPCP",
+  "organ": "Quantitative IHC Biomarker Reporting",
+  "protocol_posting_date": "September 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "specimen_information",
+      "section_name": "SPECIMEN INFORMATION",
+      "fields": [
+        {
+          "field_id": "case_identifier",
+          "label": "Case Identifier: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "block_designation",
+          "label": "Block Designation: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anatomic_site",
+          "label": "Anatomic Site: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diagnosis",
+          "label": "Diagnosis: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cold_ischemia_time",
+          "label": "Cold Ischemia Time",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_60_minutes",
+              "label": "Less than 60 minutes"
+            },
+            {
+              "value": "specify_in_minutes",
+              "label": "Specify in minutes: _________________ minutes",
+              "has_free_text": true
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            }
+          ],
+          "condition": "Minutes"
+        },
+        {
+          "field_id": "fixative",
+          "label": "Fixative",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "formalin",
+              "label": "Formalin"
+            },
+            {
+              "value": "decalcification",
+              "label": "Decalcification"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "fixation_time",
+          "label": "Fixation Time",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greater_than_6_hours",
+              "label": "Greater than 6 hours"
+            },
+            {
+              "value": "specify_in_hours",
+              "label": "Specify in hours: _________________ hours",
+              "has_free_text": true
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            }
+          ],
+          "condition": "Hours"
+        },
+        {
+          "field_id": "biomarkers_assessed",
+          "label": "Biomarker(s) Assessed",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "pd_l1_ihc",
+              "label": "PD-L1 IHC"
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_cells_with_staining_tps",
+          "label": "Specify Percentage of Tumor Cells with Staining (TPS): _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_combined_number_of_tumor_and_immune_cells_with_staining_per_100_tumor_cells",
+          "label": "Specify Combined Number of Tumor and Immune Cells with Staining per 100 Tumor Cells",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "cps",
+      "section_name": "(CPS): _________________",
+      "fields": [
+        {
+          "field_id": "specify_percentage_of_tumor_associated_immune_cells_with_staining",
+          "label": "Specify Percentage of Tumor-associated Immune Cells with Staining: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_area_occupied_by_tumor_associated_immune_cells",
+          "label": "Specify Percentage of Tumor Area Occupied by Tumor-associated Immune Cells",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "",
+              "label": "%"
+            }
+          ]
+        },
+        {
+          "field_id": "comments",
+          "label": "Comments: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "antibody",
+          "label": "Antibody",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "22c3",
+              "label": "22C3"
+            },
+            {
+              "value": "sp142",
+              "label": "SP142"
+            },
+            {
+              "value": "sp263",
+              "label": "SP263"
+            },
+            {
+              "value": "28_8",
+              "label": "28-8"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available, expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mmr_ihc",
+              "label": "MMR IHC"
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_loss_of_nuclear_expression_of_mmr_proteins",
+              "label": "No loss of nuclear expression of MMR proteins"
+            },
+            {
+              "value": "loss_of_nuclear_expression_of_mlh1_and_pms2",
+              "label": "Loss of nuclear expression of MLH1 and PMS2"
+            },
+            {
+              "value": "loss_of_nuclear_expression_of_msh2_and_msh6",
+              "label": "Loss of nuclear expression of MSH2 and MSH6"
+            },
+            {
+              "value": "loss_of_nuclear_expression_of_only_pms2_or_msh6",
+              "label": "Loss of nuclear expression of only PMS2 or MSH6"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "comments",
+          "label": "Comments: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nuclear_mlh1_staining",
+          "label": "Nuclear MLH1 staining",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "loss",
+              "label": "Loss"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nuclear_pms2_staining",
+          "label": "Nuclear PMS2 staining",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "loss",
+              "label": "Loss"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nuclear_msh2_staining",
+          "label": "Nuclear MSH2 staining",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "loss",
+              "label": "Loss"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nuclear_msh6_staining",
+          "label": "Nuclear MSH6 staining",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "loss",
+              "label": "Loss"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available, expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "her2_ihc",
+              "label": "HER2 IHC"
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "scoring_system",
+          "label": "Scoring System",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "breast",
+              "label": "Breast"
+            },
+            {
+              "value": "gastric",
+              "label": "Gastric"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "score",
+          "label": "Score",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "0",
+              "label": "0"
+            },
+            {
+              "value": "1",
+              "label": "1+"
+            },
+            {
+              "value": "2",
+              "label": "2+"
+            },
+            {
+              "value": "3",
+              "label": "3+"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_cells_with_complete_membrane_staining",
+          "label": "Specify Percentage of Cells with Complete Membrane Staining: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "membranous_staining_intensity",
+          "label": "Membranous Staining Intensity",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "strong",
+              "label": "Strong"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate"
+            },
+            {
+              "value": "weak",
+              "label": "Weak"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "comments",
+          "label": "Comments: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "antibody",
+          "label": "Antibody",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "herceptest",
+              "label": "HercepTest"
+            },
+            {
+              "value": "4b5",
+              "label": "4B5"
+            },
+            {
+              "value": "sp3",
+              "label": "SP3"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available, expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "estrogen_receptor_ihc",
+              "label": "Estrogen Receptor IHC"
+            }
+          ]
+        },
+        {
+          "field_id": "estrogen_receptor_ihc_results",
+          "label": "Estrogen Receptor IHC Results",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_tumor_cell_percent_positive",
+          "label": "Specify Tumor Cell Percent Positive: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_cell_staining_intensity",
+          "label": "Tumor Cell Staining Intensity",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "strong",
+              "label": "Strong"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate"
+            },
+            {
+              "value": "weak",
+              "label": "Weak"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "comments",
+          "label": "Comments: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "estrogen_receptor_ihc_methods",
+          "label": "Estrogen Receptor IHC Methods",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "antibody",
+          "label": "Antibody",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "sp1",
+              "label": "SP1"
+            },
+            {
+              "value": "6f11",
+              "label": "6F11"
+            },
+            {
+              "value": "1d5",
+              "label": "1D5"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available, expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "progesterone_receptor_ihc",
+              "label": "Progesterone Receptor IHC"
+            }
+          ]
+        },
+        {
+          "field_id": "progesterone_receptor_ihc_results",
+          "label": "Progesterone Receptor IHC Results",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_tumor_cell_percent_positive",
+          "label": "Specify Tumor Cell Percent Positive: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_cell_staining_intensity",
+          "label": "Tumor Cell Staining Intensity",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "strong",
+              "label": "Strong"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate"
+            },
+            {
+              "value": "weak",
+              "label": "Weak"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "comments",
+          "label": "Comments: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "progesterone_receptor_ihc_methods",
+          "label": "Progesterone Receptor IHC Methods",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "antibody",
+          "label": "Antibody",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1e2",
+              "label": "1E2"
+            },
+            {
+              "value": "636",
+              "label": "636"
+            },
+            {
+              "value": "sp2",
+              "label": "SP2"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available, expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ki_67_ihc",
+              "label": "Ki-67 IHC"
+            }
+          ]
+        },
+        {
+          "field_id": "ki_67_ihc_results",
+          "label": "Ki-67 IHC Results",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_tumor_cell_percent_positive",
+          "label": "Specify Tumor Cell Percent Positive: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "comments",
+          "label": "Comments: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ki_67_ihc_methods",
+          "label": "Ki-67 IHC Methods",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "antibody",
+          "label": "Antibody",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mib1",
+              "label": "MIB1"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available, expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_assay_information_eg_laboratory_developed_test",
+          "label": "Specify Assay Information (e.g., Laboratory-developed Test): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_biomarkers",
+          "label": "Other Biomarker(s)",
+          "required": true,
+          "type": "free_text",
+          "condition": "may repeat for up to 10 biomarkers"
+        },
+        {
+          "field_id": "specify_biomarker",
+          "label": "Specify Biomarker: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "results",
+          "label": "Results",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_cell_staining_intensity_specify_percentage",
+          "label": "Tumor Cell Staining Intensity (specify percentage): _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "comments",
+          "label": "Comments: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "methods",
+          "label": "Methods",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_antibody",
+          "label": "Specify Antibody: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available, expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

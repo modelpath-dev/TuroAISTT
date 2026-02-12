@@ -1,0 +1,2443 @@
+{
+  "template_id": "Breast.DCIS_4.4.0.0.REL_CAPCP",
+  "organ": "DCIS OF THE BREAST: Resection",
+  "protocol_posting_date": "June 2021",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "excision",
+              "label": "Excision (less than total mastectomy)"
+            },
+            {
+              "value": "total_mastectomy",
+              "label": "Total mastectomy (including nipple-sparing and skin-sparing mastectomy)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "upper_outer_quadrant",
+              "label": "Upper outer quadrant"
+            },
+            {
+              "value": "lower_outer_quadrant",
+              "label": "Lower outer quadrant"
+            },
+            {
+              "value": "upper_inner_quadrant",
+              "label": "Upper inner quadrant"
+            },
+            {
+              "value": "lower_inner_quadrant",
+              "label": "Lower inner quadrant"
+            },
+            {
+              "value": "central",
+              "label": "Central"
+            },
+            {
+              "value": "nipple",
+              "label": "Nipple"
+            },
+            {
+              "value": "clock_position",
+              "label": "Clock position"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "specify_clock_position",
+          "label": "Specify Clock Position",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "1_oclock",
+              "label": "1 o'clock"
+            },
+            {
+              "value": "2_oclock",
+              "label": "2 o'clock"
+            },
+            {
+              "value": "3_oclock",
+              "label": "3 o'clock"
+            },
+            {
+              "value": "4_oclock",
+              "label": "4 o'clock"
+            },
+            {
+              "value": "5_oclock",
+              "label": "5 o'clock"
+            },
+            {
+              "value": "6_oclock",
+              "label": "6 o'clock"
+            },
+            {
+              "value": "7_oclock",
+              "label": "7 o'clock"
+            },
+            {
+              "value": "8_oclock",
+              "label": "8 o'clock"
+            },
+            {
+              "value": "9_oclock",
+              "label": "9 o'clock"
+            },
+            {
+              "value": "10_oclock",
+              "label": "10 o'clock"
+            },
+            {
+              "value": "11_oclock",
+              "label": "11 o'clock"
+            },
+            {
+              "value": "12_oclock",
+              "label": "12 o'clock"
+            },
+            {
+              "value": "specify_distance_from_nipple_in_centimeters",
+              "label": "Specify distance from nipple in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ductal_carcinoma_in_situ",
+              "label": "Ductal carcinoma in situ"
+            },
+            {
+              "value": "paget_disease",
+              "label": "Paget disease"
+            },
+            {
+              "value": "encapsulated_papillary_carcinoma_without_invasive_carcinoma",
+              "label": "Encapsulated papillary carcinoma without invasive carcinoma"
+            },
+            {
+              "value": "solid_papillary_carcinoma_without_invasive_carcinoma",
+              "label": "Solid papillary carcinoma without invasive carcinoma"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "size_extent_of_dcis",
+          "label": "Size (Extent) of DCIS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "the_size_extent_of_dcis_greatest_dimension_using_gross_and_microscopic_evaluation_is_an_estimation_o",
+          "label": "The size (extent) of DCIS (greatest dimension using gross and microscopic evaluation) is an estimation of the volume of breast tissue occupied by DCIS.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "estimated_size",
+              "label": "Estimated size (extent) of DCIS is at least in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_millimeters_mm______x______mm",
+          "label": "Additional Dimension in Millimeters (mm): ____ x ____ mm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_blocks_with_dcis",
+          "label": "Number of Blocks with DCIS: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "number_of_blocks_examined",
+          "label": "Number of Blocks Examined: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "architectural_patterns",
+          "label": "Architectural Patterns",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "comedo",
+              "label": "Comedo"
+            },
+            {
+              "value": "paget_disease",
+              "label": "Paget disease (DCIS involving nipple skin)"
+            },
+            {
+              "value": "cribriform",
+              "label": "Cribriform"
+            },
+            {
+              "value": "micropapillary",
+              "label": "Micropapillary"
+            },
+            {
+              "value": "papillary",
+              "label": "Papillary"
+            },
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "nuclear_grade",
+          "label": "Nuclear Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "grade_i",
+              "label": "Grade I (low)"
+            },
+            {
+              "value": "grade_ii",
+              "label": "Grade II (intermediate)"
+            },
+            {
+              "value": "grade_iii",
+              "label": "Grade III (high)"
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "necrosis",
+          "label": "Necrosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_focal",
+              "label": "Present, focal (small foci or single cell necrosis)"
+            },
+            {
+              "value": "present_central",
+              "label": "Present, central (expansive \"comedo\" necrosis)"
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "microcalcifications",
+          "label": "Microcalcifications",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_in_dcis",
+              "label": "Present in DCIS"
+            },
+            {
+              "value": "present_in_nonneoplastic_tissue",
+              "label": "Present in nonneoplastic tissue"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_specimens_in_which_the_margin_is_uninvolved_no_ink_on_carcinoma_the_closest_margins_must_be_spec",
+          "label": "For specimens in which the margin is uninvolved (no ink on carcinoma), the closest margin(s) must be specified if the distance of DCIS from the margin is less than 2 mm. Distances can be specific measurements or expressed as greater than or less than a measurement.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_dcis",
+              "label": "All margins negative for DCIS"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_dcis_to_closest_margin",
+          "label": "Distance from DCIS to Closest Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "closest_margins_to_dcis_required_only_if_less_than_2mm",
+          "label": "Closest Margin(s) to DCIS (required only if less than 2mm)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "anterior",
+              "label": "Anterior"
+            },
+            {
+              "value": "posterior",
+              "label": "Posterior"
+            },
+            {
+              "value": "superior",
+              "label": "Superior"
+            },
+            {
+              "value": "inferior",
+              "label": "Inferior"
+            },
+            {
+              "value": "medial",
+              "label": "Medial"
+            },
+            {
+              "value": "lateral",
+              "label": "Lateral"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "dcis_present_at_margin",
+              "label": "DCIS present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_is_listed_as_positive_if_there_is_ink_on_dcis_ie_the_distance_is_0_mm_extent_of_margin",
+          "label": "Margin status is listed as “positive” if there is ink on DCIS (ie, the distance is 0 mm). Extent of margin involvement may be specified as unifocal, multifocal, or extensive.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins_involved_by_dcis",
+          "label": "Margin(s) Involved by DCIS",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "anterior",
+              "label": "Anterior (specify extent, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "posterior",
+              "label": "Posterior (specify extent, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "superior",
+              "label": "Superior (specify extent, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "inferior",
+              "label": "Inferior (specify extent, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "medial",
+              "label": "Medial (specify extent, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lateral",
+              "label": "Lateral (specify extent, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify margin(s) and, if possible, extent): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no DCIS in specimen)"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_dcis_to_anterior_margin",
+          "label": "Distance from DCIS to Anterior Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "distance_from_dcis_to_posterior_margin",
+          "label": "Distance from DCIS to Posterior Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "distance_from_dcis_to_superior_margin",
+          "label": "Distance from DCIS to Superior Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "distance_from_dcis_to_inferior_margin",
+          "label": "Distance from DCIS to Inferior Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "distance_from_dcis_to_medial_margin",
+          "label": "Distance from DCIS to Medial Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "distance_from_dcis_to_lateral_margin",
+          "label": "Distance from DCIS to Lateral Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "distance_from_dcis_to_other_margin",
+          "label": "Distance from DCIS to Other Margin",
+          "required": false,
+          "type": "free_text",
+          "condition": "s"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_margin",
+              "label": "Other margin(s) and distance(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_macrometastases",
+          "label": "Number of Lymph Nodes with Macrometastases",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "greater than 2 mm"
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_micrometastases",
+          "label": "Number of Lymph Nodes with Micrometastases",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "greater than 0.2 mm to 2 mm and / or greater than 200 cells"
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_isolated_tumor_cells_02_mm_or_less_or_200_cells_or_less",
+          "label": "Number of Lymph Nodes with Isolated Tumor Cells (0.2 mm or less OR 200 cells or less)#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Reporting the number of lymph nodes with isolated tumor cells is required only in the absence of macrometastasis or micrometastasis in other lymph nodes."
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_2_mm_or_less",
+              "label": "Present, 2 mm or less"
+            },
+            {
+              "value": "present_greater_than_2_mm",
+              "label": "Present, greater than 2 mm"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "total_number_of_lymph_nodes_examined",
+          "label": "Total Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "sentinel and non-sentinel"
+        },
+        {
+          "field_id": "number_of_sentinel_nodes_examined",
+          "label": "Number of Sentinel Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "if applicable"
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_regional_lymph_node",
+              "label": "Non-regional lymph node(s) (specify, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "brain",
+              "label": "Brain: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pathologic_stage_classification",
+          "label": "PATHOLOGIC STAGE CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ],
+          "condition": "pTNM, AJCC 8th Edition"
+        },
+        {
+          "field_id": "tnm_descriptors",
+          "label": "TNM Descriptors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrent)"
+            }
+          ]
+        },
+        {
+          "field_id": "paget_disease_with_underlying_dcis_is_classified_as_tis_dcis_encapsulated_and_solid_papillary_carcin",
+          "label": "Paget disease with underlying DCIS is classified as Tis (DCIS). Encapsulated and solid papillary carcinomas without conventional invasive carcinoma are classified as pTis (DCIS). If there has been a prior core needle biopsy, the pathologic findings from the core, if available, should be considered when determining the T category. If invasive carcinoma or microinvasion were present on the core, the protocol for invasive carcinomas of the breast should be used and should incorporate this information.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ptis",
+              "label": "pTis (DCIS): Ductal carcinoma in situ"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis (Paget): Paget disease of the nipple NOT associated with invasive carcinoma and / or DCIS in the underlying breast parenchyma#"
+            }
+          ],
+          "guidance": "Lobular carcinoma in situ (LCIS) is removed from TNM staging in the AJCC Cancer Staging Manual, 8th Edition."
+        },
+        {
+          "field_id": "regional_lymph_nodes_modifier",
+          "label": "Regional Lymph Nodes Modifier",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_sn_modifier_is_added_to_the_n_category_when_a_sentinel_node_biopsy_is_performed_using_either_dye",
+          "label": "The (sn) modifier is added to the N category when a sentinel node biopsy is performed (using either dye or tracer) and fewer than six lymph nodes are removed (sentinel and nonsentinel). The (f) modifier is added to the N category to denote confirmation of metastasis by fine needle aspiration/core needle biopsy with NO further resection of nodes.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(sn): Sentinel node(s) evaluated. If 6 or more nodes (sentinel or nonsentinel) are removed, this modifier should not be used."
+            },
+            {
+              "value": "",
+              "label": "(f): Nodal metastasis confirmed by fine needle aspiration or core needle biopsy."
+            }
+          ]
+        },
+        {
+          "field_id": "choose_a_category_if_lymph_nodes_received_with_the_specimen_immunohistochemistry_andor_molecular_stu",
+          "label": "Choose a category if lymph nodes received with the specimen; immunohistochemistry and/or molecular studies are not required",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis identified or ITCs only#"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0 (i+): ITCs only (malignant cell clusters no larger than 0.2 mm) in regional lymph node(s)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0 (mol+): Positive molecular findings by reverse transcriptase polymerase chain reaction (RT-  PCR); no ITCs detected"
+            },
+            {
+              "value": "pn1mi",
+              "label": "pN1mi: Micrometastases (approximately 200 cells, larger than 0.2 mm, but none larger than 2.0 mm)"
+            },
+            {
+              "value": "pn1a",
+              "label": "pN1a: Metastases in 1-3 axillary lymph nodes, at least one metastasis larger than 2.0 mm##"
+            },
+            {
+              "value": "pn1b",
+              "label": "pN1b: Metastases in ipsilateral internal mammary sentinel nodes, excluding ITCs"
+            },
+            {
+              "value": "pn1c",
+              "label": "pN1c: pN1a and pN1b combined"
+            },
+            {
+              "value": "pn2a",
+              "label": "pN2a: Metastases in 4-9 axillary lymph nodes, at least one tumor deposit larger than 2.0 mm##"
+            },
+            {
+              "value": "pn2b",
+              "label": "pN2b: Metastases in clinically detected internal mammary lymph nodes with or without microscopic confirmation; with pathologically negative axillary nodes"
+            },
+            {
+              "value": "pn3a",
+              "label": "pN3a: Metastases in 10 or more axillary lymph nodes (at least one tumor deposit larger than 2.0 mm)##; or metastases to the infraclavicular (Level III axillary lymph) nodes"
+            },
+            {
+              "value": "pn3b",
+              "label": "pN3b: pN1a or pN2a in the presence of cN2b (positive internal mammary nodes by imaging); or pN2a in the presence of pN1b"
+            },
+            {
+              "value": "pn3c",
+              "label": "pN3c: Metastases in ipsilateral supraclavicular lymph nodes"
+            }
+          ],
+          "guidance": "Isolated tumor cells (ITCs) are defined as small clusters of cells not larger than 0.2 mm or single tumor cells, or a cluster of fewer than 200 cells in a single histologic cross-section. ITCs may be detected by routine histology or by immunohistochemical (IHC) methods. Nodes containing only ITCs are excluded from the total positive node count when determining the N category but should be included in the total number of nodes evaluated. Approximately 1000 tumor cells are contained in a 3-dimensional 0.2-mm cluster. Thus, if more than 200 individual tumor cells are identified as single dispersed tumor cells or as a nearly confluent elliptical or spherical focus in a single histologic section of a lymph node, there is a high probability that more than 1000 cells are present in the lymph node. In these situations, the node should be classified as containing a micrometastasis (pN1mi). Cells in different lymph node cross-sections or longitudinal sections or levels of the block are not added together; the 200 cells must be in a single node profile even if the node has been thinly sectioned into multiple slices. It is recognized that there is substantial overlap between the upper limit of the ITC and the lower limit of the micrometastasis categories due to inherent limitations in pathologic nodal evaluation and detection of minimal tumor burden in lymph nodes. Thus, the threshold of 200 cells in a single cross-section is a guideline to help pathologists distinguish between these 2 categories. The pathologist should use judgment regarding whether it is likely that the cluster of cells represents a true micrometastasis or is simply a small group of isolated tumor cells."
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "free_text",
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "the_presence_of_distant_metastases_in_a_case_of_dcis_would_be_very_unusual_additional_sampling_to_id",
+          "label": "The presence of distant metastases in a case of DCIS would be very unusual. Additional sampling to identify invasive carcinoma in the breast or additional history to document a prior or synchronous invasive carcinoma is advised in the evaluation of such cases.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Histologically proven metastases larger than 0.2 mm"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_case_number_if_from_a_previous_procedure",
+          "label": "Specify Case Number (if from a previous procedure): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "L"
+          ]
+        },
+        {
+          "field_id": "additional_findings_specify",
+          "label": "Additional Findings (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "for_hormone_receptor_reporting_for_this_specimen_the_cap_breast_biomarker_template_should_be_used_pe",
+          "label": "For hormone receptor reporting for this specimen, the CAP Breast Biomarker Template should be used. Pending biomarker studies should be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_previously_reported_biopsy_biomarker_status_may_be_included_additionally_in_the_resection_report",
+          "label": "The previously reported biopsy biomarker status may be included additionally in the resection report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "breast_biomarker_testing_performed_on_previous_biopsy",
+          "label": "Breast Biomarker Testing Performed on Previous Biopsy",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "estrogen_receptor",
+              "label": "Estrogen Receptor (ER)"
+            }
+          ]
+        },
+        {
+          "field_id": "estrogen_receptor_er_status",
+          "label": "Estrogen Receptor (ER) Status",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_cells_with_nuclear_positivity",
+          "label": "Percentage of Cells with Nuclear Positivity#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify",
+              "label": "Specify %: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "1_10",
+              "label": "1-10% (specify)#: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "11_20",
+              "label": "11-20%"
+            },
+            {
+              "value": "21_30",
+              "label": "21-30%"
+            },
+            {
+              "value": "31_40",
+              "label": "31-40%"
+            },
+            {
+              "value": "41_50",
+              "label": "41-50%"
+            },
+            {
+              "value": "51_60",
+              "label": "51-60%"
+            },
+            {
+              "value": "61_70",
+              "label": "61-70%"
+            },
+            {
+              "value": "71_80",
+              "label": "71-80%"
+            },
+            {
+              "value": "81_90",
+              "label": "81-90%"
+            },
+            {
+              "value": "91_100",
+              "label": "91-100%"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (indeterminate)"
+            },
+            {
+              "value": "progesterone_receptor",
+              "label": "Progesterone Receptor (PgR)"
+            }
+          ]
+        },
+        {
+          "field_id": "progesterone_receptor_pgr_status",
+          "label": "Progesterone Receptor (PgR) Status",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_cells_with_nuclear_positivity",
+          "label": "Percentage of Cells with Nuclear Positivity#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify",
+              "label": "Specify %: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "1_10",
+              "label": "1-10% (specify)#: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "11_20",
+              "label": "11-20%"
+            },
+            {
+              "value": "21_30",
+              "label": "21-30%"
+            },
+            {
+              "value": "31_40",
+              "label": "31-40%"
+            },
+            {
+              "value": "41_50",
+              "label": "41-50%"
+            },
+            {
+              "value": "51_60",
+              "label": "51-60%"
+            },
+            {
+              "value": "61_70",
+              "label": "61-70%"
+            },
+            {
+              "value": "71_80",
+              "label": "71-80%"
+            },
+            {
+              "value": "81_90",
+              "label": "81-90%"
+            },
+            {
+              "value": "91_100",
+              "label": "91-100%"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (indeterminate)"
+            }
+          ]
+        },
+        {
+          "field_id": "testing_performed_on_case_number",
+          "label": "Testing Performed on Case Number: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "breast_specimens",
+          "label": "Breast Specimens",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_following_types_of_breast_specimens_and_procedures_may_be_reported_with_the_case_summary",
+          "label": "The following types of breast specimens and procedures may be reported with the case summary",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "excisions_removal_of_breast_tissue_without_the_intent_of_removing_the_entire_breast_the_nipple_is_on",
+          "label": "Excisions. Removal of breast tissue without the intent of removing the entire breast. The nipple is only rarely removed with excisions. Excisions include specimens designated biopsies, partial mastectomies, lumpectomies, and quadrantectomies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "total_mastectomy_removal_of_all_breast_tissue_including_the_nipple_and_areola",
+          "label": "Total Mastectomy. Removal of all breast tissue, including the nipple and areola.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "simple_mastectomy_this_procedure_consists_of_a_total_mastectomy_without_removal_of_axillary_lymph_no",
+          "label": "Simple mastectomy: This procedure consists of a total mastectomy without removal of axillary lymph nodes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "skin_sparing_mastectomy_this_is_a_total_mastectomy_with_removal_of_the_nipple_and_only_a_narrow_surr",
+          "label": "Skin-sparing mastectomy: This is a total mastectomy with removal of the nipple and only a narrow surrounding rim of skin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_radical_mastectomy_this_procedure_consists_of_a_total_mastectomy_and_an_axillary_dissection",
+          "label": "Modified radical mastectomy: This procedure consists of a total mastectomy and an axillary dissection. In the case summary, the breast and lymph node specimens are documented separately.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radical_mastectomy_this_procedure_consists_of_a_total_mastectomy_axillary_contents_and_removal_of_th",
+          "label": "Radical mastectomy: This procedure consists of a total mastectomy, axillary contents, and removal of the pectoralis muscles and currently is performed only rarely. This type of specimen and procedure can be indicated on the case summary as ‘‘Other.’’",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_following_types_of_specimens_should_not_be_reported_using_this_protocol",
+          "label": "The following types of specimens should not be reported using this protocol",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "very_small_incisional_biopsies_including_core_needle_biopsies",
+          "label": "Very small incisional biopsies (including core needle biopsies).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "excisions_containing_only_dcis_after_a_core_needle_biopsy_or_other_specimen_showing_invasive_carcino",
+          "label": "Excisions containing only DCIS after a core needle biopsy or other specimen showing invasive carcinoma or DCIS with microinvasion (invasion measuring ≤1 mm). This type of case should be reported by using the protocol for invasive carcinoma of the breast,1 and the report should incorporate information from the prior needle biopsy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specimen_sampling",
+          "label": "Specimen Sampling",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specimen_sampling_for_specimens_with_dcis_has_the_following_goals2345",
+          "label": "Specimen sampling for specimens with DCIS has the following goals:2,3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_clinical_or_radiologic_lesion_for_which_the_surgery_was_performed_must_be_examined_microscopical",
+          "label": "The clinical or radiologic lesion for which the surgery was performed must be examined microscopically.  If the lesion is a nonpalpable imaging finding, the specimen radiograph and/or additional radiologic studies may be necessary to identify the lesion. When practical, the entire specimen should be submitted in a sequential fashion for histologic examination.  If this is not possible, at least the entire region of the targeted lesion should be examined microscopically. If DCIS, lobular carcinoma in situ (LCIS), or atypical hyperplasia is identified, all fibrous tissue should be examined.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "all_other_gross_lesions_noted_in_the_specimen_must_be_sampled",
+          "label": "All other gross lesions noted in the specimen must be sampled.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_margins_must_be_evaluated_for_involvement_by_dcis_if_the_specimen_is_received_sectioned_or_fragm",
+          "label": "The margins must be evaluated for involvement by DCIS.  If the specimen is received sectioned or fragmented, this should be noted, as this will limit the ability to evaluate the size of the lesion and the status of margins. If the specimen is an incisional biopsy, margins need not be evaluated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_specimens_with_a_known_diagnosis_of_dcis_eg_by_prior_core_needle_biopsy_it_is_recommended_that_t",
+          "label": "For specimens with a known diagnosis of DCIS (eg, by prior core needle biopsy) it is recommended that the entire specimen be examined, if practical, using serial sequential sampling to exclude the possibility of invasion, to completely evaluate the margins, and to aid in determining extent.6,7,8 If an entire excisional specimen or grossly evident lesion is not examined microscopically, it is helpful to note the approximate percentage of the specimen or lesion that has been examined.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinomas_present_in_excisions_removed_for_lesions_seen_best_by_mri_studies_are_generally_not_gross",
+          "label": "Carcinomas present in excisions removed for lesions seen best by MRI studies are generally not grossly evident and not seen on specimen radiography.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "recording_the_specimen_size_is_important_as_the_volume_of_tissue_excised_has_been_associated_with_th",
+          "label": "Recording the specimen size is important, as the volume of tissue excised has been associated with the likelihood of recurrence.9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tissue_may_be_taken_for_research_studies_or_assays_that_do_not_involve_the_histologic_examination_of",
+          "label": "Tissue may be taken for research studies or assays that do not involve the histologic examination of the tissue (eg, reverse transcriptase polymerase chain reaction [RT-PCR]) only when taken in such a way to be able to evaluate the tissue for small areas of invasion. For example, a thin slice of tissue taken for research studies should be matched with an adjacent slice of tissue that will be examined microscopically.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fitzgibbons_pl_bose_s_chen_y_et_al_protocol_for_the_examination_of_specimens_from_patients_with_inva",
+          "label": "Fitzgibbons PL, Bose S, Chen Y, et al. Protocol for the Examination of Specimens From Patients with Invasive Carcinoma of the Breast. 2019; www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "owings_dv_hann_l_schnitt_sj_how_thoroughly_should_needle_localization_breast_biopsies_be_sampled_for",
+          "label": "Owings DV, Hann L, Schnitt SJ, How thoroughly should needle localization breast biopsies be sampled for microscopic examination?  A prospective mammographic/pathologic correlative study. Am J Surg Pathol. 1990;14:578-583.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schwartz_gf_lagios_md_carter_d_et_al_consensus_conference_on_the_classification_of_ductal_carcinoma_",
+          "label": "Schwartz GF, Lagios MD, Carter D, et al. Consensus conference on the classification of ductal carcinoma in situ. Cancer. 1997;80:1798-1802.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silverstein_mj_lagios_md_recht_a_et_al_image_detected_breast_cancer_state_of_the_art_diagnosis_and_t",
+          "label": "Silverstein MJ, Lagios MD, Recht A, et al. Image-detected breast cancer: state of the art diagnosis and treatment. J Am Coll Surg. 2005;201:586-597.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lester_sc_manual_of_surgical_pathology_2nd_ed_new_york_elsevier_2006",
+          "label": "Lester SC. Manual of Surgical Pathology. 2nd ed. New York: Elsevier; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silverstein_mj_poller_d_craig_p_et_al_a_prognostic_index_for_ductal_carcinoma_in_situ_of_the_breast_",
+          "label": "Silverstein MJ, Poller D, Craig P, et al.  A prognostic index for ductal carcinoma in situ of the breast. Cancer. 1996;77:2267-2274.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grin_a_horne_g_ennis_m_omalley_fp_measuring_extent_of_dcis_in_breast_excision_specimens_a_comparison",
+          "label": "Grin A, Horne G, Ennis M, O’Malley FP.  Measuring extent of DCIS in breast excision specimens: a comparison of four methods. Arch Pathol Lab Med. 2009;133:31-37.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dadmanesh_f_fan_x_dastane_a_amin_mb_bose_s_comparative_analysis_of_size_estimation_by_mapping_and_co",
+          "label": "Dadmanesh F, Fan X, Dastane A, Amin MB, Bose S. Comparative analysis of size estimation by mapping and counting number of blocks with DCIS in breast excision specimens.  Arch Pathol Lab Med. 2009;133:26-30.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vicini_fa_kestin_ll_goldstein_ns_baglan_kl_pettinga_je_martinez_aa_relationship_between_excision_vol",
+          "label": "Vicini FA, Kestin LL, Goldstein NS, Baglan KL, Pettinga JE, Martinez AA. Relationship between excision volume, margin status, and tumor size with the development of local recurrence in patients with ductal carcinoma-in-situ treated with breast-conserving therapy. J Surg Oncol. 2001;76:245-254.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_site_of_dcis_is_helpful_to_document_when_provided_by_the_surgeon_breast_imaging_or_previous_path",
+          "label": "The site of DCIS is helpful to document, when provided by the surgeon, breast imaging, or previous pathology report, to correlate with prior studies (eg, a core needle biopsy) or with future biopsies or cancer events. The site can be indicated by quadrant and/or by a clock position. The approximate tumor site can be determined in a mastectomy. However, it is sometimes difficult to correlate exactly with the position as determined in vivo because of differences in how the specimen would be positioned on the chest wall (ie, the skin ellipse may be horizontal or point to the axilla). It is helpful to locate the carcinoma with respect to the clinical site or imaging site, when possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_only_to_cases_of_dcis_the_protocol_for_invasive_carcinoma_of_the_breast1_appli",
+          "label": "This protocol applies only to cases of DCIS.  The protocol for invasive carcinoma of the breast1 applies if invasion or microinvasion (less than or equal to 1 mm) is present. Pleomorphic lobular carcinoma in situ (LCIS) has overlapping features with DCIS and may be treated similarly, but at present there is insufficient evidence to establish definitive recommendations for treatment. Thus, pleomorphic LCIS is not currently included in the pTis classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_dcis_involves_nipple_skin_only_without_underlying_invasive_carcinoma_or_dcis_the_classification",
+          "label": "When DCIS involves nipple skin only, without underlying invasive carcinoma or DCIS, the classification is DCIS (ie, Tis [Paget]). The majority of these cases are strongly positive for HER2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fitzgibbons_pl_bose_s_chen_y_et_al_protocol_for_the_examination_of_specimens_from_patients_with_inva",
+          "label": "Fitzgibbons PL, Bose S, Chen Y, et al. Protocol for the Examination of Specimens From Patients with Invasive Carcinoma of the Breast. 2017; www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "d_size_extent_of_dcis",
+          "label": "D. Size (Extent) of DCIS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_not_required_for_pt_classification_or_stage_assignment_the_size_extent_of_dcis_is_an_import",
+          "label": "Although not required for pT classification or stage assignment, the size (extent) of DCIS is an important factor in patient management.1,2 Extent (as determined by a number of different methods) is correlated with the likelihood of residual disease after re-excision,3,4,5,6 close or positive margins,3,6 local recurrence,7,8,9 and the possibility of missed areas of invasion.10,11 Extent is not as important for predicting local recurrence when wide margins are obtained.7,8,12 Extent is an estimation of the volume of breast tissue involved by DCIS.  Mammographic assessment of DCIS, usually based on distribution of calcifications, frequently underestimates, and sometimes overestimates, the extent of DCIS.  Precise measurement of extent is generally difficult or impossible for the following reasons13",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dcis_involves_the_ductal_system_in_a_complex_3_dimensional_branching_pattern_that_is_usually_only_ap",
+          "label": "DCIS involves the ductal system in a complex 3-dimensional branching pattern that is usually only apparent by microscopic examination. When gross findings are present (eg, areas of tissue thickening and/or punctate necrosis), they often do not correspond to the entire area of involvement.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_ductal_system_and_surrounding_tissue_is_highly_compressible_specimens_may_be_distorted_during_su",
+          "label": "The ductal system and surrounding tissue is highly compressible. Specimens may be distorted during surgery or specimen processing or compressed during specimen radiography.14,15",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diagnostic_gaps_in_ductal_involvement_may_be_present_particularly_for_low_grade_dcis",
+          "label": "Diagnostic gaps in ductal involvement may be present (particularly for low-grade DCIS.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_mean_or_median_extent_of_dcis_is_14_mm_to_27_mm361617_but_ranges_from_1_mm_to_extensive_involvem",
+          "label": "The mean or median extent of DCIS is 14 mm to 27 mm3,6,16,17 but ranges from 1 mm to extensive involvement of all 4 quadrants of the breast. Although a precise measurement is often not possible, an estimate of the extent of DCIS is clinically important (Table 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_extent_of_ductal_carcinoma_in_situ_dcis_and_clinical_significance",
+          "label": "Table 1. Extent of Ductal Carcinoma In Situ (DCIS) and Clinical Significance",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_multiple_methods_for_estimating_the_extent_of_dcis_see_figure",
+          "label": "There are multiple methods for estimating the extent of DCIS (see Figure)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "serial_sequential_sampling_the_entire_specimen_is_blocked_out_in_such_a_way_that_the_location_of_eac",
+          "label": "Serial sequential sampling: The entire specimen is blocked out in such a way that the location of each block can be determined.  The extent of the DCIS can be calculated by using a diagram of the specimen, the thickness of the slices, and the location of the involved blocks.16,17,18 This method is recommended for all excisions likely to harbor DCIS or with previously diagnosed DCIS (eg, by diagnosis on a prior core needle biopsy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nonsequential_sampling_the_number_of_blocks_involved_by_dcis_is_correlated_with_the_extent_of_dcis_u",
+          "label": "Nonsequential sampling: The number of blocks involved by DCIS is correlated with the extent of DCIS up to 40 mm.16 Multiplying the number of blocks involved by DCIS by the approximate width of a tissue section gives an estimate of the extent. In 2 studies, multiplying by 3 mm underestimated the extent of DCIS, and multiplying by 5 mm may overestimate the extent.16,17 Therefore, multiplying by 4 mm is recommended unless there is additional information that a different number would yield a more accurate result. This method may underestimate extent if not all areas of DCIS are sampled. Therefore, it is recommended that all tissue likely to be involved by DCIS be sampled (eg, all grossly abnormal tissue and all tissue with radiologically suspicious calcifications). When feasible, the entire specimen should be examined microscopically.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_method_may_result_in_a_larger_estimation_of_extent_than_the_serial_sequential_sampling_method_w",
+          "label": "This method may result in a larger estimation of extent than the serial sequential sampling method when DCIS is present in a large volume of tissue in 3 dimensions rather than in a predominantly linear distribution. The best estimate for correlation with outcomes (eg, residual disease or recurrence) will require further studies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_method_can_be_applied_to_any_specimen_and_will_give_a_better_estimation_of_extent_than_measurin",
+          "label": "This method can be applied to any specimen and will give a better estimation of extent than measuring extent on a single slide when multiple blocks contain DCIS.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins_if_dcis_involves_or_is_close_to_2_opposing_margins_the_distance_between_the_margins_can_be_u",
+          "label": "Margins:  If DCIS involves or is close to 2 opposing margins, the distance between the margins can be used as the extent of the DCIS within the specimen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gross_lesions_in_some_cases_of_high_grade_dcis_there_may_be_a_gross_lesion_that_can_be_measured_conf",
+          "label": "Gross lesions:  In some cases of high-grade DCIS, there may be a gross lesion that can be measured.  Confirmation of the gross size must be confirmed by microscopic evaluation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_largest_estimate_obtained_using_any_of_these_methods_should_be_used_to_report_the_estimated_size",
+          "label": "The largest estimate obtained using any of these methods should be used to report the estimated size (extent) of the DCIS.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silverstein_mj_lagios_md_recht_a_et_al_image_detected_breast_cancer_state_of_the_art_diagnosis_and_t",
+          "label": "Silverstein MJ, Lagios MD, Recht A, et al. Image-detected breast cancer: state of the art diagnosis and treatment. J Am Coll Surg. 2005;201:586-597.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dillon_mf_mcdermott_ew_odoherty_a_et_al_factors_effecting_successful_breast_conservation_for_ductal_",
+          "label": "Dillon MF, McDermott EW, O’Doherty A, et al.  Factors effecting successful breast conservation for ductal carcinoma in situ. Ann Surg Oncol. 2007:14:1618-1628.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sigal_zafrani_b_lewis_js_clough_kb_et_al_on_behalf_of_the_institut_curie_breast_study_group_histolog",
+          "label": "Sigal-Zafrani B, Lewis JS, Clough KB, et al; on behalf of the Institut Curie Breast Study Group. Histologic margin assessment for breast ductal carcinoma in situ: precision and implications. Mod Pathol. 2004;17:81-88.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuschatz_ac_dipetrillo_t_steinhoff_m_et_al_the_value_of_breast_lumpectomy_margin_assessment_as_a_pr",
+          "label": "Neuschatz AC, DiPetrillo T, Steinhoff M, et al. The value of breast lumpectomy margin assessment as a predictor of residual tumor burden in ductal carcinoma in situ of the breast. Cancer. 2002;94:1917-1924.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheng_l_al_kaisi_nk_gordon_nh_liu_ay_gebrail_f_shenk_rr_relationship_between_the_size_and_margin_sta",
+          "label": "Cheng L, Al-Kaisi NK, Gordon NH, Liu AY, Gebrail F, Shenk RR. Relationship between the size and margin status of ductal carcinoma in situ of the breast and residual disease. J Natl Cancer Inst. 1997;89:1356-1360.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "di_saverio_s_catena_f_santini_d_et_al_259_patients_with_dcis_of_the_breast_applying_uscvan_nuys_prog",
+          "label": "Di Saverio S, Catena F, Santini D, et al. 259 patients with DCIS of the breast applying USC/Van Nuys prognostic index: a retrospective review with long term follow up. Breast Cancer Res Treat. 2008;109:404-416.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "macdonald_hr_silverstein_mj_mabry_h_et_al_local_control_in_ductal_carcinoma_in_situ_treated_by_excis",
+          "label": "MacDonald HR, Silverstein MJ, Mabry H, et al. Local control in ductal carcinoma in situ treated by excision alone: incremental benefit of larger margins. Am J Surg. 2005;190:521-525.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asjoe_ft_altintas_s_huizing_mt_et_al_the_value_of_the_van_nuys_prognostic_index_in_ductal_carcinoma_",
+          "label": "Asjoe FT, Altintas S, Huizing MT, et al. The value of the Van Nuys Prognostic Index in ductal carcinoma in situ of the breast: a retrospective analysis. Breast J. 2007;13:359-367.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maffuz_a_barroso_bravo_s_najera_i_zarco_g_alvarado_cabrero_i_rogriguez_cuevas_si_tumor_size_as_predi",
+          "label": "Maffuz A, Barroso-Bravo S, Najera I, Zarco G, Alvarado-Cabrero I, Rogriguez-Cuevas SI. Tumor size as predictor of microinvasion, invasion, and axillary metastasis in ductal carcinoma in situ. J Exp Clin Cancer Res. 2006;25:223-227.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moore_kh_sweeney_kj_wilson_me_et_al_outcomes_for_women_with_ductal_carcinoma_in_situ_and_a_positive_",
+          "label": "Moore KH, Sweeney KJ, Wilson ME, et al. Outcomes for women with ductal carcinoma-in-situ and a positive sentinel lymph node: a multi-institutional audit. Ann Surg Oncol. 2007;14:2911-2917.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "macdonald_hr_silverstein_mj_lee_la_et_al_margin_width_as_the_sole_determinant_of_local_recurrence_af",
+          "label": "MacDonald HR, Silverstein MJ, Lee LA, et al. Margin width as the sole determinant of local recurrence after breast conservation in patients with ductal carcinoma in situ of the breast. Am J Surg. 2006;192:420-422.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "saqi_a_osborne_mp_rosenblatt_r_shin_sj_hoda_sa_quantifying_mammary_duct_carcinoma_in_situ_a_wild_goo",
+          "label": "Saqi A, Osborne MP, Rosenblatt R, Shin SJ, Hoda SA, Quantifying mammary duct carcinoma in situ: a wild-goose chase? Am J Clin Pathol. 2000;113(suppl 1):S30-S37.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clingan_r_griffen_m_phillips_j_et_al_potential_margin_distortion_in_breast_tissue_by_specimen_mammog",
+          "label": "Clingan R, Griffen M, Phillips J, et al. Potential margin distortion in breast tissue by specimen mammography. Arch Surg. 2003;138:1371-1374.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "graham_ra_homer_mj_katz_j_et_al_the_pancake_phenomenon_contributes_to_the_inaccuracy_of_margin_asses",
+          "label": "Graham RA, Homer MJ, Katz J, et al. The pancake phenomenon contributes to the inaccuracy of margin assessment in patients with breast cancer. Am J Surg. 2002;184:89-93.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grin_a_horne_g_ennis_m_omalley_fp_measuring_extent_of_dcis_in_breast_excision_specimens_a_comparison",
+          "label": "Grin A, Horne G, Ennis M, O’Malley FP.  Measuring extent of DCIS in breast excision specimens: a comparison of four methods. Arch Pathol Lab Med. 2009;133:31-37.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dadmanesh_f_fan_x_dastane_a_amin_mb_bose_s_comparative_analysis_of_size_estimation_by_mapping_and_co",
+          "label": "Dadmanesh F, Fan X, Dastane A, Amin MB, Bose S. Comparative analysis of size estimation by mapping and counting number of blocks with DCIS in breast excision specimens.  Arch Pathol Lab Med. 2009;133:26-30.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silverstein_mj_poller_d_craig_p_et_al_a_prognostic_index_for_ductal_carcinoma_in_situ_of_the_breast_",
+          "label": "Silverstein MJ, Poller D, Craig P, et al.  A prognostic index for ductal carcinoma in situ of the breast. Cancer. 1996;77:2267-2274.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_architectural_pattern_has_been_reported_traditionally_for_dcis12_however_nuclear_grade_and_the_p",
+          "label": "The architectural pattern has been reported traditionally for DCIS.1,2 However, nuclear grade and the presence of necrosis are more predictive of clinical outcome.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schwartz_gf_lagios_md_carter_d_et_al_consensus_conference_on_the_classification_of_ductal_carcinoma_",
+          "label": "Schwartz GF, Lagios MD, Carter D, et al. Consensus conference on the classification of ductal carcinoma in situ. Cancer. 1997;80:1798-1802.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silverstein_mj_lagios_md_recht_a_et_al_image_detected_breast_cancer_state_of_the_art_diagnosis_and_t",
+          "label": "Silverstein MJ, Lagios MD, Recht A, et al. Image-detected breast cancer: state of the art diagnosis and treatment. J Am Coll Surg. 2005;201:586-597.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_nuclear_grade_of_dcis_is_determined_using_6_morphologic_features_table_212",
+          "label": "The nuclear grade of DCIS is determined using 6 morphologic features (Table 2).1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_nuclear_grade_of_ductal_carcinoma_in_situ",
+          "label": "Table 2. Nuclear Grade of Ductal Carcinoma In Situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "definition_rbc_red_blood_cell",
+          "label": "Definition: RBC, red blood cell.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schwartz_gf_lagios_md_carter_d_et_al_consensus_conference_on_the_classification_of_ductal_carcinoma_",
+          "label": "Schwartz GF, Lagios MD, Carter D, et al. Consensus conference on the classification of ductal carcinoma in situ. Cancer. 1997;80:1798-1802.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radiation_therapy_oncology_group_rtog_evaluation_of_breast_specimens_removed_by_needle_localization_",
+          "label": "Radiation Therapy Oncology Group (RTOG). Evaluation of Breast Specimens Removed by Needle Localization Technique. Available at: http://www.rtog.org/qa/98-04/9804images/9804path1.html. Accessed 20 Feb 2019.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_necrosis_is_correlated_with_the_finding_of_mammographic_calcifications_ie_most_areas",
+          "label": "The presence of necrosis is correlated with the finding of mammographic calcifications (ie, most areas of necrosis will calcify). DCIS that presents as mammographic calcifications often recurs as calcifications. Necrosis can be classified as follows:1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "central_comedo_the_central_portion_of_an_involved_ductal_space_is_replaced_by_an_area_of_expansive_n",
+          "label": "Central (“comedo”): The central portion of an involved ductal space is replaced by an area of expansive necrosis that is easily detected at low magnification. Ghost cells and karyorrhectic debris are generally present.  Although central necrosis is generally associated with high-grade nuclei (ie, comedo DCIS), it can also occur with DCIS of low or intermediate nuclear grade. This type of necrosis often correlates with a linear and/or branching pattern of calcifications on mammography.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "focal_punctate_small_foci_indistinct_at_low_magnification_or_single_cell_necrosis",
+          "label": "Focal (punctate): Small foci, indistinct at low magnification, or single cell necrosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "necrosis_should_be_distinguished_from_secretory_material_which_can_also_be_associated_with_calcifica",
+          "label": "Necrosis should be distinguished from secretory material, which can also be associated with calcifications, cytoplasmic blebs, and histiocytes, but does not include nuclear debris.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schwartz_gf_lagios_md_carter_d_et_al_consensus_conference_on_the_classification_of_ductal_carcinoma_",
+          "label": "Schwartz GF, Lagios MD, Carter D, et al. Consensus conference on the classification of ductal carcinoma in situ. Cancer. 1997;80:1798-1802.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "owings_dv_hann_l_schnitt_sj_how_thoroughly_should_needle_localization_breast_biopsies_be_sampled_for",
+          "label": "Owings DV, Hann L, Schnitt SJ, How thoroughly should needle localization breast biopsies be sampled for microscopic examination?  A prospective mammographic/pathologic correlative study. Am J Surg Pathol. 1990;14:578-583.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silverstein_mj_lagios_md_recht_a_et_al_image_detected_breast_cancer_state_of_the_art_diagnosis_and_t",
+          "label": "Silverstein MJ, Lagios MD, Recht A, et al. Image-detected breast cancer: state of the art diagnosis and treatment. J Am Coll Surg. 2005;201:586-597.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "whenever_feasible_the_specimen_should_be_oriented_in_order_to_identify_specific_margins",
+          "label": "Whenever feasible, the specimen should be oriented in order to identify specific margins.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins_may_be_identified_by_sutures_or_clips_placed_on_the_specimen_surface_or_by_other_means_of_co",
+          "label": "Margins may be identified by sutures or clips placed on the specimen surface or by other means of communication between surgeon and pathologist and should be documented in the pathology report. Margins can be identified microscopically in several ways, including the use of multiple colored inks, by submitting the margins in specific cassettes, or by the surgeon submitting each margin as a separately excised specimen. Inks should be applied to the surface of the specimen, taking care to avoid penetration into the specimen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_margins_are_sampled_with_perpendicular_sections_the_pathologist_should_report_the_distance_from_t",
+          "label": "If margins are sampled with perpendicular sections, the pathologist should report the distance from the DCIS to the closest margin, when possible. Due to the growth pattern of DCIS in the ductal system, a negative but close margin does not ensure the absence of DCIS in the adjacent tissue.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_positive_margin_requires_ink_on_dcis_if_the_specimen_is_oriented_the_specific_sites_of_involvement",
+          "label": "A positive margin requires ink on DCIS. If the specimen is oriented, the specific site(s) of involvement (eg, superior margin) should also be reported.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_deep_margin_may_be_at_muscle_fascia_if_so_the_likelihood_of_additional_breast_tissue_beyond_this",
+          "label": "The deep margin may be at muscle fascia. If so, the likelihood of additional breast tissue beyond this margin (and therefore possible involvement by DCIS) is extremely small. A deep muscle fascial margin (eg, on a mastectomy specimen) is unlikely to have clinical significance.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_superficial_generally_anterior_margin_may_be_immediately_below_the_skin_and_there_may_not_be_addit",
+          "label": "A superficial (generally anterior) margin may be immediately below the skin, and there may not be additional breast tissue beyond this margin. However, some breast tissue can be left in skin flaps, and the likelihood of residual breast tissue is related to the thickness of the flap.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specimen_radiography_is_important_to_assess_the_adequacy_of_excision_compression_of_the_specimen_sho",
+          "label": "Specimen radiography is important to assess the adequacy of excision. Compression of the specimen should be minimized, as it can severely compromise the ability to assess the distance of the DCIS from the surgical margin.3 Mechanical compression devices should be used with caution and preferably reserved for nonpalpable lesions that require this technique for imaging (eg, microcalcifications).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_dcis_is_present_at_the_margin_the_extent_of_margin_involvement_is_associated_with_the_likelihood_",
+          "label": "If DCIS is present at the margin, the extent of margin involvement is associated with the likelihood of residual disease4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "focal_dcis_at_the_margin_in_a_1_mm_area_in_1_block",
+          "label": "Focal: DCIS at the margin in a <1 mm area in 1 block",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "minimalmoderate_between_focal_and_extensive",
+          "label": "Minimal/moderate: between focal and extensive",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extensive_dcis_at_the_margin_in_an_area_15_mm_or_in_5_or_more_low_power_fields_andor_in_8_or_more_bl",
+          "label": "Extensive: DCIS at the margin in an area ≥15 mm or in 5 or more low-power fields and/or in 8 or more blocks)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "morrow_m_van_zee_kj_solin_lj_et_al_society_of_surgical_oncology_american_society_for_radiation_oncol",
+          "label": "Morrow M, Van Zee KJ, Solin LJ, et al. Society of Surgical Oncology-American Society for Radiation Oncology-American Society of Clinical Oncology consensus guideline on margins for breast-conserving surgery with whole-breast irradiation in ductal carcinoma in situ. Pract Radiat Oncol. 2016;6(5):287-295.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "torresan_rz_dos_santos_cc_okamura_h_alvarenga_m_evaluation_of_glandular_tissue_after_skin_sparing_ma",
+          "label": "Torresan RZ, dos Santos CC, Okamura H, Alvarenga M. Evaluation of glandular tissue after skin-sparing mastectomies. Ann Surg Oncol. 2005;12:1037-1044.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "saqi_a_osborne_mp_rosenblatt_r_shin_sj_hoda_sa_quantifying_mammary_duct_carcinoma_in_situ_a_wild_goo",
+          "label": "Saqi A, Osborne MP, Rosenblatt R, Shin SJ, Hoda SA, Quantifying mammary duct carcinoma in situ: a wild-goose chase? Am J Clin Pathol. 2000;113(suppl 1):S30-S37.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dillon_mf_mcdermott_ew_odoherty_a_et_al_factors_effecting_successful_breast_conservation_for_ductal_",
+          "label": "Dillon MF, McDermott EW, O’Doherty A, et al.  Factors effecting successful breast conservation for ductal carcinoma in situ. Ann Surg Oncol. 2007:14:1618-1628.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sigal_zafrani_b_lewis_js_clough_kb_et_al_on_behalf_of_the_institut_curie_breast_study_group_histolog",
+          "label": "Sigal-Zafrani B, Lewis JS, Clough KB, et al; on behalf of the Institut Curie Breast Study Group. Histologic margin assessment for breast ductal carcinoma in situ: precision and implications. Mod Pathol. 2004;17:81-88.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_node_sampling",
+          "label": "Lymph Node Sampling",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "patients_with_dcis_may_have_lymph_nodes_sampled_in_the_following_situations",
+          "label": "Patients with DCIS may have lymph nodes sampled in the following situations",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extensive_dcis_patients_with_extensive_dcis_are_more_likely_to_have_areas_of_invasion_and_it_may_be_",
+          "label": "Extensive DCIS:  Patients with extensive DCIS are more likely to have areas of invasion and it may be difficult or impractical to examine all involved areas of the breast microscopically.1,2,3 A lymph node with a metastasis would indicate an occult area of invasion.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_findings_on_a_prior_needle_biopsy_or_excision_raising_concern_for_invasion_or_microinvasi",
+          "label": "Pathologic findings on a prior needle biopsy or excision raising concern for invasion or microinvasion (invasion measuring ≤1 mm in size):  If invasion has been documented, the protocol for invasive carcinoma of the breast4 should be used.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "imaging_findings_eg_an_irregular_mass_or_clinical_findings_eg_a_large_palpable_mass_that_increase_th",
+          "label": "Imaging findings (eg, an irregular mass) or clinical findings (eg, a large palpable mass) that increase the likelihood that stromal invasion is present.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "planned_mastectomy_the_additional_sampling_of_low_lymph_nodes_or_a_sentinel_lymph_node_does_not_resu",
+          "label": "Planned mastectomy: The additional sampling of low lymph nodes or a sentinel lymph node does not result in increased morbidity. If the node or nodes are negative, and invasive cancer is found, another surgical procedure for node sampling can be avoided.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "most_tumor_cells_in_lymph_nodes_of_patients_with_dcis_would_be_classified_as_isolated_tumor_cells56_",
+          "label": "Most tumor cells in lymph nodes of patients with DCIS would be classified as isolated tumor cells.5,6 Artifactual displacement of epithelium to a lymph node(s) can occur following a core needle biopsy; this finding should not be considered isolated tumor cells or a micrometastasis.7,8 If a larger nodal metastasis is found and the breast tissue has not been entirely submitted for microscopic examination, additional sampling should be considered to attempt to identify invasive carcinoma.1,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grossly_uninvolved_nodes_should_be_submitted_in_their_entirety_for_histologic_examination_whereas_a_",
+          "label": "Grossly uninvolved nodes should be submitted in their entirety for histologic examination, whereas a representative section of a grossly positive node may be submitted. Small nodes (eg, 2 to 3 mm) may be submitted intact, but larger nodes should be thinly sectioned. An accurate assessment of the number of positive lymph nodes is a critical prognostic indicator.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sentinel_lymph_nodes_are_identified_as_such_by_the_surgeon_generally_by_uptake_of_radiotracer_or_dye",
+          "label": "Sentinel lymph nodes are identified as such by the surgeon, generally by uptake of radiotracer or dye.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reporting_lymph_nodes",
+          "label": "Reporting Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_pathology_report_should_state_the_total_number_of_lymph_nodes_examined_including_the_number_of_s",
+          "label": "The pathology report should state the total number of lymph nodes examined (including the number of sentinel nodes), the number of nodes with metastases, and the greatest dimension of the largest metastatic focus. If a patient has at least 1 macrometastasis, only nodes with micro and macrometastases are included for the total number of positive nodes for determining the N category.9 Nodes with isolated tumor cells are not included in this count. At least 1 node with presence or absence of cancer documented by pathologic examination is required for determining the pathologic N category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_sn_modifier_indicates_that_nodal_categorization_is_based_on_less_than_an_axillary_dissection_whe",
+          "label": "The (sn) modifier indicates that nodal categorization is based on less than an axillary dissection. When the combination of sentinel and nonsentinel nodes removed is less than a standard low axillary dissection (fewer than six nodes), the (sn) modifier is used,” eg, pN0(i+)(sn). The (sn) modifier is not used if 6 or more lymph nodes are examined (including sentinel and nonsentinel lymph nodes).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "isolated_tumor_cells_itcs_are_defined_as_single_tumor_cells_or_small_cell_clusters_not_greater_than_",
+          "label": "Isolated tumor cells (ITCs) are defined as single tumor cells or small cell clusters not greater than 0.2 mm and numbering less than 200 cells.4,10,11,12 They may be detected by routine histologic examination or by immunohistochemical (IHC) or molecular methods. ITCs do not usually show evidence of malignant activity (eg, proliferation or stromal reaction), but micrometastases may show these changes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "almost_all_tumor_cells_present_in_lymph_nodes_of_patients_with_dcis_are_isolated_tumor_cells_or_the_",
+          "label": "Almost all tumor cells present in lymph nodes of patients with DCIS are isolated tumor cells or the cells may be artifactually displaced from a previous procedure.7,8 Isolated tumor cells detected in cases of DCIS have not been shown to have prognostic importance.5,6 If a larger metastasis is found, additional tissue sampling and review of slides are helpful to determine if an area of invasion is present.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lagios_md_westdahl_pr_margolin_fr_et_al_duct_carcinoma_in_situ_relationship_of_extent_of_noninvasive",
+          "label": "Lagios MD, Westdahl PR, Margolin FR, et al. Duct carcinoma in situ: relationship of extent of noninvasive disease to the frequency of occult invasion, multicentricity, lymph node metastasis, and short-term treatment failures. Cancer. 1982;50:1309-1314.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maffuz_a_barroso_bravo_s_najera_i_zarco_g_alvarado_cabrero_i_rogriguez_cuevas_si_tumor_size_as_predi",
+          "label": "Maffuz A, Barroso-Bravo S, Najera I, Zarco G, Alvarado-Cabrero I, Rogriguez-Cuevas SI. Tumor size as predictor of microinvasion, invasion, and axillary metastasis in ductal carcinoma in situ. J Exp Clin Cancer Res. 2006;25:223-227.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moore_kh_sweeney_kj_wilson_me_et_al_outcomes_for_women_with_ductal_carcinoma_in_situ_and_a_positive_",
+          "label": "Moore KH, Sweeney KJ, Wilson ME, et al. Outcomes for women with ductal carcinoma-in-situ and a positive sentinel lymph node: a multi-institutional audit. Ann Surg Oncol. 2007;14:2911-2917.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fitzgibbons_pl_bose_s_chen_y_et_al_protocol_for_the_examination_of_specimens_from_patients_with_inva",
+          "label": "Fitzgibbons PL, Bose S, Chen Y, et al. Protocol for the Examination of Specimens From Patients with Invasive Carcinoma of the Breast. 2017; www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "broekhuizen_ln_wijsman_jh_peterse_jl_rutgers_ejt_the_incidence_and_significance_of_micrometastases_i",
+          "label": "Broekhuizen LN, Wijsman JH, Peterse JL, Rutgers EJT. The incidence and significance of micrometastases in lymph nodes of patients with ductal carcinoma in situ and T1a carcinoma of the breast. Eur J Surg Oncol. 2006; 32:502-506.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lara_jf_young_sm_velilla_re_santoro_ej_templeton_sf_the_relevance_of_occult_axillary_micrometastasis",
+          "label": "Lara JF, Young SM, Velilla RE, Santoro EJ, Templeton SF. The relevance of occult axillary micrometastasis in DCIS: a clinicopathologic study with long-term follow-up. Cancer. 2003;98:2105-2113.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carter_ba_jensen_ra_simpson_jf_page_dl_benign_transport_of_breast_epithelium_into_axillary_lymph_nod",
+          "label": "Carter BA, Jensen RA, Simpson JF, Page DL. Benign transport of breast epithelium into axillary lymph nodes after biopsy. Am J Clin Pathol. 2000;113:259-265.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bleiweiss_ij_nagi_cs_jaffer_s_axillary_sentinal_lymph_nodes_can_be_falsely_positive_due_to_iatrogeni",
+          "label": "Bleiweiss IJ, Nagi CS, Jaffer S. Axillary sentinal lymph nodes can be falsely positive due to iatrogenic displacement and transport of benign epithelial cells in patients with breast carcinoma. J Clin Oncol. 2006;24:2013-2018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "connolly_jl_changes_and_problematic_areas_in_interpretation_of_the_ajcc_cancer_staging_manual_6th_ed",
+          "label": "Connolly JL. Changes and problematic areas in interpretation of the AJCC Cancer Staging Manual, 6th Edition, for breast cancer. Arch Pathol Lab Med. 2006;130:287-291.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singletary_se_connolly_jl_breast_cancer_staging_working_with_the_sixth_edition_of_the_ajcc_cancer_st",
+          "label": "Singletary SE, Connolly JL, Breast cancer staging: working with the sixth edition of the AJCC Cancer Staging Manual. CA Cancer J Clin. 2006;56:37-47.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singletary_se_greene_fl_sobin_lh_classification_of_isolated_tumor_cells_clarification_of_the_6th_edi",
+          "label": "Singletary SE, Greene FL, Sobin LH. Classification of isolated tumor cells: clarification of the 6th edition of the American Joint Committee on Cancer Staging Manual. Cancer. 2003;90:2740-2741.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tumor_node_metastasis_tnm_staging_system_maintained_collaboratively_by_the_american_joint_commit",
+          "label": "The tumor-node-metastasis (TNM) staging system maintained collaboratively by the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) is recommended.1,2,3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_classification",
+          "label": "Pathologic Classification",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_pathologic_classification_of_a_cancer_is_based_on_information_acquired_before_treatment_suppleme",
+          "label": "The pathologic classification of a cancer is based on information acquired before treatment supplemented and modified by the additional evidence acquired during and from surgery, particularly from pathologic examination of resected tissues. The pathologic classification provides additional precise and objective data. Reporting of T, N, and M categories by pathologic means is denoted by use of a lower case “p” prefix (pT, pN, pM).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_t_dcis_is_classified_as_ptis_dcis_or_ptis_paget",
+          "label": "Pathologic T. DCIS is classified as pTis (DCIS) or pTis (Paget).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_n_at_least_one_node_with_presence_or_absence_of_cancer_documented_by_pathologic_examinati",
+          "label": "Pathologic N. At least one node with presence or absence of cancer documented by pathologic examination is required for determining the pathologic N category. A tumor nodule in a regional node area is classified as a positive node. The size of the metastasis, not the size of the node, is used for the criterion for the N category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specialized_pathologic_techniques_such_as_immunohistochemistry_or_molecular_techniques_may_identify_",
+          "label": "Specialized pathologic techniques such as immunohistochemistry or molecular techniques may identify limited metastases in lymph nodes that may not have been identified without the use of the special diagnostic techniques.  Single tumor cells or small clusters of cells are classified as isolated tumor cells (ITCs). The standard definition for ITC is a cluster of cells not more than 0.2 mm in greatest diameter. Cases with ITC only in lymph nodes are classified as pN0. This rule also generally applies to cases with findings of tumor cells or their components by nonmorphologic techniques such as flow cytometry or DNA analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_m_the_pathologic_assignment_of_the_presence_of_metastases_pm1_requires_a_biopsy_positive_",
+          "label": "Pathologic M. The pathologic assignment of the presence of metastases (pM1) requires a biopsy positive for cancer at the metastatic site. Pathologic M0 is an undefined concept and the category pM0 may not be used.  Pathologic classification of the absence of distant metastases can only be made at autopsy. It would be extremely rare to have distant metastasis in examples of DCIS and would surely indicate an unsampled area of invasive carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "posttherapy_or_postneoadjuvant_therapy_classification_ytnm_cases_where_systemic_andor_radiation_ther",
+          "label": "Posttherapy or Postneoadjuvant Therapy Classification (yTNM). Cases where systemic and/or radiation therapy are given before surgery (neoadjuvant) or where no surgery is performed may have the extent of disease assessed at the conclusion of the therapy by clinical or pathologic means (if resection performed). This classification is useful to clinicians because the extent of response to therapy may provide important prognostic information to patients and help direct the extent of surgery or subsequent systemic and/or radiation therapy. T and N are classified by using the same categories as for clinical or pathologic staging for the disease type, and the findings are recorded by using the prefix designator y (eg, ycT; ycN; ypT; ypN). The yc prefix is used for the clinical stage after therapy, and the yp prefix is used for the pathologic stage for those cases that have surgical resection after neoadjuvant therapy. The M component should be classified by the M status defined clinically or pathologically prior to therapy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "retreatment_classification_the_retreatment_classification_rtnm_is_assigned_when_further_treatment_is",
+          "label": "Retreatment Classification. The retreatment classification (rTNM) is assigned when further treatment is planned for a cancer that recurs after a disease-free interval. The original stage assigned at the time of initial diagnosis and treatment does not change when the cancer recurs or progresses. The use of this staging for retreatment or recurrence is denoted with the r prefix (rTNM). All information available at the time of retreatment should be used in determining the rTNM stage. Biopsy confirmation of recurrent cancer is important if clinically feasible. However, this may not be appropriate for each component, so clinical evidence for the T, N, or M component by clinical, endoscopic, radiologic, or related methods may be used.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "multiple_tumors_if_there_are_multiple_simultaneous_areas_of_dics_in_the_breast_tis_remains_the_appro",
+          "label": "Multiple tumors. If there are multiple simultaneous areas of DICS in the breast, Tis remains the appropriate choice. For simultaneous bilateral examples of DCIS, each DCIS is classified separately as independent tumors in different organs.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metachronous_primaries_second_or_subsequent_primary_examples_of_dcis_occurring_in_the_same_organ_or_",
+          "label": "Metachronous primaries. Second or subsequent primary examples of DCIS occurring in the same organ or in different organs are staged as a new DCIS with the TNM system. Second DCIS examples are not staged using the y prefix unless the treatment of the second cancer warrants this use.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "connolly_jl_changes_and_problematic_areas_in_interpretation_of_the_ajcc_cancer_staging_manual_6th_ed",
+          "label": "Connolly JL. Changes and problematic areas in interpretation of the AJCC Cancer Staging Manual, 6th Edition, for breast cancer. Arch Pathol Lab Med. 2006;130:287-291.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singletary_se_connolly_jl_breast_cancer_staging_working_with_the_sixth_edition_of_the_ajcc_cancer_st",
+          "label": "Singletary SE, Connolly JL, Breast cancer staging: working with the sixth edition of the AJCC Cancer Staging Manual. CA Cancer J Clin. 2006;56:37-47.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singletary_se_greene_fl_sobin_lh_classification_of_isolated_tumor_cells_clarification_of_the_6th_edi",
+          "label": "Singletary SE, Greene FL, Sobin LH. Classification of isolated tumor cells: clarification of the 6th edition of the American Joint Committee on Cancer Staging Manual. Cancer. 2003;90:2740-2741",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brierley_jd_gospodarowicz_mk_wittekind_ch_et_al_eds_tnm_classification_of_malignant_tumours_8th_ed_o",
+          "label": "Brierley JD, Gospodarowicz MK, Wittekind CH, et al, eds. TNM Classification of Malignant Tumours. 8th ed. Oxford UK: Wiley; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_some_cases_other_pathologic_findings_are_important_for_the_clinical_management_of_patients",
+          "label": "In some cases, other pathologic findings are important for the clinical management of patients.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_biopsy_was_performed_for_a_benign_lesion_and_the_dcis_is_an_incidental_finding_this_should_be",
+          "label": "If the biopsy was performed for a benign lesion and the DCIS is an incidental finding, this should be documented. An example would be the finding of DCIS in an excision for a palpable fibroadenoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "peritumoral_vascular_invasion_is_a_very_rare_finding_in_association_with_dcis_alone_additional_sampl",
+          "label": "Peritumoral vascular invasion is a very rare finding in association with DCIS alone. Additional sampling should be considered to attempt to identify an area of invasion. If there has been prior surgery or needle biopsy, the possibility of artifactual displacement of epithelial cells into lymphatics should be considered. Lymph node biopsy may be performed in patients with DCIS and lymphovascular invasion.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_there_has_been_a_prior_core_needle_biopsy_or_incisional_biopsy_the_biopsy_site_should_be_sampled_",
+          "label": "If there has been a prior core needle biopsy or incisional biopsy, the biopsy site should be sampled and documented in the report. If the intention was to completely re-excise a prior surgical site, the report should document biopsy changes at the margin that could indicate an incomplete excision. This protocol should only be used for re-excisions that reveal the largest extent of DCIS.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

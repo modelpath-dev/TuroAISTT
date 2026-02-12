@@ -1,0 +1,2569 @@
+{
+  "template_id": "Cervix_5.1.1.0.REL_CAPCP",
+  "organ": "UTERINE CERVIX: Resection",
+  "protocol_posting_date": "March 2023",
+  "standards": [
+    "FIGO Cancer Report 2018",
+    "AJCC-UICC 9"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "left_superior",
+              "label": "Left superior (anterior) quadrant (12 to 3 o’clock)"
+            },
+            {
+              "value": "left_inferior",
+              "label": "Left inferior (posterior) quadrant (3 to 6 o’clock)"
+            },
+            {
+              "value": "right_inferior",
+              "label": "Right inferior (posterior) quadrant (6 to 9 o’clock)"
+            },
+            {
+              "value": "right_superior",
+              "label": "Right superior (anterior) quadrant (9 to 12 o’clock)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest Dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "per_ajcc_staging_manual_tumor_size_is_reported_in_centimeters",
+          "label": "Per AJCC Staging Manual, Tumor Size is reported in Centimeters.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "all_dimensions_are_important_see_definition_for_superficially_invasive_squamous_cell_carcinoma_under",
+          "label": "All dimensions are important; see definition for “superficially invasive squamous cell carcinoma” under T1a1 / IA1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma_hpv_associated",
+              "label": "Squamous cell carcinoma, HPV-associated"
+            },
+            {
+              "value": "squamous_cell_carcinoma_hpv_independent",
+              "label": "Squamous cell carcinoma, HPV-independent"
+            },
+            {
+              "value": "squamous_cell_carcinoma_nos",
+              "label": "Squamous cell carcinoma, NOS (acceptable when p16 or HPV testing is not available)"
+            },
+            {
+              "value": "adenocarcinoma_nos",
+              "label": "Adenocarcinoma, NOS"
+            },
+            {
+              "value": "adenocarcinoma_hpv_associated",
+              "label": "Adenocarcinoma, HPV-associated"
+            },
+            {
+              "value": "adenocarcinoma_hpv_independent_nos",
+              "label": "Adenocarcinoma, HPV-independent, NOS"
+            },
+            {
+              "value": "adenocarcinoma_hpv_independent_gastric_type",
+              "label": "Adenocarcinoma, HPV-independent, gastric type"
+            },
+            {
+              "value": "adenocarcinoma_hpv_independent_clear_cell_type",
+              "label": "Adenocarcinoma, HPV-independent, clear cell type"
+            },
+            {
+              "value": "adenocarcinoma_hpv_independent_mesonephric_type",
+              "label": "Adenocarcinoma, HPV-independent, mesonephric type"
+            },
+            {
+              "value": "endometrioid_adenocarcinoma_nos",
+              "label": "Endometrioid adenocarcinoma, NOS"
+            },
+            {
+              "value": "carcinosarcoma",
+              "label": "Carcinosarcoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "adenoid_basal_carcinoma",
+              "label": "Adenoid basal carcinoma"
+            },
+            {
+              "value": "mucoepidermoid_carcinoma",
+              "label": "Mucoepidermoid carcinoma"
+            },
+            {
+              "value": "carcinoma_unclassifiable",
+              "label": "Carcinoma, unclassifiable (undifferentiated carcinoma)"
+            },
+            {
+              "value": "neuroendocrine_tumor_nos",
+              "label": "Neuroendocrine tumor, NOS"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_1",
+              "label": "Neuroendocrine tumor, grade 1"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_2",
+              "label": "Neuroendocrine tumor, grade 2"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma_high_grade",
+              "label": "Small cell neuroendocrine carcinoma, high grade"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma_high_grade",
+              "label": "Large cell neuroendocrine carcinoma, high grade"
+            },
+            {
+              "value": "neuroendocrine_carcinoma_nos",
+              "label": "Neuroendocrine carcinoma, NOS"
+            },
+            {
+              "value": "mixed_neuroendocrine_non_neuroendocrine_carcinoma",
+              "label": "Mixed neuroendocrine non-neuroendocrine carcinoma"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "stromal_invasion",
+          "label": "Stromal Invasion",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "depth_of_stromal_invasion",
+          "label": "Depth of Stromal Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "not_more_than_3_mm",
+              "label": "Not more than 3 mm"
+            },
+            {
+              "value": "greater_than_3_mm_but_not_more_than_5_mm",
+              "label": "Greater than 3 mm but not more than 5 mm"
+            },
+            {
+              "value": "greater_than_5_mm",
+              "label": "Greater than 5 mm"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "extent_of_depth_of_stromal_invasion",
+          "label": "Extent of Depth of Stromal Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "superficial_one_third",
+              "label": "Superficial one-third"
+            },
+            {
+              "value": "middle_one_third",
+              "label": "Middle one-third"
+            },
+            {
+              "value": "deep_one_third",
+              "label": "Deep one-third"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "horizontal_extent_of_stromal_invasion",
+          "label": "Horizontal Extent of Stromal Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (in larger tumors that can be measured grossly)"
+            },
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "estimated_to_be_less_than_or_equal_to_7_millimeters",
+              "label": "Estimated to be less than or equal to 7 Millimeters (mm)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_blocks_involved",
+          "label": "Number of Blocks Involved: _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "estimated_to_be_greater_than_7_millimeters",
+              "label": "Estimated to be greater than 7 Millimeters (mm)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_blocks_involved",
+          "label": "Number of Blocks Involved: _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "silva_system_for_invasion",
+          "label": "Silva System for Invasion#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "pattern_a",
+              "label": "Pattern A"
+            },
+            {
+              "value": "pattern_b",
+              "label": "Pattern B"
+            },
+            {
+              "value": "pattern_c",
+              "label": "Pattern C"
+            }
+          ],
+          "guidance": "Silva System (applicable only to HPV associated invasive endocervical adenocarcinomas)"
+        },
+        {
+          "field_id": "other_tissue_organ_involvement",
+          "label": "Other Tissue / Organ Involvement#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "parametrium",
+              "label": "Parametrium"
+            },
+            {
+              "value": "vagina_upper_two_thirds",
+              "label": "Vagina, upper two-thirds"
+            },
+            {
+              "value": "vagina_lower_one_third",
+              "label": "Vagina, lower one-third"
+            },
+            {
+              "value": "vagina",
+              "label": "Vagina (location not specified)"
+            },
+            {
+              "value": "pelvic_wall",
+              "label": "Pelvic wall"
+            },
+            {
+              "value": "bladder_wall",
+              "label": "Bladder wall"
+            },
+            {
+              "value": "bladder_mucosa",
+              "label": "Bladder mucosa##"
+            },
+            {
+              "value": "rectal_wall",
+              "label": "Rectal wall"
+            },
+            {
+              "value": "bowel_mucosa",
+              "label": "Bowel mucosa##"
+            },
+            {
+              "value": "other_organs_tissue",
+              "label": "Other organs / tissue (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Any organ not selected is either not involved or was not submitted. Tumor should involve the mucosal surface"
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_invasive_carcinoma",
+          "label": "Closest Margin(s) to Invasive Carcinoma",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "ectocervical",
+              "label": "Ectocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "radial_circumferential",
+              "label": "Radial / circumferential (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "endocervical_lower_uterine_segment",
+              "label": "Endocervical / lower uterine segment (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vaginal_cuff",
+              "label": "Vaginal cuff: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "ectocervical",
+              "label": "Ectocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "radial_circumferential",
+              "label": "Radial / circumferential (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "endocervical_lower_uterine_segment",
+              "label": "Endocervical / lower uterine segment (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vaginal_cuff",
+              "label": "Vaginal cuff: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_hsil_or_ais",
+          "label": "Margin Status for HSIL or AIS#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_high_grade_squamous_intraepithelial_lesion",
+              "label": "All margins negative for high-grade squamous intraepithelial lesion (HSIL) and / or adenocarcinoma in situ (AIS)"
+            },
+            {
+              "value": "high_grade_squamous_intraepithelial_lesion",
+              "label": "High-grade squamous intraepithelial lesion (HSIL) present at margin"
+            }
+          ],
+          "guidance": "Reporting high-grade squamous intraepithelial lesion (CIN 2-3 or VAIN 2-3) and / or AIS is not required if margin is involved by invasive carcinoma."
+        },
+        {
+          "field_id": "margins_involved_by_hsil",
+          "label": "Margin(s) Involved by HSIL",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "ectocervical",
+              "label": "Ectocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "endocervical_lower_uterine_segment",
+              "label": "Endocervical / lower uterine segment (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vaginal_cuff",
+              "label": "Vaginal cuff: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "adenocarcinoma_in_situ",
+              "label": "Adenocarcinoma in situ (AIS) present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_ais",
+          "label": "Margin(s) Involved by AIS",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "ectocervical",
+              "label": "Ectocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "endocervical_lower_uterine_segment",
+              "label": "Endocervical / lower uterine segment (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor_cells",
+              "label": "All regional lymph nodes negative for tumor cells"
+            },
+            {
+              "value": "tumor_present_in_pelvic_lymph_node",
+              "label": "Tumor present in pelvic lymph node(s)##"
+            }
+          ],
+          "guidance": "Lymph nodes designated as pelvic (parametrial, obturator, internal iliac (hypogastric), external iliac, common iliac, sacral, presacral) and para-aortic are considered regional lymph nodes. Any other involved nodes should be categorized as metastases (pM1) and reported in the distant metastasis section. Presence of isolated tumor cells no greater than 0.2 mm in regional lymph node(s) is considered N0 (i+). Macrometastases (greater than 2 mm), Micrometastases (greater than 0.2 mm to 2 mm), Isolated Tumor Cells (ITC: less than or equal to 0.2 mm or single cells or clusters of cells less than or equal to 200 cells in a single lymph node cross section). If pelvic and / or para-aortic lymph nodes are submitted and positive for tumor cells, reporting the number of nodes with or without macrometastases and micrometastases is required. Reporting isolated tumor cells is required only in the absence of macrometastasis or micrometastasis."
+        },
+        {
+          "field_id": "pelvic_lymph_nodes",
+          "label": "Pelvic Lymph Nodes",
+          "required": true,
+          "type": "free_text",
+          "condition": "required only if present"
+        },
+        {
+          "field_id": "total_number_of_pelvic_nodes_with_macrometastasis_greater_than_2_mm_sentinel_and_non",
+          "label": "Total Number of Pelvic Nodes with Macrometastasis (greater than 2 mm) (sentinel and non-",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sentinel",
+          "label": "sentinel)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_pelvic_sentinel_nodes_with_macrometastasis",
+          "label": "Number of Pelvic Sentinel Nodes with Macrometastasis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "total_number_of_pelvic_nodes_with_micrometastasis_greater_than_02_mm_up_to_2_mm_and_or",
+          "label": "Total Number of Pelvic Nodes with Micrometastasis (greater than 0.2 mm up to 2 mm and / or",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greater_than_200_cells",
+          "label": "greater than 200 cells)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "sentinel and non-sentinel"
+        },
+        {
+          "field_id": "number_of_pelvic_sentinel_nodes_with_micrometastasis",
+          "label": "Number of Pelvic Sentinel Nodes with Micrometastasis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "total_number_of_pelvic_nodes_with_isolated_tumor_cells_02_mm_or_less_and_not_more_than",
+          "label": "Total Number of Pelvic Nodes with Isolated Tumor Cells (0.2 mm or less and not more than",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "200_cells_required_only_if_present",
+          "label": "200 cells) (required only if present)###",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Reporting the number of lymph nodes with isolated tumor cells is required only in the absence of macrometastasis or micrometastasis in other lymph nodes."
+        },
+        {
+          "field_id": "number_of_pelvic_sentinel_nodes_with_itcs",
+          "label": "Number of Pelvic Sentinel Nodes with ITCs",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality_of_pelvic_nodes_with_tumor_required_only_if_present",
+          "label": "Laterality of Pelvic Node(s) with Tumor (required only if present)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "right_sentinel",
+              "label": "Right sentinel: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_non_sentinel",
+              "label": "Right non-sentinel: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_sentinel",
+              "label": "Left sentinel: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_non_sentinel",
+              "label": "Left non-sentinel: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_pelvic_nodal_metastatic_deposit",
+          "label": "Size of Largest Pelvic Nodal Metastatic Deposit",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_present_in_para_aortic_lymph_node",
+              "label": "Tumor present in para-aortic lymph node(s)"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "para_aortic_nodes",
+          "label": "Para-aortic Nodes",
+          "required": true,
+          "type": "free_text",
+          "condition": "required only if present"
+        },
+        {
+          "field_id": "total_number_of_para_aortic_nodes_with_macrometastasis_greater_than_2_mm_sentinel_and",
+          "label": "Total Number of Para-aortic Nodes with Macrometastasis (greater than 2 mm) (sentinel and",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "non_sentinel",
+          "label": "non-sentinel)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if present"
+        },
+        {
+          "field_id": "number_of_para_aortic_sentinel_nodes_with_macrometastasis",
+          "label": "Number of Para-aortic Sentinel Nodes with Macrometastasis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "total_number_of_para_aortic_nodes_with_micrometastasis_greater_than_02_mm_up_to_2_mm",
+          "label": "Total Number of Para-aortic Nodes with Micrometastasis (greater than 0.2 mm up to 2 mm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "andor_greater_than_200_cells_sentinel_and_non_sentinel",
+          "label": "and/or greater than 200 cells) (sentinel and non-sentinel)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if present"
+        },
+        {
+          "field_id": "number_of_para_aortic_sentinel_nodes_with_micrometastasis",
+          "label": "Number of Para-aortic Sentinel Nodes with Micrometastasis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "total_number_of_para_aortic_nodes_with_isolated_tumor_cells_02_mm_or_less_and_not_more",
+          "label": "Total Number of Para-aortic Nodes with Isolated Tumor Cells (0.2 mm or less and not more",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "than_200_cells_required_only_if_present",
+          "label": "than 200 cells) (required only if present)####",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Reporting the number of lymph nodes with isolated tumor cells is required only in the absence of macrometastasis or micrometastasis in other lymph nodes."
+        },
+        {
+          "field_id": "number_of_para_aortic_sentinel_nodes_with_itcs",
+          "label": "Number of Para-aortic Sentinel Nodes with ITCs",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality_of_para_aortic_nodes_with_tumor_required_only_if_present",
+          "label": "Laterality of Para-aortic Node(s) with Tumor (required only if present)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "right_sentinel",
+              "label": "Right sentinel: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_non_sentinel",
+              "label": "Right non-sentinel: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_sentinel",
+              "label": "Left sentinel: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_non_sentinel",
+              "label": "Left non-sentinel: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_para_aortic_nodal_metastatic_deposit",
+          "label": "Size of Largest Para-aortic Nodal Metastatic Deposit",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "lymph_nodes_examined",
+          "label": "Lymph Nodes Examined",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "total_number_of_pelvic_nodes_examined",
+          "label": "Total Number of Pelvic Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "sentinel and non-sentinel"
+        },
+        {
+          "field_id": "number_of_pelvic_sentinel_nodes_examined",
+          "label": "Number of Pelvic Sentinel Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if present"
+        },
+        {
+          "field_id": "total_number_of_para_aortic_nodes_examined",
+          "label": "Total Number of Para-aortic Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "sentinel and non-sentinel"
+        },
+        {
+          "field_id": "number_of_para_aortic_sentinel_nodes_examined",
+          "label": "Number of Para-aortic Sentinel Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if present"
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "uterine_serosa",
+              "label": "Uterine serosa: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "adnexa",
+              "label": "Adnexa: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "inguinal_lymph_node",
+              "label": "Inguinal lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "omentum",
+              "label": "Omentum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "extrapelvic_peritoneum",
+              "label": "Extrapelvic peritoneum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "This excludes metastasis to pelvic or para-aortic lymph nodes, or vagina."
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ],
+          "condition": "AJCC 9th Version"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_carcinoma_is_strictly_confined_to_the_cervix_extension_to_the_corpus_should_be_disregarded",
+          "label": "pT1: Carcinoma is strictly confined to the cervix (extension to the corpus should be disregarded).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a1",
+              "label": "pT1a1: Measured stromal invasion less than or equal to 3 mm in depth#"
+            },
+            {
+              "value": "pt1a2",
+              "label": "pT1a2: Measured stromal invasion greater than 3 mm and less than or equal to 5 mm in depth"
+            },
+            {
+              "value": "pt1a",
+              "label": "pT1a (subcategory cannot be determined)"
+            }
+          ],
+          "guidance": "The LAST definition of superficial invasive squamous cell carcinoma (SISCCA) conforms to T1a1."
+        },
+        {
+          "field_id": "pt1b_invasive_carcinoma_with_measured_deepest_invasion_greater_than_5_mm_greater_than_stage_ia_lesio",
+          "label": "pT1b: Invasive carcinoma with measured deepest invasion greater than 5 mm (greater than stage IA); lesion limited to the cervix uteri with size measured by maximum tumor diameter. Note: The involvement of lymphatic and / or vascular spaces should not change the staging. The lateral extent of the lesion is no longer considered.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1b1",
+              "label": "pT1b1: Invasive carcinoma greater than 5 mm depth of stromal invasion and less than or equal to 2 cm in greatest dimension"
+            },
+            {
+              "value": "pt1b2",
+              "label": "pT1b2: Invasive carcinoma greater than 2 cm and less than or equal to 4 cm in greatest dimension"
+            },
+            {
+              "value": "pt1b3",
+              "label": "pT1b3: Invasive carcinoma greater than 4 cm in greatest dimension"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt2a_involvement_limited_to_the_upper_two_thirds_of_the_vagina_without_parametrial_invasion",
+          "label": "pT2a: Involvement limited to the upper two-thirds of the vagina without parametrial invasion.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a1",
+              "label": "pT2a1: Invasive carcinoma less than or equal to 4 cm in greatest dimension"
+            },
+            {
+              "value": "pt2a2",
+              "label": "pT2a2: Invasive carcinoma greater than 4 cm in greatest dimension"
+            },
+            {
+              "value": "pt2a",
+              "label": "pT2a (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2b",
+              "label": "pT2b: With parametrial invasion but not up to the pelvic wall"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_carcinoma_involves_the_lower_third_of_the_vagina_andor_extends_to_the_pelvic_wall_andor_causes_h",
+          "label": "pT3: Carcinoma involves the lower third of the vagina and/or extends to the pelvic wall and/or causes hydronephrosis or nonfunctioning kidney. Note: The pelvic wall is defined as the muscle, fascia, neurovascular structures, and skeletal portions of the bony pelvis. Cases with no cancer-free space between the tumor and pelvic wall by rectal examination are FIGO III.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Carcinoma involves lower third of the vagina, with no extension to the pelvic wall"
+            },
+            {
+              "value": "pt3b",
+              "label": "pT3b: Extension to the pelvic wall and/or hydronephrosis or nonfunctioning kidney (unless known to be due to another cause)"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Carcinoma has involved (biopsy-proven) the mucosa of the bladder or rectum, or has spread to adjacent organs. (Bullous edema, as such, does not permit a case to be assigned to stage 4.)##"
+            }
+          ],
+          "guidance": "Tumor should involve the mucosal surface."
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in cervix"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0(i+): Isolated tumor cells in regional lymph node(s) less than or equal to 0.2 mm, or single cells or clusters of cells less than or equal to 200 cells in a single lymph node cross section"
+            }
+          ]
+        },
+        {
+          "field_id": "pn1_regional_lymph_node_metastasis_to_pelvic_lymph_nodes_only",
+          "label": "pN1: Regional lymph node metastasis to pelvic lymph nodes only.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1mi",
+              "label": "pN1mi: Regional lymph node metastasis (greater than 0.2 mm but less than or equal to 2.0 mm) to pelvic lymph nodes"
+            },
+            {
+              "value": "pn1a",
+              "label": "pN1a: Regional lymph node metastasis (greater than 2.0 mm diameter) to pelvic lymph nodes"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pn2_regional_lymph_node_metastasis_to_para_aortic_lymph_nodes_with_or_without_positive_pelvic_lymph_",
+          "label": "pN2: Regional lymph node metastasis to para-aortic lymph nodes, with or without positive pelvic lymph nodes.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2mi",
+              "label": "pN2mi: Regional lymph node metastasis to para-aortic lymph nodes (greater than 0.2 mm but less than or equal to 2.0 mm), with or without positive pelvic lymph nodes"
+            },
+            {
+              "value": "pn2a",
+              "label": "pN2a: Regional lymph node metastasis to para-aortic lymph nodes (greater than 2.0 mm in diameter), with or without positive pelvic lymph nodes"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "n_suffix",
+          "label": "N Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(sn) metastasis is identified only by sentinel lymph node biopsy"
+            },
+            {
+              "value": "",
+              "label": "(sn)(i-)"
+            },
+            {
+              "value": "",
+              "label": "(sn)(i+)"
+            },
+            {
+              "value": "",
+              "label": "(f) metastasis is identified only by FNA or core biopsy"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis (includes metastasis to inguinal lymph nodes, intraperitoneal disease, lung, liver, or bone) (excludes metastasis to pelvic or para-aortic lymph nodes, or vagina).#"
+            }
+          ],
+          "condition": "required only if confirmed pathologically",
+          "guidance": "Uterine serosa and adnexa involvement are considered M1 disease. (Note G)"
+        },
+        {
+          "field_id": "figo_stage",
+          "label": "FIGO STAGE",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "figo_stage_2018_figo_cancer_report",
+          "label": "FIGO Stage (2018 FIGO Cancer Report)#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I: Carcinoma is strictly confined to the cervix (extension to the uterine corpus should be disregarded)"
+            },
+            {
+              "value": "ia",
+              "label": "IA: Invasive cancer identified only microscopically (All gross lesions even with superficial invasion are stage IB cancers) Invasion is limited to measured stromal invasion with a maximum depth of 5.0 mm#"
+            },
+            {
+              "value": "ia1",
+              "label": "IA1: Measured stromal invasion of 3.0 mm or less in depth##"
+            },
+            {
+              "value": "ia2",
+              "label": "IA2: Measured stromal invasion of more than 3.0 mm and not more than 5.0 mm"
+            },
+            {
+              "value": "ib",
+              "label": "IB: Invasive carcinoma with measured stromal invasion greater than 5.0 mm (greater than stage IA) and limited to the uterus###"
+            },
+            {
+              "value": "ib1",
+              "label": "IB1: Invasive carcinoma with measured stromal invasion greater than 5.0 mm and 2 cm or less in greatest dimension"
+            },
+            {
+              "value": "ib2",
+              "label": "IB2: Invasive carcinoma greater than 2 cm but 4 cm or less in greatest dimension"
+            },
+            {
+              "value": "ib3",
+              "label": "IB3: Invasive carcinoma greater than 4 cm in greatest dimension"
+            },
+            {
+              "value": "ii",
+              "label": "II: Carcinoma extends beyond the uterus but has not extended onto the pelvic sidewall or to the lower third of vagina"
+            },
+            {
+              "value": "iia",
+              "label": "IIA: Carcinoma involves the upper two-thirds of the vagina without parametrial invasion"
+            },
+            {
+              "value": "iia1",
+              "label": "IIA1: Invasive carcinoma 4 cm or less in greatest dimension"
+            },
+            {
+              "value": "iia2",
+              "label": "IIA2: Invasive carcinoma greater than 4 cm in greatest dimension"
+            },
+            {
+              "value": "iib",
+              "label": "IIB: Parametrial involvement but not involving the pelvic sidewall"
+            },
+            {
+              "value": "iii",
+              "label": "III: Carcinoma involves the lower third of the vagina and / or extends to the pelvic sidewall and / or causes hydronephrosis or nonfunctioning kidney and / or involves pelvic and / or para-aortic lymph nodes"
+            },
+            {
+              "value": "iiia",
+              "label": "IIIA: Involvement of the lower third of the vagina but no extension onto pelvic sidewall"
+            },
+            {
+              "value": "iiib",
+              "label": "IIIB: Extension onto the pelvic sidewall, and / or causing hydronephrosis / nonfunctioning kidney (unless known to be due to another cause)"
+            },
+            {
+              "value": "iiic",
+              "label": "IIIC: Involvement of pelvic and / or para-aortic lymph nodes (including micrometastases), irrespective of tumor size and extent (with r and p notations)####"
+            },
+            {
+              "value": "iiic1",
+              "label": "IIIC1: Pelvic lymph node metastasis only"
+            },
+            {
+              "value": "iiic2",
+              "label": "IIIC2: Para- aortic lymph node metastasis"
+            },
+            {
+              "value": "iv",
+              "label": "IV: Carcinoma extends beyond the true pelvis or involves (biopsy proven) the mucosa of the bladder and / or rectum (bullous edema is not sufficient) or spread to distant organs#####"
+            },
+            {
+              "value": "iva",
+              "label": "IVA: Spread to adjacent organs, i.e., tumor invading the mucosa of the bladder and / or rectum (biopsy proven) and / or extending beyond the true pelvis (bullous edema is not sufficient)"
+            },
+            {
+              "value": "ivb",
+              "label": "IVB: Spread to distant organs"
+            }
+          ],
+          "guidance": "Please note that this section includes the Corrigendum to Revised FIGO staging for carcinoma of the cervix uteri. See the appropriate reference in Note G. For FIGO IA cancers, the depth of invasion should not be more than 5.0 mm taken from the base of the epithelium, either surface or glandular, from which it originates. Vascular space invasion does not alter the staging. The LAST definition of superficial invasive squamous cell carcinoma (SISCCA) conforms to FIGO IA1. Lymphatic and / or vascular space invasion does not alter the staging. Isolated tumor cells do not change the stage, but their presence should be recorded. Notations r refers to imaging and p refers to pathology. Involvement of the uterine or pelvic serosa and / or fallopian tubes alone does not constitute FIGO Stage IV disease, but is considered M1 disease in the AJCC / UICC system. (Note G)"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "low_grade_squamous_intraepithelial_lesion",
+              "label": "Low-grade squamous intraepithelial lesion (CIN 1)"
+            },
+            {
+              "value": "high_grade_squamous_intraepithelial_lesion",
+              "label": "High-grade squamous intraepithelial lesion (CIN 2 or 3)"
+            },
+            {
+              "value": "endocervical_adenocarcinoma_in_situ",
+              "label": "Endocervical adenocarcinoma in situ"
+            },
+            {
+              "value": "inflammation",
+              "label": "Inflammation"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "ancillary_studies_specify",
+          "label": "Ancillary Studies (specify) : _________________",
+          "required": false,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "p16_immunohistochemistry",
+          "label": "p16 Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specimen_orientation",
+          "label": "Specimen Orientation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_specimen_is_the_product_of_a_cone_biopsy_or_an_excisional_biopsy_it_is_desirable_for_the_surg",
+          "label": "If the specimen is the product of a cone biopsy or an excisional biopsy, it is desirable for the surgeon to orient the specimen to facilitate assessment of the resection margins (e.g., stitch at 12 o’clock). The laterality of the specimen is in reference to the patient’s perspective. Clock values refer to the cervix from the viewer’s perspective (face on). However, specimens frequently are received without orientation. In these cases, the clock face orientation is designated by the pathologist and is arbitrary.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "examination_of_bladder_and_rectum",
+          "label": "Examination of Bladder and Rectum",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "currently_pelvic_exenterations_are_rarely_seen_but_typically_when_performed_indicate_advanced_tumor_",
+          "label": "Currently, pelvic exenterations are rarely seen, but typically when performed indicate advanced tumor stage.  In these cases, the extent of tumor involvement of the urinary bladder and rectum and the relation of that tumor to the cervical carcinoma should be described. To evaluate these features, sections of the rectum and bladder should be taken perpendicular to the mucosa directly overlying the tumor in the cervix. A method that provides excellent orientation of the tumor to adjacent structures consists of inflation of the urinary bladder and rectum with formalin and fixation of the specimen for several hours. The entire specimen can then be hemisected through the neoplasm, and appropriate sections can be obtained.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_size_measurement",
+          "label": "Tumor Size Measurement",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "larger_tumors_are_more_accurately_measured_grossly_while_smaller_tumors_and_some_larger_tumors_with_",
+          "label": "Larger tumors are more accurately measured grossly, while smaller tumors and some larger tumors with a diffusely infiltrative pattern or with marked fibrosis are best measured microscopically. It is best to report only one set of tumor measurements based on a correlation of the gross and microscopic features to avoid confusion. According to the 2018 FIGO staging system for all stages the size of the primary tumor can be assessed by clinical evaluation (pre- or intraoperative), imaging, and/or pathological measurement.1 However, in surgically treated cases, the pathologist’s findings should take priority over clinical or image-based staging and should be used for the pathological staging.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_depth_of_invasion_is_required_for_the_sub_staging_of_stage_1_carcinomas_in_the_latest_figo_stagi",
+          "label": "The depth of invasion is required for the sub-staging of Stage 1 carcinomas in the latest FIGO staging system (2018)1 and in the latest AJCC system (2020)2. The depth of invasion is measured from its HSIL origin, that is, from the base of the epithelium, whether epithelial surface or an endocervical gland that is involved by HSIL to the deepest point of invasion. If the invasive focus or foci are not in continuity with the dysplastic epithelium, the depth of invasion should be measured from the deepest focus of tumor invasion to the base of the nearest dysplastic crypt or surface epithelium. If there is no obvious epithelial origin, the depth is measured from the deepest focus of tumor invasion to the base of the nearest surface epithelium, regardless of whether it is dysplastic or not. In situations where carcinomas are exclusively or predominantly exophytic, there may be little or no invasion of the underlying stroma. These should not be regarded as in situ lesions and the tumor thickness (from the surface of the tumor to the deepest point of invasion) should be measured. The depth of invasion below the level of the epithelial origin should not be provided in these cases, as this may not truly reflect the biological potential of these tumors. If it is impossible to measure the depth of invasion, e.g., in ulcerated tumors or in some adenocarcinomas, the tumor thickness may be measured instead, and this should be clearly stated on the pathology report along with an explanation for providing the thickness rather than the depth of invasion.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_depth_of_stromal_invasion_in_fractional_thirds_in_resections_is_a_data_point_in_the_nccn_guideli",
+          "label": "The depth of stromal invasion in fractional thirds in resections is a data point in the NCCN guidelines that guides clinical management.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fig_1cin3_with_involvement_of_endocervical_gland_crypts_is_represented_by_the_dark_blue_colored_area",
+          "label": "FIG. 1.CIN3 with involvement of endocervical gland crypts is represented by the dark blue-colored areas, nondysplastic squamous epithelium is pink, and gray areas indicate foci of stromal invasion. The depth of invasion (a), and horizontal tumor dimension/width (b) are measured in unifocal disease. Third dimension: when stromal invasion is present in 3 or more consecutive blocks of a loop or cone biopsy the third tumor dimension (c), may exceed 7mm, that is the carcinoma may be more than International Federation of Obstetricians and Gynaecologists stage IA2. This dimension is determined by calculating the block thickness (usually 2.5–3.0 mm) from the macroscopic specimen dimensions and multiplying this by the number of sequential blocks through which the invasion extends.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "horizontal_extent",
+          "label": "Horizontal Extent",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_is_now_an_optional_element_in_the_synoptic_template_it_is_no_longer_included_in_the_ajcc_stagin",
+          "label": "This is now an optional element in the synoptic template. It is no longer included in the AJCC staging update and is no longer used for sub-staging of Stage I carcinomas in the 2018 FIGO staging system.1 However, some still feel that horizontal spread may have prognostic significance in early stage cervical cancer. The collection of horizontal spread data is encouraged to create an opportunity for future analysis and individual clinicians may request a horizontal extent for their practice.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_horizontal_extent_may_be_the_longitudinal_extent_length_measured_in_the_superior_inferior_plane_",
+          "label": "The horizontal extent may be the longitudinal extent (length) measured in the superior-inferior plane (i.e., from the endocervical to ectocervical aspects of the section), or it may be the circumferential extent (width) that is measured or calculated perpendicular to the longitudinal axis of the cervix. When a gross lesion is not identified, the measurement accuracy of horizontal extent may be limited. If the extent is measured on a single glass slide, this may underestimate the true horizontal extent, because the tumor may involve multiple blocks and may have a greater “width” than “length”. The thickness of sections of the cervix, which are often taken as “wedges” of a cone may be variable and may range from less than 1.0 mm to greater than 3.0 mm.  In addition, adding thicknesses of adjacent sections where the sections are taken as a cone are measuring the circumference rather than a linear “width”. Estimates using a thickness of 2.5 mm to 3.0 mm may overestimate the true tumor extent.5,6 The pathologist should report the maximum horizontal extent (when it is on a single block) and where multiple blocks are involved, they should report the number of blocks involved and if it is estimated as less than or equal to 7.0 mm or greater than 7.0 mm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_summarize_horizontal_extent_data_is_an_optional_element_and_has_been_excluded_from_the_staging_up",
+          "label": "To summarize, horizontal extent data is an optional element and has been excluded from the staging update. However, the collection of horizontal spread data is encouraged.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_lower_anogenital_squamous_terminology_last7_definition_of_superficial_invasive_squamous_cell_car",
+          "label": "The Lower Anogenital Squamous Terminology (LAST)7 definition of superficial invasive squamous cell carcinoma (SISSCA) conforms to T1a1/ FIGO IA1 and defines what would have been previously reported as “microinvasive” squamous cell carcinoma. The LAST consensus recommends that SISCCA include multifocal disease and that reporting include the presence, number, and size of independent multifocal carcinoma. However, LAST makes no recommendation on the methodology to measure multifocal disease. Multifocal tumors should be defined as invasive foci separated by a tissue block within which there is no evidence of invasion, as invasive foci in the same tissue block that are more than 2.0 mm apart, or as invasive foci on different cervical lips. They recommend that multifocal tumors should be staged based on the largest focus.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silva_pattern_of_invasion",
+          "label": "Silva Pattern of Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silva_patterns_of_invasion_are_applicable_only_to_hpv_associated_invasive_endocervical_adenocarcinom",
+          "label": "Silva patterns of invasion are applicable only to HPV-associated invasive endocervical adenocarcinomas. Accurately measuring the depth of stromal invasion can be challenging in some endocervical adenocarcinomas. The Silva system of classification8 stratifies cases of invasive endocervical adenocarcinomas into three groups on the basis of the morphologic pattern of invasion and is predictive of the risk for LN metastasis. Briefly, Pattern A shows well-demarcated glands with rounded contours, frequently forming groups with no destructive stromal invasion, no single cells or cell detachment and no LVI. Complex intraglandular growth such as cribriform or papillary architecture is acceptable but there is no solid growth. Pattern B shows localized (limited, early) destructive stromal invasion.  There are individual or small groups of tumor cells, separated from the rounded gland, in a focally desmoplastic or inflamed stroma. There is no solid growth and LVI may or may not be present. Pattern C shows diffuse destructive stromal invasion. There are diffusely infiltrative glands with associated extensive desmoplastic response. Growth pattern is confluent or solid and LVI may or may not be present. Pattern A cases were all stage I with negative lymph nodes and no recurrences. Pattern B tumors rarely had metastatic lymph nodes and only 23.8% of cases with pattern C had lymph node metastases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bhatla_n_berek_js_cuello_fredes_m_et_al_revised_figo_staging_for_carcinoma_of_the_cervix_uteri_int_j",
+          "label": "Bhatla N, Berek JS, Cuello Fredes M, et al. Revised FIGO staging for carcinoma of the cervix uteri. Int J Gynaecol Obstet. 2019;145(1):129-135.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "olawaiye_ab_hagemann_i_otis_c_et_al_cervix_uteri_used_with_permission_of_the_american_college_of_sur",
+          "label": "Olawaiye AB, Hagemann I, Otis C et al. Cervix Uteri. Used with permission of the American College of Surgeons, Chicago, Illinois. The original source for this information is the AJCC Cancer Staging System (2020).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "delgado_g_bundy_b_zaino_r_sevin_b_creasman_wt_major_f_prospective_surgical_pathological_study_of_dis",
+          "label": "Delgado G, Bundy B, Zaino R, Sevin B, Creasman WT, Major F: Prospective surgical-pathological study of disease-free interval in patients with stage IB squamous cell carcinoma of the cervix: A Gynecologic Oncology Group study. Gynecol Oncol. 1990; 38: 352-35.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sedlis_a_bundy_bn_rotman_mz_lentz_ss_muderspach_li_zaino_rj_a_randomized_trial_of_pelvic_radiation_t",
+          "label": "Sedlis A, Bundy BN, Rotman MZ, Lentz SS, Muderspach LI, Zaino RJ. A randomized trial of pelvic radiation therapy versus no further therapy in selected patients with stage IB carcinoma of the cervix after radical hysterectomy and pelvic lymphadenectomy: a Gynecologic Oncology Group Study. Gynecol Oncol. 1999;73:177-83.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "international_collaboration_on_cancer_reporting_carcinoma_of_the_cervix_histopathology_reporting_gui",
+          "label": "International Collaboration on Cancer Reporting. Carcinoma of the Cervix Histopathology Reporting Guide. Version 4.0. Published August 2021. ISBN: 978-1-922324-24-5.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "day_e_duffy_s_bryson_g_et_al_multifocal_figo_stage_ia1_squamous_carcinoma_of_the_cervix_criteria_for",
+          "label": "Day E, Duffy S, Bryson G, et al. Multifocal FIGO Stage IA1 squamous carcinoma of the cervix: criteria for identification, staging, and its good clinical outcome. Int J Gynecol Pathol. 2016;35:467-474.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "darragh_tm_colgan_tj_cox_jt_et_al_the_lower_anogenital_squamous_terminology_standardization_project_",
+          "label": "Darragh TM, Colgan TJ, Cox JT, et al. The Lower Anogenital Squamous Terminology Standardization Project for HPV-Associated Lesions: background and consensus recommendations from the College of American Pathologists and the American Society for Colposcopy and Cervical Pathology. Arch Pathol Lab Med. 2012; 136(10):1266-1297.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roma_aa_diaz_de_vivar_a_silva_eg_et_al_invasive_endocervical_adenocarcinoma_a_new_pattern_based_clas",
+          "label": "Roma AA, Diaz De Vivar A, Silva EG et al. Invasive endocervical adenocarcinoma: a new pattern-based classification system with important clinical significance. Am J Surg Pathol. 2015; 39(5):667-672.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_proposed_by_the_world_health_organization",
+          "label": "For consistency in reporting, the histologic classification proposed by the World Health Organization (WHO) is recommended;1 other classification systems may be used, however. A majority of cervical squamous cell carcinomas are HPV-associated. p16 testing and/or molecular HPV typing is recommended before making the diagnosis of HPV-associated cervical SCC. If these results are not available, the NOS category should be used. 75% of HPV-associated adenocarcinomas are of the usual type. Villoglandular, mucinous NOS, intestinal, signet ring cell, and SMILE (stratified mucin-producing) carcinoma are all patterns of HPV-associated adenocarcinomas. There is now a general consensus that most or all serous carcinomas detected in the cervix represent metastasis or direct extension from adnexal or endometrial serous carcinomas, although conclusive studies to support this have yet to be published.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "herrington_cs_ordi_j_bray_f_tumours_of_the_uterine_cervix_in_who_classification_of_tumours_editorial",
+          "label": "Herrington, CS, Ordi, J, Bray, F. Tumours of the uterine cervix In: WHO Classification of Tumours, Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Sep 22]. (WHO classification of tumours series, 5th ed.; vol. 4). Available from: https://tumourclassification.iarc.who.int/chapters/34.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_wide_variety_of_grading_systems_including_some_that_evaluate_only_the_extent_of_cellular_different",
+          "label": "A wide variety of grading systems, including some that evaluate only the extent of cellular differentiation and others that assess additional features such as the appearance of the tumor margin, the extent of inflammatory cell infiltration, and vascular invasion, have been used for squamous cell carcinoma of the cervix. However, there is no consensus emerging from the literature that any of these systems are reproducible or that they provide useful prognostic information, so no particular system is recommended. For the grading of invasive squamous tumors, it is suggested that three grades be used",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_uncertain_whether_grading_has_independent_prognostic_value_in_cervical_aca_whilst_a_correlatio",
+          "label": "It is uncertain whether grading has independent prognostic value in cervical ACA. Whilst a correlation between higher grade and adverse outcomes has been reported, at least for poorly differentiated tumors, this has not been a universal finding. Most grading systems are based on the tumor architecture (glandular and papillary versus solid areas) and its nuclear features. In contrast to squamous cell carcinoma, most authors who grade cervical adenocarcinoma have found the grade to have prognostic value.1,2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_with_no_differentiation_or_minimal_differentiation_that_is_discernible_only_in_rare_tiny_foci",
+          "label": "Tumors with no differentiation or minimal differentiation that is discernible only in rare, tiny foci (undifferentiated carcinomas by WHO classification) are categorized as Grade 4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_tumors_of_the_cervix_have_a_separate_grading_system_mirroring_neuroendocrine_tumors_o",
+          "label": "Neuroendocrine tumors of the cervix have a separate grading system mirroring neuroendocrine tumors of other body sites. The 2020 WHO classifies uterine cervix neuroendocrine tumors into two categories: low-grade neuroendocrine tumor (including grades 1 and 2) and high-grade neuroendocrine carcinoma (including small cell neuroendocrine carcinoma and large cell neuroendocrine carcinoma), along with a “mixed” category with other carcinoma. By definition, the high-grade tumors are grade 3.3,4,5  High-grade neuroendocrine tumors of the cervix are typically HPV-associated, most frequently HPV subtypes 16 or 18.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kosary_cl_figo_stage_histology_histologic_grade_age_and_race_as_prognostic_factors_in_determining_su",
+          "label": "Kosary CL. FIGO stage, histology, histologic grade, age and race as prognostic factors in determining survival for cancers of the female gynecological system: an analysis of 1973-87 SEER cases of cancers of the endometrium, cervix, ovary, vulva, and vagina. Semin Surg Oncol. 1994;10:31-46.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baalbergen_a_ewing_graham_pc_hop_wc_struijk_p_helmerhorst_tj_prognostic_factors_in_adenocarcinoma_of",
+          "label": "Baalbergen A, Ewing-Graham PC, Hop WC, Struijk P, Helmerhorst TJ. Prognostic factors in adenocarcinoma of the uterine cervix. Gynecol Oncol. 2004;92:262-267.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "takeda_n_sakuragi_n_takeda_m_et_al_multivariate_analysis_of_histopathologic_prognostic_factors_for_i",
+          "label": "Takeda N, Sakuragi N, Takeda M, et al. Multivariate analysis of histopathologic prognostic factors for invasive cervical cancer treated with radical hysterectomy and systematic retroperitoneal lymphadenectomy. Acta Obstet Gynecol Scand. 2002;8:1144-1151.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lea_js_sheets_ee_wenham_rm_duska_lr_coleman_rl_miller_ds_and_schorge_jo_2002_stage_iib_ivb_cervical_",
+          "label": "Lea JS, Sheets EE, Wenham RM, Duska LR, Coleman RL, Miller DS and Schorge JO (2002). Stage IIB-IVB cervical adenocarcinoma: prognostic factors and survival. Gynecol Oncol 2002; 84:115-119.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "howitt_be_kelly_p_mccluggage_wg_pathology_of_neuroendocrine_tumors_of_the_female_genital_tract_curr_",
+          "label": "Howitt BE, Kelly P, McCluggage WG. Pathology of neuroendocrine tumors of the female genital tract. Curr Oncol Rep. 2017; 19:59. doi 10.1007/s11912-017-0617-2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "many_gynecologists_feel_that_the_presence_of_lymphatic_andor_vascular_invasion_is_important_because_",
+          "label": "Many gynecologists feel that the presence of lymphatic and/or vascular invasion is important because it may change the extent of their surgical treatment and may be an independent risk factor for recurrence.1,2,3,4 At times, it may be difficult to evaluate a specimen for lymphatic and/or vascular invasion, as in cases with crush artifact or suboptimal fixation. In these cases, it can be categorized as “cannot be determined”. At other times, it may be difficult to be definitive whether lymphatic and/or vascular invasion is present. This can include cases where retraction artifact or artifactual transfer of tumor cells is a consideration. In other cases, foci may be suspicious but not definitive for invasion. All of these situations can be categorized as “equivocal for invasion”. In cases where one cannot be definitive, a qualifying note explaining the interpretive difficulty and the extent of possible involvement is recommended, since it may help to direct medical management.2,5,6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "casarin_j_buda_a_bogani_g_et_al_predictors_of_recurrence_following_laparoscopic_radical_hysterectomy",
+          "label": "Casarin J, Buda A, Bogani G, et al. Predictors of recurrence following laparoscopic radical hysterectomy for early-stage cervical cancer: a multi-institutional study. Gynecol Oncol. 2020;   159(1):164-170.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margolis_b_cagle_colon_k_chen_l_tergas_ai_boyd_l_wright_jd_prognostic_significance_of_lymphovascular",
+          "label": "Margolis B, Cagle-Colon K, Chen L, Tergas AI, Boyd L, Wright JD. Prognostic significance of lymphovascular space invasion for stage IA2 and IA3 cervical cancer. Int J Gynecol Cancer. 2020; 30(6):735-743.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "qian_q_yang_j_cao_d_you_y_chen_j_shen_k_analysis_of_treatment_modalities_and_prognosis_on_microinvas",
+          "label": "Qian Q, Yang J, Cao D, You Y, Chen J, Shen K. Analysis of treatment modalities and prognosis on microinvasive cervical cancer: a 10-year cohort study in China. J Gynecol Oncol. 2014; 254):293-300.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kodama_j_mizutani_y_hongo_a_yoshinouchi_m_kudo_t_okuda_h_optimal_surgery_and_diagnostic_approach_of_",
+          "label": "Kodama J, Mizutani Y, Hongo A, Yoshinouchi M, Kudo T, Okuda H. Optimal surgery and diagnostic approach of stage IA2 squamous cell carcinoma of the cervix. Eur J Gynecol Reprod Biol. 2002; 101(2):192-195.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yan_w_qui_s_ding_y_zhang_q_si_l_lv_s_lui_l_prognostic_value_of_lymphovascular_space_invasion_in_pati",
+          "label": "Yan W, Qui S, Ding Y, Zhang Q, Si L, Lv S, Lui L. Prognostic value of lymphovascular space invasion in patients with early stage cervical cancer in Jilin, China: a retrospective study. Medicine. 2019; 98(40):e17302.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weyl_a_illac_c_lusque_a_et_al_prognostic_value_of_lymphovascular_space_invasion_in_early_stage_cervi",
+          "label": "Weyl A, Illac C, Lusque A, et al. Prognostic value of lymphovascular space invasion in early-stage cervical cancer. Int J Gynecol Cancer. 2020; 30(10):1493-1499.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pol_fj_zusterzeel_pl_vanham_ma_kuijpers_da_bulten_j_massuger_lf_satellite_lymphovascular_space_invas",
+          "label": "Pol FJ, Zusterzeel PL, vanHam MA, Kuijpers DA, Bulten J, Massuger LF. Satellite lymphovascular space invasion: an independent risk factor in early stage cervical cancer. Gynecol Oncol. 2015; 138(3):579-582.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins_can_be_involved_negative_or_indeterminate_for_carcinoma_if_a_margin_is_involved_whether_endo",
+          "label": "Margins can be involved, negative, or indeterminate for carcinoma. If a margin is involved, whether endocervical, ectocervical, deep, or other, it should be specified. If indeterminate, the reason should be specified (e.g., cautery artifact in electroexcision specimens may preclude evaluation of the status of the margin). The severity and extent of a precursor lesion (e.g., focal or diffuse) involving a resection margin of a cone should be specified.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_an_invasive_tumor_approximates_but_does_not_directly_involve_a_resection_margin_the_distance_betw",
+          "label": "If an invasive tumor approximates but does not directly involve a resection margin, the distance between the tumor and the margin should be measured in millimeters. If the tumor involves the uterine corpus, a determination of whether the cervix or corpus is the primary site should be made.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_hysterectomy_or_trachelectomy_specimens_the_lateral_radial_margin_may_consist_of_parametrial_soft",
+          "label": "In hysterectomy or trachelectomy specimens, the lateral radial margin may consist of parametrial soft tissue, which should be measured if present.1 If a parametrectomy has been performed, a measurement from the side of the uterus to the lateral edge of each unstretched parametrium (lateral extent) should be recorded and calculated into the margin evaluation. If parametrectomy has been performed, careful microscopic examination of the parametria is important for evaluation of the lateral margins and/or soft tissue extension. Fragments of paracervical/ parametrial soft tissue that may be present in sections of cervix from a simple hysterectomy do not represent a formal parametrectomy. Anterior and posterior radial/deep stromal margins in a hysterectomy specimen will consist of cervical stromal tissue.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mccluggage_wg_judge_mj_alvarado_cabrero_i_et_al_data_set_for_the_reporting_of_carcinomas_of_the_cerv",
+          "label": "McCluggage WG, Judge MJ, Alvarado-Cabrero I, et al. Data set for the reporting of carcinomas of the cervix: recommendations from the International Collaboration on Cancer Reporting (ICCR). Intl J Gynecol Pathol. 2018;37(3):205–228.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_categories_for_cervical_cancer_endorsed_by_the_american_joint_committee_on_cancer_ajcc_and_t",
+          "label": "The TNM categories for cervical cancer endorsed by the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC), and the parallel system formulated by the International Federation of Gynecology and Obstetrics (FIGO), are recommended.1,2,3,4,5,6 This does not preclude the use of other staging systems.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_ct_refers_to_a_primary_tumor_that_has_not_been_previously_tre",
+          "label": "By AJCC/UICC convention, the designation “cT” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and the pathologist’s contribution is based on gross and microscopic examination after primary surgical treatment. pT entails a surgical treatment resection of the primary tumor or biopsy adequate to evaluate the highest pT category and highest pN categories, pN entails removal or biopsy of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient. Pathological classification (pTNM) must be assigned by the managing physician based on the clinical stage information, the operative findings, and the gross and microscopic examination of the surgical resection specimen. The pathologist provides vital information, but it is not the patient’s final pT, pN, and/or pM categories.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval, and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_t_suffix_and_sn_and_f_n_suf",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “(m)” T suffix and “(sn)” and “(f)” N suffixes are used. Although they do not affect the stage grouping, they indicate cases needing special analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_t_suffix_indicates_the_presence_of_multiple_primary_synchronous_tumors_in_a_single_site_and_is",
+          "label": "The “(m)” T suffix indicates the presence of multiple primary synchronous tumors in a single site and is recorded in parentheses: e.g., pT1(m).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_sn_n_suffix_indicates_a_sentinel_node_procedure_only_without_resection_of_the_nodal_basin_was_pe",
+          "label": "The “(sn)” N suffix indicates a sentinel node procedure only, without resection of the nodal basin, was performed and is recorded in parentheses: e.g., pN1(sn).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_f_n_suffix_indicates_a_fine_needle_aspiration_fna_or_core_needle_biopsy_without_a_sentinel_node_",
+          "label": "The “(f)” N suffix indicates a fine needle aspiration (FNA) or core needle biopsy, without a sentinel node procedure or resection of nodal basin, was performed and is recorded in parentheses: e.g., pN1",
+          "required": true,
+          "type": "free_text",
+          "condition": "f"
+        },
+        {
+          "field_id": "of_note_tumor_size_has_been_shown_to_have_prognostic_utility_for_stage_i_to_stage_ii_lesions_and_the",
+          "label": "Of note, tumor size has been shown to have prognostic utility for stage I to stage II lesions, and the 2018 FIGO staging classification uses tumor size for the subclassification of stage I and stage IIa tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_cap_protocols_follow_the_ajccuicc_staging_guidance_and_vocabulary_which_may_predate_staging_guid",
+          "label": "The CAP protocols follow the AJCC/UICC staging guidance and vocabulary, which may predate staging guidance from editions of the WHO Classification of Tumours and/or conflict with FIGO staging guidance. Although the ultimate goal is harmonization of these 3 guidelines, discrepancies in the CAP protocol may occur due to release date variability of these manuscripts. The AJCC Cancer Staging System, 9th Version (2020), cervical cancer staging chapter includes guidance for pM1 that contains the statement, “Uterine serosa and adnexal involvement are considered M1 disease” (Table 1) and this conflicts with the definition of M - Distant Metastasis in the WHO Classification of Tumours, 5th edition, Female Genital Tumours, which states for cervix: “M1 – Distant metastasis (includes inguinal lymph nodes and intraperitoneal disease). It excludes metastasis to the vagina, pelvic serosa, and adnexa.” The AJCC/UICC, WHO and FIGO criteria for stage IV disease differ due to limited evidence for consensus. Involvement of the ovary and/or fallopian tube for tumors limited to the cervix constitutes M1 disease in AJCC (involves the fallopian tube and/or ovary), but is stage I in FIGO, (organs are within the true pelvis).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_ajcc_cancer_staging_system_9th_version_cervix_uteri_cancer_staging1",
+          "label": "Table 1: AJCC Cancer Staging System, 9th Version, Cervix Uteri Cancer Staging1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_andor_vascular_invasion",
+          "label": "Lymphatic and/or Vascular Invasion",
+          "required": true,
+          "type": "free_text",
+          "condition": "LVI"
+        },
+        {
+          "field_id": "sentinel_lymph_node_sampling_in_cervical_carcinoma_has_been_recently_implemented7_sentinel_nodes_sho",
+          "label": "Sentinel lymph node sampling in cervical carcinoma has been recently implemented.7 Sentinel nodes should be sliced at 2.0 mm intervals. The sentinel nodes should undergo ultrastaging. Currently, there is no universal ultrastaging protocol. However, all institutions undertaking sentinel lymph node examination should have a standard procedure in place for sentinel lymph nodes. One protocol is as follows: For any section that is negative on initial H&E section, 2 sections are taken from each of two levels that are 50 µm apart, with one for H&E and the second for pankeratin immunohistochemistry.8,9,10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_is_little_data_to_assign_risk_for_nonsentinel_lymph_node_metastasis_based_on_the_size_of_the_m",
+          "label": "There is little data to assign risk for nonsentinel lymph node metastasis based on the size of the metastasis in the sentinel lymph node. However, the size criteria for micrometastasis and macrometastasis is adopted from the experience in breast carcinoma. Micrometastasis is defined as a metastasis measuring greater than 0.2 mm but less than or equal to 2.0 mm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "isolated_tumor_cells_itcs_are_single_cells_or_small_clusters_of_cells_not_more_than_02_mm_in_greates",
+          "label": "Isolated tumor cells (ITCs) are single cells or small clusters of cells not more than 0.2 mm in greatest dimension, or single cells or clusters of cells less than or equal to 200 cells in a single lymph node cross section. Lymph nodes or distant sites with ITCs found by either histologic examination (e.g., immunohistochemical evaluation for cytokeratin) or nonmorphological techniques (e.g., flow cytometry, DNA analysis, polymerase chain reaction [PCR] amplification of a specific tumor marker) should be so identified. There is currently no guidance in the literature as to how these patients should be coded; until more data are available, they should be coded as “N0(i+)” with a comment noting how the cells were identified.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "examination_of_parametria",
+          "label": "Examination of Parametria",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_parametria_may_be_measured_grossly_but_their_width_varies_according_to_the_elasticity_of_the_tis",
+          "label": "The parametria may be measured grossly, but their width varies according to the elasticity of the tissue. The parametria should not be stretched during measurement. Careful microscopic examination of the parametria is important for evaluation of the lateral margins and/or soft tissue extension.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "used_with_permission_of_the_american_college_of_surgeons_chicago_illinois_the_original_source_for_th",
+          "label": "Used with permission of the American College of Surgeons, Chicago, Illinois. The original source for this information is the AJCC Cancer Staging System (2020).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brierley_jd_gospodarowicz_m_wittekind_ch_eds_tnm_classification_of_malignant_tumors_8th_ed_oxford_uk",
+          "label": "Brierley JD, Gospodarowicz M, Wittekind CH, eds. TNM Classification of Malignant Tumors. 8th ed. Oxford, UK: Wiley; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bhatla_n_berek_js_cuello_fredes_m_et_al_revised_figo_staging_for_carcinoma_of_the_cervix_uteri_int_j",
+          "label": "Bhatla N, Berek JS, Cuello Fredes M, et al. Revised FIGO staging for carcinoma of the cervix uteri. Int J Gynaecol Obstet. 2019;145:129-135.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bhatla_n_berek_js_cuello_fredes_m_et_al_corrigendum_to_revised_figo_staging_for_carcinoma_of_the_cer",
+          "label": "Bhatla N, Berek JS, Cuello Fredes M, et al: Corrigendum to “Revised FIGO staging for carcinoma of the cervix uteri” [Int J Gynecol Obstet 145(2019) 129–135]: Int J Gynecol Obstet. 2019; 147: 279–280.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bhatla_n_denny_l_figo_cancer_report_2018_int_j_gynecol_obstet_2018_142_suppl_2_i_iv_1_158",
+          "label": "Bhatla N, Denny L FIGO Cancer Report 2018. Int J Gynecol Obstet. 2018; 142 (Suppl 2): i-iv, 1-158.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bhatla_n_aoki_d_sharma_dn_sankaranarayanan_r_cancer_of_the_cervix_uteri_int_j_gynecol_obstet_2018_14",
+          "label": "Bhatla N, Aoki D, Sharma DN, Sankaranarayanan R. Cancer of the cervix uteri. Int J Gynecol Obstet. 2018; 143 (Suppl 2):22-36.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cibula_d_mccluggage_wg_sentinel_lymph_node_sln_concept_in_cervical_cancer_current_limitations_and_un",
+          "label": "Cibula D, McCluggage WG. Sentinel lymph node (SLN) concept in cervical cancer: current limitations and unanswered questions. Gynecol Oncol. 2019;152(1):202-207.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diaz_jp_gemignani_ml_pandit_taskar_n_et_al_sentinel_lymph_node_biopsy_in_the_management_of_early_sta",
+          "label": "Diaz JP, Gemignani ML, Pandit-Taskar N, et al. Sentinel lymph node biopsy in the management of early-stage cervical carcinoma. Gynecol Oncol. 2011;120(3):347-352.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "euscher_ed_malpica_a_atkinson_en_levenback_cf_frumovitz_m_deavers_mt_ultrastaging_improves_detection",
+          "label": "Euscher ED, Malpica A, Atkinson EN, Levenback CF, Frumovitz, M, Deavers MT. Ultrastaging improves detection of metastases in sentinel lymph nodes of uterine cervix squamous cell carcinoma. Am J Surg Pathol. 2008;32(9):1336-1343.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dunch_p_cibula_d_nĕmejcová_k_tichá_i_bártů_m_jakša_r_pathologic_protocols_for_sentinel_lymph_nodes_u",
+          "label": "Dunch P, Cibula D, Nĕmejcová K, Tichá I, Bártů M, Jakša R. Pathologic protocols for sentinel lymph nodes ultrastaging in cervical cancer. Arch Pathol Lab Med. 2020; 144(8):1011-1020.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_ihc_serves_as_an_important_adjunct_to_the_histologic_diagnosis_of_high_grade_sq",
+          "label": "Immunohistochemistry (IHC) serves as an important adjunct to the histologic diagnosis of high grade squamous intraepithelial lesion (HSIL) in difficult cases, with p16 immunoreactivity serving as a surrogate marker for high-risk human papillomavirus (HPV) infection.1,2  Squamous epithelial p16 immunostaining should be diffuse and strong in both nuclei and cytoplasm to support HPV etiology. Focally strong nuclear and cytoplasmic p16 staining may be identified not only in dysplastic squamous epithelium, but also in benign squamous epithelium. p16 immunostaining is also considered a better candidate (rather than HPV in situ hybridization) for the initial assessment of cervical biopsies that are histologically indeterminate for HSIL, given its wide availability, easy interpretation, and high sensitivity and specificity.3 However, due to the heterogeneous staining patterns seen in low-grade squamous intraepithelial lesions (LSIL), p16 immunohistochemistry is generally reserved for lesions that are morphologically suspicious or indeterminate for HSIL. The LAST project proposed that p16 be used in 3 specific situations.4 First, to distinguish inflammatory lesions from HSIL; second, to distinguish LSIL from HSIL; and third, to evaluate specimens such as endocervical curettage in patients who have previously had a recent HSIL diagnosis. It should not be used if the biopsy shows identifiable LSIL or HSIL. ProEx C, an immunohistochemical assay targeting both topoisomerase II-alpha and minichromosome maintenance protein-2 (MMP-2), has been shown to have high sensitivity and specificity for HPV-associated lesions of the cervix, with similar staining patterns as those seen for p16 and MIB-1 (Ki-67).5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_endocervical_versus_endometrial_adenocarcinoma",
+          "label": "Immunohistochemistry: Endocervical versus Endometrial Adenocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_can_also_be_helpful_in_the_differential_diagnosis_between_endocervical_and_endo",
+          "label": "Immunohistochemistry can also be helpful in the differential diagnosis between endocervical and endometrial carcinoma, especially in curettage specimens, since endometrial carcinomas may show mucinous differentiation. A panel of antibodies, rather than a single antibody, is most useful; in most instances this includes vimentin, ER, p16, and monoclonal CEA.6,7 Typically, endometrioid adenocarcinoma is positive for vimentin and ER, whereas endocervical adenocarcinoma is positive for p16 and mCEA, but exceptions occur.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kalof_an_evans_mf_simmons_arnold_l_beatty_bg_cooper_k_p16ink4a_immunoexpression_and_hpv_in_situ_hybr",
+          "label": "Kalof AN, Evans MF, Simmons-Arnold L, Beatty BG, Cooper K. p16INK4A immunoexpression and HPV in situ hybridization signal patterns: potential markers of high-grade cervical intraepithelial neoplasia. Am J Surg Pathol. 2005;29:674-679.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kalof_an_cooper_k_p16ink4a_immunoexpression_surrogate_marker_of_high_risk_hpv_and_high_grade_cervica",
+          "label": "Kalof AN, Cooper K. p16INK4a immunoexpression: surrogate marker of high-risk HPV and high-grade cervical intraepithelial neoplasia. Adv Anat Pathol. 2006;13:190-194.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kong_cs_balzer_bl_troxell_ml_patterson_bk_longacre_ta_p16ink4a_immunohistochemistry_is_superior_to_h",
+          "label": "Kong CS, Balzer BL, Troxell ML, Patterson BK, Longacre TA. p16INK4A immunohistochemistry is superior to HPV in situ hybridization for the detection of high-risk HPV in atypical squamous metaplasia. Am J Surg Pathol. 2007;31:33-43.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "darragh_tm_colgan_tj_cox_jt_et_al_the_lower_anogenital_squamous_terminology_standardization_project_",
+          "label": "Darragh TM, Colgan TJ, Cox JT, et al. The Lower Anogenital Squamous Terminology Standardization Project for HPV-Associated Lesions: background and consensus recommendations from the College of American Pathologists and the American Society for Colposcopy and Cervical Pathology. Arch Pathol Lab Med. 2012;136(10):1266-1297.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "badr_re_walts_ae_chung_f_bose_s_bd_proex_c_a_sensitive_and_specific_marker_of_hpv_associated_squamou",
+          "label": "Badr RE, Walts AE, Chung F, Bose S. BD ProEx C: a sensitive and specific marker of HPV-associated squamous lesions of the cervix. Am J Surg Pathol. 2008;32:899-906.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "castrillon_dh_lee_kr_nucci_mr_distinction_between_endometrial_and_endocervical_adenocarcinoma_an_imm",
+          "label": "Castrillon DH, Lee KR, Nucci MR. Distinction between endometrial and endocervical adenocarcinoma: an immunohistochemical study. Int J Gynecol Pathol. 2002;21:4-10.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kamoi_s_aljuboury_mi_akin_mr_silverberg_sg_immunohistochemical_staining_in_the_distinction_between_p",
+          "label": "Kamoi S, AlJuboury MI, Akin MR, Silverberg SG. Immunohistochemical staining in the distinction between primary endometrial and endocervical adenocarcinomas: another viewpoint. Int J Gynecol Pathol. 2002;21:217-223.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1476 @@
+{
+  "template_id": "Skin.Inv_Melanoma.Bx_1.1.0.0.REL.CAPCP",
+  "organ": "INVASIVE MELANOMA OF THE SKIN: Biopsy",
+  "protocol_posting_date": "March 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "biopsy_shave",
+              "label": "Biopsy, shave"
+            },
+            {
+              "value": "biopsy_punch",
+              "label": "Biopsy, punch"
+            },
+            {
+              "value": "biopsy_incisional",
+              "label": "Biopsy, incisional"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "midline",
+              "label": "Midline"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "skin_nos",
+              "label": "Skin, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_lip",
+              "label": "Skin of lip: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "external_ear",
+              "label": "External ear: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_other_and_unspecified_parts_of_face",
+              "label": "Skin of other and unspecified parts of face: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_scalp_and_or_neck",
+              "label": "Skin of scalp and / or neck: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_trunk",
+              "label": "Skin of trunk (specify site): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_upper_limb_and_or_shoulder",
+              "label": "Skin of upper limb and / or shoulder: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_lower_limb_and_or_hip",
+              "label": "Skin of lower limb and / or hip: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "overlapping_lesion_of_skin",
+              "label": "Overlapping lesion of skin (specify sites): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "penis",
+              "label": "Penis: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prepuce",
+          "label": "___ Prepuce",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "glans_penis",
+          "label": "___ Glans penis",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "body_of_penis",
+          "label": "___ Body of penis",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "penis_nos",
+          "label": "___ Penis, NOS",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "scrotum",
+              "label": "Scrotum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vulva",
+              "label": "Vulva: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "labium_majus",
+          "label": "___ Labium majus",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "labium_minus",
+          "label": "___ Labium minus",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clitoris",
+          "label": "___ Clitoris",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vulva_nos",
+          "label": "___ Vulva, NOS",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "multiple_primary_sites",
+          "label": "Multiple Primary Sites",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no additional primary site(s) present)"
+            },
+            {
+              "value": "present",
+              "label": "Present: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "please_complete_a_separate_checklist_for_each_primary_site",
+          "label": "Please complete a separate checklist for each primary site",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "low_cumulative_sun_damage",
+              "label": "Low-cumulative sun damage (CSD) melanoma (including superficial spreading melanoma)"
+            },
+            {
+              "value": "lentigo_maligna_melanoma",
+              "label": "Lentigo maligna melanoma (high-CSD melanoma)"
+            },
+            {
+              "value": "desmoplastic_melanoma_pure",
+              "label": "Desmoplastic melanoma, pure (greater than or equal to 90% desmoplastic melanoma)"
+            },
+            {
+              "value": "mixed_desmoplastic_non_desmoplastic_melanoma",
+              "label": "Mixed desmoplastic / non-desmoplastic melanoma (less than 90% desmoplastic melanoma)"
+            },
+            {
+              "value": "spitz_melanoma",
+              "label": "Spitz melanoma (malignant Spitz tumor)"
+            },
+            {
+              "value": "acral_melanoma",
+              "label": "Acral melanoma"
+            },
+            {
+              "value": "melanoma_arising_in_a_giant_congenital_nevus",
+              "label": "Melanoma arising in a giant congenital nevus"
+            },
+            {
+              "value": "melanoma_arising_in_a_blue_nevus",
+              "label": "Melanoma arising in a blue nevus"
+            },
+            {
+              "value": "nodular_melanoma",
+              "label": "Nodular melanoma"
+            },
+            {
+              "value": "nevoid_melanoma",
+              "label": "Nevoid melanoma"
+            },
+            {
+              "value": "dermal_melanoma",
+              "label": "Dermal melanoma"
+            },
+            {
+              "value": "melanoma_nos",
+              "label": "Melanoma, NOS"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maximum_tumor_breslow_thickness_in_millimeters",
+          "label": "Maximum Tumor (Breslow) Thickness in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least_in_millimeters",
+              "label": "At least in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "tumor_breslow_thickness_explain",
+          "label": "Tumor (Breslow) Thickness (explain): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ulceration",
+          "label": "Ulceration",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "field_id": "extent_of_ulceration_in_millimeters_mm___________________mm",
+          "label": "Extent of Ulceration in Millimeters (mm): _________________ mm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "anatomic_clark_level",
+          "label": "Anatomic (Clark) Level",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ii",
+              "label": "II (melanoma present in but does not fill and / or expand papillary dermis)"
+            },
+            {
+              "value": "iii",
+              "label": "III (melanoma fills and expands papillary dermis)"
+            },
+            {
+              "value": "iv",
+              "label": "IV (melanoma invades reticular dermis)"
+            },
+            {
+              "value": "v",
+              "label": "V (melanoma invades subcutis)"
+            },
+            {
+              "value": "at_least_level_ii",
+              "label": "At least level II (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least_level_iii",
+              "label": "At least level III (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least_level_iv",
+              "label": "At least level IV (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "mitotic_rate",
+          "label": "Mitotic Rate",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "specify_number_of_mitoses_per_square_millimeter",
+              "label": "Specify number of mitoses per square Millimeter (mm): _________________ mitoses per mm2",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "macroscopic_satellite_lesions",
+          "label": "Macroscopic Satellite Lesions",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "microsatellite",
+          "label": "Microsatellite",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ],
+          "condition": "s"
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "H"
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "method_of_detection",
+          "label": "Method of Detection",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "immunohistochemical_study",
+              "label": "Immunohistochemical study"
+            },
+            {
+              "value": "he_stain",
+              "label": "H&E stain"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "neurotropism",
+          "label": "Neurotropism",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "I"
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "tumor_infiltrating_lymphocytes",
+          "label": "Tumor-Infiltrating Lymphocytes",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_non_brisk",
+              "label": "Present, non-brisk"
+            },
+            {
+              "value": "present_brisk",
+              "label": "Present, brisk"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "tumor_regression",
+          "label": "Tumor Regression",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "extent_of_tumor_regression",
+          "label": "Extent of Tumor Regression",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "focal",
+              "label": "Focal (less than or equal to 75%)"
+            },
+            {
+              "value": "extensive",
+              "label": "Extensive (greater than 75%)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "L"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_melanoma",
+          "label": "Margin Status for Melanoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_melanoma",
+              "label": "All margins negative for melanoma (e.g., in situ, invasive, or satellite)"
+            }
+          ]
+        },
+        {
+          "field_id": "recommend_measuring_margin_distance_to_melanoma_if_less_than_or_equal_to_10_mm",
+          "label": "Recommend measuring margin distance to melanoma if less than or equal to 1.0 mm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_distance_from_invasive_melanoma_to_peripheral_margin_in_millimeters_mm",
+          "label": "Specify Distance from Invasive Melanoma to Peripheral Margin in Millimeters (mm)",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mm",
+              "label": "mm"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_distance_of_invasive_melanoma_to_deep_margin_in_millimeters_mm",
+          "label": "Specify Distance of Invasive Melanoma to Deep Margin in Millimeters (mm)",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mm",
+              "label": "mm"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_distance_from_melanoma_in_situ_to_peripheral_margin_in_millimeters_mm",
+          "label": "Specify Distance from Melanoma In Situ to Peripheral Margin in Millimeters (mm)",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mm",
+              "label": "mm"
+            },
+            {
+              "value": "invasive_melanoma_present_at_margin",
+              "label": "Invasive melanoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_melanoma",
+          "label": "Margin(s) Involved by Invasive Melanoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "melanoma_in_situ_present_at_margin",
+              "label": "Melanoma in situ present at margin#"
+            }
+          ],
+          "guidance": "Margin involvement by melanoma in situ should be recorded if in situ disease is present in the specimen, and if margins are uninvolved by invasive melanoma."
+        },
+        {
+          "field_id": "margins_involved_by_melanoma_in_situ",
+          "label": "Margin(s) Involved by Melanoma In Situ",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_involvement_by_satellites_required_only_if_satellites_present",
+          "label": "Margin Involvement by Satellite(s) (required only if satellite(s) present)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (satellite(s) absent)"
+            },
+            {
+              "value": "peripheral",
+              "label": "Peripheral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_involvement_by_tumor_regression_required_only_if_tumor_regression_is_present",
+          "label": "Margin Involvement by Tumor Regression (required only if tumor regression is present)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (tumor regression absent)"
+            },
+            {
+              "value": "peripheral",
+              "label": "Peripheral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pt_classification",
+          "label": "pT CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "M"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "in_general_cap_cancer_protocol_case_summaries_are_intended_to_guide_reporting_on_the_specimen_that_t",
+          "label": "In general, CAP cancer protocol case summaries are intended to guide reporting on the specimen that the pathologist is evaluating at that time. However, melanoma cases frequently include multiple procedures. Since only a portion of the tumor may be sampled in biopsy, reporting pT category is deferred to the definitive resection; and relevant primary tumor parameters from the biopsy may be incorporated in arriving at the pathological classification (pTNM). As per the AJCC (Chapter 1, 8th Ed.) it is the managing physician’s responsibility to establish the final pathologic stage based upon all pertinent information, including but potentially not limited to this pathology report.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "associated_nevus",
+              "label": "Associated nevus (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "for_molecular_genetic_reporting_the_cap_melanoma_biomarker_template_should_be_used_pending_biomarker",
+          "label": "For molecular genetic reporting, the CAP Melanoma Biomarker Template should be used. Pending biomarker studies should be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "optimal_pathologic_evaluation_of_melanocytic_lesions_requires_complete_excision_that_incorporates_th",
+          "label": "Optimal pathologic evaluation of melanocytic lesions requires complete excision that incorporates the full thickness of the lesion removed intact.1 'Shave' procedures that do not include the intact base of the lesion are suboptimal for pathologic evaluation and should be avoided unless clinically indicated. Similarly, “punch” procedures may not include intact peripheral borders of the lesion thereby limiting assessment of symmetry and peripheral circumscription, which can be essential for distinction of melanoma from melanocytic nevus.2,3 Partial biopsies of melanocytic tumors are associated with an increased risk of misdiagnosis with possible consequent adverse clinical outcomes.4 Nevertheless, clinical factors are also important in determining the most appropriate biopsy technique for any lesion. For example, an excision biopsy of a large lesion on a cosmetically or functionally sensitive site may cause cosmetic disfigurement or alter reconstructive options.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_use_of_frozen_sections_for_evaluation_of_biopsy_or_excision_of_melanocytic_lesions_is_strongly_d",
+          "label": "The use of frozen sections for evaluation of biopsy or excision of melanocytic lesions is strongly discouraged.5,6 Optimal histologic evaluation of cutaneous melanoma requires well-oriented, well-fixed, well-cut, well-stained hematoxylin-and-eosin (H&E) sections prepared from formalin-fixed paraffin-embedded tissue.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sober_aj_chuang_ty_duvic_m_et_al_guidelines_of_care_for_primary_cutaneous_melanoma_j_am_acad_dermato",
+          "label": "Sober AJ, Chuang TY, Duvic M, et al. Guidelines of care for primary cutaneous melanoma. J Am Acad Dermatol. 2001;45(4):579-586.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stell_vh_norton_hj_smith_ks_salo_jc_white_rl_jr_method_of_biopsy_and_incidence_of_positive_margins_i",
+          "label": "Stell VH, Norton HJ, Smith KS, Salo JC, White RL, Jr. Method of biopsy and incidence of positive margins in primary melanoma. Ann Surg Oncol. 2007;14(2):893-898.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sober_aj_balch_cm_method_of_biopsy_and_incidence_of_positive_margins_in_primary_melanoma_ann_surg_on",
+          "label": "Sober AJ, Balch CM. Method of biopsy and incidence of positive margins in primary melanoma. Ann Surg Oncol. 2007;14(2):274-275.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ng_jc_swain_s_dowling_jp_wolfe_r_simpson_p_kelly_jw_the_impact_of_partial_biopsy_on_histopathologic_",
+          "label": "Ng JC, Swain S, Dowling JP, Wolfe R, Simpson P, Kelly JW. The impact of partial biopsy on histopathologic diagnosis of cutaneous melanoma: experience of an Australian tertiary referral service. Arch Dermatol. 2010;146(3):234-239.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smith_zagone_mj_schwartz_mr_frozen_section_of_skin_specimens_arch_pathol_lab_med_2005129121536_1543",
+          "label": "Smith-Zagone MJ, Schwartz MR. Frozen section of skin specimens. Arch Pathol Lab Med. 2005;129(12):1536-1543.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prieto_vg_argenyi_zb_barnhill_rl_et_al_are_en_face_frozen_sections_accurate_for_diagnosing_margin_st",
+          "label": "Prieto VG, Argenyi ZB, Barnhill RL, et al. Are en face frozen sections accurate for diagnosing margin status in melanocytic lesions? Am J Clin Pathol. 2003;120(2):203-208.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_cutaneous_melanoma_prognosis_may_be_affected_by_primary_anatomic_site123",
+          "label": "For cutaneous melanoma, prognosis may be affected by primary anatomic site.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "balch_cm_soong_sj_gershenwald_je_et_al_prognostic_factors_analysis_of_17600_melanoma_patients_valida",
+          "label": "Balch CM, Soong SJ, Gershenwald JE, et al. Prognostic factors analysis of 17,600 melanoma patients: validation of the American Joint Committee on Cancer melanoma staging system. J Clin Oncol. 2001;19(16):3622-3634.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "elder_de_massi_d_scolyer_ra_willemze_r_eds_who_classification_of_skin_tumors_world_health_organizati",
+          "label": "Elder DE, Massi D, Scolyer RA, Willemze R. eds. WHO Classification of Skin Tumors. World Health Organization of Tumors, 4th ed Volume 11. Lyon France; 2018, ISBN-13 978-92-832-2440-2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "elder_de_bastian_bc_duncan_lm_et_al_who_classification_of_skin_tumors_world_health_organization_of_t",
+          "label": "Elder DE, Bastian BC, Duncan LM, et al. WHO Classification of Skin Tumors. World Health Organization of Tumors, 5th ed (Beta version), 2023.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_recent_who_2018_classification1_introduced_multidimensional_pathway_classification_of_melanocyti",
+          "label": "The recent WHO 2018 classification1 introduced multidimensional pathway classification of melanocytic tumors based on the extent of ultraviolet (UV) radiation damage, the cell of origin, and characteristic genomic findings, which was further refined in the WHO 2023 beta version2 (Table 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_classification_of_melanoma",
+          "label": "Table 1. Classification of melanoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "elder_de_massi_d_scolyer_ra_willemze_r_eds_who_classification_of_skin_tumors_world_health_organizati",
+          "label": "Elder DE, Massi D, Scolyer RA, Willemze R. eds. WHO Classification of Skin Tumors. World Health Organization of Tumors, 4th ed Volume 11. Lyon France; 2018, ISBN-13 978-92-832-2440-2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "elder_de_bastian_bc_duncan_lm_et_al_who_classification_of_skin_tumors_world_health_organization_of_t",
+          "label": "Elder DE, Bastian BC, Duncan LM, et al. WHO Classification of Skin Tumors. World Health Organization of Tumors, 5th ed (Beta version), 2023.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "d_primary_tumor_breslow_thickness_and_anatomic_clark_levels",
+          "label": "D. Primary Tumor (Breslow) Thickness and Anatomic (Clark) Levels",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maximum_tumor_thickness_is_measured_with_a_calibrated_ocular_micrometer_at_a_right_angle_to_the_surf",
+          "label": "Maximum tumor thickness is measured with a calibrated ocular micrometer at a right angle to the surface of the lesion at the point of measurement. The upper point of reference is the upper edge of the granular layer of the epidermis of the overlying skin (if intact) or, the base of the ulcer, if the lesion is ulcerated. The lower reference point is the deepest point of tumor invasion (i.e., the leading edge of a single mass or an isolated group of cells deep to the main mass). For primary melanomas lacking an intraepidermal component, the tumor thickness should be measured from the top of epidermal granular layer to the deepest invasive cell.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_tumor_is_transected_at_the_deep_margin_of_the_specimen_the_depth_may_be_indicated_as_at_least",
+          "label": "If the tumor is transected at the deep margin of the specimen, the depth may be indicated as “at least __ mm” with a comment explaining the limitation of thickness assessment. For example, \"The maximum tumor thickness cannot be determined in this specimen because the deep plane of the biopsy transects the tumor.”",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_thickness_measurements_should_not_be_based_on_periadnexal_extension_either_periadnexal_adventi",
+          "label": "Tumor thickness measurements should not be based on periadnexal extension (either periadnexal adventitial or extra-adventitial extension), except when it is the only focus of invasion. In that circumstance, Breslow thickness may be measured from the inner layer of the outer root sheath epithelium or inner luminal surface of sweat glands/ducts, to the furthest extent of infiltration into the periadnexal dermis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "satellites_macroscopic_or_microscopic_or_foci_of_neurotropism_or_lymphovascular_invasion_should_not_",
+          "label": "Satellites (macroscopic or microscopic) or foci of neurotropism or lymphovascular invasion should not be included in tumor thickness measurements.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_the_8th_edition_of_the_ajcc_melanoma_staging_system1_it_is_recommended_that_tumor_thickness_measu",
+          "label": "In the 8th edition of the AJCC melanoma staging system,1 it is recommended that tumor thickness measurements be recorded to the nearest 0.1 mm, not the nearest 0.01 mm, because of the impracticality and imprecision of measurements, particularly for tumors greater than 1 mm thick. Tumors less than or equal to 1 mm thick may be measured to the nearest 0.01 mm if practical, but should be reported to the nearest 0.1mm (e.g., melanomas measured to be in the range of 0.75 mm to 0.84 mm are reported as 0.8 mm in thickness and hence T1b, and tumors 1.01 to 1.04 mm in thickness are reported as 1.0 mm).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_the_principal_t_category_tumor_thickness_ranges_have_been_maintained_in_the_ajcc_8th_edition_t",
+          "label": "While the principal T category tumor thickness ranges have been maintained in the AJCC 8th edition, T1 is now subcategorized by tumor thickness strata at a 0.8 mm threshold. Tumor mitotic rate as a dichotomous variable is no longer used as a staging category criterion for T1 melanomas. T1a melanomas are now defined as non-ulcerated and less than 0.8 mm in thickness. T1b melanomas are defined as 0.8-1.0mm in thickness or ulcerated melanomas less than 0.8 mm in thickness.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anatomic_clark_levels_are_defined_as_follows",
+          "label": "Anatomic (Clark) levels are defined as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "i_intraepidermal_tumor_only",
+          "label": "I\tIntraepidermal tumor only",
+          "required": true,
+          "type": "free_text",
+          "condition": "i.e., melanoma in situ"
+        },
+        {
+          "field_id": "anatomic_clark_level_of_invasion_remains_an_independent_predictor_of_outcome_and_is_recommended_by_t",
+          "label": "Anatomic (Clark) level of invasion remains an independent predictor of outcome and is recommended by the AJCC to be reported as a primary tumor characteristic.1 However, assessment of Clark levels is less reproducible among pathologists than is tumor thickness, and Clark levels are not used in the AJCC staging system for pT status. Accordingly, Clark levels are included in this checklist as an optional data item.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gershenwald_je_scolyer_ra_hess_kr_et_al_melanoma_of_the_skin_in_amin_mb_edge_sb_greene_fl_et_al_eds_",
+          "label": "Gershenwald JE, Scolyer RA, Hess KR, et al. Melanoma of the skin, In: Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "primary_tumor_ulceration_has_been_shown_to_be_a_dominant_independent_prognostic_factor_in_invasive_c",
+          "label": "Primary tumor ulceration has been shown to be a dominant independent prognostic factor in invasive cutaneous melanoma,1,2 and if present, changes the pT category from T1a to T1b, T2a to T2b, etc., depending on the thickness of the tumor. The presence or absence of ulceration must be confirmed on microscopic examination.2 Melanoma ulceration is defined as the combination of the following features: full-thickness epidermal defect (including absence of stratum corneum and basement membrane); evidence of reactive changes (i.e., fibrin deposition, neutrophils); and thinning, effacement, or reactive hyperplasia of the surrounding epidermis in the absence of trauma or a recent surgical procedure. Ulcerated melanomas typically show invasion through the epidermis, whereas non-ulcerated melanomas tend to lift the overlying epidermis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "only_non_traumatic_tumorigenic_ulceration_should_be_recorded_as_ulceration_if_ulceration_is_present_",
+          "label": "Only non-traumatic (“tumorigenic”) ulceration should be recorded as ulceration. If ulceration is present related to a prior biopsy, the tumor should not be recorded as ulcerated for staging purposes. If a lesion has been recently biopsied or there is only focal loss of the epidermis, assessment of ulceration may be difficult or impossible; in this instance it may be difficult to determine whether the epidermal deficiency is due to true ulceration or to sectioning artifact.2 Absence of fibrin, neutrophils, or granulation tissue from putative areas of ulceration would be clues that the apparent ulceration is actually due to sectioning of only part of the epidermis and this should not be designated as ulceration. If non-traumatic (“tumorigenic”) ulceration is present in either an initial partial biopsy or a re-excision specimen, then for staging purposes, the tumor should be recorded as ulcerated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ulceration_may_be_present_in_an_in_situ_melanoma_but_does_not_affect_the_staging",
+          "label": "Ulceration may be present in an in situ melanoma but does not affect the staging.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_number_of_studies_have_demonstrated_that_the_extent_of_ulceration_measured_either_as_a_percentage_",
+          "label": "A number of studies have demonstrated that the extent of ulceration (measured either as a percentage of the width of the dermal invasive component of the tumor or as a diameter/width) more accurately predicts outcome than the presence or absence of ulceration alone.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gershenwald_je_scolyer_ra_hess_kr_sondak_vk_long_gv_ross_mi_et_al_melanoma_staging_evidence_based_ch",
+          "label": "Gershenwald JE, Scolyer RA, Hess KR, Sondak VK, Long GV, Ross MI et al. Melanoma staging: Evidence-based changes in the American Joint Committee on Cancer eighth edition cancer staging manual. CA Cancer J Clin. 2017;67(6):472-92.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gershenwald_je_scolyer_ra_hess_kr_et_al_melanoma_of_the_skin_in_amin_mb_edge_sb_greene_fl_et_al_eds_",
+          "label": "Gershenwald JE, Scolyer RA, Hess KR, et al. Melanoma of the skin, In: Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hout_fe_haydu_le_murali_r_bonenkamp_jj_thompson_jf_scolyer_ra_prognostic_importance_of_the_extent_of",
+          "label": "Hout FE, Haydu LE, Murali R, Bonenkamp JJ, Thompson JF, Scolyer RA. Prognostic importance of the extent of ulceration in patients with clinically localized cutaneous melanoma. Ann Surg. 2012;255(6):1165-1170.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "namikawa_k_aung_pp_gershenwald_je_milton_dr_prieto_vg_clinical_impact_of_ulceration_width_lymphovasc",
+          "label": "Namikawa K, Aung PP, Gershenwald JE, Milton DR, Prieto VG. Clinical impact of ulceration width, lymphovascular invasion, microscopic satellitosis, perineural invasion, and mitotic rate in patients undergoing sentinel lymph node biopsy for cutaneous melanoma: a retrospective observational study at a comprehensive cancer center. Cancer Med. 2018;7(3):583-593.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_mitotic_rate_of_the_invasive_component_of_a_melanoma_is_a_strong_independent_predictor_of_outc",
+          "label": "Tumor mitotic rate (of the invasive component of a melanoma) is a strong independent predictor of outcome across its dynamic range in all pT categories and should be assessed and recorded in all primary melanomas including in both initial biopsies and excisions (the highest value in either specimen should be used for prognostic purposes). Although tumor mitotic rate is no longer used as a T1-category criterion in the 8th edition of the AJCC melanoma staging system (due to the more significant prognostic significance of the new tumor thickness strata within T1 melanoma), mitotic rate will likely be an important parameter in prognostic models developed in the future that will provide personalized prediction of prognosis for individual patients.1 The method recommended for enumerating the tumor mitotic rate in the 8th edition of the AJCC staging system is provided below",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_recommended_approach_to_enumerating_mitoses_is_to_first_find_the_regions_in_the_invasive_melanom",
+          "label": "The recommended approach to enumerating mitoses is to first find the regions in the invasive melanoma within dermis containing the most mitotic figures, the so-called 'hot spot' or 'dermal hot spot'. After counting the mitoses in the initial high‐power field, the count is extended to immediately adjacent non-overlapping fields until an area of tissue corresponding to 1 mm2 is assessed. If no hot spot is found and mitoses are sparse and/or randomly scattered throughout the lesion, then a representative mitosis is chosen and, beginning with that field, the count is then extended to immediately adjacent non-overlapping fields until an area corresponding to 1 mm2 of tissue is assessed. The count then is expressed as the (whole) number of mitoses/mm2. If the invasive component of the tumor involves an area less than 1 mm2, the number of mitoses should be assessed and recorded as if they were found within square millimeter. For example, if the entire dermal component of a tumor occupies 0.5 mm2 and only one mitosis is identified, the mitotic rate should be recorded as 1/mm2 (not 2/mm2). Only mitotic figures in invasive melanoma cells should be counted. The number of mitoses should be listed as a whole number per square millimeter. If no mitoses are identified, the mitotic rate may be recorded as “none identified” or \"0/mm2\". This methodology for determining the mitotic rate of an invasive melanoma has been shown to have excellent interobserver reproducibility, including among pathologists with widely differing experience in the assessment of melanocytic tumors.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_obtain_accurate_measurement_calibration_of_individual_microscopes_is_recommended_using_a_stage_mi",
+          "label": "To obtain accurate measurement, calibration of individual microscopes is recommended using a stage micrometer to determine the number of high-power fields that equates to a square millimeter.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_data_that_demonstrated_the_strong_prognostic_significance_of_mitotic_rate_were_obtained_from_the",
+          "label": "The data that demonstrated the strong prognostic significance of mitotic rate were obtained from the melanoma pathology reports of routinely assessed H&E stained sections. It therefore is recommended that no additional sections be cut and examined in excess of those that would normally be used to report and diagnose the melanoma to determine the mitotic count (i.e., no additional sections should be cut and examined for the sole purpose of determining the mitotic rate, including in situations in which no mitoses are identified on the initial, routinely examined sections). Immunohistochemical stains for identifying mitoses are not used for determining mitotic rate for staging and/or reporting purposes. A possible exception is the use to dual immunohistochemistry (e.g., MART1 and pHH3) to determine if a cell in mitosis is a melanocyte or not (macrophage, endothelial cell, etc.).3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_the_ajcc_recommends_reporting_0_rather_than_none_identified_or_fewer_than_1_for_the_purpose",
+          "label": "Although the AJCC recommends reporting “0” rather than “none identified” or “fewer than 1,” for the purposes of cancer registry reporting all of these terms should be considered equivalent.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gershenwald_je_scolyer_ra_hess_kr_et_al_melanoma_of_the_skin_in_amin_mb_edge_sb_greene_fl_et_al_eds_",
+          "label": "Gershenwald JE, Scolyer RA, Hess KR, et al. Melanoma of the skin, In: Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "scolyer_ra_shaw_hm_thompson_jf_et_al_interobserver_reproducibility_of_histopathologic_prognostic_var",
+          "label": "Scolyer RA, Shaw HM, Thompson JF, et al. Interobserver reproducibility of histopathologic prognostic variables in primary cutaneous melanomas. Am J Surg Pathol. 2003;27(12):1571-1576.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tetzlaff_mt_curry_jl_ivan_d_et_al_immunodetection_of_phosphohistone_h3_as_a_surrogate_of_mitotic_fig",
+          "label": "Tetzlaff MT, Curry JL, Ivan D, et al. Immunodetection of phosphohistone H3 as a surrogate of mitotic figure count and clinical outcome in cutaneous melanoma. Mod Pathol. 2013;26(9):1153-1160.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "g_satellite",
+          "label": "G. Satellite",
+          "required": true,
+          "type": "free_text",
+          "condition": "s"
+        },
+        {
+          "field_id": "macroscopic_satellites_is_defined_as_the_presence_of_a_clinically_or_grossly_detected_metastatic_foc",
+          "label": "Macroscopic satellite(s) is defined as the presence of a clinically or grossly detected metastatic focus of melanoma separated from the primary tumor and surrounded by normal tissue. A microsatellite(s) is defined as the presence of a microscopic discontinuous focus of melanoma adjacent or deep to a primary melanoma on pathological examination of the primary tumor site.1 The metastatic tumor cells must be discontinuous from the primary tumor and separated from the primary tumor by normal stroma. If the tissue between the apparently separate nodule and the primary tumor is fibrotic and/or inflamed, this does not indicate a microsatellite, because the aforementioned changes may represent regression of the intervening tumor. There is no minimum size threshold or distance from the primary tumor to define a microsatellite. Before diagnosing the presence of a microsatellite, it is generally recommended that multiple sections from the same tissue block being examined to verify that the microsatellite is indeed discontinuous from the primary tumor. For example, periadnexal extension of tumor or the irregular shape of the peripheral or deep extent of the tumor may result in tumor that is contiguous with the primary tumor appear discontinuous on single sections.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detecting_a_melanoma_satellite_metastasis_at_the_margins_of_an_excision_specimen_often_prompts_consi",
+          "label": "Detecting a melanoma satellite metastasis at the margins of an excision specimen often prompts consideration of a re-excision. This is based on the potential of satellite metastases to serve as sources of recurrence and to indicate the possible presence of additional melanoma beyond visible margins.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gershenwald_je_scolyer_ra_hess_kr_et_al_melanoma_of_the_skin_in_amin_mb_edge_sb_greene_fl_et_al_eds_",
+          "label": "Gershenwald JE, Scolyer RA, Hess KR, et al. Melanoma of the skin, In: Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion_lvi_is_identified_by_the_demonstration_of_melanoma_cells_within_the_lumina_o",
+          "label": "Lymphovascular invasion (LVI) is identified by the demonstration of melanoma cells within the lumina of blood vessels or lymphatics, or both.1 Immunohistochemistry for vascular endothelial cell markers CD31, CD34, or ERG or the lymphatic marker D2-40 may assist in the identification of the presence of intravascular or intralymphatic melanoma by highlighting vascular lumina. Vascular invasion by melanoma correlates independently with worsened overall survival.2 The detection of LVI is increased in primary melanomas when double labeling of tumor and (lymphatic) endothelial cells is applied (e.g.: MITF/D2-40, SOX10/D2-40, or SOX10/CD31).3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_lvi_does_not_affect_the_t_category_indicating_local_extent_of_tumor_ie_foci_o",
+          "label": "By AJCC/UICC convention, LVI does not affect the T category indicating local extent of tumor, i.e., foci of lymphovascular invasion should not be included in the measurement of tumor (Breslow) thickness.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gershenwald_je_scolyer_ra_hess_kr_et_al_melanoma_of_the_skin_in_amin_mb_edge_sb_greene_fl_et_al_eds_",
+          "label": "Gershenwald JE, Scolyer RA, Hess KR, et al. Melanoma of the skin, In: Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "petersson_f_diwan_ah_ivan_d_gershenwald_je_johnson_mm_harrell_r_prieto_vg_immunohistochemical_detect",
+          "label": "Petersson F, Diwan AH, Ivan D, Gershenwald JE, Johnson MM, Harrell R, Prieto VG. Immunohistochemical detection of lymphovascular invasion with D2-40 in melanoma correlates with sentinel lymph node status, metastasis and survival. J Cutan Pathol. 2009;36(11):1157-1163.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "feldmeyer_l_tetzlaff_m_fox_p_et_al_prognostic_implication_of_lymphovascular_invasion_detected_by_dou",
+          "label": "Feldmeyer L, Tetzlaff M, Fox P, et al. Prognostic Implication of Lymphovascular Invasion Detected by Double Immunostaining for D2-40 and MITF1 in Primary Cutaneous Melanoma. Am J Dermatopathol. 2016;38(7):484-491.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neurotropism_is_defined_as_the_presence_of_melanoma_cells_abutting_nerve_sheaths_usually_circumferen",
+          "label": "Neurotropism is defined as the presence of melanoma cells abutting nerve sheaths usually circumferentially (perineural invasion) or within nerves (intraneural invasion).1 Occasionally, the tumor itself may form neuroid structures (termed ‘neural transformation’ and this is also regarded as neurotropism). Neurotropism is best identified at the periphery of the tumor; the presence of melanoma cells around nerves without obvious encroachment within the main tumor mass caused by “entrapment” of nerves in the expanding tumor does not represent neurotropism.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neurotropism_is_most_commonly_identified_in_desmoplastic_melanomas_sometimes_termed_desmoplastic_neu",
+          "label": "Neurotropism is most commonly identified in desmoplastic melanomas (sometimes termed desmoplastic neurotropic melanoma) but may occur in any melanoma subtype.2 Neurotropism may correlate with an increased risk for local recurrence. By AJCC/UICC recommendations, foci of neurotropism should not be included in the measurement of Breslow thickness.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gershenwald_je_scolyer_ra_hess_kr_et_al_melanoma_of_the_skin_in_amin_mb_edge_sb_greene_fl_et_al_eds_",
+          "label": "Gershenwald JE, Scolyer RA, Hess KR, et al. Melanoma of the skin, In: Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "elder_de_massi_d_scolyer_ra_willemze_r_eds_who_classification_of_skin_tumors_world_health_organizati",
+          "label": "Elder DE, Massi D, Scolyer RA, Willemze R. eds. WHO Classification of Skin Tumors. World Health Organization of Tumors, 4th ed Volume 11. Lyon France; 2018, ISBN-13 978-92-832-2440-2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_paucity_of_tumor_infiltrating_lymphocytes_tils_is_an_adverse_prognostic_factor_for_cutaneous_melan",
+          "label": "A paucity of tumor-infiltrating lymphocytes (TILs) is an adverse prognostic factor for cutaneous melanoma.1 Tumor-infiltrating lymphocytes may be assessed in a semiquantitative way, as defined below. To qualify as TILs, lymphocytes need to surround and disrupt tumor cells of the invasive component of the tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tils_brisk_lymphocytes_diffusely_infiltrate_the_entire_base_of_the_invasive_tumor_figure_1_a_or_show",
+          "label": "TILs Brisk: Lymphocytes diffusely infiltrate the entire base of the invasive tumor (Figure 1, A) or show diffuse permeation of the invasive tumor (Figure 1, B).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_brisk_tumor_infiltrating_lymphocytes_in_primary_cutaneous_melanoma_a_lymphocytes_diffusely_",
+          "label": "Figure 1. Brisk tumor-infiltrating lymphocytes in primary cutaneous melanoma. A. Lymphocytes diffusely infiltrate the entire base of the invasive tumor. B. Lymphocytes diffusely infiltrate the entire invasive component of the melanoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "crowson_an_magro_cm_mihm_mc_prognosticators_of_melanoma_the_melanoma_report_and_the_sentinel_lymph_n",
+          "label": "Crowson AN, Magro CM, Mihm MC. Prognosticators of melanoma, the melanoma report, and the sentinel lymph node. Mod Pathol. 2006;19(Suppl 2): S71-87.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "characteristic_features_of_regression_include_replacement_of_tumor_cells_by_lymphohistiocytic_inflam",
+          "label": "Characteristic features of regression include replacement of tumor cells by lymphohistiocytic inflammation, as well as attenuation of the epidermis and non-lamellated dermal fibrosis with inflammatory cells, melanophagocytosis, and telangiectasia.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "notably_when_regression_is_observed_at_the_peripheral_excision_margin_it_prompts_consideration_for_r",
+          "label": "Notably, when regression is observed at the peripheral excision margin, it prompts consideration for re-excision, as it suggests the possibility of residual melanoma beyond visible margins, necessitating comprehensive evaluation and, if warranted, therapeutic intervention.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aung_pp_nagarajan_p_prieto_vg_regression_in_primary_cutaneous_melanoma_etiopathogenesis_and_clinical",
+          "label": "Aung PP, Nagarajan P, Prieto VG. Regression in primary cutaneous melanoma: etiopathogenesis and clinical significance. Lab Invest. 2017 Jun;97(6):657-668.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "microscopically_measured_distances_between_tumor_and_labeled_peripheral_lateral_or_deep_margins_are_",
+          "label": "Microscopically measured distances between tumor and labeled peripheral (lateral) or deep margins are appropriately recorded for melanoma excision specimens, whenever possible.  If a margin is involved by tumor, it should be stated whether the tumor is in situ and/or invasive and/or satellite. Occasionally, in situ melanoma can extend down an adnexal structure like a hair follicle and cause a deep positive margin.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pozdnyakova_o_grossman_j_barbagallo_b_lyle_s_the_hair_follicle_barrier_to_involvement_by_malignant_m",
+          "label": "Pozdnyakova O, Grossman J, Barbagallo, B, Lyle S. The hair follicle barrier to involvement by malignant melanoma. Cancer. 2009; 115:1267–1275.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "as_per_the_ajcc_chapter_1_8th_ed_pathological_stage_classification_is_based_on_clinical_stage_inform",
+          "label": "As per the AJCC (Chapter 1, 8th Ed.), pathological stage classification is based on clinical stage information supplemented/modified by operative findings and pathological evaluation of the resected specimens. Therefore, the pT staging classification is deferred to the definitive resection specimen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "changes_in_the_8th_edition_ajcc_cancer_staging_manual1_of_importance_to_practicing_pathologists_incl",
+          "label": "Changes in the 8th edition AJCC Cancer Staging Manual1 of importance to practicing pathologists include",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_mitotic_rate_is_no_longer_used_as_a_t_category_criterion_but_remains_an_important_prognostic_f",
+          "label": "Tumor mitotic rate is no longer used as a T category criterion but remains an important prognostic factor and should be reported in all invasive primary melanomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "recommendation_to_record_tumor_thickness_to_the_nearest_01mm_not_the_nearest_001mm",
+          "label": "Recommendation to record tumor thickness to the nearest 0.1mm (not the nearest 0.01mm).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_includes_microstaging_of_the_primary_melanoma_and_pathologic_information_about_th",
+          "label": "Pathologic staging includes microstaging of the primary melanoma and pathologic information about the regional lymph nodes after partial or complete lymphadenectomy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_virtually_all_studies_of_cutaneous_melanoma_tumor_thickness_has_been_shown_to_be_a_dominant_progn",
+          "label": "In virtually all studies of cutaneous melanoma, tumor thickness has been shown to be a dominant prognostic factor, and it forms the basis for the stratification of pT category. Although anatomic (Clark) levels, commonly used to indicate extent of invasion of the primary tumor, are less predictive of clinical outcome than mitotic activity or ulceration.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajcc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_treated_",
+          "label": "By AJCC convention, the designation “T” refers to a primary tumor that has not been previously treated. Similarly, by convention, clinical staging is performed after biopsy of the primary melanoma (including utilizing pathologic information on microstaging of the primary melanoma) with clinical or biopsy assessment of regional lymph nodes and distant sites. Pathologic staging uses information gained from pathologic evaluation of both the primary melanoma after biopsy and wide excision as well as pathological evaluation of the regional node basin after SLN biopsy (required for N categorization of all greater than T1 melanomas) and/or regional lymphadenectomy.1,2 In addition, for pathological staging, if information from any prior biopsy is known and is relevant for staging, this should be documented in the pathology report (in the staging section) and used for assigning T, N and M categories and staging purposes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_microscopic_assessment_of_the_primary_tumor_is_required_for_accurate_staging_therefore_ex",
+          "label": "Pathologic (microscopic) assessment of the primary tumor is required for accurate staging. Therefore, excision of the primary tumor, rather than incisional/partial biopsy, is advised. The T classification of melanoma is based on the thickness of the primary tumor and presence or absence of ulceration (see also Notes D, and E).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gershenwald_je_scolyer_ra_hess_kr_et_al_melanoma_of_the_skin_in_amin_mb_edge_sb_greene_fl_et_al_eds_",
+          "label": "Gershenwald JE, Scolyer RA, Hess KR, et al. Melanoma of the skin, In: Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gershenwald_je_scolyer_ra_hess_kr_sondak_vk_long_gv_ross_mi_et_al_melanoma_staging_evidence_based_ch",
+          "label": "Gershenwald JE, Scolyer RA, Hess KR, Sondak VK, Long GV, Ross MI et al. Melanoma staging: Evidence-based changes in the American Joint Committee on Cancer eighth edition cancer staging manual. CA Cancer J Clin. 2017;67(6):472-92.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "elder_de_massi_d_scolyer_ra_willemze_r_eds_who_classification_of_skin_tumors_world_health_organizati",
+          "label": "Elder DE, Massi D, Scolyer RA, Willemze R. eds. WHO Classification of Skin Tumors. World Health Organization of Tumors, 4th ed Volume 11. Lyon France; 2018, ISBN-13 978-92-832-2440-2.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

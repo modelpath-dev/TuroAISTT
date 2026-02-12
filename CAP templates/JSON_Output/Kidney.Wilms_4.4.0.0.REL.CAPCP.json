@@ -1,0 +1,2826 @@
+{
+  "template_id": "Kidney.Wilms_4.4.0.0.REL.CAPCP",
+  "organ": "KIDNEY, PEDIATRIC RENAL TUMORS: Resection",
+  "protocol_posting_date": "March 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "expert_consultation",
+      "section_name": "EXPERT CONSULTATION",
+      "fields": [
+        {
+          "field_id": "expert_consultation",
+          "label": "Expert Consultation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pending_completion_of_this_cap_cancer_protocol_is_awaiting_expert_consultation",
+              "label": "Pending - Completion of this CAP Cancer Protocol is awaiting expert consultation"
+            },
+            {
+              "value": "completed_this_cap_cancer_protocol_or_some_elements_have_been_performed_following_expert",
+              "label": "Completed - This CAP Cancer Protocol or some elements have been performed following expert"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "consultation",
+          "label": "consultation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "partial_nephrectomy",
+              "label": "Partial nephrectomy"
+            },
+            {
+              "value": "radical_nephrectomy",
+              "label": "Radical nephrectomy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "other_tissue_received_required_only_if_applicable",
+          "label": "Other Tissue Received (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "adrenal",
+              "label": "Adrenal"
+            },
+            {
+              "value": "liver",
+              "label": "Liver"
+            },
+            {
+              "value": "lung",
+              "label": "Lung"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "nephrectomy_weight",
+          "label": "Nephrectomy Weight",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_grams",
+              "label": "Specify in Grams (g): _________________ g",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "wilms_tumor_favorable_non_anaplastic_histology",
+              "label": "Wilms tumor, favorable / non-anaplastic histology"
+            },
+            {
+              "value": "wilms_tumor_focal_anaplasia",
+              "label": "Wilms tumor, focal anaplasia"
+            },
+            {
+              "value": "wilms_tumor_diffuse_anaplasia",
+              "label": "Wilms tumor, diffuse anaplasia"
+            },
+            {
+              "value": "congenital_mesoblastic_nephroma",
+              "label": "Congenital mesoblastic nephroma (cellular, classic, or mixed)"
+            },
+            {
+              "value": "clear_cell_sarcoma_of_kidney",
+              "label": "Clear cell sarcoma of kidney"
+            },
+            {
+              "value": "rhabdoid_tumor",
+              "label": "Rhabdoid tumor"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malignant_neoplasm_type_cannot_be_determined",
+              "label": "Malignant neoplasm, type cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "greatest_dimension_of_additional_tumors",
+          "label": "Greatest Dimension of Additional Tumors",
+          "required": true,
+          "type": "free_text",
+          "condition": "for specimens with multiple tumors, repeat this section as needed"
+        },
+        {
+          "field_id": "tumor_identifier",
+          "label": "Tumor Identifier: _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greatest_dimension_of_additional_tumor_in_centimeters_cm___________________cm",
+          "label": "Greatest Dimension of Additional Tumor in Centimeters (cm): _________________ cm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_tumors_in_specimen_or_submitted_from_one_kidney",
+          "label": "Number of Tumors in Specimen or Submitted from One Kidney",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_exact_number",
+              "label": "Specify exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nephrogenic_rests",
+          "label": "Nephrogenic Rests",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "intralobar",
+              "label": "Intralobar"
+            },
+            {
+              "value": "perilobar_diffuse_and_hyperplastic",
+              "label": "Perilobar, diffuse and hyperplastic"
+            },
+            {
+              "value": "perilobar_multifocal",
+              "label": "Perilobar, multifocal"
+            },
+            {
+              "value": "perilobar_focal",
+              "label": "Perilobar, focal"
+            },
+            {
+              "value": "perilobar",
+              "label": "Perilobar"
+            },
+            {
+              "value": "present_unclassified",
+              "label": "Present, unclassified"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "gross_or_microscopic_evidence_of_tumor_disruption_pre_operative_rupture_or_intra_operative",
+          "label": "Gross or Microscopic Evidence of Tumor Disruption (pre-operative rupture or intra-operative",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spillage",
+          "label": "spillage)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "identified",
+              "label": "Identified"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "renal_sinus_involvement_by_viable_tumor",
+          "label": "Renal Sinus Involvement by Viable Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "minimal_extension_into_renal_sinus_soft_tissue",
+              "label": "Minimal extension into renal sinus soft tissue (a single focus less than 5 mm in greatest dimension"
+            }
+          ]
+        },
+        {
+          "field_id": "located_greater_than_5_mm_from_the_nearest_margin",
+          "label": "located greater than 5 mm from the nearest margin)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "more_than_minimal_extension_into_renal_sinus_soft_tissue",
+              "label": "More than minimal extension into renal sinus soft tissue"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "extra_renal_vascular_involvement",
+          "label": "Extra-renal Vascular Involvement",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "renal vein, renal sinus, perinephric soft tissue, other"
+        },
+        {
+          "field_id": "extension_beyond_renal_capsule_by_viable_tumor",
+          "label": "Extension Beyond Renal Capsule by Viable Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "present_but_contained_within_pseudocapsule",
+              "label": "Present but contained within pseudocapsule (SIOP only)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "direct_extension_into_adjacent_organs_by_viable_tumor",
+          "label": "Direct Extension into Adjacent Organs by Viable Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_in_adrenal_gland_only_and_with_pseudocapsule",
+              "label": "Present in adrenal gland only AND with pseudocapsule (SIOP only)"
+            },
+            {
+              "value": "present",
+              "label": "Present (specify sites): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "posttherapy_histologic_classification_of_wilms_tumor",
+          "label": "Posttherapy Histologic Classification of Wilms Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "complete either the COG or SIOP classification based on treatment protocols used at your institution"
+        },
+        {
+          "field_id": "the_histologic_evidence_of_response_to_therapy_may_be_used_to_guide_further_therapy_for_wilms_tumors",
+          "label": "The histologic evidence of response to therapy may be used to guide further therapy for Wilms tumors. Therefore, tumors that have previously undergone therapy should be given a posttherapy classification.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cog",
+              "label": "COG"
+            }
+          ]
+        },
+        {
+          "field_id": "childrens_oncology_group_classification_of_favorable_histology_wilms_tumor",
+          "label": "Children’s Oncology Group Classification of Favorable Histology Wilms Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no known preoperative therapy)"
+            },
+            {
+              "value": "low_risk",
+              "label": "Low risk (no viable Wilms tumor present other than scattered nephroblastic tubules that may"
+            }
+          ]
+        },
+        {
+          "field_id": "represent_residual_nephrogenic_rest",
+          "label": "represent residual nephrogenic rest)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intermediate_risk_with_viable_tumor_present_comprising_less_than_33_of_mass_regardless_of",
+              "label": "Intermediate risk, with viable tumor present comprising less than 33% of mass, regardless of"
+            }
+          ]
+        },
+        {
+          "field_id": "histology",
+          "label": "histology",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intermediate_risk_with_viable_tumor_present_comprising_greater_than_33_of_mass_and_blastemal",
+              "label": "Intermediate risk, with viable tumor present comprising greater than 33% of mass and blastemal"
+            }
+          ]
+        },
+        {
+          "field_id": "histology_present_in_less_than_66_of_viable_tumor",
+          "label": "histology present in less than 66% of viable tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intermediate_risk_nos",
+              "label": "Intermediate risk, NOS"
+            },
+            {
+              "value": "high_risk",
+              "label": "High risk (viable tumor greater than 33% of mass with blastemal histology present in greater than"
+            }
+          ]
+        },
+        {
+          "field_id": "66_of_viable_tumor",
+          "label": "66% of viable tumor)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "siop",
+              "label": "SIOP"
+            }
+          ]
+        },
+        {
+          "field_id": "international_society_of_pediatric_oncology_classification_of_wilms_tumor",
+          "label": "International Society of Pediatric Oncology Classification of Wilms Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no known preoperative therapy)"
+            },
+            {
+              "value": "low_risk",
+              "label": "Low risk (no viable Wilms tumor present other than scattered nephroblastic tubules that may"
+            }
+          ]
+        },
+        {
+          "field_id": "represent_residual_nephrogenic_rest",
+          "label": "represent residual nephrogenic rest)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intermediate_risk_with_viable_tumor_present_comprising_less_than_33_of_mass_regardless_of",
+              "label": "Intermediate risk, with viable tumor present comprising less than 33% of mass, regardless of"
+            }
+          ]
+        },
+        {
+          "field_id": "histology",
+          "label": "histology",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intermediate_risk_epithelial_with_viable_tumor_present_comprising_greater_than_33_of_mass_and",
+              "label": "Intermediate risk epithelial, with viable tumor present comprising greater than 33% of mass and"
+            }
+          ]
+        },
+        {
+          "field_id": "epithelial_histology_present_in_greater_than_66_of_viable_tumor",
+          "label": "epithelial histology present in greater than 66% of viable tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intermediate_risk_stromal_with_viable_tumor_present_comprising_greater_than_33_of_mass_and",
+              "label": "Intermediate risk stromal, with viable tumor present comprising greater than 33% of mass and"
+            }
+          ]
+        },
+        {
+          "field_id": "stromal_histology_present_in_greater_than_66_of_viable_tumor",
+          "label": "stromal histology present in greater than 66% of viable tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intermediate_risk_mixed_with_viable_tumor_present_comprising_greater_than_33_of_mass_and_no",
+              "label": "Intermediate risk mixed, with viable tumor present comprising greater than 33% of mass and no"
+            }
+          ]
+        },
+        {
+          "field_id": "is_greater_than_66_of_viable_tumor_is_associated_with_greater_than_10_blastemal_histology",
+          "label": "is greater than 66% of viable tumor, is associated with greater than 10% blastemal histology",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intermediate_risk_nos",
+              "label": "Intermediate risk, NOS"
+            },
+            {
+              "value": "high_risk",
+              "label": "High risk (viable tumor greater than 33% of mass with blastemal histology present in greater than"
+            }
+          ]
+        },
+        {
+          "field_id": "66_of_viable_tumor",
+          "label": "66% of viable tumor)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intermediate_risk_with_focal_anaplasia",
+              "label": "Intermediate risk with focal anaplasia (not blastemal predominant)"
+            },
+            {
+              "value": "high_risk_with_diffuse_anaplasia",
+              "label": "High risk with diffuse anaplasia"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_viable_and_non_viable_tumor",
+              "label": "All margins negative for viable and non-viable tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_tumor",
+          "label": "Closest Margin(s) to Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "vascular",
+              "label": "Vascular: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ureteral",
+              "label": "Ureteral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "perinephric_soft_tissue",
+              "label": "Perinephric soft tissue: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_tumor_to_closest_margin",
+          "label": "Distance from Tumor to Closest Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_01_cm",
+              "label": "Less than 0.1 cm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor",
+              "label": "Tumor (viable or non-viable) present at margin"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "margins_involved_by_viable_or_non_viable_tumor",
+          "label": "Margin(s) Involved by Viable or Non-Viable Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "vascular",
+              "label": "Vascular: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "viable",
+              "label": "Viable"
+            },
+            {
+              "value": "non_viable_only",
+              "label": "Non-viable only"
+            },
+            {
+              "value": "ureteral",
+              "label": "Ureteral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "viable",
+              "label": "Viable"
+            },
+            {
+              "value": "non_viable_only",
+              "label": "Non-viable only"
+            },
+            {
+              "value": "perinephric_soft_tissue",
+              "label": "Perinephric soft tissue: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "viable",
+              "label": "Viable"
+            },
+            {
+              "value": "non_viable_only",
+              "label": "Non-viable only"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "viable",
+              "label": "Viable"
+            },
+            {
+              "value": "non_viable_only",
+              "label": "Non-viable only"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "regional_abdominopelvic_lymph_node_status",
+          "label": "Regional (abdominopelvic) Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_viable_and_non_viable_tumor",
+              "label": "All regional lymph nodes negative for viable and non-viable tumor"
+            },
+            {
+              "value": "tumor",
+              "label": "Tumor (viable or non-viable) present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_with_tumor_if_known",
+          "label": "Nodal Site(s) with Tumor, if known",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_nodal_site",
+              "label": "Specify nodal site(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_by_viable_or_non_viable_tumor_if_applicable",
+          "label": "Distant Site(s) Involved by Viable or Non-Viable Tumor, if applicable",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distant_metastasis_includes_both_hematogenous_metastasis_to_any_location_or_lymph_node_metastasis_ou",
+          "label": "Distant metastasis includes both hematogenous metastasis to any location or lymph node metastasis outside the abdomen-pelvic region (beyond the renal drainage system).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "lymph_node",
+              "label": "Lymph node(s) outside of the abdomino-pelvic region: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pathologic_stage",
+          "label": "PATHOLOGIC STAGE",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "staging_system",
+          "label": "Staging System#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cog",
+              "label": "COG"
+            }
+          ],
+          "guidance": "Complete either the COG or SIOP staging based on the treatment protocols used at your institution"
+        },
+        {
+          "field_id": "childrens_oncology_group_staging_system_for_pediatric_renal_tumors_other_than_renal_cell",
+          "label": "Children’s Oncology Group Staging System for Pediatric Renal Tumors other than Renal Cell",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinoma",
+          "label": "Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "local_stage_must_be_assigned_by_the_pathologist_with_the_caveat_that_he_or_she_may_not_be_aware_of_c",
+          "label": "Local stage must be assigned by the pathologist with the caveat that he or she may not be aware of clinical or",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radiographic_information_important_in_assigning_the_clinical_or_overall_stage_ie_presence_of_metasta",
+          "label": "radiographic information important in assigning the clinical or overall stage (i.e., presence of metastatic disease).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (nephrogenic rests only)"
+            }
+          ],
+          "guidance": "Local Stage I requires all of the following to be true: No penetration of renal capsule by tumor identified, and; No"
+        },
+        {
+          "field_id": "lymph_nodes_identified",
+          "label": "lymph nodes identified.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "local_stage_i",
+              "label": "Local Stage I: Tumor limited to kidney and completely resected#"
+            },
+            {
+              "value": "local_stage_ii",
+              "label": "Local Stage II: Tumor extends beyond kidney but is completely resected, with negative surgical"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "tumor",
+              "label": "Tumor (viable) extends through the renal capsule or involves the perirenal fat or adrenal gland"
+            },
+            {
+              "value": "tumor",
+              "label": "Tumor (viable) involvement of extrarenal or renal sinus lymph-vascular spaces present"
+            },
+            {
+              "value": "tumor",
+              "label": "Tumor (viable) involves renal vein but has not been transected and is not attached to vein wall"
+            }
+          ]
+        },
+        {
+          "field_id": "at_resection_margin",
+          "label": "at resection margin",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "tumor",
+              "label": "Tumor (viable) infiltrates the wall of the renal pelvis or the ureter"
+            },
+            {
+              "value": "tumor",
+              "label": "Tumor (viable) more than minimally involves the renal sinus soft tissue"
+            },
+            {
+              "value": "local_stage_iii",
+              "label": "Local Stage III: Residual tumor is suspected"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "tumor",
+              "label": "Tumor (viable or non-viable) present at margin(s) of resection"
+            },
+            {
+              "value": "tumor",
+              "label": "Tumor (viable or non-viable) rupture identified"
+            },
+            {
+              "value": "tumor_spill",
+              "label": "Tumor spill (viable or non-viable) before or during surgery identified"
+            },
+            {
+              "value": "piecemeal_excision_of_viable_or_non_viable_tumor",
+              "label": "Piecemeal excision of viable or non-viable tumor (removal of tumor in more than 1 piece)"
+            },
+            {
+              "value": "metastatic_tumor",
+              "label": "Metastatic tumor (viable or non-viable) in regional (abdominopelvic) lymph node(s) identified"
+            },
+            {
+              "value": "history_of_renal_tumor_biopsy_before_definitive_surgery",
+              "label": "History of renal tumor biopsy before definitive surgery (pretherapy specimens only)"
+            },
+            {
+              "value": "peritoneal_tumor_implants",
+              "label": "Peritoneal tumor implants (viable or non-viable) present anywhere in the abdomen or pelvis"
+            }
+          ],
+          "guidance": "Stage IV requires hematogenous metastases to any location or lymph node metastases outside the abdomino-"
+        },
+        {
+          "field_id": "pelvic_region",
+          "label": "pelvic region",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stage_iv",
+              "label": "Stage IV: Metastatic disease##"
+            },
+            {
+              "value": "stage_v",
+              "label": "Stage V: Bilateral renal involvement at diagnosis"
+            }
+          ],
+          "condition": "beyond renal drainage system, e.g., lung, liver"
+        },
+        {
+          "field_id": "each_side_should_be_staged_separately_in_separate_case_summaries_according_to_above_criteria_as_stag",
+          "label": "Each side should be staged separately in separate case summaries, according to above criteria, as stage I",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_both",
+          "label": "Specify (both)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "right_kidney_stage",
+          "label": "Right Kidney Stage",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I"
+            },
+            {
+              "value": "ii",
+              "label": "II"
+            },
+            {
+              "value": "iii",
+              "label": "III"
+            },
+            {
+              "value": "iv",
+              "label": "IV"
+            }
+          ]
+        },
+        {
+          "field_id": "left_kidney_stage",
+          "label": "Left Kidney Stage",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I"
+            },
+            {
+              "value": "ii",
+              "label": "II"
+            },
+            {
+              "value": "iii",
+              "label": "III"
+            },
+            {
+              "value": "iv",
+              "label": "IV"
+            },
+            {
+              "value": "siop",
+              "label": "SIOP"
+            }
+          ]
+        },
+        {
+          "field_id": "international_society_of_pediatric_oncology_staging_for_wilms_tumor_treated_with_preoperative",
+          "label": "International Society of Pediatric Oncology Staging for Wilms Tumor Treated with Preoperative",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chemotherapy",
+          "label": "Chemotherapy",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Local Stage I requires all of the following to be true: No penetration of renal capsule by tumor identified, and; No"
+        },
+        {
+          "field_id": "surrounded_by_a_fibrous_pseudocapsule_and_does_not_reach_the_outer_surface",
+          "label": "surrounded by a fibrous pseudocapsule and does not reach the outer surface.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stage_i",
+              "label": "Stage I: Tumor is limited to the kidney and is completely resected#"
+            },
+            {
+              "value": "stage_ii",
+              "label": "Stage II: Tumor infiltrates locally but is completely excised with negative surgical margins and"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "viable_tumor_infiltrates_the_renal_sinus_or_blood_and_or_lymphatic_vessels_outside_the_renal",
+              "label": "Viable tumor infiltrates the renal sinus or blood and / or lymphatic vessels outside the renal"
+            }
+          ]
+        },
+        {
+          "field_id": "parenchyma",
+          "label": "parenchyma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "viable_tumor_infiltrates_the_vena_cava_or_adjacent_organs",
+              "label": "Viable tumor infiltrates the vena cava or adjacent organs (except for encapsulated adrenal"
+            }
+          ]
+        },
+        {
+          "field_id": "gland_invasion_which_is_stage_i_if_the_tumor_is_encapsulated",
+          "label": "gland invasion, which is stage I if the tumor is encapsulated)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "viable_tumor_within_perirenal_fat",
+              "label": "Viable tumor within perirenal fat (not surrounded by a pseudocapsule and is completely"
+            }
+          ]
+        },
+        {
+          "field_id": "excised",
+          "label": "excised)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "viable_tumor_infiltrates_the_wall_of_the_renal_pelvis_or_the_ureter",
+              "label": "Viable tumor infiltrates the wall of the renal pelvis or the ureter"
+            },
+            {
+              "value": "stage_iii",
+              "label": "Stage III: Tumor shows residual disease intraabdominally"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "viable_tumor_is_present_at_a_perinephric_resection_margin",
+              "label": "Viable tumor is present at a perinephric resection margin (non-viable tumor or chemotherapy-"
+            }
+          ]
+        },
+        {
+          "field_id": "induced_change_present_at_perinephric_resection_margins_is_not_regarded_as_stage_iii",
+          "label": "induced change present at perinephric resection margins is not regarded as stage III)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "abdominal_lymph_nodes_contain_viable_or_non_viable_tumor",
+              "label": "Abdominal lymph nodes contain viable or non-viable tumor"
+            },
+            {
+              "value": "preoperative_or_intraoperative_tumor_rupture_if_confirmed_by_microscopic_examination",
+              "label": "Preoperative or intraoperative tumor rupture, if confirmed by microscopic examination (viable"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_at_the_surface_of_the_specimen_in_the_area_of_the_rupture",
+          "label": "tumor at the surface of the specimen in the area of the rupture)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "viable_or_non_viable_tumor_thrombus_is_present_at_resection_margins_of_the_ureter_renal_vein_or",
+              "label": "Viable or non-viable tumor thrombus is present at resection margins of the ureter, renal vein, or"
+            }
+          ]
+        },
+        {
+          "field_id": "inferior_vena_cava",
+          "label": "inferior vena cava",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "viable_or_non_viable_tumor_thrombus_that_is_attached_to_the_inferior_vena_cava_wall_is_removed",
+              "label": "Viable or non-viable tumor thrombus that is attached to the inferior vena cava wall is removed"
+            }
+          ]
+        },
+        {
+          "field_id": "piecemeal_by_the_surgeon",
+          "label": "piecemeal by the surgeon",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "wedge_open_tumor_biopsy_prior_to_preoperative_chemotherapy_or_surgery",
+              "label": "Wedge / open tumor biopsy prior to preoperative chemotherapy or surgery (needle core biopsy"
+            }
+          ]
+        },
+        {
+          "field_id": "does_not_upstage_to_siop_stage_iii",
+          "label": "does not upstage to SIOP stage III)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "tumor_implants",
+              "label": "Tumor implants (viable or non-viable) are found anywhere in the abdomen"
+            },
+            {
+              "value": "tumor",
+              "label": "Tumor (viable or non-viable) has penetrated through the peritoneal surface"
+            },
+            {
+              "value": "stage_iv",
+              "label": "Stage IV: Tumor shows distant metastases"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "hematogenous_metastases",
+              "label": "Hematogenous metastases (lung, liver, bone, brain, or other)"
+            },
+            {
+              "value": "lymph_node_metastases_outside_the_abdominopelvic_region",
+              "label": "Lymph node metastases outside the abdominopelvic region"
+            },
+            {
+              "value": "stage_v",
+              "label": "Stage V: Bilateral renal involvement at diagnosis"
+            }
+          ]
+        },
+        {
+          "field_id": "each_side_should_be_staged_separately_in_separate_case_summaries_according_to_above_criteria_as_stag",
+          "label": "Each side should be staged separately in separate case summaries, according to above criteria, as stage I",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_both",
+          "label": "Specify (both)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "right_kidney_stage",
+          "label": "Right Kidney Stage",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I"
+            },
+            {
+              "value": "ii",
+              "label": "II"
+            },
+            {
+              "value": "iii",
+              "label": "III"
+            },
+            {
+              "value": "iv",
+              "label": "IV"
+            }
+          ]
+        },
+        {
+          "field_id": "left_kidney_stage",
+          "label": "Left Kidney Stage",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I"
+            },
+            {
+              "value": "ii",
+              "label": "II"
+            },
+            {
+              "value": "iii",
+              "label": "III"
+            },
+            {
+              "value": "iv",
+              "label": "IV"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "relevant_immunohistochemistry",
+          "label": "Relevant Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "specify_findings",
+              "label": "Specify findings: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "ancillary_studies",
+          "label": "Ancillary Studies",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "microarray",
+              "label": "Microarray"
+            },
+            {
+              "value": "specify_findings",
+              "label": "Specify findings: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "fish",
+              "label": "FISH"
+            },
+            {
+              "value": "specify_probe_and_findings",
+              "label": "Specify probe and findings: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "next_generation_sequencing",
+              "label": "Next generation sequencing (NGS)"
+            },
+            {
+              "value": "specify_findings",
+              "label": "Specify findings: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings_specify",
+          "label": "Additional Findings (specify) : _________________",
+          "required": false,
+          "type": "free_text",
+          "notes": [
+            "G",
+            "H"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "expert_consultation_is_not_required_this_question_has_been_added_to_annotate_if_so_desired_that_the_",
+          "label": "Expert consultation is not required. This question has been added to annotate, if so desired, that the case has been sent out for consultation and thus items of the CAP protocol could not be completed pending expert consultation. Completion of the CAP protocol will then be performed following consultation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "with_pediatric_renal_tumors_there_are_many_issues_that_can_interfere_with_making_accurate_diagnostic",
+          "label": "With pediatric renal tumors, there are many issues that can interfere with making accurate diagnostic and staging decisions. The following guidelines are recommended to ensure that the necessary diagnostic features are preserved and properly examined:1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "frozen_section",
+          "label": "Frozen Section",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "because_of_the_high_number_of_false_positives_intraoperative_frozen_sections_should_be_avoided_unles",
+          "label": "Because of the high number of false-positives, intraoperative frozen sections should be avoided unless the operative procedure will be altered by the result. Frozens of pediatric renal tumors present significant potential for diagnostic error, even on permanent section. However, frozen sections from the bivalved nephrectomy specimen—to ensure tumor viability or to prompt other differential diagnostic studies—may be of value.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_future_potential_molecular_studies_viable_tumor_1_gram_or_more_should_be_snap_frozen_liquid_nitr",
+          "label": "For future potential molecular studies, viable tumor (1 gram or more) should be snap-frozen (liquid nitrogen or cold isopentane) in 2 or more vials, along with a separate portion of nonneoplastic kidney (at least 1 vial).2 The latter serves as a useful control in molecular genetic studies and helps determine whether any detected genomic abnormalities are germline or intratumoral mutations. Nephrogenic rests may also be sampled and frozen for the same reasons.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nephrectomy",
+          "label": "Nephrectomy",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nephrectomy_specimens_should_be_submitted_intact_by_the_surgeon_the_surface_of_the_specimen_should_b",
+          "label": "Nephrectomy specimens should be submitted intact by the surgeon. The surface of the specimen should be photographed and inked before bivalving to facilitate the recognition of displacement artifacts from the smearing of tumor cells over the specimen surface during sectioning, as well as to evaluate margins. Bivalving will cause the capsule in a fresh kidney to retract, possibly altering the relationship between the tumor and the capsule or surgical margin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_capsule_from_nephrectomy_specimens_must_never_be_stripped_invasion_of_the_tumor_into_the_capsule",
+          "label": "The capsule from nephrectomy specimens must never be stripped. Invasion of the tumor into the capsule is a criterion in staging. In addition, nephrogenic rests are often subcapsular in location. The medial sinus margin is defined as the medial end of soft tissues surrounding the renal artery and vein.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "inspect_the_renal_vein_for_tumor_thrombus_because_this_is_a_common_route_by_which_wilms_tumor_exits_",
+          "label": "Inspect the renal vein for tumor thrombus because this is a common route by which Wilms tumor exits the kidney (see Microscopic Examination Note). Care should be taken to not over-interpret the renal vein margin (see Extent of Tumor Note).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_exact_site_from_which_each_section_or_paraffin_block_is_obtained_may_be_documented_by_photograph",
+          "label": "The exact site from which each section or paraffin block is obtained may be documented by photograph, photocopy, or drawing. Often, this documentation is critical for recognizing staging problems and for the evaluation of focal versus diffuse anaplasia.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "take_at_least_1_microscopic_section_per_centimeter_of_maximal_tumor_diameter_with_additional_samplin",
+          "label": "Take at least 1 microscopic section per centimeter of maximal tumor diameter, with additional sampling of any suspicious lesions. The majority of random tumor sections should be taken from the periphery of the tumor, because this is where the invasive pattern of the tumor can be identified and its interface with the capsule and native kidney can be evaluated. Peripheral sections also demonstrate invasion of vessels within the intrarenal extension of the renal sinus. The renal sinus is composed of fat containing hilar vessels; the renal sinus is largely located within the hilum of the kidney but may extend deep into the kidney. Involvement of the intrarenal renal sinus remains a criterion for local stage 2 disease. The renal cortex at the sinus lacks a capsule. The most important sections are those taken from regions of the sinus adjacent to the tumor to demonstrate involvement (or lack of involvement) of sinus vessels (see Microscopic Examination Note).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_wilms_tumors_that_are_multicentric_sample_each_nodule_more_than_30_of_wilms_nephrectomy_specimen",
+          "label": "For Wilms tumors that are multicentric, sample each nodule. More than 30% of Wilms nephrectomy specimens contain nephrogenic rests. Nephrogenic rests often appear paler than the typical nonneoplastic kidney parenchyma. These areas should be sampled. Nephrogenic rests have important implications concerning the risk of contralateral Wilms tumor development and may have other syndromic implications. At least 1 random section of normal kidney and possibly more may be taken to detect nephrogenic rests microscopically (see Nephrogenic Rests Note).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nephrectomy_weight_may_be_an_eligibility_factor_for_some_clinical_trial_protocols_hence_this_measure",
+          "label": "Nephrectomy weight may be an eligibility factor for some clinical trial protocols. Hence, this measurement is critical.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_addition_to_the_capsular_vascular_and_sinus_sampling_already_described_routine_sections_taken_for",
+          "label": "In addition to the capsular, vascular, and sinus sampling already described, routine sections taken for margins should include sampling of the distal ureter.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "evaluation_of_lymph_nodes_may_be_required_for_certain_therapeutic_protocols_in_addition_to_separatel",
+          "label": "Evaluation of lymph nodes may be required for certain therapeutic protocols. In addition to separately submitted lymph nodes, the hilar adipose tissue should be examined for possible lymph nodes. If no lymph nodes are submitted separately and none are identified in the hilum, the hilar adipose tissue should be entirely submitted for microscopic examination.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zuppan_cw_handling_and_evaluation_of_pediatric_renal_tumors_am_j_clin_pathol_19981094_suppl_1_s31_s3",
+          "label": "Zuppan CW. Handling and evaluation of pediatric renal tumors. Am J Clin Pathol. 1998;109(4 suppl 1): S31-S37.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "knezevich_sr_garnett_mj_pysher_tj_et_al_etv6_ntrk3_gene_fusion_and_trisomy_11_establish_a_histogenet",
+          "label": "Knezevich SR, Garnett MJ, Pysher TJ, et al. ETV6-NTRK3 gene fusion and trisomy 11 establish a histogenetic link between mesoblastic nephroma and congenital fibrosarcoma. Cancer Res. 1998;58(22):5046-5048.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "favorable_histology_wilms_tumor",
+          "label": "Favorable Histology Wilms Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "classic_wilms_tumors_present_with_a_mixture_of_blastemal_stromal_and_epithelial_cell_types_a_common_",
+          "label": "Classic Wilms tumors present with a mixture of blastemal, stromal, and epithelial cell types. A common difficulty faced by pathologists interpreting a pediatric renal mass is the distinction between a hyperplastic perilobar nephrogenic rest and a Wilms tumor because these may be cytologically identical. The most helpful histologic feature is the absence of a peritumoral fibrous capsule in perilobar nephrogenic rests.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "many_other_neoplasms_may_have_a_histologic_appearance_similar_to_blastemal_predominant_wilms_tumors_",
+          "label": "Many other neoplasms may have a histologic appearance similar to blastemal-predominant Wilms tumors. The most common tumors misdiagnosed as Wilms tumors are undifferentiated neuroblastoma, Ewing sarcoma, and synovial sarcoma. The most helpful feature that favors the diagnosis of Wilms tumor is the presence of overlapping nuclei with finely dispersed chromatin. Similarly, epithelial-prominent Wilms tumors show considerable histologic overlap with papillary renal cell carcinoma and metanephric adenoma. A more detailed diagnosis of pediatric renal tumors is provided elsewhere.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry",
+          "label": "Immunohistochemistry",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_diagnosis_of_wilms_tumor_no_single_or_panel_markers_can_with_100_confidence_either_prove_or_excl",
+          "label": "For diagnosis of Wilms tumor, no single or panel markers can with 100% confidence either prove or exclude the diagnosis of Wilms tumor. WT1 is commonly positive in blastemal and epithelial elements but may be negative in up to 20% of Wilms tumors. PAX8/PAX2 are expressed in Wilms tumor and this expression may exclude small blue cell tumors of the soft tissue that happen to present in the kidney.3 Almost any other immunohistochemical marker may be found in Wilms tumors in the correct pathologic context.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_some_studies_suggest_that_p53_immunostaining_may_be_a_more_sensitive_predictor_of_poor_outc",
+          "label": "Although some studies suggest that p53 immunostaining may be a more sensitive predictor of poor outcomes than histologic assessment of anaplasia,1 such studies are fraught with difficulties in interpreting the outside limits of “positivity” as well as with interinstitutional variability in immunostaining techniques. Furthermore, some p53 mutations by their nature do not result in abnormal protein accumulation. However, strong, unequivocal p53 protein accumulation identified in a tumor that is suspicious for anaplasia may contribute to the diagnosis.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anaplastic_wilms_tumor",
+          "label": "Anaplastic Wilms Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "once_a_tumor_has_been_diagnosed_as_wilms_tumor_it_is_necessary_to_determine_if_it_is_of_favorable_hi",
+          "label": "Once a tumor has been diagnosed as Wilms tumor, it is necessary to determine if it is of favorable histology or if anaplasia is present. Although anaplasia is present in only 5% of all cases,4,5 it is the major prognostic indicator and will place a tumor in an unfavorable histologic category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_anaplasia_is_a_significant_prognostic_factor_in_wilms_tumor_and_places_the_tumor_in_",
+          "label": "The presence of anaplasia is a significant prognostic factor in Wilms tumor and places the tumor in an unfavorable category. Although the mechanism for unfavorable prognosis is unclear, anaplasia may be a marker of chemotherapy resistance. A diagnosis of anaplasia requires both (1) gigantic polyploid nuclei with increased chromatin content and major diameters at least 3 times those of adjacent cells and (2) the presence of multipolar or otherwise recognizable polyploid mitotic figures. On a small biopsy, a single multipolar mitotic figure or an unequivocally gigantic tumor cell nucleus may be sufficient criteria for diagnosis. Severe nuclear unrest is defined as nuclear pleomorphism or atypia approaching the criteria of anaplasia. Care should be taken in the assessment of anaplasia cells exhibiting rhabdomyoblastic differentiation, as these cells may show nuclear enlargement, pleomorphism, and hyperchromasia akin to regenerating skeletal muscle. Such areas of “pseudoanaplasia” will have increased cytoplasmic volume and will lack atypical mitoses, as described above.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "criteria_for_focal_versus_diffuse_anaplasia_have_been_defined_topographically_and_are_rigorous5_this",
+          "label": "Criteria for focal versus diffuse anaplasia have been defined topographically and are rigorous.5 This topographic definition of focal anaplasia makes it mandatory that pathologists carefully document the exact site from which every section is obtained (e.g., on a diagram, specimen photocopy, and/or photograph of the gross specimen).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "focal_anaplasia",
+          "label": "Focal Anaplasia",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diagnosis_of_focal_anaplasia_is_warranted_if_all_of_the_following_are_true",
+          "label": "Diagnosis of focal anaplasia is warranted if all of the following are true",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "no_anaplasia_should_be_present_in_tumors_within_renal_vessels_or_outside_the_kidney",
+          "label": "No anaplasia should be present in tumors within renal vessels or outside the kidney.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anaplasia_must_be_confined_to_1_or_2_sharply_localized_regions_each_less_than_15_mm_in_diameter_with",
+          "label": "Anaplasia must be confined to 1 or 2 sharply localized regions, each less than 15 mm in diameter, within the primary intrarenal tumor site.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "each_focus_of_anaplasia_must_be_surrounded_on_all_sides_by_nonanaplastic_tissue_this_may_require_map",
+          "label": "Each focus of anaplasia must be surrounded on all sides by nonanaplastic tissue. This may require mapping of the tumor during submission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_remaining_nonanaplastic_tumor_must_not_show_severe_nuclear_unrest",
+          "label": "The remaining nonanaplastic tumor must not show severe nuclear unrest.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diffuse_anaplasia",
+          "label": "Diffuse Anaplasia",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diagnosis_of_diffuse_anaplasia_is_warranted_if_any_of_the_following_are_true",
+          "label": "Diagnosis of diffuse anaplasia is warranted if any of the following are true",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anaplasia_is_present_in_tumors_in_any_extrarenal_site_including_vessels_of_the_renal_sinus_extracaps",
+          "label": "Anaplasia is present in tumors in any extrarenal site, including vessels of the renal sinus, extracapsular infiltrates, or nodal or distant metastases. Also, anaplasia is present in intrarenal vascular involvement by tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anaplasia_is_present_in_a_random_biopsy",
+          "label": "Anaplasia is present in a random biopsy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anaplasia_is_unequivocally_identified_but_the_tumor_fails_any_of_the_above_criteria_for_focal_anapla",
+          "label": "Anaplasia is unequivocally identified, but the tumor fails any of the above criteria for focal anaplasia.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "posttherapy_classification_of_wilms_tumor",
+          "label": "Posttherapy Classification of Wilms Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_response_of_a_wilms_tumor_to_prior_therapy_may_help_guide_the_subsequent_therapeutic_strategy_fo",
+          "label": "The response of a Wilms tumor to prior therapy may help guide the subsequent therapeutic strategy. For this reason, the Children’s Oncology Group is using the overall categories (low, medium, high risk) utilized by the International Society of Paediatric Oncology (SIOP) when categorizing posttherapy tumors.7 As outlined above, these categories are based on the proportion of the tumor that is viable and blastemal, and in COG only apply in favorable histology Wilms tumor. It is acknowledged that such quantitative analysis is quite difficult to reproduce and is highly dependent on how representative of the entire tumor the sections submitted are. The overall concept is that tumor that remains highly undifferentiated and proliferative following therapy will require more aggressive therapy going forward. Pathologists should, as always, use their best judgment. Staging of posttherapy nephrectomy specimens should be based on the resection specimen only. For COG, the specimen receives an updated local stage after therapy. Thus, a prior pretherapy biopsy is not a criterion for assigning a local stage III to a post-therapy specimen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "impact_of_necrotic_tumor_on_wilms_tumor_staging",
+          "label": "Impact of Necrotic Tumor on Wilms Tumor Staging",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "necrosis_outside_of_the_kidney_may_be_present_in_pretherapy_resection_specimens_or_posttherapy_speci",
+          "label": "Necrosis outside of the kidney may be present in pretherapy resection specimens or posttherapy specimens. The presence of necrotic tumor or chemotherapy-induced change (in the absence of viable tumor) in the renal sinus and/or within the perirenal fat is not regarded as a reason for upstaging, providing the tumor (either viable or necrotic) is completely excised and does not reach the resection margins. In contrast, the presence of necrotic tumor or chemotherapy-induced changes in a lymph node or at the resection margins (with the exception of the perinephric resection margins for SIOP) is regarded as proof of previous tumor with potential microscopic residual disease, and therefore the tumor is assigned stage III.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "congenital_mesoblastic_nephroma",
+          "label": "Congenital Mesoblastic Nephroma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "congenital_mesoblastic_nephroma_cmn_a_tumor_of_infancy_represents_2_morphologicallygenetically_disti",
+          "label": "Congenital Mesoblastic Nephroma (CMN), a tumor of infancy, represents 2 morphologically/genetically distinct tumors: classic and cellular forms. The classic subtype is characterized by a whirled gross appearance and is composed of bland spindle cells with a low mitotic rate that are arranged in long, sweeping fascicles.8,9 The cellular subtype has a fleshy and hemorrhagic gross appearance and is characterized by more densely cellular plump spindle cells with shorter to haphazard fascicles and a higher mitotic rate. Cases may also show a “mixed” histologic appearance with features of both classic and cellular CMN.10,11 Cellular CMN may be positive for PAX8 and desmin and negative for CD34 and cytokeratins, but immunohistochemical markers are overall nonspecific.11,12",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "approximately_10_of_cmns_recur_virtually_all_cmns_that_recur_are_of_the_cellular_subtype8913_recurre",
+          "label": "Approximately 10% of CMNs recur. Virtually all CMNs that recur are of the cellular subtype.8,9,13 Recurrences occur very rapidly, often within the first month of diagnosis. Virtually all recurrences occur by the first year of age.14 More than half are local recurrences; however, pulmonary metastases have been identified in 20% of patients who relapse. However, the primary determinant of outcome is the completeness of the excision. Surgeons should be educated and encouraged to secure wide margins, particularly medial margins, when resecting renal tumors in infants. Nonetheless, one can rarely be sure that the medial margin is clear; therefore, all patients should be followed closely. Monthly abdominal ultrasounds should be performed for 1 year, with the hope of catching recurrences early enough to surgically excise them. Adjuvant chemotherapy is required when there is gross residual tumor.13,14 Radiation has no demonstrable effect.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_sarcoma_of_the_kidney",
+          "label": "Clear Cell Sarcoma of the Kidney",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_sarcoma_of_the_kidney_ccsk_is_capable_of_mimicking_or_being_mimicked_by_every_other_major",
+          "label": "Clear cell sarcoma of the kidney (CCSK) is capable of mimicking, or being mimicked by, every other major neoplastic entity in the pediatric kidney. Immunohistochemical stains for CCSK are non-specific but may be helpful to aid the diagnosis. CCSK may show variable but consistent expression for BCOR cyclin D1, and NGFR; other IHC may be useful to exclude other diagnoses.15,16,17 Molecular features are described in Note G.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_histologic_spectrum_and_clinical_outcome_of_patients_with_ccsk_have_been_reported_by_the_nationa",
+          "label": "The histologic spectrum and clinical outcome of patients with CCSK have been reported by the National Wilms Tumor Study Group.18 Nearly all patients with stage I CCSK survive. Conversely, patients with more advanced disease have a propensity for local recurrence and metastasis. Recurrences can occur from years to decades after the initial presentation, sometimes demonstrating bland histology that differs from the primary tumor. The metastatic pattern tends to be more widespread than that of Wilms tumor and includes bone, brain, and soft tissue. There is a high recurrence rate and death rate even when treated by combination chemotherapy, but survival can be greatly improved after treatment with doxorubicin,11 which underscores the importance of identifying this neoplasm to facilitate early administration of more effective chemotherapy regimes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_several_variants_of_ccsk_among_which_the_following_are_most_important",
+          "label": "There are several variants of CCSK, among which the following are most important",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "classic_pattern",
+          "label": "Classic Pattern",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_classic_pattern_of_ccsk_presents_an_evenly_dispersed_network_of_fine_arborizing_vessels_accompan",
+          "label": "The classic pattern of CCSK presents an evenly dispersed network of fine, arborizing vessels accompanied by a variable amount of spindle-cell stroma, subdividing the tumor into nests or cords of regular size, usually about 8 to 12 cells in width. The tumor cells are of regular size, usually with stellate cytoplasm, which often surrounds clear vacuoles. The nuclei are notably regular in size, with finely dispersed chromatin, and usually inconspicuous nucleoli. Mitotic activity may be sparse. Scattered preexisting tubules or glomeruli often are dispersed through the peripheral regions of the tumor. This pattern of growth, which isolates and separates individual nephronic units or collecting tubules, is an important clue that one is not dealing with Wilms tumor. The latter almost always has a sharply defined, “pushing” border.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hyalinizing_pattern",
+          "label": "Hyalinizing Pattern",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_hyalinizing_pattern_of_ccsk_often_has_an_osteoid_like_nonbirefringent_matrix_that_separates_tumo",
+          "label": "The hyalinizing pattern of CCSK often has an osteoid-like, nonbirefringent matrix that separates tumor cells, giving an appearance reminiscent of osteosarcoma. A similar change may be seen in rhabdoid tumor of the kidney (RTK).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epithelioid_pattern",
+          "label": "Epithelioid Pattern",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_epithelioid_pattern_is_the_most_deceptive_of_the_patterns_of_ccsk_in_which_the_tumor_cells_align",
+          "label": "The epithelioid pattern is the most deceptive of the patterns of CCSK, in which the tumor cells align themselves along vessels in a manner mimicking the tubules of Wilms tumor. Often these cells form filigree-like strands.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rhabdoid_tumor_of_the_kidney",
+          "label": "Rhabdoid Tumor of the Kidney",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_distinctive_renal_neoplasm_most_commonly_is_encountered_in_infants_younger_than_1_year_of_age_a",
+          "label": "This distinctive renal neoplasm most commonly is encountered in infants younger than 1 year of age and is uncommon in patients older than 5 years.19,20,21 It is extremely aggressive and is the prognostically unfavorable neoplasm of the kidney in early life. Rhabdoid tumors continue to present significant diagnostic challenges, particularly when they do not show overt rhabdoid features. However, the growing appreciation that this tumor arises in sites other than the kidney and the central nervous system, and the increased appreciation of the wide histologic spectrum of rhabdoid tumors, have contributed to a marked increase in their correct diagnosis. Rhabdoid tumors of the kidney should not be confused with the true myogenic cells, which are often found in Wilms tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_most_distinctive_features_of_rhabdoid_tumor_of_the_kidney_rtk_are_rather_large_cells_with_large_",
+          "label": "The most distinctive features of rhabdoid tumor of the kidney (RTK) are rather large cells with large vesicular nuclei, a prominent single nucleolus, and the presence in at least some cells of globular eosinophilic cytoplasmic inclusions composed of whorled masses of intermediate filaments. Another distinctive feature is the extremely aggressive, invasive pattern of this lesion. RTK has a diverse immunohistochemical profile. Tumors may be positive for many supposedly incompatible epitopes for epithelial (keratins), myogenous, neural, and mesenchymal cell types. Epithelial membrane antigen (EMA) should be included in the routine panel applied to small blue cell tumors, largely because of the typical focal strong positivity for EMA (as well as a multiple of other markers) that rhabdoid tumors demonstrate.2 RTKS consistently show loss of expression of INI-1/BAF47 (see Note G).2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "knezevich_sr_garnett_mj_pysher_tj_et_al_etv6_ntrk3_gene_fusion_and_trisomy_11_establish_a_histogenet",
+          "label": "Knezevich SR, Garnett MJ, Pysher TJ, et al. ETV6-NTRK3 gene fusion and trisomy 11 establish a histogenetic link between mesoblastic nephroma and congenital fibrosarcoma. Cancer Res. 1998;58(22):5046-5048.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hoot_ac_russo_p_judkins_ar_perlman_ej_biegel_ja_immunochemical_analysis_of_hsnf5ini1_distinguishes_r",
+          "label": "Hoot AC, Russo P, Judkins AR, Perlman EJ, Biegel JA. Immunochemical analysis of hSNF5/INI1 distinguishes renal and extra-renal malignant rhabdoid tumors from other pediatric soft tissue tumors. Am J Surg Pathol. 2004;28(11):1485-1491.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "murphy_wm_perlman_ej_grignon_d_tumors_of_the_kidney_bladder_and_related_urinary_structures_atlas_of_",
+          "label": "Murphy WM, Perlman EJ, Grignon D. Tumors of the kidney, bladder, and related urinary structures. Atlas of Tumor Pathology. 4th Series. Washington DC: Armed Forces Institute of Pathology, 2004.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zuppan_cw_handling_and_evaluation_of_pediatric_renal_tumors_am_j_clin_pathol_19981094_suppl_1_s31_s3",
+          "label": "Zuppan CW. Handling and evaluation of pediatric renal tumors. Am J Clin Pathol. 1998;109(4 suppl 1): S31-S37.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "faria_p_beckwith_jb_mirshra_k_et_al_focal_versus_diffuse_anaplasia_in_wilms_tumor_new_definitions_wi",
+          "label": "Faria P, Beckwith JB, Mirshra K, et al. Focal versus diffuse anaplasia in Wilms tumor-new definitions with prognostic significance: a report from the National Wilms Tumor Study Group. Am J Surg Pathol. 1996;20(8):909-920.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vujanic_gm_gessler_m_ooms_ahag_collini_p_coulomb_lhermine_a_dhooghe_e_de_krijger_rr_perotti_d_pritch",
+          "label": "Vujanic GM, Gessler M, Ooms AHAG, Collini P, Coulomb-l’Hermine A, D’Hooghe E, de Krijger RR, Perotti D, Pritchard-Jones K, Vokuhl C, van den Heuvel-Eibrink MM, Graf N; International Society of Paediatric Oncology-Renal Tumour Study Group (SIOP-RTSG). The UMBRELLA SIOP-RTSG 2016 Wilms tumor pathology and molecular biology protocol. Nat Rev Urol. 2018 Nov;15(11):693-701. doi: 10.1038/s41585-081-0100-3. Erratum in: Nat Rev Urol. 2019 Sep;16(9):563. PMID:30310143.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vujanic_gm_sandstedt_b_the_pathology_of_wilms_tumor_nephroblastoma_the_international_society_of_paed",
+          "label": "Vujanic GM, Sandstedt B. The pathology of Wilms’ tumor (nephroblastoma): the International Society of Paediatric Oncology Approach. J Clin Pathol. 2010; 63:102-109.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gooskens_sl_houwing_me_vujanic_gm_congenital_mesoblastic_nephroma_50_years_after_its_recognition_a_n",
+          "label": "Gooskens SL, Houwing ME, Vujanic GM. Congenital mesoblastic nephroma 50 years after its recognition: a narrative review. Pediatr Blood Cancer. 2017;64(7).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vokuhl_c_nourkami_tutdibi_n_furtwangler_r_et_al_etv6_ntrk3_in_congenital_mesoblastic_nephroma_a_repo",
+          "label": "Vokuhl C, Nourkami-Tutdibi N, Furtwangler R, et al. ETV6-NTRK3 in congenital mesoblastic nephroma: A report of the SIOP/GPOH nephroblastoma study. Pediatr Blood Cancer. 2018;65(4).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bolande_rp_congenital_mesoblastic_nephroma_of_infancy_perspect_pediatr_pathol_1973_1227_50",
+          "label": "Bolande RP. Congenital mesoblastic nephroma of infancy. Perspect Pediatr Pathol. 1973; 1:227-50.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pettinato_g_manivel_jc_wick_mr_et_al_classical_and_cellular_atypical_congenital_mesoblastic_nephroma",
+          "label": "Pettinato G., Manivel JC, Wick MR, et al. Classical and cellular (atypical) congenital mesoblastic nephroma: a clinicopathologic, ultrastructural, immunohistochemical, and flow cytometric study. Hum Pathol. 1989;20(7):682-90.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "demellawy_de_cundiff_ca_nasr_a_et_al_congenital_mesoblastic_nephroma_a_study_of_19_cases_using_immun",
+          "label": "Demellawy DE, Cundiff CA, Nasr A, et al. Congenital mesoblastic nephroma: a study of 19 cases using immunohistochemistry and ETV6-NTRK3 fusion gene rearrangement. Pathology. 2016;48(1)47-50.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "furtwaengler_r_reinhard_h_leuscher_i_et_al_mesobalstic_nephroma_a_report_from_the_gesellschaft_fur_p",
+          "label": "Furtwaengler R, Reinhard H, Leuscher I, et al. Mesobalstic nephroma – a report from the Gesellschaft fur Padiatrische Onkologie und Hamatologie (GPOH). Cancer. 2006;106(10):2275-83.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jehangir_s_kurian_jj_selvarajah_d_recurrent_and_metastatic_congenital_mesoblastic_nephroma_where_doe",
+          "label": "Jehangir S, Kurian JJ, Selvarajah D. Recurrent and metastatic congenital mesoblastic nephroma: where does the evidence stand? Pediatr Surg Int. 2017;33: 1183-1188.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mirkovic_j_calicchio_m_fletcher_cd_perez_atayde_ar_diffuse_and_strong_cyclin_d1_immunoreactivity_in_",
+          "label": "Mirkovic J, Calicchio M, Fletcher CD, Perez-Atayde AR. Diffuse and strong cyclin D1 immunoreactivity in clear cell sarcoma of the kidney. Histopathology 2015; 67:306-12.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roy_a_kumar_v_zorman_b_et_al_recurrent_internal_tandem_duplications_of_bcor_in_clear_cell_sarcoma_of",
+          "label": "Roy A, Kumar V, Zorman B, et al. Recurrent internal tandem duplications of BCOR in clear cell sarcoma of the kidney. Nat Commun. 2015:6:8891.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "arva_nc_bonadio_j_perlman_ej_cajaiba_mm_diagnostic_utility_of_pax8_pax2_and_ngfr_immunohistochemical",
+          "label": "Arva NC, Bonadio J, Perlman EJ, Cajaiba MM. Diagnostic utility of Pax8, Pax2, and NGFR immunohistochemical expression in pediatric renal tumors. Appl Immunohistochem Mol Morphol. 2017. doi: 10.1097 PMID: 28426529.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "argani_p_perlman_ej_breslow_ne_et_al_clear_cell_sarcoma_of_the_kidney_a_review_of_351_cases_from_the",
+          "label": "Argani P, Perlman EJ, Breslow NE, et al. Clear cell sarcoma of the kidney: a review of 351 cases from the National Wilms Tumor Study Group Pathology Center. Am J Surg Pathol. 2000;24(1):4-18.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weeks_da_beckwith_jb_mierau_gw_wt_al_rhabdoid_tumor_of_kidney_a_report_of_111_cases_from_the_nationa",
+          "label": "Weeks DA, Beckwith JB, Mierau GW, wt al. Rhabdoid tumor of kidney. A report of 111 cases from the National Wilms’ Tumor Study Pathology Center. Am J Surg Pathol. 1989;13(6):439-58.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thomlinson_ge_breslow_ne_dome_j_et_al_rhabdoid_tumor_of_the_kidney_in_national_wilms_tumor_study_age",
+          "label": "Thomlinson GE, Breslow NE, Dome J, et al. Rhabdoid tumor of the kidney in National Wilms’ Tumor Study: age at diagnosis as a prognostic factor. J Clin Oncol. 2005; 23:7641-7645.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_den_heuvel_eibrink_mm_grundy_p_graf_n_et_al_characteristics_and_survival_of_750_children_diagnos",
+          "label": "van den Heuvel-Eibrink MM, Grundy P, Graf N, et al. Characteristics and survival of 750 children diagnosed with a renal tumor in the first seven months of life: A collaborative study by the SIOP/GPOH/SFOP, NWTSG, and UKCCSG Wilms tumor study groups. Pediatr Blood Cancer. 2008;50(6):1130-4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nephrogenic_rests1_are_regions_of_persistent_embryonal_tissue_in_the_renal_parenchyma_and_can_be_fou",
+          "label": "Nephrogenic rests1 are regions of persistent embryonal tissue in the renal parenchyma and can be found in 30%-44% of kidneys removed for Wilms tumor, 4% of kidneys removed for dysplasia or urinary tract malformations, and 0.21%-0.87% of kidneys in pediatric autopsy series (higher incidence in infants less than 3 months of age). The two fundamental categories of nephrogenic rests are based on the topography of the lesion. Perilobar nephrogenic rests (PLNRs) are located at the periphery of the lobule and are usually subcapsular. They are often multiple and rarely can be diffuse, expanding the cortex in a rind-like pattern.2  Microscopically, perilobar rests are well-demarcated, but not encapsulated. They are typically composed of blastema and tubules with little intervening stroma. Similarly, tumors arising in association with PLNR are more likely to be blastemal or epithelial predominant. PLNRs are associated with higher birth weights and overgrowth syndromes, including Beckwith-Wiedemann syndrome. PLNRs serve as a marker of loss of imprinting or loss of heterozygosity for IGF-2. Intralobar nephrogenic rests (ILNRs) are located deep within the lobule and are usually solitary. They have indistinct margins with respect to the normal kidney. ILNRs contain blastemal, tubular, and prominent stromal elements interspersed among normal glomerular and tubular elements. ILNRs are also more often associated with early-onset, stromal-predominant Wilms tumor or Wilms tumor showing divergent (teratomatous) differentiation. ILNRs are strongly associated with WAGR (Wilms tumor, aniridia, genitourinary anomalies, and range of developmental delays) and Denys-Drash syndromes. It is thought that ILNRs result from an error earlier in nephrogenesis as compared with PLNRs, explaining the typical ILNR location deep within the lobule. Staging is not required for the resection of a nephrogenic rest only.  The presence of a nephrogenic rest at a margin of resection is not considered a positive margin and should not be used as a criterion for stage III.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_nephrogenic_rests_has_clinical_implications_for_their_association_with_genetic_syndr",
+          "label": "The presence of nephrogenic rests has clinical implications for their association with genetic syndromes as well as the risk for development of contralateral Wilms tumor, particularly in patients whose tumors are diagnosed in the first year of life.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "beckwith_jb_nephrogenic_rests_and_the_pathogenesis_of_wilms_tumor_developmental_and_clinical_conside",
+          "label": "Beckwith JB. Nephrogenic rests and the pathogenesis of Wilms tumor: developmental and clinical considerations. Am J Med Genet. 1998;79(4):268-273.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perlman_ej_faria_p_hoffer_f_et_al_hyperplastic_perilobar_nephroblastomatosis_long_term_survival_of_5",
+          "label": "Perlman EJ, Faria P, Hoffer F, et al. Hyperplastic Perilobar Nephroblastomatosis: long-term survival of 52 patients. Pediatr Blood Cancer. 2006; 46:203-221.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "coppes_mj_arnold_m_beckwith_jb_et_al_factors_affecting_the_risk_of_contralateral_wilms_tumor_develop",
+          "label": "Coppes MJ, Arnold M, Beckwith JB, et al. Factors affecting the risk of contralateral Wilms tumor development: a report from the National Wilms Tumor Study Group. Cancer. 1999;85(7):1616-1625.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gross_evidence_of_tumor_disruption",
+          "label": "Gross Evidence of Tumor Disruption",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pre_operative_tumor_rupture_and_intra_operative_tumor_spillage_are_criteria_for_local_stage_iii_cog_",
+          "label": "Pre-operative tumor rupture and intra-operative tumor spillage are criteria for local stage III (COG and SIOP). Patients with pre-operative rupture generally receive whole abdominal irradiation while those with intra-operative spill receive flank irradiation. Grossly, rupture/spill may appear as a disruption of the specimen surface, with or without extruding tumor. The pathologic appearance of rupture/spill changes with time. Intraoperative spillage may result in limited pathologic evidence. Preoperative rupture results in varying degrees of tumor disruption, devitalization, resolving hemorrhage, and a fibrinoinflammatory response. With time, these changes may resolve and heal and become less apparent pathologically. These nuances make the designations of rupture and spill difficult and require correlation with surgical and radiographic observations. Disruption of the specimen in the absence of documentation of rupture or spill should be discussed with the surgeon and may represent post-surgical disruption. It is important to note that there are several anatomic references that mark tumor extent. Most Wilms tumors develop a peritumoral fibrous pseudocapsule separating the tumor from the surrounding kidney. As the tumor grows, it approaches and may merge with the renal capsule. The tumor may then invade the perirenal fat and involve the fascia that surrounds the kidney, adrenal gland, and associated soft tissue, which is often called Gerota’s fascia, which represents the shiny surface of a nephrectomy specimen. Rupture and spillage disrupt this fascia. In some cases, the renal capsule may be disrupted, but all tumor and hemorrhage contained within Gerota’s fascia. In the absence of surgical evidence of rupture or spill, this finding would not be sufficient to upstage the patient to stage III.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "evaluation_of_renal_sinus_invasion",
+          "label": "Evaluation of Renal Sinus Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_renal_sinus_can_be_identified_by_the_presence_of_fat_and_mesenchymal_tissue_surrounding_vascular",
+          "label": "The renal sinus can be identified by the presence of fat and mesenchymal tissue surrounding vascular structures. While most of the renal sinus is found within the hilum, the renal sinus also extends deeply into the kidney. When evaluating the renal sinus, it is important to note that the renal parenchyma interfacing with the renal sinus lacks a fibrous capsule separating it from the sinus. Therefore, as a tumor grows it may push into the renal sinus without invading the renal sinus. Furthermore, nephrogenic rests may extend into the renal sinus, which should not be considered to represent tumor involvement. The most common cause of upstaging upon central review is failure to appreciate involvement of renal sinus soft tissue and/or lymphovascular spaces. Renal sinus vascular involvement is easy to confirm when the tumor fills the lumen or invades the vascular wall. Displacement artifact is also readily identified when it is present in arterial lumina, when it is accompanied by abundant displacement artifact elsewhere, or when ink is present within the aggregates. More difficult are foci of unattached tumor intermingling with fibrin and red cells, or free-floating rounded tumor fragments that are not associated with other displacement artifact; these are considered to represent vascular involvement. In particular, the presence of these foci in children with small, otherwise stage I tumors that would not be treated with adjuvant chemotherapy are biologically significant and should upstage the patient. The other difficulty with the evaluation of the renal sinus is the fact that it extends well into the kidney and is not limited to the hilum. COG has allowed for minimal renal sinus soft tissue invasion without vascular involvement to be classified as local stage I. In practice this is applied to a single focus <5 mm in greatest dimension located greater than 5 mm from nearest margin and includes loci in both the hilum and intrarenal sinus. However, in SIOP staging any, even minimal, involvement of the sinus tissue is regarded as stage II. Vascular invasion within the kidney that is not part of the intrarenal sinus or that is within the tumor does not upstage a renal tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "evaluation_of_extracapsular_extension",
+          "label": "Evaluation of Extracapsular Extension",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_may_invade_directly_through_the_renal_capsule_or_may_be_present_in_the_perirenal_fat_or_adrena",
+          "label": "Tumor may invade directly through the renal capsule or may be present in the perirenal fat or adrenal gland with or without histologic evidence of direct invasion. Any of these is a criterion for COG local stage II. Invasion into, but not through the renal capsule only would be classified as COG local stage I. Whereas, in SIOP if viable tumor is present within the perirenal fat or the adrenal gland (extracapsular extension) but surrounded by a fibrous pseudocapsule and resected en bloc, this remains SIOP local stage I; if there is no pseudocapsule this would be SIOP local stage II.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "evaluation_of_renal_vein_invasion",
+          "label": "Evaluation of Renal Vein Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "caution_should_be_used_in_the_evaluation_of_the_margin_of_the_renal_vein_that_contains_a_thrombus_th",
+          "label": "Caution should be used in the evaluation of the margin of the renal vein that contains a thrombus. The vein often retracts after the surgeon sections it, leaving a protruding tumor thrombus, which may erroneously be considered a positive margin. If the thrombus itself is not transected, and if the margin of the vascular wall itself does not contain tumor, this surgical margin is interpreted as being negative.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_american_joint_committee_on_cancer_ajcc_and_international_union_against_cancer_uicc_tnm_staging_",
+          "label": "The American Joint Committee on Cancer (AJCC) and International Union Against Cancer (UICC) TNM staging systems currently do not apply to Wilms tumor or other pediatric kidney tumors (with the exception of renal cell carcinomas). The Children’s Oncology Group (COG) treatment strategy for Wilms tumors is the primary and recommended treatment and staging system in North America.1 Whereas the International Society of Pediatric Oncology (SIOP) treatment strategy for Wilms tumor is followed in Europe and many other countries around the world.2,3 The COG recommends upfront surgery followed, if necessary, by postoperative chemotherapy and radiotherapy. In contrast in the SIOP system, patients are first treated with preoperative chemotherapy, this is followed by surgery and, if necessary, postoperative chemotherapy and radiotherapy. Both approaches have staging systems with similarities and differences in the staging of tumors; however, the largest and most notable difference between the COG and SIOP staging systems is that COG staging determines the initial local (tumor/lymph nodes) stage prior to chemotherapy whereas the SIOP stage determines the stage after neoadjuvant chemotherapy. Though the patient’s overall stage is carried through the duration of their treatment in the COG approach, post-therapy specimens will receive an updated local stage.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_childrens_oncology_group_staging_system_for_wilms_tumors_is_shown_below1",
+          "label": "The Children’s Oncology Group staging system for Wilms tumors is shown below:1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_i",
+          "label": "Stage I",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_limited_to_kidney_and_completely_resected",
+          "label": "Tumor limited to kidney and completely resected",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "renal_capsule_intact_and_no_tumor_present_in_perirenal_fat_or_adrenal_gland",
+          "label": "Renal capsule intact and no tumor present in perirenal fat or adrenal gland",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_not_ruptured",
+          "label": "Tumor not ruptured",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_not_biopsied_before_removal",
+          "label": "Tumor not biopsied before removal",
+          "required": true,
+          "type": "free_text",
+          "condition": "applies to pretreatment specimens only"
+        },
+        {
+          "field_id": "no_residual_tumor_apparent_beyond_margins_of_resection",
+          "label": "No residual tumor apparent beyond margins of resection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "renal_vein_and_renal_sinus_vessels_contain_no_viable_tumor",
+          "label": "Renal vein and renal sinus vessels contain no viable tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "no_infiltration_of_the_renal_pelvis_or_ureteral_walls",
+          "label": "No infiltration of the renal pelvis or ureteral walls",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "no_lymph_node_involvement_by_viable_or_non_viable_tumor_or_distant_metastases",
+          "label": "No lymph node involvement by viable or non-viable tumor or distant metastases",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_ii",
+          "label": "Stage II",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "viable_tumor_extends_beyond_the_kidney_but_is_completely_resected_with_negative_margins",
+          "label": "Viable tumor extends beyond the kidney but is completely resected with negative margins",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_extension_of_tumor",
+          "label": "Regional extension of tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "vascular invasion outside the renal parenchyma or within the renal sinus, extensive renal sinus soft tissue invasion, invasion of the renal pelvis or ureteral walls, and/or capsular penetration or extracapsular tumor with negative excision margin"
+        },
+        {
+          "field_id": "stage_iii",
+          "label": "Stage III",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nonhematogenous_metastases_confined_to_the_abdomen_or_pelvis",
+          "label": "Nonhematogenous metastases confined to the abdomen or pelvis",
+          "required": true,
+          "type": "free_text",
+          "condition": "e.g., tumor in regional lymph nodes"
+        },
+        {
+          "field_id": "abdominopelvic_tumor_implants_on_or_penetrating_the_peritoneum",
+          "label": "Abdominopelvic tumor implants on or penetrating the peritoneum",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gross_or_microscopic_tumor_remains_postoperatively",
+          "label": "Gross or microscopic tumor remains postoperatively",
+          "required": true,
+          "type": "free_text",
+          "condition": "viable or non-viable tumor at margins of resection"
+        },
+        {
+          "field_id": "tumor_rupturespill_before_or_during_surgery",
+          "label": "Tumor rupture/spill before or during surgery",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "piecemeal_excision_of_the_tumor",
+          "label": "Piecemeal excision of the tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "removal in more than 1 piece"
+        },
+        {
+          "field_id": "tumor_biopsy_before_surgery_and_therapy",
+          "label": "Tumor biopsy before surgery and therapy",
+          "required": true,
+          "type": "free_text",
+          "condition": "does not apply when staging post-therapy specimens"
+        },
+        {
+          "field_id": "stage_iv",
+          "label": "Stage IV",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_node_metastases_outside_the_abdominopelvic_region_beyond_renal_drainage_system_or_hematogenous",
+          "label": "Lymph node metastases outside the abdominopelvic region (beyond renal drainage system) or hematogenous metastases",
+          "required": true,
+          "type": "free_text",
+          "condition": "e.g., lung, liver"
+        },
+        {
+          "field_id": "stage_v",
+          "label": "Stage V",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bilateral_renal_involvement_at_diagnosis",
+          "label": "Bilateral renal involvement at diagnosis",
+          "required": true,
+          "type": "free_text",
+          "condition": "each side should also be staged separately, according to the above criteria, as I through IV"
+        },
+        {
+          "field_id": "additional_staging_considerations",
+          "label": "Additional Staging Considerations",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_biopsy_prior_to_resection",
+          "label": "Tumor biopsy prior to resection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "piecemeal_excision_of_tumor",
+          "label": "Piecemeal Excision of Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_viable_or_non_viable_that_is_removed_in_more_than_one_piece_does_not_have_to_be_contiguous_to_",
+          "label": "Tumor (viable or non-viable) that is removed in more than one piece does not have to be contiguous to meet the criteria for stage III. This may represent transection of tumor with complete resection in more than one piece, tumor identified in a separately excised adrenal gland, tumor thrombus within the renal vein that is removed separately from the nephrectomy specimen, or tumor nodules within the perirenal fat (resembling lymph nodes) that are separately excised.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extrarenal_primary_tumors",
+          "label": "Extrarenal Primary Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wilms_tumors_and_other_pediatric_kidney_tumors_may_rarely_present_as_extrarenal_primary_tumors_these",
+          "label": "Wilms tumors and other pediatric kidney tumors may rarely present as extrarenal primary tumors. These tumors are automatically staged as at least stage II.  Criteria for upstaging these tumors to stage III are the same as for tumors located in the kidney.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_siop_staging_system_for_wilms_tumors_is_shown_below2",
+          "label": "The SIOP staging system for Wilms tumors is shown below:2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_i",
+          "label": "Stage I",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumour_is_limited_to_the_kidney_and_is_completely_resected",
+          "label": "Tumour is limited to the kidney and is completely resected",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumour_is_present_in_the_perirenal_fat_but_is_surrounded_by_a_fibrous_pseudocapsule_the_pseudocapsul",
+          "label": "Tumour is present in the perirenal fat but is surrounded by a fibrous (pseudo)capsule. The (pseudo)capsule might be infiltrated by viable tumour, which does not reach the outer surface",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumour_might_show_protruding_botryoid_growth_into_the_renal_pelvis_or_ureter_but_does_not_infiltrate",
+          "label": "Tumour might show protruding (botryoid) growth into the renal pelvis or ureter but does not infiltrate their walls",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_vessels_or_the_soft_tissues_of_the_renal_sinus_are_not_involved_by_tumour",
+          "label": "The vessels or the soft tissues of the renal sinus are not involved by tumour",
+          "required": true,
+          "type": "free_text",
+          "condition": "intrarenal vessel involvement might be present"
+        },
+        {
+          "field_id": "the_adrenal_gland_may_be_infiltrated_by_tumour_but_encapsulated",
+          "label": "The adrenal gland may be infiltrated by tumour, but encapsulated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_ii",
+          "label": "Stage II",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "viable_tumour_infiltrates_the_renal_sinus_andor_blood_and_lymphatic_vessels_outside_the_renal_parenc",
+          "label": "Viable tumour infiltrates the renal sinus and/or blood and lymphatic vessels outside the renal parenchyma, but is completely resected",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "viable_tumour_is_present_in_the_perirenal_fat_and_is_not_covered_by_a_pseudocapsule_but_is_completel",
+          "label": "Viable tumour is present in the perirenal fat and is not covered by a pseudocapsule, but is completely resected",
+          "required": true,
+          "type": "free_text",
+          "condition": "resection margins are clear"
+        },
+        {
+          "field_id": "viable_tumour_infiltrates_the_vena_cava_or_adjacent_organs_except_for_the_adrenal_gland_but_is_compl",
+          "label": "Viable tumour infiltrates the vena cava or adjacent organs (except for the adrenal gland), but is completely resected",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "viable_tumour_infiltrates_the_wall_of_the_renal_pelvis_or_the_ureter",
+          "label": "Viable tumour infiltrates the wall of the renal pelvis or the ureter",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_iii",
+          "label": "Stage III",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "viable_tumour_is_present_at_a_resection_margin",
+          "label": "Viable tumour is present at a resection margin.",
+          "required": true,
+          "type": "free_text",
+          "condition": "Non-viable tumour or chemotherapy-induced change present at resection margins is not regarded as stage III"
+        },
+        {
+          "field_id": "abdominal_lymph_nodes_contain_viable_or_non_viable_tumour",
+          "label": "Abdominal lymph nodes contain viable or non-viable tumour",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "preoperative_or_intraoperative_tumour_rupture_if_confirmed_by_microscopic_examination",
+          "label": "Preoperative or intraoperative tumour rupture, if confirmed by microscopic examination",
+          "required": true,
+          "type": "free_text",
+          "condition": "= viable tumour at the surface of the specimen in the area of the rupture"
+        },
+        {
+          "field_id": "viable_or_non_viable_tumour_thrombus_is_present_at_resection_margins_of_the_ureter_renal_vein_or_inf",
+          "label": "Viable or non-viable tumour thrombus is present at resection margins of the ureter, renal vein or inferior vena cava",
+          "required": true,
+          "type": "free_text",
+          "condition": "always discuss resection margins with the surgeon"
+        },
+        {
+          "field_id": "viable_or_non_viable_tumour_thrombus_that_is_attached_to_the_inferior_vena_cava_wall_is_removed_piec",
+          "label": "Viable or non-viable tumour thrombus that is attached to the inferior vena cava wall is removed piecemeal by the surgeon",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wedgeopen_tumour_biopsy_prior_to_preoperative_chemotherapy_or_surgery",
+          "label": "Wedge/open tumour biopsy prior to preoperative chemotherapy or surgery",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumour_implants_viable_or_non_viable_are_found_anywhere_in_the_abdomen",
+          "label": "Tumour implants (viable or non-viable) are found anywhere in the abdomen",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumour_viable_or_non_viable_has_penetrated_through_the_peritoneal_surface",
+          "label": "Tumour (viable or non-viable) has penetrated through the peritoneal surface",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_iv",
+          "label": "Stage IV",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "haematogeneous_metastases_lung_liver_bone_and_brain_or_lymph_node_metastases_outside_the_abdominopel",
+          "label": "Haematogeneous metastases (lung, liver, bone, and brain) or lymph node metastases outside the abdominopelvic region",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumour_viable_or_non_viable_has_penetrated_through_the_peritoneal_surface",
+          "label": "Tumour (viable or non-viable) has penetrated through the peritoneal surface",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_v",
+          "label": "Stage V",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bilateral_renal_involvement_at_diagnosis",
+          "label": "Bilateral renal involvement at diagnosis",
+          "required": true,
+          "type": "free_text",
+          "condition": "each side should also be staged separately, according to the above criteria, as I through IV"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perlman_ej_pediatric_renal_tumors_practical_updates_for_the_pathologist_pediatr_dev_pathol_200583320",
+          "label": "Perlman EJ. Pediatric renal tumors: practical updates for the pathologist. Pediatr Dev Pathol. 2005;8(3):320-338.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vujanić_gm_parsons_ln_dhooghe_e_treece_al_collini_p_perlman_ej_pathology_of_wilms_tumour_in_internat",
+          "label": "Vujanić GM, Parsons LN, D'Hooghe E, Treece AL, Collini P, Perlman EJ. Pathology of Wilms' tumour in International Society of Paediatric Oncology (SIOP) and Children's oncology group (COG) renal tumour studies: Similarities and differences. Histopathology. 2022 Jun;80(7):1026-1037.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jinhu_wang_minju_li_daxing_tang_weizhong_gu_junqing_mao_qiang_shu_current_treatment_for_wilms_tumor_",
+          "label": "Jinhu Wang, Minju Li, Daxing Tang, Weizhong Gu, Junqing Mao, Qiang Shu - Current treatment for Wilms tumor: COG and SIOP standards: World Journal of Pediatric Surgery. 2019;2: e000038.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_diagnosis_of_primary_renal_tumors_in_children_remains_largely_based_on_examination_of_hematoxyli",
+          "label": "The diagnosis of primary renal tumors in children remains largely based on examination of hematoxylin-eosin (H&E)-stained sections. However, a few ancillary studies may be employed for diagnostic or prognostic importance.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wilms_tumor_molecular_testing",
+          "label": "Wilms tumor molecular testing",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "molecular_tests_such_as_loss_of_heterozygosity_loh_at_chromosomes_1p_and_16q_1q_gain_and_11p15_loss_",
+          "label": "Molecular tests such as loss of heterozygosity (LOH) at chromosomes 1p and 16q, 1q gain, and 11p15 loss have prognostic significance in certain patient populations. Augmentation of therapy has been shown to be effective for WT with combined LOH at 1p and 16q, therefore analysis of these loci, most commonly by targeted or genome-wide SNP array, has become routine practice in North America.1,2,3While 1q gain is associated with adverse prognosis, the benefit of increased therapy is an area of active investigation.4 LOH and loss of imprinting of 11p15 have been associated with increased risk of relapse in young patients with stage I favorable histology WT that is treated with nephrectomy alone without adjuvant therapy.4,5,6 The molecular etiology of Wilms tumor is heterogeneous and more than a dozen genes have been found to be recurrently mutated in Wilms tumor tissue including genes involved in transcriptional regulation (WT1, MYCN, SIX1, SIX2, MLLT1), microRNA processing (DGCR8, DROSHA, DICER1, and XPO5), and the WNT signaling pathway (AMER1 and CTNNB1). TP53 mutations have been detected in 50-75% of anaplastic histology Wilms tumors. Additionally, approximately 70% of Wilms tumors have evidence of IGF2 overexpression, which may arise via genetic or epigenetic changes at chromosome locus 11p15.7 Some of these genes may also have germline mutations, which has implications for Wilms tumor predisposition and genetic counseling.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_tumor_molecular_testing",
+          "label": "Other tumor molecular testing",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "congenital_mesoblastic_nephroma",
+          "label": "Congenital Mesoblastic Nephroma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cmn_represents_2_genetically_distinct_tumors_that_correspond_to_the_histologic_subtypes_classic_cmn_",
+          "label": "CMN represents 2 genetically distinct tumors that correspond to the histologic subtypes. “Classic” CMN (24% of cases), which histologically resembles a type of fibromatosis has recently been recognized to harbor a EGFR activating mutations (most often internal tandem duplications).8,9 These alterations may be detected by next generation sequencing (NGS). “Cellular” CMN (66% of cases), which is analogous to the soft tissue tumor, infantile fibrosarcoma, most commonly contains an ETV6-NTRK3 gene fusion. However, a variety of other variant MAP kinase pathway activating translocations or mutations may also be present.10 ETV6-NTRK3 fusions may be detected by FISH or NGS, while the less common alternative alterations may be detected by comprehensive NGS for mutations and fusions. Genetically, “mixed” CMN have most frequently demonstrated EGFR alterations similar to the classic subtype, with rare cases with genetic overlap to cellular CMN.9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_sarcoma_of_the_kidney",
+          "label": "Clear Cell Sarcoma of the Kidney",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rhabdoid_tumor_of_the_kidney",
+          "label": "Rhabdoid Tumor of the Kidney",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "both_renal_and_extrarenal_rhabdoid_tumors_carry_homozygous_deletions_andor_mutations_of_the_smarcb1_",
+          "label": "Both renal and extrarenal rhabdoid tumors carry homozygous deletions and/or mutations of the SMARCB1 gene located at 22q11.2, which is a member of the SWI/SNF chromatin remodeling complex.16 Furthermore, germline mutations have been identified in individuals with both renal and central nervous system rhabdoid tumors. The SMARCB1 (INI1) gene causes conformational changes in the nucleosome, thereby altering histone-DNA binding and facilitating transcription factor access. Mutations in SMARCB1 correspond to the loss of expression by immunohistochemistry using the INI-1/BAF47 antibody.17  This antibody shows strong nuclear expression in normal tissues; however, nuclear expression is lost (aberrant expression) in rhabdoid tumor nuclei. Additionally, a variety of other tumors may also show loss of INI-1 by immunohistochemistry to include renal medullary carcinoma, epithelioid sarcoma, among several others.  Molecular testing for SMARCB1 mutations is not necessary for the diagnosis of RTK, but may be utilized in the workup, particularly to identify germline mutations.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grundy_pe_breslow_ne_perlman_e_et_al_the_national_wilms_tumor_study_group_loss_of_heterozygosity_for",
+          "label": "Grundy PE, Breslow NE, Perlman E, et al. The National Wilms Tumor Study Group. Loss of heterozygosity for chromosomes 1p and 16q is an adverse prognostic factor in favorable-histology Wilms tumor: a report from the National Wilms Tumor Study Group. J Clin Oncol. 2005; 23:7312-7321.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dome_js_mullen_ea_dix_db_gratias_ej_ehrlich_pf_daw_nc_geller_ji_chintagumpala_m_khanna_g_kalapurakal",
+          "label": "Dome JS, Mullen EA, Dix DB, Gratias EJ, Ehrlich PF, Daw NC, Geller JI, Chintagumpala M, Khanna G, Kalapurakal JA, Renfro LA, Perlman EJ, Grundy PE, Fernandez CV. Impact of the First Generation of Children's Oncology Group Clinical Trials on Clinical Practice for Wilms Tumor. J Natl Compr Canc Netw. 2021 Aug 1;19(8):978-985.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dix_db_fernandez_cv_chi_yy_mullen_ea_geller_ji_gratias_ej_khanna_g_kalapurakal_ja_perlman_ej_seibel_",
+          "label": "Dix DB, Fernandez CV, Chi YY, Mullen EA, Geller JI, Gratias EJ, Khanna G, Kalapurakal JA, Perlman EJ, Seibel NL, Ehrlich PF, Malogolowkin M, Anderson J, Gastier-Foster J, Shamberger RC, Kim Y, Grundy PE, Dome JS; AREN0532 and AREN0533 study committees. Augmentation of Therapy for Combined Loss of Heterozygosity 1p and 16q in Favorable Histology Wilms Tumor: A Children's Oncology Group AREN0532 and AREN0533 Study Report. J Clin Oncol. 2019 Oct 20;37(30):2769-2777.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gratias_ej_dome_js_jennings_lj_et_al_association_of_chromosome_1q_gain_with_inferior_survival_in_fav",
+          "label": "Gratias EJ, Dome JS, Jennings LJ, et al. Association of chromosome 1q gain with inferior survival in favorable histology Wilms tumor. J Clin Oncol. 2016;34(26):3189-3194.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perlman_ej_grundy_p_anderson_jr_et_al_wt1_mutation_and_11p_loss_of_heterozygosity_predict_relapse_in",
+          "label": "Perlman EJ, Grundy P, Anderson JR, et al. WT1 mutation and 11p loss of heterozygosity predict relapse in very low risk Wilms tumors treated by surgery alone. J Clin Oncol. 2011; 29:698-703.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fernandez_cv_perlman_ej_mullen_ea_chi_yy_hamilton_te_gow_kw_ferrer_fa_barnhart_dc_ehrlich_pf_khanna_",
+          "label": "Fernandez CV, Perlman EJ, Mullen EA, Chi YY, Hamilton TE, Gow KW, Ferrer FA, Barnhart DC, Ehrlich PF, Khanna G, Kalapurakal JA, Bocking T, Huff V, Tian J, Geller JI, Grundy PE, Anderson JR, Dome JS, Shamberger RC. Clinical Outcome and Biological Predictors of Relapse After Nephrectomy Only for Very Low-risk Wilms Tumor: A Report from Children's Oncology Group AREN0532. Ann Surg. 2017 Apr;265(4):835-840.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gadd_s_huff_v_walz_al_ooms_ahag_armstrong_ae_gerhard_ds_smith_ma_auvil_jmg_meerzaman_d_chen_qr_hsu_c",
+          "label": "Gadd S, Huff V, Walz AL, Ooms AHAG, Armstrong AE, Gerhard DS, Smith MA, Auvil JMG, Meerzaman D, Chen QR, Hsu CH, Yan C, Nguyen C, Hu Y, Hermida LC, Davidsen T, Gesuwan P, Ma Y, Zong Z, Mungall AJ, Moore RA, Marra MA, Dome JS, Mullighan CG, Ma J, Wheeler DA, Hampton OA, Ross N, Gastier-Foster JM, Arold ST, Perlman EJ. A Children's Oncology Group and TARGET initiative exploring the genetic landscape of Wilms tumor. Nat Genet. 2017 Oct;49(10):1487-1494.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lei_l_stohr_ba_berry_s_lockwood_cm_davis_jl_rudzinski_er_kunder_ca_recurrent_egfr_alterations_in_ntr",
+          "label": "Lei L, Stohr BA, Berry S, Lockwood CM, Davis JL, Rudzinski ER, Kunder CA. Recurrent EGFR alterations in NTRK3 fusion negative congenital mesoblastic nephroma. Pract Lab Med. 2020 May 16;21: e00164.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wegert_j_vokuhl_c_collord_g_et_al_recurrent_intragenic_rearrangements_of_egfr_and_braf_in_soft_tissu",
+          "label": "Wegert J, Vokuhl C, Collord G, et al. Recurrent intragenic rearrangements of EGFR and BRAF in soft tissue tumors of infants. Nat Commun. 2018;9(1):2378.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "knezevich_sr_garnett_mj_pysher_tj_et_al_etv6_ntrk3_gene_fusion_and_trisomy_11_establish_a_histogenet",
+          "label": "Knezevich SR, Garnett MJ, Pysher TJ, et al. ETV6-NTRK3 gene fusion and trisomy 11 establish a histogenetic link between mesoblastic nephroma and congenital fibrosarcoma. Cancer Res. 1998;58(22):5046-5048.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ueno_yokohata_h_okita_h_nakasato_k_et_al_consistent_in_frame_internal_tandem_duplications_of_bcor_ch",
+          "label": "Ueno-Yokohata H, Okita H, Nakasato K, et al. Consistent in-frame internal tandem duplications of BCOR characterize clear cell sarcoma of the kidney. Nat Genet. 2015;47(8):861-863.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "omeara_e_stack_d_lee_ch_et_al_characterization_of_the_chromosomal_translocation_t1017_q22p13_in_clea",
+          "label": "O’Meara E, Stack D, Lee CH, et al. Characterization of the chromosomal translocation t(10;17) (q22;p13) in clear cell sarcoma of kidney. J Pathol. 2012; 227:72-80.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roy_a_kumar_v_zorman_b_et_al_recurrent_internal_tandem_duplications_of_bcor_in_clear_cell_sarcoma_of",
+          "label": "Roy A, Kumar V, Zorman B, et al. Recurrent internal tandem duplications of BCOR in clear cell sarcoma of the kidney. Nat Commun. 2015; 6:8891.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wong_mk_ngccy_kuick_ch_clear_cell_sarcomas_of_the_kidney_are_characterized_by_bcor_gene_abnormalitie",
+          "label": "Wong MK, NgCCY, Kuick CH. Clear cell sarcomas of the kidney are characterized by BCOR gene abnormalities, including exon 15 internal tandem duplications and BCOR-CCNB3 gene fusion. Histopathology. 2018;72(2):320-329.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "han_h_betrannd_kc_patel_kr_et_al_bcor_ccnb3_fusion_positive_clear_cell_sarcoma_of_the_kidney_pediatr",
+          "label": "Han H, Betrannd KC, Patel KR, et al. BCOR-CCNB3 fusion-positive clear cell sarcoma of the kidney. Pediatr Blood Cancer. 2019;26: e28151.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "biegel_ja_zhou_j_y_rorke_lb_et_al_germline_and_acquired_mutations_of_ini1_in_atypical_teratoid_and_r",
+          "label": "Biegel JA, Zhou J-Y, Rorke LB, et al. Germline and acquired mutations of INI1 in atypical teratoid and rhabdoid tumors. Cancer Res. 1999;59(1):74-79.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hoot_ac_russo_p_judkins_ar_perlman_ej_biegel_ja_immunohistochemical_analysis_of_hsnf5ini1_distinguis",
+          "label": "Hoot AC, Russo P, Judkins AR, Perlman EJ, Biegel JA. Immunohistochemical analysis of hSNF5/INI1 distinguishes renal and extra-renal malignant rhabdoid tumors from other pediatric soft tissue tumors. Am J Surg Pathol. 2004;28(11):1485-1491.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_following_syndromes_are_associated_with_wilms_tumor123",
+          "label": "The following syndromes are associated with Wilms tumor:1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "1p15_related_wilms_tumor",
+          "label": "1p15-related Wilms tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "Beckwith-Wiedemann syndrome, hemi-hyperplasia"
+        },
+        {
+          "field_id": "perlman_familial_nephroblastomatosis_syndrome",
+          "label": "Perlman familial nephroblastomatosis syndrome",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "denys_drash_syndrome",
+          "label": "Denys-Drash syndrome",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trisomy_18",
+          "label": "Trisomy 18",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neurofibromatosis",
+          "label": "Neurofibromatosis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bloom_syndrome",
+          "label": "Bloom syndrome",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "etc",
+          "label": "Etc.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "beckwith_jb_nephrogenic_rests_and_the_pathogenesis_of_wilms_tumor_developmental_and_clinical_conside",
+          "label": "Beckwith JB. Nephrogenic rests and the pathogenesis of Wilms tumor: developmental and clinical considerations. Am J Med Genet. 1998;79(4):268-273.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "charles_ak_brown_kw_berry_pj_microdissecting_the_genetic_events_in_nephrogenic_rests_and_wilms_tumor",
+          "label": "Charles AK, Brown KW, Berry PJ. Microdissecting the genetic events in nephrogenic rests and Wilms tumor development. Am J Pathol. 1998;153(3):991-1000.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "turner_jt_brzezinski_j_dome_js_wilms_tumor_predisposition_2003_dec_19_updated_2022_mar_24_in_adam_mp",
+          "label": "Turner JT, Brzezinski J, Dome JS. Wilms Tumor Predisposition. 2003 Dec 19 [updated 2022 Mar 24]. In: Adam MP, Feldman J, Mirzaa GM, Pagon RA, Wallace SE, Amemiya A, editors. GeneReviews® [Internet]. Seattle (WA): University of Washington, Seattle; 1993–2024. PMID: 20301471.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

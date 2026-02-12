@@ -1,0 +1,2471 @@
+{
+  "template_id": "Vulva_5.1.0.0.REL_CAPCP",
+  "organ": "VULVA",
+  "protocol_posting_date": "June 2024",
+  "standards": [
+    "AJCC-UICC 9",
+    "FIGO Cancer Report 2021"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_vulva",
+              "label": "Right vulva: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "labium_majus",
+              "label": "Labium majus"
+            },
+            {
+              "value": "labium_minus",
+              "label": "Labium minus"
+            },
+            {
+              "value": "bartholin_gland",
+              "label": "Bartholin gland"
+            },
+            {
+              "value": "left_vulva",
+              "label": "Left vulva: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "labium_majus",
+              "label": "Labium majus"
+            },
+            {
+              "value": "labium_minus",
+              "label": "Labium minus"
+            },
+            {
+              "value": "bartholin_gland",
+              "label": "Bartholin gland"
+            },
+            {
+              "value": "clitoris",
+              "label": "Clitoris: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest Dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma_hpv_associated",
+              "label": "Squamous cell carcinoma, HPV-associated"
+            },
+            {
+              "value": "squamous_cell_carcinoma_hpv_independent",
+              "label": "Squamous cell carcinoma, HPV-independent"
+            },
+            {
+              "value": "squamous_cell_carcinoma_nos",
+              "label": "Squamous cell carcinoma, NOS"
+            },
+            {
+              "value": "basal_cell_carcinoma_nos",
+              "label": "Basal cell carcinoma, NOS"
+            },
+            {
+              "value": "adenocarcinoma_nos",
+              "label": "Adenocarcinoma, NOS"
+            },
+            {
+              "value": "adenocarcinoma_of_mammary_gland_type",
+              "label": "Adenocarcinoma of mammary gland type"
+            },
+            {
+              "value": "adenocarcinoma_intestinal_type",
+              "label": "Adenocarcinoma, intestinal type"
+            },
+            {
+              "value": "paget_disease_extramammary",
+              "label": "Paget disease, extramammary"
+            },
+            {
+              "value": "sweat_gland_adenocarcinoma",
+              "label": "Sweat gland adenocarcinoma (specify subtype)"
+            },
+            {
+              "value": "apocrine_adenocarcinoma",
+              "label": "Apocrine adenocarcinoma"
+            },
+            {
+              "value": "eccrine_adenocarcinoma",
+              "label": "Eccrine adenocarcinoma"
+            },
+            {
+              "value": "porocarcinoma_nos",
+              "label": "Porocarcinoma, NOS"
+            },
+            {
+              "value": "adenoid_cystic_carcinoma",
+              "label": "Adenoid cystic carcinoma"
+            },
+            {
+              "value": "bartholin_gland_carcinoma",
+              "label": "Bartholin gland carcinoma (specify subtype)"
+            },
+            {
+              "value": "squamous_cell_carcinoma_nos",
+              "label": "Squamous cell carcinoma, NOS"
+            },
+            {
+              "value": "squamous_cell_carcinoma_hpv_positive",
+              "label": "Squamous cell carcinoma, HPV-positive"
+            },
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "carcinoma_poorly_differentiated_nos",
+              "label": "Carcinoma, poorly differentiated, NOS"
+            },
+            {
+              "value": "adenoid_cystic_carcinoma",
+              "label": "Adenoid cystic carcinoma"
+            },
+            {
+              "value": "neuroendocrine_tumor_nos",
+              "label": "Neuroendocrine tumor, NOS"
+            },
+            {
+              "value": "myoepithelial_carcinoma",
+              "label": "Myoepithelial carcinoma"
+            },
+            {
+              "value": "epithelial_myoepithelial_carcinoma",
+              "label": "Epithelial-myoepithelial carcinoma"
+            },
+            {
+              "value": "neuroendocrine_tumor_nos",
+              "label": "Neuroendocrine tumor, NOS"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_1",
+              "label": "Neuroendocrine tumor, grade 1"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_2",
+              "label": "Neuroendocrine tumor, grade 2"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "combined_small_cell_neuroendocrine_carcinoma",
+              "label": "Combined small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "combined_large_cell_neuroendocrine_carcinoma",
+              "label": "Combined large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "germ_cell_tumor_nos",
+              "label": "Germ cell tumor, NOS"
+            },
+            {
+              "value": "yolk_sac_tumor_nos",
+              "label": "Yolk sac tumor, NOS"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined"
+            }
+          ],
+          "notes": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well-differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "depth_of_invasion_in_millimeters_mm",
+          "label": "Depth of Invasion in Millimeters (mm)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ],
+          "condition": "FIGO 2021 method"
+        },
+        {
+          "field_id": "depth_of_invasion_in_millimeters_mm",
+          "label": "Depth of Invasion in Millimeters (mm)",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ],
+          "condition": "conventional method"
+        },
+        {
+          "field_id": "tumor_growth_pattern",
+          "label": "Tumor Growth Pattern",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pushing",
+              "label": "Pushing"
+            },
+            {
+              "value": "infiltrating",
+              "label": "Infiltrating"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "other_tissue_organ_involvement",
+          "label": "Other Tissue / Organ Involvement#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "vagina_lower_one_third",
+              "label": "Vagina, lower one-third"
+            },
+            {
+              "value": "vagina_upper_two_thirds",
+              "label": "Vagina, upper two-thirds"
+            },
+            {
+              "value": "urethra_lower_one_third",
+              "label": "Urethra, lower one-third"
+            },
+            {
+              "value": "urethra_upper_two_thirds",
+              "label": "Urethra, upper two-thirds"
+            },
+            {
+              "value": "anus",
+              "label": "Anus"
+            },
+            {
+              "value": "bladder_mucosa",
+              "label": "Bladder mucosa#"
+            },
+            {
+              "value": "rectal_mucosa",
+              "label": "Rectal mucosa#"
+            },
+            {
+              "value": "pelvic_bone",
+              "label": "Pelvic bone"
+            },
+            {
+              "value": "other_organs_tissue",
+              "label": "Other organs / tissue (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Any organ not selected is either not involved or was not submitted. Mucosal surface of bladder or rectum should be involved by tumor"
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma#"
+            }
+          ],
+          "guidance": "Margin status for precursor lesions of squamous cell carcinoma and / or Paget disease should be reported if present, even if margin is involved by invasive carcinoma."
+        },
+        {
+          "field_id": "closest_margins_to_invasive_carcinoma",
+          "label": "Closest Margin(s) to Invasive Carcinoma",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_precursor_lesions_of_squamous_cell_carcinoma",
+          "label": "Margin Status for Precursor Lesions of Squamous Cell Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_squamous_precursor_lesions",
+              "label": "All margins negative for squamous precursor lesions#"
+            },
+            {
+              "value": "squamous_precursor_lesion_present_at_margin",
+              "label": "Squamous precursor lesion present at margin"
+            }
+          ],
+          "guidance": "Includes high-grade squamous intraepithelial lesion (HSIL), differentiated vulvar intraepithelial neoplasia (dVIN) and / or vulvar aberrant maturation / HPV-independent, p53-wild-type verruciform acanthotic vulvar intraepithelial neoplasia (VAM / HPVi (p53wt) vaVIN)."
+        },
+        {
+          "field_id": "margins_involved_by_squamous_precursor_lesions",
+          "label": "Margin(s) Involved by Squamous Precursor Lesion(s)",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_squamous_intraepithelial_lesion",
+              "label": "High-grade squamous intraepithelial lesion (HSIL) present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_hsil",
+          "label": "Margin(s) Involved by HSIL",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "differentiated_vulvar_intraepithelial_neoplasia",
+              "label": "Differentiated vulvar intraepithelial neoplasia (dVIN) present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_dvin",
+          "label": "Margin(s) Involved by dVIN",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vulvar_aberrant_maturation",
+              "label": "Vulvar aberrant maturation (VAM) / HPV-independent, p53-wild-type verruciform acanthotic vulvar intraepithelial neoplasia (HPVi (p53wt) vaVIN) present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_vam_hpvi_p53wt_vavin",
+          "label": "Margin(s) Involved by VAM / HPVi (p53wt) vaVIN",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_paget_disease",
+          "label": "Margin Status for Paget Disease",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "all_margins_negative_for_paget_disease",
+              "label": "All margins negative for Paget disease"
+            },
+            {
+              "value": "paget_disease_present_at_margin",
+              "label": "Paget disease present at margin"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "margins_involved_by_paget_disease",
+          "label": "Margin(s) Involved by Paget Disease",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor_cells",
+              "label": "All regional lymph nodes negative for tumor cells"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ],
+          "guidance": "Only inguinal and femoral nodes are considered regional lymph nodes. Any other involved nodes are categorized as metastases (pM1) and should be described in a comment in the distant metastasis section. Presence of isolated tumor cells no greater than 0.2 mm, or single cells or cell clusters no more than 200 cells in regional lymph node(s) is considered N0(i+)."
+        },
+        {
+          "field_id": "number_of_nodes_with_metastasis_greater_than_5_mm",
+          "label": "Number of Nodes with Metastasis Greater than 5 mm",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_nodes_with_metastasis_5_mm_or_less_but_greater_than_2_mm",
+          "label": "Number of Nodes with Metastasis 5 mm or Less but Greater than 2 mm",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_nodes_with_micrometastasis_2_mm_or_less_but_greater_than_02_mm_excludes",
+          "label": "Number of Nodes with Micrometastasis 2 mm or Less but Greater than 0.2 mm (excludes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "isolated_tumor_cells",
+          "label": "isolated tumor cells)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_nodes_with_isolated_tumor_cells_02_mm_or_less_or_single_cells_or_cell_clusters",
+          "label": "Number of Nodes with Isolated Tumor Cells (0.2 mm or Less, or Single Cells, or Cell Clusters",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "not_more_than_200_cells_in_a_single_node_cross_section_required_only_if_applicable",
+          "label": "not more than 200 Cells in a Single Node Cross-section) (required only if applicable)#",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Reporting the number of lymph nodes with isolated tumor cells is required only in the absence of metastasis"
+        },
+        {
+          "field_id": "greater_than_02_mm_in_other_lymph_nodes",
+          "label": "greater than 0.2 mm in other lymph nodes.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size (specify): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "nodal_sites_with_tumor",
+          "label": "Nodal Site(s) with Tumor",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_inguinal",
+              "label": "Right inguinal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_inguinal",
+              "label": "Left inguinal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "inguinal_nos",
+              "label": "Inguinal, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_femoral",
+              "label": "Right femoral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_femoral",
+              "label": "Left femoral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "femoral_nos",
+              "label": "Femoral, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_lymph_node_findings_required_only_if_applicable",
+          "label": "Additional Lymph Node Findings (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "extranodal_extension_extracapsular_spread",
+              "label": "Extranodal extension / extracapsular spread"
+            },
+            {
+              "value": "fixed_and_or_ulcerated_nodes",
+              "label": "Fixed and / or ulcerated nodes"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "total_number_of_lymph_nodes_examined",
+          "label": "Total Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_examined",
+          "label": "Nodal Site(s) Examined",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_inguinal",
+              "label": "Right inguinal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_inguinal",
+              "label": "Left inguinal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "inguinal_nos",
+              "label": "Inguinal, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_femoral",
+              "label": "Right femoral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_femoral",
+              "label": "Left femoral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "femoral_nos",
+              "label": "Femoral, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_sentinel_nodes_examined",
+          "label": "Number of Sentinel Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "pelvic_lymph_node",
+              "label": "Pelvic lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "internal_iliac_hypogastric_lymph_node",
+              "label": "Internal iliac / hypogastric lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "external_iliac_lymph_node",
+              "label": "External iliac lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "common_iliac_lymph_node",
+              "label": "Common iliac lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "presacral_lymph_node",
+              "label": "Presacral lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ],
+          "condition": "AJCC Version 9"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor size less than or equal to 2 cm in greatest dimension and stromal invasion less than or"
+            }
+          ],
+          "guidance": "Depth of invasion is measured from the basement membrane of the deepest adjacent tumor-free rete ridge to the deepest point of invasion."
+        },
+        {
+          "field_id": "equal_to_1_mm",
+          "label": "equal to 1 mm#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor size greater than 2 cm in greatest dimension or stromal invasion greater than 1 mm#"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor of any size with extension to lower one-third of urethra, lower one-third of vagina, or"
+            }
+          ]
+        },
+        {
+          "field_id": "anus",
+          "label": "anus",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor of any size with disease extension to upper two-thirds of urethra, upper two-thirds of"
+            }
+          ]
+        },
+        {
+          "field_id": "vagina_bladder_mucosa_rectal_mucosa",
+          "label": "vagina, bladder mucosa, rectal mucosa",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor fixed to pelvic bone"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "regional_lymph_nodes_include_inguinal_and_femoral_nodes_involvement_of_internal_iliac_hypogastric_ex",
+          "label": "Regional lymph nodes include inguinal and femoral nodes. Involvement of internal iliac / hypogastric, external iliac, and common iliac lymph nodes is considered distant metastases. The site, size, and laterality of lymph node metastases should be recorded.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)#"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0(i+): Isolated tumor cells in regional lymph node(s) less than or equal to 0.2 mm, or single cells or"
+            }
+          ],
+          "guidance": "Histologic examination of an inguinofemoral lymphadenectomy specimen will ordinarily include 6 or more lymph nodes. If the lymph nodes are negative, but the number ordinarily examined is not met, classify as pN not assigned (cannot be determined based on available pathological information)."
+        },
+        {
+          "field_id": "pn1_tumor_involvement_of_non_fixed_non_ulcerated_regional_lymph_nodes",
+          "label": "pN1: Tumor involvement of non-fixed, non-ulcerated regional lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1mi",
+              "label": "pN1mi: Tumor involvement greater than 0.2 mm but less than or equal to 2.0 mm in diameter of"
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "regional lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1a",
+              "label": "pN1a: Tumor involvement greater than 2.0 mm but less than or equal to 5 mm of regional lymph"
+            }
+          ]
+        },
+        {
+          "field_id": "nodes",
+          "label": "nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1b",
+              "label": "pN1b: Tumor involvement greater than 5 mm of regional lymph nodes"
+            },
+            {
+              "value": "pn1c",
+              "label": "pN1c: Tumor involvement of regional lymph nodes with extranodal extension (ENE)"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2: Tumor involvement of fixed or ulcerated regional lymph nodes"
+            }
+          ]
+        },
+        {
+          "field_id": "n_suffix",
+          "label": "N Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(sn) Sentinel node procedure"
+            },
+            {
+              "value": "",
+              "label": "(f) FNA or core needle biopsy"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Microscopic confirmation of distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        }
+      ]
+    },
+    {
+      "section_id": "figo_stage",
+      "section_name": "FIGO STAGE",
+      "fields": [
+        {
+          "field_id": "figo_stage",
+          "label": "FIGO Stage",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I: Tumor confined to the vulva"
+            },
+            {
+              "value": "ia",
+              "label": "IA: Tumor size less than or equal to 2 cm and stromal invasion less than or equal to 1 mm#"
+            },
+            {
+              "value": "ib",
+              "label": "IB: Tumor size greater than 2 cm or stromal invasion greater than 1 mm#"
+            },
+            {
+              "value": "ii",
+              "label": "II: Tumor of any size with extension to lower one-third of the urethra, lower one-third of the vagina, or"
+            }
+          ],
+          "condition": "2021 FIGO staging for carcinoma of the vulva",
+          "guidance": "Depth of invasion is measured from the basement membrane of the deepest, adjacent (or nearest) dysplastic, tumor-free rete ridge to the deepest point of invasion."
+        },
+        {
+          "field_id": "lower_one_third_of_the_anus_with_negative_nodes",
+          "label": "lower one-third of the anus with negative nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "iii",
+              "label": "III: Tumor of any size with extension to upper part of adjacent perineal structures, or with any number"
+            }
+          ]
+        },
+        {
+          "field_id": "of_non_fixed_non_ulcerated_lymph_node",
+          "label": "of non-fixed, non-ulcerated lymph node",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "iiia",
+              "label": "IIIA: Tumor of any size with disease extension to upper two-thirds of the urethra, upper two-thirds of"
+            }
+          ],
+          "condition": "s",
+          "guidance": "Regional lymph nodes include inguinal and femoral nodes."
+        },
+        {
+          "field_id": "5_mm",
+          "label": "5 mm##",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "iiib",
+              "label": "IIIB: Regional lymph node metastases greater than 5 mm##"
+            },
+            {
+              "value": "iiic",
+              "label": "IIIC: Regional lymph node metastases with extracapsular spread##"
+            },
+            {
+              "value": "iv",
+              "label": "IV: Tumor of any size fixed to bone, or fixed, ulcerated lymph node metastases, or distant"
+            }
+          ]
+        },
+        {
+          "field_id": "metastases",
+          "label": "metastases",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "iva",
+              "label": "IVA: Disease fixed to pelvic bone, or fixed or ulcerated regional lymph node metastases##"
+            },
+            {
+              "value": "ivb",
+              "label": "IVB: Distant metastases"
+            }
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "condyloma_acuminatum",
+              "label": "Condyloma acuminatum"
+            },
+            {
+              "value": "low_grade_squamous_intraepithelial_lesion_vulvar_intraepithelial_neoplasia_grade_1",
+              "label": "Low-grade squamous intraepithelial lesion / Vulvar intraepithelial neoplasia, grade 1"
+            },
+            {
+              "value": "high_grade_squamous_intraepithelial_lesion_vulvar_intraepithelial_neoplasia_grade_2",
+              "label": "High-grade squamous intraepithelial lesion / Vulvar intraepithelial neoplasia, grade 2"
+            },
+            {
+              "value": "high_grade_squamous_intraepithelial_lesion_vulvar_intraepithelial_neoplasia_grade_3",
+              "label": "High-grade squamous intraepithelial lesion / Vulvar intraepithelial neoplasia, grade 3"
+            },
+            {
+              "value": "differentiated_vulvar_intraepithelial_neoplasia",
+              "label": "Differentiated vulvar intraepithelial neoplasia (dVIN)"
+            },
+            {
+              "value": "vulvar_aberrant_maturation_hpv_independent_p53_wild_type_verruciform_acanthotic_vulvar",
+              "label": "Vulvar aberrant maturation / HPV-independent, p53-wild-type verruciform acanthotic vulvar"
+            }
+          ]
+        },
+        {
+          "field_id": "intraepithelial_neoplasia",
+          "label": "intraepithelial neoplasia",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "lichen_sclerosus",
+              "label": "Lichen sclerosus"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "ancillary_studies_specify",
+          "label": "Ancillary Studies (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "p16_immunohistochemistry",
+          "label": "p16 Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive (diffuse, block-like expression)"
+            },
+            {
+              "value": "negative",
+              "label": "Negative (no staining, or focal or patchy expression)"
+            }
+          ]
+        },
+        {
+          "field_id": "p53_immunohistochemistry",
+          "label": "p53 Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "normal",
+              "label": "Normal (wild-type)"
+            },
+            {
+              "value": "abnormal",
+              "label": "Abnormal (mutated)"
+            },
+            {
+              "value": "basal_overexpression",
+              "label": "Basal overexpression (uniform strong, diffuse nuclear expression in basal cells)"
+            },
+            {
+              "value": "parabasal_diffuse_overexpression",
+              "label": "Parabasal / diffuse overexpression"
+            },
+            {
+              "value": "absent_null",
+              "label": "Absent / null (lack of nuclear or cytoplasmic expression)"
+            },
+            {
+              "value": "cytoplasmic_expression",
+              "label": "Cytoplasmic expression (with or without nuclear expression)"
+            }
+          ]
+        },
+        {
+          "field_id": "hpv_ish",
+          "label": "HPV-ISH",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive_high_risk_not_otherwise_specified",
+              "label": "Positive, high-risk, not otherwise specified"
+            },
+            {
+              "value": "positive_low_risk_not_otherwise_specified",
+              "label": "Positive, low-risk, not otherwise specified"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor",
+          "label": "Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sections_taken_will_vary_with_procedure_as_designated_by_the_surgeon_sections_to_include_the_followi",
+          "label": "Sections taken will vary with procedure, as designated by the surgeon. Sections to include the following should be taken (if appropriate)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_representative_sections_including_site_of_deepest_invasion_and_interface_of_tumor_with_adjacen",
+          "label": "Tumor, representative sections, including site of deepest invasion and interface of tumor with adjacent epithelium",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "resection_margins",
+          "label": "Resection margins",
+          "required": true,
+          "type": "free_text",
+          "condition": "perpendicular sections to margins may be particularly helpful, especially for human papillomavirus independent lesions, as they allow to more accurately assess margin clearance as well as the spectrum of morphologic and/or immunohistochemical changes leading up to the margin"
+        },
+        {
+          "field_id": "sections_of_abnormal_epithelium_or_other_tissue_away_from_tumor",
+          "label": "Sections of abnormal epithelium or other tissue away from tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sections_of_areas_marked_by_surgeon",
+          "label": "Sections of area(s) marked by surgeon",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sections_of_prior_biopsy_or_resection_site_of_tumor_if_no_tumor_is_present_grossly",
+          "label": "Sections of prior biopsy or resection site of tumor if no tumor is present grossly",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_nodes",
+          "label": "Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_femoral_and_inguinal_lymph_nodes_are_the_sites_of_regional_spread12_involvement_of_pelvic_or_oth",
+          "label": "The femoral and inguinal lymph nodes are the sites of regional spread.1,2 Involvement of pelvic or other lymph nodes is considered stage IV disease. Although inguinal-femoral lymphadenectomy is still performed in some patients, increasing evidence suggests that sentinel lymph node assessment is an alternative standard of care approach in select cases.1,2,3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sections_of_grossly_positive_lymph_nodes_should_demonstrate_the_maximum_diameter_of_nodal_metastasis",
+          "label": "Sections of grossly positive lymph nodes should demonstrate the maximum diameter of nodal metastasis and document the presence or absence of extranodal/extracapsular extension. Sentinel lymph nodes should be assessed in accordance with a locally agreed upon and established protocol. The pathology report should specify whether or not an ultrastaging procedure was performed and whether nodal metastases were identified on routine histologic examination (without ultrastaging) or by ultrastaging.6 Reportedly, ultrastaging can improve the detection of nodal metastases from 8.6% to 41.7%. There is no universally accepted ultrastaging protocol; however, protocols used at the 2 largest cancer centers in USA are as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "memorial_sloan_kettering_cancer_center_protocol_if_the_initial_he_stained_slide_is_negative_for_carc",
+          "label": "Memorial Sloan Kettering Cancer Center Protocol: If the initial H&E-stained slide is negative for carcinoma, 2 additional levels at 50 μm apart are examined; at each level 2 slides are obtained, one for H&E and the second for keratin cocktail immunohistochemistry.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_university_of_texas_md_anderson_cancer_center_protocol_if_the_initial_he_stained_slide_is_negati",
+          "label": "The University of Texas MD Anderson Cancer Center Protocol: If the initial H&E-stained slide is negative for carcinoma, 5 levels at 250 μm intervals are obtained (1 H&E and 2 unstained sections per level to be used for keratin cocktail immunohistochemistry if the additional H&E-stained slides are negative).7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_organs_and_tissues",
+          "label": "Other Organs and Tissues",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_organs_and_tissues_may_be_submitted_with_the_vulva_specimen_sections_to_include_the_following_",
+          "label": "Other organs and tissues may be submitted with the vulva specimen. Sections to include the following should be taken (if appropriate)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sections_to_demonstrate_presence_or_absence_of_tumor",
+          "label": "Sections to demonstrate presence or absence of tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sections_to_demonstrate_its_relation_if_present_to_vulvar_tumor",
+          "label": "Sections to demonstrate its relation, if present, to vulvar tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "contiguous or metastatic"
+        },
+        {
+          "field_id": "sections_of_other_lesions_if_present",
+          "label": "Sections of other lesions, if present",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "resection_margins",
+          "label": "Resection margins",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_frozen_section_analysis_was_performed_post_frozen_tissue_fragments_should_be_submitted",
+          "label": "If frozen section analysis was performed, post-frozen tissue fragment(s) should be submitted.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_der_zee_ag_oonk_mh_de_hullu_ja_et_al_sentinel_lymph_node_dissection_is_safe_in_the_treatment_of_",
+          "label": "Van der Zee AG, Oonk MH, De Hullu JA, et al. Sentinel lymph node dissection is safe in the treatment of early-stage vulvar carcinoma. J Clin Oncol. 2008;26:884-889.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "levenback_cf_ali_s_coleman_r_et_al_lymphatic_mapping_and_sentinel_lymph_node_biopsy_in_women_with_sq",
+          "label": "Levenback CF, Ali S, Coleman R, et al. Lymphatic mapping and sentinel lymph node biopsy in women with squamous cell carcinoma of the vulva: a gynecologic oncology group study. J Clin Oncol. 2012;30:3786-3791.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abu_rustum_nr_yashar_c_et_al_nccn_guidelines_version_42024_vulvar_cancer_national_comprehensive_canc",
+          "label": "Abu-Rustum NR, Yashar C, et al. NCCN guidelines. Version 4.2024 Vulvar Cancer: National Comprehensive Cancer Network (NCCN), 2024.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "covens_a_vella_et_kennedy_eb_et_al_sentinel_lymph_node_biopsy_in_vulvar_cancer_systematic_review_met",
+          "label": "Covens A, Vella ET, Kennedy EB, et al. Sentinel lymph node biopsy in vulvar cancer: Systematic review, meta-analysis and guideline recommendations. Gynecol Oncol. 2015;137:351-361.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "te_grootenhuis_nc_van_der_zee_ag_van_doorn_hc_et_al_sentinel_nodes_in_vulvar_cancer_long_term_follow",
+          "label": "Te Grootenhuis NC, van der Zee AG, van Doorn HC, et al. Sentinel nodes in vulvar cancer: Long-term follow-up of the GROningen INternational Study on Sentinel nodes in Vulvar cancer (GROINSS-V) I. Gynecol Oncol. 2016;140:8-14.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hoang_l_webster_f_bosse_t_et_al_data_set_for_the_reporting_of_carcinomas_of_the_vulva_recommendation",
+          "label": "Hoang L, Webster F, Bosse T, et al. Data Set for the Reporting of Carcinomas of the Vulva: Recommendations From the International Collaboration on Cancer Reporting (ICCR). Int J Gynecol Pathol. 2022;41(Suppl 1):S8-S22.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "euscher_ed_malpica_a_gynaecological_malignancies_and_sentinel_lymph_node_mapping_an_update_histopath",
+          "label": "Euscher ED, Malpica A. Gynaecological malignancies and sentinel lymph node mapping: an update. Histopathol. 2020;76(1):139-150.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "assessment_of_gross_size_of_the_tumor_is_important_for_staging_the_tumor_should_be_accurately_measur",
+          "label": "Assessment of gross size of the tumor is important for staging. The tumor should be accurately measured to determine if its maximum dimension is less than or equal to 2 cm or greater than 2 cm. If there is a significant discrepancy between gross and microscopic measurements of the invasive tumor, careful microscopic assessment should be performed.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vulvar_squamous_cell_carcinoma_can_be_classified_into_three_clinicopathologically_distinct_subgroups",
+          "label": "Vulvar squamous cell carcinoma can be classified into three clinicopathologically distinct subgroups based on their human papillomavirus (HPV) and p53 status1,2: HPV-independent/p53-mutant, HPV-independent/p53-wild-type, and HPV-associated (see Table 1). The HPV-associated pathway involves high-grade squamous intraepithelial lesion (HSIL), which is associated with high-risk HPV subtypes (mostly HPV 16) and is histologically similar to cervical HSIL. It affects younger women and tends to be multifocal, with a relatively low risk of progression to squamous cell carcinoma. Both HSIL and HPV-associated squamous cell carcinoma usually show diffuse, block-like expression of p16 by immunohistochemistry (reflecting HPV association). HSIL is characterized by loss of maturation, nuclear hyperchromasia, increased nuclear-cytoplasmic ratio, and increased mitoses in the upper epidermal layers. The invasive component may display basaloid or warty morphology, but a significant subset are keratinizing.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hpv_independent_carcinomas_can_be_p53_mutant_or_p53_wild_type_differentiated_vin_dvin_is_usually_see",
+          "label": "HPV-independent carcinomas can be p53-mutant or p53-wild-type. Differentiated VIN (dVIN) is usually seen in the setting of chronic inflammatory dermatoses, most commonly lichen sclerosus, in older women.4 The morphologic features of dVIN are varied and may be subtle, but should include basal atypia.4 dVIN should be distinguished from lichen simplex chronicus, hypertrophic lichen sclerosus, vulvar aberrant maturation (VAM), and lichen planus.4 dVIN typically shows aberrant p53 expression and non-block or negative staining pattern for p16. It remains unsettled whether a p53-wild-type immunophenotype is within the allowable spectrum for dVIN.4,5,6 The invasive component that is associated with dVIN is frequently keratinizing and also often shows aberrant p53 expression.3,7 Of note, the HPV-associated and HPV-independent squamous lesions may show overlapping morphologic features,3 and immunohistochemistry for p53 and p16 is therefore recommended to classify a case into one of the aforementioned subgroups.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "precursors_of_hpv_independent_p53_wild_type_squamous_cell_carcinoma_are_still_poorly_understood48_ho",
+          "label": "Precursors of HPV-independent, p53-wild-type squamous cell carcinoma are still poorly understood.4,8 However, vulvar lesions with altered squamous maturation and verruciform acanthosis have previously been described using various terms such as vulvar acanthosis with altered differentiation (VAAD), differentiated exophytic vulvar intraepithelial lesion (DEVIL), vulvar aberrant maturation (VAM) and verruciform lichen simplex chronicus (vLSC), among others.4,8 Although the available data are limited, a subset of these lesions may harbor recurrent alterations in oncogenes such as PIK3CA, HRAS, and NOTCH19 and they have been shown to be associated with significant rates of recurrence and/or progression to carcinoma.10 The term VAM was proposed by the International Society of the Study of Vulvovaginal Diseases (ISSVD) Difficult Pathologic Diagnoses Committee and defined as “an umbrella term for HPV-independent lesions combining aberrant maturation with minimal nuclear atypia”.4 In part to harmonize the nomenclature with the current World Health Organization (WHO) classification, an alternative term - HPV-independent, p53-wild-type verruciform acanthotic VIN (HPVi(p53wt) vaVIN) - has been proposed.8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_clinicopathologic_features_of_three_subtypes_of_vulvar_squamous_cell_carcinoma",
+          "label": "Table 1. Clinicopathologic features of three subtypes of vulvar squamous cell carcinoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "SCC"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kortekaas_ke_bastiaannet_e_van_doorn_hc_et_al_vulvar_cancer_subclassification_by_hpv_and_p53_status_",
+          "label": "Kortekaas KE, Bastiaannet E, van Doorn HC, et al. Vulvar cancer subclassification by HPV and p53 status results in three clinically distinct subtypes. Gynecol Oncol. 2020;159(3):649-656.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carreras_dieguez_n_saco_a_del_pino_m_et_al_human_papillomavirus_and_p53_status_define_three_types_of",
+          "label": "Carreras-Dieguez N, Saco A, Del Pino M, et al. Human papillomavirus and p53 status define three types of vulvar squamous cell carcinomas with distinct clinical, pathological, and prognostic features. Histopathol. 2023;83(1):17-30.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rakislova_n_clavero_o_alemany_l_et_al_histological_characteristics_of_hpv_associated_and_independent",
+          "label": "Rakislova N, Clavero O, Alemany L, et al. Histological characteristics of HPV-associated and -independent squamous cell carcinomas of the vulva: A study of 1,594 cases. Int J Cancer. 2017;141(12):2517-2527.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heller_ds_day_t_allbritton_ji_et_al_issvd_difficult_pathologic_diagnoses_committee_diagnostic_criter",
+          "label": "Heller DS, Day T, Allbritton JI, et al; ISSVD Difficult Pathologic Diagnoses Committee. Diagnostic criteria for differentiated vulvar intraepithelial neoplasia and vulvar aberrant maturation. J Low Genit Tract Dis. 2021;25(1):57-70.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "day_t_marzol_a_pagano_r_et_al_clinicopathologic_diagnosis_of_differentiated_vulvar_intraepithelial_n",
+          "label": "Day T, Marzol A, Pagano R, et al. Clinicopathologic diagnosis of differentiated vulvar intraepithelial neoplasia and vulvar aberrant maturation. J Low Genit Tract Dis. 2020;24(4):392-398.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tessier_cloutier_b_kortekaas_ke_thompson_e_et_al_major_p53_immunohistochemical_patterns_in_in_situ_a",
+          "label": "Tessier-Cloutier B, Kortekaas KE, Thompson E, et al. Major p53 immunohistochemical patterns in in-situ and invasive squamous cell carcinomas of the vulva and correlation with TP53 mutation status. Mod Pathol. 2020;33(8):1565-1605.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rakislova_n_alemany_l_clavero_o_et_al_vvap_study_group_p53_immunohistochemical_patterns_in_hpv_indep",
+          "label": "Rakislova N, Alemany L, Clavero O, et al; VVAP Study Group. P53 immunohistochemical patterns in HPV-independent squamous cell carcinoma of the vulva and associated skin lesions: a study of 779 cases. Int J Mol Sci. 2020;21(21):8091.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "parra_herran_c_nucci_mr_singh_n_et_al_hpv_independent_p53_wild_type_vulvar_intraepithelial_neoplasia",
+          "label": "Parra-Herran C, Nucci MR, Singh N, et al. HPV-independent, p53-wild-type vulvar intraepithelial neoplasia: a review of nomenclature and the journey to characterize verruciform and acanthotic precursor lesions of the vulva. Mod Pathol. 2022;35(10):1317-1326.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nooij_ls_ter_haar_nt_ruano_d_et_al_genomic_characterization_of_vulvar_precancers_identifies_distinct",
+          "label": "Nooij LS, Ter Haar NT, Ruano D, et al. Genomic characterization of vulvar (pre)cancers identifies distinct molecular subtypes with prognostic significance. Clin Cancer Res. 2017;23(22):6781-6789.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roy_sf_wong_j_le_page_c_et_al_devil_vaad_and_vlsc_constitute_a_spectrum_of_hpv_independent_p53_indep",
+          "label": "Roy SF, Wong J, Le Page C, et al. DEVIL, VAAD and vLSC constitute a spectrum of HPV-independent, p53-independent intra-epithelial neoplasia of the vulva. Histopathol. 2021;79(6):975-988.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_adheres_to_the_standardized_terminology_proposed_by_the_world_health_organization_who_c",
+          "label": "The protocol adheres to the standardized terminology proposed by the World Health Organization (WHO) classification of malignant and premalignant vulvar epithelial tumors.1 The most common invasive tumor of the vulva is squamous cell carcinoma. Although the treatment of HPV-associated and HPV-independent squamous carcinoma is currently the same, their pathogenesis differs (see Note C).1 In some instances, it may not be possible to distinguish between the two, and “squamous cell carcinoma, NOS” is appropriate. Former descriptive terms such as “warty”, “basaloid”, “verrucous” and “papillary” are no longer necessary components of the histologic type. Adjacent squamous intraepithelial lesions, the putative precursors, are a helpful clue to determining whether a given tumor is HPV-associated or HPV-independent, but ancillary techniques are necessary for definitive classification. For HPV-associated precursors, low-grade or high-grade squamous intraepithelial lesion (SIL) is the preferred terminology but vulvar intraepithelial neoplasia (VIN) may also be used, with appropriate grades 1, 2, or 3 (e.g., VIN2). For the HPV-independent squamous cell carcinoma, a common precursor is differentiated VIN (dVIN), which is not graded.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_vulva_may_harbor_malignancies_arising_from_mammary_like_anogenital_glands_such_as_adenocarcinoma",
+          "label": "The vulva may harbor malignancies arising from mammary-like anogenital glands, such as adenocarcinoma of mammary gland type and malignant phyllodes tumors.1 Carcinomas of sweat gland origin are rare and include apocrine adenocarcinoma, eccrine adenocarcinoma, porocarcinoma and adenoid cystic carcinoma; these usually arise in the labia majora of older patients.1 Paget disease of the vulva may be associated with an invasive component, which may be a non-specific adenocarcinoma, an adenocarcinoma of mammary gland type, or a carcinoma of sweat gland type.1 Basal cell carcinomas and sebaceous carcinomas occur but are uncommon. Bartholin glands may be the site of malignant transformation; these neoplasms have been categorized based upon similarities to their histologic counterparts in other organs.1,2,3 Ideally, to designate a tumor as arising from a Bartholin gland, it should involve the region housing Bartholin glands, be histologically compatible with that origin, demonstrate a transition from a benign gland or cyst, and have no alternative primary site.3 Squamous cell carcinoma predominates, followed by adenocarcinoma.1 Numerous other subtypes have been described in the Bartholin glands, including adenosquamous carcinoma, mucinous adenocarcinoma, salivary gland-type carcinomas and neuroendocrine carcinoma. Exceptionally rare adenocarcinomas that may be seen in the vulva include endometriosis-related adenocarcinomas (clear cell and endometrioid carcinomas), adenocarcinomas of the intestinal type, and HPV-related adenocarcinoma.4 Notably, a significant subset of glandular malignancies that involve the vulva are secondary to this site.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "herrington_cs_kim_k_r_mccluggage_wg_ordi_j_tumours_of_the_vulva_in_who_classification_of_tumours_edi",
+          "label": "Herrington CS, Kim K-R, McCluggage WG, Ordi J. Tumours of the vulva. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Dec 30]. (WHO classification of tumours series, 5th ed; vol 4). Available from https://tumoursclassification.iarc.who.int/chpters/1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ouldamer_l_chraibi_z_arbion_f_et_al_bartholins_gland_carcinoma_epidemiology_and_therapeutic_manageme",
+          "label": "Ouldamer L, Chraibi Z, Arbion F, et al. Bartholin’s gland carcinoma: epidemiology and therapeutic management. Review. Surg Oncol. 2013;22:117-122.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nazeran_t_cheng_as_karnezis_an_et_al_bartholin_gland_carcinoma_clinicopathologic_features_including_",
+          "label": "Nazeran T, Cheng AS, Karnezis AN, et al. Bartholin gland carcinoma: clinicopathologic features, including p16 expression and clinical outcome. Int J Gynecol Pathol. 2018;38:189-195.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "desouki_mm_fadare_o_primary_adenocarcinomas_of_the_vulva_and_related_structures_an_enigmatic_and_div",
+          "label": "Desouki MM, Fadare O. Primary adenocarcinomas of the vulva and related structures: An enigmatic and diverse group of tumors. Semin Diagn Pathol. 2021;38:71-84.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_der_linden_m_schuurman_m_bulten_j_et_al_incidence_and_survival_of_glandular_vulvar_malignancies_",
+          "label": "van der Linden M, Schuurman M, Bulten J, et al. Incidence and survival of glandular vulvar malignancies in the Netherlands. Gynecol Oncol. 2017;144(3):553-557.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "current_evidence_suggests_that_histologic_grading_is_not_consistently_associated_with_prognosis_of_v",
+          "label": "Current evidence suggests that histologic grading is not consistently associated with prognosis of vulvar squamous cell carcinoma.1,2 Although HPV-independent tumors are often keratinizing and well-differentiated, their prognosis is paradoxically worse than HPV-associated tumors which are usually non-keratinizing, basaloid and poorly differentiated. Furthermore, there is no validated grading system. Therefore, grading of vulvar squamous cell carcinoma is not recommended,2 and grade may be included as an optional element.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hoang_l_webster_f_bosse_t_et_al_data_set_for_the_reporting_of_carcinomas_of_the_vulva_recommendation",
+          "label": "Hoang L, Webster F, Bosse T, et al. Data set for the reporting of carcinomas of the vulva: recommendations from the International Collaboration on Cancer Reporting (ICCR). Int J Gynecol Pathol. 2022;41(Suppl 1):S8-S22.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_jj_hoang_ln_a_review_of_prognostic_factors_in_squamous_cell_carcinoma_of_the_vulva_evidence_fro",
+          "label": "Chen JJ, Hoang LN. A review of prognostic factors in squamous cell carcinoma of the vulva: evidence from the last decade. Semin Diagn Pathol. 2021;38(1):37-49.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_thickness_and_depth_of_invasion_are_separate_measurements_tumor_thickness_of_a_squamous_cell_c",
+          "label": "Tumor thickness and depth of invasion are separate measurements. Tumor thickness of a squamous cell carcinoma is measured in millimeters from the surface of the tumor or, if there is surface keratinization, from the bottom of the granular layer, to the deepest point of invasion.1 Tumor thickness is not a parameter used in staging and should not be used for depth of invasion, because vulvar carcinoma can have a significant exophytic component.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "assessment_of_the_maximum_depth_of_tumor_invasion_is_important_because_invasion_1_mm_requires_region",
+          "label": "Assessment of the maximum depth of tumor invasion is important because invasion >1 mm requires regional lymph node evaluation. The depth of invasion has traditionally been measured from the most superficial dermal papilla adjacent to the tumor to the deepest point of invasion (conventional measurement),2 and there is significant interobserver variability in assessment of superficial invasion, including invasion vs VIN and invasion ≤1 vs >1 mm (i.e., stage IA vs IB).3 An alternative method has been adopted by FIGO and AJCC for all vulvar carcinomas, irrespective of type or HPV status, which measures the depth of invasion from the basement membrane of the deepest adjacent (or nearest) dysplastic tumor-free rete ridge or the nearest dysplastic rete peg to the deepest point of invasion.4,5 This alternative method “down-stages” some conventional stage IB tumors to IA. Down-staged patients have been shown to develop fewer inguinal recurrences4,5 with higher disease-specific survival4 and a lower risk of inguinal node involvement at diagnosis5 compared with conventional stage 1B patients, raising the possibility that they may be spared a lymphadenectomy. Some investigators suggest that in cases where the deepest rete ridge is deeper than the tumor, the most adjacent basement membrane of the rete ridge may be used to measure the depth of invasion, regardless of whether it is dysplastic or not.4 When depth of invasion is ambiguous or difficult to determine, this should be clearly stated in the pathology report. The AJCC recommends using the conventional method of measurement as an ancillary data point.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_early_stage_disease_there_are_insufficient_data_on_other_features_to_identify_patients_at_higher_",
+          "label": "In early stage disease, there are insufficient data on other features to identify patients at higher risk for recurrence, such as distance from margins, inguinal lymph node metastases, tumor size or focality, and depth of invasion.6,7 Tumor stage and lymph node status are the strongest predictors of overall progression-free survival. Measuring the distance of tumor from the nearest surgical margin may be challenging, but one study showed that most pathologists measure in a straight line from the tumor to the nearest inked edge, rather than measuring along the epithelial surface.8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "olawaiye_ab_cuello_ma_rogers_lj_cancer_of_the_vulva_2021_int_j_gynaecol_obstet_2021155_suppl_1suppl_",
+          "label": "Olawaiye AB, Cuello MA, Rogers LJ. Cancer of the vulva: 2021. Int J Gynaecol Obstet. 2021;155 Suppl 1(Suppl 1):7-18.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hoang_l_webster_f_bosse_t_et_al_data_set_for_the_reporting_of_carcinomas_of_the_vulva_recommendation",
+          "label": "Hoang L, Webster F, Bosse T, et al. Data set for the reporting of carcinomas of the vulva: recommendations from the International Collaboration on Cancer Reporting (ICCR). Int J Gynecol Pathol. 2022;41(Suppl 1):S8-S22.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pouwer_aw_bult_p_otte_i_et_al_measuring_the_depth_of_invasion_in_vulvar_squamous_cell_carcinoma_inte",
+          "label": "Pouwer AW, Bult P, Otte I, et al. Measuring the depth of invasion in vulvar squamous cell carcinoma: interobserver agreement and pitfalls. Histopathol. 2019;75(3):413-420.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_den_eindin_lc_massuger_lf_jonkman_jk_et_al_an_alternative_way_to_measure_the_depth_of_invasion_o",
+          "label": "van den Eindin LC, Massuger LF, Jonkman JK, et al. An alternative way to measure the depth of invasion of vulvar squamous cell carcinoma in relation to prognosis. Mod Pathol. 2015:28(2):295-302.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "skala_sl_ebott_ja_zhao_l_lieberman_rw_predictive_value_of_an_alternative_strategy_for_measuring_dept",
+          "label": "Skala SL, Ebott JA, Zhao L, Lieberman RW. Predictive value of an alternative strategy for measuring depth and size of stage 1 vulvar squamous cell carcinoma. J Low Genit Tract Dis. 2020;24(3):265-271.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "te_grootenhuis_nc_pouwer_afw_de_bock_gh_et_al_prognostic_factors_for_local_recurrence_of_squamous_ce",
+          "label": "Te Grootenhuis NC, Pouwer AFW, de Bock GH et al. Prognostic factors for local recurrence of squamous cell carcinoma of the vulva: a systematic review. Gynecol Oncol. 2018;148(3):622-631.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "julia_cj_hoang_ln_a_review_of_prognostic_factors_in_squamous_cell_carcinoma_of_the_vulva_evidence_fr",
+          "label": "Julia CJ, Hoang LN. A review of prognostic factors in squamous cell carcinoma of the vulva: evidence from the last decade. Semin Diagn Pathol. 2021;38(1):37-49.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kortekaas_ke_van_de_vijver_kk_van_poelgeest_mie_et_al_practical_guidance_for_measuring_and_reporting",
+          "label": "Kortekaas KE, Van de Vijver KK, van Poelgeest MIE, et al. Practical guidance for measuring and reporting surgical margins in vulvar cancer. Int J Gynecol Pathol. 2020;39(5):420-427.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vulvar_squamous_cell_carcinomas_can_generally_be_separated_into_those_tumors_that_have_a_predominate",
+          "label": "Vulvar squamous cell carcinomas can generally be separated into those tumors that have a predominately infiltrating pattern and those that invade with a broad, pushing front.1 Related parameters include high tumor budding,2 a distinctive spray-like infiltration pattern,1,3 and a prominent fibromyxoid response.4 Some studies have associated these features with worsened patient outcomes, but as a group, they are understudied.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "drew_pa_al_abbadi_ma_orlando_ca_hendricks_jb_kubilis_ps_wilkinson_ej_prognostic_factors_in_carcinoma",
+          "label": "Drew PA, Al-Abbadi MA, Orlando CA, Hendricks JB, Kubilis PS, Wilkinson EJ. Prognostic factors in carcinoma of the vulva: a clinicopathologic and DNA flow cytometric study. Int J Gynecol Pathol. 1996;15:235-241.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zare_sy_ciscato_a_fadare_o_tumor_budding_activity_is_an_independent_prognostic_factor_in_squamous_ce",
+          "label": "Zare SY, Ciscato A, Fadare O. Tumor budding activity is an independent prognostic factor in squamous cell carcinoma of the vulva. Hum Pathol. 2022;126:77-86.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jeffus_sk_gehlot_a_holthoff_e_et_al_a_fibromyxoid_stromal_response_is_associated_with_an_infiltrativ",
+          "label": "Jeffus SK, Gehlot A, Holthoff E, et al. A fibromyxoid stromal response is associated with an infiltrative tumor morphology, perineural invasion, and lymph node metastasis in squamous cell carcinoma of the vulva. Am J Surg Pathol. 2015;39(9):1226-33.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ambros_ra_malfetano_jh_mihm_mc_jr_clinicopathologic_features_of_vulvar_squamous_cell_carcinomas_exhi",
+          "label": "Ambros RA, Malfetano JH, Mihm MC Jr. Clinicopathologic features of vulvar squamous cell carcinomas exhibiting prominent fibromyxoid stromal response. Int J Gynecol Pathol. 1996;15(2):137-45.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_andor_vascular_space_invasion_by_squamous_cell_carcinoma_has_been_associated_with_a_poorer",
+          "label": "Lymphatic and/or vascular space invasion by squamous cell carcinoma has been associated with a poorer prognosis and increased risk for regional lymph node metastasis.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chan_jk_sugiyama_v_pham_h_et_al_margin_distance_and_other_clinico_pathologic_prognostic_factors_in_v",
+          "label": "Chan JK, Sugiyama V, Pham H, et al. Margin distance and other clinico-pathologic prognostic factors in vulvar carcinoma: a multivariate analysis. Gynecol Oncol. 2007;104:636-641.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "raspagliesi_f_hanozet_f_ditto_a_et_al_clinical_and_pathologic_prognostic_factors_in_squamous_cell_ca",
+          "label": "Raspagliesi F, Hanozet F, Ditto A, et al. Clinical and pathologic prognostic factors in squamous cell carcinoma of the vulva. Gynecol Oncol. 2006;102:333-337.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hauspy_j_beiner_m_harley_i_et_al_sentinel_lymph_node_in_vulvar_cancer_cancer_20071101015_1022",
+          "label": "Hauspy J, Beiner M, Harley I, et al. Sentinel lymph node in vulvar cancer. Cancer. 2007;110:1015-1022.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_of_the_american_joint_committee_on_cancer_ajcc_for_carcinoma_of_the_vulva_is_",
+          "label": "The TNM staging system of the American Joint Committee on Cancer (AJCC) for carcinoma of the vulva is recommended.1 FIGO staging is desirable but optional.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_ct_refers_to_a_primary_tumor_that_has_not_been_previously_tre",
+          "label": "By AJCC/UICC convention, the designation “cT” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and the pathologist’s contribution is based on gross and microscopic examination after primary surgical treatment. pT entails a surgical treatment resection of the primary tumor or biopsy adequate to evaluate the highest pT category and highest pN categories, pN entails removal or biopsy of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during the initial evaluation of the patient. Pathological classification (pTNM) must be assigned by the managing physician based on the clinical stage information, the operative findings, and the gross and microscopic examination of the surgical resection specimen. The pathologist provides vital information, but it is not the patient’s final pT, pN, and/or pM categories.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_t_suffix_and_sn_and_f_n_suf",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “(m)” T suffix and “(sn)” and “(f)” N suffixes are used. Although they do not affect the stage grouping, they indicate cases needing special analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_t_suffix_indicates_the_presence_of_multiple_primary_synchronous_tumors_in_a_single_site_and_is",
+          "label": "The “(m)” T suffix indicates the presence of multiple primary synchronous tumors in a single site and is recorded in parentheses: e.g., pT1(m).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_sn_n_suffix_indicates_a_sentinel_node_procedure_only_without_resection_of_the_nodal_basin_was_pe",
+          "label": "The “(sn)” N suffix indicates a sentinel node procedure only, without resection of the nodal basin, was performed and is recorded in parentheses: e.g., pN1(sn).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_f_n_suffix_indicates_a_fine_needle_aspiration_fna_or_core_needle_biopsy_without_a_sentinel_node_",
+          "label": "The “(f)” N suffix indicates a fine needle aspiration (FNA) or core needle biopsy, without a sentinel node procedure or resection of nodal basin, was performed and is recorded in parentheses: e.g., pN1(f).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "isolated_tumor_cells_itcs_are_single_cells_or_small_cell_clusters_not_more_than_02_mm_in_greatest_di",
+          "label": "Isolated tumor cells (ITCs) are single cells or small cell clusters not more than 0.2 mm in greatest dimension or more than 200 cells. Lymph nodes or distant sites with ITCs found by either histologic examination (e.g., immunohistochemical evaluation for cytokeratin) or nonmorphologic techniques (e.g., flow cytometry, DNA analysis, polymerase chain reaction [PCR] amplification of a specific tumor marker) should be so identified. There is currently no guidance in the literature as to how these patients should be coded; until more data are available, they should be coded as “N0(i+)” with a comment noting how the cells were identified.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sentinel_lymph_nodes",
+          "label": "Sentinel Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_sentinel_lymph_node_is_the_first_node_to_receive_drainage_from_a_primary_tumor_there_may_be_more",
+          "label": "The sentinel lymph node is the first node to receive drainage from a primary tumor. There may be more than 1 sentinel node for some tumors. If a sentinel node contains metastatic tumor, it indicates that other more distant nodes may also contain metastatic disease. If sentinel nodes are negative, other regional nodes are less likely to contain metastasis.3,4 Patients with metastases <2 mm in sentinel nodes may be candidates to forego groin dissection.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extranodal_extensionextracapsular_spread",
+          "label": "Extranodal Extension/Extracapsular spread",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "both_extranodal_extension_and_the_size_of_lymph_node_metastasis_have_been_shown_to_reflect_prognosis",
+          "label": "Both extranodal extension and the size of lymph node metastasis have been shown to reflect prognosis and should be noted in the report.5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "olawaiye_ab_cotler_j_cuello_ma_et_al_figo_staging_for_carcinoma_of_the_vulva_2021_revision_int_j_gyn",
+          "label": "Olawaiye AB, Cotler J, Cuello MA, et al. FIGO staging for carcinoma of the vulva: 2021 revision. Int J Gynaecol Obstet. 2021;155(1):43-47.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brincat_mr_baron_ym_sentinel_lymph_node_biopsy_in_the_management_of_vulvar_carcinoma_an_evidence_bas",
+          "label": "Brincat MR, Baron YM. Sentinel lymph node biopsy in the management of vulvar carcinoma: an evidence-based insight. Int J Gynecol Cancer. 2017;27(8):1769-1773.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abu_rustum_nr_yashar_c_et_al_nccn_guidelines_version_42024_vulvar_cancer_national_comprehensive_canc",
+          "label": "Abu-Rustum NR, Yashar C et al. NCCN guidelines. Version 4.2024 Vulvar Cancer: National Comprehensive Cancer Network (NCCN), 2024.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "raspagliesi_f_hanozet_f_ditto_a_et_al_clinical_and_pathologic_prognostic_factors_in_squamous_cell_ca",
+          "label": "Raspagliesi F, Hanozet F, Ditto A, et al. Clinical and pathologic prognostic factors in squamous cell carcinoma of the vulva. Gynecol Oncol. 2006;102:333-337.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_adjacent_lesions_such_as_lichen_sclerosus_may_increase_the_risk_of_recurrence_and_de",
+          "label": "The presence of adjacent lesions such as lichen sclerosus may increase the risk of recurrence and development of new primary tumors in patients with HPV-independent squamous cell carcinoma.1 Therefore, reporting the presence of this finding should be considered.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yap_jk_fox_r_leonard_s_et_al_adjacent_lichen_sclerosus_predicts_local_recurrence_and_second_field_tu",
+          "label": "Yap JK, Fox R, Leonard S, et al. Adjacent lichen sclerosus predicts local recurrence and second field tumour in women with vulvar squamous cell carcinoma. Gynecol Oncol. 2016;142(3):420-426.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reporting_ancillary_tests_in_synoptic_format_is_optional_however_distinguishing_between_hpv_associat",
+          "label": "Reporting ancillary tests in synoptic format is optional. However, distinguishing between HPV-associated and HPV-independent squamous cell lesions of the vulva has diagnostic and prognostic significance. Given that HPV-associated and HPV-independent vulvar lesions often show significant morphologic overlap, their differential diagnosis often requires immunohistochemical studies for p16 and p53. Accurate classification is important because the prognosis for HPV-associated squamous cell carcinoma is superior to that of HPV-independent types.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diffuse_block_like_expression_of_p16_indicates_association_with_hpv_focal_or_patchy_expression_or_ab",
+          "label": "Diffuse, block-like expression of p16 indicates association with HPV. Focal or patchy expression, or absence of staining is seen in HPV-independent lesions.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_two_normal_wild_type_and_4_abnormal_aberrant_mutated_patterns_of_p53_expression_wild_type_",
+          "label": "There are two normal (wild-type) and 4 abnormal (aberrant, mutated) patterns of p53 expression. Wild-type expression is usually patchy with scattered basal/parabasal cells showing heterogeneous staining of variable intensity.3 HPV-associated squamous lesions often show strong mid-epithelial expression of p53 that spares the basal layer (negative to weak basal cell staining) and is associated with block-like p16 expression. 3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_4_abnormal_patterns_of_p53_are_as_follows_1_basal_overexpression_with_strong_diffuse_nuclear_exp",
+          "label": "The 4 abnormal patterns of p53 are as follows: 1) Basal overexpression with strong, diffuse nuclear expression in basal cells; 2) Parabasal/diffuse overexpression; 3) Absent “null” phenotype, lacking nuclear or cytoplasmic expression; 4) Cytoplasmic expression with moderate to strong cytoplasmic staining and with or without nuclear staining.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "of_note_although_the_basal_expression_pattern_has_been_associated_with_the_presence_of_an_underlying",
+          "label": "Of note, although the basal expression pattern has been associated with the presence of an underlying TP53 mutation,3 this pattern is considered non-specific, since it may also be observed in non-neoplastic lesions such as lichen sclerosus, lichen planus, and spongiotic dermatitis.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nooij_ls_ter_haar_nt_ruano_d_et_al_genomic_characterization_of_vulvar_precancers_identifies_distinct",
+          "label": "Nooij LS, Ter Haar NT, Ruano D, et al. Genomic characterization of vulvar (pre)cancers identifies distinct molecular subtypes with prognostic significance. Clin Cancer Res. 2017; 23:6781-6789.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rakislova_n_clavero_o_alemany_l_et_al_histological_characteristics_of_hpv_associated_and_independent",
+          "label": "Rakislova N, Clavero O, Alemany L, et al. 'Histological characteristics of HPV-associated and -independent squamous cell carcinomas of the vulva: A study of 1,594 cases'. Int J Cancer. 2017;141(12):2517-2527.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tessier_cloutier_b_kortekaas_ke_thompson_e_et_al_major_p53_immunohistochemical_patterns_in_in_situ_a",
+          "label": "Tessier-Cloutier B, Kortekaas KE, Thompson E, et al. Major p53 immunohistochemical patterns in in situ and invasive squamous cell carcinomas of the vulva and correlation with TP53 mutation status. Mod Pathol. 2020;33:1595-1605.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "liu_ya_ji_jx_almadani_n_et_al_comparison_of_p53_immunohistochemical_staining_in_differentiated_vulva",
+          "label": "Liu YA, Ji JX, Almadani N, et al. Comparison of p53 immunohistochemical staining in differentiated vulvar intraepithelial neoplasia (dVIN) with that in inflammatory dermatoses and benign squamous lesions in the vulva. Histopathol. 2021;78(3):424-433.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

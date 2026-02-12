@@ -1,0 +1,1817 @@
+{
+  "template_id": "Kidney_4.2.1.0.REL_CAPCP",
+  "organ": "KIDNEY: Nephrectomy",
+  "protocol_posting_date": "June 2025",
+  "standards": [
+    "AJCC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal (specify numbers of tumors): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "upper_pole",
+              "label": "Upper pole"
+            },
+            {
+              "value": "middle",
+              "label": "Middle"
+            },
+            {
+              "value": "lower_pole",
+              "label": "Lower pole"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_multiple_tumors_are_present_document_the_size_of_the_largest_tumor",
+          "label": "If multiple tumors are present, document the size of the largest tumor.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greatest_dimension_of_other_tumors_in_centimeters_cm_repeat_as_needed",
+          "label": "Greatest Dimension of Other Tumor(s) in Centimeters (cm) (repeat as needed)",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cm",
+              "label": "cm"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "clear_cell_tumors",
+          "label": "Clear cell tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "clear_cell_renal_cell_carcinoma",
+              "label": "Clear cell renal cell carcinoma"
+            },
+            {
+              "value": "multilocular_cystic_renal_neoplasm_of_low_malignant_potential",
+              "label": "Multilocular cystic renal neoplasm of low malignant potential"
+            }
+          ]
+        },
+        {
+          "field_id": "papillary_renal_tumors",
+          "label": "Papillary renal tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "papillary_renal_cell_carcinoma",
+              "label": "Papillary renal cell carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "oncocytic_and_chromophobe_renal_tumors",
+          "label": "Oncocytic and chromophobe renal tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "chromophobe_renal_cell_carcinoma",
+              "label": "Chromophobe renal cell carcinoma"
+            },
+            {
+              "value": "other_oncocytic_tumors_of_the_kidney",
+              "label": "Other oncocytic tumors of the kidney (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "collecting_duct_tumors",
+          "label": "Collecting duct tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "collecting_duct_carcinoma",
+              "label": "Collecting duct carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "other_renal_tumors",
+          "label": "Other renal tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "clear_cell_papillary_renal_cell_tumor",
+              "label": "Clear cell papillary renal cell tumor"
+            },
+            {
+              "value": "mucinous_tubular_and_spindle_renal_cell_carcinoma",
+              "label": "Mucinous tubular and spindle renal cell carcinoma"
+            },
+            {
+              "value": "tubulocystic_renal_cell_carcinoma",
+              "label": "Tubulocystic renal cell carcinoma"
+            },
+            {
+              "value": "acquired_cystic_disease_associated_renal_cell_carcinoma",
+              "label": "Acquired cystic disease-associated renal cell carcinoma"
+            },
+            {
+              "value": "eosinophilic_solid_and_cystic_renal_cell_carcinoma",
+              "label": "Eosinophilic solid and cystic renal cell carcinoma"
+            },
+            {
+              "value": "renal_cell_carcinoma_nos",
+              "label": "Renal cell carcinoma, NOS (unclassified)"
+            }
+          ]
+        },
+        {
+          "field_id": "molecularly_defined_renal_carcinomas",
+          "label": "Molecularly defined renal carcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "tfe3_rearranged_renal_cell_carcinoma",
+              "label": "TFE3-rearranged renal cell carcinoma"
+            },
+            {
+              "value": "tfeb_altered_renal_cell_carcinoma",
+              "label": "TFEB-altered renal cell carcinoma"
+            },
+            {
+              "value": "eloc",
+              "label": "ELOC (formerly TCEB1)-mutated renal cell carcinoma"
+            },
+            {
+              "value": "fumarate_hydratase_deficient_renal_cell_carcinoma",
+              "label": "Fumarate hydratase-deficient renal cell carcinoma"
+            },
+            {
+              "value": "succinate_dehydrogenase_deficient",
+              "label": "Succinate dehydrogenase-deficient (SDH) renal cell carcinoma"
+            },
+            {
+              "value": "alk_rearranged_renal_cell_carcinoma",
+              "label": "ALK-rearranged renal cell carcinoma"
+            },
+            {
+              "value": "smarcb1_deficient_renal_medullary_carcinoma",
+              "label": "SMARCB1-deficient renal medullary carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "renal_cell_carcinoma_subtype_pending_additional_studies",
+              "label": "Renal cell carcinoma, subtype pending additional studies"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ],
+          "condition": "WHO / ISUP"
+        },
+        {
+          "field_id": "see_table_for_renal_carcinoma_subtype_grading_requirements",
+          "label": "See table for renal carcinoma subtype grading requirements",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_nucleoli_absent_or_inconspicuous_at_400x_magnification",
+              "label": "G1, nucleoli absent or inconspicuous at 400x magnification"
+            },
+            {
+              "value": "g2_nucleoli_conspicuous_and_visible_at_400x_magnification_not_prominent_at_100x_magnification",
+              "label": "G2, nucleoli conspicuous and visible at 400x magnification, not prominent at 100x magnification"
+            },
+            {
+              "value": "g3_nucleoli_conspicuous_at_100x_magnification",
+              "label": "G3, nucleoli conspicuous at 100x magnification"
+            },
+            {
+              "value": "g4_extreme_nuclear_pleomorphism_and_or_multinucleated_giant_cells_and_or_rhabdoid_and_or",
+              "label": "G4, extreme nuclear pleomorphism and / or multinucleated giant cells and / or rhabdoid and / or"
+            }
+          ]
+        },
+        {
+          "field_id": "sarcomatoid_differentiation_specify",
+          "label": "sarcomatoid differentiation (specify): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed"
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_grade_comment",
+          "label": "Histologic Grade Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "limited_to_kidney",
+              "label": "Limited to kidney"
+            },
+            {
+              "value": "extends_into_perinephric_tissue",
+              "label": "Extends into perinephric tissue (beyond renal capsule)"
+            },
+            {
+              "value": "extends_into_renal_sinus",
+              "label": "Extends into renal sinus"
+            },
+            {
+              "value": "extends_into_pelvicalyceal_system",
+              "label": "Extends into pelvicalyceal system"
+            },
+            {
+              "value": "extends_into_renal_vein_or_its_segmental_branches",
+              "label": "Extends into renal vein or its segmental branches"
+            },
+            {
+              "value": "extends_into_inferior_vena_cava",
+              "label": "Extends into inferior vena cava"
+            },
+            {
+              "value": "extends_beyond_renal_gerotas_fascia",
+              "label": "Extends beyond renal Gerota's fascia (renal fascia)"
+            },
+            {
+              "value": "directly_invades_adrenal_gland",
+              "label": "Directly invades adrenal gland (T4)"
+            },
+            {
+              "value": "involves_adrenal_gland_non_contiguously",
+              "label": "Involves adrenal gland non-contiguously (M1)"
+            },
+            {
+              "value": "extends_into_other_organ",
+              "label": "Extends into other organ(s) / structure(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "histologic_features",
+          "label": "Histologic Features",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "sarcomatoid_or_rhabdoid_features_not_identified",
+              "label": "Sarcomatoid or rhabdoid features not identified"
+            },
+            {
+              "value": "sarcomatoid_features_present",
+              "label": "Sarcomatoid features present"
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "percentage_of_sarcomatoid_element",
+          "label": "Percentage of Sarcomatoid Element: _________________ %",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "rhabdoid_features_present",
+              "label": "Rhabdoid features present"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_rhabdoid_element",
+          "label": "Percentage of Rhabdoid Element: _________________ %",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_necrosis",
+          "label": "Tumor Necrosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "percentage_of_tumor_necrosis",
+          "label": "Percentage of Tumor Necrosis: _________________ %",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_small_vessel_vascular_invasion",
+          "label": "Lymphatic and / or Small Vessel Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "excluding renal vein and its segmental branches and inferior vena cava"
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "renal_parenchymal",
+              "label": "Renal parenchymal#: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "renal_capsular",
+              "label": "Renal capsular#: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "renal_sinus_soft_tissue",
+              "label": "Renal sinus soft tissue#: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "renal_hilar_soft_tissue",
+              "label": "Renal hilar soft tissue: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "renal_vein",
+              "label": "Renal vein (tumor invades or is adherent to vein wall at margin): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ureteral",
+              "label": "Ureteral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "perinephric_fat",
+              "label": "Perinephric fat: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gerotas_fascia",
+              "label": "Gerota's fascia: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ],
+          "guidance": "For partial nephrectomy only"
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_with_tumor",
+          "label": "Nodal Site(s) with Tumor",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "hilar",
+              "label": "Hilar: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "precaval",
+              "label": "Precaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "interaortocaval",
+              "label": "Interaortocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paracaval",
+              "label": "Paracaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retrocaval",
+              "label": "Retrocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "preaortic",
+              "label": "Preaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paraaortic",
+              "label": "Paraaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retroaortic",
+              "label": "Retroaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_nodal_site_with_largest_metastatic_deposit",
+          "label": "Specify Nodal Site with Largest Metastatic Deposit: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "condition": "ENE"
+        },
+        {
+          "field_id": "specify_location_of_involved_lymph_nodes",
+          "label": "Specify Location of Involved Lymph Node(s): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "specify_site",
+              "label": "Specify site(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_less_than_or_equal_to_7_cm_in_greatest_dimension_limited_to_the_kidney",
+          "label": "pT1: Tumor less than or equal to 7 cm in greatest dimension, limited to the kidney",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor less than or equal to 4 cm in greatest dimension, limited to the kidney"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor greater than 4 cm but less than or equal to 7 cm in greatest dimension limited to the"
+            }
+          ]
+        },
+        {
+          "field_id": "kidney",
+          "label": "kidney",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt2_tumor_greater_than_7_cm_in_greatest_dimension_limited_to_the_kidney",
+          "label": "pT2: Tumor greater than 7 cm in greatest dimension, limited to the kidney",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Tumor greater than 7 cm but less than or equal to 10 cm in greatest dimension, limited to the"
+            }
+          ]
+        },
+        {
+          "field_id": "kidney",
+          "label": "kidney",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2b",
+              "label": "pT2b: Tumor greater than 10 cm, limited to the kidney"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_tumor_extends_into_major_veins_or_perinephric_tissues_but_not_into_the_ipsilateral_adrenal_gland",
+          "label": "pT3: Tumor extends into major veins or perinephric tissues, but not into the ipsilateral adrenal gland and not beyond Gerota’s fascia",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Tumor extends into the renal vein or its segmental branches, or invades the pelvicalyceal"
+            }
+          ]
+        },
+        {
+          "field_id": "system_or_invades_perirenal_and_or_renal_sinus_fat_but_not_beyond_gerotas_fascia",
+          "label": "system, or invades perirenal and / or renal sinus fat but not beyond Gerota’s fascia",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3b",
+              "label": "pT3b: Tumor extends into the vena cava below the diaphragm"
+            },
+            {
+              "value": "pt3c",
+              "label": "pT3c: Tumor extends into the vena cava above the diaphragm or invades the wall of the vena cava"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor invades beyond Gerota's fascia (including contiguous extension into the ipsilateral"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis (including non-contiguous adrenal gland involvement)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "additional_findings_in_kidney",
+          "label": "Additional Findings in Kidney",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "insufficient_tissue",
+              "label": "Insufficient tissue"
+            },
+            {
+              "value": "no_significant_pathologic_change_identified",
+              "label": "No significant pathologic change identified"
+            },
+            {
+              "value": "glomerular_disease",
+              "label": "Glomerular disease (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tubulointerstitial_disease",
+              "label": "Tubulointerstitial disease (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vascular_disease",
+              "label": "Vascular disease (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cyst",
+              "label": "Cyst(s) (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "papillary_adenoma",
+              "label": "Papillary adenoma(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymphadenectomy_is_not_generally_performed_even_with_a_radical_nephrectomy_unless_there_is_",
+          "label": "Regional lymphadenectomy is not generally performed even with a radical nephrectomy unless there is clinical suspicion of involved or abnormal lymph nodes. A few lymph nodes may occasionally be found in the renal hilus around major vessels. Other regional lymph nodes (e.g., paracaval, para-aortic, and retroperitoneal) may be submitted separately.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_was_updated_to_incorporate_the_changes_made_in_the_5th_edition_who_urinary_and_male_ge",
+          "label": "This protocol was updated to incorporate the changes made in the 5th edition WHO Urinary and Male Genital Tumors Classification.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_updated_entities_that_should_be_reported_using_the_kidney_cancer_protocol_are_listed_below_clear",
+          "label": "The updated entities that should be reported using the kidney cancer protocol are listed below:\n\nClear cell renal tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_renal_cell_carcinoma",
+          "label": "Clear cell renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "multilocular_cystic_renal_neoplasm_of_low_malignant_potential",
+          "label": "Multilocular cystic renal neoplasm of low malignant potential",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "papillary_renal_tumors",
+          "label": "Papillary renal tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "papillary_renal_cell_carcinoma",
+          "label": "Papillary renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oncocytic_and_chromophobe_renal_cell_tumors",
+          "label": "Oncocytic and chromophobe renal cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chromophobe_renal_cell_carcinoma",
+          "label": "Chromophobe renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_oncocytic_tumors_of_the_kidney",
+          "label": "Other oncocytic tumors of the kidney",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "collecting_duct_tumors",
+          "label": "Collecting duct tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "collecting_duct_carcinoma",
+          "label": "Collecting duct carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_renal_tumors",
+          "label": "Other renal tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_papillary_renal_cell_tumor",
+          "label": "Clear cell papillary renal cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucinous_tubular_and_spindle_cell_carcinoma",
+          "label": "Mucinous tubular and spindle cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tubulocystic_renal_cell_carcinoma",
+          "label": "Tubulocystic renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "acquired_cystic_disease_associated_renal_cell_carcinoma",
+          "label": "Acquired cystic disease-associated renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eosinophilic_solid_and_cystic_renal_cell_carcinoma",
+          "label": "Eosinophilic solid and cystic renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "renal_cell_carcinoma_nos",
+          "label": "Renal cell carcinoma, NOS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "molecularly_defined_renal_carcinoma",
+          "label": "Molecularly defined renal carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eloc_formerly_tceb1_mutated_renal_cell_carcinoma",
+          "label": "ELOC (formerly TCEB1)-mutated renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fumarate_hydratase_deficient_renal_cell_carcinoma",
+          "label": "Fumarate hydratase-deficient renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "succinate_dehydrogenase_deficient_renal_cell_carcinoma",
+          "label": "Succinate dehydrogenase-deficient renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_changes_made_in_the_5th_who_edition_are_summarized_below_and_the_reader_is_encouraged_to_referen",
+          "label": "The changes made in the 5th WHO edition are summarized below and the reader is encouraged to reference the updated manuscript.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "papillary_renal_cell_carcinoma_subclassification_into_type_1_and_type_2_is_no_longer_recommended_thi",
+          "label": "Papillary renal cell carcinoma: Subclassification into type 1 and type 2 is no longer recommended. This reflects the recognition that many tumors characterized as type 2 papillary renal cell carcinoma now represent other distinct entities (e.g., Fumarate hydratase-deficient renal cell carcinoma).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_oncocytic_tumors_of_the_kidney_this_is_a_heterogeneous_group_of_renal_tumors_with_eosinophilic",
+          "label": "Other oncocytic tumors of the kidney: This is a heterogeneous group of renal tumors with eosinophilic/oncocytic cells with oncocytoma-like and/or chromophobe renal cell carcinoma-like features. This includes hybrid oncocytic tumors (HOCT) that may occur sporadically or associated with Birt-Hogg-Dube syndrome; the emerging entities of eosinophilic vacuolated tumor (EVT), low-grade oncocytic tumor (LOT) and other eosinophilic/oncocytic tumors with intermediate (borderline) features.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_papillary_renal_cell_tumor_ccprct_renamed_from_carcinoma_to_tumor_to_reflect_its_indolent",
+          "label": "Clear cell papillary renal cell tumor (CCPRCT): Renamed from carcinoma to tumor to reflect its indolent behavior.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eosinophilic_solid_and_cystic_renal_cell_carcinoma_this_was_recognized_as_a_separate_entity_characte",
+          "label": "Eosinophilic solid and cystic renal cell carcinoma: This was recognized as a separate entity characterized by solid and cystic architecture with voluminous eosinophilic cytoplasm, frequent (but not required) keratin 20 reactivity and typically negative keratin 7 expression. The clinical behavior is indolent in the great majority of cases and these tumors may occur in association with tuberous sclerosis complex or sporadically. In both settings, there are alterations in the TSC1/2 genes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "renal_cell_carcinoma_nos_this_category_should_be_reserved_for_carcinomas_that_cannot_be_placed_into_",
+          "label": "Renal cell carcinoma, NOS: This category should be reserved for carcinomas that cannot be placed into one of the morphologically and molecularly defined categories. These are usually high-grade. Low-grade oncocytic tumors that are difficult to classify should be placed in the “Other oncocytic tumors of the kidney” group.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "molecularly_defined_renal_cell_carcinoma",
+          "label": "Molecularly defined renal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_category_of_molecularly_defined_renal_carcinoma_was_added_to_the_5th_edition_who_to_include_carc",
+          "label": "The category of molecularly defined renal carcinoma was added to the 5th edition WHO to include carcinomas that demonstrate characteristic molecular alterations that define these tumor types.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tfeb_altered_renal_cell_carcinoma_this_category_encompasses_renal_carcinoma_that_possess_either_a_tf",
+          "label": "TFEB-altered renal cell carcinoma: This category encompasses renal carcinoma that possess either a TFEB rearrangement or TFEB/6p21 amplification. TFEB rearranged carcinomas frequently display a biphasic pattern with smaller cells clustering around basement membrane-like material surrounded by larger epithelioid cells. However, other patterns can also be present that may overlap with clear cell renal cell carcinoma, TFE3 rearranged renal cell carcinoma, and tumors with oncocytic features. TFEB amplified carcinoma is less characteristic and may appear poorly differentiated and infiltrative with papillary and oncocytic features. Useful markers for detection of TFEB rearranged carcinomas include the melanocytic markers melan-A and HMB45, cathepsin K, or nuclear reactivity for TFEB protein. TFEB amplified carcinomas may also have melanocytic marker and cathepsin K positivity, and some are positive for keratin 20, overlapping with the immunohistochemical pattern of eosinophilic solid and cystic renal cell carcinoma. If a break-apart FISH method is used, TFEB amplified carcinomas show numerous copies of the TFEB region, usually without rearrangement. Other genes at 6p21, such as VEGFA, are typically included in the amplicon. Whereas TFE3/TFEB rearranged carcinomas have a tendency to occur in younger patients (although not always), TFEB amplified carcinomas appear to occur in older patients and have a worse prognosis.2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fumarate_hydratase_fh_deficient_renal_cell_carcinoma_this_entity_was_previously_known_as_hereditary_",
+          "label": "Fumarate hydratase (FH) deficient renal cell carcinoma: This entity was previously known as hereditary leiomyomatosis and renal cell carcinoma syndrome-associated renal cell carcinoma. This is typically an aggressive tumor with variable architecture patterns (papillary, solid, tubulocystic, cribriform) with high-grade appearing cells with prominent bright red macronucleoli and perinucleolar clearing. The morphological spectrum was recently expanded to include cases with low-grade oncocytic morphology. These tumors have mutations in the fumarate hydratase (FH) gene which can be demonstrated by lack of FH protein expression (“loss”) and 2-succinocysteine (2SC) reactivity by immunohistochemistry. Rarely, mutated tumors may show focal or patchy FH staining, presumably due to a dysfunctional protein that remains recognizable by the antibody. Most patients are thought to have germline FH alterations and thus the hereditary leiomyomatosis and renal cell carcinoma syndrome, accompanied also by skin and uterine leiomyomas (in females); however, a subset of tumors appear to occur due to somatic FH mutations in the absence of the syndrome.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "succinate_dehydrogenase_deficient_renal_cell_carcinoma_this_rare_renal_cell_carcinoma_typically_has_",
+          "label": "Succinate dehydrogenase-deficient renal cell carcinoma: This rare renal cell carcinoma typically has bland, bubbly eosinophilic cells, overlapping with oncocytic tumors such as oncocytoma and chromophobe renal cell carcinoma. The most diagnostic finding is immunohistochemistry for SDHB showing abnormal absence of staining in the tumor cells (“loss”) serving as a surrogate marker for SDH gene complex alterations. Contrasting to most other oncocytic tumors, these neoplasms are typically negative for KIT and entirely negative for keratin 7. Most patients have germline SDHB alterations and thus the hereditary SDH-deficient tumor syndrome.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smarcb1_deficient_renal_medullary_carcinoma_smarcb1_deficient_renal_medullary_carcinoma_was_previous",
+          "label": "SMARCB1-deficient renal medullary carcinoma: SMARCB1-deficient renal medullary carcinoma was previously designated renal medullary carcinoma but has been brought under the umbrella of molecularly defined renal cell carcinoma. This tumor type retains the classical association with renal medullary location and strong association with sickle cell trait or rarely other hemoglobinopathies. The name was updated to include the characteristic loss of SMARCB1 (also known as INI1, BAF47) demonstrable by immunohistochemistry that serves as a surrogate for SMARCB1 inactivation on 22q11.23. An important point to emphasize is that this category should be reserved for those tumors with medullary location/phenotype that are very frequently, but not always associated with sickle cell trait. Other renal cell carcinoma subtypes, for example clear cell with sarcomatoid transformation or FH deficient renal cell carcinoma, may show secondary SMARCB1 loss and should be categorized according to the underlying morphologic/genetic feature.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_category_of_other_histologic_type_not_listed_specify_can_be_used_to_diagnose_entities_that_are_e",
+          "label": "The category of “Other histologic type not listed (specify)” can be used to diagnose entities that are emerging provisional entities such as, biphasic hyalinizing psammomatous renal cell carcinoma, or thyroid-like follicular renal cell carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_recognition_of_the_increasing_number_of_molecularly_defined_renal_cell_carcinomas_a_category_of_r",
+          "label": "In recognition of the increasing number of molecularly defined renal cell carcinomas, a category of “Renal cell carcinoma, subtype pending additional studies” has been added to the protocol. Since many pathologists will not have immediate access to the immunohistochemistry (IHC) and molecular studies required to define these rare tumors, this category facilitates preliminary sign-out while awaiting reference lab results. An addendum report should be issued on completion of the additional studies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "raspollini_mr_moch_h_tan_ph_et_al_tumours_of_the_kidney_in_who_classification_of_tumours_editorial_b",
+          "label": "Raspollini MR, Moch H, Tan PH, et al. Tumours of the kidney. In: WHO Classification of Tumours Editorial Board, eds. Urinary and Male Genital Tumours. WHO Classification of Tumours. Geneva, Switzerland: WHO Press; 2022.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kammerer_jacquet_sf_gandon_c_dugay_f_et_al_comprehensive_study_of_nine_novel_cases_of_tfeb_amplified",
+          "label": "Kammerer-Jacquet SF, Gandon C, Dugay F, et al. Comprehensive study of nine novel cases of TFEB-amplified renal cell carcinoma: an aggressive tumour with frequent PDL1 expression. Histopathology. 2022 Aug;81(2):228-238.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lobo_j_rechsteiner_m_helmchen_bm_et_al_eosinophilic_solid_and_cystic_renal_cell_carcinoma_and_renal_",
+          "label": "Lobo J, Rechsteiner M, Helmchen BM, et al. Eosinophilic solid and cystic renal cell carcinoma and renal cell carcinomas with TFEB alterations: a comparative study. Histopathology. 2022 Jul;81(1):32-43.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_should_be_assigned_based_on_the_highest_grade_cells_present_in_a_single_high_power_field_rathe",
+          "label": "Grade should be assigned based on the highest grade cells present in a single high power field rather than the most predominant pattern.1,2 Grade is based upon the degree of nucleolar predominance (grades 1-3) and presence of nuclear pleomorphism, including giant cells, sarcomatoid or rhabdoid features (grade 4). This grading system has been validated for both clear cell and papillary renal cell carcinoma; however, it has not been validated for other RCC subtypes.3,4 Nevertheless, the WHO/ISUP grade should be included for descriptive purposes. The following table5,6 outlines the utility of grading in the different subtypes of renal carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moch_h_humphrey_pa_ulbright_tm_reuter_ve_eds_world_health_organization_who_classification_of_tumours",
+          "label": "Moch H, Humphrey PA, Ulbright TM, Reuter VE, eds. World Health Organization (WHO) Classification of Tumours: Pathology and Genetics of the Urinary System and Male Genital Organs. Geneva, Switzerland: WHO Press; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "delahunt_b_cheville_jc_martignoni_g_et_al_the_international_society_of_urological_pathology_isup_gra",
+          "label": "Delahunt B, Cheville JC, Martignoni G, et al. The International Society of Urological Pathology (ISUP) grading system for renal cell carcinoma and other prognostic parameters. Am J Surg Pathol. 2013; 37:1490-1504.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sika_paotonu_d_bethwaite_pb_mccredie_mre_jordan_tw_delahunt_b_nucleolar_grade_but_not_fuhrman_grade_",
+          "label": "Sika-Paotonu D, Bethwaite PB, McCredie MRE, Jordan TW, Delahunt B. Nucleolar grade but not Fuhrman grade is applicable to papillary renal cell carcinoma. Am J Surg Pathol. 2006; 30:1091-1096.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "delahunt_b_sika_paotonu_d_bethwaite_pb_et_al_grading_of_clear_cell_renal_cell_carcinoma_should_be_ba",
+          "label": "Delahunt B, Sika-Paotonu D, Bethwaite PB, et al. Grading of clear cell renal cell carcinoma should be based on nucleolar prominence. Am J Surg Pathol. 2011; 135:1134-1139.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "raspollini_mr_moch_h_tan_ph_et_al_tumours_of_the_kidney_in_who_classification_of_tumours_editorial_b",
+          "label": "Raspollini MR, Moch H, Tan PH, et al. Tumours of the kidney. In: WHO Classification of Tumours Editorial Board, eds. Urinary and Male Genital Tumours. WHO Classification of Tumours. Geneva, Switzerland: WHO Press; 2022.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_chumbalkar_v_montironi_r_et_al_updates_in_grading_of_renal_cell_carcinomas_beyond_clear_cel",
+          "label": "Paner GP, Chumbalkar V, Montironi R, et al. Updates in Grading of Renal Cell Carcinomas Beyond Clear Cell Renal Cell Carcinoma and Papillary Renal Cell Carcinoma. Adv Anat Pathol. 2022 May 1;29(3):117-130.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_careful_gross_analysis_and_description_of_tumor_extension_in_a_nephrectomy_specimen_is_important_a",
+          "label": "A careful gross analysis and description of tumor extension in a nephrectomy specimen is important and should guide blocking of tissue samples for histologic assessment.1 Careful documentation of the tumor extension beyond kidney into the renal vein, renal sinus, perinephric fat and Gerota's fascia (pT4) provides important staging information.2,3 Histologic sampling should be utilized to confirm the presence of renal vein invasion. Perinephric adipose tissue (outer surface of the kidney away from the renal sinus) extension is present when there is one or more of the following features: (1) direct tumor invasion of perinephric adipose tissue (2) irregular tongues of tumor extending beyond the renal capsule and (3) separate tumor nodules distributed in the adjacent perinephric adipose tissue beyond the renal capsule or tumor pseudo capsule. Invasion of the renal capsule without extension into perinephric soft tissue has no adverse prognostic significance4 and carcinomas with this finding are not upstaged to pT3.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_renal_sinus_is_an_anatomical_compartment_separating_the_renal_parenchyma_from_the_collecting_sys",
+          "label": "The renal sinus is an anatomical compartment separating the renal parenchyma from the collecting system (renal pelvis and calyces).1,5 This area contains abundant adipose tissue, lymphatics, and thin-walled veins. In recent years, the definition of renal sinus involvement has been clarified and includes the following: (1) tumor in contact with renal sinus fat, (2) tumor infiltrating the loose connective tissue of the sinus that is clearly beyond the renal parenchyma, and (3) involvement of any endothelial lined space within the renal sinus (with or without mural smooth muscle), including lymphatics.1,6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "renal_sinus_involvement_in_renal_cell_carcinoma_is_an_under_recognized_phenomenon5_the_renal_sinus_i",
+          "label": "Renal sinus involvement in renal cell carcinoma is an under-recognized phenomenon.5 The renal sinus is an important pathway of spread of renal cell carcinoma (Figure 1, A and B). The renal sinus should be carefully assessed and generously sampled to detect renal sinus fat and vessel involvement, particularly in larger tumors (≥7cm), as renal sinus invasion is present in greater than 90% of these tumors.1,6 As tumor size increases over 4 cm, the likelihood of renal sinus invasion increases dramatically.8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_earlier_literature_suggested_that_renal_sinus_involvement_predicts_a_more_aggressive_outcom",
+          "label": "Although earlier literature suggested that renal sinus involvement predicts a more aggressive outcome than peripheral perinephric fat invasion, more recent studies show the presence of multiple patterns of extrarenal extension is associated with a higher risk of disease progression and cancer-related death after radical nephrectomy compared to isolated involvement of the perinephric fat, renal sinus fat, or renal vein, which carry similar prognostic weight.8,9,10,11 If a tumor thrombus is present in the renal vein it is important to determine if the tumor is confined to the renal vein (pT3a), or whether it extends into inferior vena cava (pT3b/c) or invades into the wall of the inferior vena cava (pT3c). When renal carcinoma involves the adrenal gland, it is important to document whether the involvement is contiguous spread of tumor (pT4) or a separate (noncontiguous) nodule of carcinoma, the latter representing metastatic disease (pM1) (Figure 2).2,9,12 Additionally, the presence of metastatic disease in any other accompanying organs would be considered pM1 disease for the purpose of the TNM system.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_a_diagram_showing_the_renal_sinus_fat_s_and_its_rich_venous_system_that_envelops_the_collec",
+          "label": "Figure 1. A: Diagram showing the renal sinus fat (S) and its rich venous system that envelops the collecting system. The renal capsule terminates (arrow) just inside the vestibule of the hilus. B: A renal malignancy is constrained by the renal capsule (arrow), yet no fibrous capsule impedes its growth into the vascular tissue of the renal sinus (curved arrows). From Bonsib et al.5 Reproduced with permission of the American Journal of Surgical Pathology. © 2000 Wolters Kluwer Health.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_diagram_showing_relationship_between_local_tumor_extension_and_pt_designation_when_a_tumor_",
+          "label": "Figure 2. Diagram showing relationship between local tumor extension and pT designation. When a tumor shows direct invasion into the perirenal fat or renal sinus fat, it is designated as pT3a. A tumor that directly invades the adrenal gland is designated as pT4, while a tumor that shows discontinuous (noncontiguous) involvement of the adrenal gland is considered metastatic (M1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trpkov_k_grignon_dj_bonsib_sn_et_al_handling_and_staging_of_renal_cell_carcinoma_the_international_s",
+          "label": "Trpkov K, Grignon DJ, Bonsib SN, et al. Handling and staging of renal cell carcinoma: the International Society of Urological Pathology (ISUP) Consensus conference recommendations. Am J Surg Pathol. 2013; 37:1505-1517.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brierley_jd_gospodarowicz_mk_wittekind_ch_et_al_eds_tnm_classification_of_malignant_tumours_8th_ed_o",
+          "label": "Brierley JD, Gospodarowicz MK, Wittekind CH, et al., eds. TNM Classification of Malignant Tumours. 8th ed. Oxford: Wiley;2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "süer_e_ergün_g_baltaci_s_bedük_y_does_renal_capsular_invasion_have_any_prognostic_value_in_localized",
+          "label": "Süer E, Ergün G, Baltaci S, Bedük Y. Does renal capsular invasion have any prognostic value in localized renal cell carcinoma? J Urol. 2008 Jul;180(1):68-71.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bonsib_sm_gibson_d_mhoon_m_greene_gf_renal_sinus_involvement_in_renal_cell_carcinoma_am_j_surg_patho",
+          "label": "Bonsib SM, Gibson D, Mhoon M, Greene GF. Renal sinus involvement in renal cell carcinoma. Am J Surg Pathol. 2000; 24:451-458.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bonsib_sm_renal_lymphatics_and_lymphatic_involvement_in_sinus_vein_invasive_pt3b_clear_cell_renal_ce",
+          "label": "Bonsib SM. Renal lymphatics and lymphatic involvement in sinus vein invasive (pT3b) clear cell renal cell carcinoma: a study of 40 cases. Mod Pathol. 2006; 19:746-753.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "madbouly_k_al_qahtani_sm_ghazwani_y_et_al_microvascular_tumour_invasion_prognostic_significance_in_l",
+          "label": "Madbouly K, Al-Qahtani SM, Ghazwani Y, et al. Microvascular tumour invasion: prognostic significance in low stage renal cell carcinoma. Urology. 2007; 69:670-674.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bonsib_sm_t2_clear_cell_renal_cell_carcinoma_is_a_rare_entity_a_study_of_120_clear_cell_renal_cell_c",
+          "label": "Bonsib SM. T2 clear cell renal cell carcinoma is a rare entity: a study of 120 clear cell renal cell carcinomas. J Urol. 2005; 174:1199-1202.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thompson_rh_leibovich_bc_cheville_jc_et_al_is_renal_sinus_fat_invasion_the_same_as_perinephric_fat_i",
+          "label": "Thompson RH, Leibovich BC, Cheville JC, et al. Is renal sinus fat invasion the same as perinephric fat invasion for pT3a renal cell carcinoma? J Urol. 2005; 174:1218-1221.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shah_ph_lyon_td_lohse_cm_cheville_jc_leibovich_bc_boorjian_sa_thompson_rh_prognostic_evaluation_of_p",
+          "label": "Shah PH, Lyon TD, Lohse CM, Cheville JC, Leibovich BC, Boorjian SA, Thompson RH. Prognostic evaluation of perinephric fat, renal sinus fat, and renal vein invasion for patients with pathological stage T3a clear-cell renal cell carcinoma. BJU Int. 2019 Feb;123(2):270-276.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wang_z_yu_k_zhu_y_feng_c_liu_c_liu_s_wang_j_zeng_x_multiple_patterns_of_perirenal_fat_invasion_are_a",
+          "label": "Wang Z, Yu K, Zhu Y, Feng C, Liu C, Liu S, Wang J, Zeng X. Multiple Patterns of Perirenal Fat Invasion Are Associated with a Poorer Prognosis Compared with Isolated Invasion: A Proposal for a Revision of T3aN0M0 TNM Staging System. Front Oncol. 2020 Mar 11; 10:336.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ficcara_v_novara_g_iafrate_m_et_al_proposal_for_reclassification_of_the_tnm_staging_system_in_patien",
+          "label": "Ficcara V, Novara G, Iafrate M, et al. Proposal for reclassification of the TNM staging system in patients with locally advanced (pT3-4) renal cell carcinoma according to the cancer-related outcome. Eur Urol. 2007; 51:722-729.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sarcomatoid_carcinoma_is_not_a_specific_morphologic_or_genetic_subtype_of_renal_cell_carcinoma_but_i",
+          "label": "Sarcomatoid carcinoma is not a specific morphologic or genetic subtype of renal cell carcinoma but is considered a pattern of dedifferentiation of different renal carcinoma subtypes.1,2,3,4 Sarcomatoid change in a renal cell carcinoma is associated with an adverse outcome.1,4 Sarcomatoid morphology may be found in any histologic subtypes of renal cell carcinomas, including clear cell, papillary, chromophobe, collecting duct, and other rare and unclassified subtypes.1,2,3,4 When the background carcinoma subtype is recognized, it should be specified under histologic type (see Note B). Pure sarcomatoid carcinoma or sarcomatoid carcinoma associated with epithelial elements that do not conform to usual renal carcinoma cell types should be considered as renal cell carcinoma, NOS. Sarcomatoid morphology is also incorporated into the WHO/ISUP grading system as grade 4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rhabdoid_features_like_sarcomatoid_features_are_a_characteristic_of_high_grade_disease_rhabdoid_cell",
+          "label": "Rhabdoid features, like sarcomatoid features, are a characteristic of high-grade disease. Rhabdoid cells have abundant eosinophilic cytoplasm with an eccentric nucleus and often a prominent nucleolus. These cells mimic rhabdomyoblasts but do not show true skeletal muscle differentiation.4,5,6,7 Rhabdoid features are associated with adverse outcomes, and about 25% concurrently show sarcomatoid features.1 Rhabdoid morphology is also by definition WHO/ISUP grade 4.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_is_some_indication_that_the_percentage_of_sarcomatoid_component_in_a_renal_cell_carcinoma_has_",
+          "label": "There is some indication that the percentage of sarcomatoid component in a renal cell carcinoma has prognostic importance.2,4,8 A recent study has also shown that the extent of WHO/ISUP grade 4 component in a tumor influences outcome for clear cell RCC irrespective of type of grade 4 histology (sarcomatoid, rhabdoid or extreme atypia). This study demonstrated that although cancers with overall grade 4 morphology had a significantly worse outcome than grade 3 cancers, those with <10% grade 4 component were not associated with a significant survival difference from grade 3 cancers. In addition, there was a significant difference in survival between tumors with <10% versus >50% grade 4 areas.9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moch_h_humphrey_pa_ulbright_tm_reuter_ve_eds_world_health_organization_who_classification_of_tumours",
+          "label": "Moch H, Humphrey PA, Ulbright TM, Reuter VE, eds. World Health Organization (WHO) Classification of Tumours: Pathology and Genetics of the Urinary System and Male Genital Organs. Geneva, Switzerland: WHO Press; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheville_jc_lohse_cm_zincke_h_et_al_sarcomatoid_renal_cell_carcinoma_an_examination_of_underlying_hi",
+          "label": "Cheville JC, Lohse CM, Zincke H, et al. Sarcomatoid renal cell carcinoma: an examination of underlying histologic subtype and an analysis of associations with patient outcome. Am J Surg Pathol. 2004; 28:435-441.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "delahunt_b_cheville_jc_martignoni_g_et_al_the_international_society_of_urological_pathology_isup_gra",
+          "label": "Delahunt B, Cheville JC, Martignoni G, et al. The International Society of Urological Pathology (ISUP) grading system for renal cell carcinoma and other prognostic parameters. Am J Surg Pathol. 2013; 37:1490-1504.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kuroiwa_k_kinoshita_y_shiratsuchi_h_et_al_renal_cell_carcinoma_with_rhabdoid_features_an_aggressive_",
+          "label": "Kuroiwa K, Kinoshita Y, Shiratsuchi H, et al. Renal cell carcinoma with rhabdoid features: an aggressive neoplasm. Histopathology. 2002; 41:538-548.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gokden_n_nappi_o_swanson_pe_et_al_renal_cell_carcinoma_with_rhabdoid_features_am_j_surg_pathol_2000_",
+          "label": "Gokden N, Nappi O, Swanson PE, et al. Renal cell carcinoma with rhabdoid features. Am J Surg Pathol. 2000; 24:1329-1338.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leroy_x_zini_l_buob_d_et_al_renal_cell_carcinoma_with_rhabdoid_features_arch_pathol_lab_med_2007_131",
+          "label": "Leroy X, Zini L, Buob D, et al. Renal cell carcinoma with rhabdoid features. Arch Pathol Lab Med. 2007; 131:102-106.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zhang_by_thompson_rh_lohse_cm_leibovich_bc_boorjian_sa_cheville_jc_costello_ba_a_novel_prognostic_mo",
+          "label": "Zhang BY, Thompson RH, Lohse CM, Leibovich BC, Boorjian SA, Cheville JC, Costello BA. A novel prognostic model for patients with sarcomatoid renal cell carcinoma. BJU Int. 2015 Mar;115(3):405-11.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dagher_j_delahunt_b_rioux_leclercq_n_egevad_l_varma_m_samaratunga_h_percentage_grade_4_tumour_predic",
+          "label": "Dagher J, Delahunt B, Rioux-Leclercq N, Egevad L, Varma M, Samaratunga H. Percentage grade 4 tumour predicts outcome for clear cell renal cell carcinoma. Pathology. 2019 Jun;51(4):349-352.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_necrosis_is_an_important_prognostic_factor_in_renal_cell_carcinoma123_the_prognostic_significa",
+          "label": "Tumor necrosis is an important prognostic factor in renal cell carcinoma.1,2,3 The prognostic significance of necrosis independent of tumor stage has been identified in clear cell and chromophobe renal cell carcinoma.2,4 In addition, tumor-associated necrosis has been shown to be an important prognostic factor for clear cell RCC, independently of WHO/ISUP grade. The prognostic significance of necrosis in papillary renal cell carcinoma is controversial. Large papillary carcinomas commonly display cystic necrosis and yet do not exhibit extra renal spread.5 Tumor necrosis cannot be assessed as a prognostic factor when patients have undergone presurgical arterial embolization, as tumor-type necrosis cannot be definitively distinguished from treatment effect. \n \nAt present, the prognostic significance of the extent of necrosis is unclear; however, it is recommended that this be recorded as a percentage incorporating the best estimate of extent, based upon macroscopic and confirmatory microscopic evaluation.3 Extensive necrosis in the setting of a low-grade RCC appears to be associated with a more favorable prognosis.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "delahunt_b_cheville_jc_martignoni_g_et_al_the_international_society_of_urological_pathology_isup_gra",
+          "label": "Delahunt B, Cheville JC, Martignoni G, et al. The International Society of Urological Pathology (ISUP) grading system for renal cell carcinoma and other prognostic parameters. Am J Surg Pathol. 2013; 37:1490-1504.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheville_jc_lohse_cm_zincke_h_weaver_al_blute_ml_comparison_of_outcome_and_prognostic_features_among",
+          "label": "Cheville JC, Lohse CM, Zincke H, Weaver AL, Blute ML. Comparison of outcome and prognostic features among histologic subtypes of renal cell carcinoma. Am J Surg Pathol. 2003; 27:612-624.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "klatte_t_said_jw_de_martino_m_et_al_presence_of_tumour_necrosis_is_not_a_significant_predictor_of_su",
+          "label": "Klatte T, Said JW, de Martino M, et al. Presence of tumour necrosis is not a significant predictor of survival in clear cell renal cell carcinoma: higher prognostic accuracy of extent based rather than presence/absence classification. J Urol. 2009; 181:1558-1564.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dagher_j_delahunt_b_rioux_leclercq_n_egevad_l_coughlin_g_dunglison_n_gianduzzo_t_kua_b_malone_g_mart",
+          "label": "Dagher J, Delahunt B, Rioux-Leclercq N, Egevad L, Coughlin G, Dunglison N, Gianduzzo T, Kua B, Malone G, Martin B, Preston J, Pokorny M, Wood S, Samaratunga H. Assessment of tumour-associated necrosis provides prognostic information additional to World Health Organization/International Society of Urological Pathology grading for clear cell renal cell carcinoma. Histopathology. 2019 Jan;74(2):284-290.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "peckova_k_martinek_p_pivovarcikova_k_vanecek_t_alaghehbandan_r_prochazkova_k_montiel_dp_hora_m_skend",
+          "label": "Peckova K, Martinek P, Pivovarcikova K, Vanecek T, Alaghehbandan R, Prochazkova K, Montiel DP, Hora M, Skenderi F, Ulamec M, Rotterova P, Daum O, Ferda J, Davidson W, Ondic O, Dubova M, Michal M, Hes O. Cystic and necrotic papillary renal cell carcinoma: prognosis, morphology, immunohistochemical, and molecular-genetic profile of 10 cases. Ann Diagn Pathol. 2017 Feb; 26:23-30.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "collins_j_epstein_ji_prognostic_significance_of_extensive_necrosis_in_renal_cell_carcinoma_hum_patho",
+          "label": "Collins J, Epstein JI. Prognostic significance of extensive necrosis in renal cell carcinoma. Hum Pathol. 2017 Aug; 66:108-114.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "partial_nephrectomy_the_renal_parenchymal_margin_should_be_inked_and_histologically_assessed_prefera",
+          "label": "Partial Nephrectomy: The renal parenchymal margin should be inked and histologically assessed; preferably utilizing perpendicular sections.1 Sections demonstrating the relationship of the tumor to perinephric adipose tissue (when present), renal capsule, and renal sinus soft tissue margin should be evaluated. A positive surgical margin is defined as extension of tumor to the inked surface of the resected specimen. Any benign tissue overlying the tumor, regardless of thickness, renders the margin negative.2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "totalradical_nephrectomy_the_ureteric_vascular_renal_artery_and_vein_and_soft_tissue_renal_hilar_ger",
+          "label": "Total/Radical Nephrectomy: The ureteric, vascular (renal artery and vein), and soft tissue (renal hilar, Gerota's fascia when appropriate) margins should be evaluated.1 The renal vein margin is more commonly a challenge than the ureter or artery margin, as tumors often extend with finger-like projections into the main renal vein or vena cava. If tumor is present in the vascular lumen but not adherent to, or invading, the wall at the margin by microscopic evaluation, this is considered a negative margin since the tumor may be manipulated backward within the vein before ligation and not transected. Involvement of the Gerota's fascia/soft tissue margin is very rare in total/radical nephrectomy, except with the highest stage tumors. In this setting, it is usually apparent that the adipose tissue is adherent to the tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trpkov_k_grignon_dj_bonsib_sn_et_al_handling_and_staging_of_renal_cell_carcinoma_the_international_s",
+          "label": "Trpkov K, Grignon DJ, Bonsib SN, et al. Handling and staging of renal cell carcinoma: the International Society of Urological Pathology (ISUP) Consensus conference recommendations. Am J Surg Pathol. 2013; 37:1505-1517.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lee_j_kim_j_kim_jc_et_al_evaluation_of_the_surgical_margin_threshold_for_avoiding_recurrence_after_p",
+          "label": "Lee J, Kim J, Kim JC, et al. Evaluation of the Surgical Margin Threshold for Avoiding Recurrence after Partial Nephrectomy in Patients with Renal Cell Carcinoma. Yonsei Med J. 2022 Feb;63(2):173-178.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "castilla_ea_liou_ls_abrahams_na_et_al_prognostic_importance_of_resection_margin_width_after_nephron_",
+          "label": "Castilla EA, Liou LS, Abrahams NA, et al. Prognostic importance of resection margin width after nephron-sparing surgery for renal cell carcinoma. Urology. 2002 Dec;60(6):993-7.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "timsit_mo_bazin_jp_thiounn_n_et_al_prospective_study_of_safety_margins_in_partial_nephrectomy_intrao",
+          "label": "Timsit MO, Bazin JP, Thiounn N, et al. Prospective study of safety margins in partial nephrectomy: intraoperative assessment and contribution of frozen section analysis. Urology. 2006 May;67(5):923-6.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_of_the_american_joint_committee_on_cancer_ajcc_for_renal_cell_carcinoma_is_re",
+          "label": "The TNM staging system of the American Joint Committee on Cancer (AJCC) for renal cell carcinoma is recommended.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajcc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_treated_",
+          "label": "By AJCC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically unfeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_descriptors_for_the_surgeon_the_r_classification_may_be_useful_to_indicate_the_known_or_a",
+          "label": "Additional Descriptors\nFor the surgeon, the R classification may be useful to indicate the known or assumed status of the completeness of a surgical excision. For the pathologist, the R classification is relevant to the status of the margins of a surgical resection specimen. That is, tumor involving the resection margin on pathologic examination may be assumed to correspond to residual tumor in the patient and may be classified as macroscopic or microscopic according to the findings at the specimen margin(s).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_andor_vascular_invasion_by_ajcc_convention_vessel_invasion_lymphatic_or_venous_does_not_af",
+          "label": "Lymphatic and/or Vascular Invasion\nBy AJCC convention, vessel invasion (lymphatic or venous) does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category. In all other cases, lymphatic and venous invasion by tumor are coded separately.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_important_to_recognize_that_medical_kidney_diseases_may_be_present_in_nonneoplastic_renal_tiss",
+          "label": "It is important to recognize that medical kidney diseases may be present in nonneoplastic renal tissue in nephrectomy and nephroureterectomy specimens.1,2 Arterionephrosclerosis (or hypertensive nephropathy) and diabetic nephropathy are seen in approximately 30% and 20% of patients, respectively.  Other medical renal diseases that have been identified include thrombotic microangiopathy, focal segmental glomerulosclerosis, membranous glomerulonephritis, amyloidosis, and IgA nephropathy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_findings_of_greater_than_20_global_glomerulosclerosis_or_advanced_diffuse_diabetic_glomeruloscle",
+          "label": "The findings of greater than 20% global glomerulosclerosis or advanced diffuse diabetic glomerulosclerosis are predictive of significant decline in renal function 6 months after radical nephrectomy.3 Evaluation for medical renal disease should be performed in each case; additional special stains, such as PAS and/or Jones methenamine silver stains should be applied if necessary. Consultation with a nephropathologist should be pursued as needed.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "however_no_studies_have_specifically_measured_peritumoral_related_changes_in_the_renal_cortex_some_t",
+          "label": "However, no studies have specifically measured peritumoral-related changes in the renal cortex. Some tumors have no peritumoral changes (oncocytoma is the best example), whereas some large tumors often have a large zone of peritumoral changes compared with smaller tumors. The pseudocapsule may contain sclerotic glomeruli, tubular atrophy and show fibrointimal thickening of arteries, followed by a zone of several millimeters of acute tubular injury, none of which is representative of the cortex elsewhere.4 A judgement whether the amount of nonneoplastic renal parenchyma is sufficient for evaluation of medical kidney diseases should be made on a case by case basis. Two studies have used 1 mm to 5 mm as the cut-off for insufficient renal parenchyma.5,6 Five millimeters of nonneoplastic renal parenchyma is a reasonable recommendation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "henriksen_kj_meehan_sm_chang_a_non_neoplastic_renal_diseases_are_often_unrecognized_in_adult_tumor_n",
+          "label": "Henriksen KJ, Meehan SM, Chang A. Non-neoplastic renal diseases are often unrecognized in adult tumor nephrectomy specimens: a review of 246 cases. Am J Surg Pathol. 2007; 31:1703-1708.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bijol_v_mendez_gp_hurwitz_s_rennke_hg_nose_v_evaluation_of_the_non_neoplastic_pathology_in_tumor_nep",
+          "label": "Bijol V, Mendez GP, Hurwitz S, Rennke HG, Nose V. Evaluation of the non-neoplastic pathology in tumor nephrectomy specimens: predicting the risk of progressive failure. Am J Surg Pathol. 2006; 30:575-584.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thompson_rh_cheville_jc_lohse_cm_et_al_reclassification_of_patients_with_pt3_and_pt4_renal_cell_carc",
+          "label": "Thompson RH, Cheville JC, Lohse CM, et al. Reclassification of patients with pT3 and pT4 renal cell carcinoma improves prognostic accuracy. Cancer. 2005; 104:53-60.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bonsib_sm_pei_y_the_non_neoplastic_kidney_in_tumor_nephrectomy_specimens_what_can_it_show_and_what_i",
+          "label": "Bonsib SM, Pei Y. The non-neoplastic kidney in tumor nephrectomy specimens: what can it show and what is important? Adv Anat Pathol. 2010;17(4):235-250.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "garcia_roig_m_gorin_ma_parra_herran_c_et_al_pathologic_evaluation_of_non_neoplastic_renal_parenchyma",
+          "label": "Garcia-Roig M, Gorin MA, Parra-Herran C, et al. Pathologic evaluation of non-neoplastic renal parenchyma in partial nephrectomy specimens. World J Urol. 2013;8(4):835-839.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "henriksen_kj_meehan_sm_chang_a_nonneoplastic_kidney_diseases_in_adult_tumor_nephrectomy_and_nephrour",
+          "label": "Henriksen KJ, Meehan SM, Chang A. Nonneoplastic kidney diseases in adult tumor nephrectomy and nephroureterectomy specimens: common, harmful, yet underappreciated. Arch Pathol Lab Med. 2009;133(7):1012-1025.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

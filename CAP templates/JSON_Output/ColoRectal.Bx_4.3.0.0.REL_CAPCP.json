@@ -1,0 +1,1567 @@
+{
+  "template_id": "ColoRectal.Bx_4.3.0.0.REL_CAPCP",
+  "organ": "COLON AND RECTUM: Excisional Biopsy (Polypectomy",
+  "protocol_posting_date": "December 2023",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "excisional_biopsy",
+              "label": "Excisional biopsy (polypectomy)"
+            },
+            {
+              "value": "endoscopic_mucosal_resection",
+              "label": "Endoscopic mucosal resection (EMR)"
+            },
+            {
+              "value": "endoscopic_submucosal_dissection",
+              "label": "Endoscopic submucosal dissection (ESD)"
+            },
+            {
+              "value": "transanal_disk_excision",
+              "label": "Transanal disk excision"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_integrity",
+          "label": "Specimen Integrity",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "fragmented",
+              "label": "Fragmented"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cecum",
+              "label": "Cecum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ileocecal_valve",
+              "label": "Ileocecal valve: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ascending_colon",
+              "label": "Ascending colon: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "hepatic_flexure",
+              "label": "Hepatic flexure: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "transverse_colon",
+              "label": "Transverse colon: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "splenic_flexure",
+              "label": "Splenic flexure: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "descending_colon",
+              "label": "Descending colon: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "sigmoid_colon",
+              "label": "Sigmoid colon: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "rectosigmoid_region",
+              "label": "Rectosigmoid region: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "rectum",
+              "label": "Rectum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma"
+            },
+            {
+              "value": "mucinous_adenocarcinoma",
+              "label": "Mucinous adenocarcinoma"
+            },
+            {
+              "value": "signet_ring_cell_carcinoma",
+              "label": "Signet-ring cell carcinoma (poorly cohesive carcinoma)"
+            },
+            {
+              "value": "medullary_adenocarcinoma",
+              "label": "Medullary adenocarcinoma"
+            },
+            {
+              "value": "serrated_adenocarcinoma",
+              "label": "Serrated adenocarcinoma"
+            },
+            {
+              "value": "micropapillary_carcinoma",
+              "label": "Micropapillary carcinoma"
+            },
+            {
+              "value": "adenoma_like_adenocarcinoma",
+              "label": "Adenoma-like adenocarcinoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "undifferentiated_carcinoma",
+              "label": "Undifferentiated carcinoma"
+            },
+            {
+              "value": "carcinoma_with_sarcomatoid_component",
+              "label": "Carcinoma with sarcomatoid component"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "mixed_neuroendocrine_non_neuroendocrine_neoplasm",
+              "label": "Mixed neuroendocrine-non-neuroendocrine neoplasm"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "g4_undifferentiated",
+              "label": "G4, undifferentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "size_of_invasive_carcinoma",
+          "label": "Size of Invasive Carcinoma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "invades_lamina_propria",
+              "label": "Invades lamina propria"
+            },
+            {
+              "value": "invades_muscularis_mucosae",
+              "label": "Invades muscularis mucosae"
+            },
+            {
+              "value": "invades_submucosa",
+              "label": "Invades submucosa"
+            },
+            {
+              "value": "invades_muscularis_propria",
+              "label": "Invades muscularis propria"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "depth_of_sub_mucosal_invasion",
+          "label": "Depth of Sub-mucosal Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "greater_than_or_equal_to_1_mm_and_less_than_2_mm",
+              "label": "Greater than or equal to 1 mm and less than 2 mm"
+            },
+            {
+              "value": "greater_than_2_mm",
+              "label": "Greater than 2 mm"
+            },
+            {
+              "value": "exact_depth_in_millimeters",
+              "label": "Exact depth in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "small_vessel",
+              "label": "Small vessel"
+            },
+            {
+              "value": "large_vessel",
+              "label": "Large vessel (venous)"
+            },
+            {
+              "value": "present",
+              "label": "Present (not otherwise specified)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "tumor_budding_score",
+          "label": "Tumor Budding Score",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "low",
+              "label": "Low (0-4)"
+            },
+            {
+              "value": "intermediate",
+              "label": "Intermediate (5-9)"
+            },
+            {
+              "value": "high",
+              "label": "High (10 or more)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "number_of_tumor_buds",
+          "label": "Number of Tumor Buds",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_number_in_one_hotspot_field",
+              "label": "Specify number in one 'hotspot' field (in an area = 0.785 mm2): _________________ per 'hotspot'",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "field",
+          "label": "field",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "type_of_polyp_in_which_invasive_carcinoma_arose",
+          "label": "Type of Polyp in which Invasive Carcinoma Arose",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "tubular_adenoma",
+              "label": "Tubular adenoma"
+            },
+            {
+              "value": "villous_adenoma",
+              "label": "Villous adenoma"
+            },
+            {
+              "value": "tubulovillous_adenoma",
+              "label": "Tubulovillous adenoma"
+            },
+            {
+              "value": "traditional_serrated_adenoma",
+              "label": "Traditional serrated adenoma"
+            },
+            {
+              "value": "sessile_serrated_adenoma_sessile_serrated_polyp_sessile_serrated_lesion",
+              "label": "Sessile serrated adenoma / sessile serrated polyp / sessile serrated lesion"
+            },
+            {
+              "value": "hamartomatous_polyp",
+              "label": "Hamartomatous polyp"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "polyp_size",
+          "label": "Polyp Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "greatest_polyp_dimension_in_centimeters",
+              "label": "Greatest polyp dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only for polypectomy specimens"
+        },
+        {
+          "field_id": "additional_polyp_dimension_in_centimeters_cm___________________cm",
+          "label": "Additional Polyp Dimension in Centimeters (cm): _________________ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "polyp_configuration",
+          "label": "Polyp Configuration",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "pedunculated_with_stalk",
+              "label": "Pedunculated with stalk"
+            }
+          ],
+          "condition": "required only for polypectomy specimens"
+        },
+        {
+          "field_id": "stalk_length",
+          "label": "Stalk Length",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_length_in_centimeters",
+              "label": "Specify length in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "sessile",
+              "label": "Sessile"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_dimensions",
+          "label": "Tumor Dimension(s)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only for intact endoscopic mucosal resections / transanal disk excision / endoscopic mucosal dissection"
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_orientation_status",
+          "label": "Margin Orientation Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "oriented",
+              "label": "Oriented"
+            },
+            {
+              "value": "unoriented",
+              "label": "Unoriented"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "number_of_specimen_fragments",
+          "label": "Number of Specimen Fragments",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (specimen is intact)"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ],
+          "condition": "required only if specimen is fragmented"
+        },
+        {
+          "field_id": "dimension_of_largest_fragment",
+          "label": "Dimension of Largest Fragment",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_of_the_largest_fragment_in_centimeters",
+              "label": "Greatest dimension of the largest fragment in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_of_the_largest_fragment_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension of the Largest Fragment in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_deep_stalk_margin",
+          "label": "Distance from Invasive Carcinoma to Deep / Stalk Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_peripheral_lateral_mucosal_margin",
+          "label": "Distance from Invasive Carcinoma to Peripheral / Lateral Mucosal Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "deep",
+              "label": "Deep (stalk): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "peripheral_lateral_mucosal",
+              "label": "Peripheral / lateral mucosal"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_non_invasive_tumor",
+          "label": "Margin Status for Non-Invasive Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_adenoma",
+              "label": "All margins negative for adenoma"
+            },
+            {
+              "value": "adenoma_present_at_mucosal_margin",
+              "label": "Adenoma present at mucosal margin: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "ulcerative_colitis",
+              "label": "Ulcerative colitis"
+            },
+            {
+              "value": "crohn_disease",
+              "label": "Crohn disease"
+            },
+            {
+              "value": "other_polyp",
+              "label": "Other polyp(s) (specify type[s]): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "for_reporting_molecular_testing_and_immunohistochemistry_for_mismatch_repair_proteins_and_for_other_",
+          "label": "For reporting molecular testing and immunohistochemistry for mismatch repair proteins, and for other cancer biomarker testing results, the CAP Colorectal Biomarker Template should be used. Pending biomarker studies should be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_applies_to_all_carcinomas_arising_in_the_colon_and_rectum1_it_excludes_carcinomas_of_th",
+          "label": "The protocol applies to all carcinomas arising in the colon and rectum.1 It excludes carcinomas of the vermiform appendix and well-differentiated neuroendocrine tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_colon_is_divided_as_shown_in_figure_1_the_right_colon_is_subdivided_into_the_cecum_and_the_ascen",
+          "label": "The colon is divided as shown in Figure 1. The right colon is subdivided into the cecum and the ascending colon.2 The left colon is subdivided into the descending colon and sigmoid colon (see Table 1).1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_anatomic_subsites_of_the_colon_used_with_permission_of_the_american_joint_committee_on_canc",
+          "label": "Figure 1. Anatomic subsites of the colon. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Ill. The original source for this material is the AJCC Cancer Staging Atlas (2006) edited by Greene et al3 and published by Springer Science and Business Media, LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_anatomic_subsites_of_the_colon_and_rectum",
+          "label": "Table 1. Anatomic Subsites of the Colon and Rectum",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_transition_from_sigmoid_to_rectum_is_marked_by_the_fusion_of_the_tenia_coli_of_the_sigmoid_to_fo",
+          "label": "The transition from sigmoid to rectum is marked by the fusion of the tenia coli of the sigmoid to form the circumferential longitudinal muscle of the rectal wall approximately 12 to 15 cm from the dentate line. The rectum is defined clinically as the distal large intestine commencing opposite the sacral promontory and ending at the anorectal ring, which corresponds to the proximal border of the puborectalis muscle palpable on digital rectal examination (Figure 2).1 When measuring below with a rigid sigmoidoscope, it extends 16 cm from the anal verge.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_anatomic_subsites_of_the_rectum_used_with_permission_of_the_american_joint_committee_on_can",
+          "label": "Figure 2. Anatomic subsites of the rectum. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Ill. The original source for this material is the AJCC Cancer Staging Atlas (2006) edited by Greene et al2 and published by Springer Science and Business Media, LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_located_at_the_border_between_two_subsites_of_the_colon_eg_cecum_and_ascending_colon_are_regi",
+          "label": "Tumors located at the border between two subsites of the colon (e.g., cecum and ascending colon) are registered as tumors of the subsite that is more involved. If two subsites are involved to the same extent, the tumor is classified as an 'overlapping' lesion.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_shah_j_winchester_dp_eds_ajcc_cancer_staging_atlas_new_york_ny_springe",
+          "label": "Greene FL, Compton CC, Fritz AG, Shah J, Winchester DP, eds. AJCC Cancer Staging Atlas. New York, NY: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fielding_lp_arsenault_pa_chapuis_ph_et_al_clinicopathological_staging_for_colorectal_cancer_an_inter",
+          "label": "Fielding LP, Arsenault PA, Chapuis PH, et al. Clinicopathological staging for colorectal cancer: an International Documentation System (IDS) and an International Comprehensive Anatomical Terminology (ICAT). J Gastroenterol Hepatol. 1991;6(4):325-344.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wittekind_c_henson_de_hutter_rvp_sobin_lh_eds_tnm_supplement_a_commentary_on_uniform_use_2nd_ed_new_",
+          "label": "Wittekind C, Henson DE, Hutter RVP, Sobin LH, eds. TNM Supplement: A Commentary on Uniform Use. 2nd ed. New York, NY: Wiley-Liss; 2001.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_proposed_by_the_world_health_organization",
+          "label": "For consistency in reporting, the histologic classification proposed by the World Health Organization (WHO) is recommended.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_histologic_types_of_colorectal_carcinoma_that_have_been_shown_to_have_adverse_prognostic_signifi",
+          "label": "The histologic types of colorectal carcinoma that have been shown to have adverse prognostic significance independent of stage are signet-ring cell carcinoma2 and poorly differentiated neuroendocrine carcinoma, such as small cell carcinoma (poorly differentiated neuroendocrine carcinoma).3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "medullary_carcinoma_is_a_distinctive_histologic_type_strongly_associated_with_high_levels_of_microsa",
+          "label": "Medullary carcinoma is a distinctive histologic type strongly associated with high levels of microsatellite instability (MSI-H), indicative of defects in DNA repair gene function. Medullary carcinoma may occur either sporadically or in association with Lynch syndrome.4,5,6  This tumor type is characterized by solid growth in nested, organoid, or trabecular patterns, with no immunohistochemical evidence of neuroendocrine differentiation. Medullary carcinomas are also characterized by numerous tumor infiltrating lymphocytes and a better prognosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "micropapillary_carcinoma_is_characterized_by_small_tight_clusters_of_tumor_cells_in_cleft_like_space",
+          "label": "Micropapillary carcinoma is characterized by small, tight clusters of tumor cells in cleft-like spaces, and is often present in association with conventional adenocarcinoma. This variant is strongly associated with lymphovascular invasion and lymph node metastasis.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "serrated_adenocarcinomas_are_characterized_by_neoplastic_glands_showing_prominent_serrations_tumor_c",
+          "label": "Serrated adenocarcinomas are characterized by neoplastic glands showing prominent serrations, tumor cells with basal nuclei and eosinophilic cytoplasm, and no or minimal luminal necrosis. These tumors are thought to be related to traditional serrated adenomas and may have a more aggressive course than conventional adenocarcinoma.8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kang_h_oconnell_jb_maggard_ma_sack_j_ko_cy_a_10_year_outcomes_evaluation_of_mucinous_and_signet_ring",
+          "label": "Kang H, O'Connell JB, Maggard MA, Sack J, Ko CY. A 10-year outcomes evaluation of mucinous and signet-ring cell carcinoma of the colon and rectum. Dis Colon Rectum. 2005;48(6):1161-1168.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bernick_pe_klimstra_ds_shia_j_et_al_neuroendocrine_carcinomas_of_the_colon_and_rectum_dis_colon_rect",
+          "label": "Bernick PE, Klimstra DS, Shia J, et al. Neuroendocrine carcinomas of the colon and rectum. Dis Colon Rectum. 2004;47(2):163-169.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wick_mr_vitsky_jl_ritter_jh_swanson_pe_mills_se_sporadic_medullary_carcinoma_of_the_colon_a_clinicop",
+          "label": "Wick MR, Vitsky JL, Ritter JH, Swanson PE, Mills SE. Sporadic medullary carcinoma of the colon: a clinicopathologic comparison with nonhereditary poorly differentiated enteric-type adenocarcinoma and neuroendocrine colorectal carcinoma. Am J Clin Pathol. 2005;123:56-65.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pyo_js_sohn_jh_kang_g_medullary_carcinoma_in_the_colorectum_a_systematic_review_and_meta_analysis_hu",
+          "label": "Pyo JS, Sohn JH, Kang G. Medullary carcinoma in the colorectum: a systematic review and meta-analysis. Hum Pathol. 2016;53:91-96.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "knox_rd_luey_n_sioson_l_et_al_medullary_colorectal_carcinoma_revisited_a_clinical_and_pathological_s",
+          "label": "Knox RD, Luey N, Sioson L, et al. Medullary colorectal carcinoma revisited: a clinical and pathological study of 102 cases. Ann Surg Oncol. 2015;22(9):2988-96.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "haupt_b_ro_jy_schwartz_mr_et_al_colorectal_adenocarcinoma_with_micropapillary_pattern_and_its_associ",
+          "label": "Haupt B, Ro JY, Schwartz MR, et al. Colorectal adenocarcinoma with micropapillary pattern and its association with lymph node metastasis. Mod Pathol. 2007;20:729–733.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "garcía_solano_j_pérez_guillermo_m_conesa_zamora_p_et_al_clinicopathologic_study_of_85_colorectal_ser",
+          "label": "García-Solano J, Pérez-Guillermo M, Conesa-Zamora P, et al. Clinicopathologic study of 85 colorectal serrated adenocarcinomas: further insights into the full recognition of a new subset of colorectal carcinoma. Hum Pathol. 2010;41(10):1359-1368.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_number_of_grading_systems_for_colorectal_cancer_have_been_suggested_but_a_single_widely_accepted_a",
+          "label": "A number of grading systems for colorectal cancer have been suggested, but a single widely accepted and uniformly used standard for grading is lacking. Most systems stratify tumors into 3 or 4 grades as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1\tWell differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": ">95% gland formation"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2\tModerately differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "50-95% gland formation"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated",
+          "label": "Grade 3\tPoorly differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "<50% gland formation"
+        },
+        {
+          "field_id": "grade_4_undifferentiated",
+          "label": "Grade 4\tUndifferentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "no gland formation or mucin; no squamous or neuroendocrine differentiation"
+        },
+        {
+          "field_id": "despite_a_significant_degree_of_interobserver_variability1_histologic_grade_has_been_shown_to_be_an_",
+          "label": "Despite a significant degree of interobserver variability1 histologic grade has been shown to be an important prognostic factor in many studies,2,3 with strong correlation between poor differentiation and adverse outcome.4 While some studies have stratified grade into a two-tiered low- and high-grade system, a three- or four-tier system is more commonly used for gastrointestinal carcinomas. The AJCC has specified use of a four-tiered grading system for colorectal cancer for the 8th edition of the TNM manual.5 Pathologists should use the four-tier histologic grading scheme as specified above to prevent errors in data recording. As per WHO, the grading scheme applies to adenocarcinoma, not otherwise specified, and not to histologic variants. For example, medullary carcinomas behave as low grade tumors even though they may appear poorly differentiated. This grading scheme is also not applicable to poorly differentiated neuroendocrine carcinomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chandler_i_houlston_rs_interobserver_agreement_in_grading_of_colorectal_cancers_findings_from_a_nati",
+          "label": "Chandler I, Houlston RS. Interobserver agreement in grading of colorectal cancers-findings from a nationwide web-based survey of histopathologists. Histopathology. 2008;52(4):494-499.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cho_yb_chun_hk_yun_hr_kim_hc_yun_sh_lee_wy_histological_grade_predicts_survival_time_associated_with",
+          "label": "Cho YB, Chun HK, Yun HR, Kim HC, Yun SH, Lee WY. Histological grade predicts survival time associated with recurrence after resection for colorectal cancer. Hepatogastroenterology. 2009;56(94-95):1335-1340.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "derwinger_k_kodeda_k_bexe_lindskog_e_taflin_h_tumour_differentiation_grade_is_associated_with_tnm_st",
+          "label": "Derwinger K, Kodeda K, Bexe-Lindskog E, Taflin H. Tumour differentiation grade is associated with TNM staging and the risk of node metastasis in colorectal cancer. Acta Oncol. 2010;49(1):57-62.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "barresi_v_reggiani_bonetti_l_ieni_a_domati_f_tuccari_g_prognostic_significance_of_grading_based_on_t",
+          "label": "Barresi V, Reggiani Bonetti L, Ieni A, Domati F, Tuccari G. Prognostic significance of grading based on the counting of poorly differentiated clusters in colorectal mucinous adenocarcinoma. Hum Pathol. 2015;46(11):1722-1729.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "polypectomy_and_local_excisions_for_early_crc_may_suffice_as_the_definitive_treatment_of_early_color",
+          "label": "Polypectomy and local excisions for early CRC may suffice as the definitive treatment of early colorectal carcinoma (pT1 tumors) and hence proper assessment of the specimens is needed to assess the risk of residual carcinoma and adverse outcomes (nodal or distant metastasis).1 The risk assessment based on various histological features forms the basis of subsequent management of the patient, especially oncologic surgical resection.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenomatous_polyps_either_sessile_or_pedunculated_containing_invasive_adenocarcinoma_that_extends_th",
+          "label": "Adenomatous polyps, either sessile or pedunculated, containing invasive adenocarcinoma that extends through the muscularis mucosa into the submucosa have been defined as malignant polyps.1 The carcinoma in such cases can be focal or extensive. The definition excludes adenomas with high-grade dysplasia or intramucosal carcinoma (invasive carcinoma limited to the lamina propria or invading no deeper than the muscularis mucosa), because these polyps possess negligible biological potential for metastasis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignant_polyps_can_be_removed_by_endoscopic_polypectomy_or_local_excision_submucosal_excisiondisse",
+          "label": "Malignant polyps can be removed by endoscopic polypectomy or local excision (submucosal excision/dissection, or transanal disc excision). Such specimens require evaluation of a variety of histologic features that can predict the risk of any adverse outcome (i.e., lymph node metastasis or local recurrence from residual malignancy) following polypectomy and help decide further managment.1,2,3,4 Histologic features shown to have prognostic significance and helpful in determining the need for further surgical treatment include",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_type_and_grade",
+          "label": "Histologic type and grade",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "status_of_the_resection_margin",
+          "label": "Status of the resection margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphaticvenous_vessel_involvement",
+          "label": "Lymphatic/venous vessel involvement",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_budding",
+          "label": "Tumor budding",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "depth_of_invasion",
+          "label": "Depth of invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "an_increased_risk_of_adverse_outcome_has_been_shown_to_be_associated_with",
+          "label": "An increased risk of adverse outcome has been shown to be associated with",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_grade_carcinoma",
+          "label": "High-grade carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_at_or_less_than_1_mm_from_the_resection_margin",
+          "label": "Tumor at or less than 1 mm from the resection margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphaticvenous_involvement",
+          "label": "Lymphatic/venous involvement",
+          "required": true,
+          "type": "free_text",
+          "condition": "see note E"
+        },
+        {
+          "field_id": "high_grade_tumor_budding",
+          "label": "High-grade tumor budding",
+          "required": true,
+          "type": "free_text",
+          "condition": "see note F"
+        },
+        {
+          "field_id": "deep_submucosal_invasion",
+          "label": "Deep submucosal invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade_and_type_should_be_reported_as_noted_earlier_notes_b_and_c_certain_histologic_types",
+          "label": "Histologic grade and type should be reported as noted earlier (Notes B and C). Certain histologic types are by definition considered high grade (e.g., micropapillary-type, signet-ring cell-type, etc.). The evaluation of margin, especially the cauterized stalk margin for pedunculated polyps and deep resection margin for local excisions is considered important. Lymphatic and vascular involvement also needs to be evaluated and is often aided by special stains.5 Tumor budding that was earlier recognized as a “poor differentiation at the advancing edge of the tumor” remains one of most important independent histologic features for adverse outcomes in this setting (see note F). Assessment of the depth of submucosal invasion in early colon carcinoma has also been shown to be important in predicting adverse outcomes, but the methodology has varied and evolved with time.1,6,7,8 In pedunculated polyps the depth of invasion was evaluated as four levels (head, neck, stalk, and beyond stalk) called Haggitt levels.6 However, this is difficult to apply in sessile polyps and poorly oriented or fragmented specimens. Submucosal involvement has also been divided into superficial, mid, and deep levels (Kikuchi levels sm1, sm2 and sm3), but require presence of the entire submucosa in the specimen and hence cannot be applied to pedunculated polyps and sessile polyps that typically contain only a part of the submucosa.7 Other systems use actual measurement of depth of invasion and show the risk of nodal metastasis is none to minimal when the depth of invasion is < 1mm and becomes significant with invasion of ≥2mm.3,4,8 However, it can be difficult to accurately assess the depth or extent of submucosal involvement due to improper orientation and when the muscularis mucosae is completely destroyed due to tumor invasion and extensive desmoplasia. In such a setting, it has been suggested to draw a line joining preserved muscularis mucosae at the edges of the tumor to indicate the likely level of muscularis mucosae or when that is not possible, measure the depth of invasion from the surface of the tumor. Each method for evaluating submucosal involvement has certain limitations, and while one is not clearly superior to the other, the Haggitt levels and Kikuchi levels can only be applied to a small subset of malignant polyps and hence the actual measurement of the depth appears most practical for the sake of consistency and the recommended method for malignant polyps.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "williams_j_g_r_d_pullan_j_hill_p_g_horgan_e_salmo_g_n_buchanan_s_rasheed_et_al_management_of_the_mal",
+          "label": "Williams, J. G., R. D. Pullan, J. Hill, P. G. Horgan, E. Salmo, G. N. Buchanan, S. Rasheed, et al. 'Management of the Malignant Colorectal Polyp: Acpgbi Position Statement.' Colorectal Dis 15 Suppl 2 (Aug 2013): 1-38.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pai_r_k_y_w_cheng_m_jakubowski_b_l_shadrach_t_p_plesec_and_r_k_pai_colorectal_carcinomas_with_submuc",
+          "label": "Pai, R. K., Y. W. Cheng, M. Jakubowski, B. L. Shadrach, T. P. Plesec, and R. K. Pai. 'Colorectal Carcinomas with Submucosal Invasion (Pt1): Analysis of Histopathologic and Molecular Factors Predicting Lymph Node Metastasis.' Mod Pathol 30, no. 3 (Mar 2017): 469.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kitajima_k_t_fujimori_s_fujii_j_takeda_y_ohkura_h_kawamata_t_kumamoto_et_al_correlations_between_lym",
+          "label": "Kitajima, K., T. Fujimori, S. Fujii, J. Takeda, Y. Ohkura, H. Kawamata, T. Kumamoto, et al. 'Correlations between Lymph Node Metastasis and Depth of Submucosal Invasion in Submucosal Invasive Colorectal Carcinoma: A Japanese Collaborative Study.' [In eng]. Multicenter Study. J Gastroenterol 39, no. 6 (Jun 2004): 534-43. https://doi.org/10.1007/s00535-004-1339-4. http://www.ncbi.nlm.nih.gov/pubmed/15235870.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ueno_h_h_mochizuki_y_hashiguchi_h_shimazaki_s_aida_k_hase_s_matsukuma_et_al_risk_factors_for_an_adve",
+          "label": "Ueno, H., H. Mochizuki, Y. Hashiguchi, H. Shimazaki, S. Aida, K. Hase, S. Matsukuma, et al. 'Risk Factors for an Adverse Outcome in Early Invasive Colorectal Carcinoma.' [In eng]. Gastroenterology 127, no. 2 (Aug 2004): 385-94.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wada_h_m_shiozawa_n_sugano_s_morinaga_y_rino_m_masuda_m_akaike_and_y_miyagi_lymphatic_invasion_ident",
+          "label": "Wada, H., M. Shiozawa, N. Sugano, S. Morinaga, Y. Rino, M. Masuda, M. Akaike, and Y. Miyagi. 'Lymphatic Invasion Identified with D2-40 Immunostaining as a Risk Factor of Nodal Metastasis in T1 Colorectal Cancer.' [In Eng]. Int J Clin Oncol (Nov 1, 2012).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "haggitt_r_c_r_e_glotzbach_e_e_soffer_and_l_d_wruble_prognostic_factors_in_colorectal_carcinomas_aris",
+          "label": "Haggitt, R. C., R. E. Glotzbach, E. E. Soffer, and L. D. Wruble. 'Prognostic Factors in Colorectal Carcinomas Arising in Adenomas: Implications for Lesions Removed by Endoscopic Polypectomy.' Gastroenterology 89, no. 2 (Aug 1985): 328-36.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nascimbeni_r_l_j_burgart_s_nivatvongs_and_d_r_larson_risk_of_lymph_node_metastasis_in_t1_carcinoma_o",
+          "label": "Nascimbeni, R., L. J. Burgart, S. Nivatvongs, and D. R. Larson. 'Risk of Lymph Node Metastasis in T1 Carcinoma of the Colon and Rectum.' [In eng]. Review. Dis Colon Rectum 45, no. 2 (Feb 2002): 200-6.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tominaga_k_y_nakanishi_s_nimura_k_yoshimura_y_sakai_and_t_shimoda_predictive_histopathologic_factors",
+          "label": "Tominaga, K., Y. Nakanishi, S. Nimura, K. Yoshimura, Y. Sakai, and T. Shimoda. 'Predictive Histopathologic Factors for Lymph Node Metastasis in Patients with Nonpedunculated Submucosal Invasive Colorectal Carcinoma.' Dis Colon Rectum 48, no. 1 (Jan 2005): 92-100.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_recommended_that_small_vessel_vascular_invasion_should_be_reported_separately_from_venous_larg",
+          "label": "It is recommended that small vessel vascular invasion should be reported separately from venous (large vessel) invasion. Small vessel invasion indicates tumor involvement of thin-walled structures lined by endothelium, without an identifiable smooth muscle layer or elastic lamina. Small vessels include lymphatics, capillaries, and postcapillary venules. Differentiation of lymphatics from other vascular channels requires application of lymphatic specific endothelial markers like D2-40.1 Small vessel invasion is associated with lymph node metastasis and has been shown to be an independent indicator of adverse outcome in several studies.2,3 The higher prognostic significance of extramural small vessel invasion has been suggested,4 but the importance of anatomic location in small vessel invasion (extramural or intramural) is not well defined.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_involving_endothelium_lined_spaces_with_an_identifiable_smooth_muscle_layer_or_elastic_lamina_",
+          "label": "Tumor involving endothelium-lined spaces with an identifiable smooth muscle layer or elastic lamina is considered venous (large vessel) invasion. Circumscribed tumor nodules surrounded by an elastic lamina on hematoxylin-eosin (H&E) or elastic stain are also considered venous invasion. Venous invasion can be extramural (beyond muscularis propria) or intramural (submucosa or muscularis propria). Extramural venous invasion has been demonstrated by multivariate analysis to be an independent adverse prognostic factor in multiple studies and is a risk factor for liver metastasis.4 The significance of intramural venous invasion is less clear.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perineural_invasion_has_been_shown_to_be_an_independent_indicator_of_poor_prognosis567_while_some_se",
+          "label": "Perineural invasion has been shown to be an independent indicator of poor prognosis.5,6,7 While some series did not find perineural invasion to be a significant predictive factor in stage II disease,8,9 many studies have confirmed its adverse effect on survival in stage II disease.3,10 Extramural perineural invasion may have a greater adverse prognostic effect,6 but the distinction between intramural and extramural perineural invasion has not been well studied.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wada_h_m_shiozawa_n_sugano_s_morinaga_y_rino_m_masuda_m_akaike_and_y_miyagi_lymphatic_invasion_ident",
+          "label": "Wada, H., M. Shiozawa, N. Sugano, S. Morinaga, Y. Rino, M. Masuda, M. Akaike, and Y. Miyagi. Lymphatic Invasion Identified with D2-40 Immunostaining as a Risk Factor of Nodal Metastasis in T1 Colorectal Cancer. [In Eng]. Int J Clin Oncol (Nov 1, 2012).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lim_sb_yu_cs_jang_sj_et_al_prognostic_significance_of_lymphovascular_invasion_in_sporadic_colorectal",
+          "label": "Lim SB, Yu CS, Jang SJ, et al. Prognostic significance of lymphovascular invasion in sporadic colorectal cancer. Dis Colon Rectum. 2010;53(4):377-384.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "santos_c_lópez_doriga_a_navarro_m_et_al_clinicopathological_risk_factors_of_stage_ii_colon_cancer_re",
+          "label": "Santos C, López-Doriga A, Navarro M, et al. Clinicopathological risk factors of Stage II colon cancer: results of a prospective study. Colorectal Dis. 2013;15(4):414-422.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "betge_j_pollheimer_mj_lindtner_ra_et_al_intramural_and_extramural_vascular_invasion_in_colorectal_ca",
+          "label": "Betge J, Pollheimer MJ, Lindtner RA, et al. Intramural and extramural vascular invasion in colorectal cancer: prognostic significance and quality of pathology reporting. Cancer. 2012;118(3):628-638.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "liebig_c_ayala_g_wilks_j_et_al_perineural_invasion_is_an_independent_predictor_of_outcome_in_colorec",
+          "label": "Liebig C, Ayala G, Wilks J, et al. Perineural invasion is an independent predictor of outcome in colorectal cancer. J Clin Oncol. 2009;27(31):5131-5137.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ueno_h_shirouzu_k_eishi_y_et_al_study_group_for_perineural_invasion_projected_by_the_japanese_societ",
+          "label": "Ueno H, Shirouzu K, Eishi Y, et al. Study Group for Perineural Invasion projected by the Japanese Society for Cancer of the Colon and Rectum (JSCCR). Characterization of perineural invasion as a component of colorectal cancer staging. Am J Surg Pathol. 2013;37(10):1542-1549.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gomez_d_zaitoun_am_de_rosa_a_et_al_critical_review_of_the_prognostic_significance_of_pathological_va",
+          "label": "Gomez D, Zaitoun AM, De Rosa A, et al. Critical review of the prognostic significance of pathological variables in patients undergoing resection for colorectal liver metastases. HPB (Oxford). 2014;16(9):836-844.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "peng_sl_thomas_m_ruszkiewicz_a_et_al_conventional_adverse_features_do_not_predict_response_to_adjuva",
+          "label": "Peng SL, Thomas M, Ruszkiewicz A, et al. Conventional adverse features do not predict response to adjuvant chemotherapy in stage II colon cancer. ANZ J Surg. 2014;84(11):837-841.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ozturk_ma_dane_f_karagoz_s_et_al_is_perineural_invasion_pn_a_determinant_of_disease_free_survival_in",
+          "label": "Ozturk MA, Dane F, Karagoz S, et al. Is perineural invasion (PN) a determinant of disease free survival in early stage colorectal cancer? Hepatogastroenterology. 2015;62(137):59-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "huh_jw_kim_hr_kim_yj_prognostic_value_of_perineural_invasion_in_patients_with_stage_ii_colorectal_ca",
+          "label": "Huh JW, Kim HR, Kim YJ. Prognostic value of perineural invasion in patients with stage II colorectal cancer. Ann Surg Oncol. 2010;17(8):2066-2072.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_single_cells_or_small_clusters_of_less_than_five_cells_at_the_advancing_front_of_the",
+          "label": "The presence of single cells or small clusters of less than five cells at the advancing front of the tumor is considered as peritumoral tumor budding. Numerous studies have shown that high tumor budding in adenocarcinoma arising in polyp is a significant risk factor for nodal involvement,1,2,3,4,5,6 with tumor budding being the most significant factor in some studies.3 Different criteria for evaluating and reporting tumor budding have been followed in literature. An international tumor budding consensus conference (ITBCC) in 2016 recommended the following criteria for evaluating tumor budding7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "1_tumor_budding_counts_should_be_done_on_he_sections_in_cases_of_obscuring_factors_like_inflammation",
+          "label": "(1) Tumor budding counts should be done on H&E sections. In cases of obscuring factors like inflammation, immunohistochemistry for keratin can be obtained to assess the advancing edge for tumor buds, but the scoring should be done on H&E sections.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "2_tumor_budding_should_be_reported_by_selecting_a_hotspot_chosen_after_review_of_all_available_slide",
+          "label": "(2) Tumor budding should be reported by selecting a “hotspot” chosen after review of all available slides with invasive tumor. The total number of buds should be reported in an area measuring 0.785 mm2, which corresponds to 20x field in some microscopes (use appropriate conversion for other microscopes, see table below).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "3_both_total_number_of_buds_and_a_three_tier_score_based_on_0785_mm2_field_area_should_be_reported_l",
+          "label": "(3) Both total number of buds and a three-tier score (based on 0.785 mm2 field area) should be reported: low (0-4 buds), intermediate (5-9 buds), and high (10 or more buds).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_is_not_a_required_element_but_it_is_recommended_that_this_feature_be_reported_for_cancers_arisi",
+          "label": "This is not a required element, but it is recommended that this feature be reported for cancers arising in polyps (see note D) as well as for stage I and II cases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_itbcc_normalization_table_for_reporting_tumor_budding_according_to_microscope",
+          "label": "Table. ITBCC Normalization Table for Reporting Tumor Budding According to Microscope.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_obtain_tumor_bud_count_for_your_field_of_view_divide_by_the_normalization_number",
+          "label": "To obtain tumor bud count for your field of view, divide by the normalization number.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bosch_sl_teerenstra_s_de_wilt_jh_cunningham_c_nagtegaal_id_predicting_lymph_node_metastasis_in_pt1_c",
+          "label": "Bosch SL, Teerenstra S, de Wilt JH, Cunningham C, Nagtegaal ID. Predicting lymph node metastasis in pT1 colorectal cancer: a systematic review of risk factors providing rationale for therapy decisions. Endoscopy. 2013;45(10):827-834.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ueno_h_mochizuki_h_hashiguchi_y_et_al_risk_factors_for_an_adverse_outcome_in_early_invasive_colorect",
+          "label": "Ueno H, Mochizuki H, Hashiguchi Y, et al. Risk factors for an adverse outcome in early invasive colorectal carcinoma. Gastroenterology. 2004 ;127(2):385-394.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "choi_dh_sohn_dk_chang_hj_lim_sb_choi_hs_jeong_sy_indications_for_subsequent_surgery_after_endoscopic",
+          "label": "Choi DH, Sohn DK, Chang HJ, Lim SB, Choi HS, Jeong SY. Indications for subsequent surgery after endoscopic resection of submucosally invasive colorectal carcinomas: a prospective cohort study. Dis Colon Rectum. 2009;52(3):438-445.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "petrelli_f_pezzica_e_cabiddu_m_et_al_tumour_budding_and_survival_in_stage_ii_colorectal_cancer_a_sys",
+          "label": "Petrelli F, Pezzica E, Cabiddu M, et al. Tumour Budding and Survival in Stage II Colorectal Cancer: a Systematic Review and Pooled Analysis. J Gastrointest Cancer. 2015;46(3):212-218.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "graham_rp_vierkant_ra_tillmans_ls_et_al_tumor_budding_in_colorectal_carcinoma_confirmation_of_progno",
+          "label": "Graham RP, Vierkant RA, Tillmans LS, et al. Tumor budding in colorectal carcinoma: confirmation of prognostic significance and histologic cutoff in a population-based cohort. Am J Surg Pathol. 2015;39(10):1340-1346.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "koelzer_vh_zlobec_i_lugli_a_tumor_budding_in_colorectal_cancer_ready_for_diagnostic_practice_hum_pat",
+          "label": "Koelzer VH, Zlobec I, Lugli A. Tumor budding in colorectal cancer-ready for diagnostic practice? Hum Pathol. 2016;47(1):4-19.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lugli_a_kirsch_r_ajioka_y_bosman_f_et_al_recommendations_for_reporting_tumor_budding_in_colorectal_c",
+          "label": "Lugli A, Kirsch R, Ajioka Y, Bosman F, et al. Recommendations for reporting tumor budding in colorectal cancer based on the International Tumor Budding Consensus Conference (ITBCC) 2016. Mod Pathol. 2017;30:1299-1311.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_adenocarcinoma_can_arise_in_adenomatous_tubular_tubulovillous_or_villous_or_serrated_sessile_ser",
+          "label": "The adenocarcinoma can arise in adenomatous (tubular, tubulovillous, or villous) or serrated (sessile serrated adenoma/polyp or traditional serrated adenoma) polyp. Sessile serrated adenoma often develops cytologic dysplasia resembling tubular adenoma during neoplastic progression. These are presumed to be the precursors of right-sided adenocarcinomas with high levels of microsatellite instability (MSI-H).1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rex_dk_ahnen_dj_baron_ja_et_al_serrated_lesions_of_the_colorectum_review_and_recommendations_from_an",
+          "label": "Rex DK, Ahnen DJ, Baron JA, et al. Serrated lesions of the colorectum: review and recommendations from an expert panel. Am J Gastroenterol. 2012;107(9):1315-1330.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "universal_testing_for_microsatellite_instability_andor_status_of_dna_mismatch_repair_enzymes_by_immu",
+          "label": "Universal testing for microsatellite instability and/or status of DNA mismatch repair enzymes by immunohistochemistry is recommended by the EGAPP guidelines.1,2 MSI-high cancers are associated with right-sided location, tumor infiltrating lymphocytes, Crohn-like infiltrate, pushing borders, mucinous/signet ring/medullary subtypes, intratumoral heterogeneity (mixed conventional, mucinous, and poorly differentiated carcinoma), high-grade histology, and lack of dirty necrosis.3,4 In view of recommendations for universal testing and chance of missing cases of Lynch syndrome with testing based on Bethesda guidelines and implications for treatment with immune check-point inhibitors,4 evaluation of histologic features associated with MSI is redundant and is no longer included in the synoptic comment.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "further_details_about_mismatch_repair_enzyme_immunohistochemistry_and_pcr_for_msi_testing_as_well_as",
+          "label": "Further details about mismatch repair enzyme immunohistochemistry and PCR for MSI testing, as well as other ancillary molecular testing in colorectal cancer (such as KRAS, BRAF, Her2, etc.) can be found in the CAP Colon and Rectum Biomarkers protocol.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "evaluation_of_genomic_applications_in_practice_and_prevention_egapp_working_group_recommendations_fr",
+          "label": "Evaluation of Genomic Applications in Practice and Prevention (EGAPP) Working Group. Recommendations from the EGAPP Working Group: genetic testing strategies in newly diagnosed individuals with colorectal cancer aimed at reducing morbidity and mortality from Lynch syndrome in relatives. Genet Med. 2009;11(1):35-41.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ladabaum_u_wang_g_et_al_strategies_to_identify_the_lynch_syndrome_among_patients_with_colorectal_can",
+          "label": "Ladabaum U, Wang G, et al. Strategies to identify the Lynch syndrome among patients with colorectal cancer: a cost-effectiveness analysis. Ann Intern Med. 2011;155(2):69-79.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greenson_jk_bonner_jd_ben_yzhak_o_et_al_phenotype_of_microsatellite_unstable_colorectal_carcinomas_a",
+          "label": "Greenson JK, Bonner JD, Ben-Yzhak O, et al. Phenotype of microsatellite unstable colorectal carcinomas. Am J Surg Pathol. 2003;27(5):563-570.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "umar_a_boland_cr_terdiman_jp_et_al_revised_bethesda_guidelines_for_hereditary_nonpolyposis_colorecta",
+          "label": "Umar A, Boland CR, Terdiman JP, et al. Revised Bethesda guidelines for hereditary nonpolyposis colorectal cancer (Lynch syndrome) and microsatellite instability. J Natl Cancer Inst. 2004;96(4):261-268.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

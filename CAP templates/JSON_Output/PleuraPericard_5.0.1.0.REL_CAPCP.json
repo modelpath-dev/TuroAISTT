@@ -1,0 +1,1526 @@
+{
+  "template_id": "PleuraPericard_5.0.1.0.REL_CAPCP",
+  "organ": "DIFFUSE PLEURAL MESOTHELIOMA",
+  "protocol_posting_date": "June 2025",
+  "standards": [
+    "AJCC 9"
+  ],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "clinical_history",
+          "label": "Clinical History",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "neoadjuvant_therapy_performed",
+              "label": "Neoadjuvant therapy performed (specify type, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "specimen",
+          "label": "SPECIMEN",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "extrapleural_pneumonectomy",
+              "label": "Extrapleural pneumonectomy"
+            },
+            {
+              "value": "extended_pleurectomy_decortication",
+              "label": "Extended pleurectomy / decortication"
+            },
+            {
+              "value": "pleurectomy_decortication",
+              "label": "Pleurectomy / decortication"
+            },
+            {
+              "value": "partial_pleurectomy",
+              "label": "Partial pleurectomy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "localized",
+              "label": "Localized"
+            },
+            {
+              "value": "diffuse",
+              "label": "Diffuse"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "parietal_pleura",
+              "label": "Parietal pleura: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "visceral_pleura",
+              "label": "Visceral pleura: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "diaphragm",
+              "label": "Diaphragm: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "condition": "for localized tumors only"
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "epithelioid_mesothelioma",
+              "label": "Epithelioid mesothelioma"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "architectural_pattern_percentages_must_total_100",
+          "label": "Architectural Pattern (percentages must total 100%)",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "tubulopapillary",
+              "label": "Tubulopapillary: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "trabecular",
+              "label": "Trabecular: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "adenomatoid",
+              "label": "Adenomatoid: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "solid",
+              "label": "Solid: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "micropapillary",
+              "label": "Micropapillary: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "cytological_features",
+          "label": "Cytological Features",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "rhabdoid",
+              "label": "Rhabdoid"
+            },
+            {
+              "value": "deciduoid",
+              "label": "Deciduoid"
+            },
+            {
+              "value": "small_cell",
+              "label": "Small cell"
+            },
+            {
+              "value": "clear_cell",
+              "label": "Clear cell"
+            },
+            {
+              "value": "signet_ring",
+              "label": "Signet ring"
+            },
+            {
+              "value": "lymphohistiocytoid",
+              "label": "Lymphohistiocytoid"
+            },
+            {
+              "value": "pleomorphic",
+              "label": "Pleomorphic"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "stromal_features",
+          "label": "Stromal Features",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "myxoid_predominant",
+              "label": "Myxoid predominant"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "sarcomatoid_mesothelioma",
+              "label": "Sarcomatoid mesothelioma"
+            }
+          ]
+        },
+        {
+          "field_id": "cytological_features",
+          "label": "Cytological Features",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "lymphohistiocytoid",
+              "label": "Lymphohistiocytoid"
+            },
+            {
+              "value": "transitional",
+              "label": "Transitional"
+            },
+            {
+              "value": "pleomorphic",
+              "label": "Pleomorphic"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "stromal_features",
+          "label": "Stromal Features",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "desmoplastic",
+              "label": "Desmoplastic"
+            },
+            {
+              "value": "with_heterologous_differentiation",
+              "label": "With heterologous differentiation"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "biphasic_mesothelioma",
+              "label": "Biphasic mesothelioma"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_sarcomatoid_pattern",
+          "label": "Percentage of Sarcomatoid Pattern",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nuclear_atypia_score",
+          "label": "Nuclear Atypia Score#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1",
+              "label": "1 (mild)"
+            },
+            {
+              "value": "2",
+              "label": "2 (moderate)"
+            },
+            {
+              "value": "3",
+              "label": "3 (severe)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Used to determine histologic grade of epithelioid mesothelioma"
+        },
+        {
+          "field_id": "mitotic_count_score",
+          "label": "Mitotic Count Score#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1",
+              "label": "1 (low, up to 1 mitosis per 2 mm2)"
+            },
+            {
+              "value": "2",
+              "label": "2 (intermediate, 2 to 4 mitoses per 2 mm2)"
+            },
+            {
+              "value": "3",
+              "label": "3 (high, 5 or more mitoses per 2 mm2)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Used to determine histologic grade of epithelioid mesothelioma"
+        },
+        {
+          "field_id": "nuclear_grade",
+          "label": "Nuclear Grade#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1",
+              "label": "1 (sum score of 2 or 3)"
+            },
+            {
+              "value": "2",
+              "label": "2 (sum score of 4 or 5)"
+            },
+            {
+              "value": "3",
+              "label": "3 (sum score of 6)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "sum of nuclear atypia and mitotic count scores",
+          "guidance": "Used to determine histologic grade of epithelioid mesothelioma"
+        },
+        {
+          "field_id": "necrosis",
+          "label": "Necrosis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "low_grade",
+              "label": "Low grade (nuclear grades 1 and 2 without necrosis)"
+            },
+            {
+              "value": "high_grade",
+              "label": "High grade (nuclear grade 2 with necrosis, or nuclear grade 3 with or without necrosis)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "condition": "required only for epithelioid mesothelioma"
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "limited_to_parietal_pleura_without_involvement_of_ipsilateral_visceral_mediastinal_or_diaphragmatic",
+              "label": "Limited to parietal pleura without involvement of ipsilateral visceral, mediastinal, or diaphragmatic"
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "pleura",
+          "label": "pleura",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "limited_to_parietal_pleura_with_focal_involvement_of_ipsilateral_visceral_mediastinal_or_diaphragmat",
+              "label": "Limited to parietal pleura with focal involvement of ipsilateral visceral, mediastinal, or diaphragmatic"
+            }
+          ]
+        },
+        {
+          "field_id": "pleura",
+          "label": "pleura",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_ipsilateral_pleural_surfaces",
+              "label": "All ipsilateral pleural surfaces (including fissure)"
+            },
+            {
+              "value": "diaphragmatic_muscle",
+              "label": "Diaphragmatic muscle"
+            },
+            {
+              "value": "lung_parenchyma",
+              "label": "Lung parenchyma"
+            },
+            {
+              "value": "endothoracic_fascia",
+              "label": "Endothoracic fascia"
+            },
+            {
+              "value": "mediastinal_fat",
+              "label": "Mediastinal fat"
+            },
+            {
+              "value": "soft_tissues_of_chest_wall_in_a_solitary_focus",
+              "label": "Soft tissues of chest wall in a solitary focus"
+            },
+            {
+              "value": "soft_tissues_of_chest_wall_diffusely_or_in_multiple_foci",
+              "label": "Soft tissues of chest wall diffusely or in multiple foci"
+            },
+            {
+              "value": "into_but_not_through_the_pericardium",
+              "label": "Into but not through the pericardium"
+            },
+            {
+              "value": "rib",
+              "label": "Rib(s)"
+            },
+            {
+              "value": "mediastinal_organ",
+              "label": "Mediastinal organ(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "percentage_of_residual_viable_tumor",
+          "label": "Percentage of Residual Viable Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_mesothelioma",
+              "label": "All margins negative for mesothelioma"
+            },
+            {
+              "value": "mesothelioma_present_at_margin",
+              "label": "Mesothelioma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_mesothelioma",
+          "label": "Margin(s) Involved by Mesothelioma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_with_tumor",
+          "label": "Nodal Site(s) with Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "bronchopulmonary",
+              "label": "Bronchopulmonary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "hilar",
+              "label": "Hilar: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ipsilateral_mediastinal",
+              "label": "Ipsilateral mediastinal (including internal mammary, peridiaphragmatic, pericardial fat pad, or"
+            }
+          ]
+        },
+        {
+          "field_id": "intercostal_nodes",
+          "label": "intercostal nodes): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "contralateral_mediastinal",
+              "label": "Contralateral mediastinal (including internal mammary, peridiaphragmatic, pericardial fat pad, or"
+            }
+          ]
+        },
+        {
+          "field_id": "intercostal_nodes",
+          "label": "intercostal nodes): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "supraclavicular",
+              "label": "Supraclavicular: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_regional_lymph_node",
+              "label": "Non-regional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification_ajcc_version_9",
+          "label": "pTNM CLASSIFICATION (AJCC Version 9)#",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ],
+          "guidance": "TNM descriptors are applicable only to diffuse pleural mesothelioma."
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (localized pleural mesothelioma)"
+            },
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor limited to the ipsilateral pleura with no involvement of the fissure"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor involving the ipsilateral pleura and with any of the following: Involvement of the fissure; or"
+            }
+          ]
+        },
+        {
+          "field_id": "ipsilateral_lung_parenchyma_invasion_or_diaphragm_non_transmural_invasion",
+          "label": "Ipsilateral lung parenchyma invasion; or Diaphragm (non-transmural) invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor limited to the ipsilateral pleura (with or without fissure involvement) and with invasion of"
+            }
+          ]
+        },
+        {
+          "field_id": "area_of_chest_wall_soft_tissue",
+          "label": "area of chest wall soft tissue",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor with invasion of any of the following: Chest wall bony invasion (rib); or Mediastinal"
+            }
+          ]
+        },
+        {
+          "field_id": "organs_heart_spine_esophagus_trachea_great_vessels_or_diffuse_chest_wall_invasion_or",
+          "label": "organs (heart, spine, esophagus, trachea, great vessels); or Diffuse chest wall invasion; or",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "transmural_invasion_of_the_diaphragm_or_pericardium_or_direct_extension_to_the_contralateral_pleura",
+          "label": "Transmural invasion of the diaphragm or pericardium; or Direct extension to the contralateral pleura;",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (localized pleural mesothelioma)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No tumor involvement of regional lymph node(s)"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Tumor involvement of ipsilateral bronchopulmonary, hilar, or mediastinal (including the internal"
+            }
+          ]
+        },
+        {
+          "field_id": "mammary_peridiaphragmatic_pericardial_fat_pad_or_intercostal_lymph_nodes_regional_lymph_nodes",
+          "label": "mammary, peridiaphragmatic, pericardial fat pad, or intercostal lymph nodes) regional lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2",
+              "label": "pN2: Tumor involvement of contralateral mediastinal, ipsilateral or contralateral supraclavicular lymph"
+            }
+          ]
+        },
+        {
+          "field_id": "n_suffix_required_only_if_applicable",
+          "label": "N Suffix (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(sn): Sentinel node procedure"
+            },
+            {
+              "value": "",
+              "label": "(f): FNA or core needle biopsy"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s) or localized pleural"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "mesothelioma",
+          "label": "mesothelioma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1",
+              "label": "pM1: Microscopic confirmation of distant metastasis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "asbestos_bodies",
+              "label": "Asbestos bodies"
+            },
+            {
+              "value": "pleural_plaque",
+              "label": "Pleural plaque"
+            },
+            {
+              "value": "pulmonary_interstitial_fibrosis",
+              "label": "Pulmonary interstitial fibrosis (specify pattern if discernable): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "inflammation",
+              "label": "Inflammation (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "immunohistochemistry_specify_stains_and_results",
+          "label": "Immunohistochemistry (specify stains and results): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histochemistry_specify_stains_and_results",
+          "label": "Histochemistry (specify stains and results): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "electron_microscopy_specify_results",
+          "label": "Electron Microscopy (specify results): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_ancillary_studies_specify_types_and_results",
+          "label": "Other Ancillary Studies (specify types and results): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_international_association_for_the_study_of_lung_cancer_iaslc_has_developed_an_international_mali",
+          "label": "The International Association for the Study of Lung Cancer (IASLC) has developed an international malignant plural mesothelioma (MPM) staging database that was designed to address the limitations of the mesothelioma staging. Data analyses revealed that survival was significantly influenced by whether a curative or palliative surgical procedure was performed (median survival 18 versus 12 months, p <0.0001).1 Early stage (stage I) MPM resected by extrapleural pneumonectomy (EPP) with curative intent were associated with a median survival of 40 months, whereas those managed by pleurectomy/decortication (P/D) with curative intent had a median survival of 23 months.1 Type of surgical procedure did not impact survival in higher stage disease. It was also noted that significant variations regarding surgical nomenclature for procedures for MPM exist among thoracic surgeons.2 The International Staging Committee of the IASLC and the International Mesothelioma Interest Group (IMIG) recommended that  P/D refer to removal of all macroscopic tumor involving the parietal and visceral pleura and that the term extended P/D (or EPD) to be used to describe parietal and visceral pleurectomy together with resection of the diaphragm and /or pericardium.2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rusch_vw_giroux_d_kennedy_c_et_al_initial_analysis_of_the_international_association_for_the_study_of",
+          "label": "Rusch VW, Giroux D, Kennedy C et al. Initial analysis of the International Association for the Study of Lung Cancer mesothelioma database. J Thorac Oncol. 2012; 7:1631-1639.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rice_d_rusch_v_pass_h_et_al_recommendations_for_uniform_definitions_of_surgical_techniques_for_malig",
+          "label": "Rice D, Rusch V, Pass H, et al. Recommendations for uniform definitions of surgical techniques for malignant pleural mesothelioma: a consensus report of the International Association for the Study of Lung Cancer International Staging Committee and the International Mesothelioma Interest Group. J Thorac Oncol. 2011; 16:1304-1312.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pass_h_giroux_d_kennedy_c_et_al_the_iaslc_mesothelioma_staging_project_improving_staging_of_a_rare_d",
+          "label": "Pass H, Giroux D, Kennedy C, et al. The IASLC Mesothelioma Staging Project: improving staging of a rare disease through international participation. J Thorac Oncol. 2016;11(12):2082-2088.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_majority_of_malignant_mesotheliomas_exhibit_diffuse_growth_and_may_take_the_form_of_multiple_sma",
+          "label": "The majority of malignant mesotheliomas exhibit diffuse growth and may take the form of multiple small nodules, plaque-like masses, or confluent rind-like sheets. However, a small proportion of malignant mesotheliomas are sharply circumscribed. These are designated by the term “localized malignant mesothelioma”. Localized malignant mesotheliomas appear to have a far better prognosis than their diffuse counterpart.1  Note that current AJCC guidelines do not have a pTNM staging classification for localized pleural mesotheliomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "marchevsky_am_khoor_a_walts_ae_et_al_localized_malignant_mesothelioma_an_unusual_and_poorly_characte",
+          "label": "Marchevsky AM, Khoor A, Walts AE, et al. Localized malignant mesothelioma, an unusual and poorly characterized neoplasm of serosal origin: best current evidence from the literature and the International Mesothelioma Panel. Mod Pathol. 2020 Feb;33(2):281-296.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_published_by_the_world_health_organizatio",
+          "label": "For consistency in reporting, the histologic classification published by the World Health Organization (WHO) is recommended.1 Mesotheliomas are classified as epithelioid, sarcomatoid (including desmoplastic), or biphasic. Recognition and reporting of various architectural patterns, cytological features and stromal features is encouraged because of their prognostic value.2 Desmoplastic mesothelioma is considered to represent a variant of sarcomatoid mesothelioma. Biphasic mesotheliomas, contain both epithelioid and sarcomatoid subtypes, and each component should represent at least 10% of the tumor.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_2021_who_classification_recommends_using_well_differentiated_papillary_mesothelial_tumor_wdpmt_o",
+          "label": "The 2021 WHO classification recommends using well-differentiated papillary mesothelial tumor (WDPMT) over well-differentiated papillary mesothelioma (WDPM).1 These are noninvasive papillary neoplasms associated with slow growth and recurrences. Survival is better than that for diffuse mesotheliomas. WDPMTs are not staged according to AJCC staging system and do not require a synoptic report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_2021_who_classification_introduced_the_concept_of_mesothelioma_in_situ_as_a_preinvasive_single_l",
+          "label": "The 2021 WHO classification introduced the concept of mesothelioma in-situ as a preinvasive single-layer surface proliferation of neoplastic mesothelial cells.1,3 The diagnosis may be suspected in patients with recurrent effusions. The WHO considers essential diagnostic criteria to be (a) non-resolving pleural effusion, (b) no thoracoscopic or imaging evidence of tumor, and (c) a single layer of mesothelial cells (with or without atypia) on the pleural surface with loss of BAP1 and/or MTAP by immunohistochemistry and/or CDKN2A homozygous deletion by fluorescence in-situ hybridization. Multidisciplinary discussion of these cases is encouraged. Mesothelioma in-situ is not staged according to AJCC staging system and does not require a synoptic report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_thoracic_tumours_lyon_france_international_agency_for_",
+          "label": "WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nicholson_ag_sauter_jl_nowak_ak_et_al_euracaniaslc_proposals_for_updating_the_histologic_classificat",
+          "label": "Nicholson AG, Sauter JL, Nowak AK, et al. EURACAN/IASLC Proposals for Updating the Histologic Classification of Pleural Mesothelioma: Towards a More Multidisciplinary Approach. J Thorac Oncol. 2020 Jan;15(1):29-49.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "churg_a_galateau_salle_f_roden_ac_et_al_malignant_mesothelioma_in_situ_morphologic_features_and_clin",
+          "label": "Churg A, Galateau-Salle F, Roden AC, et al. Malignant mesothelioma in situ: morphologic features and clinical outcome. Mod Pathol. 2020 Feb;33(2):297-302.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_2021_who_classification_recommends_grading_of_diffuse_epithelioid_mesothelioma_to_identify_tumor",
+          "label": "The 2021 WHO classification recommends grading of diffuse epithelioid mesothelioma to identify tumors that may behave aggressively.1 A nuclear grade is assigned based on nuclear atypia and mitotic count and subsequently combined with the presence or absence of necrosis.2,3 Low grade tumors are those exhibiting nuclear grade 1 (with or without necrosis) or nuclear grade 2 without necrosis. High grade tumors are those exhibiting nuclear grade 2 with necrosis, or nuclear grade 3 with or without necrosis. High grade tumors are those exhibiting nuclear grade 2 with necrosis, or nuclear grade 3 with or without necrosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grading_should_be_performed_based_on_the_areas_showing_the_highest_grade_features",
+          "label": "Grading should be performed based on the areas showing the highest-grade features.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_thoracic_tumours_lyon_france_international_agency_for_",
+          "label": "WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rosen_le_karrison_t_ananthanarayanan_v_gallan_aj_adusumilli_ps_alchami_fs_attanoos_r_brcic_l_butnor_",
+          "label": "Rosen LE, Karrison T, Ananthanarayanan V, Gallan AJ, Adusumilli PS, Alchami FS, Attanoos R, Brcic L, Butnor KJ, Galateau-Sallé F, Hiroshima K, Kadota K, Klampatsa A, Stang NL, Lindenmann J, Litzky LA, Marchevsky A, Medeiros F, Montero MA, Moore DA, Nabeshima K, Pavlisko EN, Roggli VL, Sauter JL, Sharma A, Sheaff M, Travis WD, Vigneswaran WT, Vrugt B, Walts AE, Tjota MY, Krausz T, Husain AN. Nuclear grade and necrosis predict prognosis in malignant epithelioid pleural mesothelioma: a multi-institutional study. Mod Pathol. 2018 Apr;31(4):598-606.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nicholson_ag_sauter_jl_nowak_ak_et_al_euracaniaslc_proposals_for_updating_the_histologic_classificat",
+          "label": "Nicholson AG, Sauter JL, Nowak AK, et al. EURACAN/IASLC Proposals for Updating the Histologic Classification of Pleural Mesothelioma: Towards a More Multidisciplinary Approach. J Thorac Oncol. 2020 Jan;15(1):29-49.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "invasion_of_the_endothoracic_fascia_is_categorized_as_t3_the_endothoracic_fascia_is_located_external",
+          "label": "Invasion of the endothoracic fascia is categorized as T3. The endothoracic fascia is located external to the parietal pleura beneath the muscles and ribs of the chest wall. Determining the presence or absence of endothoracic fascial invasion can be difficult on pathologic examination, because the endothoracic fascia lacks distinctive gross and histologic features. Assessment of the intactness of the endothoracic fascia is best made by the surgeon at the time of operation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_the_american_joint_committee_on_cancer_ajcc_designates_a_solitary_focus_of_tumor_invading_t",
+          "label": "Although the American Joint Committee on Cancer (AJCC) designates a solitary focus of tumor invading the soft tissues of the chest wall as T3, it does not specifically delineate the elements that constitute the chest wall. According to the surgical literature, the constituents of the chest wall are the ribs, intercostal muscles, and associated supporting connective tissues, the latter 2 of which can be inferred to represent the chest wall soft tissues. Note that this definition does not include the layer of adipose tissue, which is sometimes referred to as extrapleural fat, that lies between the chest wall and the parietal pleura. For specimens that incorporate chest wall structures, it is recommended that the surgeon designate the location(s) of such structures to ensure optimal pathologic assessment.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_t4_describes_locally_advanced_technically_unresectable_tumor_radical_extrapleural_pneumonec",
+          "label": "Although T4 describes locally advanced, technically unresectable tumor, radical extrapleural pneumonectomy specimens may occasionally incorporate structures directly invaded by tumor that fall under the T4 designation. These should be specified under “other” and include tumor extension to the following",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "peritoneum",
+          "label": "- Peritoneum",
+          "required": true,
+          "type": "free_text",
+          "condition": "through the diaphragm"
+        },
+        {
+          "field_id": "induction_chemotherapy_or_radiation_before_extrapleural_pneumonectomy_is_being_used_in_some_centers_",
+          "label": "Induction chemotherapy or radiation before extrapleural pneumonectomy is being used in some centers for locally advanced malignant pleural mesothelioma.1,2 Although a formal scheme for grading histologic response to neoadjuvant treatment has not been established, in applicable specimens, the percentage of residual viable tumor should be reported.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "flores_rm_krug_lm_rosenzweig_ke_et_al_induction_chemotherapy_extrapleural_pneumonectomy_and_postoper",
+          "label": "Flores RM, Krug LM, Rosenzweig KE, et al. Induction chemotherapy, extrapleural pneumonectomy, and postoperative high-dose radiotherapy for locally advanced malignant pleural mesothelioma: a phase II trial. J Thorac Oncol. 2006; 1:289-295.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cho_bc_feld_r_leighl_n_et_al_a_feasibility_study_evaluating_surgery_for_mesothelioma_after_radiation",
+          "label": "Cho BC, Feld R, Leighl N, et al. A feasibility study evaluating Surgery for Mesothelioma After Radiation Therapy: the 'SMART' approach for resectable malignant pleural mesothelioma. J Thorac Oncol. 2014 Mar;9(3):397-402.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "because_extrapleural_pneumonectomy_specimens_are_obtained_by_dissection_of_tumor_from_the_thorax_wit",
+          "label": "Because extrapleural pneumonectomy specimens are obtained by dissection of tumor from the thorax with en bloc resection of the lung, pleura, pericardium, and diaphragm, the entire surface of the extrapleural pneumonectomy represents the surgical margin (unless otherwise specified by the operating surgeon).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_recommends_the_ajcc_and_the_international_union_against_cancer_uicc_tnm_staging_system",
+          "label": "This protocol recommends the AJCC and the International Union Against Cancer (UICC) TNM staging system shown below.1,2 The changes introduced in the AJCC Cancer Staging Manual 8th edition and Version 9 are based on analyses of the IASLC retrospective and prospective databases.3,4,5,6,7,8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_trea",
+          "label": "By AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_attempted_surgical_resection_of_the_primary_tumor_path",
+          "label": "Pathologic staging is usually performed after attempted surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer. Version 9 incorporates changes in the clinical (c)T component but not the pathologic T component, to include size criteria of the tumor. No changes in the N categories were recommended by IASLC mesothelioma project in this edition.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_and_r_prefixes",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix, and “y” and “r” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_synchronous_primary_tumors_in_a_single_site_and_is_r",
+          "label": "The “m” suffix indicates the presence of multiple synchronous primary tumors in a single site and is recorded in parentheses: pT(m)NM. In actuality, this is not a descriptor that readily applies to diffuse malignant pleural mesothelioma, which often exhibits a multinodular growth pattern but is best considered a single tumor for staging purposes.  Because of this, the “m” descriptor is not listed as an option in this protocol case summary.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_descriptors",
+          "label": "Additional Descriptors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "residual_tumor",
+          "label": "Residual Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "R"
+        },
+        {
+          "field_id": "tumor_remaining_in_a_patient_after_therapy_with_curative_intent_eg_surgical_resection_for_cure_is_ca",
+          "label": "Tumor remaining in a patient after therapy with curative intent (e.g., surgical resection for cure) is categorized by a system known as R classification, shown below.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_the_surgeon_the_r_classification_may_be_useful_to_indicate_the_known_or_assumed_status_of_the_co",
+          "label": "For the surgeon, the R classification may be useful to indicate the known or assumed status of the completeness of a surgical excision. For the pathologist, the R classification is relevant to the status of the margins of a surgical resection specimen. That is, tumor involving the resection margin on pathologic examination may be assumed to correspond to residual tumor in the patient and may be classified as macroscopic or microscopic according to the findings at the specimen margin(s).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brierley_jd_gospodarowicz_mk_wittekind_c_et_al_eds_tnm_classification_of_malignant_tumours_8th_ed_ox",
+          "label": "Brierley JD, Gospodarowicz MK, Wittekind C, et al, eds. TNM Classification of Malignant Tumours. 8th ed. Oxford, UK: Wiley; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pass_h_giroux_d_kennedy_c_et_al_the_iaslc_mesothelioma_staging_project_improving_staging_of_a_rare_d",
+          "label": "Pass H, Giroux D, Kennedy C, et al. The IASLC Mesothelioma Staging Project: improving staging of a rare disease through international participation. J Thorac Oncol. 2016;11(12):2082-2088.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nowak_ak_chansky_k_rice_dc_et_al_the_iaslc_mesothelioma_staging_project_proposals_for_revisions_of_t",
+          "label": "Nowak AK, Chansky K, Rice DC, et al. The IASLC Mesothelioma Staging Project: proposals for revisions of the T descriptors in the forthcoming eighth edition of the TNM classification for pleural mesothelioma. J Thorac Oncol. 2016;11(12):2089-2099.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rice_d_chansky_k_nowak_ak_et_al_the_iaslc_mesothelioma_staging_project_proposals_for_revisions_of_th",
+          "label": "Rice D, Chansky K, Nowak AK, et al. The IASLC Mesothelioma Staging Project: proposals for revisions of the N descriptors in the forthcoming eighth edition of the TNM classification for pleural mesothelioma. J Thorac Oncol. 2016;11(12):2100-2111.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rusch_vw_chansky_k_kindler_hl_et_al_the_iaslc_mesothelioma_staging_project_proposals_for_the_m_descr",
+          "label": "Rusch VW, Chansky K, Kindler HL, et al. The IASLC Mesothelioma Staging Project: proposals for the M descriptors and for revision of the TNM stage groupings in the forthcoming (eighth) edition of the TNM classification for mesothelioma. J Thorac Oncol. 2016 Dec;11(12):2112-2119.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gill_rr_nowak_ak_giroux_dj_et_al_the_international_association_for_the_study_of_lung_cancer_mesothel",
+          "label": "Gill RR, Nowak AK, Giroux DJ, et al. The International Association for the Study of Lung Cancer Mesothelioma Staging Project: Proposals for Revisions of the \"T\" Descriptors in the Forthcoming Ninth Edition of the TNM Classification for Pleural Mesothelioma. J Thorac Oncol. 2024 Mar 21: S1556-0864(24)00086-8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bille_a_ripley_rt_giroux_dj_et_al_the_international_association_for_the_study_of_lung_cancer_mesothe",
+          "label": "Bille A, Ripley RT, Giroux DJ, et al. The International Association for the Study of Lung Cancer Mesothelioma Staging Project: Proposals for the \"N\" Descriptors in the Forthcoming Ninth Edition of the TNM Classification for Pleural Mesothelioma. J Thorac Oncol. 2024 May 9: S1556-0864(24)00208-9.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_is_required_for_a_definitive_diagnosis_of_malignant_mesothelioma_the_immunohist",
+          "label": "Immunohistochemistry is required for a definitive diagnosis of malignant mesothelioma. The immunohistochemical approach depends on the mesothelioma morphology (epithelioid, sarcomatoid) and the type of tumors that are considered in the differential diagnosis. The 2021 WHO classification continues to recommend the combined use of a minimum of two mesothelial markers and two carcinoma markers.1 Based on the specificity and sensitivity, the best positive mesothelial markers include calretinin, cytokeratins 5/6, WT-1, and D2-40. BerEP4 or MOC31, B72.3, CEA, and BG8 are the most frequently used to diagnose carcinoma.1 No specific panel is recommended, and the International Mesothelioma Panel recommends that each laboratory should choose antibodies with a sensitivity and specificity of at least 80%.2 The College of American Pathologists does not endorse a specific panel of markers for the evaluation of malignant mesothelioma.  If sarcoma is considered in the differential diagnosis, appropriate immunohistochemical, cytogenetic and molecular workup should be performed. Diagnostic role of histochemistry and electron microscopy is very limited because immunohistochemistry is widely available and frequently sufficient to establish the diagnosis of malignant mesothelioma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_thoracic_tumours_lyon_france_international_agency_for_",
+          "label": "WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "husain_an_colby_tv_ordonez_n_et_al_guidelines_for_pathologic_diagnosis_of_malignant_mesothelioma_201",
+          "label": "Husain AN, Colby TV, Ordonez N, et al. Guidelines for pathologic diagnosis of malignant mesothelioma: 2017 update of the consensus statement from the International Mesothelioma Interest Group. Arch Pathol Lab Med. 2018 Jan; 142(1):89-108.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

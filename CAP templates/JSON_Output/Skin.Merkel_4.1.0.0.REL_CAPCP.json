@@ -1,0 +1,1280 @@
+{
+  "template_id": "Skin.Merkel_4.1.0.0.REL_CAPCP",
+  "organ": "MERKEL CELL CARCINOMA OF THE SKIN",
+  "protocol_posting_date": "June 2021",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "excision",
+              "label": "Excision"
+            },
+            {
+              "value": "re_excision",
+              "label": "Re-excision"
+            },
+            {
+              "value": "lymphadenectomy_sentinel_node",
+              "label": "Lymphadenectomy, sentinel node(s)"
+            },
+            {
+              "value": "lymphadenectomy_regional_nodes",
+              "label": "Lymphadenectomy, regional nodes (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "midline",
+              "label": "Midline"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "skin_nos",
+              "label": "Skin, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_lip",
+              "label": "Skin of lip: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "external_ear",
+              "label": "External ear: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_other_and_unspecified_parts_of_face",
+              "label": "Skin of other and unspecified parts of face: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_scalp_and_neck",
+              "label": "Skin of scalp and neck: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_trunk",
+              "label": "Skin of trunk: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_upper_limb_and_shoulder",
+              "label": "Skin of upper limb and shoulder: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "skin_of_lower_limb_and_hip",
+              "label": "Skin of lower limb and hip: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "overlapping_lesion_of_skin",
+              "label": "Overlapping lesion of skin (specify sites): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "penis",
+              "label": "Penis: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "prepuce",
+              "label": "Prepuce"
+            },
+            {
+              "value": "glans_penis",
+              "label": "Glans penis"
+            },
+            {
+              "value": "body_of_penis",
+              "label": "Body of penis"
+            },
+            {
+              "value": "penis_nos",
+              "label": "Penis, NOS"
+            },
+            {
+              "value": "scrotum",
+              "label": "Scrotum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vulva",
+              "label": "Vulva: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "labium_majus",
+              "label": "Labium majus"
+            },
+            {
+              "value": "labium_minus",
+              "label": "Labium minus"
+            },
+            {
+              "value": "clitoris",
+              "label": "Clitoris"
+            },
+            {
+              "value": "vulva_nos",
+              "label": "Vulva, NOS"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "mitotic_rate",
+          "label": "Mitotic Rate",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_1_per_square_millimeter",
+              "label": "Less than 1 per square Millimeter"
+            },
+            {
+              "value": "greater_than_or_equal_to_1_per_square_millimeter",
+              "label": "Greater than or equal to 1 per square Millimeter (specify number): _________________ mitoses per mm2",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "invades_bone",
+              "label": "Invades bone"
+            },
+            {
+              "value": "invades_muscle",
+              "label": "Invades muscle"
+            },
+            {
+              "value": "invades_fascia",
+              "label": "Invades fascia"
+            },
+            {
+              "value": "invades_cartilage",
+              "label": "Invades cartilage"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_thickness_in_millimeters",
+          "label": "Tumor Thickness in Millimeters",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least_in_millimeters",
+              "label": "At least in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "explain",
+          "label": "Explain: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion",
+          "label": "Lymphovascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_infiltrating_lymphocytes",
+          "label": "Tumor-Infiltrating Lymphocytes",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_nonbrisk",
+              "label": "Present, nonbrisk"
+            },
+            {
+              "value": "present_brisk",
+              "label": "Present, brisk"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "tumor_growth_pattern",
+          "label": "Tumor Growth Pattern",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "nodular",
+              "label": "Nodular"
+            },
+            {
+              "value": "infiltrative",
+              "label": "Infiltrative"
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "second_malignancy",
+          "label": "Second Malignancy",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present (specify type): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_carcinoma",
+              "label": "All margins negative for carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_peripheral_margin_locations_to_carcinoma",
+          "label": "Closest Peripheral Margin Location(s) to Carcinoma: _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distance_from_carcinoma_to_closest_peripheral_margin",
+          "label": "Distance from Carcinoma to Closest Peripheral Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "closest_deep_margin_locations_to_carcinoma",
+          "label": "Closest Deep Margin Location(s) to Carcinoma: _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distance_from_carcinoma_to_deep_margin",
+          "label": "Distance from Carcinoma to Deep Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_present_at_margin",
+              "label": "Carcinoma present at margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margins_involved_by_carcinoma",
+          "label": "Margin(s) Involved by Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral (specify locations, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep (specify locations, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "total_number_of_lymph_nodes_examined",
+          "label": "Total Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "sentinel and non-sentinel"
+        },
+        {
+          "field_id": "number_of_sentinel_nodes_examined",
+          "label": "Number of Sentinel Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "distant_skin_distant_subcutaneous_tissue_or_distant_lymph_node",
+              "label": "Distant skin, distant subcutaneous tissue, or distant lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pathologic_stage_classification",
+          "label": "PATHOLOGIC STAGE CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ],
+          "condition": "pTNM, AJCC 8th Edition"
+        },
+        {
+          "field_id": "tnm_descriptors",
+          "label": "TNM Descriptors",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "m",
+              "label": "m (multiple)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrent)"
+            },
+            {
+              "value": "y",
+              "label": "y (post-treatment)"
+            }
+          ]
+        },
+        {
+          "field_id": "if_clinical_tumor_size_is_unavailable_gross_or_microscopic_tumor_measurement_should_be_used_for_dete",
+          "label": "If clinical tumor size is unavailable, gross or microscopic tumor measurement should be used for determining the T category.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: In situ primary tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Maximum clinical tumor diameter less than or equal to 2 cm"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Maximum clinical tumor diameter greater than 2 but less than or equal to 5 cm"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Maximum clinical tumor diameter greater than 5 cm"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Primary tumor invades bone, muscle, fascia, or cartilage"
+            }
+          ]
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis detected on pathological evaluation"
+            }
+          ]
+        },
+        {
+          "field_id": "pn1_metastasis_in_regional_lymph_node",
+          "label": "pN1: Metastasis in regional lymph node",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1a",
+              "label": "pN1a(sn): Clinically occult regional lymph node metastasis identified only by sentinel lymph node biopsy"
+            },
+            {
+              "value": "pn1a",
+              "label": "pN1a: Clinically occult regional lymph node metastasis following lymph node dissection"
+            },
+            {
+              "value": "pn1b",
+              "label": "pN1b: Clinically and/or radiologically detected regional lymph node metastasis#"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2: In transit metastasis (discontinuous from primary tumor; located between primary tumor and draining regional nodal basin, or distal to the primary tumor) without lymph node metastasis"
+            },
+            {
+              "value": "pn3",
+              "label": "pN3: In transit metastasis (discontinuous from primary tumor; located between primary tumor and draining regional nodal basin, or distal to the primary tumor) with lymph node metastasis"
+            }
+          ],
+          "condition": "s",
+          "guidance": "The pN1b, subcategory is dependent on clinical information that may be unavailable to the pathologist. If this information is not available, the parent category (pN1) should be selected."
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_distant_metastasis_microscopically_confirmed",
+          "label": "pM1: Distant metastasis microscopically confirmed",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Metastasis to distant skin, distant subcutaneous tissue, or distant lymph node(s), microscopically confirmed"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Metastasis to lung, microscopically confirmed"
+            },
+            {
+              "value": "pm1c",
+              "label": "pM1c: Metastasis to all other distant sites, microscopically confirmed"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings_specify",
+          "label": "Additional Findings (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_10_mitotic_figureshigh_power_field_hpf_has_been_shown_to_correlate_with_large_tumor_",
+          "label": "The presence of >10 mitotic figures/high-power field (HPF) has been shown to correlate with large tumor size as well as a poor prognosis.1,2 The definition of what constitutes a high-power field was not specified in these reports; typically a 10X ocular and a 40X objective will yield a field area of approximately 0.15 mm2, but this will differ from microscope to microscope and should be determined on an individual basis by direct measurement and calculation of the field or manufacturer’s specifications. Reporting mitotic figures per square millimeter should have the advantage of greater reproducibility. The identification of no mitotic figures may be reported as “<1/mm2.”",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "uniformly_accepted_thresholds_for_low_or_high_risk_mitotic_counts_are_not_established_for_either_rep",
+          "label": "Uniformly accepted thresholds for low- or high-risk mitotic counts are not established for either reporting method (number per HPF versus number per square millimeter), and this case summary item remains optional at this time.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_has_also_been_suggested_that_an_mib_1_proliferation_index_of_greater_than_50_is_associated_with_a",
+          "label": "It has also been suggested that an MIB-1 proliferation index of greater than 50% is associated with a significantly worse prognosis.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "skelton_hg_smith_kj_hitchcock_cl_mccarthy_wf_lupton_gp_graham_jh_merkel_cell_carcinoma_analysis_of_c",
+          "label": "Skelton HG, Smith KJ, Hitchcock CL, McCarthy WF, Lupton GP, Graham JH. Merkel cell carcinoma: analysis of clinical, histologic, and immunohistologic features of 132 cases with relation to survival. J Am Acad Dermatol. 1997;37(5 Pt 1):734-739.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "llombart_b_monteagudo_c_lopez_guerrero_ja_et_al_clinicopathological_and_immunohistochemical_analysis",
+          "label": "Llombart B, Monteagudo C, Lopez-Guerrero JA, et al. Clinicopathological and immunohistochemical analysis of 20 cases of Merkel cell carcinoma in search of prognostic markers. Histopathology. 2005;46(6):622-634.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_published1_and_unpublished_data_from_3_independent_prospective_cohorts_of_merkel_cell_carc",
+          "label": "There are published1 and unpublished data from 3 independent prospective cohorts of Merkel cell carcinoma (MCC) patients examining tumor thickness (measured in millimeters from the stratum granulosum to the deepest infiltrating tumor cells) as a prognostic indicator for outcome.1,2 All 3 centers have data that find that tumor thickness is more predictive of outcome than maximum tumor diameter (a current staging parameter).  In 2 of the studies, the outcome thus far examined was nodal metastasis; the 3rd study evaluated disease-specific survival.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_tumor_is_transected_at_the_deep_margin_of_the_specimen_the_depth_may_be_indicated_as_at_least",
+          "label": "If the tumor is transected at the deep margin of the specimen, the depth may be indicated as “at least __ mm” with a comment explaining the limitation of thickness assessment.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smith_fo_yue_b_marzban_ss_et_al_both_tumor_depth_and_diameter_are_predictive_of_sentinel_lymph_node_",
+          "label": "Smith FO Yue B, Marzban SS, et al. Both tumor depth and diameter are predictive of sentinel lymph node status and survival in Merkel cell carcinoma. Cancer. 2015;121(18):3252-3260.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "andea_aa_coit_dg_amin_b_busam_kj_merkel_cell_carcinoma_histologic_features_and_prognosis_cancer_2008",
+          "label": "Andea AA, Coit DG, Amin B, Busam KJ. Merkel cell carcinoma: histologic features and prognosis. Cancer. 2008;113(9):2549-2558.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_infiltrating_lymphocytes_tils_are_defined_as_lymphocytes_present_at_the_interface_of_the_tumor",
+          "label": "Tumor-infiltrating lymphocytes (TILs) are defined as lymphocytes present at the interface of the tumor and the stroma. Some authors have suggested that the presence of TILs has been shown to portend a poor prognosis, especially when considered in concurrence with a tumor depth of >5 mm.1 However, there are conflicting data on the subject.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_the_absence_of_specific_accepted_guidelines_for_assessment_of_tils_it_is_recommended_in_this_prot",
+          "label": "In the absence of specific accepted guidelines for assessment of TILs, it is recommended in this protocol that, for purposes of uniformity, pathologists choosing to report TILs employ guidelines used for assessment of TILs as in cutaneous melanomas, given below",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tils_brisk_lymphocytes_diffusely_infiltrate_the_entire_base_of_the_dermal_tumor_figure_a_or_the_enti",
+          "label": "TILs brisk: Lymphocytes diffusely infiltrate the entire base of the dermal tumor (Figure, A) or the entire invasive component of the tumor (Figure, B).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brisk_tumor_infiltrating_lymphocytes_a_lymphocytes_diffusely_infiltrate_the_entire_base_of_the_invas",
+          "label": "Brisk tumor-infiltrating lymphocytes. A, Lymphocytes diffusely infiltrate the entire base of the invasive tumor. B, Lymphocytes infiltrate the entire invasive component of the carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mott_rt_smoller_br_morgan_mb_merkel_cell_carcinoma_a_clinicopathologic_study_with_prognostic_implica",
+          "label": "Mott RT, Smoller BR, Morgan MB. Merkel cell carcinoma: a clinicopathologic study with prognostic implications. J Cutan Pathol. 2004;31(3):217-223.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "llombart_b_monteagudo_c_lopez_guerrero_ja_et_al_clinicopathological_and_immunohistochemical_analysis",
+          "label": "Llombart B, Monteagudo C, Lopez-Guerrero JA, et al. Clinicopathological and immunohistochemical analysis of 20 cases of Merkel cell carcinoma in search of prognostic markers. Histopathology. 2005;46(6):622-634.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_a_series_of_156_patients_with_mcc_nodular_tumor_growth_pattern_was_found_on_both_uni_and_multivar",
+          "label": "In a series of 156 patients with MCC, nodular tumor growth pattern was found on both uni- and multivariate analysis to correlate with better survival.1 Nodular pattern is defined as tumors with a relatively well-circumscribed interface with the surrounding tissue, typically composed of one or multiple nodules.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "infiltrative_pattern_is_defined_as_tumors_without_a_well_circumscribed_interface_with_the_surroundin",
+          "label": "Infiltrative pattern is defined as tumors without a well-circumscribed interface with the surrounding tissue, composed of single cells, rows, trabeculae or strands of cells infiltrating through dermal collagen or deeper soft tissue.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smith_fo_yue_b_marzban_ss_et_al_both_tumor_depth_and_diameter_are_predictive_of_sentinel_lymph_node_",
+          "label": "Smith FO Yue B, Marzban SS, et al. Both tumor depth and diameter are predictive of sentinel lymph node status and survival in Merkel cell carcinoma. Cancer. 2015;121(18):3252-3260.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "andea_aa_coit_dg_amin_b_busam_kj_merkel_cell_carcinoma_histologic_features_and_prognosis_cancer_2008",
+          "label": "Andea AA, Coit DG, Amin B, Busam KJ. Merkel cell carcinoma: histologic features and prognosis. Cancer. 2008;113(9):2549-2558.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_is_the_occasional_association_of_mcc_and_in_situ_scc_primarily_a_histologic_finding1_there_is_",
+          "label": "There is the occasional association of MCC and in situ SCC: primarily a histologic finding.1 There is some question whether this is inversely correlated with Merkel cell polyomavirus (MCPyV) detection. There is also an association of MCC with an immunosuppressed status, which may iatrogenic (transplant) or due an underlying malignancy that affects T cell immunity. The poor prognosis of MCC patients with underlying chronic lymphocytic leukemia (CLL) is therefore not necessarily due to the malignancy, but rather the associated immunosuppression.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lai_jh_fleming_ke_ly_ty_et_al_pure_versus_combined_merkel_cell_carcinomas_immunohistochemical_evalua",
+          "label": "Lai JH, Fleming KE, Ly TY, et al.  Pure versus combined Merkel cell carcinomas:  immunohistochemical evaluation of cellular proteins (p53, bcl-2 and c-kit) reveals signification overexpression of p53 in combined tumors. Hum Pathol. 2015;46(9):1290-6.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brewer_jd_shanafelt_td_otley_cc_et_al_chronic_lymphocytic_leukemia_is_associated_with_decreased_surv",
+          "label": "Brewer JD, Shanafelt TD, Otley CC, et al.  Chronic lymphocytic leukemia is associated with decreased survival of patients with malignant melanoma and Merkel cell carcinoma in a SEER population-based study. J Clin Oncol. 2012;30(8):843-849.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clinical_detection_of_nodal_disease_may_be_via_inspection_palpation_andor_imaging_micrometastases_ar",
+          "label": "Clinical detection of nodal disease may be via inspection, palpation, and/or imaging. “Micrometastases” are defined by identification of metastasis on pathologic examination of sentinel or regional lymphadenectomy specimens. “Macrometastases” are defined as clinically detectable nodal metastases, confirmed by pathologic examination of therapeutic lymphadenectomy specimens. Because the pathologist may not have this clinical information, subdivision of N categories in the pathology report is optional.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_transit_metastasis_is_defined_as_a_tumor_distinct_from_the_primary_lesion_and_located_either_1_be",
+          "label": "In-transit metastasis is defined as a tumor distinct from the primary lesion and located either (1) between the primary lesion and the draining node bed or (2) distal to the primary lesion.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastatic_mcc_to_the_lymph_node_may_be_difficult_to_identify_on_routine_hematoxylin_eosin_he_staine",
+          "label": "Metastatic MCC to the lymph node may be difficult to identify on routine hematoxylin-eosin (H&E)-stained sections. The use of immunostains has been shown to increase the sensitivity of identifying occult lymph node metastases.1  It is strongly recommended that at least 1 immunostain be performed before designating a lymph node as negative. Depending on the experience or preference of the laboratory, stains may include but are not limited to AE1/AE3, CK116, Cam 5.2, CD56, CK20, synaptophysin, and/or chromogranin, many of which show a perinuclear dot-like staining pattern. All immunohistochemical results should be documented in the final pathology report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "isolated_tumor_cells_in_a_lymph_node_are_classified_as_micrometastases_pn1a",
+          "label": "Isolated tumor cells in a lymph node are classified as micrometastases (pN1a).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "allen_pj_busam_k_hill_ad_stojadinovic_a_coit_dg_immunohistochemical_analysis_of_sentinel_lymph_nodes",
+          "label": "Allen PJ, Busam K, Hill AD, Stojadinovic A, Coit DG. Immunohistochemical analysis of sentinel lymph nodes from patients with Merkel cell carcinoma. Cancer. 2001;92(6):1650-1655.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "an_mcc_specific_4_tier_staging_system_was_first_adopted_by_the_american_joint_committee_on_cancer_aj",
+          "label": "An MCC-specific 4-tier staging system was first adopted by the American Joint Committee on Cancer (AJCC) in 2010. Recent analysis of more than 9300 patients with MCC was used to validate and revise the staging system for the 8th edition of the AJCC Cancer Staging Manual published in 2017.1 Primary tumor dimension (≤2 cm versus >2 cm), nodal status, and stage at presentation remain the primary predictors of survival.2 The most important changes in the updated 8th edition staging system include",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "separation_of_clinical_and_pathological_stage_groupings_consistent_with_other_ajcc_staging_systems",
+          "label": "Separation of clinical and pathological stage groupings, consistent with other AJCC staging systems",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "elimination_of_stage_i_and_ii_subgroups_based_on_pathologic_nodal_status",
+          "label": "Elimination of stage I and II subgroups based on pathologic nodal status",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "inclusion_of_category_pn1asn_into_stage_group_iiia_for_pathologically_detected_clinically_occult_nod",
+          "label": "Inclusion of category pN1a(sn) into stage group IIIA for pathologically detected, clinically occult nodal metastasis identified only by sentinel lymph node biopsy without completion lymphadenectomy",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "inclusion_of_category_t0_pn1b_m0_in_pathologic_stage_group_iiia_to_identify_patients_with_clinically",
+          "label": "Inclusion of category T0 pN1b M0 in pathologic stage group IIIA, to identify patients with clinically detected nodal MCC metastases with unknown primary tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "separation_of_patients_with_in_transit_metastases_into_category_pn2_without_and_pn3_with_nodal_metas",
+          "label": "Separation of patients with in-transit metastases into category pN2 without and pN3 with nodal metastases",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "those_patients_with_mcc_in_whom_the_primary_tumor_cannot_be_assessed_eg_curetted_should_be_categoriz",
+          "label": "Those patients with MCC in whom the primary tumor cannot be assessed (eg, curetted) should be categorized as TX. Merkel cell carcinoma in situ (ie, completely limited to epidermis or adnexal epithelium) is categorized as Tis. The T category of MCC is classified primarily by measuring the maximum dimension of the tumor with a threshold of ≤2 cm (T1), >2 cm but ≤5 cm (T2), or >5 cm (T3). Extracutaneous invasion by the primary tumor into bone, muscle, fascia, or cartilage is classified as T4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_measurement_of_tumor_diameter_is_subject_to_underestimation_due_to_shrinkage_of_formalin_",
+          "label": "Histologic measurement of tumor diameter is subject to underestimation due to shrinkage of formalin-fixed tissue and inaccuracy of measurement of the largest diameter of oval tumors. If clinical tumor size is unavailable, histopathologic gross or microscopic measurement should be used.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_metastases_most_commonly_present_in_the_regional_lymph_nodes_nodal_staging_is_primarily_bas",
+          "label": "Regional metastases most commonly present in the regional lymph nodes. Nodal staging is primarily based on nodal tumor burden: microscopic versus macroscopic. Therefore, patients without clinical or radiologic evidence of lymph node metastases, but who have pathologically documented nodal metastases, are defined by convention as exhibiting “microscopic” or “clinically occult” nodal metastases. In contrast, MCC patients with both clinical evidence of nodal metastases and pathologic examination confirming nodal metastases are defined by convention as having “macroscopic” or “clinically apparent” nodal metastases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distant_metastases_are_defined_as_metastases_that_have_spread_beyond_the_draining_lymph_node_basin_i",
+          "label": "Distant metastases are defined as metastases that have spread beyond the draining lymph node basin, including cutaneous, nodal, and visceral sites.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "harms_kl_healy_ma_nghiem_p_et_al_analysis_of_prognostic_factors_from_9387_merkel_cell_carcinoma_case",
+          "label": "Harms KL, Healy MA, Nghiem P, et al. Analysis of prognostic factors from 9387 Merkel cell carcinoma cases forms the basis for the new 8th edition AJCC staging system. Ann Surg Oncol. 2016;23(11):3564-3571.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "patients_with_primary_merkel_cell_carcinoma_with_no_evidence_of_regional_or_distant_metastases_eithe",
+          "label": "Patients with primary Merkel cell carcinoma with no evidence of regional or distant metastases (either clinically or pathologically) are divided into 2 stages: stage I for primary tumors ≤2 cm in size and stage II for primary tumors >2 cm in size (IIA) or with extracutaneous invasion (IIB). Stage III is divided into stage groups IIIA for patients with microscopically positive and clinically occult nodes, and patients with clinically detected lymph node metastases with unknown primary tumor (T0), and IIIB for patients with clinically and/or radiologically detected regional lymph node and/or in-transit metastases. There are no subgroups of stage IV Merkel cell carcinoma.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

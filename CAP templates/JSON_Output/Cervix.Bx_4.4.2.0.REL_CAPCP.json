@@ -1,0 +1,1025 @@
+{
+  "template_id": "Cervix.Bx_4.4.2.0.REL_CAPCP",
+  "organ": "UTERINE CERVIX: Excision",
+  "protocol_posting_date": "March 2023",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cold_knife_cone_excision",
+              "label": "Cold knife cone excision"
+            },
+            {
+              "value": "loop_electrical_excision_procedure",
+              "label": "Loop electrical excision procedure (LEEP) / large loop excision of the transformation zone (LLETZ)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "left_superior",
+              "label": "Left superior (anterior) quadrant (12 to 3 o’clock)"
+            },
+            {
+              "value": "left_inferior",
+              "label": "Left inferior (posterior) quadrant (3 to 6 o’clock)"
+            },
+            {
+              "value": "right_inferior",
+              "label": "Right inferior (posterior) quadrant (6 to 9 o’clock)"
+            },
+            {
+              "value": "right_superior",
+              "label": "Right superior (anterior) quadrant (9 to 12 o’clock)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "per_ajcc_staging_manual_tumor_size_is_reported_in_centimeters",
+          "label": "Per AJCC Staging Manual, Tumor Size is reported in Centimeters.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma_hpv_associated",
+              "label": "Squamous cell carcinoma, HPV-associated"
+            },
+            {
+              "value": "squamous_cell_carcinoma_hpv_independent",
+              "label": "Squamous cell carcinoma, HPV-independent"
+            },
+            {
+              "value": "squamous_cell_carcinoma_nos",
+              "label": "Squamous cell carcinoma, NOS (acceptable when p16 or HPV testing is not available)"
+            },
+            {
+              "value": "adenocarcinoma_nos",
+              "label": "Adenocarcinoma, NOS"
+            },
+            {
+              "value": "adenocarcinoma_hpv_associated",
+              "label": "Adenocarcinoma, HPV-associated"
+            },
+            {
+              "value": "adenocarcinoma_hpv_independent_nos",
+              "label": "Adenocarcinoma, HPV-independent, NOS"
+            },
+            {
+              "value": "adenocarcinoma_hpv_independent_gastric_type",
+              "label": "Adenocarcinoma, HPV-independent, gastric type"
+            },
+            {
+              "value": "adenocarcinoma_hpv_independent_clear_cell_type",
+              "label": "Adenocarcinoma, HPV-independent, clear cell type"
+            },
+            {
+              "value": "adenocarcinoma_hpv_independent_mesonephric_type",
+              "label": "Adenocarcinoma, HPV-independent, mesonephric type"
+            },
+            {
+              "value": "endometrioid_adenocarcinoma_nos",
+              "label": "Endometrioid adenocarcinoma, NOS"
+            },
+            {
+              "value": "carcinosarcoma",
+              "label": "Carcinosarcoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "adenoid_basal_carcinoma",
+              "label": "Adenoid basal carcinoma"
+            },
+            {
+              "value": "mucoepidermoid_carcinoma",
+              "label": "Mucoepidermoid carcinoma"
+            },
+            {
+              "value": "carcinoma_unclassifiable",
+              "label": "Carcinoma, unclassifiable (undifferentiated carcinoma)"
+            },
+            {
+              "value": "neuroendocrine_tumor_nos",
+              "label": "Neuroendocrine tumor, NOS"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_1",
+              "label": "Neuroendocrine tumor, grade 1"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_2",
+              "label": "Neuroendocrine tumor, grade 2"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma_high_grade",
+              "label": "Small cell neuroendocrine carcinoma, high grade"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma_high_grade",
+              "label": "Large cell neuroendocrine carcinoma, high grade"
+            },
+            {
+              "value": "neuroendocrine_carcinoma_nos",
+              "label": "Neuroendocrine carcinoma, NOS"
+            },
+            {
+              "value": "mixed_neuroendocrine_non_neuroendocrine_carcinoma",
+              "label": "Mixed neuroendocrine non-neuroendocrine carcinoma"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "stromal_invasion",
+          "label": "Stromal Invasion",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "depth_of_stromal_invasion",
+          "label": "Depth of Stromal Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "not_more_than_3_mm",
+              "label": "Not more than 3 mm"
+            },
+            {
+              "value": "greater_than_3_mm_but_not_more_than_5_mm",
+              "label": "Greater than 3 mm but not more than 5 mm"
+            },
+            {
+              "value": "greater_than_5_mm",
+              "label": "Greater than 5 mm"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "horizontal_extent_of_stromal_invasion",
+          "label": "Horizontal Extent of Stromal Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (in larger tumors that can be measured grossly)"
+            },
+            {
+              "value": "specify_in_millimeters",
+              "label": "Specify in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "estimated_to_be_less_than_or_equal_to_7_millimeters",
+              "label": "Estimated to be less than or equal to 7 Millimeters (mm)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_blocks_involved",
+          "label": "Number of Blocks Involved: _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "estimated_to_be_greater_than_7_millimeters",
+              "label": "Estimated to be greater than 7 Millimeters (mm)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_blocks_involved",
+          "label": "Number of Blocks Involved: _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "silva_system_for_invasion",
+          "label": "Silva System for Invasion#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "pattern_a",
+              "label": "Pattern A"
+            },
+            {
+              "value": "pattern_b",
+              "label": "Pattern B"
+            },
+            {
+              "value": "pattern_c",
+              "label": "Pattern C"
+            }
+          ],
+          "guidance": "Silva System (applicable only to invasive endocervical adenocarcinomas)"
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_invasive_carcinoma",
+          "label": "Closest Margin(s) to Invasive Carcinoma",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "ectocervical",
+              "label": "Ectocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "endocervical",
+              "label": "Endocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep_margin",
+              "label": "Deep margin"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "ectocervical",
+              "label": "Ectocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "endocervical",
+              "label": "Endocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep_margin",
+              "label": "Deep margin"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_hsil_or_ais",
+          "label": "Margin Status for HSIL or AIS#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_high_grade_squamous_intraepithelial_lesion",
+              "label": "All margins negative for high-grade squamous intraepithelial lesion (HSIL) and / or adenocarcinoma in situ (AIS)"
+            },
+            {
+              "value": "high_grade_squamous_intraepithelial_lesion",
+              "label": "High-grade squamous intraepithelial lesion (HSIL) present at margin"
+            }
+          ],
+          "guidance": "Reporting high-grade squamous intraepithelial lesion (CIN 2-3) and / or AIS is not required if margin is involved by invasive carcinoma."
+        },
+        {
+          "field_id": "margins_involved_by_hsil",
+          "label": "Margin(s) Involved by HSIL",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "ectocervical",
+              "label": "Ectocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "endocervical",
+              "label": "Endocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "adenocarcinoma_in_situ",
+              "label": "Adenocarcinoma in situ (AIS) present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_ais",
+          "label": "Margin(s) Involved by AIS",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "ectocervical",
+              "label": "Ectocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "endocervical",
+              "label": "Endocervical (specify location, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "low_grade_squamous_intraepithelial_lesion",
+              "label": "Low-grade squamous intraepithelial lesion (CIN 1)"
+            },
+            {
+              "value": "high_grade_squamous_intraepithelial_lesion",
+              "label": "High-grade squamous intraepithelial lesion (CIN 2 or 3)"
+            },
+            {
+              "value": "endocervical_adenocarcinoma_in_situ",
+              "label": "Endocervical adenocarcinoma in situ"
+            },
+            {
+              "value": "inflammation",
+              "label": "Inflammation"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "p16_immunohistochemistry",
+          "label": "p16 Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specimen_orientation",
+          "label": "Specimen Orientation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_specimen_is_the_product_of_a_cone_biopsy_or_an_excisional_biopsy_it_is_desirable_for_the_surg",
+          "label": "If the specimen is the product of a cone biopsy or an excisional biopsy, it is desirable for the surgeon to orient the specimen to facilitate assessment of the resection margins (e.g., stitch at 12 o’clock). The laterality of the specimen is in reference to the patient’s perspective. Clock values refer to the cervix from the viewer’s perspective (face on). However, specimens frequently are received without orientation. In these cases, the clock face orientation is designated by the pathologist and is arbitrary.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "examination_of_bladder_and_rectum",
+          "label": "Examination of Bladder and Rectum",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "currently_pelvic_exenterations_are_rarely_seen_but_typically_when_performed_indicate_advanced_tumor_",
+          "label": "Currently, pelvic exenterations are rarely seen, but typically when performed indicate advanced tumor stage. In these cases, the extent of tumor involvement of the urinary bladder and rectum and the relation of that tumor to the cervical carcinoma should be described. To evaluate these features, sections of the rectum and bladder should be taken perpendicular to the mucosa directly overlying the tumor in the cervix. A method that provides excellent orientation of the tumor to adjacent structures consists of inflation of the urinary bladder and rectum with formalin and fixation of the specimen for several hours. The entire specimen can then be hemisected through the neoplasm, and appropriate sections can be obtained.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_size_measurement",
+          "label": "Tumor Size Measurement",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "larger_tumors_are_more_accurately_measured_grossly_while_smaller_tumors_and_some_larger_tumors_with_",
+          "label": "Larger tumors are more accurately measured grossly, while smaller tumors and some larger tumors with a diffusely infiltrative pattern or with marked fibrosis are best measured microscopically. It is best to report only one set of tumor measurements based on a correlation of the gross and microscopic features to avoid confusion. According to the 2018 FIGO staging system for all stages the size of the primary tumor can be assessed by clinical evaluation (pre- or intraoperative), imaging, and/or pathological measurement.1 However, in surgically treated cases, the pathologist’s findings should take priority over clinical or image-based staging and should be used for the pathological staging.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_depth_of_invasion_is_required_for_the_sub_staging_of_stage_1_carcinomas_in_the_latest_figo_stagi",
+          "label": "The depth of invasion is required for the sub-staging of Stage 1 carcinomas in the latest FIGO staging system (2018)1 and in the latest AJCC system (2020).2 The depth of invasion is measured from its HSIL origin, that is, from the base of the epithelium, whether epithelial surface or an endocervical gland that is involved by HSIL to the deepest point of invasion. If the invasive focus or foci are not in continuity with the dysplastic epithelium, the depth of invasion should be measured from the deepest focus of tumor invasion to the base of the nearest dysplastic crypt or surface epithelium. If there is no obvious epithelial origin, the depth is measured from the deepest focus of tumor invasion to the base of the nearest surface epithelium, regardless of whether it is dysplastic or not. In situations where carcinomas are exclusively or predominantly exophytic, there may be little or no invasion of the underlying stroma. These should not be regarded as in situ lesions and the tumor thickness (from the surface of the tumor to the deepest point of invasion) should be measured. The depth of invasion below the level of the epithelial origin should not be provided in these cases, as this may not truly reflect the biological potential of these tumors. If it is impossible to measure the depth of invasion, e.g., in ulcerated tumors or in some adenocarcinomas, the tumor thickness may be measured instead, and this should be clearly stated on the pathology report along with an explanation for providing the thickness rather than the depth of invasion.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_depth_of_stromal_invasion_in_fractional_thirds_in_resections_is_a_data_point_in_the_nccn_guideli",
+          "label": "The depth of stromal invasion in fractional thirds in resections is a data point in the NCCN guidelines that guides clinical management.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fig_1_cin3_with_involvement_of_endocervical_gland_crypts_is_represented_by_the_dark_blue_colored_are",
+          "label": "FIG. 1. CIN3 with involvement of endocervical gland crypts is represented by the dark blue-colored areas, nondysplastic squamous epithelium is pink, and gray areas indicate foci of stromal invasion. The depth of invasion (a), and horizontal tumor dimension/width (b) are measured in unifocal disease. Third dimension: when stromal invasion is present in 3 or more consecutive blocks of a loop or cone biopsy the third tumor dimension (c), may exceed 7mm, that is the carcinoma may be more than International Federation of Obstetricians and Gynaecologists stage IA2. This dimension is determined by calculating the block thickness (usually 2.5–3.0 mm) from the macroscopic specimen dimensions and multiplying this by the number of sequential blocks through which the invasion extends.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "horizontal_extent",
+          "label": "Horizontal Extent",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_is_now_an_optional_element_in_the_synoptic_template_it_is_no_longer_included_in_the_ajcc_stagin",
+          "label": "This is now an optional element in the synoptic template. It is no longer included in the AJCC staging update and is no longer used for sub-staging of Stage I carcinomas in the 2018 FIGO staging system.1 However, some still feel that horizontal spread may have prognostic significance in early stage cervical cancer. The collection of horizontal spread data is encouraged to create an opportunity for future analysis and individual clinicians may request a horizontal extent for their practice.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_horizontal_extent_may_be_the_longitudinal_extent_length_measured_in_the_superior_inferior_plane_",
+          "label": "The horizontal extent may be the longitudinal extent (length) measured in the superior-inferior plane (i.e., from the endocervical to ectocervical aspects of the section), or it may be the circumferential extent (width) that is measured or calculated perpendicular to the longitudinal axis of the cervix. When a gross lesion is not identified, the measurement accuracy of horizontal extent may be limited. If the extent is measured on a single glass slide, this may underestimate the true horizontal extent, because the tumor may involve multiple blocks and may have a greater “width” than “length”. The thickness of sections of the cervix, which are often taken as “wedges” of a cone may be variable and may range from less than 1.0 mm to greater than 3.0 mm. In addition, adding thicknesses of adjacent sections where the sections are taken as a cone are measuring the circumference rather than a linear “width”. Estimates using a thickness of 2.5 mm to 3.0 mm may overestimate the true tumor extent.5,6 The pathologist should report the maximum horizontal extent (when it is on a single block) and where multiple blocks are involved, they should report the number of blocks involved and if it is estimated as less than or equal to 7.0 mm or greater than 7.0 mm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_summarize_horizontal_extent_data_is_an_optional_element_and_has_been_excluded_from_the_staging_up",
+          "label": "To summarize, horizontal extent data is an optional element and has been excluded from the staging update. However, the collection of horizontal spread data is encouraged.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_lower_anogenital_squamous_terminology_last7_definition_of_superficial_invasive_squamous_cell_car",
+          "label": "The Lower Anogenital Squamous Terminology (LAST)7 definition of superficial invasive squamous cell carcinoma (SISSCA) conforms to T1a1/ FIGO IA1 and defines what would have been previously reported as “microinvasive” squamous cell carcinoma. The LAST consensus recommends that SISCCA include multifocal disease and that reporting include the presence, number, and size of independent multifocal carcinoma. However, LAST makes no recommendation on the methodology to measure multifocal disease.  Multifocal tumors should be defined as invasive foci separated by a tissue block within which there is no evidence of invasion, as invasive foci in the same tissue block that are more than 2.0 mm apart, or as invasive foci on different cervical lips. They recommend that multifocal tumors should be staged based on the largest focus.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silva_pattern_of_invasion",
+          "label": "Silva Pattern of Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silva_patterns_of_invasion_are_applicable_only_to_hpv_associated_invasive_endocervical_adenocarcinom",
+          "label": "Silva patterns of invasion are applicable only to HPV-associated invasive endocervical adenocarcinomas. Accurately measuring the depth of stromal invasion can be challenging in some endocervical adenocarcinomas. The Silva system of classification8 stratifies cases of invasive endocervical adenocarcinomas into three groups on the basis of the morphologic pattern of invasion and is predictive of the risk for LN metastasis. Briefly, Pattern A shows well-demarcated glands with rounded contours, frequently forming groups with no destructive stromal invasion, no single cells or cell detachment and no LVI. Complex intraglandular growth such as cribriform or papillary architecture is acceptable but there is no solid growth. Pattern B shows localized (limited, early) destructive stromal invasion. There are individual or small groups of tumor cells, separated from the rounded gland, in a focally desmoplastic or inflamed stroma. There is no solid growth and LVI may or may not be present. Pattern C shows diffuse destructive stromal invasion. There are diffusely infiltrative glands with associated extensive desmoplastic response. Growth pattern is confluent or solid and LVI may or may not be present. Pattern A cases were all stage I with negative lymph nodes and no recurrences. Pattern B tumors rarely had metastatic lymph nodes and only 23.8% of cases with pattern C had lymph node metastases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bhatla_n_berek_js_cuello_fredes_m_et_al_revised_figo_staging_for_carcinoma_of_the_cervix_uteri_int_j",
+          "label": "Bhatla N, Berek JS, Cuello Fredes M, et al. Revised FIGO staging for carcinoma of the cervix uteri. Int J Gynaecol Obstet. 2019;145(1):129-135.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "olawaiye_ab_hagemann_i_otis_c_et_al_cervix_uteri_used_with_permission_of_the_american_college_of_sur",
+          "label": "Olawaiye AB, Hagemann I, Otis C et al. Cervix Uteri. Used with permission of the American College of Surgeons, Chicago, Illinois. The original source for this information is the AJCC Cancer Staging System (2020).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "delgado_g_bundy_b_zaino_r_sevin_b_creasman_wt_major_f_prospective_surgical_pathological_study_of_dis",
+          "label": "Delgado G, Bundy B, Zaino R, Sevin B, Creasman WT, Major F: Prospective surgical-pathological study of disease-free interval in patients with stage IB squamous cell carcinoma of the cervix: A Gynecologic Oncology Group study. Gynecol Oncol. 1990; 38: 352-35.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sedlis_a_bundy_bn_rotman_mz_lentz_ss_muderspach_li_zaino_rj_a_randomized_trial_of_pelvic_radiation_t",
+          "label": "Sedlis A, Bundy BN, Rotman MZ, Lentz SS, Muderspach LI, Zaino RJ. A randomized trial of pelvic radiation therapy versus no further therapy in selected patients with stage IB carcinoma of the cervix after radical hysterectomy and pelvic lymphadenectomy: a Gynecologic Oncology Group Study. Gynecol Oncol. 1999;73:177-83.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "international_collaboration_on_cancer_reporting_carcinoma_of_the_cervix_histopathology_reporting_gui",
+          "label": "International Collaboration on Cancer Reporting. Carcinoma of the Cervix Histopathology Reporting Guide. Version 4.0. Published August 2021. ISBN: 978-1-922324-24-5.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "day_e_duffy_s_bryson_g_et_al_multifocal_figo_stage_ia1_squamous_carcinoma_of_the_cervix_criteria_for",
+          "label": "Day E, Duffy S, Bryson G, et al. Multifocal FIGO Stage IA1 squamous carcinoma of the cervix: criteria for identification, staging, and its good clinical outcome. Int J Gynecol Pathol. 2016;35:467-474.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "darragh_tm_colgan_tj_cox_jt_et_al_the_lower_anogenital_squamous_terminology_standardization_project_",
+          "label": "Darragh TM, Colgan TJ, Cox JT, et al. The Lower Anogenital Squamous Terminology Standardization Project for HPV-Associated Lesions: background and consensus recommendations from the College of American Pathologists and the American Society for Colposcopy and Cervical Pathology. Arch Pathol Lab Med. 2012; 136(10):1266-1297.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roma_aa_diaz_de_vivar_a_silva_eg_et_al_invasive_endocervical_adenocarcinoma_a_new_pattern_based_clas",
+          "label": "Roma AA, Diaz De Vivar A, Silva EG et al. Invasive endocervical adenocarcinoma: a new pattern-based classification system with important clinical significance. Am J Surg Pathol. 2015; 39(5):667-672.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_proposed_by_the_world_health_organization",
+          "label": "For consistency in reporting, the histologic classification proposed by the World Health Organization (WHO) is recommended;1 other classification systems may be used, however. A majority of cervical squamous cell carcinomas are HPV-associated. p16 testing and/or molecular HPV typing is recommended before making the diagnosis of HPV-associated cervical SCC. If these results are not available, the NOS category should be used. 75% of HPV-associated adenocarcinomas are of the usual type. Villoglandular, mucinous NOS, intestinal, signet ring cell, and SMILE (stratified mucin-producing) carcinoma are all patterns of HPV-associated adenocarcinomas. There is now a general consensus that most or all serous carcinomas detected in the cervix represent metastasis or direct extension from adnexal or endometrial serous carcinomas, although conclusive studies to support this have yet to be published.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "herrington_cs_ordi_j_bray_f_tumours_of_the_uterine_cervix_in_who_classification_of_tumours_editorial",
+          "label": "Herrington, CS, Ordi, J, Bray, F. Tumours of the uterine cervix In: WHO Classification of Tumours, Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Sep 22]. (WHO classification of tumours series, 5th ed.; vol. 4). Available from: https://tumourclassification.iarc.who.int/chapters/34.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_the_grading_of_invasive_squamous_tumors_it_is_suggested_that_three_grades_be_used",
+          "label": "For the grading of invasive squamous tumors, it is suggested that three grades be used",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_uncertain_whether_grading_has_independent_prognostic_value_in_cervical_aca_whilst_a_correlatio",
+          "label": "It is uncertain whether grading has independent prognostic value in cervical ACA. Whilst a correlation between higher grade and adverse outcomes has been reported, at least for poorly differentiated tumors, this has not been a universal finding. Most grading systems are based on the tumor architecture (glandular and papillary versus solid areas) and its nuclear features. In contrast to squamous cell carcinoma, most authors who grade cervical adenocarcinoma have found the grade to have prognostic value.1,2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_with_no_differentiation_or_minimal_differentiation_that_is_discernible_only_in_rare_tiny_foci",
+          "label": "Tumors with no differentiation or minimal differentiation that is discernible only in rare, tiny foci (undifferentiated carcinomas by WHO classification) are categorized as Grade 4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_tumors_of_the_cervix_have_a_separate_grading_system_mirroring_neuroendocrine_tumors_o",
+          "label": "Neuroendocrine tumors of the cervix have a separate grading system mirroring neuroendocrine tumors of other body sites. The 2020 WHO classifies uterine cervix neuroendocrine tumors into two categories: low-grade neuroendocrine tumor (including grades 1 and 2) and high-grade neuroendocrine carcinoma (including small cell neuroendocrine carcinoma and large cell neuroendocrine carcinoma), along with a “mixed” category with other carcinoma. By definition, the high-grade tumors are Grade 3.3,4,5  High-grade neuroendocrine tumors of the cervix are typically HPV-associated, most frequently HPV subtypes 16 or 18.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kosary_cl_figo_stage_histology_histologic_grade_age_and_race_as_prognostic_factors_in_determining_su",
+          "label": "Kosary CL. FIGO stage, histology, histologic grade, age and race as prognostic factors in determining survival for cancers of the female gynecological system: an analysis of 1973-87 SEER cases of cancers of the endometrium, cervix, ovary, vulva, and vagina. Semin Surg Oncol. 1994;10:31-46.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baalbergen_a_ewing_graham_pc_hop_wc_struijk_p_helmerhorst_tj_prognostic_factors_in_adenocarcinoma_of",
+          "label": "Baalbergen A, Ewing-Graham PC, Hop WC, Struijk P, Helmerhorst TJ. Prognostic factors in adenocarcinoma of the uterine cervix. Gynecol Oncol. 2004;92:262-267.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "takeda_n_sakuragi_n_takeda_m_et_al_multivariate_analysis_of_histopathologic_prognostic_factors_for_i",
+          "label": "Takeda N, Sakuragi N, Takeda M, et al. Multivariate analysis of histopathologic prognostic factors for invasive cervical cancer treated with radical hysterectomy and systematic retroperitoneal lymphadenectomy. Acta Obstet Gynecol Scand. 2002;8:1144-1151.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lea_js_sheets_ee_wenham_rm_duska_lr_coleman_rl_miller_ds_and_schorge_jo_2002_stage_iib_ivb_cervical_",
+          "label": "Lea JS, Sheets EE, Wenham RM, Duska LR, Coleman RL, Miller DS and Schorge JO (2002). Stage IIB-IVB cervical adenocarcinoma: prognostic factors and survival. Gynecol Oncol 2002; 84:115-119.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "howitt_be_kelly_p_mccluggage_wg_pathology_of_neuroendocrine_tumors_of_the_female_genital_tract_curr_",
+          "label": "Howitt BE, Kelly P, McCluggage WG. Pathology of neuroendocrine tumors of the female genital tract. Curr Oncol Rep. 2017; 19:59. doi 10.1007/s11912-017-0617-2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "many_gynecologists_feel_that_the_presence_of_lymphatic_andor_vascular_invasion_is_important_because_",
+          "label": "Many gynecologists feel that the presence of lymphatic and/or vascular invasion is important because it may change the extent of their surgical treatment and may be an independent risk factor for recurrence.1,2,3,4  At times, it may be difficult to evaluate a specimen for lymphatic and/or vascular invasion, as in cases with crush artifact or suboptimal fixation. In these cases, it can be categorized as “cannot be determined”. At other times, it may be difficult to be definitive whether lymphatic and/or vascular invasion is present. This can include cases where retraction artifact or artifactual transfer of tumor cells is a consideration. In other cases, foci may be suspicious but not definitive for invasion. All of these situations can be categorized as “equivocal for invasion”. In cases where one cannot be definitive, a qualifying note explaining the interpretive difficulty and the extent of possible involvement is recommended, since it may help to direct medical management.2,5,6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "casarin_j_buda_a_bogani_g_et_al_predictors_of_recurrence_following_laparoscopic_radical_hysterectomy",
+          "label": "Casarin J, Buda A, Bogani G, et al. Predictors of recurrence following laparoscopic radical hysterectomy for early-stage cervical cancer: a multi-institutional study. Gynecol Oncol. 2020;    159(1):164-170. Jul 11. doi: 10.1016/j.ygyno.2020.06.508.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margolis_b_cagle_colon_k_chen_l_tergas_ai_boyd_l_wright_jd_prognostic_significance_of_lymphovascular",
+          "label": "Margolis B, Cagle-Colon K, Chen L, Tergas AI, Boyd L, Wright JD. Prognostic significance of lymphovascular space invasion for stage IA2 and IA3 cervical cancer. Int J Gynecol Cancer. 2020;30(6):735-743.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "qian_q_yang_j_cao_d_you_y_chen_j_shen_k_analysis_of_treatment_modalities_and_prognosis_on_microinvas",
+          "label": "Qian Q, Yang J, Cao D, You Y, Chen J, Shen K. Analysis of treatment modalities and prognosis on microinvasive cervical cancer: a 10-year cohort study in China. J Gynecol Oncol. 2014;254):293-300.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kodama_j_mizutani_y_hongo_a_yoshinouchi_m_kudo_t_okuda_h_optimal_surgery_and_diagnostic_approach_of_",
+          "label": "Kodama J, Mizutani Y, Hongo A, Yoshinouchi M, Kudo T, Okuda H. Optimal surgery and diagnostic approach of stage IA2 squamous cell carcinoma of the cervix. Eur J Gynecol Reprod Biol. 2002;101(2):192-195.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yan_w_qui_s_ding_y_zhang_q_si_l_lv_s_lui_l_prognostic_value_of_lymphovascular_space_invasion_in_pati",
+          "label": "Yan W, Qui S, Ding Y, Zhang Q, Si L, Lv S, Lui L. Prognostic value of lymphovascular space invasion in patients with early stage cervical cancer in Jilin, China: a retrospective study. Medicine. 2019;98(40):e17302.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weyl_a_illac_c_lusque_a_et_al_prognostic_value_of_lymphovascular_space_invasion_in_early_stage_cervi",
+          "label": "Weyl A, Illac C, Lusque A, et al. Prognostic value of lymphovascular space invasion in early-stage cervical cancer. Int J Gynecol Cancer. 2020; Jun 21; doi: 10.1136/ijgc-2020-001274.30(10):1493-1499.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pol_fj_zusterzeel_pl_vanham_ma_kuijpers_da_bulten_j_massuger_lf_satellite_lymphovascular_space_invas",
+          "label": "Pol FJ, Zusterzeel PL, vanHam MA, Kuijpers DA, Bulten J, Massuger LF. Satellite lymphovascular space invasion: an independent risk factor in early stage cervical cancer. Gynecol Oncol. 2015; 138(3):579-582.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins_can_be_involved_negative_or_indeterminate_for_carcinoma_if_a_margin_is_involved_whether_endo",
+          "label": "Margins can be involved, negative, or indeterminate for carcinoma. If a margin is involved, whether endocervical, ectocervical, deep, or other, it should be specified. If indeterminate, the reason should be specified (e.g., cautery artifact in electroexcision specimens may preclude evaluation of the status of the margin). The severity and extent of a precursor lesion (e.g., focal or diffuse) involving a resection margin of a cone should be specified.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_an_invasive_tumor_approximates_but_does_not_directly_involve_a_resection_margin_the_distance_betw",
+          "label": "If an invasive tumor approximates but does not directly involve a resection margin, the distance between the tumor and the margin should be measured in millimeters. If the tumor involves the uterine corpus, a determination of whether the cervix or corpus is the primary site should be made.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

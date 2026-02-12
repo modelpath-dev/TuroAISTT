@@ -1,0 +1,1723 @@
+{
+  "template_id": "Lung.Bmk_2.2.0.0.REL_CAPCP",
+  "organ": "Lung Biomarker Reporting Template",
+  "protocol_posting_date": "September 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "adequacy_of_sample_for_testing",
+          "label": "Adequacy of Sample for Testing",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adequate",
+              "label": "Adequate"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_estimated_percent_of_tumor_cellularity_area_used_for_testing",
+          "label": "Specify Estimated Percent of Tumor Cellularity (area used for testing): _________________ %",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "suboptimal",
+              "label": "Suboptimal (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "please_refer_to_original_laboratory_report_for_explanation",
+          "label": "Please refer to original laboratory report for explanation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specimen_type",
+          "label": "Specimen Type",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "untreated_diagnostic_specimen",
+              "label": "Untreated diagnostic specimen"
+            },
+            {
+              "value": "relapse_specimen",
+              "label": "Relapse specimen (after treatment; specify)#: _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "When data is available, specify treatment type. This is most relevant to targeted inhibitors associated with specific genomic changes conferring treatment resistance."
+        }
+      ]
+    },
+    {
+      "section_id": "egfr",
+      "section_name": "EGFR",
+      "fields": [
+        {
+          "field_id": "mutational_analysis",
+          "label": "Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_egfr_mutation_detected",
+              "label": "No EGFR mutation detected"
+            },
+            {
+              "value": "mutation",
+              "label": "Mutation(s) identified"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "egfr",
+              "label": "EGFR:p.G719X"
+            },
+            {
+              "value": "egfr_exon_19_deletion",
+              "label": "EGFR Exon 19 deletion (specify, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "egfr_exon_20_insertion",
+              "label": "EGFR Exon 20 insertion (specify, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "egfr",
+              "label": "EGFR:p.S768I"
+            },
+            {
+              "value": "egfr",
+              "label": "EGFR:p.T790M"
+            },
+            {
+              "value": "egfr",
+              "label": "EGFR:p.L858R"
+            },
+            {
+              "value": "egfr",
+              "label": "EGFR:p.L861Q"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "egfr_l858r_by_immunohistochemistry",
+          "label": "EGFR L858R by Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "clone 43B2"
+        },
+        {
+          "field_id": "egfr_exon_19_deletion_e746_a750del",
+          "label": "EGFR Exon 19 Deletion (E746_A750del)",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "clone 6B6"
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "an_egfr_mutation_is_present_that_is_associated_with_response_to_egfr_tyrosine_kinase_inhibitors",
+              "label": "An EGFR mutation is present that is associated with response to EGFR tyrosine kinase inhibitors"
+            },
+            {
+              "value": "an_egfr_mutation_is_present_that_is_associated_with_resistance_to_egfr_tyrosine_kinase_inhibitors",
+              "label": "An EGFR mutation is present that is associated with resistance to EGFR tyrosine kinase inhibitors"
+            },
+            {
+              "value": "two_egfr_mutations_are_present_one_of_which_is_associated_with_resistance_to_egfr_tyrosine",
+              "label": "Two EGFR mutations are present, one of which is associated with resistance to EGFR tyrosine"
+            }
+          ]
+        },
+        {
+          "field_id": "kinase_inhibitors",
+          "label": "kinase inhibitors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "egfr_l858r_immunohistochemical_staining_is_positive_which_is_associated_with_response_to",
+              "label": "EGFR L858R immunohistochemical staining is positive, which is associated with response to"
+            }
+          ]
+        },
+        {
+          "field_id": "egfr_tyrosine_kinase_inhibitors",
+          "label": "EGFR tyrosine kinase inhibitors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "egfr_e746_a750del_immunohistochemical_staining_is_positive_which_is_associated_with_response",
+              "label": "EGFR E746_A750del immunohistochemical staining is positive, which is associated with response"
+            }
+          ]
+        },
+        {
+          "field_id": "rearrangement_by_molecular_methods",
+          "label": "Rearrangement by Molecular Methods",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_alk_rearrangement_detected",
+              "label": "No ALK rearrangement detected"
+            },
+            {
+              "value": "rearrangement_identified",
+              "label": "Rearrangement identified"
+            },
+            {
+              "value": "eml4",
+              "label": "EML4::ALK (specify variant type, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "kif5b",
+              "label": "KIF5B::ALK"
+            },
+            {
+              "value": "klc1",
+              "label": "KLC1::ALK"
+            },
+            {
+              "value": "other_alk_rearrangement",
+              "label": "Other ALK rearrangement (specify, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "alk_immunohistochemistry",
+          "label": "ALK Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "an_alk_fusion_is_identified_that_is_associated_with_response_to_alk_tyrosine_kinase_inhibitors",
+              "label": "An ALK fusion is identified that is associated with response to ALK tyrosine kinase inhibitors"
+            },
+            {
+              "value": "alk_immunohistochemical_staining_is_positive_which_is_associated_with_response_to_alk_tyrosine",
+              "label": "ALK immunohistochemical staining is positive which is associated with response to ALK tyrosine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "ros1",
+      "section_name": "ROS1",
+      "fields": [
+        {
+          "field_id": "rearrangement_by_molecular_methods",
+          "label": "Rearrangement by Molecular Methods",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_ros1_rearrangement_detected",
+              "label": "No ROS1 rearrangement detected"
+            },
+            {
+              "value": "ros1_rearrangement_identified",
+              "label": "ROS1 rearrangement identified"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_fusion_partner",
+          "label": "Specify Fusion Partner: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ros1_by_immunohistochemistry",
+          "label": "ROS1 by Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "a_ros1_fusion_is_present_which_is_associated_with_response_to_ros_tyrosine_kinase_inhibitors",
+              "label": "A ROS1 fusion is present, which is associated with response to ROS tyrosine kinase inhibitors"
+            },
+            {
+              "value": "ros1_immunohistochemical_staining_is_positive_which_is_associated_with_response_to_ros1",
+              "label": "ROS1 immunohistochemical staining is positive, which is associated with response to ROS1"
+            }
+          ]
+        },
+        {
+          "field_id": "rearrangement_by_molecular_methods",
+          "label": "Rearrangement by Molecular Methods",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_ret_rearrangement_detected",
+              "label": "No RET rearrangement detected"
+            },
+            {
+              "value": "ret_rearrangement_identified",
+              "label": "RET rearrangement identified"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_fusion_partner",
+          "label": "Specify Fusion Partner: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "a_ret_fusion_is_present_which_is_associated_with_response_to_ret_tyrosine_kinase_inhibitors",
+              "label": "A RET fusion is present which is associated with response to RET tyrosine kinase inhibitors"
+            },
+            {
+              "value": "no_ret_fusions_are_detected",
+              "label": "No RET fusions are detected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "kras",
+      "section_name": "KRAS",
+      "fields": [
+        {
+          "field_id": "mutational_analysis",
+          "label": "Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_kras_mutation_detected",
+              "label": "No KRAS mutation detected"
+            },
+            {
+              "value": "mutation",
+              "label": "Mutation(s) identified"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "kras",
+              "label": "KRAS:p.G12C"
+            },
+            {
+              "value": "kras",
+              "label": "KRAS:p.G12D"
+            },
+            {
+              "value": "kras",
+              "label": "KRAS:p.G12V"
+            },
+            {
+              "value": "kras",
+              "label": "KRAS:p.G12S"
+            },
+            {
+              "value": "kras",
+              "label": "KRAS:p.G12A"
+            },
+            {
+              "value": "kras",
+              "label": "KRAS:p.G12R"
+            },
+            {
+              "value": "kras",
+              "label": "KRAS:p.G13D"
+            },
+            {
+              "value": "kras",
+              "label": "KRAS:p.G13C"
+            },
+            {
+              "value": "kras",
+              "label": "KRAS:p.Q61L"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "a_kras_mutation_is_identified_which_is_associated_with_resistance_to_tyrosine_kinase_inhibitor",
+              "label": "A KRAS mutation is identified which is associated with resistance to tyrosine kinase inhibitor"
+            }
+          ]
+        },
+        {
+          "field_id": "therapy",
+          "label": "therapy",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "a_kras_mutation_is_identified_which_is_associated_with_response_to_specific_inhibitors",
+              "label": "A KRAS mutation is identified which is associated with response to specific inhibitors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "braf",
+      "section_name": "BRAF",
+      "fields": [
+        {
+          "field_id": "mutational_analysis",
+          "label": "Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_braf_mutations_detected",
+              "label": "No BRAF mutations detected"
+            },
+            {
+              "value": "mutation",
+              "label": "Mutation(s) identified"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "braf",
+              "label": "BRAF:p.V600E"
+            },
+            {
+              "value": "braf",
+              "label": "BRAF:p.V600K"
+            },
+            {
+              "value": "braf",
+              "label": "BRAF:p.V600R"
+            },
+            {
+              "value": "braf",
+              "label": "BRAF:p.V600D"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "a_braf_mutation_is_present_which_is_associated_with_response_to_braf_inhibitors",
+              "label": "A BRAF mutation is present which is associated with response to BRAF inhibitors"
+            },
+            {
+              "value": "no_braf_mutations_are_detected",
+              "label": "No BRAF mutations are detected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "erbb2",
+      "section_name": "ERBB2",
+      "fields": [
+        {
+          "field_id": "mutational_analysis",
+          "label": "Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_erbb2_mutations_detected",
+              "label": "No ERBB2 mutations detected"
+            },
+            {
+              "value": "mutation",
+              "label": "Mutation(s) identified"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "erbb2",
+              "label": "ERBB2:p.S310F"
+            },
+            {
+              "value": "erbb2",
+              "label": "ERBB2:p.L755S"
+            },
+            {
+              "value": "erbb2",
+              "label": "ERBB2:p.Y772_A775dup insertion"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "copy_number_analysis",
+          "label": "Copy Number Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_erbb2",
+              "label": "No ERBB2 (HER2) amplification detected"
+            },
+            {
+              "value": "erbb2",
+              "label": "ERBB2 (HER2) amplification identified"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "specify_copy_number",
+              "label": "Specify Copy Number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "specify_ratio_to_centromere_17",
+              "label": "Specify Ratio to Centromere 17: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "her2_immunohistochemistry",
+          "label": "HER2 Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (0-1)"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (2+)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (3+)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "an_erbb2",
+              "label": "An ERBB2 (HER2) mutation is present which is associated with response to anti-HER2 therapy"
+            },
+            {
+              "value": "erbb2",
+              "label": "ERBB2 (HER2) amplification is present which is associated with response to anti-HER2 therapy"
+            },
+            {
+              "value": "her2_is_positive_by_immunohistochemistry",
+              "label": "HER2 is positive by immunohistochemistry (3+) which is associated with response to anti-HER2"
+            }
+          ]
+        },
+        {
+          "field_id": "mutational_analysis",
+          "label": "Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_met_mutation_detected",
+              "label": "No MET mutation detected"
+            },
+            {
+              "value": "mutation",
+              "label": "Mutation(s) identified"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "met",
+              "label": "MET:p.D963_splice mutation"
+            },
+            {
+              "value": "met",
+              "label": "MET:p.D1010N"
+            },
+            {
+              "value": "met",
+              "label": "MET:p.D1010_splice mutation"
+            },
+            {
+              "value": "met_exon_14_deletion",
+              "label": "MET exon 14 deletion"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "copy_number_analysis",
+          "label": "Copy Number Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_met_amplification_detected",
+              "label": "No MET amplification detected"
+            },
+            {
+              "value": "met_amplification_identified",
+              "label": "MET amplification identified"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "specify_copy_number",
+              "label": "Specify Copy Number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "specify_ratio_to_centromere_7",
+              "label": "Specify Ratio to Centromere 7: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "a_met_alteration_is_present_which_is_associated_with_response_to_met_tyrosine_kinase_inhibitors",
+              "label": "A MET alteration is present which is associated with response to MET tyrosine kinase inhibitors"
+            },
+            {
+              "value": "met_amplification_is_present_which_is_associated_with_response_to_met_tyrosine_kinase_inhibitors",
+              "label": "MET amplification is present which is associated with response to MET tyrosine kinase inhibitors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "ntrk",
+      "section_name": "NTRK",
+      "fields": [
+        {
+          "field_id": "ntrk1_by_molecular_methods",
+          "label": "NTRK1 by Molecular Methods",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_ntrk1_rearrangement_detected",
+              "label": "No NTRK1 rearrangement detected"
+            },
+            {
+              "value": "ntrk1_rearrangement_identified",
+              "label": "NTRK1 rearrangement identified"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_fusion_partner",
+          "label": "Specify Fusion Partner: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ntrk2_by_molecular_methods",
+          "label": "NTRK2 by Molecular Methods",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_ntrk2_rearrangement_detected",
+              "label": "No NTRK2 rearrangement detected"
+            },
+            {
+              "value": "ntrk2_rearrangement_identified",
+              "label": "NTRK2 rearrangement identified"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_fusion_partner",
+          "label": "Specify Fusion Partner: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ntrk3_by_molecular_methods",
+          "label": "NTRK3 by Molecular Methods",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_ntrk3_rearrangement_detected",
+              "label": "No NTRK3 rearrangement detected"
+            },
+            {
+              "value": "ntrk3_rearrangement_identified",
+              "label": "NTRK3 rearrangement identified"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_fusion_partner",
+          "label": "Specify Fusion Partner: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ntrk_by_immunohistochemistry",
+          "label": "NTRK by immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "an_ntrk_fusion_is_present_which_is_associated_with_response_to_ntrk_inhibitors",
+              "label": "An NTRK fusion is present which is associated with response to NTRK inhibitors"
+            },
+            {
+              "value": "ntrk_immunohistochemical_staining_is_present_fusion_testing_by_ngs_or_fish_will_be_performed",
+              "label": "NTRK immunohistochemical staining is present. Fusion testing by NGS or FISH will be performed"
+            },
+            {
+              "value": "ntrk_immunohistochemical_staining_is_present_but_fusion_testing_is_negative_this_is_not",
+              "label": "NTRK immunohistochemical staining is present but fusion testing is negative. This is not"
+            }
+          ]
+        },
+        {
+          "field_id": "associated_with_response_to_ntrk_inhibitors",
+          "label": "associated with response to NTRK inhibitors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "nrg1",
+      "section_name": "NRG1",
+      "fields": [
+        {
+          "field_id": "rearrangement_by_molecular_methods",
+          "label": "Rearrangement by Molecular Methods",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_nrg1_rearrangement_detected",
+              "label": "No NRG1 rearrangement detected"
+            },
+            {
+              "value": "nrg1_rearrangement_identified",
+              "label": "NRG1 rearrangement identified"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_fusion_partner",
+          "label": "Specify Fusion Partner: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "an_nrg1_fusion_is_present_which_is_associated_with_response_to_nrg1_inhibitors",
+              "label": "An NRG1 fusion is present which is associated with response to NRG1 inhibitors"
+            },
+            {
+              "value": "no_nrg1_fusions_are_detected",
+              "label": "No NRG1 fusions are detected"
+            }
+          ]
+        },
+        {
+          "field_id": "mismatch_repair",
+          "label": "Mismatch Repair",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_ihc_testing_for_mismatch_repair_mmr_proteins_select_all_that",
+          "label": "Immunohistochemistry (IHC) Testing for Mismatch Repair (MMR) Proteins (select all that",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "apply",
+          "label": "apply)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mlh1",
+              "label": "MLH1"
+            }
+          ]
+        },
+        {
+          "field_id": "mlh1_result",
+          "label": "MLH1 Result",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msh2",
+              "label": "MSH2"
+            }
+          ]
+        },
+        {
+          "field_id": "msh2_result",
+          "label": "MSH2 Result",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msh6",
+              "label": "MSH6"
+            }
+          ]
+        },
+        {
+          "field_id": "msh6_result",
+          "label": "MSH6 Result",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pms2",
+              "label": "PMS2"
+            }
+          ]
+        },
+        {
+          "field_id": "pms2_result",
+          "label": "PMS2 Result",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "background_non_neoplastic_tissue_internal_control_with_intact_nuclear_expression",
+              "label": "Background non-neoplastic tissue / internal control with intact nuclear expression"
+            }
+          ]
+        },
+        {
+          "field_id": "microsatellite_instability",
+          "label": "Microsatellite Instability",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "msi_stable",
+              "label": "MSI-Stable (MSS)"
+            },
+            {
+              "value": "msi_low",
+              "label": "MSI-Low (MSI-L)"
+            },
+            {
+              "value": "msi_high",
+              "label": "MSI-High (MSI-H)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "MSI"
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "the_case_is_msi_h_which_is_associated_with_response_to_immune_checkpoint_inhibitors",
+              "label": "The case is MSI-H which is associated with response to immune checkpoint inhibitors"
+            },
+            {
+              "value": "the_case_is_mismatch_repair_deficient_which_is_associated_with_response_to_immune_checkpoint",
+              "label": "The case is mismatch repair deficient which is associated with response to immune checkpoint"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_mutational_burden",
+          "label": "Tumor Mutational Burden",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_tumor_mutational_burden",
+          "label": "Specify Tumor Mutational Burden: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_mutational_burden_level",
+          "label": "Tumor Mutational Burden Level",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "low",
+              "label": "Low"
+            },
+            {
+              "value": "high",
+              "label": "High"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "interpretation",
+          "label": "Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "the_case_is_tmb_high_which_is_associated_with_response_to_immune_checkpoint_inhibitors",
+              "label": "The case is TMB-high which is associated with response to immune checkpoint inhibitors"
+            },
+            {
+              "value": "the_case_is_tmb_low_which_is_not_associated_with_response_to_immune_checkpoint_inhibitors",
+              "label": "The case is TMB-low which is not associated with response to immune checkpoint inhibitors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pd_l1_ihc",
+      "section_name": "PD-L1 IHC",
+      "fields": [
+        {
+          "field_id": "pd_l1_22c3_ihc_interpretation",
+          "label": "PD-L1 22c3 IHC Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_cells_with_staining_tps",
+          "label": "Specify Percentage of Tumor Cells with Staining (TPS): _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_combined_number_of_tumor_and_immune_cells_with_staining_per_100_tumor_cells",
+          "label": "Specify Combined Number of Tumor and Immune Cells with Staining per 100 Tumor Cells",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cps___________________cells",
+          "label": "(CPS): _________________ cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_associated_immune_cells_with_staining",
+          "label": "Specify Percentage of Tumor-associated Immune Cells with Staining: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_area_occupied_by_tumor_associated_immune_cells",
+          "label": "Specify Percentage of Tumor Area Occupied by Tumor-associated Immune Cells",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "",
+              "label": "%"
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available; expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pd_l1_28_8_ihc_interpretation",
+          "label": "PD-L1 28-8 IHC Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_cells_with_staining_tps",
+          "label": "Specify Percentage of Tumor Cells with Staining (TPS): _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_combined_number_of_tumor_and_immune_cells_with_staining_per_100_tumor_cells",
+          "label": "Specify Combined Number of Tumor and Immune Cells with Staining per 100 Tumor Cells",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cps___________________cells",
+          "label": "(CPS): _________________ cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_associated_immune_cells_with_staining",
+          "label": "Specify Percentage of Tumor-associated Immune Cells with Staining: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_area_occupied_by_tumor_associated_immune_cells",
+          "label": "Specify Percentage of Tumor Area Occupied by Tumor-associated Immune Cells",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "",
+              "label": "%"
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available; expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pd_l1_sp142_ihc_interpretation",
+          "label": "PD-L1 SP142 IHC Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_cells_with_staining_tps",
+          "label": "Specify Percentage of Tumor Cells with Staining (TPS): _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_combined_number_of_tumor_and_immune_cells_with_staining_per_100_tumor_cells",
+          "label": "Specify Combined Number of Tumor and Immune Cells with Staining per 100 Tumor Cells",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cps___________________cells",
+          "label": "(CPS): _________________ cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_associated_immune_cells_with_staining",
+          "label": "Specify Percentage of Tumor-associated Immune Cells with Staining: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_area_occupied_by_tumor_associated_immune_cells",
+          "label": "Specify Percentage of Tumor Area Occupied by Tumor-associated Immune Cells",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "",
+              "label": "%"
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available; expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pd_l1_sp263_ihc_interpretation",
+          "label": "PD-L1 SP263 IHC Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_cells_with_staining_tps",
+          "label": "Specify Percentage of Tumor Cells with Staining (TPS): _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_combined_number_of_tumor_and_immune_cells_with_staining_per_100_tumor_cells",
+          "label": "Specify Combined Number of Tumor and Immune Cells with Staining per 100 Tumor Cells",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cps___________________cells",
+          "label": "(CPS): _________________ cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_associated_immune_cells_with_staining",
+          "label": "Specify Percentage of Tumor-associated Immune Cells with Staining: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_area_occupied_by_tumor_associated_immune_cells",
+          "label": "Specify Percentage of Tumor Area Occupied by Tumor-associated Immune Cells",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "",
+              "label": "%"
+            }
+          ]
+        },
+        {
+          "field_id": "controls",
+          "label": "Controls",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "internal_control_cells_present_expected_immunoreactivity",
+              "label": "Internal control cells present; expected immunoreactivity"
+            },
+            {
+              "value": "internal_control_cells_present_no_immunoreactivity_of_either_tumor_cells_or_internal_controls",
+              "label": "Internal control cells present; no immunoreactivity of either tumor cells or internal controls"
+            },
+            {
+              "value": "external_controls_available_expected_immunoreactivity",
+              "label": "External controls available; expected immunoreactivity"
+            },
+            {
+              "value": "external_controls_available_no_immunoreactivity_in_expected_cells",
+              "label": "External controls available; no immunoreactivity in expected cells"
+            }
+          ]
+        },
+        {
+          "field_id": "assay_information",
+          "label": "Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_quantitative_imaging_analytics_performed",
+          "label": "Specify Quantitative Imaging Analytics Performed: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "variants_with_potential_pathologic_relevance",
+          "label": "Variants with Potential Pathologic Relevance",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_marker_and_results_repeat_up_to_20_times",
+          "label": "Specify Marker and Results (repeat up to 20 times): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_variants_of_unknown_significance",
+          "label": "Other Variants of Unknown Significance",
+          "required": true,
+          "type": "free_text",
+          "condition": "VUS"
+        },
+        {
+          "field_id": "specify_marker_and_results_repeat_up_to_20_times",
+          "label": "Specify Marker and Results (repeat up to 20 times): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

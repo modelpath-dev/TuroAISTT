@@ -1,0 +1,1541 @@
+{
+  "template_id": "Anus_5.0.0.0.REL_CAPCP",
+  "organ": "ANUS: Abdominoperineal Resection",
+  "protocol_posting_date": "June 2022",
+  "standards": [
+    "AJCC-UICC 9"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "anal_canal",
+              "label": "Anal canal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "perianal_region",
+              "label": "Perianal region: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anus_not_otherwise_specified",
+              "label": "Anus, not otherwise specified: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_known",
+              "label": "Not known: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma"
+            },
+            {
+              "value": "basaloid_squamous_cell_carcinoma",
+              "label": "Basaloid squamous cell carcinoma"
+            },
+            {
+              "value": "basal_cell_carcinoma",
+              "label": "Basal cell carcinoma"
+            },
+            {
+              "value": "verrucous_squamous_cell_carcinoma",
+              "label": "Verrucous squamous cell carcinoma"
+            },
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma"
+            },
+            {
+              "value": "adenocarcinoma_of_the_anal_glands",
+              "label": "Adenocarcinoma of the anal glands"
+            },
+            {
+              "value": "neuroendocrine_carcinoma",
+              "label": "Neuroendocrine carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "mixed_adenoneuroendocrine_carcinoma",
+              "label": "Mixed adenoneuroendocrine carcinoma (MANEC)"
+            },
+            {
+              "value": "undifferentiated_carcinoma",
+              "label": "Undifferentiated carcinoma"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "g4_undifferentiated",
+              "label": "G4, undifferentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "carcinoma_in_situ",
+              "label": "Carcinoma in situ"
+            },
+            {
+              "value": "invades_lamina_propria",
+              "label": "Invades lamina propria"
+            },
+            {
+              "value": "invades_muscularis_mucosae",
+              "label": "Invades muscularis mucosae"
+            },
+            {
+              "value": "invades_submucosa",
+              "label": "Invades submucosa"
+            },
+            {
+              "value": "invades_into_but_not_through_sphincter_muscle",
+              "label": "Invades into but not through sphincter muscle"
+            },
+            {
+              "value": "invades_into_but_not_through_muscularis_propria_of_rectum",
+              "label": "Invades into but not through muscularis propria of rectum"
+            },
+            {
+              "value": "invades_through_sphincter_muscle_into_perianal_or_perirectal_soft_tissue_without_involvement_of_adja",
+              "label": "Invades through sphincter muscle into perianal or perirectal soft tissue without involvement of adjacent structures"
+            },
+            {
+              "value": "directly_invades_adjacent_structure",
+              "label": "Directly invades adjacent structure(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invades_perianal_skin",
+              "label": "Invades perianal skin"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "present_with_no_viable_cancer_cells",
+              "label": "Present, with no viable cancer cells (complete response, score 0)"
+            },
+            {
+              "value": "present_with_single_cells_or_rare_small_groups_of_cancer_cells",
+              "label": "Present, with single cells or rare small groups of cancer cells (near complete response, score 1)"
+            },
+            {
+              "value": "present_with_residual_cancer_showing_evident_tumor_regression_but_more_than_single_cells_or_rare_sma",
+              "label": "Present, with residual cancer showing evident tumor regression, but more than single cells or rare small groups of cancer cells (partial response, score 2)"
+            },
+            {
+              "value": "present",
+              "label": "Present (not otherwise specified)"
+            },
+            {
+              "value": "absent_with_extensive_residual_cancer_and_no_evident_tumor_regression",
+              "label": "Absent, with extensive residual cancer and no evident tumor regression (poor or no response, score 3)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "lymphovascular_invasion",
+          "label": "Lymphovascular Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_invasive_carcinoma",
+          "label": "Closest Margin(s) to Invasive Carcinoma",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "circumferential",
+              "label": "Circumferential (radial): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "circumferential",
+              "label": "Circumferential (radial): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_high_grade_intraepithelial_neoplasia",
+          "label": "Margin Status for High-Grade Intraepithelial Neoplasia",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_high_grade_intraepithelial_neoplasia",
+              "label": "All margins negative for high-grade intraepithelial neoplasia"
+            },
+            {
+              "value": "high_grade_intraepithelial_neoplasia_present_at_margin",
+              "label": "High-grade intraepithelial neoplasia present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_high_grade_intraepithelial_neoplasia",
+          "label": "Margin(s) Involved by High-Grade Intraepithelial Neoplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_external_iliac_nodes_with_tumor",
+          "label": "Number of External Iliac Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_all_other_regional_nodes_with_tumor",
+          "label": "Number of All Other Regional Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_regional_nodal_sites_with_tumor",
+          "label": "Other Regional Nodal Site(s) with Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "right_inguinal",
+              "label": "Right inguinal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_inguinal",
+              "label": "Left inguinal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "superior_rectal",
+              "label": "Superior rectal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "obturator",
+              "label": "Obturator: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mesorectal",
+              "label": "Mesorectal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_internal_iliac",
+              "label": "Right internal iliac: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_internal_iliac",
+              "label": "Left internal iliac: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_external_iliac_nodes_examined",
+          "label": "Number of External Iliac Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_all_other_regional_nodes_examined",
+          "label": "Number of All Other Regional Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_regional_nodal_sites_examined_if_applicable",
+          "label": "Other Regional Nodal Site(s) Examined, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no other regional nodes examined)"
+            },
+            {
+              "value": "right_inguinal",
+              "label": "Right inguinal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_inguinal",
+              "label": "Left inguinal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "superior_rectal",
+              "label": "Superior rectal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "obturator",
+              "label": "Obturator: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mesorectal",
+              "label": "Mesorectal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_internal_iliac",
+              "label": "Right internal iliac: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_internal_iliac",
+              "label": "Left internal iliac: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_regional_lymph_node",
+              "label": "Non-regional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pathologic_stage_classification",
+          "label": "PATHOLOGIC STAGE CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ],
+          "condition": "pTNM, AJCC 9th Version"
+        },
+        {
+          "field_id": "tnm_descriptors",
+          "label": "TNM Descriptors",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "m",
+              "label": "m (multiple)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrent)"
+            },
+            {
+              "value": "y",
+              "label": "y (post-treatment)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor less than or equal to 2 cm in greatest dimension"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor greater than 2 cm but less than or equal to 5 cm in greatest dimension"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor greater than 5 cm in greatest dimension"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor of any size invading adjacent organ(s), such as the vagina, urethra, or bladder"
+            }
+          ]
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No tumor involvement of regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "pn1tumor_involvement_of_regional_lymph_node",
+          "label": "pN1:Tumor involvement of regional lymph node",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1a",
+              "label": "pN1a: Tumor involvement of inguinal, mesorectal, superior rectal, internal iliac or obturator lymph node(s)"
+            },
+            {
+              "value": "pn1b",
+              "label": "pN1b: Tumor involvement of external iliac lymph node(s)"
+            },
+            {
+              "value": "pn1c",
+              "label": "pN1c: Tumor involvement of N1b (external iliac) with any N1a node(s)"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1 (subcategory cannot be determined)"
+            }
+          ],
+          "condition": "s"
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "crohn_disease",
+              "label": "Crohn disease"
+            },
+            {
+              "value": "condyloma_acuminatum",
+              "label": "Condyloma acuminatum"
+            },
+            {
+              "value": "anal_fistula",
+              "label": "Anal fistula"
+            },
+            {
+              "value": "dysplasia",
+              "label": "Dysplasia"
+            },
+            {
+              "value": "associated_rectal_carcinoma",
+              "label": "Associated rectal carcinoma (Paget disease)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "ancillary_studies_specify",
+          "label": "Ancillary Studies (specify) : _________________",
+          "required": false,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_specimens_from_local_excision_procedures_all_relevant_margins_including_the_deep_resection_margi",
+          "label": "For specimens from local excision procedures, all relevant margins, including the deep resection margin, should be inked. Evaluation of margins and invasion is facilitated if the specimen is pinned before fixation in formalin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "documentation_of_tumor_location_within_the_anal_canal_is_important_for_purposes_of_stage_assignment_",
+          "label": "Documentation of tumor location within the anal canal is important for purposes of stage assignment. The regional lymph nodes at risk of metastasis are different for cancers of the anal canal, the rectum, and the perianal skin. Currently, most anal canal carcinomas are managed successfully without surgery, using combination chemotherapy and radiation therapy,1 and resection specimens of anal tumors are seen only infrequently (primarily for small anal margin lesions or after failure of other treatment modalities). Although histological diagnosis is almost always performed on small biopsies, determination of the primary tumor location from biopsy specimens may be difficult or impossible. Therefore, documentation of anatomic site often requires clinical correlation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_anal_canal_begins_where_the_rectum_enters_the_puborectalis_sling_at_the_apex_of_the_anal_sphinct",
+          "label": "The anal canal begins where the rectum enters the puborectalis sling at the apex of the anal sphincter complex (palpable as the anorectal ring on digital rectal examination and approximately 1 cm to 2 cm proximal to the dentate line) and ends with the squamous mucosa blending with the perianal skin (Figure 1), which coincides roughly with the palpable intersphincteric groove or the outermost boundary of the internal sphincter muscle, easily visualized on endoanal ultrasound.2 The anus encompasses true mucosa of three different histologic types: glandular, transitional, and squamous (proximal to distal, respectively). The most proximal aspect of the anal canal is lined by colorectal mucosa in which squamous metaplasia may occur. When involved by metaplasia, this zone also may be referred to as the transformation zone. Immediately proximal to the macroscopically visible dentate line, a narrow zone of multilayered transitional mucosa is variably present. In the region of the dentate line, anal glands are subjacent to the mucosa, often penetrating through the internal sphincter into the intersphincteric plane. The distal zone of the anal canal extends from the dentate line to the mucocutaneous junction with the perianal skin and is lined by a nonkeratinizing squamous epithelium devoid of epidermal appendages (hair follicles, apocrine glands, and sweat glands).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_anatomy_of_the_anal_canal_from_greene_et_al3_used_with_permission_of_the_american_joint_com",
+          "label": "Figure 1.  Anatomy of the anal canal. From Greene et al.3 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to_tumors_involving_the_anal_canal_and_perianal_region_figure_2_tumors_arising",
+          "label": "This protocol applies to tumors involving the anal canal and perianal region (Figure 2). Tumors arising in the anal canal (including all three types of mucosa) that cannot be entirely visualized by gentle traction placed on the buttocks are considered as anal cancers, while tumors arising in the skin at or distal to the squamous mucocutaneous junction, can be entirely visualized with gentle traction placed on the buttocks, and are within 5cm of the anus are considered perianal cancers. For tumors that are localized to the perineal region and not obviously arising from anus or vulva, should be classified as “favor perianal” or “favor vulvar” based on clinical assessment. This protocol does not apply to tumors that are >5 cm from the anus.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_anal_cancer_ac_perianal_cancer_d_and_skin_cancer_e_as_visualized_with_gentle_traction_place",
+          "label": "Figure 2. Anal cancer (A–C), perianal cancer (D), and skin cancer (E) as visualized with gentle traction placed on the buttocks. From Amin et al.2 Used with the permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual (2016) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "engstrom_pf_benson_ab_3rd_chen_y_j_et_al_anal_canal_cancer_clinical_practice_guidelines_in_oncology_",
+          "label": "Engstrom PF, Benson AB 3rd, Chen Y-J, et al. Anal canal cancer clinical practice guidelines in oncology. J Natl Compr Cancer Netw. 2005;3(4):510-515.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_proposed_by_the_world_health_organization",
+          "label": "For consistency in reporting, the histologic classification proposed by the World Health Organization (WHO) is recommended.1 However, this protocol does not preclude the use of other systems of classification or histologic types.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_great_majority_of_carcinomas_of_the_anus_are_squamous_cell_carcinomas2_the_previous_edition_of_t",
+          "label": "The great majority of carcinomas of the anus are squamous cell carcinomas.2 The previous edition of the WHO classification included 3 subtypes of squamous cell carcinoma (SCC): large cell keratinizing, large cell nonkeratinizing, and basaloid. However, because most SCCs of the anal canal show more than 1 subtype, the diagnostic reproducibility of these subtypes has been low. Furthermore, no significant prognostic differences between subtypes have consistently been established, although the basaloid subtype of squamous cell carcinoma may be associated with a higher risk of distant metastasis.3 Therefore, the WHO now recommends that the generic diagnostic term “squamous cell carcinoma” be used for all squamous malignancies of the anal canal. However, additional descriptive comment regarding specific histologic features, such as predominant cell size, basaloid features, degree of keratinization, or adjacent intraepithelial neoplasia, is encouraged. Prominent basaloid features and small tumor cell size are related to infection with “high-risk” human papillomavirus.1 SCC with a predominantly basaloid differentiation pattern was formerly known as cloacogenic carcinoma, but this term is now considered obsolete. Basaloid squamous cell carcinoma also needs to be differentiated from basal cell carcinoma, which is rare in this location, often arise in the perianal skin, and is a less aggressive neoplasm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "two_variants_of_scc_of_the_anal_canal_deserve_note_because_they_differ_in_prognosis_from_typical_squ",
+          "label": "Two variants of SCC of the anal canal deserve note because they differ in prognosis from typical squamous tumors. One is verrucous carcinoma, which is an exophytic hyperkeratotic verrucous growth that is rarely associated with HPV when strict diagnostic criteria are applied. Endophytic growth is seen as bulbous rete pegs that grow in a pushing fashion into the underlying stroma, but infiltrative type invasion is absent. While controversial, verrucous carcinoma is now considered different from giant condyloma or Buschke-Lowenstein tumor.4,5 Giant condyloma or Buschke-Lowenstein tumor resembles condyloma acuminata, but is larger, with more florid excrescences, and is associated with HPV 6 and 11. Immunohistochemical staining for p16 does not help to differentiate it from verrucous carcinoma as both display negative or focal staining.6 Another important variant is SCC with mucinous microcysts (well-formed cystic spaces containing Alcian blue- or PAS-stainable mucin). This entity has an unfavorable prognosis compared with that of SCC.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "finally_two_rare_types_of_anal_canal_carcinoma_anaplasticundifferentiated_carcinoma_and_small_cell_c",
+          "label": "Finally, two rare types of anal canal carcinoma, anaplastic/undifferentiated carcinoma and small cell carcinoma (high-grade neuroendocrine carcinoma), are aggressive tumors with an unfavorable prognosis compared with typical SCC. Tumors of the distal anal canal and perianal region are generally purely squamous in type and are less likely to show basaloid or glandular features.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenocarcinoma_of_the_anal_canal_includes_many_different_sub_types_of_which_colorectal_type_and_anal",
+          "label": "Adenocarcinoma of the anal canal includes many different sub-types of which colorectal-type and anal gland type are the two major sub-types. Other types include IBD-associated or fistula-associated adenocarcinomas and adnexal salivary gland type neoplasms. Differentiation between different types may not always be possible. Adenocarcinoma similar to colorectal adenocarcinoma may arise in the columnar- mucosa of the anal canal and are managed similar to rectal adenocarcinoma. Data regarding these primary anal adenocarcinomas are sparse, but these are currently staged as per this protocol (AJCC, 9th version).7 However, colorectal-type adenocarcinomas extending from the rectum into the anal canal should be staged using the colorectal adenocarcinoma scheme.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "poorly_differentiated_neuroendocrine_carcinomas_are_typically_classified_as_small_or_large_cell_type",
+          "label": "Poorly differentiated neuroendocrine carcinomas are typically classified as small or large cell type similar to other sites. Neuroendocrine carcinomas that do not meet the criteria for small cell type are by default regarded as large cell type. This distinction is not always possible and such neoplasms can be classified as poorly differentiated neuroendocrine carcinomas, not otherwise specified. Poorly differentiated squamous carcinoma or adenocarcinomas may also show variable amount of endocrine differentiation, typically identified on immunohistochemical evaluation of markers for endocrine differentiation; these are referred to as carcinoma with neuroendocrine differentiation. Their differentiation from poorly differentiated neuroendocrine carcinomas can be challenging, if not impossible, especially on small biopsies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hatzaras_i_abir_f_kozol_r_sullivan_p_longo_we_the_demographics_histopathology_and_patterns_of_treatm",
+          "label": "Hatzaras I, Abir F, Kozol R, Sullivan P, Longo WE. The demographics, histopathology and patterns of treatment of anal cancer in Connecticut: 1980-2000. Conn Med. 2005;69(5):261-265.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "das_p_bhatia_s_eng_c_et_al_predictors_and_patterns_of_recurrence_after_definitive_chemoradiation_for",
+          "label": "Das P, Bhatia S, Eng C, et al. Predictors and patterns of recurrence after definitive chemoradiation for anal cancer. Int J Radiat Oncol Biol Phys. 2007;68(3):794-800.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "del_pino_m_bleeker_mc_quint_wg_snijders_pj_meijer_cj_steenbergen_rd_comprehensive_analysis_of_human_",
+          "label": "del Pino M, Bleeker MC, Quint WG, Snijders PJ, Meijer CJ, Steenbergen RD. Comprehensive analysis of human papillomavirus prevalence and the potential role of low-risk types in verrucous carcinoma. Mod Pathol. 2012;25(10): 1354–1363.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zidar_n_langner_c_odar_k_et_al_anal_verrucous_carcinoma_is_not_related_to_infection_with_human_papil",
+          "label": "Zidar N, Langner C, Odar K, et al. Anal verrucous carcinoma is not related to infection with human papillomaviruses and should be distinguished from giant condyloma (Buschke-Lowenstein tumour). Histopathology. 2017;70(6):938–945.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chan_mp_verruciform_and_condyloma_like_squamous_proliferations_in_the_anogenital_region_arch_pathol_",
+          "label": "Chan MP. Verruciform and Condyloma-like Squamous Proliferations in the Anogenital Region. Arch Pathol Lab Med. 2019 Jul;143(7):821-831.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "used_with_permission_of_the_american_college_of_surgeons_chicago_illinois_the_original_source_for_th",
+          "label": "Used with permission of the American College of Surgeons, Chicago, Illinois. The original source for this information is the forthcoming AJCC Version 9 Anus Cancer Staging System. Copyright 2022 American College of Surgeons.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grades_for_anal_canal_squamous_carcinoma_are_as_follows",
+          "label": "Histologic grades for anal canal squamous carcinoma are as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_grade_cannot_be_assessed",
+          "label": "Grade X\tGrade cannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1\tWell differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2\tModerately differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated",
+          "label": "Grade 3\tPoorly differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_there_are_variations_in_the_differentiation_within_the_tumor_the_highest_least_favorable_grade_is",
+          "label": "If there are variations in the differentiation within the tumor, the highest (least favorable) grade is recorded as the overall grade.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grades_for_adenocarcinoma_of_the_anal_canal_based_on_the_proportion_of_gland_formation_by",
+          "label": "Histologic grades for adenocarcinoma of the anal canal based on the proportion of gland formation by the tumor are suggested as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_grade_cannot_be_assessed",
+          "label": "Grade X\tGrade cannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1\tWell differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "greater than 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2\tModerately differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "50% to 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated",
+          "label": "Grade 3\tPoorly differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "less than 50% of tumor composed of glands"
+        },
+        {
+          "field_id": "tumors_with_no_squamous_glandular_or_neuroendocrine_differentiation_undifferentiated_carcinomas_by_w",
+          "label": "Tumors with no squamous, glandular or neuroendocrine differentiation (undifferentiated carcinomas by WHO classification) are categorized as grade 4. These grading schemes are not applicable to poorly differentiated neuroendocrine carcinomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "response_of_tumor_to_previous_chemotherapy_or_radiation_therapy_should_be_reported_although_grading_",
+          "label": "Response of tumor to previous chemotherapy or radiation therapy should be reported. Although grading systems for tumor response have not been established, 3-category systems generally provide good interobserver reproducibility.1 The following system is suggested",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_ryan_scheme_for_tumor_regression_score2",
+          "label": "Modified Ryan Scheme for Tumor Regression Score2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ryan_r_gibbons_d_hyland_jmp_et_al_pathological_response_following_long_course_neoadjuvant_chemoradio",
+          "label": "Ryan R, Gibbons D, Hyland JMP, et al. Pathological response following long-course neoadjuvant chemoradiotherapy for locally advanced rectal cancer. Histopathology. 2005;47:141-146.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "darragh_tm_colgan_tj_cox_jt_et_al_members_of_last_project_work_groups_the_lower_anogenital_squamous_",
+          "label": "Darragh TM, Colgan TJ, Cox JT, et al; Members of LAST Project Work Groups. The Lower Anogenital  Squamous Terminology Standardization Project for HPV-Associated Lesions: background and consensus recommendations from the College of American Pathologists and the American Society for Colposcopy and Cervical Pathology. Arch Pathol Lab Med. 2012;136(10):1266-1297.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_for_anal_carcinoma_of_the_american_joint_committee_on_cancer_ajcc_and_the_int",
+          "label": "The TNM staging system for anal carcinoma of the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) is recommended by the protocol and shown below.1 The primary tumor is staged according to its size and local extension, as determined by clinical or pathologic examination. The staging system applies to all carcinomas arising in the anal canal, including carcinomas that arise within anorectal fistulas and anal glands, but excluding melanomas, well-differentiated/low-grade neuroendocrine tumors (carcinoid tumors), and sarcomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_trea",
+          "label": "By AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (eg, when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (ie, before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_t1_is_defined_as_tumor_2_cm_or_less_in_greatest_dimension_from_greene_et_al2_used_with_perm",
+          "label": "Figure 3.  T1 is defined as tumor 2 cm or less in greatest dimension. From Greene et al.2 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_t2_is_defined_as_tumor_measuring_more_than_2_cm_but_5_cm_or_less_in_greatest_dimension_from",
+          "label": "Figure 4.  T2 is defined as tumor measuring more than 2 cm but 5 cm or less in greatest dimension. From Greene et al.2 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_5_t3_is_defined_as_tumor_measuring_more_than_5_cm_in_greatest_dimension_from_greene_et_al2_us",
+          "label": "Figure 5.  T3 is defined as tumor measuring more than 5 cm in greatest dimension. From Greene et al.2 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_6_t4_is_defined_as_tumor_of_any_size_invading_adjacent_organs_such_as_vagina_illustrated_uret",
+          "label": "Figure 6.  T4 is defined as tumor of any size invading adjacent organs such as vagina (illustrated), urethra, or bladder. From Greene et al.2 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes_n_figure_7_include_mesorectal_inguinal_superficial_and_deep_superior_rectal_hem",
+          "label": "Regional lymph nodes (N) (Figure 7) include mesorectal, inguinal (superficial and deep), superior rectal (hemorrhoidal), external iliac and  internal iliac (hypogastric).1 All other nodal groups represent sites of distant metastasis (M). The sites of regional node involvement correspond to the local lymphatic drainage, above to the rectal ampulla and below to the perineum. Tumors that arise in the anal canal usually spread initially to the mesorectal nodes, and those that arise at the anal margin spread to the superficial inguinal nodes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_7_regional_lymph_nodes_of_the_anal_canal_used_with_the_permission_of_the_american_joint_commi",
+          "label": "Figure 7. Regional lymph nodes of the anal canal. Used with the permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vessel_invasion",
+          "label": "Vessel Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_vessel_invasion_lymphatic_or_venous_does_not_affect_the_t_category_indicating",
+          "label": "By AJCC/UICC convention, vessel invasion (lymphatic or venous) does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "used_with_permission_of_the_american_college_of_surgeons_chicago_illinois_the_original_source_for_th",
+          "label": "Used with permission of the American College of Surgeons, Chicago, Illinois. The original source for this information is the forthcoming AJCC Version 9 Anus Cancer Staging System. Copyright 2022 American College of Surgeons.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "predisposing_conditions_to_anal_canal_carcinoma_that_may_be_found_in_the_pathologic_specimen_include",
+          "label": "Predisposing conditions to anal canal carcinoma that may be found in the pathologic specimen include condyloma acuminatum associated with human papilloma virus infection.1 Squamous intraepithelial neoplasia is recognized as a precursor lesion for squamous cell carcinoma of the anal canal,2 and its presence should be reported.  Both adenocarcinomas and squamous cell carcinomas have been reported in the setting of chronic anorectal fistulae arising in long-standing Crohn disease,3 although the association of benign inflammatory lesions and anal cancer remains controversial.4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "daling_jr_madeleine_mm_johnson_lg_et_al_human_papillomavirus_smoking_and_sexual_practices_in_the_eti",
+          "label": "Daling JR, Madeleine MM, Johnson LG, et al. Human papillomavirus, smoking, and sexual practices in the etiology of anal cancer. Cancer. 2004;101(2):270-280.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shepherd_na_anal_intraepithelial_neoplasia_and_other_neoplastic_precursor_lesions_of_the_anal_canal_",
+          "label": "Shepherd NA. Anal intraepithelial neoplasia and other neoplastic precursor lesions of the anal canal and perianal region. Gastroenterol Clin North Am. 2007;36(4):969-987.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ky_a_sohn_h_weinstein_ma_korelitz_bi_carcinoma_arising_in_anorectal_fistulas_of_crohns_disease_dis_c",
+          "label": "Ky A, Sohn H, Weinstein MA, Korelitz BI. Carcinoma arising in anorectal fistulas of Crohn's disease. Dis Colon Rectum. 1998;41:992-996.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "frisch_m_olsen_jh_bautz_a_melbye_m_benign_anal_lesions_and_the_risk_of_anal_cancer_n_engl_j_med_1994",
+          "label": "Frisch M, Olsen JH, Bautz A, Melbye M. Benign anal lesions and the risk of anal cancer. N Engl J Med. 1994;331:300-302.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nordenvall_c_nyren_o_ye_w_elevated_anal_squamous_cell_carcinoma_risk_associated_with_benign_inflamma",
+          "label": "Nordenvall C, Nyren O, Ye W. Elevated anal squamous cell carcinoma risk associated with benign inflammatory anal lesions. Gut. 2006;55(5):703-707.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_may_be_helpful_in_establishing_tumor_type_for_poorly_differentiated_carcinomas_",
+          "label": "Immunohistochemistry may be helpful in establishing tumor type for poorly differentiated carcinomas; squamous cell carcinomas of the anal canal express cytokeratin (CK) 7, CK5/6, p53,1 and p632 but are negative for CK20. In contrast, anal gland carcinomas are mucin positive and express CK7 and/or CK20 but are negative for CDX2, CK5/6 and p63.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemical_studies_may_also_aid_in_distinguishing_primary_anal_paget_disease_from_secondary",
+          "label": "Immunohistochemical studies may also aid in distinguishing primary anal Paget disease from secondary Paget disease of the perianal area, which is associated with colorectal and anal canal carcinoma. CK7 expression is a sensitive method for detection of both primary and secondary Paget cells within involved anal and perianal squamous epithelium. In addition, however, the specific immunophenotype of Paget cells has been shown to correlate with pathogenesis and may be important in patient management. Demonstration of CK20 expression has been shown to identify Paget disease that is likely to be associated with underlying rectal adenocarcinoma (either synchronous or metachronous). In contrast, Paget cells that do not express CK20 but instead are positive for gross cystic disease fluid protein (GCDFP), a marker for apocrine differentiation, are likely to represent primary cutaneous intraepithelial malignancy.4,5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "balachandra_b_marcus_v_jass_jr_poorly_differentiated_tumours_of_the_anal_canal_a_diagnostic_strategy",
+          "label": "Balachandra B, Marcus V, Jass JR. Poorly differentiated tumours of the anal canal: a diagnostic strategy for the surgical pathologist. Histopathology. 2007;50(1):163-174.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "owens_sr_greenson_jk_immunohistochemical_staining_for_p63_is_useful_in_the_diagnosis_of_anal_squamou",
+          "label": "Owens SR, Greenson JK. Immunohistochemical staining for p63 is useful in the diagnosis of anal squamous cell carcinomas. Am J Surg Pathol. 2007;31(2):285-290.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lisovsky_m_patel_k_cymes_k_chase_d_bhuiya_t_morgenstern_n_immunophenotypic_characterization_of_anal_",
+          "label": "Lisovsky M, Patel K, Cymes K, Chase D, Bhuiya T, Morgenstern N. Immunophenotypic characterization of anal gland carcinoma: loss of p63 and cytokeratin 5/6. Arch Pathol Lab Med. 2007;131(8):1304-1311.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shepherd_na_anal_intraepithelial_neoplasia_and_other_neoplastic_precursor_lesions_of_the_anal_canal_",
+          "label": "Shepherd NA. Anal intraepithelial neoplasia and other neoplastic precursor lesions of the anal canal and perianal region. Gastroenterol Clin North Am. 2007;36(4):969-987.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "goldblum_jr_hart_wr_perianal_pagets_disease_a_histologic_and_immunohistochemical_study_of_11_cases_w",
+          "label": "Goldblum JR, Hart WR. Perianal Paget's disease: a histologic and immunohistochemical study of 11 cases with and without associated rectal adenocarcinoma. Am J Surg Pathol. 1998;22:170-179.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1686 @@
+{
+  "template_id": "Gallbladder_4.3.0.0.REL_CAPCP",
+  "organ": "GALLBLADDER",
+  "protocol_posting_date": "June 2025",
+  "standards": [
+    "AJCC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "fundus",
+              "label": "Fundus: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "body",
+              "label": "Body: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "neck",
+              "label": "Neck: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cystic_duct",
+              "label": "Cystic duct: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma_biliary_type",
+              "label": "Adenocarcinoma, biliary type"
+            },
+            {
+              "value": "adenocarcinoma_intestinal_type",
+              "label": "Adenocarcinoma, intestinal type"
+            },
+            {
+              "value": "mucinous_adenocarcinoma",
+              "label": "Mucinous adenocarcinoma"
+            },
+            {
+              "value": "clear_cell_adenocarcinoma",
+              "label": "Clear cell adenocarcinoma"
+            },
+            {
+              "value": "poorly_cohesive_carcinoma",
+              "label": "Poorly cohesive carcinoma"
+            },
+            {
+              "value": "signet_ring_cell_carcinoma",
+              "label": "Signet-ring cell carcinoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "mucinous_cystic_neoplasm_with_associated_invasive_carcinoma",
+              "label": "Mucinous cystic neoplasm with associated invasive carcinoma"
+            },
+            {
+              "value": "intracholecystic_papillary_neoplasm_with_associated_invasive_carcinoma",
+              "label": "Intracholecystic papillary neoplasm with associated invasive carcinoma"
+            },
+            {
+              "value": "intracholecystic_tubular_neoplasm_with_associated_invasive_carcinoma",
+              "label": "Intracholecystic tubular neoplasm with associated invasive carcinoma"
+            },
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma"
+            },
+            {
+              "value": "undifferentiated_carcinoma_nos",
+              "label": "Undifferentiated carcinoma, NOS"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "high_grade_neuroendocrine_carcinoma",
+              "label": "High-grade neuroendocrine carcinoma"
+            },
+            {
+              "value": "mixed_neuroendocrine_non_neuroendocrine_neoplasm",
+              "label": "Mixed neuroendocrine-non-neuroendocrine neoplasm (MiNEN) (specify components):"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well-differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal_invasive_carcinoma",
+              "label": "Unifocal invasive carcinoma"
+            },
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "multifocal_invasive_carcinoma_in_association_with_intracystic_neoplasms_and_mucinous_cystic",
+              "label": "Multifocal invasive carcinoma in association with intracystic neoplasms and mucinous cystic"
+            }
+          ]
+        },
+        {
+          "field_id": "neoplasm",
+          "label": "neoplasm",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "size_of_the_largest_focus_of_invasive_carcinoma_in_centimeters",
+              "label": "Size of the largest focus of invasive carcinoma in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "aggregate_size_that_combines_sizes_of_all_foci_of_invasive_carcinoma_in_centimeters",
+          "label": "Aggregate Size that Combines Sizes of all Foci of Invasive Carcinoma in Centimeters",
+          "required": true,
+          "type": "free_text",
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_if_known___________________cm",
+          "label": "(specify, if known): _________________ cm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "invasive_component_as_a_percentage_of_entire_tumor_specify_if_known",
+          "label": "Invasive Component as a Percentage of Entire Tumor (specify, if known)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "",
+              "label": "%"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "invades_lamina_propria",
+              "label": "Invades lamina propria"
+            },
+            {
+              "value": "invades_muscular_layer",
+              "label": "Invades muscular layer"
+            },
+            {
+              "value": "invades_perimuscular_connective_tissue_on_the_peritoneal_side_without_serosal_involvement",
+              "label": "Invades perimuscular connective tissue on the peritoneal side without serosal involvement"
+            },
+            {
+              "value": "invades_perimuscular_connective_tissue_on_the_hepatic_side_without_liver_involvement",
+              "label": "Invades perimuscular connective tissue on the hepatic side without liver involvement"
+            },
+            {
+              "value": "perforates_serosa",
+              "label": "Perforates serosa (visceral peritoneum)"
+            },
+            {
+              "value": "directly_invades_liver",
+              "label": "Directly invades liver"
+            },
+            {
+              "value": "directly_invades_other_adjacent_organ",
+              "label": "Directly invades other adjacent organ(s) or structure(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "stomach",
+              "label": "Stomach"
+            },
+            {
+              "value": "duodenum",
+              "label": "Duodenum"
+            },
+            {
+              "value": "colon",
+              "label": "Colon"
+            },
+            {
+              "value": "pancreas",
+              "label": "Pancreas"
+            },
+            {
+              "value": "extrahepatic_bile_ducts",
+              "label": "Extrahepatic bile ducts"
+            },
+            {
+              "value": "omentum",
+              "label": "Omentum"
+            },
+            {
+              "value": "main_portal_vein",
+              "label": "Main portal vein"
+            },
+            {
+              "value": "hepatic_artery",
+              "label": "Hepatic artery"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "present_with_no_viable_cancer_cells",
+              "label": "Present, with no viable cancer cells (complete response, score 0)"
+            },
+            {
+              "value": "present_with_single_cells_or_rare_small_groups_of_cancer_cells",
+              "label": "Present, with single cells or rare small groups of cancer cells (near complete response, score 1)"
+            },
+            {
+              "value": "present_with_residual_cancer_showing_evident_tumor_regression_but_more_than_single_cells_or_rare",
+              "label": "Present, with residual cancer showing evident tumor regression, but more than single cells or rare"
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "small_groups_of_cancer_cells",
+          "label": "small groups of cancer cells",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "present_nos",
+              "label": "Present, NOS"
+            },
+            {
+              "value": "absent_with_extensive_residual_cancer_and_no_evident_tumor_regression",
+              "label": "Absent, with extensive residual cancer and no evident tumor regression (poor or no response, score"
+            }
+          ],
+          "condition": "partial response, score 2"
+        },
+        {
+          "field_id": "3",
+          "label": "3)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_cystic_duct_margin",
+          "label": "Distance from Invasive Carcinoma to Cystic Duct Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_liver_parenchymal_margin",
+          "label": "Distance from Invasive Carcinoma to Liver Parenchymal Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "cystic_duct",
+              "label": "Cystic duct: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver_parenchymal",
+              "label": "Liver parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_high_grade_intraepithelial_neoplasia_high_grade_dysplasia",
+          "label": "Margin Status for High-Grade Intraepithelial Neoplasia / High-Grade Dysplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_high_grade_intraepithelial_neoplasia_high_grade_dysplasia",
+              "label": "All margins negative for high-grade intraepithelial neoplasia / high-grade dysplasia"
+            },
+            {
+              "value": "high_grade_intraepithelial_neoplasia_high_grade_dysplasia_present_at_cystic_duct_margin",
+              "label": "High-grade intraepithelial neoplasia / high-grade dysplasia present at cystic duct margin:"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_regional_lymph_node",
+              "label": "Non-regional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver (distant involvement only, not direct extension into adjacent liver parenchyma):"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: Carcinoma in situ#"
+            }
+          ],
+          "guidance": "CAP Authors Note: In situ carcinoma (pTis) is typically reserved for high-grade dysplasia with complex architecture (typically papillary or tubulopapillary, e.g., intracholecystic papillary neoplasm) confined to the epithelial layer by intact basement membrane. The term high-grade dysplasia is likely preferable for most lesions confined by intact basement membrane."
+        },
+        {
+          "field_id": "pt1_tumor_invades_the_lamina_propria_or_muscular_layer",
+          "label": "pT1: Tumor invades the lamina propria or muscular layer",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor invades the lamina propria"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor invades the muscular layer"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt2_tumor_invades_the_perimuscular_connective_tissue_on_the_peritoneal_side_without_involvement_of_t",
+          "label": "pT2: Tumor invades the perimuscular connective tissue on the peritoneal side, without involvement of the serosa (visceral peritoneum) or tumor invades the perimuscular connective tissue on the hepatic side, with no extension into the liver",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Tumor invades the perimuscular connective tissue on the peritoneal side, without involvement"
+            }
+          ]
+        },
+        {
+          "field_id": "of_the_serosa",
+          "label": "of the serosa",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2b",
+              "label": "pT2b: Tumor invades the perimuscular connective tissue on the hepatic side, with no extension into"
+            }
+          ],
+          "condition": "visceral peritoneum"
+        },
+        {
+          "field_id": "the_liver",
+          "label": "the liver",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor perforates the serosa (visceral peritoneum) and / or directly invades the liver and / or one"
+            }
+          ]
+        },
+        {
+          "field_id": "extrahepatic_bile_ducts",
+          "label": "extrahepatic bile ducts",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor invades the main portal vein or hepatic artery or invades two or more extrahepatic"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastases to one to three regional lymph nodes"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2: Metastases to four or more regional lymph nodes"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "dysplasia_adenoma",
+              "label": "Dysplasia / adenoma"
+            },
+            {
+              "value": "cholelithiasis",
+              "label": "Cholelithiasis"
+            },
+            {
+              "value": "chronic_cholecystitis",
+              "label": "Chronic cholecystitis"
+            },
+            {
+              "value": "acute_cholecystitis",
+              "label": "Acute cholecystitis"
+            },
+            {
+              "value": "intestinal_metaplasia",
+              "label": "Intestinal metaplasia"
+            },
+            {
+              "value": "diffuse_calcification",
+              "label": "Diffuse calcification (porcelain gallbladder)"
+            },
+            {
+              "value": "primary_sclerosing_cholangitis",
+              "label": "Primary sclerosing cholangitis"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "ancillary_studies",
+          "label": "Ancillary Studies",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify",
+              "label": "Specify: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ],
+          "notes": [
+            "K"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "occasionally_carcinoma_is_found_in_gallbladders_removed_by_laparoscopic_surgery_not_recognized_clini",
+          "label": "Occasionally carcinoma is found in gallbladders removed by laparoscopic surgery. Not recognized clinically or by imaging techniques, tumor is discovered during pathologic evaluation of the resected specimen. In this setting, tumor spillage with seeding along the laparoscopic tract or intra-abdominal dissemination may be a major complication of the procedure, with port site recurrences reported in up to 17% of such cases.1,2,3 If dysplasia is found in such specimens, multiple sections should be examined to exclude invasive cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "giuliante_f_ardito_f_vellone_m_clemente_g_nuzzo_g_port_site_excisions_for_gallbladder_cancer_inciden",
+          "label": "Giuliante F, Ardito F, Vellone M, Clemente G, Nuzzo G. Port-site excisions for gallbladder cancer incidentally found after laparoscopic cholecystectomy. Am J Surg. 2006; 191(1):114-116.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adsay_v_saka_b_basturk_o_roa_jc_criteria_for_pathologic_sampling_of_gallbladder_specimens_am_j_clin_",
+          "label": "Adsay V, Saka B, Basturk O, Roa JC. Criteria for pathologic sampling of gallbladder specimens. Am J Clin Pathol. 2013;140(2):278-280.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aloia_ta_járufe_n_javle_m_et_al_gallbladder_cancer_expert_consensus_statement_hpb_oxford_2015178681_",
+          "label": "Aloia TA, Járufe N, Javle M, et al. Gallbladder cancer: expert consensus statement. HPB (Oxford). 2015;17(8):681-690.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_proposed_by_the_world_health_organization",
+          "label": "For consistency in reporting, the histologic classification proposed by the World Health Organization (WHO) is recommended; however, this protocol does not preclude use of other systems of classification or histologic types.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_following_grading_system_based_on_the_extent_of_glandular_formation_in_the_tumor_is_suggested",
+          "label": "The following grading system, based on the extent of glandular formation in the tumor, is suggested",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_grade_cannot_be_assessed",
+          "label": "Grade X      Grade cannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1      Well-differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "greater than 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2      Moderately differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "50% to 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated",
+          "label": "Grade 3      Poorly differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "49% or less of tumor composed of glands"
+        },
+        {
+          "field_id": "tumors_with_no_squamous_or_glandular_differentiation_undifferentiated_carcinomas_by_who_classificati",
+          "label": "Tumors with no squamous or glandular differentiation (undifferentiated carcinomas by WHO classification) are categorized as grade 4 (G4) in the WHO 2010 classification, but G4 is not included in the AJCC 8th edition.1 By convention, signet-ring cell carcinomas are assigned grade 3. The above grading scheme is not applicable to histologic subtypes of adenocarcinoma and poorly differentiated neuroendocrine carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_tumor_stage_is_probably_the_most_important_prognostic_factor_for_patient_outcome_histologic",
+          "label": "Although tumor stage is probably the most important prognostic factor for patient outcome, histologic grade, especially poor differentiation, also has an impact on survival.2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "park_js_yoon_ds_kim_ks_et_al_actual_recurrence_patterns_and_risk_factors_influencing_recurrence_afte",
+          "label": "Park JS, Yoon DS, Kim KS, et al. Actual recurrence patterns and risk factors influencing recurrence after curative resection with stage II gallbladder carcinoma. J Gastrointest Surg. 2007;11(5):631-637.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ito_h_ito_k_dangelica_m_et_al_accurate_staging_for_gallbladder_cancer_implications_for_surgical_ther",
+          "label": "Ito H, Ito K, D'Angelica M, et al. Accurate staging for gallbladder cancer: implications for surgical therapy and pathological assessment. Ann Surg. 2011; 254(2):320-325.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_invasive_component_in_intracholecystic_papillary_neoplasm_and_mucinous_cystic_neoplasm_may_be_un",
+          "label": "The invasive component in intracholecystic papillary neoplasm and mucinous cystic neoplasm may be unifocal or multifocal. In multifocal invasive carcinoma, it is recommended to include the size of the largest focus, the combined size of all invasive foci, and/or the percentage of invasive tumor relative to the gross tumor size (see also note I).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "blood_vessel_andor_lymphatic_invasion_has_been_reported_to_be_an_adverse_prognostic_feature_in_some_",
+          "label": "Blood vessel and/or lymphatic invasion has been reported to be an adverse prognostic feature in some but not all studies.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aramaki_m_matsumoto_t_shibata_k_et_al_factors_influencing_recurrence_after_surgical_treatment_for_t2",
+          "label": "Aramaki M, Matsumoto T, Shibata K, et al. Factors influencing recurrence after surgical treatment for T2 gallbladder carcinoma. Hepatogastroenterology. 2004;51(60):1609-1611.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chijiiwa_k_yamaguchi_k_tanaka_m_clinicopathologic_differences_between_long_term_and_short_term_posto",
+          "label": "Chijiiwa K, Yamaguchi K, Tanaka M. Clinicopathologic differences between long-term and short-term postoperative survivors with advanced gallbladder carcinoma. World J Surg. 1997;21(1):98-102.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yamaguchi_k_chijiiwa_k_saiki_s_et_al_retrospective_analysis_of_70_operations_for_gallbladder_carcino",
+          "label": "Yamaguchi K, Chijiiwa K, Saiki S, et al. Retrospective analysis of 70 operations for gallbladder carcinoma. Br J Surg. 1997;84(2):200-204.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perineural_invasion_by_neoplastic_cells_is_very_common_in_gallbladder_carcinoma_and_has_been_identif",
+          "label": "Perineural invasion by neoplastic cells is very common in gallbladder carcinoma and has been identified as an adverse prognostic factor in some but not all studies.1,2,3 Perineural invasion has been associated with spread of carcinoma beyond the gallbladder to involve the biliary tree.4 A diagnostic pitfall may occur in cases of adenomyomatous hyperplasia, because the ductal structures of adenomyomatous hyperplasia may involve perineural spaces.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aramaki_m_matsumoto_t_shibata_k_et_al_factors_influencing_recurrence_after_surgical_treatment_for_t2",
+          "label": "Aramaki M, Matsumoto T, Shibata K, et al. Factors influencing recurrence after surgical treatment for T2 gallbladder carcinoma. Hepatogastroenterology. 2004;51(60):1609-1611.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sasaki_e_nagino_m_ebata_t_et_al_immunohistochemically_demonstrated_lymph_node_micrometastasis_and_pr",
+          "label": "Sasaki E, Nagino M, Ebata T, et al. Immunohistochemically demonstrated lymph node micrometastasis and prognosis in patients with gallbladder carcinoma. Ann Surg. 2006;244(1):99-105.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yamaguchi_r_nagino_m_oda_k_kamiya_j_uesaka_k_nimura_y_perineural_invasion_has_a_negative_impact_on_s",
+          "label": "Yamaguchi R, Nagino M, Oda K, Kamiya J, Uesaka K, Nimura Y. Perineural invasion has a negative impact on survival of patients with gallbladder carcinoma. Br J Surg. 2002;89(9):1130-1136.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yamaguchi_k_chijiiwa_k_saiki_s_et_al_retrospective_analysis_of_70_operations_for_gallbladder_carcino",
+          "label": "Yamaguchi K, Chijiiwa K, Saiki S, et al. Retrospective analysis of 70 operations for gallbladder carcinoma. Br J Surg. 1997;84(2):200-204.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "albores_saavedra_j_henson_de_adenomyomatous_hyperplasia_of_the_gallbladder_with_perineural_invasion_",
+          "label": "Albores-Saavedra J, Henson DE. Adenomyomatous hyperplasia of the gallbladder with perineural invasion. Arch Pathol Lab Med. 1995; 119:1173-1176.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "response_of_tumor_to_previous_chemotherapy_or_radiation_therapy_should_be_reported_when_applicable_s",
+          "label": "Response of tumor to previous chemotherapy or radiation therapy should be reported, when applicable. Several scoring systems have been described, and a modified Ryan scheme1 is recommended, as below",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_ryan_scheme_for_tumor_regression_score1",
+          "label": "Modified Ryan Scheme for Tumor Regression Score1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sizable_pools_of_acellular_mucin_may_be_present_after_chemoradiation_but_should_not_be_interpreted_a",
+          "label": "Sizable pools of acellular mucin may be present after chemoradiation but should not be interpreted as representing residual tumor. It is suggested that to estimate the approximate size of the tumor by adding the size of all the viable tumor foci within the tumor mass based in the histologic evaluation. Only the extent of the viable tumor should be used to assign the ypT category as site appropriate, and this requires a combined assessment of both gross and microscopic findings.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_does_not_preclude_the_use_of_other_systems_for_assessment_of_tumor_response23_a_modifi",
+          "label": "This protocol does not preclude the use of other systems for assessment of tumor response.2,3 A modification of the above scoring scheme into a 3-tier scheme has been shown to correlate better with outcome: no residual carcinoma (grade 0), minimal residual carcinoma defined as single cells or small groups of cancer cells, <5% residual carcinoma (grade 1), 5% or more residual carcinoma (grade 2).4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ryan_r_gibbons_d_hyland_jmp_et_al_pathological_response_following_long_course_neoadjuvant_chemoradio",
+          "label": "Ryan R, Gibbons D, Hyland JMP, et al. Pathological response following long-course neoadjuvant chemoradiotherapy for locally advanced rectal cancer. Histopathology. 2005; 47:141-146.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "evans_db_rich_ta_byrd_dr_et_al_preoperative_chemoradiation_and_pancreaticoduodenectomy_for_adenocarc",
+          "label": "Evans DB, Rich TA, Byrd DR, et al. Preoperative chemoradiation and pancreaticoduodenectomy for adenocarcinoma of the pancreas. Arch Surg. 1992; 127:1335-1339.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "breslin_tm_hess_kr_harbison_db_et_al_neoadjuvant_chemoradiotherapy_for_adenocarcinoma_of_the_pancrea",
+          "label": "Breslin TM, Hess KR, Harbison DB, et al. Neoadjuvant chemoradiotherapy for adenocarcinoma of the pancreas: treatment variables and survival duration. Ann Surg Oncol. 2001;8(2):123-132.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chatterjee_d_katz_mh_rashid_a_et_al_histologic_grading_of_the_extent_of_residual_carcinoma_following",
+          "label": "Chatterjee D, Katz MH, Rashid A, et al. Histologic grading of the extent of residual carcinoma following neoadjuvant chemoradiation in pancreatic ductal adenocarcinoma: a predictor for patient outcome. Cancer. 2012;118(12):3182-3190.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lee_sm_katz_mh_liu_l_et_al_validation_of_a_proposed_tumor_regression_grading_scheme_for_pancreatic_d",
+          "label": "Lee SM, Katz MH, Liu L, et al. Validation of a proposed tumor regression grading scheme for pancreatic ductal adenocarcinoma after neoadjuvant therapy as a prognostic indicator for survival. Am J Surg Pathol. 2016;40(12):1653-1660.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "complete_surgical_resection_with_negative_margins_remains_the_most_effective_therapy_for_gallbladder",
+          "label": "Complete surgical resection with negative margins remains the most effective therapy for gallbladder cancer, with 5-year survival advantages of 30% for patients with negative margins (R0) compared with those with microscopic (R1) or macroscopic (R2) residual disease.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "balachandran_p_agarwal_s_krishnani_n_et_al_predictors_of_long_term_survival_in_patients_with_gallbla",
+          "label": "Balachandran P, Agarwal S, Krishnani N, et al. Predictors of long-term survival in patients with gallbladder cancer. J Gastrointest Surg. 2006;10(6):848-854.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "surgical_resection_is_the_most_effective_therapy_for_gallbladder_carcinomas_and_the_best_estimation_",
+          "label": "Surgical resection is the most effective therapy for gallbladder carcinomas, and the best estimation of prognosis is related to the anatomic extent (stage) of disease at the time of resection. In particular, lymph node metastases are predictors of poorer outcome.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_for_carcinomas_of_the_gallbladder_of_the_american_joint_committee_on_cancer_a",
+          "label": "The TNM staging system for carcinomas of the gallbladder of the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) is recommended by the protocol and shown below.3 The TNM system does not apply to carcinoid tumors or to sarcomas. Carcinomas of the gallbladder are staged according to their depth of penetration into the wall and extension to adjacent organs, and the extent of invasion correlates inversely with survival.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previ",
+          "label": "According to AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (i.e., before initiation of neoadjuvant therapy). A formal tumor regression grading system has not been specifically developed for this tumor type. If there has been neoadjuvant treatment, at least a semi-quantitative assessment of residual viable tumor should be included in the report (see also Note G).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_gallbladder_carcinomas_carcinoma_in_situ_ptis_as_a_staging_term_includes_neoplastic_cells_cytolo",
+          "label": "For gallbladder carcinomas, carcinoma in situ (pTis) as a staging term includes neoplastic cells cytologically indistinguishable from invasive carcinoma but confined within the glandular basement membrane.5 These lesions are usually referred to as high-grade dysplasia rather than carcinoma in situ and the latter term is retained for tumor registry reporting purposes as specified by law in many states. Noninvasive gallbladder tumors with a papillary growth pattern (intracystic papillary neoplasms) are classified as pTis.  Multiple sections should be examined in these cases to exclude invasive cancer.5,6 Dysplasia of the gallbladder mucosa is often confused with the reactive change due to inflammation or repair.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "involvement_of_rokitansky_aschoff_ra_sinuses_poses_several_challenges_distinguishing_extension_of_dy",
+          "label": "Involvement of Rokitansky-Aschoff (RA) sinuses poses several challenges. Distinguishing extension of dysplastic epithelium into RA sinuses from invasive carcinoma may be difficult. Connection of epithelial invaginations to the luminal surface, normal biliary epithelium admixed with neoplastic epithelium, inspissated bile in long dilated spaces, and lack of invasion of smooth muscle bundles favors noninvasive carcinoma involving RA sinuses.7 RA sinus involvement has been reported as being an independent adverse prognostic factor.8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_extending_beyond_the_muscularis_propria_are_subdivided_based_on_involvement_of_the_perimuscul",
+          "label": "Tumors extending beyond the muscularis propria are subdivided based on involvement of the perimuscular tissue on the peritoneal side (T2a) or the hepatic side (T2b), with the latter associated with a worse outcome.9 If both sides are involved, the tumor should be categorized as T2b. Direct invasion into the liver or adjacent organs is not considered distant metastasis, and is categorized as T3 or T4 depending on the tumor extent.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_synoptic_report_is_not_required_for_intracholecystic_papillary_neoplasms_and_mucinous_cystic_neo",
+          "label": "The synoptic report is not required for intracholecystic papillary neoplasms and mucinous cystic neoplasms in the absence of an invasive component for accreditation purposed. For invasive carcinoma associated with these neoplasms, the deepest focus of the invasive component should be used to determine the T category. The invasive portion in these cases can be multifocal and it is suggested that in addition to the size of the largest focus, also include the combined/cumulative size of all invasive carcinoma foci and/or their percentage relative to the gross tumor size (see also note D).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_regional_lymph_nodes_of_the_gallbladder_include_nodes_along_the_common_bile_duct_hepatic_artery_",
+          "label": "The regional lymph nodes of the gallbladder include nodes along the common bile duct, hepatic artery, portal vein, and cystic duct. Celiac and superior mesenteric and peripancreatic lymph node involvement is considered metastatic (M1) disease.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_it_has_been_suggested_that_micrometastases_detected_by_immunohistochemical_studies_for_cyto",
+          "label": "Although it has been suggested that micrometastases detected by immunohistochemical studies for cytokeratin are associated with poor outcome in gallbladder carcinomas,10 such studies are few in number and remain unvalidated by larger series. Routine assessment of regional lymph nodes is limited to conventional pathologic techniques (gross assessment and histologic examination), and data are currently insufficient to recommend special measures to detect micrometastasis or isolated tumor cells. Thus, neither multiple levels of paraffin blocks nor the use of special/ancillary techniques, such as immunohistochemistry, are recommended for routine examination of regional lymph nodes.1 Evaluation of at least 6 lymph nodes has been recommended.11,12",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_t1a_is_defined_as_tumor_invading_lamina_propria_t1b_is_defined_as_tumor_invading_muscle_lay",
+          "label": "Figure 1. T1a is defined as tumor invading lamina propria; T1b is defined as tumor invading muscle layer. From Greene et al.13 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_two_views_of_t2_tumor_invading_perimuscular_connective_tissue_below_dotted_line_on_the_peri",
+          "label": "Figure 2.  Two views of T2: Tumor invading perimuscular connective tissue (below dotted line) on the peritoneal side without serosal involvement (T2a) and tumor invading the perimuscular connective tissue (above dotted line) on the hepatic side (T2b) without liver involvement. From Greene et al.13 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_two_views_of_t3_a_tumor_perforating_the_serosa_visceral_peritoneum_below_dotted_line_andor_",
+          "label": "Figure 3. Two views of T3. A. Tumor perforating the serosa (visceral peritoneum) (below dotted line) and/or directly invading the liver (above dotted line). B. T3 may also be defined as tumor invading one other adjacent organ or structure, such as the duodenum (illustrated). From Greene et al.13 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_a_t4_is_defined_as_tumor_invading_the_main_portal_vein_or_hepatic_artery_illustrated_or_inv",
+          "label": "Figure 4.  A. T4 is defined as tumor invading the main portal vein or hepatic artery (illustrated) or invading two or more extrahepatic organs or structures. B. T4 invading two or more extrahepatic organs or structures (here, invading colon and duodenum). From Greene et al.13 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vessel_invasion",
+          "label": "Vessel Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_vessel_invasion_lymphatic_or_venous_does_not_affect_the_t_category_",
+          "label": "According to AJCC/UICC convention, vessel invasion (lymphatic or venous) does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "de_aretxabala_x_roa_i_burgos_l_et_al_gallbladder_cancer_an_analysis_of_a_series_of_139_patients_with",
+          "label": "de Aretxabala X, Roa I, Burgos L, et al. Gallbladder cancer: an analysis of a series of 139 patients with invasion restricted to the subserosal layer. J Gastrointest Surg. 2006;10(2):186-192.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "endo_i_shimada_h_tanabe_m_et_al_prognostic_significance_of_the_number_of_positive_lymph_nodes_in_gal",
+          "label": "Endo I, Shimada H, Tanabe M, et al. Prognostic significance of the number of positive lymph nodes in gallbladder cancer. J Gastrointest Surg. 2006;10(7):999-1007.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sasaki_r_uesugi_n_itabashi_h_et_al_clinicopathological_study_of_depth_of_subserosal_invasion_in_pati",
+          "label": "Sasaki R, Uesugi N, Itabashi H, et al. Clinicopathological study of depth of subserosal invasion in patients with pT2 gallbladder carcinoma. J Surg Oncol. 2005;92(2):83-88.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aloia_ta_járufe_n_javle_m_et_al_gallbladder_cancer_expert_consensus_statement_hpb_oxford_2015178681_",
+          "label": "Aloia TA, Járufe N, Javle M, et al. Gallbladder cancer: expert consensus statement. HPB (Oxford). 2015;17(8):681-690.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adsay_v_saka_b_basturk_o_roa_jc_criteria_for_pathologic_sampling_of_gallbladder_specimens_am_j_clin_",
+          "label": "Adsay V, Saka B, Basturk O, Roa JC. Criteria for pathologic sampling of gallbladder specimens. Am J Clin Pathol. 2013;140(2):278-280.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "albores_saavedra_j_shukla_d_carrick_k_henson_de_in_situ_and_invasive_adenocarcinomas_of_the_gallblad",
+          "label": "Albores-Saavedra J, Shukla D, Carrick K, Henson DE. In situ and invasive adenocarcinomas of the gallbladder extending into or arising from Rokitansky-Aschoff sinuses: a clinicopathologic study of 49 cases. Am J Surg Pathol. 2004;28(5):621-628.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roa_jc_tapia_o_manterola_c_et_al_early_gallbladder_carcinoma_has_a_favorable_outcome_but_rokitansky_",
+          "label": "Roa JC, Tapia O, Manterola C, et al. Early gallbladder carcinoma has a favorable outcome but Rokitansky-Aschoff sinus involvement is an adverse prognostic factor. Virchow Arch. 2013;463(5):651-61.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shindoh_j_de_aretxabala_x_aloia_ta_et_al_tumor_location_is_a_strong_predictor_of_tumor_progression_a",
+          "label": "Shindoh J, de Aretxabala X, Aloia TA, et al. Tumor location is a strong predictor of tumor progression and survival in t2 gallbladder cancer: an international multicenter study. Ann Surg. 2015;261(4):733-739.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sasaki_e_nagino_m_ebata_t_et_al_immunohistochemically_demonstrated_lymph_node_micrometastasis_and_pr",
+          "label": "Sasaki E, Nagino M, Ebata T, et al. Immunohistochemically demonstrated lymph node micrometastasis and prognosis in patients with gallbladder carcinoma. Ann Surg. 2006;244(1):99-105.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ito_h_ito_k_dangelica_m_et_al_accurate_staging_for_gallbladder_cancer_implications_for_surgical_ther",
+          "label": "Ito H, Ito K, D'Angelica M, et al. Accurate staging for gallbladder cancer: implications for surgical therapy and pathological assessment. Ann Surg. 2011;254(2):320-325.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "liu_gj_li_xh_chen_yx_sun_hd_zhao_gm_hu_sy_radical_lymph_node_dissection_and_assessment_impact_on_gal",
+          "label": "Liu GJ, Li XH, Chen YX, Sun HD, Zhao GM, Hu SY. Radical lymph node dissection and assessment: Impact on gallbladder cancer prognosis. WJG. 2013;19(31):5150-5158.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_common_lesions_associated_with_gallbladder_carcinomas_include_chronic_cholecystitis_and_variou",
+          "label": "Other common lesions associated with gallbladder carcinomas include chronic cholecystitis and various types of metaplasia, such as squamous, pyloric gland, and intestinal metaplasia. Occasionally changes consistent with inflammatory bowel disease are found in the gallbladder. Diffuse calcification of the gallbladder (hyalinizing cholecystitis/porcelain gallbladder)1,2 has historically been associated with gallbladder carcinoma, although this relationship has been questioned. Recent publications indicate that selective mucosal calcification, rather than diffuse intramural calcification, may be more closely associated with gallbladder cancer.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_or_absence_of_stones_should_be_reported_gallbladder_cancer_occurring_in_the_absence_of_",
+          "label": "The presence or absence of stones should be reported. Gallbladder cancer occurring in the absence of stones may result from an anomalous choledocho-pancreatic junction or from an association with chronic inflammatory bowel disease. Gallbladders from patients with primary sclerosing cholangitis (PSC) should be carefully examined for dysplasias, reported in 37% of cases, and adenocarcinoma, reported in 14% of cases in a recent study examining gallbladders from patients with PSC undergoing orthotopic liver transplantation.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stephen_ae_berger_dl_carcinoma_in_the_porcelain_gallbladder_a_relationship_revisited_surgery_2001129",
+          "label": "Stephen AE, Berger DL. Carcinoma in the porcelain gallbladder: a relationship revisited. Surgery. 2001;129(6):699-703.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "towfigh_s_mcfadden_dw_cortina_gr_et_al_porcelain_gallbladder_is_not_associated_with_gallbladder_carc",
+          "label": "Towfigh S, McFadden DW, Cortina GR, et al. Porcelain gallbladder is not associated with gallbladder carcinoma. Am Surg. 2001;67(1):7-10.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lewis_jt_talwalkar_ja_rosen_cb_smyrk_tc_abraham_sc_prevalence_and_risk_factors_for_gallbladder_neopl",
+          "label": "Lewis JT, Talwalkar JA, Rosen CB, Smyrk TC, Abraham SC. Prevalence and risk factors for gallbladder neoplasia in patients with primary sclerosing cholangitis: evidence for a metaplasia-dysplasia-carcinoma sequence. Am J Surg Pathol. 2007;31(6):907-913.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_mmr_ihc_andor_microsatellite_instability_msi_testing_are_now_essential_not_only",
+          "label": "Immunohistochemistry (MMR IHC) and/or microsatellite instability (MSI) testing are now essential not only for identifying Lynch syndrome but also for detecting mismatch repair deficient (dMMR) tumors because FDA approved immune checkpoint inhibitors are now available for any malignancy irrespective of histologic-type or location.1,2 Now NCCN also suggests considering testing it for adenocarcinomas of the small intestine, stomach, pancreas, and biliary tract.3 Similarly, targeted therapies for HER2 have expanded beyond non-breast and non-gastric gastrointestinal cancers.4,5 HER2 testing for advanced gastrointestinal cancers (stage IV, recurrent, or unresectable) is becoming more common, although standardized reporting guidelines for non-gastric gastrointestinal cancers are still lacking. While criteria applicable for colorectal cancer have been developed,6,7 the ASCO/College of American Pathology guidelines for gastric cancer HER2 scoring have been applied in recent clinical trials for other gastrointestinal cancers.8 It is suggested that while reporting HER2 it is a good practice to indicate the criteria used. Further details about mismatch repair enzyme immunohistochemistry and PCR for MSI testing, as well as other ancillary molecular testing can be found in the CAP Biomarkers protocol.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bartley_an_mills_am_konnick_e_et_al_mismatch_repair_and_microsatellite_instability_testing_for_immun",
+          "label": "Bartley AN, Mills AM, Konnick E, et al. Mismatch Repair and Microsatellite Instability Testing for Immune Checkpoint Inhibitor Therapy: Guideline from the College of American Pathologists in Collaboration with the Association for Molecular Pathology and Fight Colorectal Cancer. Arch Pathol Lab Med. 2022, 146(10):1194-1210.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abrha_a_shukla_nd_hodan_r_et_al_universal_screening_of_gastrointestinal_malignancies_for_mismatch_re",
+          "label": "Abrha A, Shukla ND, Hodan R, et al. Universal Screening of Gastrointestinal Malignancies for Mismatch Repair Deficiency at Stanford. JNCI Cancer Spectr. 2020,19;4(5): pkaa054.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weiss_jm_gupta_s_burke_ca_et_al_nccn_guidelines_insights_geneticfamilial_high_risk_assessment_colore",
+          "label": "Weiss JM, Gupta S, Burke CA, et al. NCCN Guidelines® Insights: Genetic/Familial High-Risk Assessment: Colorectal, Version 1.2021. J Natl Compr Canc Netw. 2021, 15;19(10):1122-1132.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yoon_j_and_do_youn_oh_dy_her2_targeted_therapies_beyond_breast_cancer_an_update_nat_rev_clin_oncol_2",
+          "label": "Yoon J and Do-Youn Oh DY. HER2-targeted therapies beyond breast cancer - an update. Nat Rev Clin Oncol. 2024, 21(9):675-700.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "valtorta_e_martino_c_sartore_bianchi_a_et_al_assessment_of_a_her2_scoring_system_for_colorectal_canc",
+          "label": "Valtorta E, Martino C, Sartore-Bianchi A, et al. Assessment of a HER2 scoring system for colorectal cancer: results from a validation study. Mod Pathol. 2015, 28(11):1481-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "strickler_jh_cercek_a_siena_s_et_al_tucatinib_plus_trastuzumab_for_chemotherapy_refractory_her2_posi",
+          "label": "Strickler JH, Cercek A, Siena S, et al. Tucatinib plus trastuzumab for chemotherapy-refractory, HER2-positive, RAS wild-type unresectable or metastatic colorectal cancer (MOUNTAINEER): a multicentre, open-label, phase 2 study. Lancet Oncol. 2023, 24 (5): 496-208.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meric_bernstam_f_makker_v_oaknin_a_et_al_efficacy_and_safety_of_trastuzumab_deruxtecan_in_patients_w",
+          "label": "Meric-Bernstam F, Makker V, Oaknin A, et al. Efficacy and Safety of Trastuzumab Deruxtecan in Patients with HER2-Expressing Solid Tumors: Primary Results From the DESTINY-PanTumor02 Phase II Trial. J Clin Oncol. 2024, 42(1):47-58.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

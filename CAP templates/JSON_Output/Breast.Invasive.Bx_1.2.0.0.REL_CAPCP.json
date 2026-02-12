@@ -1,0 +1,990 @@
+{
+  "template_id": "Breast.Invasive.Bx_1.2.0.0.REL_CAPCP",
+  "organ": "INVASIVE CARCINOMA OF THE BREAST: Biopsy",
+  "protocol_posting_date": "March 2023",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "needle_biopsy",
+              "label": "Needle biopsy"
+            },
+            {
+              "value": "fine_needle_aspiration",
+              "label": "Fine needle aspiration"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "upper_outer_quadrant",
+              "label": "Upper outer quadrant"
+            },
+            {
+              "value": "lower_outer_quadrant",
+              "label": "Lower outer quadrant"
+            },
+            {
+              "value": "upper_inner_quadrant",
+              "label": "Upper inner quadrant"
+            },
+            {
+              "value": "lower_inner_quadrant",
+              "label": "Lower inner quadrant"
+            },
+            {
+              "value": "central",
+              "label": "Central"
+            },
+            {
+              "value": "nipple",
+              "label": "Nipple"
+            },
+            {
+              "value": "clock_position",
+              "label": "Clock position"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_clock_position",
+          "label": "Specify Clock Position",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "1_oclock",
+              "label": "1 o'clock"
+            },
+            {
+              "value": "2_oclock",
+              "label": "2 o'clock"
+            },
+            {
+              "value": "3_oclock",
+              "label": "3 o'clock"
+            },
+            {
+              "value": "4_oclock",
+              "label": "4 o'clock"
+            },
+            {
+              "value": "5_oclock",
+              "label": "5 o'clock"
+            },
+            {
+              "value": "6_oclock",
+              "label": "6 o'clock"
+            },
+            {
+              "value": "7_oclock",
+              "label": "7 o'clock"
+            },
+            {
+              "value": "8_oclock",
+              "label": "8 o'clock"
+            },
+            {
+              "value": "9_oclock",
+              "label": "9 o'clock"
+            },
+            {
+              "value": "10_oclock",
+              "label": "10 o'clock"
+            },
+            {
+              "value": "11_oclock",
+              "label": "11 o'clock"
+            },
+            {
+              "value": "12_oclock",
+              "label": "12 o'clock"
+            },
+            {
+              "value": "specify_distance_from_nipple_in_centimeters",
+              "label": "Specify distance from nipple in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_residual_invasive_carcinoma",
+              "label": "No residual invasive carcinoma"
+            },
+            {
+              "value": "invasive_carcinoma_of_no_special_type",
+              "label": "Invasive carcinoma of no special type (ductal)"
+            },
+            {
+              "value": "micro_invasive_carcinoma",
+              "label": "Micro-invasive carcinoma"
+            },
+            {
+              "value": "invasive_lobular_carcinoma",
+              "label": "Invasive lobular carcinoma"
+            },
+            {
+              "value": "invasive_carcinoma_with_mixed_ductal_and_lobular_features",
+              "label": "Invasive carcinoma with mixed ductal and lobular features"
+            },
+            {
+              "value": "invasive_carcinoma_with_features_of",
+              "label": "Invasive carcinoma with features of (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tubular_carcinoma",
+              "label": "Tubular carcinoma"
+            },
+            {
+              "value": "invasive_cribriform_carcinoma",
+              "label": "Invasive cribriform carcinoma"
+            },
+            {
+              "value": "mucinous_carcinoma",
+              "label": "Mucinous carcinoma"
+            },
+            {
+              "value": "invasive_micropapillary_carcinoma",
+              "label": "Invasive micropapillary carcinoma"
+            },
+            {
+              "value": "apocrine_adenocarcinoma",
+              "label": "Apocrine adenocarcinoma"
+            },
+            {
+              "value": "metaplastic_carcinoma",
+              "label": "Metaplastic carcinoma"
+            },
+            {
+              "value": "encapsulated_papillary_carcinoma_with_invasion",
+              "label": "Encapsulated papillary carcinoma with invasion"
+            },
+            {
+              "value": "solid_papillary_carcinoma_with_invasion",
+              "label": "Solid papillary carcinoma with invasion"
+            },
+            {
+              "value": "intraductal_papillary_adenocarcinoma_with_invasion",
+              "label": "Intraductal papillary adenocarcinoma with invasion"
+            },
+            {
+              "value": "adenoid_cystic_carcinoma",
+              "label": "Adenoid cystic carcinoma"
+            },
+            {
+              "value": "neuroendocrine_tumor",
+              "label": "Neuroendocrine tumor"
+            },
+            {
+              "value": "neuroendocrine_carcinoma",
+              "label": "Neuroendocrine carcinoma"
+            },
+            {
+              "value": "invasive_carcinoma_type_cannot_be_determined",
+              "label": "Invasive carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade_nottingham_histologic_score",
+          "label": "Histologic Grade (Nottingham Histologic Score)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no residual carcinoma or microinvasion only)"
+            },
+            {
+              "value": "nottingham_score",
+              "label": "Nottingham Score"
+            }
+          ],
+          "notes": [
+            "B"
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "glandular_acinar_tubular_differentiation",
+          "label": "Glandular (Acinar) / Tubular Differentiation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "score_1",
+              "label": "Score 1 (greater than 75% of tumor area forming glandular / tubular structures)"
+            },
+            {
+              "value": "score_2",
+              "label": "Score 2 (10% to 75% of tumor area forming glandular / tubular structures)"
+            },
+            {
+              "value": "score_3",
+              "label": "Score 3 (less than 10% of tumor area forming glandular / tubular structures)"
+            },
+            {
+              "value": "score_cannot_be_determined",
+              "label": "Score cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nuclear_pleomorphism",
+          "label": "Nuclear Pleomorphism",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "score_1",
+              "label": "Score 1 (Nuclei small with little increase in size in comparison with normal breast epithelial cells,"
+            }
+          ]
+        },
+        {
+          "field_id": "regular_outlines_uniform_nuclear_chromatin_little_variation_in_size",
+          "label": "regular outlines, uniform nuclear chromatin, little variation in size)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "score_2",
+              "label": "Score 2 (Cells larger than normal with open vesicular nuclei, visible nucleoli, and moderate"
+            }
+          ]
+        },
+        {
+          "field_id": "variability_in_both_size_and_shape",
+          "label": "variability in both size and shape)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "score_3",
+              "label": "Score 3 (Vesicular nuclei, often with prominent nucleoli, exhibiting marked variation in size and"
+            }
+          ]
+        },
+        {
+          "field_id": "shape_occasionally_with_very_large_and_bizarre_forms",
+          "label": "shape, occasionally with very large and bizarre forms)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "score_cannot_be_determined",
+              "label": "Score cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "mitotic_rate",
+          "label": "Mitotic Rate",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "see_table_1_in_cap_protocol",
+          "label": "See Table 1 in CAP Protocol.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "score_1",
+              "label": "Score 1"
+            },
+            {
+              "value": "score_2",
+              "label": "Score 2"
+            },
+            {
+              "value": "score_3",
+              "label": "Score 3"
+            },
+            {
+              "value": "score_cannot_be_determined",
+              "label": "Score cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "overall_grade",
+          "label": "Overall Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "grade_1",
+              "label": "Grade 1 (scores of 3, 4 or 5)"
+            },
+            {
+              "value": "grade_2",
+              "label": "Grade 2 (scores of 6 or 7)"
+            },
+            {
+              "value": "grade_3",
+              "label": "Grade 3 (scores of 8 or 9)"
+            },
+            {
+              "value": "score_cannot_be_determined",
+              "label": "Score cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "largest_invasive_focus_in_this_limited_biopsy_sample",
+          "label": "Largest Invasive Focus in this Limited Biopsy Sample",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement_in_millimeters",
+              "label": "Exact measurement in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least_in_millimeters",
+              "label": "At least in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ductal_carcinoma_in_situ",
+          "label": "Ductal Carcinoma In Situ",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "C"
+          ],
+          "condition": "DCIS"
+        },
+        {
+          "field_id": "architectural_patterns",
+          "label": "Architectural Patterns",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "comedo",
+              "label": "Comedo"
+            },
+            {
+              "value": "paget_disease",
+              "label": "Paget disease (DCIS involving nipple skin)"
+            },
+            {
+              "value": "cribriform",
+              "label": "Cribriform"
+            },
+            {
+              "value": "micropapillary",
+              "label": "Micropapillary"
+            },
+            {
+              "value": "papillary",
+              "label": "Papillary"
+            },
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nuclear_grade",
+          "label": "Nuclear Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "grade_i",
+              "label": "Grade I (low)"
+            },
+            {
+              "value": "grade_ii",
+              "label": "Grade II (intermediate)"
+            },
+            {
+              "value": "grade_iii",
+              "label": "Grade III (high)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "necrosis",
+          "label": "Necrosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_focal",
+              "label": "Present, focal (small foci or single cell necrosis)"
+            },
+            {
+              "value": "present_central",
+              "label": "Present, central (expansive \"comedo\" necrosis)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_excluded",
+              "label": "Cannot be excluded"
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "microcalcifications",
+          "label": "Microcalcifications",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_in_dcis",
+              "label": "Present in DCIS"
+            },
+            {
+              "value": "present_in_invasive_carcinoma",
+              "label": "Present in invasive carcinoma"
+            },
+            {
+              "value": "present_in_non_neoplastic_tissue",
+              "label": "Present in non-neoplastic tissue"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "additional_findings_specify",
+          "label": "Additional Findings (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "for_hormone_receptor_and_her2_reporting_the_cap_breast_biomarker_template_should_be_used_wwwcaporgca",
+          "label": "For hormone receptor and HER2 reporting, the CAP Breast Biomarker Template should be used. www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "breast_biomarker_studies_specify_pending_studies",
+          "label": "Breast Biomarker Studies (specify pending studies): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to_all_invasive_carcinomas_of_the_breast_the_world_health_organization_who1_cl",
+          "label": "This protocol applies to all invasive carcinomas of the breast. The World Health Organization (WHO)1 classification of breast carcinoma is recommended, although the protocol does not preclude the use of other classifications or histologic types. Carcinomas may be classified based on the H&E appearance without the use of immunohistochemical studies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_invasive_carcinoma_of_the_breast1",
+          "label": "WHO Classification of Invasive Carcinoma of the Breast1",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_residual_invasive_carcinoma",
+              "label": "No residual invasive carcinoma"
+            },
+            {
+              "value": "invasive_carcinoma_of_no_special_type",
+              "label": "Invasive carcinoma of no special type (ductal)"
+            },
+            {
+              "value": "micro_invasive_carcinoma",
+              "label": "Micro-invasive carcinoma"
+            },
+            {
+              "value": "invasive_lobular_carcinoma",
+              "label": "Invasive lobular carcinoma"
+            },
+            {
+              "value": "invasive_carcinoma_with_mixed_ductal_and_lobular_features",
+              "label": "Invasive carcinoma with mixed ductal and lobular features"
+            },
+            {
+              "value": "invasive_carcinoma_with_mixed_features",
+              "label": "Invasive carcinoma with mixed features (specify): ______________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tubular_carcinoma",
+              "label": "Tubular carcinoma"
+            },
+            {
+              "value": "invasive_cribriform_carcinoma",
+              "label": "Invasive cribriform carcinoma"
+            },
+            {
+              "value": "mucinous_carcinoma",
+              "label": "Mucinous carcinoma"
+            },
+            {
+              "value": "invasive_micropapillary_carcinoma",
+              "label": "Invasive micropapillary carcinoma"
+            },
+            {
+              "value": "apocrine_adenocarcinoma",
+              "label": "Apocrine adenocarcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "metaplastic_carcinoma",
+          "label": "Metaplastic Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "metaplastic_carcinoma_nos",
+              "label": "Metaplastic carcinoma NOS"
+            },
+            {
+              "value": "low_grade_adenosquamous_carcinoma",
+              "label": "Low grade adenosquamous carcinoma"
+            },
+            {
+              "value": "fibromatosis_like_metaplastic_carcinoma",
+              "label": "Fibromatosis-like metaplastic carcinoma"
+            },
+            {
+              "value": "spindle_cell_carcinoma",
+              "label": "Spindle cell carcinoma"
+            },
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma"
+            },
+            {
+              "value": "metaplastic_carcinoma_with_mesenchymal_differentiation",
+              "label": "Metaplastic carcinoma with mesenchymal differentiation"
+            }
+          ]
+        },
+        {
+          "field_id": "neuroendocrine_tumor",
+          "label": "Neuroendocrine Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "neuroendocrine_tumor_nos",
+              "label": "Neuroendocrine tumor NOS"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_1",
+              "label": "Neuroendocrine tumor, grade 1"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_2",
+              "label": "Neuroendocrine tumor, grade 2"
+            }
+          ]
+        },
+        {
+          "field_id": "neuroendocrine_carcinoma",
+          "label": "Neuroendocrine Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "neuroendocrine_carcinoma_nos",
+              "label": "Neuroendocrine carcinoma NOS"
+            },
+            {
+              "value": "neuroendocrine_carcinoma_small_cell",
+              "label": "Neuroendocrine carcinoma, small cell"
+            },
+            {
+              "value": "neuroendocrine_carcinoma_large_cell",
+              "label": "Neuroendocrine carcinoma, large cell"
+            },
+            {
+              "value": "invasive_carcinoma_type_cannot_be_determined",
+              "label": "Invasive carcinoma, type cannot be determined"
+            },
+            {
+              "value": "other_histologic_type",
+              "label": "Other histologic type (specify): ____________________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_papillary_carcinoma_____encapsulated_papillary_carcinoma_with_invasion_____solid_papillary_",
+              "label": "Invasive papillary carcinoma\n___ Encapsulated papillary carcinoma with invasion\n___ Solid papillary carcinoma with invasion\n___ Intraductal papillary adenocarcinoma with invasion\n___ Oncocytic carcinoma\n___ Lipid-rich carcinoma\n___ Glycogen-rich carcinoma\n___ Sebaceous carcinoma\n___ Mucinous cystadenocarcinoma NOS\n___ Acinar cell carcinoma\n___ Classic adenoid cystic carcinoma\n___ Solid-basaloid adenoid cystic carcinoma\n___ Adenoid cystic carcinoma with high-grade transformation\n___ Secretory carcinoma\n___ Mucoepidermoid carcinoma\n___ Polymorphous adenocarcinoma\n___ Tall cell carcinoma with reversed polarity\n___ Adenomyoepithelioma with carcinoma\n___ Epithelial-myoepithelial carcinoma\n___ Other type not listed (specify): ____________________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_embreast_tumoursem_lyon_france_international_agency_fo",
+          "label": "WHO Classification of Tumours Editorial Board. <em>Breast tumours</em>. Lyon (France): International Agency for Research on Cancer; 2019.",
+          "required": true,
+          "type": "free_text",
+          "condition": "WHO classification of tumours series, 5th ed.; vol. 2"
+        },
+        {
+          "field_id": "all_invasive_breast_carcinomas_should_be_graded1_the_nottingham_combined_histologic_grade_elston_ell",
+          "label": "All invasive breast carcinomas should be graded.1 The Nottingham combined histologic grade (Elston-Ellis modification of Scarff-Bloom-Richardson grading system) should be used for reporting. Within each stage grouping, there is a relation between histologic grade and outcome.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_nottingham_combined_histologic_grade_evaluates_the_amount_of_tubule_formation_the_extent_of_nucl",
+          "label": "The Nottingham combined histologic grade evaluates the amount of tubule formation, the extent of nuclear pleomorphism, and the mitotic count (or mitotic rate). Each variable is given a score of 1, 2, or 3, and the scores are added to produce a grade. The mitotic score is determined by the number of mitotic figures found in 10 consecutive high-power fields (HPF) in the most mitotically active part of the tumor. Only clearly identifiable mitotic figures should be counted; hyperchromatic, karyorrhectic, or apoptotic nuclei are excluded. Because of variations in field size, the HPF size must be determined for each microscope and the appropriate point score determined accordingly. It is recommended that the size be measured by using a micrometer. However, the diameter of an HPF can also be calculated by using the method below.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "measuring_the_size_of_a_high_power_field_hpf_with_a_ruler",
+          "label": "Measuring the Size of a High-Power Field (HPF) With a Ruler",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "use_a_clear_ruler_to_measure_the_diameter_of_a_low_power_field_this_number_can_be_used_to_calculate_",
+          "label": "Use a clear ruler to measure the diameter of a low-power field. This number can be used to calculate a constant based on the following formula",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eyepiece_magnification_x_objective_magnification_x_microscopic_field_diameter_a_constant",
+          "label": "Eyepiece Magnification x Objective Magnification x Microscopic Field Diameter = A Constant",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_the_value_of_the_constant_is_known_the_diameter_of_an_hpf_can_be_calculated_for_other_objective",
+          "label": "When the value of the constant is known, the diameter of an HPF can be calculated for other objectives by using the following formula",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "unknown_field_diameter_constant",
+          "label": "Unknown Field Diameter = Constant/",
+          "required": true,
+          "type": "free_text",
+          "condition": "Eyepiece Magnification x Objective Magnification"
+        },
+        {
+          "field_id": "half_of_the_field_diameter_is_the_radius_of_the_field_r_which_can_then_be_used_to_calculate_the_area",
+          "label": "Half of the field diameter is the radius of the field (r), which can then be used to calculate the area of the HPF",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_microscopic_field_diameter_or_the_area_of_the_field_is_known_table_1_can_be_used_to_determine",
+          "label": "If the microscopic field diameter or the area of the field is known, Table 1 can be used to determine the number of mitoses corresponding to different scores.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_score_categories_according_to_field_diameter_and_mitotic_count",
+          "label": "Table 1.  Score Categories According to Field Diameter and Mitotic Count",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "from_pathology_reporting_of_breast_disease2_copyright_2005_national_health_service_cancer_screening_",
+          "label": "From Pathology Reporting of Breast Disease.2 Copyright 2005 National Health Service Cancer Screening Programme and The Royal College of Pathologists. Adapted with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ellis_io_elston_cw_histologic_grade_in_omalley_fp_pinder_se_eds_breast_pathology_philadelphia_pa_els",
+          "label": "Ellis IO, Elston CW. Histologic grade. In: O’Malley FP, Pinder SE, eds. Breast Pathology. Philadelphia, PA: Elsevier; 2006:225-233.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathology_reporting_of_breast_disease_a_joint_document_incorporating_the_third_edition_of_the_nhs_br",
+          "label": "Pathology Reporting of Breast Disease. A Joint Document Incorporating the Third Edition of the NHS Breast Screening Programme’s Guidelines for Pathology Reporting in Breast Cancer Screening and the Second Edition of The Royal College of Pathologists’ Minimum Dataset for Breast Cancer Histopathology Published by the NHS Cancer Screening Programmes jointly with The Royal College of Pathologists. NHSBSP Publication No 58. January 2005. http://www.cancerscreening.nhs.uk/ breastscreen/publications/nhsbsp58.html. Accessed April 8, 2009.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nuclear_grade_of_dcis",
+          "label": "Nuclear Grade of DCIS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_nuclear_grade_of_dcis_is_determined_using_6_morphologic_features_table_11",
+          "label": "The nuclear grade of DCIS is determined using 6 morphologic features (Table 1).1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_nuclear_grade_of_ductal_carcinoma_in_situ",
+          "label": "Table 2. Nuclear Grade of Ductal Carcinoma in Situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "necrosis",
+          "label": "Necrosis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_necrosis_is_correlated_with_the_finding_of_mammographic_calcifications_ie_most_areas",
+          "label": "The presence of necrosis is correlated with the finding of mammographic calcifications (i.e., most areas of necrosis will calcify). Ductal carcinoma in situ that presents as mammographic calcifications often recurs as calcifications. Necrosis can be classified as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "central_comedo_the_central_portion_of_an_involved_ductal_space_is_replaced_by_an_area_of_expansive_n",
+          "label": "Central (“comedo”): The central portion of an involved ductal space is replaced by an area of expansive necrosis that is easily detected at low magnification. Ghost cells and karyorrhectic debris are generally present. Although central necrosis is generally associated with high-grade nuclei (i.e., comedo DCIS), it can also occur with DCIS of low or intermediate nuclear grade.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "focal_small_foci_indistinct_at_low_magnification_or_single_cell_necrosis",
+          "label": "Focal: Small foci, indistinct at low magnification, or single cell necrosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "necrosis_should_be_distinguished_from_secretory_material_which_can_also_be_associated_with_calcifica",
+          "label": "Necrosis should be distinguished from secretory material, which can also be associated with calcifications, but does not include nuclear debris.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schwartz_gf_lagios_md_carter_d_et_al_consensus_conference_on_the_classification_of_ductal_carcinoma_",
+          "label": "Schwartz GF, Lagios MD, Carter D, et al. Consensus conference on the classification of ductal carcinoma in situ. Cancer. 1997;80:1798-1802.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cancer_found_in_biopsies_performed_for_microcalcifications_will_almost_always_be_at_the_site_of_the_",
+          "label": "Cancer found in biopsies performed for microcalcifications will almost always be at the site of the calcifications or in close proximity. The presence of the targeted calcifications in the specimen should be confirmed by specimen radiography. The pathologist must be satisfied that the specimen has been sampled in such a way that the lesion responsible for the calcifications has been examined microscopically. The relationship of the radiologic calcifications to the invasive carcinoma and the DCIS should be indicated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_calcifications_can_be_seen_in_the_specimen_radiograph_but_not_in_the_initial_histologic_sections_",
+          "label": "If calcifications can be seen in the specimen radiograph but not in the initial histologic sections, deeper levels should be examined. If needed, radiographs of the paraffin block(s) may be obtained to detect calcifications remaining in the block(s). If microcalcifications cannot be confirmed by routine microscopic evaluation, polarized light may be helpful, since calcium oxalate crystals are refractile and polarizable but usually clear or tinged yellow in H&E sections. On rare occasions, calcifications do not survive tissue processing or prolonged fixation in formalin. Foreign material can sometimes simulate calcifications (e.g., metallic fragments after surgery or trauma).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_some_cases_additional_pathologic_findings_are_important_for_the_clinical_management_of_patients_i",
+          "label": "In some cases, additional pathologic findings are important for the clinical management of patients. If multiple invasive carcinomas are present and differ in histologic type, grade, or the expression of ER, PgR, or HER2, this information should be included as text in this section.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

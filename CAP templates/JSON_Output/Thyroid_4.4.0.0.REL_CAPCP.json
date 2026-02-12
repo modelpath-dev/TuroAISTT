@@ -1,0 +1,3023 @@
+{
+  "template_id": "Thyroid_4.4.0.0.REL_CAPCP",
+  "organ": "THYROID GLAND",
+  "protocol_posting_date": "March 2023",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "tumor_characteristics",
+          "label": "Tumor Characteristics",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_multiple_tumors_of_the_same_cellular_lineage_eg_multifocal_papillary_carcinoma_follicular_carcin",
+          "label": "For multiple tumors of the same cellular lineage (e.g., multifocal papillary carcinoma, follicular carcinoma, etc.), one may choose to repeat the following 10 elements (Tumor Site, Histologic Tumor Types and Subtypes, Tumor Size, Tumor Proliferative Activity, Tumor Necrosis, Angioinvasion, Lymphatic Invasion, Perineural Invasion, Extrathyroidal Extension, and Margin Status) for clinically relevant tumors. For medullary thyroid carcinoma, please use a separate synoptic report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_identifier_required_only_for_cases_with_multiple_tumors",
+          "label": "Tumor Identifier (required only for cases with multiple tumors): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_lobe",
+              "label": "Right lobe"
+            },
+            {
+              "value": "left_lobe",
+              "label": "Left lobe"
+            },
+            {
+              "value": "isthmus",
+              "label": "Isthmus"
+            },
+            {
+              "value": "pyramidal_lobe",
+              "label": "Pyramidal lobe"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_tumor_types_and_subtypes",
+          "label": "Histologic Tumor Types and Subtypes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "low_risk_follicular_cell_derived_thyroid_neoplasms",
+              "label": "Low-risk follicular cell-derived thyroid neoplasms"
+            },
+            {
+              "value": "thyroid_follicular_tumor_of_uncertain_malignant_potential",
+              "label": "Thyroid follicular tumor of uncertain malignant potential"
+            },
+            {
+              "value": "thyroid_well_differentiated_tumor_of_uncertain_malignant_potential",
+              "label": "Thyroid well-differentiated tumor of uncertain malignant potential"
+            },
+            {
+              "value": "hyalinizing_trabecular_tumor",
+              "label": "Hyalinizing trabecular tumor"
+            },
+            {
+              "value": "non_invasive_follicular_thyroid_neoplasm_with_papillary_like_nuclear_features",
+              "label": "Non-invasive follicular thyroid neoplasm with papillary like nuclear features (NIFTP)"
+            },
+            {
+              "value": "other_low_risk_follicular_cell_derived_thyroid_neoplasm",
+              "label": "Other low-risk follicular cell-derived thyroid neoplasm (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malignant_follicular_cell_derived_thyroid_neoplasms",
+              "label": "Malignant follicular cell-derived thyroid neoplasms"
+            },
+            {
+              "value": "follicular_thyroid_carcinoma",
+              "label": "Follicular thyroid carcinoma"
+            },
+            {
+              "value": "minimally_invasive_follicular_carcinoma",
+              "label": "Minimally invasive follicular carcinoma"
+            },
+            {
+              "value": "encapsulated_angioinvasive_follicular_carcinoma",
+              "label": "Encapsulated angioinvasive follicular carcinoma"
+            },
+            {
+              "value": "widely_invasive_follicular_carcinoma",
+              "label": "Widely invasive follicular carcinoma"
+            },
+            {
+              "value": "other_follicular_thyroid_carcinoma",
+              "label": "Other follicular thyroid carcinoma (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_encapsulated_follicular_variant_papillary_thyroid_carcinoma",
+              "label": "Invasive encapsulated follicular variant papillary thyroid carcinoma"
+            },
+            {
+              "value": "minimally_invasive_follicular_variant_papillary_carcinoma",
+              "label": "Minimally invasive follicular variant papillary carcinoma"
+            },
+            {
+              "value": "minimally_invasive_oncocytic_follicular_variant_papillary_carcinoma",
+              "label": "Minimally invasive oncocytic follicular variant papillary carcinoma"
+            },
+            {
+              "value": "encapsulated_angioinvasive_follicular_variant_papillary_carcinoma",
+              "label": "Encapsulated angioinvasive follicular variant papillary carcinoma"
+            },
+            {
+              "value": "encapsulated_angioinvasive_oncocytic_follicular_variant_papillary_carcinoma",
+              "label": "Encapsulated angioinvasive oncocytic follicular variant papillary carcinoma"
+            },
+            {
+              "value": "widely_invasive_follicular_variant_papillary_carcinoma",
+              "label": "Widely invasive follicular variant papillary carcinoma"
+            },
+            {
+              "value": "widely_invasive_oncocytic_follicular_variant_papillary_carcinoma",
+              "label": "Widely invasive oncocytic follicular variant papillary carcinoma"
+            },
+            {
+              "value": "other_invasive_encapsulated_follicular_variant_papillary_thyroid_carcinoma",
+              "label": "Other invasive encapsulated follicular variant papillary thyroid carcinoma (specify): ________",
+              "has_free_text": true
+            },
+            {
+              "value": "papillary_thyroid_carcinomas",
+              "label": "Papillary thyroid carcinomas"
+            }
+          ],
+          "notes": [
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ]
+        },
+        {
+          "field_id": "all_papillary_microcarcinomas_less_than_or_equal_to_1_cm_should_be_subtyped_based_on_the_5th_edition",
+          "label": "All papillary microcarcinomas (less than or equal to 1 cm) should be subtyped based on the 5th edition of the WHO classification of thyroid tumors. Papillary microcarcinoma does not stand alone as a subtype and should not be used alone without a subtype designation.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "papillary_carcinoma_classic_subtype",
+              "label": "Papillary carcinoma, classic subtype"
+            },
+            {
+              "value": "papillary_carcinoma_encapsulated_classic_subtype",
+              "label": "Papillary carcinoma, encapsulated classic subtype"
+            },
+            {
+              "value": "papillary_carcinoma_oncocytic_classic_subtype",
+              "label": "Papillary carcinoma, oncocytic classic subtype"
+            },
+            {
+              "value": "papillary_carcinoma_infiltrative_follicular_subtype",
+              "label": "Papillary carcinoma, infiltrative follicular subtype"
+            },
+            {
+              "value": "papillary_carcinoma_tall_cell_subtype",
+              "label": "Papillary carcinoma, tall cell subtype"
+            },
+            {
+              "value": "papillary_carcinoma_hobnail_subtype",
+              "label": "Papillary carcinoma, hobnail subtype"
+            },
+            {
+              "value": "papillary_carcinoma_columnar_cell_subtype",
+              "label": "Papillary carcinoma, columnar cell subtype"
+            },
+            {
+              "value": "papillary_carcinoma_clear_cell_subtype",
+              "label": "Papillary carcinoma, clear cell subtype"
+            },
+            {
+              "value": "papillary_carcinoma_spindle_cell_subtype",
+              "label": "Papillary carcinoma, spindle cell subtype"
+            },
+            {
+              "value": "papillary_carcinoma_solid_subtype",
+              "label": "Papillary carcinoma, solid subtype"
+            },
+            {
+              "value": "papillary_carcinoma_diffuse_sclerosing_subtype",
+              "label": "Papillary carcinoma, diffuse sclerosing subtype"
+            },
+            {
+              "value": "papillary_carcinoma_with_fibromatosis_fasciitis_like_desmoid_type_stroma",
+              "label": "Papillary carcinoma with fibromatosis / fasciitis-like / desmoid type stroma"
+            },
+            {
+              "value": "papillary_carcinoma_warthin_like_subtype",
+              "label": "Papillary carcinoma, Warthin-like subtype"
+            },
+            {
+              "value": "papillary_carcinoma_other_subtype",
+              "label": "Papillary carcinoma, other subtype (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "oncocytic_carcinoma_of_the_thyroid",
+              "label": "Oncocytic carcinoma of the thyroid"
+            },
+            {
+              "value": "minimally_invasive_oncocytic_carcinoma",
+              "label": "Minimally invasive oncocytic carcinoma"
+            },
+            {
+              "value": "encapsulated_angioinvasive_oncocytic_carcinoma",
+              "label": "Encapsulated angioinvasive oncocytic carcinoma"
+            },
+            {
+              "value": "widely_invasive_oncocytic_carcinoma",
+              "label": "Widely invasive oncocytic carcinoma"
+            },
+            {
+              "value": "oncocytic_carcinoma_other",
+              "label": "Oncocytic carcinoma, other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_follicular_cell_derived_differentiated_thyroid_carcinoma",
+              "label": "High-grade follicular cell-derived differentiated thyroid carcinoma"
+            },
+            {
+              "value": "high_grade_follicular_thyroid_carcinoma",
+              "label": "High-grade follicular thyroid carcinoma (specify subtype): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_invasive_encapsulated_follicular_variant_papillary_thyroid_carcinoma",
+              "label": "High-grade invasive encapsulated follicular variant papillary thyroid carcinoma (specify"
+            }
+          ]
+        },
+        {
+          "field_id": "subtype",
+          "label": "subtype): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "high_grade_papillary_thyroid_carcinoma",
+              "label": "High-grade papillary thyroid carcinoma (specify subtype): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_oncocytic_carcinoma_of_the_thyroid",
+              "label": "High-grade oncocytic carcinoma of the thyroid (specify subtype): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_differentiated_thyroid_carcinoma_nos",
+              "label": "High-grade differentiated thyroid carcinoma, NOS"
+            },
+            {
+              "value": "poorly_differentiated_thyroid_carcinoma",
+              "label": "Poorly differentiated thyroid carcinoma"
+            },
+            {
+              "value": "poorly_differentiated_thyroid_carcinoma_nos",
+              "label": "Poorly differentiated thyroid carcinoma, NOS"
+            },
+            {
+              "value": "oncocytic_poorly_differentiated_thyroid_carcinoma",
+              "label": "Oncocytic poorly differentiated thyroid carcinoma"
+            },
+            {
+              "value": "poorly_differentiated_thyroid_carcinoma_other",
+              "label": "Poorly differentiated thyroid carcinoma, other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anaplastic_follicular_cell_derived_thyroid_carcinoma",
+              "label": "Anaplastic follicular cell-derived thyroid carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "formerly_known_as_squamous_cell_carcinoma_of_the_thyroid_is_now_considered_a_morphologic_pattern_of_",
+          "label": "Formerly known as squamous cell carcinoma of the thyroid is now considered a morphologic pattern of anaplastic thyroid carcinoma in the 5th edition of the WHO classification of thyroid tumors.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "anaplastic_thyroid_carcinoma_nos",
+              "label": "Anaplastic thyroid carcinoma, NOS"
+            },
+            {
+              "value": "anaplastic_thyroid_carcinoma_focal_or_minor_component_without_extrathyroidal_extension",
+              "label": "Anaplastic thyroid carcinoma, focal or minor component without extrathyroidal extension"
+            },
+            {
+              "value": "anaplastic_thyroid_carcinoma_major_component",
+              "label": "Anaplastic thyroid carcinoma, major component"
+            },
+            {
+              "value": "other_anaplastic_follicular_cell_derived_thyroid_carcinoma",
+              "label": "Other anaplastic follicular cell-derived thyroid carcinoma (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_malignant_follicular_cell_derived_thyroid_neoplasm",
+              "label": "Other malignant follicular cell-derived thyroid neoplasm (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "c_cell_derived_thyroid_carcinoma",
+              "label": "C cell-derived thyroid carcinoma"
+            },
+            {
+              "value": "medullary_thyroid_carcinoma",
+              "label": "Medullary thyroid carcinoma"
+            },
+            {
+              "value": "other_medullary_thyroid_carcinoma",
+              "label": "Other medullary thyroid carcinoma (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mixed_medullary_and_follicular_cell_derived_thyroid_carcinomas",
+              "label": "Mixed medullary and follicular cell-derived thyroid carcinomas"
+            },
+            {
+              "value": "mixed_medullary_carcinoma_and_follicular_thyroid_carcinoma",
+              "label": "Mixed medullary carcinoma and follicular thyroid carcinoma (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mixed_medullary_carcinoma_and_follicular_variant_papillary_carcinoma",
+              "label": "Mixed medullary carcinoma and follicular variant papillary carcinoma (specify): _____________",
+              "has_free_text": true
+            },
+            {
+              "value": "mixed_medullary_carcinoma_and_papillary_thyroid_carcinoma",
+              "label": "Mixed medullary carcinoma and papillary thyroid carcinoma (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_mixed_medullary_and_follicular_cell_derived_thyroid_carcinoma",
+              "label": "Other mixed medullary and follicular cell-derived thyroid carcinoma (specify): ______________",
+              "has_free_text": true
+            },
+            {
+              "value": "salivary_gland_type_carcinomas_of_the_thyroid",
+              "label": "Salivary gland-type carcinomas of the thyroid"
+            },
+            {
+              "value": "mucoepidermoid_carcinoma_of_the_thyroid_gland",
+              "label": "Mucoepidermoid carcinoma of the thyroid gland"
+            },
+            {
+              "value": "secretory_carcinoma_of_salivary_gland_type",
+              "label": "Secretory carcinoma of salivary gland type"
+            },
+            {
+              "value": "other_salivary_gland_type_carcinoma_of_the_thyroid",
+              "label": "Other salivary gland-type carcinoma of the thyroid (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "thymic_neoplasms_within_the_thyroid",
+              "label": "Thymic neoplasms within the thyroid"
+            },
+            {
+              "value": "thymoma_family",
+              "label": "Thymoma family (specify, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "thymic_carcinoma_family",
+              "label": "Thymic carcinoma family (specify, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "spindle_epithelial_tumor_with_thymus_like_elements",
+              "label": "Spindle epithelial tumor with thymus-like elements (SETTLE)"
+            },
+            {
+              "value": "other_thymic_neoplasm_within_the_thyroid",
+              "label": "Other thymic neoplasm within the thyroid (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "thyroid_neoplasms_of_uncertain_cytogenesis",
+              "label": "Thyroid neoplasms of uncertain cytogenesis"
+            },
+            {
+              "value": "cribriform_morular_thyroid_carcinoma",
+              "label": "Cribriform-morular thyroid carcinoma"
+            },
+            {
+              "value": "sclerosing_mucoepidermoid_carcinoma_with_eosinophilia",
+              "label": "Sclerosing mucoepidermoid carcinoma with eosinophilia (SMECE)"
+            },
+            {
+              "value": "other_thyroid_neoplasm_of_uncertain_cytogenesis",
+              "label": "Other thyroid neoplasm of uncertain cytogenesis (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "embryonal_thyroid_neoplasm_thyroblastoma",
+              "label": "Embryonal thyroid neoplasm, thyroblastoma"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malignant_thyroid_neoplasm_type_cannot_be_determined",
+              "label": "Malignant thyroid neoplasm, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histology_comment",
+          "label": "Histology Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_proliferative_activity",
+          "label": "Tumor Proliferative Activity",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E",
+            "H"
+          ]
+        },
+        {
+          "field_id": "mitotic_rate",
+          "label": "Mitotic Rate",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_3_mitoses_per_2mm2",
+              "label": "Less than 3 mitoses per 2mm2"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_mitoses_per_2_mm2___________________mitoses_per_2_mm2",
+          "label": "Specify Mitoses per 2 mm2: _________________ mitoses per 2 mm2",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greater_than_or_equal_to_3_but_less_than_5_mitoses_per_2_mm2",
+              "label": "Greater than or equal to 3 but less than 5 mitoses per 2 mm2"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_mitoses_per_2_mm2___________________mitoses_per_2_mm2",
+          "label": "Specify Mitoses per 2 mm2: _________________ mitoses per 2 mm2",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greater_than_or_equal_to_5_mitoses_per_2_mm2",
+              "label": "Greater than or equal to 5 mitoses per 2 mm2"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_mitoses_per_2_mm2___________________mitoses_per_2_mm2",
+          "label": "Specify Mitoses per 2 mm2: _________________ mitoses per 2 mm2",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "ki_67_labeling_index",
+          "label": "Ki-67 Labeling Index",
+          "required": true,
+          "type": "free_text",
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "the_ki_67_proliferation_index_reporting_is_required_in_all_medullary_thyroid_carcinomas_as_well_as_i",
+          "label": "The Ki-67 proliferation index reporting is required in all medullary thyroid carcinomas as well as in the medullary thyroid carcinoma component of mixed medullary and follicular cell-derived thyroid carcinomas. The Ki-67 proliferation assessment should follow the IARC / WHO guidelines. Visual estimation based on routine microscopic examination (also known as eyeballing) is not allowed.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "specify_percent",
+              "label": "Specify percent (%): _________________ %",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "methodology",
+          "label": "Methodology",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "manual_count",
+              "label": "Manual count"
+            },
+            {
+              "value": "automated_image_analysis",
+              "label": "Automated image analysis"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_necrosis",
+          "label": "Tumor Necrosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "angioinvasion",
+          "label": "Angioinvasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present (specify extent)#: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "present_extent_not_specified",
+              "label": "Present, extent not specified"
+            },
+            {
+              "value": "present_extent_cannot_be_specified",
+              "label": "Present, extent cannot be specified (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "K"
+          ],
+          "condition": "vascular invasion",
+          "guidance": "Historically, less than 4 vessels have been considered as focal and involvement of 4 or more vessels has been referred to extensive angioinvasion in follicular cell-derived thyroid carciniomas. However, the 5th edition of the WHO classification questioned the validity of the cut-off point applied for this distinction. For this reason, pathologists are encouraged to document the extent of angioinvasion based on the number of vessels involved."
+        },
+        {
+          "field_id": "lymphatic_invasion",
+          "label": "Lymphatic Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "extrathyroidal_extension",
+          "label": "Extrathyroidal Extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_microscopic_strap_muscle_invasion_only_with_no_clinical_macroscopic_evidence_of",
+              "label": "Present, microscopic strap muscle invasion only, with no clinical / macroscopic evidence of"
+            }
+          ],
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "invasion",
+          "label": "invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "present_clinical_macroscopic_and_histologically_confirmed",
+              "label": "Present, clinical / macroscopic AND histologically confirmed"
+            },
+            {
+              "value": "invading_only_strap_muscles",
+              "label": "Invading only strap muscles (i.e., pT3b)"
+            },
+            {
+              "value": "invading_subcutaneous_soft_tissues_larynx_trachea_esophagus_or_recurrent_laryngeal_nerve",
+              "label": "Invading subcutaneous soft tissues, larynx, trachea, esophagus or recurrent laryngeal nerve"
+            }
+          ]
+        },
+        {
+          "field_id": "noted_in_the_sections_examined_and_no_clinical_intraoperative_and_or_radiologic_or_macroscopic",
+          "label": "noted in the sections examined, and no clinical (intraoperative and / or radiologic) or macroscopic",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "evidence_of_extrathyroidal_extension",
+          "label": "evidence of extrathyroidal extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "margins_involved_by_the_tumor_no_macroscopic_microscopic_extrathyroidal_extension",
+              "label": "Margins involved by the tumor, no macroscopic / microscopic extrathyroidal extension (strap"
+            }
+          ]
+        },
+        {
+          "field_id": "muscle_is_noted_in_the_sections_examined_and_clinical_intraoperative_and_or_radiologic_evidence_of",
+          "label": "muscle) is noted in the sections examined, and clinical (intraoperative and / or radiologic) evidence of",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extrathyroidal_extension_specify",
+          "label": "extrathyroidal extension (specify): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "margins_involved_by_the_tumor_no_macroscopic_microscopic_extrathyroidal_extension",
+              "label": "Margins involved by the tumor, no macroscopic / microscopic extrathyroidal extension (strap"
+            }
+          ]
+        },
+        {
+          "field_id": "intraoperative_and_or_radiologic_evidence_of_extrathyroidal_extension",
+          "label": "intraoperative and / or radiologic evidence of extrathyroidal extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_carcinoma",
+              "label": "All margins negative for carcinoma"
+            }
+          ],
+          "notes": [
+            "L"
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_present_at_margin",
+              "label": "Carcinoma present at margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margins_involved_by_carcinoma",
+          "label": "Margin(s) Involved by Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "M"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_levels_involved",
+          "label": "Nodal Level(s) Involved",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "level_vi_pretracheal_paratracheal_and_prelaryngeal_delphian_perithyroidal",
+              "label": "Level VI - pretracheal, paratracheal and prelaryngeal / Delphian, perithyroidal (central"
+            }
+          ]
+        },
+        {
+          "field_id": "compartment_dissection",
+          "label": "compartment dissection)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "level_vii",
+              "label": "Level VII (superior mediastinal lymph nodes)"
+            },
+            {
+              "value": "right_lateral_level_i",
+              "label": "Right Lateral Level I"
+            },
+            {
+              "value": "right_lateral_level_ii",
+              "label": "Right Lateral Level II"
+            },
+            {
+              "value": "right_lateral_level_iii",
+              "label": "Right Lateral Level III"
+            },
+            {
+              "value": "right_lateral_level_iv",
+              "label": "Right Lateral Level IV"
+            },
+            {
+              "value": "right_lateral_level_v",
+              "label": "Right Lateral Level V"
+            },
+            {
+              "value": "left_lateral_level_i",
+              "label": "Left Lateral Level I"
+            },
+            {
+              "value": "left_lateral_level_ii",
+              "label": "Left Lateral Level II"
+            },
+            {
+              "value": "left_lateral_level_iii",
+              "label": "Left Lateral Level III"
+            },
+            {
+              "value": "left_lateral_level_iv",
+              "label": "Left Lateral Level IV"
+            },
+            {
+              "value": "left_lateral_level_v",
+              "label": "Left Lateral Level V"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_metastatic_deposit",
+          "label": "Size of Largest Metastatic Deposit",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "ENE"
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_levels_examined",
+          "label": "Nodal Level(s) Examined",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "level_vi_pretracheal_paratracheal_and_prelaryngeal_delphian_perithyroidal",
+              "label": "Level VI - pretracheal, paratracheal and prelaryngeal / Delphian, perithyroidal (central"
+            }
+          ]
+        },
+        {
+          "field_id": "compartment_dissection",
+          "label": "compartment dissection)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "level_vii",
+              "label": "Level VII (superior mediastinal lymph nodes)"
+            },
+            {
+              "value": "right_lateral_level_i",
+              "label": "Right Lateral Level I"
+            },
+            {
+              "value": "right_lateral_level_ii",
+              "label": "Right Lateral Level II"
+            },
+            {
+              "value": "right_lateral_level_iii",
+              "label": "Right Lateral Level III"
+            },
+            {
+              "value": "right_lateral_level_iv",
+              "label": "Right Lateral Level IV"
+            },
+            {
+              "value": "right_lateral_level_v",
+              "label": "Right Lateral Level V"
+            },
+            {
+              "value": "left_lateral_level_i",
+              "label": "Left Lateral Level I"
+            },
+            {
+              "value": "left_lateral_level_ii",
+              "label": "Left Lateral Level II"
+            },
+            {
+              "value": "left_lateral_level_iii",
+              "label": "Left Lateral Level III"
+            },
+            {
+              "value": "left_lateral_level_iv",
+              "label": "Left Lateral Level IV"
+            },
+            {
+              "value": "left_lateral_level_v",
+              "label": "Left Lateral Level V"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "N"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            },
+            {
+              "value": "for_malignant_follicular_cell_derived_thyroid_neoplasms_including_follicular_thyroid_carcinoma_invas",
+              "label": "For malignant follicular cell-derived thyroid neoplasms including follicular thyroid carcinoma, invasive follicular variant papillary thyroid carcinoma, papillary thyroid carcinoma, oncocytic carcinoma of the thyroid, high-grade differentiated thyroid carcinomas, poorly differentiated thyroid carcinoma and anaplastic follicular cell-derived thyroid carcinoma#"
+            },
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ],
+          "guidance": "Salivary gland-type carcinomas, thymic tumors within the thyroid and thyroid carcinomas of uncertain cytogenesis may be staged using this scheme, recognizing lack of validation for such neoplasms. Low-risk follicular cell-derived thyroid neoplasms are not required to be staged."
+        },
+        {
+          "field_id": "pt1_tumor_size_less_than_or_equal_to_2_cm_in_greatest_dimension_limited_to_thyroid",
+          "label": "pT1: Tumor size less than or equal to 2 cm in greatest dimension, limited to thyroid",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor less than or equal to 1 cm in greatest dimension, limited to the thyroid."
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor greater than 1 cm but less than or equal to 2 cm in greatest dimension, limited to the"
+            }
+          ]
+        },
+        {
+          "field_id": "thyroid",
+          "label": "thyroid",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor greater than 2 cm but less than or equal to 4 cm in greatest dimension, limited to"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_tumor_greater_than_4_cm_limited_to_the_thyroid_or_gross_extrathyroidal_extension_invading_only_s",
+          "label": "pT3: Tumor greater than 4 cm limited to the thyroid, or gross extrathyroidal extension invading only strap muscles",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Tumor greater than 4 cm limited to the thyroid"
+            },
+            {
+              "value": "pt3b",
+              "label": "pT3b: Gross extrathyroidal extension invading only strap muscles (sternohyoid, sternothyroid,"
+            }
+          ]
+        },
+        {
+          "field_id": "thyrohyoid_or_omohyoid_muscles_from_a_tumor_of_any_size",
+          "label": "thyrohyoid, or omohyoid muscles) from a tumor of any size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt4_includes_gross_extrathyroidal_extension_beyond_the_strap_muscles",
+          "label": "pT4: Includes gross extrathyroidal extension beyond the strap muscles",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Gross extrathyroidal extension invading subcutaneous soft tissues, larynx, trachea,"
+            }
+          ]
+        },
+        {
+          "field_id": "esophagus_or_recurrent_laryngeal_nerve_from_a_tumor_of_any_size",
+          "label": "esophagus, or recurrent laryngeal nerve from a tumor of any size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4b",
+              "label": "pT4b: Gross extrathyroidal extension invading prevertebral fascia or encasing the carotid artery or"
+            }
+          ]
+        },
+        {
+          "field_id": "mediastinal_vessels_from_a_tumor_of_any_size",
+          "label": "mediastinal vessels from a tumor of any size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            },
+            {
+              "value": "for_medullary_thyroid_carcinoma",
+              "label": "For medullary thyroid carcinoma"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_size_less_than_or_equal_to_2_cm_in_greatest_dimension_limited_to_thyroid",
+          "label": "pT1: Tumor size less than or equal to 2 cm in greatest dimension, limited to thyroid",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor less than or equal to 1 cm in greatest dimension, limited to the thyroid."
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor greater than 1 cm but less than or equal to 2 cm in greatest dimension, limited to the"
+            }
+          ]
+        },
+        {
+          "field_id": "thyroid",
+          "label": "thyroid",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor greater than 2 cm but less than or equal to 4 cm in greatest dimension, limited to"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_tumor_greater_than_4_cm_or_with_extrathyroidal_extension",
+          "label": "pT3: Tumor greater than 4 cm or with extrathyroidal extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Tumor greater than 4 cm in greatest dimension limited to the thyroid"
+            },
+            {
+              "value": "pt3b",
+              "label": "pT3b: Tumor of any size with gross extrathyroidal extension invading only strap muscles"
+            }
+          ]
+        },
+        {
+          "field_id": "pt4_advanced_disease",
+          "label": "pT4: Advanced disease",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Moderately advanced disease; tumor of any size with gross extrathyroidal extension into the"
+            }
+          ]
+        },
+        {
+          "field_id": "recurrent_laryngeal_nerve",
+          "label": "recurrent laryngeal nerve",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4b",
+              "label": "pT4b: Very advanced disease; tumor of any size with extension toward the spine or into nearby"
+            }
+          ]
+        },
+        {
+          "field_id": "carotid_artery_or_mediastinal_vessels",
+          "label": "carotid artery or mediastinal vessels",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            }
+          ],
+          "condition": "required only if applicable",
+          "guidance": "N0b is defined as no radiologic or clinical evidence of locoregional lymph node metastasis"
+        },
+        {
+          "field_id": "pn0_no_evidence_of_locoregional_lymph_node_metastasis",
+          "label": "pN0: No evidence of locoregional lymph node metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn0a",
+              "label": "pN0a: One or more cytologically or histologically confirmed benign lymph nodes"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0 (subcategory cannot be determined)#"
+            }
+          ]
+        },
+        {
+          "field_id": "pn1_metastasis_to_regional_nodes",
+          "label": "pN1: Metastasis to regional nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1a",
+              "label": "pN1a: Metastasis to level VI or VII (pretracheal, paratracheal, or prelaryngeal / Delphian, or upper mediastinal) lymph nodes. This can be unilateral or bilateral disease."
+            },
+            {
+              "value": "pn1b",
+              "label": "pN1b: Metastasis to unilateral, bilateral, or contralateral lateral neck lymph nodes (levels I, II, III, IV, or V) or retropharyngeal lymph nodes"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "follicular_adenoma",
+              "label": "Follicular adenoma"
+            },
+            {
+              "value": "follicular_adenoma_with_papillary_architecture",
+              "label": "Follicular adenoma with papillary architecture"
+            },
+            {
+              "value": "oncocytic_adenoma",
+              "label": "Oncocytic adenoma"
+            },
+            {
+              "value": "follicular_nodular_disease",
+              "label": "Follicular nodular disease (Thyroid follicular nodular disease)"
+            },
+            {
+              "value": "diffuse_hyperplasia",
+              "label": "Diffuse hyperplasia (Graves' disease)"
+            },
+            {
+              "value": "thyroiditis",
+              "label": "Thyroiditis (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "parathyroid_gland",
+              "label": "Parathyroid gland(s) present"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_parathyroid_glands",
+          "label": "Number of Parathyroid Glands",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1",
+              "label": "1"
+            },
+            {
+              "value": "2",
+              "label": "2"
+            },
+            {
+              "value": "3",
+              "label": "3"
+            },
+            {
+              "value": "4",
+              "label": "4"
+            },
+            {
+              "value": "greater_than_4",
+              "label": "Greater than 4 (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "location_of_parathyroid_glands",
+          "label": "Location of Parathyroid Gland(s)",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "left_superior",
+              "label": "Left superior"
+            },
+            {
+              "value": "left_inferior",
+              "label": "Left inferior"
+            },
+            {
+              "value": "right_superior",
+              "label": "Right superior"
+            },
+            {
+              "value": "right_inferior",
+              "label": "Right inferior"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "parathyroid_gland_findings",
+          "label": "Parathyroid Gland Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "within_normal_limits",
+              "label": "Within normal limits"
+            },
+            {
+              "value": "hypercellular",
+              "label": "Hypercellular"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "c_cell_hyperplasia",
+              "label": "C-cell hyperplasia (specify type and focality): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "for_reporting_molecular_testing_and_other_cancer_biomarker_testing_results_the_cap_thyroid_biomarker",
+          "label": "For reporting molecular testing and other cancer biomarker testing results, the CAP Thyroid Biomarker Template should be used. Pending biomarker studies should be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_reporting_of_thyroid_cancer_is_facilitated_by_the_provision_of_a_case_summary_illustrating_the_f",
+          "label": "The reporting of thyroid cancer is facilitated by the provision of a case summary illustrating the features required for comprehensive patient care. However, there are many cases in which the individual practicalities of applying such a case summary may not be straightforward. Common examples include finding the prescribed number of lymph nodes, trying to determine the compartments of the radical neck dissection, and determining if isolated tumor cells in a lymph node represent metastatic disease. Case summaries have evolved to include clinical, radiographic, morphologic, immunohistochemical, and molecular results in an effort to guide clinical management. This case summary tries to remain simple while still incorporating important pathologic features as proposed by the American Joint Committee on Cancer (AJCC) Cancer Staging Manual1,2 and the World Health Organization Classification of Tumours.3,4 This protocol is to be used as a guide and resource, an adjunct to diagnosing and managing cancers of the thyroid gland in a standardized manner. It should not be used as a substitute for dissection or grossing techniques and does not give histologic parameters to reach the diagnosis. Subjectivity is always a factor, and the elements listed are not meant to be arbitrary but are meant to provide uniformity of reporting across all the disciplines that use the information. It is a foundation of practical information that will help to meet the requirements of daily practice to benefit both clinicians and patients alike.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tuttle_rm_morris_lf_haugen_br_et_al_thyroid_differentiated_and_anaplastic_carcinoma_in_amin_mb_ed_aj",
+          "label": "Tuttle RM, Morris LF, Haugen BR, et al. Thyroid- differentiated and anaplastic carcinoma. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rosen_je_lloyd_rv_brierley_jd_et_al_thyroid_medullary_in_amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_ca",
+          "label": "Rosen JE, Lloyd RV, Brierley JD, et al. Thyroid-medullary. In: Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_internet_lyon_fra",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 17]. (WHO classification of tumour series, 5th ed.; vol.10). Available from",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baloch_zw_asa_sl_barletta_ja_ghossein_ra_juhlin_cc_jung_ck_livolsi_va_papotti_mg_sobrinho_simões_m_t",
+          "label": "Baloch ZW, Asa SL, Barletta JA, Ghossein RA, Juhlin CC, Jung CK, LiVolsi VA, Papotti MG, Sobrinho-Simões M, Tallini G, Mete O. Overview of the 2022 WHO Classification of Thyroid Neoplasms. Endocr Pathol. 2022;33(1):27-63.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_thyroid_gland_figure_1_ordinarily_is_composed_of_a_right_and_a_left_lobe_lying_adjacent_and_late",
+          "label": "The thyroid gland (Figure 1) ordinarily is composed of a right and a left lobe lying adjacent and lateral to the upper trachea and esophagus. An isthmus connects the 2 lobes, and in some cases a pyramidal lobe is present extending cephalad anterior to the thyroid cartilage. Typically, surgical management of thyroid tumors consists of either a lobe with isthmusectomy (also called hemithyroidectomy) or total thyroidectomy. Cases with lobectomy followed by completion thyroidectomy in the same operative procedure should be classified as total thyroidectomies. Other procedures include subtotal thyroidectomy and level VI central node dissection.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_anatomy_of_the_thyroid_gland_and_adjacent_structures_from_kini_sr_thyroid_cytopathology_an_",
+          "label": "Figure 1. Anatomy of the thyroid gland and adjacent structures. From Kini SR. Thyroid Cytopathology: An Atlas and Text. Philadelphia, PA: Lippincott Williams & Wilkins; 2008. Modified with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_thyroid_may_give_rise_to_multiple_foci_of_carcinoma_in_the_same_gland_designated_as_per_ajcc_gui",
+          "label": "The thyroid may give rise to multiple foci of carcinoma in the same gland, designated as per AJCC guidelines with the descriptor “(m)”. This protocol is applicable to the dominant excised tumor as well as clinically relevant multifocal tumors. The clinically relevant tumors can be defined as tumors that can impart the tumor stage or dictate patient management during the dynamic risk stratification. For multiple tumors of the same cellular lineage (i.e., multifocal papillary thyroid carcinoma or medullary thyroid carcinoma), characteristics of clinically relevant multifocal tumors can be reported in one synoptic report. In multifocal tumors, the pT stage in the synoptic report is based on the worst findings (collectively) of all the tumors of the same cellular lineage. The features of additional foci that do not necessarily alter management can be detailed under the section on Additional Pathologic Findings. For tumors of different cellular lineage (i.e., tumor 1 is papillary thyroid carcinoma and tumor 2 is medullary thyroid carcinoma), a second synoptic report should be generated. This approach is also recommended for mixed medullary and follicular cell-derived thyroid carcinoma since features of each carcinoma component should be clearly documented.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_histologic_classification_recommended_below_in_notes_f_through_h_is_modified_to_enable_user_frie",
+          "label": "The histologic classification recommended below in notes F through H is modified to enable user friendly selection of multiple tumor subtypes; however, the content follows primarily the 5th edition of the World Health Organization (WHO) published recommendations in 2022 (Table 1).1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to_malignant_follicular_cell_derived_thyroid_neoplasms_papillary_thyroid_carci",
+          "label": "This protocol applies to malignant follicular cell-derived thyroid neoplasms (papillary thyroid carcinoma, invasive encapsulated follicular variant papillary thyroid carcinoma, follicular thyroid carcinoma, high-grade differentiated thyroid carcinoma, poorly differentiated thyroid carcinoma, and anaplastic thyroid carcinoma), C cell-derived thyroid carcinoma (medullary thyroid carcinoma), mixed medullary and follicular cell-derived thyroid carcinomas, salivary gland-type thyroid carcinomas (mucoepidermoid carcinoma of the thyroid gland, secretory carcinoma of salivary gland type), thymic tumors within the thyroid (thymic carcinoma family, thymoma family, spindle epithelial tumor with thymus-like elements), embryonal thyroid neoplasm (thyroblastoma), and thyroid tumors of uncertain cytogenesis (cribriform-morular thyroid carcinoma, sclerosing mucoepidermoid carcinoma with eosinophilia).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_does_not_apply_to_lymphomas_sarcomas_thyroid_carcinomas_arising_from_struma_ovarii_or_",
+          "label": "This protocol does not apply to lymphomas, sarcomas, thyroid carcinomas arising from struma ovarii, or metastatic tumors to the thyroid gland.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thyroid_carcinomas_arising_from_struma_ovarii_should_be_staged_using_the_figo_staging_however_pathol",
+          "label": "Thyroid carcinomas arising from struma ovarii should be staged using the FIGO staging; however, pathologists are required to document histologic tumor types and subtypes based on the 5th edition of the WHO classification of thyroid tumor.1,2 In addition, tumor proliferative activity, tumor necrosis, angioinvasion, lymphatic invasion, and perineural invasion should clearly be documented in all thyroid carcinomas arising from struma ovarii.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_5th_edition_of_the_who_classification_of_thyroid_tumors12",
+          "label": "Table 1. 5th Edition of the WHO Classification of Thyroid Tumors1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocirne_tumours_internet_lyon_fra",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocirne tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 17]. (WHO classification of tumour series, 5th ed.; vol.10). Available from",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baloch_zw_asa_sl_barletta_ja_ghossein_ra_juhlin_cc_jung_ck_livolsi_va_papotti_mg_sobrinho_simões_m_t",
+          "label": "Baloch ZW, Asa SL, Barletta JA, Ghossein RA, Juhlin CC, Jung CK, LiVolsi VA, Papotti MG, Sobrinho-Simões M, Tallini G, Mete O. Overview of the 2022 WHO Classification of Thyroid Neoplasms. Endocr Pathol. 2022;33(1):27-63.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_the_ajcc_includes_a_generic_4_tiered_scheme_for_thyroid_cancers_as_with_other_cancers_applicat",
+          "label": "While the AJCC includes a generic 4-tiered scheme for thyroid cancers as with other cancers, application of this to the current classification of thyroid cancers is not endorsed. However, the 5th edition of the WHO classification endorses the proliferation (mitotic activity and Ki-67 labeling index) and necrosis-based International Medullary Thyroid Carcinoma Grading System (IMTCGS) as a prognostic variable for medullary thyroid carcinomas.1,2,3,4 While IMTCGS is not a WHO-grading scheme, a high-grade medullary thyroid carcinoma is defined when at least one of the following features is identified: tumor necrosis, ≥5 mitoses per 2mm2 or ≥5% Ki-67 labeling index.4 A low-grade medullary thyroid carcinoma lacks tumor necrosis and has <5% Ki-67 and <5 mitoses per 2mm2.4 Accurate assessment of Ki-67 labeling index is of clinical significance.4 As per the WHO/IARC requirements, Ki-67 labeling index should be performed manually or via image analysis; if the latter, specifying methodology, software, or technique is suggested.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "follicular_cell_derived_differentiated_thyroid_carcinomas_eg_papillary_thyroid_carcinoma_follicular_",
+          "label": "Follicular cell-derived differentiated thyroid carcinomas (e.g., papillary thyroid carcinoma, follicular thyroid carcinoma, invasive encapsulated follicular variant papillary thyroid carcinoma and oncocytic carcinoma of the thyroid) may also have high-grade features (e.g., tumor necrosis and/or ≥5 mitoses per 2mm2) in the absence of morphologic dedifferentiation.1,2 Given their aggressive/adverse pathologic features and clinical behavior, differentiated thyroid carcinomas with high-grade features are now recognized as a distinct morphologic spectrum in the 5th edition of the WHO classification of thyroid tumors.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_role_of_routine_ki_67_immunohistochemistry_requires_further_validation_in_differentiated_thyroid",
+          "label": "The role of routine Ki-67 immunohistochemistry requires further validation in differentiated thyroid carcinomas; however, evidence suggests that a Ki-67 labeling index exceeding 5% may be a risk factor for follicular thyroid carcinoma.6 The Ki-67 labeling index ranges from 10-30% in most poorly differentiated thyroid carcinomas,2 and anaplastic thyroid carcinomas tend to have higher labeling indices.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_internet_lyon_fra",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 17]. (WHO classification of tumour series, 5th ed.; vol.10). Available from",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baloch_zw_asa_sl_barletta_ja_ghossein_ra_juhlin_cc_jung_ck_livolsi_va_papotti_mg_sobrinho_simões_m_t",
+          "label": "Baloch ZW, Asa SL, Barletta JA, Ghossein RA, Juhlin CC, Jung CK, LiVolsi VA, Papotti MG, Sobrinho-Simões M, Tallini G, Mete O. Overview of the 2022 WHO Classification of Thyroid Neoplasms. Endocr Pathol. 2022;33(1):27-63.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_medullary_thyroid_carcinoma_in_the_iarcwho_neuroendocrine_schema_endocr_pathol_2022333",
+          "label": "Asa SL, Mete O. Medullary Thyroid Carcinoma in the IARC/WHO Neuroendocrine Schema. Endocr Pathol. 2022;33(3):346-347.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "xu_b_fuchs_tl_ahmadi_s_et_al_international_medullary_thyroid_carcinoma_grading_system_a_validated_gr",
+          "label": "Xu B, Fuchs TL, Ahmadi S, et al. International Medullary Thyroid Carcinoma Grading System: A Validated Grading System for Medullary Thyroid Carcinoma. J Clin Oncol. 2022;40(1):96-104.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cree_ia_from_counting_mitoses_to_ki67_assessment_technical_pitfalls_in_the_new_who_classification_of",
+          "label": "Cree IA. From Counting Mitoses to Ki67 Assessment: Technical Pitfalls in the New WHO Classification of Endocrine and Neuroendocrine Tumors. Endocr Pathol. 2022;33(1):3-5.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hellgren_ls_stenman_a_paulsson_jo_höög_a_larsson_c_zedenius_j_juhlin_cc_prognostic_utility_of_the_ki",
+          "label": "Hellgren LS, Stenman A, Paulsson JO, Höög A, Larsson C, Zedenius J, Juhlin CC. Prognostic Utility of the Ki-67 Labeling Index in Follicular Thyroid Tumors: a 20-Year Experience from a Tertiary Thyroid Center. Endocr Pathol. 2022;33(2):231-242.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "progress_made_by_molecular_studies_underscored_the_importance_of_tumor_architecture_in_classifying_c",
+          "label": "Progress made by molecular studies underscored the importance of tumor architecture in classifying clinical and biological differences of follicular cell-derived thyroid carcinomas. In addition, this served the evidence to revolutionize the classification of follicular cell-derived thyroid neoplasms. Accordingly, the 2022 WHO classification refined the spectrum of papillary thyroid carcinoma by aligning invasive encapsulated follicular variant papillary thyroid carcinomas with follicular thyroid carcinomas since these tumors represent the morphological spectrum of RAS-like differentiated thyroid carcinomas with exclusive follicular growth.1,2 The distinction between the two entities relies on the demonstration of subtle nuclear alterations (also known as RAS-like nuclei) which are known to be subject to interobserver variability. In the 2022 WHO classification, both invasive encapsulated follicular variant papillary thyroid carcinomas and follicular thyroid carcinomas are further risk-stratified based on the type and extent of invasive growth to define minimally invasive (irrespective of the number of foci, minimal tumor capsular invasion only), encapsulated angioinvasive (irrespective of the number of involved vessel foci, angioinvasive carcinoma with no widely-invasive growth) and widely invasive carcinomas.1,2 The assessment of these neoplasms requires complete submission of the tumor periphery as well as careful morphological assessment which combines the assessment of tumor invasion and tumor architecture. All tumors should be examined for high-grade features (e.g., tumor necrosis and/or ≥5 mitoses per 2mm2) and morphologic dedifferentiation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_light_of_the_advancements_made_in_the_field_the_2022_who_classification_restricted_papillary_thyr",
+          "label": "In light of the advancements made in the field, the 2022 WHO classification restricted papillary thyroid carcinomas primarily to malignant follicular cell-derived thyroid neoplasms that show characteristic well-established (florid) nuclear features (also known as BRAF-like or BRAF p.V600E-like nuclei) in association with either papillary (fibrovascular core-containing papillae) or solid/trabecular architecture.1,2 Given the historical nomenclature, the term ‘variant’ is retained for encapsulated follicular tumors; however, all other papillary thyroid carcinomas are now assigned to subtypes (e.g., classic papillary thyroid carcinoma or classic subtype of papillary thyroid carcinoma). Infiltrative follicular variant papillary thyroid carcinoma is left within the spectrum of papillary thyroid carcinoma given the high frequency of BRAF p.V600E-mutations in these neoplasms. Some experts consider infiltrative follicular variants to be within the spectrum of infiltrative classic papillary thyroid carcinoma with predominant follicular growth.2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tumor_formerly_known_as_cribriform_morular_variant_of_papillary_thyroid_carcinoma_is_no_longer_a",
+          "label": "The tumor formerly known as cribriform-morular variant of papillary thyroid carcinoma is no longer a subtype of papillary thyroid carcinoma since recent immunohistochemical evidence suggested that these tumors are not of follicular cell origin.4 Therefore, these neoplasms are now classified as cribriform-morular thyroid carcinomas and they belong to the category of thyroid carcinomas of uncertain cytogenesis.1,2,4 The cribriform morular thyroid carcinomas should be distinguished from other thyroid neoplasms since they harbor APC or CTNNB1 mutations and show an association with familial adenomatous polyposis coli, in some cases preceding recognition of colon polyps or other extracolonic manifestations.4,5,6 High-grade features may occur in cribriform-morular thyroid carcinomas and should not be classified as poorly differentiated thyroid carcinomas.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "papillary_microcarcinomas_also_historically_referred_to_as_papillary_microtumor_occult_latent_or_sma",
+          "label": "Papillary microcarcinomas (also historically referred to as papillary microtumor, occult, latent, or small papillary carcinoma) have never been technically a specific subtype but refer to papillary thyroid carcinomas that measure 1 cm or less. In the 2022 WHO classification, papillary microcarcinoma is not considered to be a subtype. Moreover, subcentimeter papillary thyroid carcinomas are required to be subtyped based on the 5th edition of the WHO classification of thyroid tumors.1,2 In spite of their rather common identification in thyroid gland resections7,8,9 and apparent indolent biologic behavior in most patients, these subcentimeter papillary thyroid carcinomas should be reported and documented in tumor registries, thereby providing for long-term follow-up and better determination of their biologic nature. More importantly, certain histologic features have been shown to correlate with nodal metastasis in subcentimeter papillary thyroid carcinomas. A combined histologic-molecular scoring scheme has been proposed for these subcentimeter papillary thyroid carcinomas based on BRAF mutation status, subcapsular location, peri- and intratumoral fibrosis, and multifocality. Documentations of the aforementioned morphologic parameters (with or without mutational status) may be useful in management.10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_readers_are_referred_to_the_who_bluebook_for_specific_details_of_papillary_thyroid_carcinomas_su",
+          "label": "The readers are referred to the WHO bluebook for specific details of papillary thyroid carcinomas subtypes.1,2  Papillary thyroid carcinomas that have been more frequently associated with aggressive biology include tall cell, hobnail, and infiltrative columnar cell subtypes.1,2 It is important to emphasize that tall cell papillary thyroid carcinomas are now classified using the rigid criteria (based on extent of tall cell change ≥30% and tall cells as having a height-to-width ratio ≥3) in the 2022 WHO classification.1,2 Tall cell papillary thyroid carcinomas are well-recognized for their aggressive behavior and documentation of even focal tall cell changes (e.g., ≥10% tall cell features)11,12,13 is recommended in dynamic risk stratification. Hobnail papillary thyroid carcinoma (extent of hobnail cell change: ≥30%) is an aggressive subtype that is characterized by increased frequency of nodal and distant metastatic disease as well as local recurrence.14,15,16,17 Hobnail papillary thyroid carcinomas have been frequently associated with high-grade features (e.g., tumor necrosis and/or ≥5 mitoses per 2mm2); therefore, the careful documentation of such features is important to understand their biologic spectrum.1,2 Columnar cell subtypes are of biological significance when they are infiltrative.17,18 Less favorable clinicopathological variables have been identified in solid/trabecular subtypes of papillary thyroid carcinomas (defined when a papillary thyroid carcinoma shows ≥50% solid/trabecular growth).1,2,17 The prognosis of solid subtypes appears to be less favorable in adults17,19,20,21 when compared to classic subtypes. However, recent evidence suggested that solid subtype papillary thyroid carcinomas that lack high-grade features or morphological dedifferentiation, and those lacking infiltrative growth22 or angioinvasion do not seem to be associated with increased risk. Therefore, a thorough assessment is usually helpful to distinguish biologically relevant solid subtypes of papillary thyroid carcinomas. Diffuse sclerosing subtypes are often associated with a high rate of nodal metastasis and locoregional recurrence, but the overall mortality rate is similar to most classic papillary thyroid carcinomas23,24,25 when corrected for other high-risk parameters. Nonetheless, this subtype appears to necessitate more aggressive initial surgical management including extent of nodal dissection.25",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_internet_lyon_fra",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 17]. (WHO classification of tumour series, 5th ed.; vol.10). Available from",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baloch_zw_asa_sl_barletta_ja_ghossein_ra_juhlin_cc_jung_ck_livolsi_va_papotti_mg_sobrinho_simões_m_t",
+          "label": "Baloch ZW, Asa SL, Barletta JA, Ghossein RA, Juhlin CC, Jung CK, LiVolsi VA, Papotti MG, Sobrinho-Simões M, Tallini G, Mete O. Overview of the 2022 WHO Classification of Thyroid Neoplasms. Endocr Pathol. 2022;33(1):27-63.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "christofer_juhlin_c_mete_o_baloch_zw_the_2022_who_classification_of_thyroid_tumors_novel_concepts_in",
+          "label": "Christofer Juhlin C, Mete O, Baloch ZW. The 2022 WHO classification of thyroid tumors: novel concepts in nomenclature and grading. Endocr Relat Cancer. 2022;30(2):e220293.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "boyraz_b_sadow_pm_asa_sl_dias_santagata_d_nosé_v_mete_o_cribriform_morular_thyroid_carcinoma_is_a_di",
+          "label": "Boyraz B, Sadow PM, Asa SL, Dias-Santagata D, Nosé V, Mete O. Cribriform-Morular Thyroid Carcinoma Is a Distinct Thyroid Malignancy of Uncertain Cytogenesis. Endocr Pathol. 2021;32(3):327-335.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cameselle_teijeiro_jm_peteiro_gonzález_d_caneiro_gómez_j_sánchez_ares_m_abdulkader_i_eloy_c_melo_m_a",
+          "label": "Cameselle-Teijeiro JM, Peteiro-González D, Caneiro-Gómez J, Sánchez-Ares M, Abdulkader I, Eloy C, Melo M, Amendoeira I, Soares P, Sobrinho-Simões M. Cribriform-morular variant of thyroid carcinoma: a neoplasm with distinctive phenotype associated with the activation of the WNT/β-catenin pathway. Mod Pathol. 2018;31(8):1168-1179.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cameselle_teijeiro_jm_eloy_c_sobrinho_simões_m_pitfalls_in_challenging_thyroid_tumors_emphasis_on_di",
+          "label": "Cameselle-Teijeiro JM, Eloy C, Sobrinho-Simões M. Pitfalls in Challenging Thyroid Tumors: Emphasis on Differential Diagnosis and Ancillary Biomarkers. Endocr Pathol. 2020;31(3):197-217.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "semerci_o_gucer_h_the_significance_of_unsampled_microscopic_thyroid_carcinomas_in_multinodular_goite",
+          "label": "Semerci O, Gucer H. The Significance of Unsampled Microscopic Thyroid Carcinomas in Multinodular Goiter. Endocr Pathol. 2022 Dec 17. doi: 10.1007/s12022-022-09743-z.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "komorowski_ra_hanson_ga_occult_thyroid_pathology_in_the_young_adult_an_autopsy_study_of_138_patients",
+          "label": "Komorowski RA, Hanson GA. Occult thyroid pathology in the young adult: an autopsy study of 138 patients without clinical thyroid disease. Hum Pathol. 1988;19(6):689-696.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fink_a_tomlinson_g_freeman_jl_rosen_ib_asa_sl_occult_micropapillary_carcinoma_associated_with_benign",
+          "label": "Fink A, Tomlinson G, Freeman JL, Rosen IB, Asa SL. Occult micropapillary carcinoma associated with benign follicular thyroid disease and unrelated thyroid neoplasms. Mod Pathol. 1996;9(8):816-820.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "niemeier_la_kuffner_akatsu_h_song_c_et_al_a_combined_molecular_pathologic_score_improves_risk_strati",
+          "label": "Niemeier LA, Kuffner Akatsu H, Song C, et al. A combined molecular-pathologic score improves risk stratification of thyroid papillary microcarcinoma. Cancer. 2012;118(8):2069-2077.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bongers_pj_kluijfhout_wp_verzijl_r_lustgarten_m_vermeer_m_goldstein_dp_devon_k_rotstein_le_asa_sl_br",
+          "label": "Bongers PJ, Kluijfhout WP, Verzijl R, Lustgarten M, Vermeer M, Goldstein DP, Devon K, Rotstein LE, Asa SL, Brierley JD, Tsang RW, Ezzat S, Vriens MR, Mete O, Pasternak JD. Papillary Thyroid Cancers with Focal Tall Cell Change are as Aggressive as Tall Cell Variants and Should Not be Considered as Low-Risk Disease. Ann Surg Oncol. 2019;26(8):2533-2539.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vuong_hg_long_np_anh_nh_nghi_td_hieu_mv_hung_lp_nakazawa_t_katoh_r_kondo_t_papillary_thyroid_carcino",
+          "label": "Vuong HG, Long NP, Anh NH, Nghi TD, Hieu MV, Hung LP, Nakazawa T, Katoh R, Kondo T. Papillary thyroid carcinoma with tall cell features is as aggressive as tall cell variant: a meta-analysis. Endocr Connect. 2018;7(12):R286-R293.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oh_wj_lee_ys_cho_u_bae_js_lee_s_kim_mh_lim_dj_park_gs_lee_ys_jung_ck_classic_papillary_thyroid_carci",
+          "label": "Oh WJ, Lee YS, Cho U, Bae JS, Lee S, Kim MH, Lim DJ, Park GS, Lee YS, Jung CK. Classic papillary thyroid carcinoma with tall cell features and tall cell variant have similar clinicopathologic features. Korean J Pathol. 2014;48(3):201-8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asioli_s_erickson_la_sebo_tj_zhang_j_jin_l_thompson_gb_lloyd_rv_papillary_thyroid_carcinoma_with_pro",
+          "label": "Asioli S, Erickson LA, Sebo TJ, Zhang J, Jin L, Thompson GB, Lloyd RV. Papillary thyroid carcinoma with prominent hobnail features: a new aggressive variant of moderately differentiated papillary carcinoma. A clinicopathologic, immunohistochemical, and molecular study of eight cases. Am J Surg Pathol. 2010;34(1):44-52.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asioli_s_erickson_la_righi_a_lloyd_rv_papillary_thyroid_carcinoma_with_hobnail_features_histopatholo",
+          "label": "Asioli S, Erickson LA, Righi A, Lloyd RV. Papillary thyroid carcinoma with hobnail features: histopathologic criteria to predict aggressive behavior. Hum Pathol. 2013;44(3):320-8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ambrosi_f_righi_a_ricci_c_erickson_la_lloyd_rv_asioli_s_hobnail_variant_of_papillary_thyroid_carcino",
+          "label": "Ambrosi F, Righi A, Ricci C, Erickson LA, Lloyd RV, Asioli S. Hobnail Variant of Papillary Thyroid Carcinoma: a Literature Review. Endocr Pathol. 2017;28(4):293-301.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nath_mc_erickson_la_aggressive_variants_of_papillary_thyroid_carcinoma_hobnail_tall_cell_columnar_an",
+          "label": "Nath MC, Erickson LA. Aggressive Variants of Papillary Thyroid Carcinoma: Hobnail, Tall Cell, Columnar, and Solid. Adv Anat Pathol. 2018;25(3):172-179.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_jh_faquin_wc_lloyd_rv_nosé_v_clinicopathological_and_molecular_characterization_of_nine_cases_o",
+          "label": "Chen JH, Faquin WC, Lloyd RV, Nosé V. Clinicopathological and molecular characterization of nine cases of columnar cell variant of papillary thyroid carcinoma. Mod Pathol. 2011;24(5):739-49.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vuong_hg_odate_t_duong_unp_mochizuki_k_nakazawa_t_katoh_r_kondo_t_prognostic_importance_of_solid_var",
+          "label": "Vuong HG, Odate T, Duong UNP, Mochizuki K, Nakazawa T, Katoh R, Kondo T. Prognostic importance of solid variant papillary thyroid carcinoma: A systematic review and meta-analysis. Head Neck. 2018;40(7):1588-1597.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nikiforov_ye_erickson_la_nikiforova_mn_caudill_cm_lloyd_rv_solid_variant_of_papillary_thyroid_carcin",
+          "label": "Nikiforov YE, Erickson LA, Nikiforova MN, Caudill CM, Lloyd RV. Solid variant of papillary thyroid carcinoma: incidence, clinical-pathologic characteristics, molecular analysis, and biologic behavior. Am J Surg Pathol. 2001;25(12):1478-84.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ohashi_r_kawahara_k_namimatsu_s_igarashi_t_sakatani_t_sugitani_i_naito_z_clinicopathological_signifi",
+          "label": "Ohashi R, Kawahara K, Namimatsu S, Igarashi T, Sakatani T, Sugitani I, Naito Z. Clinicopathological significance of a solid component in papillary thyroid carcinoma. Histopathology. 2017;70(5):775-781.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "xu_b_viswanathan_k_zhang_l_edmund_ln_ganly_o_tuttle_rm_lubin_d_ghossein_ra_the_solid_variant_of_papi",
+          "label": "Xu B, Viswanathan K, Zhang L, Edmund LN, Ganly O, Tuttle RM, Lubin D, Ghossein RA. The solid variant of papillary thyroid carcinoma: a multi-institutional retrospective study. Histopathology. 2022;81(2):171-182.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spinelli_c_strambi_s_bakkar_s_nosiglia_a_elia_g_bertocchini_a_calani_c_leoni_m_morganti_r_materazzi_",
+          "label": "Spinelli C, Strambi S, Bakkar S, Nosiglia A, Elia G, Bertocchini A, Calani C, Leoni M, Morganti R, Materazzi G. Surgical Management of Diffuse Sclerosing Variant of Papillary Thyroid Carcinoma. Experience in 25 Patients. World J Surg. 2020 ;44(1):155-162.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vuong_hg_kondo_t_pham_tq_oishi_n_mochizuki_k_nakazawa_t_hassell_l_katoh_r_prognostic_significance_of",
+          "label": "Vuong HG, Kondo T, Pham TQ, Oishi N, Mochizuki K, Nakazawa T, Hassell L, Katoh R. Prognostic significance of diffuse sclerosing variant papillary thyroid carcinoma: a systematic review and meta-analysis. Eur J Endocrinol. 2017;176(4):433-441.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regalbuto_c_malandrino_p_tumminia_a_le_moli_r_vigneri_r_pezzino_v_a_diffuse_sclerosing_variant_of_pa",
+          "label": "Regalbuto C, Malandrino P, Tumminia A, Le Moli R, Vigneri R, Pezzino V. A diffuse sclerosing variant of papillary thyroid carcinoma: clinical and pathologic features and outcomes of 34 consecutive cases. Thyroid. 2011;21(4):383-389.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_subset_of_noninvasive_encapsulatedwell_demarcated_follicular_variants_of_papillary_thyroid_carcino",
+          "label": "A subset of noninvasive encapsulated/well-demarcated follicular variants of papillary thyroid carcinoma is classified under the designation of noninvasive follicular thyroid neoplasm with papillary-like nuclear features (NIFTP).1,2 Unlike the original description, the incidence of NIFTP is significantly lower in clinical practices where the tumor is entirely submitted and assessed with slides at multiple levels of all individual blocks, and also accompanied by biomarker studies (e.g., use of the BRAF p.V600E-mutation specific monoclonal VE1 antibody). For instance, the incidence of NIFTP in the SEER-22 data was 2.2% and 2.6% of cases in 2018 and 2019, respectively.3 These figures are in line with the rates reported in some retrospective series that have applied rigid criteria.4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_essential_and_desirable_diagnostic_criteria_for_niftp",
+          "label": "Table 2. Essential and desirable diagnostic criteria for NIFTP",
+          "required": true,
+          "type": "free_text",
+          "condition": "5 edition of the WHO classification"
+        },
+        {
+          "field_id": "the_5th_edition_of_the_who_classification_defined_niftp_as_non_invasive_encapsulatedwell_demarcated_",
+          "label": "The 5th edition of the WHO classification defined NIFTP as non-invasive encapsulated/well-demarcated follicular cell-derived tumor with a follicular growth pattern and nuclei resembling papillary thyroid carcinoma that has an extremely low malignant potential (Table 2).6,7 The new classification also recognized two distinct subtypes including subcentimeter NIFTP (tumor <10 mm) and oncocytic NIFTP (tumor composed of at least 75% oncocytic cells).6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "niftp_is_still_an_evolving_diagnosis_and_certain_problematic_areas_have_already_been_noted_for_insta",
+          "label": "NIFTP is still an evolving diagnosis, and certain problematic areas have already been noted. For instance, it is challenging to evaluate for invasion in well-circumscribed unencapsulated tumors. The recommendation for qualification as NIFTP in this scenario is to demonstrate a complete rim of compressed thyroid parenchyma with absolutely no mingling of normal and neoplastic follicles. Another problematic area is recognition of exclusionary papillae. A papilla in this context is well formed, demonstrates a fibrovascular core (unlike the follicles seen in Sanderson’s polster), and shows overt nuclear features of papillary carcinoma. The initial criterion of less than 1% papillary architecture is noted to be subjective and difficult to apply. While most experts agree that well-formed fibrovascular core-containing papillae would be considered exclusionary, the original threshold of <1% remains valid in the 5th edition of the WHO classification as long as the tumor shows no BRAF p.V600E-mutation.6,7 The distinction of NIFTP from a classic papillary carcinoma with predominant follicular architecture may be difficult, especially in small tumors measuring less than 3-5 mm, therefore, the application of BRAF p.V600E-mutation specific monoclonal VE1 immunohistochemistry or RAS mutation specific antibodies is recommended in the workup of subcentimeter NIFTPs.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_distinction_of_invasive_encapsulated_follicular_variant_papillary_thyroid_carcinoma_from_niftp_a",
+          "label": "The distinction of invasive encapsulated follicular variant papillary thyroid carcinoma from NIFTP and the distinction of follicular thyroid carcinoma from follicular adenoma primarily depends on the identification of invasion of the tumor capsule and/or vascular spaces.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "follicular_thyroid_carcinomas_and_invasive_encapsulated_follicular_variant_papillary_thyroid_carcino",
+          "label": "Follicular thyroid carcinomas and invasive encapsulated follicular variant papillary thyroid carcinomas represent the morphologic spectrum of RAS-like follicular patterned differentiated thyroid carcinomas.6,7 The distinction is based on the presence of nuclear atypia, which is subtle in RAS-like tumors and therefore subject to significant interobserver variability. The 5th edition of the WHO classification subtyped these tumors based on the type of invasion and the extent of tumor invasive growth to define minimally invasive (irrespective of the number of foci, minimal tumor capsular invasion only), encapsulated angioinvasive (irrespective of the number of involved vessel foci, angioinvasive carcinoma with no widely-invasive growth) and widely invasive subtypes.6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_4th_and_5th_editions_of_the_who_classification_made_a_clear_distinction_of_encapsulated_angioinv",
+          "label": "The 4th and 5th editions of the WHO classification made a clear distinction of encapsulated angioinvasive tumors into a distinct more aggressive category than minimally invasive carcinomas.6,7,8 Even a single focus of angioinvasion places a tumor into the category of encapsulated angioinvasive subtype.6,7,8 Widely invasive carcinomas have similarly nebulous definition and consist of those tumors with grossly apparent invasion of thyroid and/or soft tissue. The term is usually assigned to tumors with loss of encapsulation and multiple fronts of satellite tumor invasion radiating from the epicenter of the tumor.6,7,8 These tumors are typically accompanied by other markers of aggressiveness such as extrathyroidal extension and extensive vascular invasion.6,7,8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "historically_oncocytic_carcinoma_formerly_known_hürthle_cell_carcinoma_was_considered_a_distinct_ent",
+          "label": "Historically oncocytic carcinoma (formerly known Hürthle cell carcinoma) was considered a distinct entity. Even now the debate continues among experts as to whether this tumor is sufficiently biologically distinct as to warrant categorization as a separate entity.9 This subtype is often linked to more aggressive and radioactive iodine resistant manifestations; however, when controlled for stage, extent of invasion and other risk factors (high-grade features or focal dedifferentiation), this difference seems to be diminished.9,10 Nevertheless, oncocytic carcinomas are also subtyped (e.g., minimally invasive, encapsulated angioinvasive, and widely invasive subtypes) similar to follicular thyroid carcinomas and invasive encapsulated follicular variant papillary thyroid carcinomas in the 5th edition of the WHO classification of thyroid tumors.6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "criteria_for_tumor_capsular_invasion",
+          "label": "Criteria for Tumor Capsular Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_conceptually_simple_there_is_no_consensus_as_to_the_definition_of_tumor_capsular_invasion1112_",
+          "label": "While conceptually simple, there is no consensus as to the definition of tumor capsular invasion.11,12 Some authorities require complete transgression of the capsule, while other authorities do not require complete transgression of the capsule. The complete submission of the tumor periphery including the tumor capsule and the surrounding parenchyma is required in all encapsulated/well-demarcated nodules. The use of multiple levels of slides from individual blocks can assist in the diagnosis of the tumor capsular invasion. The impact of the previous biopsy may confound the interpretation of capsular invasion and must be considered.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nikiforov_ye_seethala_rr_tallini_g_et_al_nomenclature_revision_for_encapsulated_follicular_variant_o",
+          "label": "Nikiforov YE, Seethala RR, Tallini G, et al. Nomenclature revision for encapsulated follicular variant of papillary thyroid carcinoma: a paradigm shift to reduce overtreatment of indolent tumors. JAMA Oncology. 2016;2(8):1023-1029.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "seethala_rr_baloch_zw_barletta_ja_khanafshar_e_mete_o_sadow_pm_livolsi_va_nikiforov_ye_tallini_g_tho",
+          "label": "Seethala RR, Baloch ZW, Barletta JA, Khanafshar E, Mete O, Sadow PM, LiVolsi VA, Nikiforov YE, Tallini G, Thompson LD. Noninvasive follicular thyroid neoplasm with papillary-like nuclear features: a review for pathologists. Mod Pathol. 2018;31(1):39-55.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_dw_rob_fi_mukherjee_r_giordano_tj_haymart_mr_banerjee_m_variation_in_the_diagnosis_of_noninvasi",
+          "label": "Chen DW, Rob FI, Mukherjee R, Giordano TJ, Haymart MR, Banerjee M. Variation in the Diagnosis of Noninvasive Follicular Thyroid Neoplasm with Papillary-like Nuclear Features. J Clin Endocrinol Metab. 2022; 107(10):e4072-e4077.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "parente_dn_kluijfhout_wp_bongers_pj_verzijl_r_devon_km_rotstein_le_goldstein_dp_asa_sl_mete_o_paster",
+          "label": "Parente DN, Kluijfhout WP, Bongers PJ, Verzijl R, Devon KM, Rotstein LE, Goldstein DP, Asa SL, Mete O, Pasternak JD. Clinical Safety of Renaming Encapsulated Follicular Variant of Papillary Thyroid Carcinoma: Is NIFTP Truly Benign? World J Surg. 2018;42(2):321-326.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bychkov_a_jung_ck_liu_z_kakudo_k_noninvasive_follicular_thyroid_neoplasm_with_papillary_like_nuclear",
+          "label": "Bychkov A, Jung CK, Liu Z, Kakudo K. Noninvasive Follicular Thyroid Neoplasm with Papillary-Like Nuclear Features in Asian Practice: Perspectives for Surgical Pathology and Cytopathology. Endocr Pathol. 2018;29(3):276-288.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_internet_lyon_fra",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 17]. (WHO classification of tumour series, 5th ed.; vol.10). Available from: https://tumourclassification.iarc.who.int/chapters/53",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baloch_zw_asa_sl_barletta_ja_ghossein_ra_juhlin_cc_jung_ck_livolsi_va_papotti_mg_sobrinho_simões_m_t",
+          "label": "Baloch ZW, Asa SL, Barletta JA, Ghossein RA, Juhlin CC, Jung CK, LiVolsi VA, Papotti MG, Sobrinho-Simões M, Tallini G, Mete O. Overview of the 2022 WHO Classification of Thyroid Neoplasms. Endocr Pathol. 2022;33(1):27-63.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "delellis_ra_lloyd_rv_osamura_ry_klöppel_g_rosai_jheitz_pu_eng_c_eds_pathology_and_genetics_of_tumour",
+          "label": "DeLellis RA, Lloyd RV, Osamura RY, Klöppel G, Rosai JHeitz PU, Eng C, eds. Pathology and Genetics of Tumours of the Endocrine Organs. Lyons: IARC Press; 2017. World Health Organization Classification of Tumours.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_oncocytic_change_in_thyroid_pathology_front_endocrinol_lausanne_2021_may_312678119",
+          "label": "Asa SL, Mete O. Oncocytic Change in Thyroid Pathology. Front Endocrinol (Lausanne). 2021 May 3;12:678119.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lukovic_j_petrovic_i_liu_z_armstrong_sm_brierley_jd_tsang_r_pasternak_jd_gomez_hernandez_k_liu_a_asa",
+          "label": "Lukovic J, Petrovic I, Liu Z, Armstrong SM, Brierley JD, Tsang R, Pasternak JD, Gomez-Hernandez K, Liu A, Asa SL, Mete O. Oncocytic Papillary Thyroid Carcinoma and Oncocytic Poorly Differentiated Thyroid Carcinoma: Clinical Features, Uptake, and Response to Radioactive Iodine Therapy, and Outcome. Front Endocrinol (Lausanne). 2021 Dec 16;12:795184.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zhu_y_li_y_jung_ck_song_de_hang_jf_liu_z_jain_d_lai_cr_hirokawa_m_kakudo_k_bychkov_a_histopathologic",
+          "label": "Zhu Y, Li Y, Jung CK, Song DE, Hang JF, Liu Z, Jain D, Lai CR, Hirokawa M, Kakudo K, Bychkov A. Histopathologic Assessment of Capsular Invasion in Follicular Thyroid Neoplasms-an Observer Variation Study. Endocr Pathol. 2020;31(2):132-140.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_thyroid_tumor_capsular_invasion_the_bottom_line_or_much_ado_about_nothing_endocr_patho",
+          "label": "Mete O, Asa SL. Thyroid Tumor Capsular Invasion: the Bottom Line or Much Ado About Nothing? Endocr Pathol. 2020;31(2):141-142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_the_majority_of_follicular_cell_derived_thyroid_cancers_are_differentiated_thyroid_carcinomas_",
+          "label": "While the majority of follicular cell-derived thyroid cancers are differentiated thyroid carcinomas (e.g., papillary thyroid carcinoma, invasive encapsulated follicular variant papillary thyroid carcinoma, follicular thyroid carcinoma, and oncocytic carcinoma of the thyroid), a subset are poorly differentiated (historically known as insular, or trabecular, carcinoma) or anaplastic thyroid carcinomas. In addition, a subset of follicular cell-derived differentiated thyroid carcinomas may be associated with high-grade features (e.g., tumor necrosis and/or ≥5 mitoses per 2mm2) in the absence of morphologic dedifferentiation (Table 3).1,2 Given their aggressive/adverse features, differentiated thyroid carcinomas with high-grade features are now recognized within the spectrum of more aggressive tumors in the 5th edition of the WHO classification of thyroid tumors.1,2 Poorly differentiated thyroid carcinoma and anaplastic thyroid carcinomas represent progression to a more aggressive phenotype and are often seen with co-existent or antecedent differentiated carcinomas which may display high-grade features (e.g., tumor necrosis and/or ≥5 mitoses per 2mm2). While detailed histomorphologic review is beyond the scope of this protocol, salient features of both tumor types are listed below.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "briefly_poorly_differentiated_thyroid_carcinomas_are_invasive_follicular_cell_derived_neoplasms_that",
+          "label": "Briefly, poorly differentiated thyroid carcinomas are invasive follicular cell-derived neoplasms that display a solid, trabecular, and/or insular growth pattern, and show 1 or more of the following: ≥3 mitoses per 2mm2, tumor necrosis, and nuclear convolution (without other features seen in papillary thyroid carcinoma).1,2,3 As noted above, poorly differentiated thyroid carcinoma may be seen as a component of differentiated carcinoma, and as little as 10% of a poorly differentiated component is sufficient to confer an aggressive biologic behavior.4 On the other hand, encapsulated tumors appear to have a more favorable prognosis than unencapsulated tumors, particularly if they show no capsular or vascular invasion with adequate sampling.5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anaplastic_thyroid_carcinoma_represents_the_most_extreme_form_of_tumor_progression_and_consists_of_a",
+          "label": "Anaplastic thyroid carcinoma represents the most extreme form of tumor progression and consists of a high-grade malignancy with spindled, pleomorphic, squamoid, or even rhabdoid morphology.7 Tumors with the morphology of squamous cell carcinoma are now recognized as a morphological pattern of the anaplastic thyroid carcinoma in the 5th edition of the WHO classification.1,2 Anaplastic follicular cell-derived thyroid carcinomas are the most aggressive and fast-growing thyroid malignancies and are often lethal. Initial thoughts on favorable prognosis in differentiated thyroid carcinoma with only focal anaplastic transformation have been challenged in a recent series that reported no difference in 1- and 2-year survival or overall survival by Kaplan-Meier analysis for patients with tumors with a minor anaplastic thyroid carcinoma component and those with conventional anaplastic thyroid carcinomas.8 However, tumors with only focal anaplastic areas and no extrathyroidal extension are still recommended to be delineated from the more common and overtly conventional anaplastic thyroid carcinomas. The maximum percentage of tumor that is allowable with the term “focal” in this context is still unclear at this point.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "from_a_diagnostic_perspective_anaplastic_thyroid_carcinomas_that_show_no_expression_of_ttf1_and_pax8",
+          "label": "From a diagnostic perspective, anaplastic thyroid carcinomas that show no expression of TTF1 and PAX8 should be considered as a diagnosis of exclusion from other high-grade malignancies. Therefore, the application of immunohistochemical biomarkers is required in the diagnostic workup.9 Of note, reflex BRAF p.V600E-mutation specific monoclonal VE1 immunohistochemistry and/or BRAF mutation analysis is required in all anaplastic thyroid carcinomas, since this enables BRAF and MEK inhibitor therapies which are active against BRAF p.V600E-driven anaplastic thyroid carcinomas.1,2,10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_internet_lyon_fra",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 17]. (WHO classification of tumour series, 5th ed.; vol.10). Available from",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baloch_zw_asa_sl_barletta_ja_ghossein_ra_juhlin_cc_jung_ck_livolsi_va_papotti_mg_sobrinho_simões_m_t",
+          "label": "Baloch ZW, Asa SL, Barletta JA, Ghossein RA, Juhlin CC, Jung CK, LiVolsi VA, Papotti MG, Sobrinho-Simões M, Tallini G, Mete O. Overview of the 2022 WHO Classification of Thyroid Neoplasms. Endocr Pathol. 2022;33(1):27-63.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "volante_m_collini_p_nikiforov_ye_et_al_poorly_differentiated_thyroid_carcinoma_the_turin_proposal_fo",
+          "label": "Volante M, Collini P, Nikiforov YE, et al. Poorly differentiated thyroid carcinoma: the Turin proposal for the use of uniform diagnostic criteria and an algorithmic diagnostic approach. Am J Surg Pathol. 2007;31(8):1256-1264.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dettmer_m_schmitt_a_steinert_h_et_al_poorly_differentiated_thyroid_carcinomas_how_much_poorly_differ",
+          "label": "Dettmer M, Schmitt A, Steinert H, et al. Poorly differentiated thyroid carcinomas: how much poorly differentiated is needed? Am J Surg Pathol. 2011;35(12):1866-1872.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hiltzik_d_carlson_dl_tuttle_rm_et_al_poorly_differentiated_thyroid_carcinomas_defined_on_the_basis_o",
+          "label": "Hiltzik D, Carlson DL, Tuttle RM, et al. Poorly differentiated thyroid carcinomas defined on the basis of mitosis and necrosis: a clinicopathologic study of 58 patients. Cancer. 2006;106(6):1286-1295.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rivera_m_ricarte_filho_j_patel_s_et_al_encapsulated_thyroid_tumors_of_follicular_cell_origin_with_hi",
+          "label": "Rivera M, Ricarte-Filho J, Patel S, et al. Encapsulated thyroid tumors of follicular cell origin with high grade features (high mitotic rate/tumor necrosis): a clinicopathologic and molecular study. Hum Pathol. 2010;41(2):172-180.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sugitani_i_kasai_n_fujimoto_y_yanagisawa_a_prognostic_factors_and_therapeutic_strategy_for_anaplasti",
+          "label": "Sugitani I, Kasai N, Fujimoto Y, Yanagisawa A. Prognostic factors and therapeutic strategy for anaplastic carcinoma of the thyroid. World J Surg. 2001;25(5):617-622.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wong_ks_lorch_jh_alexander_ek_marqusee_e_cho_nl_nehs_ma_doherty_gm_barletta_ja_histopathologic_featu",
+          "label": "Wong KS, Lorch JH, Alexander EK, Marqusee E, Cho NL, Nehs MA, Doherty GM, Barletta JA. Histopathologic Features and Clinical Outcome of Anaplastic Thyroid Carcinoma with a Minor Anaplastic Component. Endocr Pathol. 2020;31(3):283-290.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baloch_z_mete_o_asa_sl_immunohistochemical_biomarkers_in_thyroid_pathology_endocr_pathol_201829291_1",
+          "label": "Baloch Z, Mete O, Asa SL. Immunohistochemical Biomarkers in Thyroid Pathology. Endocr Pathol. 2018;29(2):91-112.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "de_leo_s_trevisan_m_fugazzola_l_recent_advances_in_the_management_of_anaplastic_thyroid_cancer_thyro",
+          "label": "De Leo S, Trevisan M, Fugazzola L. Recent advances in the management of anaplastic thyroid cancer. Thyroid Res 2020; 13:17.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_size_has_a_significant_impact_on_prognosis_and_is_a_component_of_tnm_staging_papillary_thyroid",
+          "label": "Tumor size has a significant impact on prognosis and is a component of TNM staging. Papillary thyroid carcinomas measuring less than 1 cm are associated with an excellent prognosis, while tumors measuring over 4 cm are associated with a worse prognosis. For follicular thyroid carcinomas, tumor size over 3.5 cm is associated with a worse prognosis.1 For medullary thyroid carcinomas, size is a staging component, though a recent epidemiologic survey shows that even small tumors (microcarcinomas less than 1.0 cm) have a 20% rate of regional spread and a 5% distant metastatic rate.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chan_jk_the_thyroid_gland_in_fletcher_cdm_ed_diagnostic_histopathology_of_tumours_edinburgh_churchil",
+          "label": "Chan JK. The thyroid gland. In: Fletcher CDM, ed. Diagnostic Histopathology of Tumours. Edinburgh: Churchill Livingstone Elsevier; 2007:1018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kazaure_hs_roman_sa_sosa_ja_medullary_thyroid_microcarcinoma_a_population_level_analysis_of_310_pati",
+          "label": "Kazaure HS, Roman SA, Sosa JA. Medullary thyroid microcarcinoma: a population-level analysis of 310 patients. Cancer. 2012;118(3):620-627.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extrathyroidal_extension_refers_to_involvement_of_the_perithyroidal_tissues_by_a_primary_thyroid_can",
+          "label": "Extrathyroidal extension refers to involvement of the perithyroidal tissues by a primary thyroid cancer. Since the thyroid gland does not have a well-defined capsule,1 the definition of extrathyroidal extension has been problematic and subjective. On gross examination, the thyroid pseudocapsule may appear complete, but evidence has shown that microscopically the capsule is focally incomplete or absent in a majority of thyroid glands evaluated at autopsy.2 The perithyroidal tissues include sizable blood vessels as well as small peripheral nerves and are continuous with the pretracheal fascia.3 Extension into adipose tissue is a problematic criterion if used alone, given the fact that adipose tissue can be found within the thyroid gland proper under normal conditions and also may be a component of a variety of thyroid lesions including carcinomas.4,5 Given this state of variability, microscopic extrathyroidal extension that is not grossly evident is no longer a criterion for upstaging. The pT3b stage is now defined by gross extrathyroidal extension into skeletal muscle, which necessitates review of macroscopic, intraoperative, and radiologic findings. As such, a thorough gross examination and review of the operative and radiologic findings are now required to document “gross” extrathyroidal extension required to upstage a tumor. Recent evidence also suggests that the identification of microscopic extra-thyroidal extension is associated with reduced disease-free survival irrespective of tumor size.6,7 While other studies are needed to confirm this finding, documentation of microscopic strap muscle invasion may help to assist the dynamic risk stratification of patients with differentiated thyroid carcinoma that have otherwise low risk disease.8 However, the identification of microscopic strap muscle invasion should not be used to upstage the tumor as pT3b in the absence of gross or intraoperative evidence of strap muscle invasion. Microscopic tumor extension into a parathyroid gland does not warrant an extra-thyroidal extension since most parathyroid glands are located within the thyroid pseudocapsule. However, such findings should be documented in pathology reports.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_rotstein_l_asa_sl_controversies_in_thyroid_pathology_thyroid_capsule_invasion_and_extrathyroi",
+          "label": "Mete O, Rotstein L, Asa SL. Controversies in thyroid pathology: thyroid capsule invasion and extrathyroidal extension. Ann Surg Oncol. 2010;17(2):386-391.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "komorowski_ra_hanson_ga_occult_thyroid_pathology_in_the_young_adult_an_autopsy_study_of_138_patients",
+          "label": "Komorowski RA, Hanson GA. Occult thyroid pathology in the young adult: an autopsy study of 138 patients without clinical thyroid disease. Hum Pathol. 1988;19(6):689-696.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "standring_s_thyroid_gland_in_standring_s_ed_grays_anatomy_the_anatomical_basis_of_clinical_practice_",
+          "label": "Standring S. Thyroid gland. In: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice. Edinburgh: Elsevieer Churchill Livingstone; 2005:560-564.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rosai_j_carcangiu_ml_delellis_ra_atlas_of_tumor_pathology_tumors_of_the_thyroid_gland_vol_5_3rd_ed_w",
+          "label": "Rosai J, Carcangiu ML, DeLellis RA. Atlas of Tumor Pathology. Tumors of the Thyroid Gland. Vol 5. 3rd ed. Washington DC: Armed Forces Institute of Pathology; 1992.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gnepp_dr_ogorzalek_jm_heffess_cs_fat_containing_lesions_of_the_thyroid_gland_am_j_surg_pathol_198913",
+          "label": "Gnepp DR, Ogorzalek JM, Heffess CS. Fat-containing lesions of the thyroid gland. Am J Surg Pathol. 1989;13(7):605-612",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tran_b_roshan_d_abraham_e_et_al_an_analysis_of_the_american_joint_committee_on_cancer_8th_edition_t_",
+          "label": "Tran B, Roshan D, Abraham E, et al. An Analysis of The American Joint Committee on Cancer 8th Edition T Staging System for Papillary Thyroid Carcinoma. J Clin Endocrinol Metab. 2018;103(6):2199-2206.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wijewardene_a_gill_aj_gild_m_learoyd_dl_glover_ar_sywak_m_sidhu_s_roach_p_schembri_g_hoang_j_robinso",
+          "label": "Wijewardene A, Gill AJ, Gild M, Learoyd DL, Glover AR, Sywak M, Sidhu S, Roach P, Schembri G, Hoang J, Robinson B, Tacon L, Clifton-Bligh R. A Retrospective Cohort Study with Validation of Predictors of Differentiated Thyroid Cancer Outcomes. Thyroid. 2022;32(10):1201-1210.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_oncological_outcome_prediction_in_differentiated_thyroid_carcinoma_assumption_or_impro",
+          "label": "Mete O, Asa SL. Oncological Outcome Prediction in Differentiated Thyroid Carcinoma: Assumption or Improved Accuracy? Thyroid. 2022;32(10):1142-1143.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "k_angioinvasion_vascular_invasion_versus_lymphatic_invasion",
+          "label": "K. Angioinvasion (Vascular Invasion) versus Lymphatic Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_invasion_and_more_importantly_angioinvasion_vascular_invasion_are_important_parameters_for",
+          "label": "Lymphatic invasion and more importantly angioinvasion (vascular invasion) are important parameters for both differentiated thyroid carcinomas. Given the preferential spread of papillary thyroid carcinoma via lymphatics and follicular thyroid carcinoma via hematogenous routes, the vessels invaded by papillary thyroid carcinoma are usually lymphatic spaces and those in follicular thyroid carcinoma are usually blood vessels. However, papillary thyroid carcinomas can involve vascular spaces, as indicated by occasional hematogenous spread. Thus, the distinction between vascular and lymphatic invasion is required in that the former is a predictor of a more aggressive pattern of spread.1 The 2022 WHO classification also made it clear that the term lymphovascular invasion is not encouraged in any endocrine neoplasms including thyroid carcinomas; therefore, diagnosticians are required to make all efforts to distinguish lymphatic invasion from angioinvasion (vascular invasion).2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "criteria_for_lymphatic_invasion_and_angioinvasion",
+          "label": "Criteria for Lymphatic Invasion and Angioinvasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "as_noted_above_papillary_thyroid_carcinomas_tend_to_spread_via_lymphatics_in_addition_to_tumor_depos",
+          "label": "As noted above, papillary thyroid carcinomas tend to spread via lymphatics. In addition to tumor deposits within lymphatic spaces, this form of spread may manifest as psammoma bodies alone within these spaces, which are the equivalent of lymphatic invasion for reporting purposes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_vascular_invasion_the_blood_vessels_should_be_located_outside_the_tumor_within_the_capsule_or_ou",
+          "label": "For vascular invasion, the blood vessels should be located outside the tumor, within the capsule, or outside the capsule.4,5 The involved spaces should include capsular or extracapsular vessels. While angioinvasion of a venous caliber space is fairly easily recognized, occasionally separating capillary sized vascular spaces from lymphatics may be difficult. Morphologically smaller vascular spaces will still have red blood cells within. In challenging cases, markers selective for vascular and lymphatic endothelium, such as CD31 and podoplanin (D2-40), respectively, may be useful.1,5 Figure 2 depicts the various histologic appearances of vascular invasion.6 The minimal requirements for clinically meaningful vascular invasion are currently a point of controversy. Historically, the presence of endothelialized tumor alone has been the minimal criterion to identify vascular space invasion.4 More recently, however, one group has raised the caveat that tumor cells within vascular lumina unassociated with thrombus, and tumor cells underlying intact endothelium could represent “pseudoinvasion” given the fenestrated endothelial network of endocrine organs.5 Using more rigorous criteria, namely invasion of tumor cells through a vessel wall as well as thrombus formation in association with tumor, this group demonstrated that over one-third of tumors that fulfilled these criteria had distant metastases.5 These rigid criteria are also highly predictive of aggressive disease in medullary thyroid carcinoma, parathyroid carcinoma, and adrenal cortical carcinoma.7,8,9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_the_5th_edition_of_the_who_classification_endorsed_the_rigid_criteria_of_vascular_invasion_ang",
+          "label": "While the 5th edition of the WHO classification endorsed the rigid criteria of vascular invasion (angioinvasion) in parathyroid carcinomas and adrenal cortical carcinomas,2 validation of these criteria in follicular cell-derived thyroid carcinomas from additional studies is still recommended. The rigid criteria set the framework for the minimal criteria for unequivocal and meaningful vascular invasion, to reiterate: invasion of tumor through a vessel wall accompanied by fibrin thrombus.5 The use of CD61 immunohistochemistry can also be used to highlight intravascular platelets admixed with tumor cells at sites of angioinvasion. It is acknowledged that the risk of metastasis when these criteria are not fulfilled by a focus in vessels is not entirely absent.10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additionally_some_investigators_have_suggested_that_the_number_of_foci_of_vascular_invasion_has_prog",
+          "label": "Additionally, some investigators have suggested that the number of foci of vascular invasion has prognostic impact as well.11,12,13 In some studies, encapsulated follicular carcinoma, oncocytic subtype with 4 or more foci of vascular invasion, has a significant recurrence rate (47%) even if the foci of angioinvasion are microscopic.12 On the other hand, another study showed that follicular oncocytic carcinomas with a total of 2 foci of capsular/vascular invasion did not recur after a long follow-up.13 A recent series from Japan identified ≥2 foci of vascular invasion as an independent prognostic factor of disease free survival in follicular thyroid carcinomas.14 Moreover, in a series of 4000 thyroid carcinomas of follicular epithelial origin, angioinvasive differentiated thyroid carcinomas that developed distant metastases revealed predominantly a single focus of angioinvasion, and there were no more than 2 foci of vascular invasion.5 Thus, the use of appropriate criteria seems to be more critical than the number of involved vessels.5 In light of these findings, the 5th edition of the WHO classification of thyroid tumors questioned the validity of the cut-off point applied for the distinction between focal and extensive angioinvasion in all follicular cell-derived thyroid carcinomas. The current synoptic also endorses this approach and pathologists are encouraged to document the extent of angioinvasion based on the number of vessels involved.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_vascular_invasion_vi_schematic_drawing_for_the_interpretation_of_the_presence_or_absence_of",
+          "label": "Figure 2.  Vascular invasion (VI): Schematic drawing for the interpretation of the presence or absence of significant VI. The diagram depicts a follicular neoplasm (green) surrounded by a fibrous capsule (tan). The driving concepts behind significant VI are penetration through the vessel wall and a reaction to the vascular deposit, namely thrombus formation, which may range from subtle and fibrinoid in nature to large and heavily organized.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_through_c_represent_scenarios_where_tumor_in_vessels_are_not_counted_as_vi_a_free_floating_irregul",
+          "label": "A through C represent scenarios where tumor in vessels are not counted as VI. A. Free-floating irregular tumor fragments often result from artifactual displacement. B. Tumor bulging and indenting the vessel wall does not count as VI. C. Endothelialized tumor floating in an intracapsular vessel may result from tangential sectioning of tumor bulging into a vessel, often at a branch or bifurcation. These findings can however prompt deeper levels (at least by 3) to exclude definitive VI (see E through G).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "note_while_there_is_no_standard_definition_of_deeper_levels_generally_each_level_is_at_a_certain_int",
+          "label": "Note: While there is no standard definition of “deeper levels,” generally, each level is at a certain interval (i.e., 3 serial sections deeper or 15-micron intervals) below the original H&E rather than an immediate serial section.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_was_modified_from_the_original_illustration_concept_for_schematic_from_fletcher_cdm_ed_diag",
+          "label": "Figure 2 was modified from the original illustration concept for schematic from Fletcher CDM, ed. Diagnostic Histopathology of Tumours. 3rd ed. Edinburgh; Churchill Livingstone Elsevier; 2007. Modified with permission. © Elsevier",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_oncological_outcome_prediction_in_differentiated_thyroid_carcinoma_assumption_or_impro",
+          "label": "Mete O, Asa SL. Oncological Outcome Prediction in Differentiated Thyroid Carcinoma: Assumption or Improved Accuracy? Thyroid. 2022;32(10):1142-1143.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_internet_lyon_fra",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 17]. (WHO classification of tumour series, 5th ed.; vol.10). Available from: https://tumourclassification.iarc.who.int/chapters/53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baloch_zw_asa_sl_barletta_ja_ghossein_ra_juhlin_cc_jung_ck_livolsi_va_papotti_mg_sobrinho_simões_m_t",
+          "label": "Baloch ZW, Asa SL, Barletta JA, Ghossein RA, Juhlin CC, Jung CK, LiVolsi VA, Papotti MG, Sobrinho-Simões M, Tallini G, Mete O. Overview of the 2022 WHO Classification of Thyroid Neoplasms. Endocr Pathol. 2022;33(1):27-63.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rosai_j_carcangiu_ml_delellis_ra_atlas_of_tumor_pathology_tumors_of_the_thyroid_gland_vol_5_3rd_ed_w",
+          "label": "Rosai J, Carcangiu ML, DeLellis RA. Atlas of Tumor Pathology. Tumors of the Thyroid Gland. Vol 5. 3rd ed. Washington DC: Armed Forces Institute of Pathology; 1992.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_pathological_definition_and_clinical_significance_of_vascular_invasion_in_thyroid_carc",
+          "label": "Mete O, Asa SL. Pathological definition and clinical significance of vascular invasion in thyroid carcinomas of follicular epithelial derivation. Mod Pathol. 2011;24(12):1545-1552.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chan_jk_the_thyroid_gland_in_fletcher_cdm_ed_diagnostic_histopathology_of_tumours_edinburgh_churchil",
+          "label": "Chan JK. The thyroid gland. In: Fletcher CDM, ed. Diagnostic Histopathology of Tumours. Edinburgh: Churchill Livingstone Elsevier; 2007:1018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "erovic_bm_kim_d_cassol_c_et_al_prognostic_and_predictive_markers_in_medullary_thyroid_carcinoma_endo",
+          "label": "Erovic BM, Kim D, Cassol C, et al. Prognostic and predictive markers in medullary thyroid carcinoma. Endocr Pathol. 2012;23(4):232-242.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "erovic_bm_goldstein_dp_kim_d_mete_o_brierley_j_tsang_r_freeman_jl_asa_sl_rotstein_l_irish_jc_parathy",
+          "label": "Erovic BM, Goldstein DP, Kim D, Mete O, Brierley J, Tsang R, Freeman JL, Asa SL, Rotstein L, Irish JC. Parathyroid cancer: outcome analysis of 16 patients treated at the Princess Margaret Hospital. Head Neck. 2013;35(1):35-9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_gucer_h_kefeli_m_asa_sl_diagnostic_and_prognostic_biomarkers_of_adrenal_cortical_carcinoma_am",
+          "label": "Mete O, Gucer H, Kefeli M, Asa SL. Diagnostic and Prognostic Biomarkers of Adrenal Cortical Carcinoma. Am J Surg Pathol. 2018;42(2):201-213.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thompson_ld_wieneke_ja_paal_e_frommelt_ra_adair_cf_heffess_cs_a_clinicopathologic_study_of_minimally",
+          "label": "Thompson LD, Wieneke JA, Paal E, Frommelt RA, Adair CF, Heffess CS. A clinicopathologic study of minimally invasive follicular carcinoma of the thyroid gland with a review of the English literature. Cancer. 2001;91(3):505-524.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "collini_p_sampietro_g_pilotti_s_extensive_vascular_invasion_is_a_marker_of_risk_of_relapse_in_encaps",
+          "label": "Collini P, Sampietro G, Pilotti S. Extensive vascular invasion is a marker of risk of relapse in encapsulated non- Hürthle cell follicular carcinoma of the thyroid gland: a clinicopathological study of 18 consecutive cases from a single institution with a 11-year median follow-up. Histopathology. 2004;44(1):35-39.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ghossein_ra_hiltzik_dh_carlson_dl_et_al_prognostic_factors_of_recurrence_in_encapsulated_hurthle_cel",
+          "label": "Ghossein RA, Hiltzik DH, Carlson DL, et al. Prognostic factors of recurrence in encapsulated Hurthle cell carcinoma of the thyroid gland: a clinicopathologic study of 50 cases. Cancer. 2006;106(8):1669-1676.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stojadinovic_a_ghossein_ra_hoos_a_et_al_hurthle_cell_carcinoma_a_critical_histopathologic_appraisal_",
+          "label": "Stojadinovic A, Ghossein RA, Hoos A, et al. Hurthle cell carcinoma: a critical histopathologic appraisal. J Clin Oncol. 2001;19(10):2616-2625.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yamazaki_h_katoh_r_sugino_k_matsuzu_k_masaki_c_akaishi_j_hames_ky_tomoda_c_suzuki_a_ohkuwa_k_kitagaw",
+          "label": "Yamazaki H, Katoh R, Sugino K, Matsuzu K, Masaki C, Akaishi J, Hames KY, Tomoda C, Suzuki A, Ohkuwa K, Kitagawa W, Nagahama M, Rino Y, Ito K. Encapsulated Angioinvasive Follicular Thyroid Carcinoma: Prognostic Impact of the Extent of Vascular Invasion. Ann Surg Oncol. 2022 Feb 15. doi: 10.1245/s10434-022-11401-x. Epub ahead of print. Erratum in: Ann Surg Oncol. 2022;29(13):8213.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_convention_margin_status_is_a_required_data_element_in_association_with_thyroid_cancers_the_margi",
+          "label": "By convention, margin status is a required data element in association with thyroid cancers. The “margin” is defined as the surface of the thyroid specimen, usually the outer aspect of the thyroid gland and/or inked edge of the specimen. The evaluation of the relationship of tumor to the inked edge of the tissue represents determination of margin status. It should be noted that the thyroid “capsule” is not an anatomically defined structure. Evidence has shown that microscopically the capsule is focally incomplete or absent in a majority of thyroid glands evaluated at autopsy.1 Further, unlike hollow organs such as the gastrointestinal tract where there is continuity of the entire viscera such that a real surgical and pathologic margin exists, the same does not hold true for the thyroid gland such that tumor at the margin (i.e., capsule and/or ink) does not correlate with incomplete excision. Few published studies have addressed the influence of margin status and patient outcome. Most surgeons, endocrinologists, and nuclear medicine specialists request information on margin status. While this makes intuitive sense, and it is recommended that a positive margin be mentioned in the final pathology report, meticulous studies on the effect of positive margins and outcome in a large series of patients with long-term follow-up are lacking. Indeed, there are no data to date on the prognostic value of close margins as an independent or co-variable.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "komorowski_ra_hanson_ga_occult_thyroid_pathology_in_the_young_adult_an_autopsy_study_of_138_patients",
+          "label": "Komorowski RA, Hanson GA. Occult thyroid pathology in the young adult: an autopsy study of 138 patients without clinical thyroid disease. Hum Pathol. 1988;19(6):689-696.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "Regional Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_node_spread_from_thyroid_cancer_is_common_but_of_less_prognostic_significance_in_pati",
+          "label": "Regional lymph node spread from thyroid cancer is common but of less prognostic significance in patients with well-differentiated tumors (papillary) than in medullary cancers. The adverse prognostic influence of lymph node metastasis in patients with differentiated carcinomas is observed only in the older age group.1 In comparison to macrometastatic disease, micrometastases in thyroid cancer of follicular cell differentiation are of even less clinical value. Based on a few studies to date, micrometastasis does not appear to confer an increased risk of locoregional recurrence as compared to node-negative patients and does not likely warrant more aggressive intervention.2,3 The same holds true for isolated tumor cells and psammomatous calcifications (psammoma bodies) only in lymph nodes. Reporting of “psammoma bodies only” in lymph nodes is not well defined. While indolent, they do indicate capacity for lymphatic spread and are considered pN1a. On the other end of the spectrum, larger size of lymph node metastases can confer a higher risk of locoregional recurrence, and the American Thyroid Association thus advocates reporting of the size of the largest metastatic focus.4 Currently, there are no validated differentiated thyroid carcinoma specific cut-offs for size of macro- or micrometastases.1,5 However, several experts and the American Thyroid Association adopted the cut-off of 2 mm to define micrometastasis.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_comparison_to_metastatic_head_and_neck_squamous_cell_carcinoma_the_risk_for_increased_locoregiona",
+          "label": "In comparison to metastatic head and neck squamous cell carcinoma, the risk for increased locoregional disease and distant metastasis in the presence of extranodal extension of thyroid cancer is not as widely validated, although several studies have shown an increased risk for distant metastases and death in the presence of extranodal extension.4,7,8 Therefore, as a recommendation, the pathologist should comment on the presence or absence of extranodal extension. Nodal metastases from medullary thyroid cancer carry a much more ominous prognosis, although they follow a similar pattern of spread.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "classification_of_neck_dissection",
+          "label": "Classification of Neck Dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radical_neck_dissection",
+          "label": "Radical neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_radical_neck_dissection_internal_jugular_vein_spinal_accessory_nerve_andor_sternocleidomast",
+          "label": "Modified radical neck dissection, internal jugular vein, spinal accessory nerve and/or sternocleidomastoid muscle spared",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "selective_neck_dissection_snd_as_specified_by_the_surgeon_with_levels_and_sublevels_designated_see_f",
+          "label": "Selective neck dissection (SND), as specified by the surgeon, with levels and sublevels designated (see Figure 3)9,10, such as",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "supraomohyoid_neck_dissection",
+          "label": "Supraomohyoid neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "posterolateral_neck_dissection",
+          "label": "Posterolateral neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lateral_neck_dissection",
+          "label": "Lateral neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "central_compartment_neck_dissection",
+          "label": "Central compartment neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "super_selective_neck_dissection_as_specified_by_the_surgeon",
+          "label": "Super selective neck dissection, as specified by the surgeon",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extended_radical_neck_dissection_as_specified_by_the_surgeon",
+          "label": "Extended radical neck dissection, as specified by the surgeon",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_first_echelon_of_nodal_metastasis_consists_of_the_paralaryngeal_paratracheal_and_prelaryngeal_de",
+          "label": "The first echelon of nodal metastasis consists of the paralaryngeal, paratracheal, and prelaryngeal (Delphian) nodes adjacent to the thyroid gland in the central compartment of the neck, generally described as level VI.1 Metastases secondarily involve the mid- and lower jugular, the supraclavicular, and (much less commonly) the upper deep jugular and spinal accessory lymph nodes.1 Lymph node metastasis to submandibular and submental lymph nodes is very rare. Upper mediastinal (level VII) nodal spread occurs frequently both anteriorly and posteriorly. Retropharyngeal nodal metastasis may be seen, usually in the presence of extensive lateral cervical metastasis.1 Bilateral nodal spread is common. The components of the N category are described as follows: first echelon (perithyroidal/central compartment/level VI and/or superior mediastinal/level VII), or N1a; and lateral cervical/level I-V, or N1b. Commonly utilized surgical techniques for compartmental dissection often result in varying portions of the central compartment being resected en bloc with the thyroidectomy specimen, thus “perithyroidal” lymph nodes seen here are counted towards the N status of the patient (in addition to other parts formally labeled as central compartment or level VI).11 The lymph node metastasis should also be described according to the level of the neck that is involved.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_purposes_of_pathologic_evaluation_lymph_nodes_are_organized_by_levels_as_shown_in_figure_312",
+          "label": "For purposes of pathologic evaluation, lymph nodes are organized by levels as shown in Figure 3.12",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_the_6_sublevels_of_the_neck_for_describing_the_location_of_lymph_nodes_within_levels_i_ii_a",
+          "label": "Figure 3. The 6 sublevels of the neck for describing the location of lymph nodes within levels I, II, and V. Level IA, submental group; level IB, submandibular group; level IIA, upper jugular nodes along the carotid sheath, including the subdigastric group; level IIB, upper jugular nodes in the submuscular recess; level VA, spinal accessory nodes; and level VB, the supraclavicular and transverse cervical nodes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "from_flint_pw_et_al_eds_cummings_otolaryngology_head_and_neck_surgery_5th_ed_philadelphia_pa_saunder",
+          "label": "From Flint PW, et al, eds. Cummings Otolaryngology: Head and Neck Surgery. 5th ed. Philadelphia, PA; Saunders: 2010. Reproduced with permission. © Elsevier.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_order_for_pathologists_to_properly_identify_these_nodes_they_must_be_familiar_with_the_terminolog",
+          "label": "In order for pathologists to properly identify these nodes, they must be familiar with the terminology of the regional lymph node groups and with the relationships of those groups to the regional anatomy. Which lymph node groups surgeons submit for histopathologic evaluation depends on the type of neck dissection they perform. Therefore, surgeons must supply information on the types of neck dissections that they perform and on the details of the local anatomy in the specimens they submit for examination, or in other ways orient those specimens for pathologists.7,8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_it_is_not_possible_to_assess_the_levels_of_lymph_nodes_for_instance_when_the_anatomic_landmarks_i",
+          "label": "If it is not possible to assess the levels of lymph nodes (for instance, when the anatomic landmarks in the excised specimens are not specified), then the lymph node levels may be estimated as follows: level II, upper third of internal jugular (IJ) vein or neck specimen; level III, middle third of IJ vein or neck specimen; level IV, lower third of IJ vein or neck specimen, all anterior to the sternocleidomastoid muscle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_i_submental_group",
+          "label": "Level I. Submental Group",
+          "required": true,
+          "type": "free_text",
+          "condition": "Sublevel IA"
+        },
+        {
+          "field_id": "lymph_nodes_within_the_triangular_boundary_of_the_anterior_belly_of_the_digastric_muscles_and_the_hy",
+          "label": "Lymph nodes within the triangular boundary of the anterior belly of the digastric muscles and the hyoid bone.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "submandibular_group",
+          "label": "Submandibular Group",
+          "required": true,
+          "type": "free_text",
+          "condition": "Sublevel IB"
+        },
+        {
+          "field_id": "lymph_nodes_within_the_boundaries_of_the_anterior_and_posterior_bellies_of_the_digastric_muscle_and_",
+          "label": "Lymph nodes within the boundaries of the anterior and posterior bellies of the digastric muscle and the body of the mandible. The submandibular gland is included in the specimen when the lymph nodes within this triangle are removed.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_ii_upper_jugular_group",
+          "label": "Level II. Upper Jugular Group",
+          "required": true,
+          "type": "free_text",
+          "condition": "Sublevels IIA and IIB"
+        },
+        {
+          "field_id": "lymph_nodes_located_around_the_upper_third_of_the_internal_jugular_vein_and_adjacent_spinal_accessor",
+          "label": "Lymph nodes located around the upper third of the internal jugular vein and adjacent spinal accessory nerve extending from the level of the carotid bifurcation (surgical landmark) or hyoid bone (clinical landmark) to the skull base. The posterior boundary is the posterior border of the sternocleidomastoid muscle, and the anterior boundary is the lateral border of the sternohyoid muscle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_iii_middle_jugular_group",
+          "label": "Level III. Middle Jugular Group",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_nodes_located_around_the_middle_third_of_the_internal_jugular_vein_extending_from_the_carotid_",
+          "label": "Lymph nodes located around the middle third of the internal jugular vein extending from the carotid bifurcation superiorly to the omohyoid muscle (surgical landmark), or cricothyroid notch (clinical landmark) inferiorly. The posterior boundary is the posterior border of the sternocleidomastoid muscle, and the anterior boundary is the lateral border of the sternohyoid muscle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_iv_lower_jugular_group",
+          "label": "Level IV. Lower Jugular Group",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_nodes_located_around_the_lower_third_of_the_internal_jugular_vein_extending_from_the_omohyoid_",
+          "label": "Lymph nodes located around the lower third of the internal jugular vein extending from the omohyoid muscle superiorly to the clavicle inferiorly. The posterior boundary is the posterior border of the sternocleidomastoid muscle, and the anterior boundary is the lateral border of the sternohyoid muscle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_v_posterior_triangle_group",
+          "label": "Level V. Posterior Triangle Group",
+          "required": true,
+          "type": "free_text",
+          "condition": "Sublevels VA and VB"
+        },
+        {
+          "field_id": "this_group_comprises_predominantly_the_lymph_nodes_located_along_the_lower_half_of_the_spinal_access",
+          "label": "This group comprises predominantly the lymph nodes located along the lower half of the spinal accessory nerve and the transverse cervical artery. The supraclavicular nodes are also included in this group. The posterior boundary of the posterior triangle is the anterior border of the trapezius muscle, the anterior boundary of the posterior triangle is the posterior border of the sternocleidomastoid muscle, and the inferior boundary of the posterior triangle is the clavicle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_vi_anterior_central_compartment",
+          "label": "Level VI. Anterior (Central) Compartment",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_nodes_in_this_compartment_include_the_pre_and_paratracheal_nodes_precricoid_delphian_node_and_",
+          "label": "Lymph nodes in this compartment include the pre- and paratracheal nodes, precricoid (Delphian) node, and the perithyroidal nodes, including the lymph nodes along the recurrent laryngeal nerve. The superior boundary is the hyoid bone, the inferior boundary is the suprasternal notch, the lateral boundaries are the common carotid arteries, and the posterior boundary by the prevertebral fascia.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_vii_superior_mediastinal_lymph_nodes",
+          "label": "Level VII. Superior Mediastinal Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastases_at_level_vii_are_considered_regional_lymph_node_metastases_all_other_mediastinal_lymph_no",
+          "label": "Metastases at level VII are considered regional lymph node metastases; all other mediastinal lymph node metastases are considered distant metastases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_node_groups_removed_from_areas_not_included_in_the_above_levels_eg_scalene_suboccipital_and_re",
+          "label": "Lymph node groups removed from areas not included in the above levels, e.g., scalene, suboccipital, and retropharyngeal, should be identified and reported from all levels separately. Midline nodes are considered ipsilateral nodes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_node_number",
+          "label": "Lymph Node Number",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_examination_of_a_selective_neck_dissection_specimen_will_ordinarily_include_6_or_more_lym",
+          "label": "Histologic examination of a selective neck dissection specimen will ordinarily include 6 or more lymph nodes. Histologic examination of a radical or modified radical neck dissection specimen will ordinarily include 10 or more lymph nodes in the untreated neck.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "special_procedures_for_lymph_nodes",
+          "label": "Special Procedures for Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "at_the_current_time_no_additional_special_techniques_should_be_used_other_than_routine_histology_for",
+          "label": "At the current time, no additional special techniques should be used other than routine histology for the assessment of nodal metastases (i.e., sentinel lymph node-type protocols are not advocated). However, confirmation by immunohistochemical staining, including TTF-1, PAX8, and thyroglobulin for follicular cell-derived thyroid carcinomas (e.g., papillary thyroid carcinoma), calcitonin and monoclonal CEA along with neuroendocrine markers (e.g., INSM1, chromogranins, synaptophysin) for medullary thyroid carcinoma, may be required.13",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_important_to_remember_that_pax8_reactivity_may_occur_in_c_cell_derived_neoplasms_if_c_terminus",
+          "label": "It is important to remember that PAX8 reactivity may occur in C-cell derived neoplasms if C-terminus specific monoclonal antibodies (e.g., clones PAX8R1, BC12) are not used. Recent evidence also shows that some N-terminus specific monoclonal PAX8 antibodies (clone MRQ50) are also negative in medullary thyroid carcinoma. It is therefore important that the diagnosticians recognize the clone-dependent PAX8 reactivity in medullary thyroid carcinoma.14",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tuttle_rm_morris_lf_haugen_br_et_al_thyroid_differentiated_and_anaplastic_carcinoma_in_amin_mb_ed_aj",
+          "label": "Tuttle RM, Morris LF, Haugen BR, et al. Thyroid- differentiated and anaplastic carcinoma. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cranshaw_im_carnaille_b_micrometastases_in_thyroid_cancer_an_important_finding_surg_oncol_2008173253",
+          "label": "Cranshaw IM, Carnaille B. Micrometastases in thyroid cancer: an important finding? Surg Oncol. 2008;17(3):253-258.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urken_ml_mechanick_ji_sarlin_j_scherl_s_wenig_bm_pathologic_reporting_of_lymph_node_metastases_in_di",
+          "label": "Urken ML, Mechanick JI, Sarlin J, Scherl S, Wenig BM. Pathologic reporting of lymph node metastases in differentiated thyroid cancer: a call to action for the College of American Pathologists. Endocr Pathol. 2014;25(3):214-218.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "randolph_gw_duh_qy_heller_ks_et_al_the_prognostic_significance_of_nodal_metastases_from_papillary_th",
+          "label": "Randolph GW, Duh QY, Heller KS, et al. The prognostic significance of nodal metastases from papillary thyroid carcinoma can be stratified based on the size and number of metastatic lymph nodes, as well as the presence of extranodal extension. Thyroid. 2012;22(11):1144-1152.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rosen_je_lloyd_rv_brierley_jd_et_al_thyroid_medullary_in_amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_ca",
+          "label": "Rosen JE, Lloyd RV, Brierley JD, et al. Thyroid-medullary. In: Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "haugen_br_alexander_ek_bible_kc_et_al_2015_american_thyroid_association_management_guidelines_for_ad",
+          "label": "Haugen BR, Alexander EK, Bible KC, et al. 2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer. Thyroid. 2016;26(1):1-133.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yamashita_h_noguchi_s_murakami_n_et_al_extracapsular_invasion_of_lymph_node_metastasis_a_good_indica",
+          "label": "Yamashita H, Noguchi S, Murakami N, et al. Extracapsular invasion of lymph node metastasis: a good indicator of disease recurrence and poor prognosis in patients with thyroid microcarcinoma. Cancer. 1999;86(5):842-849.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lango_m_flieder_d_arrangoiz_r_et_al_extranodal_extension_of_metastatic_papillary_thyroid_carcinoma_c",
+          "label": "Lango M, Flieder D, Arrangoiz R, et al. Extranodal extension of metastatic papillary thyroid carcinoma: correlation with biochemical endpoints, nodal persistence, and systemic disease progression. Thyroid. 2013;23(9):1099-1105.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "robbins_kt_medina_je_wolfe_gt_levine_pa_sessions_rb_pruet_cw_standardizing_neck_dissection_terminolo",
+          "label": "Robbins KT, Medina JE, Wolfe GT, Levine PA, Sessions RB, Pruet CW. Standardizing neck dissection terminology. Official report of the Academy's Committee for Head and Neck Surgery and Oncology. Arch Otolaryngol Head Neck Surg. 1991;117(6):601-605.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "robbins_kt_shaha_ar_medina_je_et_al_consensus_statement_on_the_classification_and_terminology_of_nec",
+          "label": "Robbins KT, Shaha AR, Medina JE, et al. Consensus statement on the classification and terminology of neck dissection. Arch Otolaryngol Head Neck Surg. 2008;134(5):536-538.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carty_se_cooper_ds_doherty_gm_et_al_consensus_statement_on_the_terminology_and_classification_of_cen",
+          "label": "Carty SE, Cooper DS, Doherty GM, et al. Consensus statement on the terminology and classification of central neck dissection for thyroid cancer. Thyroid. 2009;19(11):1153-1158.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "robbins_kt_samant_s_ronen_o_neck_dissection_in_flint_pw_haughey_bh_lund_vj_et_al_eds_cummings_otolar",
+          "label": "Robbins KT, Samant S, Ronen O. Neck Dissection. In: Flint PW, Haughey BH, Lund VJ, et al, eds. Cummings Otolaryngology: Head and Neck Surgery. 5th ed. Philadelphia, PA: Saunders; 2005:1702-1725.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "baloch_z_mete_o_asa_sl_immunohistochemical_biomarkers_in_thyroid_pathology_endocr_pathol_201829291_1",
+          "label": "Baloch Z, Mete O, Asa SL. Immunohistochemical Biomarkers in Thyroid Pathology. Endocr Pathol. 2018;29(2):91-112.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gucer_h_caliskan_s_kefeli_m_mete_o_do_you_know_the_details_of_your_pax8_antibody_monoclonal_pax8_mrq",
+          "label": "Gucer H, Caliskan S, Kefeli M, Mete O. Do You Know the Details of Your PAX8 Antibody? Monoclonal PAX8 (MRQ-50) Is Not Expressed in a Series of 45 Medullary Thyroid Carcinomas. Endocr Pathol. 2020; 31(1):33-38.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_should_be_applied_to_all_medullary_thyroid_carcinomas_mixed_medullary_and_follicular",
+          "label": "The TNM staging should be applied to all medullary thyroid carcinomas, mixed medullary and follicular cell-derived thyroid carcinomas and malignant follicular cell-derived thyroid carcinomas including follicular thyroid carcinoma, invasive follicular variant papillary thyroid carcinoma, papillary thyroid carcinoma, oncocytic carcinoma of the thyroid, high-grade (non-anaplastic) differentiated thyroid carcinoma, poorly differentiated thyroid carcinoma and anaplastic thyroid carcinoma. Salivary gland-type carcinomas, thymic tumors within the thyroid and thyroid carcinomas of uncertain cytogenesis may be staged using this scheme by recognizing lack of validation of for such neoplasms. Low-risk follicular cell-derived thyroid neoplasms are not required to be staged.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_the_american_joint_committee_on_cancer_ajcc1_the_tnm_stage_groupings_for_papillary_and_",
+          "label": "According to the American Joint Committee on Cancer (AJCC)1 the TNM stage groupings for papillary and follicular carcinomas and variants thereof are stratified by age, including patients under 55 years of age and patients 55 years and older, as well as the individual TNM parameters. Age is not used to stratify medullary thyroid carcinoma into stage groups.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anaplastic_thyroid_carcinoma_is_always_assigned_stage_iv_and_subgrouped_into_iva_ivb_ivc_by_tnm_para",
+          "label": "Anaplastic thyroid carcinoma is always assigned stage IV and subgrouped into IVA, IVB, IVC by TNM parameters.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "all_categories_may_be_subdivided_a_solitary_tumor_b_multifocal_tumor_with_multifocal_tumors_the_most",
+          "label": "All categories may be subdivided: (a) solitary tumor, (b) multifocal tumor. With multifocal tumors, the most aggressive (typically the largest) one is used for classification. The multifocal designation may be used for tumors of different histologies (i.e., a follicular and papillary carcinoma, not just multiple papillary carcinomas). The lymph nodes must be specifically identified to classify regional node involvement.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y”, “r”, and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval, and is identified by the “r” prefix: rTNM",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tuttle_rm_morris_lf_haugen_br_et_al_thyroid_differentiated_and_anaplastic_carcinoma_in_amin_mb_ed_aj",
+          "label": "Tuttle RM, Morris LF, Haugen BR, et al. Thyroid- differentiated and anaplastic carcinoma. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rosen_je_lloyd_rv_brierley_jd_et_al_thyroid_medullary_in_amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_ca",
+          "label": "Rosen JE, Lloyd RV, Brierley JD, et al. Thyroid-medullary. In: Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

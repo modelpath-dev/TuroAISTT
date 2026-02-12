@@ -1,0 +1,2025 @@
+{
+  "template_id": "Testis_4.3.0.0.REL.CAPCP",
+  "organ": "TESTIS: Orchiectomy",
+  "protocol_posting_date": "March 2025",
+  "standards": [
+    "AJCC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "pre_orchiectomy_serum_tumor_markers",
+          "label": "Pre-Orchiectomy Serum Tumor Marker(s)",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "unknown",
+              "label": "Unknown: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "serum_marker_studies_within_normal_limits",
+              "label": "Serum marker studies within normal limits"
+            },
+            {
+              "value": "alpha_fetoprotein",
+              "label": "Alpha-fetoprotein (AFP) elevation"
+            },
+            {
+              "value": "beta_subunit_of_human_chorionic_gonadotropin",
+              "label": "Beta-subunit of human chorionic gonadotropin (b-hCG) elevation"
+            },
+            {
+              "value": "lactate_dehydrogenase",
+              "label": "Lactate dehydrogenase (LDH) elevation"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "post_orchiectomy_serum_tumor_markers",
+          "label": "Post-Orchiectomy Serum Tumor Marker(s)",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "unknown",
+              "label": "Unknown: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "serum_marker_studies_within_normal_limits",
+              "label": "Serum marker studies within normal limits"
+            },
+            {
+              "value": "alpha_fetoprotein",
+              "label": "Alpha-fetoprotein (AFP) elevation"
+            },
+            {
+              "value": "beta_subunit_of_human_chorionic_gonadotropin",
+              "label": "Beta-subunit of human chorionic gonadotropin (b-hCG) elevation"
+            },
+            {
+              "value": "lactate_dehydrogenase",
+              "label": "Lactate dehydrogenase (LDH) elevation"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "serum_tumor_markers_s",
+          "label": "Serum Tumor Markers (S)",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "sx",
+              "label": "SX (serum marker studies not available or performed)"
+            },
+            {
+              "value": "s0",
+              "label": "S0 (serum marker study levels within normal limits)"
+            },
+            {
+              "value": "s1",
+              "label": "S1 (less than 1.5 x the upper limit of normal for the LDH assay, and HCG less than 5,000 mIU / mL,"
+            }
+          ],
+          "notes": [
+            "A"
+          ],
+          "condition": "applies to post-orchiectomy values"
+        },
+        {
+          "field_id": "and_afp_less_than_1000_ng_ml",
+          "label": "and AFP less than 1,000 ng / mL)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "s2",
+              "label": "S2 (1.5-10 x the upper limit of normal for the LDH assay, or HCG 5,000-50,000 mIU / mL, or AFP"
+            }
+          ]
+        },
+        {
+          "field_id": "1000_10000_ng_ml",
+          "label": "1,000-10,000 ng / mL)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "s3",
+              "label": "S3 (greater than 10 x the upper limit of normal for the LDH assay, or HCG greater than 50,000 mIU /"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "radical_orchiectomy",
+              "label": "Radical orchiectomy"
+            },
+            {
+              "value": "partial_orchiectomy",
+              "label": "Partial orchiectomy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_of_main_tumor_mass_in_centimeters",
+              "label": "Greatest dimension of main tumor mass in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_of_main_tumor_mass_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension of Main Tumor Mass in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_tumor_nodules",
+          "label": "Additional Tumor Nodule(s)",
+          "required": true,
+          "type": "free_text",
+          "condition": "may repeat for each nodule"
+        },
+        {
+          "field_id": "greatest_dimension_of_additional_tumor_nodule_in_centimeters",
+          "label": "Greatest Dimension of Additional Tumor Nodule in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "specify_in_centimeters",
+              "label": "Specify in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "field_id": "germ_cell_tumors_derived_from_germ_cell_neoplasia_in_situ",
+          "label": "Germ cell tumors derived from germ cell neoplasia in situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "non_invasive_germ_cell_neoplasia",
+          "label": "Non-invasive germ cell neoplasia",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "germ_cell_neoplasia_in_situ",
+              "label": "Germ cell neoplasia in situ (GCNIS)"
+            },
+            {
+              "value": "other_intratubular_germ_cell_tumor",
+              "label": "Other intratubular germ cell tumor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gonadoblastoma",
+              "label": "Gonadoblastoma"
+            }
+          ]
+        },
+        {
+          "field_id": "the_germinoma_family_of_tumors",
+          "label": "The germinoma family of tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "seminoma",
+              "label": "Seminoma"
+            },
+            {
+              "value": "seminoma_with_syncytiotrophoblastic_cells",
+              "label": "Seminoma with syncytiotrophoblastic cells"
+            }
+          ]
+        },
+        {
+          "field_id": "non_seminomatous_germ_cell_tumors",
+          "label": "Non-seminomatous germ cell tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "embryonal_carcinoma",
+              "label": "Embryonal carcinoma"
+            },
+            {
+              "value": "yolk_sac_tumor_postpubertal_type",
+              "label": "Yolk sac tumor, postpubertal-type"
+            },
+            {
+              "value": "choriocarcinoma",
+              "label": "Choriocarcinoma"
+            },
+            {
+              "value": "non_choriocarcinomatous_trophoblastic_tumor_nos",
+              "label": "Non-choriocarcinomatous trophoblastic tumor, NOS"
+            },
+            {
+              "value": "placental_site_trophoblastic_tumor",
+              "label": "Placental site trophoblastic tumor"
+            },
+            {
+              "value": "epithelioid_trophoblastic_tumor",
+              "label": "Epithelioid trophoblastic tumor"
+            },
+            {
+              "value": "cystic_trophoblastic_tumor",
+              "label": "Cystic trophoblastic tumor"
+            },
+            {
+              "value": "teratoma_postpubertal_type",
+              "label": "Teratoma, postpubertal-type"
+            },
+            {
+              "value": "teratoma_with_somatic_type_malignancy",
+              "label": "Teratoma with somatic-type malignancy"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma"
+            },
+            {
+              "value": "embryonic_type_neuroectodermal_tumor",
+              "label": "Embryonic-type neuroectodermal tumor"
+            },
+            {
+              "value": "rhabdomyosarcoma",
+              "label": "Rhabdomyosarcoma"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "mixed_germ_cell_tumors",
+          "label": "Mixed germ cell tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mixed_germ_cell_tumor",
+              "label": "Mixed germ cell tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "seminoma",
+              "label": "Seminoma (specify percentage): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "embryonal_carcinoma",
+              "label": "Embryonal carcinoma (specify percentage): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "yolk_sac_tumor_postpubertal_type",
+              "label": "Yolk sac tumor, postpubertal-type (specify percentage): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "choriocarcinoma",
+              "label": "Choriocarcinoma (specify percentage): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "teratoma",
+              "label": "Teratoma (specify percentage): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify type and percentage): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "germ_cell_tumors_of_unknown_type",
+          "label": "Germ cell tumors of unknown type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "scar_diagnostic_of_regressed_germ_cell_tumor",
+              "label": "Scar diagnostic of regressed germ cell tumor"
+            },
+            {
+              "value": "scar_suspicious_for_regressed_germ_cell_tumor",
+              "label": "Scar suspicious for regressed germ cell tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "germ_cell_tumors_unrelated_to_germ_cell_neoplasia_in_situ",
+          "label": "Germ cell tumors unrelated to germ cell neoplasia in situ",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "spermatocytic_tumor",
+              "label": "Spermatocytic tumor"
+            },
+            {
+              "value": "spermatocytic_tumor_with_a_sarcomatous_component",
+              "label": "Spermatocytic tumor with a sarcomatous component"
+            },
+            {
+              "value": "testicular_neuroendocrine_tumor_prepubertal_type",
+              "label": "Testicular neuroendocrine tumor, prepubertal-type"
+            },
+            {
+              "value": "mixed_teratoma_and_yolk_sac_tumor_prepubertal_type",
+              "label": "Mixed teratoma and yolk sac tumor, prepubertal-type"
+            },
+            {
+              "value": "yolk_sac_tumor_prepubertal_type",
+              "label": "Yolk sac tumor, prepubertal-type"
+            }
+          ]
+        },
+        {
+          "field_id": "malignant_sex_cord_stromal_tumors",
+          "label": "Malignant sex cord-stromal tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "leydig_cell_tumor",
+              "label": "Leydig cell tumor"
+            },
+            {
+              "value": "sertoli_cell_tumor_nos",
+              "label": "Sertoli cell tumor, NOS"
+            },
+            {
+              "value": "sertoli_cell_tumor_large_cell_calcifying",
+              "label": "Sertoli cell tumor, large cell calcifying"
+            },
+            {
+              "value": "sertoli_cell_tumor_intratubular_large_cell_hyalinizing",
+              "label": "Sertoli cell tumor, intratubular large cell hyalinizing"
+            },
+            {
+              "value": "granulosa_cell_tumor_adult_type",
+              "label": "Granulosa cell tumor, adult type"
+            },
+            {
+              "value": "sex_cord_stromal_tumor_mixed_type",
+              "label": "Sex cord-stromal tumor, mixed type (specify components and approximate percentages): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "sex_cord_stromal_tumor_type_unclassified",
+              "label": "Sex cord-stromal tumor type, unclassified"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "germ_cell_neoplasia_in_situ_only",
+              "label": "Germ cell neoplasia in situ only"
+            },
+            {
+              "value": "limited_to_testis",
+              "label": "Limited to testis"
+            },
+            {
+              "value": "invades_rete_testis",
+              "label": "Invades rete testis#"
+            },
+            {
+              "value": "invades_hilar_soft_tissue",
+              "label": "Invades hilar soft tissue"
+            },
+            {
+              "value": "invades_epididymis",
+              "label": "Invades epididymis"
+            },
+            {
+              "value": "invades_through_tunica_albuginea_and_perforates_tunica_vaginalis",
+              "label": "Invades through tunica albuginea and perforates tunica vaginalis (mesothelial layer)"
+            },
+            {
+              "value": "invades_spermatic_cord",
+              "label": "Invades spermatic cord"
+            },
+            {
+              "value": "invades_scrotum",
+              "label": "Invades scrotum"
+            },
+            {
+              "value": "invades_other_structures",
+              "label": "Invades other structures (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ],
+          "notes": [
+            "E"
+          ],
+          "guidance": "See Note E for definition of rete testis invasion"
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            },
+            {
+              "value": "tumor_present_at_margin",
+              "label": "Tumor present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_tumor",
+          "label": "Margin(s) Involved by Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "spermatic_cord",
+              "label": "Spermatic cord"
+            },
+            {
+              "value": "testicular_parenchymal",
+              "label": "Testicular parenchymal#"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ],
+          "guidance": "For partial orchiectomy only"
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_with_tumor_required_only_if_applicable",
+          "label": "Nodal Site(s) with Tumor (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "interaortocaval",
+              "label": "Interaortocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paraaortic",
+              "label": "Paraaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paracaval",
+              "label": "Paracaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "preaortic",
+              "label": "Preaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "precaval",
+              "label": "Precaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retroaortic",
+              "label": "Retroaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retrocaval",
+              "label": "Retrocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "nodal_site_with_largest_metastatic_deposit",
+          "label": "Nodal Site with Largest Metastatic Deposit",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "interaortocaval",
+              "label": "Interaortocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paraaortic",
+              "label": "Paraaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "paracaval",
+              "label": "Paracaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "preaortic",
+              "label": "Preaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "precaval",
+              "label": "Precaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retroaortic",
+              "label": "Retroaortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retrocaval",
+              "label": "Retrocaval: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_lymph_node_or_nodal_mass_with_tumor",
+          "label": "Size of Largest Lymph Node or Nodal Mass with Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "largest_lymph_node_with_tumor_specify_site",
+          "label": "Largest Lymph Node with Tumor (specify site): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_subtype_of_germ_cell_tumor_in_involved_lymph_nodes_required_only_if",
+          "label": "Histologic Subtype of Germ Cell Tumor in Involved Lymph Node(s) (required only if",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "applicable",
+          "label": "applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "seminoma",
+              "label": "Seminoma (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "seminoma_with_syncytiotrophoblastic_cells",
+              "label": "Seminoma with syncytiotrophoblastic cells (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "embryonal_carcinoma",
+              "label": "Embryonal carcinoma (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "yolk_sac_tumor_postpubertal_type",
+              "label": "Yolk sac tumor, postpubertal-type (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "choriocarcinoma",
+              "label": "Choriocarcinoma (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "placental_site_trophoblastic_tumor",
+              "label": "Placental site trophoblastic tumor (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "epithelioid_trophoblastic_tumor",
+              "label": "Epithelioid trophoblastic tumor (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "cystic_trophoblastic_tumor",
+              "label": "Cystic trophoblastic tumor (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "teratoma_postpubertal_type",
+              "label": "Teratoma, postpubertal-type (specify percent): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "teratoma_with_somatic_type_malignancy",
+              "label": "Teratoma with somatic-type malignancy"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma"
+            },
+            {
+              "value": "embryonic_type_neuroectodermal_tumor",
+              "label": "Embryonic-type neuroectodermal tumor"
+            },
+            {
+              "value": "rhabdomyosarcoma",
+              "label": "Rhabdomyosarcoma"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "spermatocytic_tumor",
+              "label": "Spermatocytic tumor"
+            },
+            {
+              "value": "spermatocytic_tumor_with_a_sarcomatous_component",
+              "label": "Spermatocytic tumor with a sarcomatous component"
+            },
+            {
+              "value": "yolk_sac_tumor_prepubertal_type",
+              "label": "Yolk sac tumor, prepubertal-type"
+            },
+            {
+              "value": "leydig_cell_tumor",
+              "label": "Leydig cell tumor"
+            },
+            {
+              "value": "sertoli_cell_tumor",
+              "label": "Sertoli cell tumor"
+            },
+            {
+              "value": "sertoli_cell_tumor_large_cell_calcifying",
+              "label": "Sertoli cell tumor, large cell calcifying"
+            },
+            {
+              "value": "granulosa_cell_tumor_adult_type",
+              "label": "Granulosa cell tumor, adult type"
+            },
+            {
+              "value": "sex_cord_stromal_tumor_type_mixed",
+              "label": "Sex cord-stromal tumor type, mixed"
+            },
+            {
+              "value": "sex_cord_stromal_tumor_type_unclassified",
+              "label": "Sex cord-stromal tumor type, unclassified"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_retroperitoneal_lymph_node",
+              "label": "Non-retroperitoneal lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_organ",
+              "label": "Other organ(s) or site(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: Germ cell neoplasia in situ"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_limited_to_testis_including_rete_testis_invasion_without_lymphovascular_invasion",
+          "label": "pT1: Tumor limited to testis (including rete testis invasion) without lymphovascular invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor smaller than 3 cm in size#"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor 3 cm or larger in size#"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor limited to testis (including rete testis invasion) with lymphovascular invasion, or tumor invading hilar soft tissue or epididymis or penetrating visceral mesothelial layer covering the external surface of tunica albuginea with or without lymphovascular invasion"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor directly invades spermatic cord soft tissue with or without lymphovascular invasion"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor invades scrotum with or without lymphovascular invasion"
+            }
+          ],
+          "guidance": "Subclassification of pT1 applies only to pure seminoma."
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis with a lymph node mass 2 cm or smaller in greatest dimension and less than or"
+            }
+          ]
+        },
+        {
+          "field_id": "equal_to_five_nodes_positive_none_larger_than_2_cm_in_greatest_dimension",
+          "label": "equal to five nodes positive, none larger than 2 cm in greatest dimension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2",
+              "label": "pN2: Metastasis with a lymph node mass larger than 2 cm but not larger than 5 cm in greatest"
+            }
+          ]
+        },
+        {
+          "field_id": "extension_of_tumor",
+          "label": "extension of tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn3",
+              "label": "pN3: Metastasis with a lymph node mass larger than 5 cm in greatest dimension"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_distant_metastasis",
+          "label": "pM1: Distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Non-retroperitoneal nodal or pulmonary metastases"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Non-pulmonary visceral metastases"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "germ_cell_neoplasia_in_situ",
+              "label": "Germ cell neoplasia in situ (GCNIS)"
+            },
+            {
+              "value": "microlith",
+              "label": "Microlith"
+            },
+            {
+              "value": "sertoli_cell_nodule",
+              "label": "Sertoli cell nodule (Pick’s adenoma)"
+            },
+            {
+              "value": "atrophy",
+              "label": "Atrophy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_emphasizes_the_importance_of_relevant_clinical_information_in_the_pathologic_evaluation",
+          "label": "The protocol emphasizes the importance of relevant clinical information in the pathologic evaluation of specimens. Serum marker studies play a key role in the clinical management of patients with testicular germ cell tumors.1,2,3  The occurrence of elevated serum levels of alpha-fetoprotein (AFP) or the beta subunit of human chorionic gonadotropin (b-hCG) may indicate the need for additional sections of certain specimens if the initial findings do not account for such elevations. Information regarding postorchiectomy serum marker status (lactate dehydrogenase [LDH], AFP, and b-hCG) is also important in the “S” categorization of the tumor for stage groupings. Postorchiectomy serum markers are important for the assignment of stage IS.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_serum_tumor_markers_s_category_comprises_the_following",
+          "label": "The serum tumor markers (S) category comprises the following",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "alpha_fetoprotein_afp_half_life_5_to_7_days",
+          "label": "Alpha fetoprotein (AFP) – half-life 5 to 7 days",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "human_chorionic_gonadotropin_hcg_half_life_1_to_3_days",
+          "label": "Human chorionic gonadotropin (hCG) – half-life 1 to 3 days",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lactate_dehydrogenase",
+          "label": "Lactate dehydrogenase",
+          "required": true,
+          "type": "free_text",
+          "condition": "LDH"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chisolm_gg_tumour_markers_in_testicular_tumours_prog_clin_biol_res_1985_20381_91",
+          "label": "Chisolm GG. Tumour markers in testicular tumours. Prog Clin Biol Res. 1985; 203:81-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "javadpour_n_tumor_markers_in_testicular_cancer_an_update_prog_clin_biol_res_1985_203141_154",
+          "label": "Javadpour N. Tumor markers in testicular cancer: an update. Prog Clin Biol Res. 1985; 203:141-154.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aass_n_klepp_o_cavallin_stahl_e_et_al_prognostic_factors_in_unselected_patients_with_nonseminomatous",
+          "label": "Aass N, Klepp O, Cavallin-Stahl E, et al. Prognostic factors in unselected patients with nonseminomatous metastatic testicular cancer: a multicenter experience. J Clin Oncol. 1991; 9:818-826.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_entire_testicular_tumor_may_be_blocked_if_it_requires_10_blocks_or_less_tissue_may_be_retained_f",
+          "label": "The entire testicular tumor may be blocked if it requires 10 blocks or less (tissue may be retained for special studies); 10 blocks of larger tumors may be taken, unless the tumor is greater than 10 cm, in which case 1 block may be submitted for every 1 cm of maximum tumor dimension. Blocks must contain the interface with nontumorous testis, as well as the tunica albuginea, even away from the tumor because lymphatic invasion is best appreciated in the peritumoral tissue, as well as in the vessels within and under/parallel to the tunica. When there are multifocal tumors (with greater than or equal to 2 separate tumor nodules), additional tumor nodule(s) should also be sampled. Tissues to be sampled include",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_including_interface_with_surrounding_testis_and_tunica_albuginea",
+          "label": "Tumor, including interface with surrounding testis, and tunica albuginea",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "all_of_the_grossly_different_appearing_areas_in_the_tumor",
+          "label": "All of the grossly different appearing areas in the tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "testicular_hilummediastinum_testis",
+          "label": "Testicular hilum/mediastinum testis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "uninvolved_testis_including_tunica_albuginea",
+          "label": "Uninvolved testis, including tunica albuginea",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epididymis",
+          "label": "Epididymis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spermatic_cord_including_cord_margin_mid_sections_and_base_of_cord",
+          "label": "Spermatic cord, including cord margin, mid sections and base of cord",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_lesion",
+          "label": "Other lesion",
+          "required": true,
+          "type": "free_text",
+          "condition": "s"
+        },
+        {
+          "field_id": "all_identifiable_lymph_nodes",
+          "label": "All identifiable lymph nodes#",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_tissues_submitted_with_specimen",
+          "label": "Other tissue(s) submitted with specimen",
+          "required": true,
+          "type": "free_text",
+          "guidance": "For large masses that have obliterated individual nodes, 1 section for every centimeter of maximum tumor dimension,including grossly different looking areas, is recommended."
+        },
+        {
+          "field_id": "the_margins_in_a_specimen_resected_for_a_malignant_tumor_of_the_testis_depending_on_the_extent_of_th",
+          "label": "The margins in a specimen resected for a malignant tumor of the testis, depending on the extent of the surgery, include spermatic cord margin, the parietal layer of tunica vaginalis, testicular parenchymal margin, and scrotal skin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_mainly_applies_to_malignant_tumors_of_the_testis_the_vast_majority_of_which_are_of_germ",
+          "label": "The protocol mainly applies to malignant tumors of the testis, the vast majority of which are of germ cell origin. It may also be applied to other malignant or potentially malignant sex cord stromal tumors of the testis included in the classification below.1,2,3,4,5 While the presence of metastasis is the most definitive indicator of malignancy in the sex cord stromal tumors, evaluation of features associated with higher risk of malignant behavior, including large tumor size, infiltrative margins, tumor necrosis, increased mitotic activity, nuclear atypia and lymphovascular invasion is recommended.6,7 For hematolymphoid neoplasms involving the testis, refer to the corresponding CAP protocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_tumors_derived_from_germ_cell_neoplasia_in_situ",
+          "label": "Germ cell tumors derived from germ cell neoplasia in situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "non_invasive_germ_cell_neoplasia",
+          "label": "Non-invasive germ cell neoplasia",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_neoplasia_in_situ",
+          "label": "Germ cell neoplasia in situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specific_forms_of_intratubular_germ_cell_neoplasia",
+          "label": "Specific forms of intratubular germ cell neoplasia",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gonadoblastoma",
+          "label": "Gonadoblastoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_germinoma_family_of_tumors",
+          "label": "The germinoma family of tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "seminoma",
+          "label": "Seminoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "non_seminomatous_germ_cell_tumors",
+          "label": "Non-seminomatous germ cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "embryonal_carcinoma",
+          "label": "Embryonal carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yolk_sac_tumor_postpubertal_type",
+          "label": "Yolk sac tumor, postpubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "choriocarcinoma",
+          "label": "Choriocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "placental_site_trophoblastic_tumor",
+          "label": "Placental site trophoblastic tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epithelioid_trophoblastic_tumor",
+          "label": "Epithelioid trophoblastic tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cystic_trophoblastic_tumor",
+          "label": "Cystic trophoblastic tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "teratoma_postpubertal_type",
+          "label": "Teratoma, postpubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "teratoma_with_somatic_type_malignancy",
+          "label": "Teratoma with somatic-type malignancy",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_germ_cell_tumors_of_the_testis",
+          "label": "Mixed germ cell tumors of the testis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_germ_cell_tumors",
+          "label": "Mixed germ cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_tumors_of_unknown_type",
+          "label": "Germ cell tumors of unknown type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regressed_germ_cell_tumors",
+          "label": "Regressed germ cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_tumors_unrelated_to_germ_cell_neoplasia_in_situ",
+          "label": "Germ cell tumors unrelated to germ cell neoplasia in situ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spermatocytic_tumor",
+          "label": "Spermatocytic tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yolk_sac_tumor_prepubertal_type",
+          "label": "Yolk sac tumor, prepubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "testicular_neuroendocrine_tumor_prepubertal_type",
+          "label": "Testicular neuroendocrine tumor, prepubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_teratoma_and_yolk_sac_tumor_prepubertal_type",
+          "label": "Mixed teratoma and yolk sac tumor, prepubertal-type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sex_cord_stromal_tumors_of_the_testis",
+          "label": "Sex cord-stromal tumors of the testis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leydig_cell_tumor",
+          "label": "Leydig cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leydig_cell_tumor",
+          "label": "Leydig cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sertoli_cell_tumors",
+          "label": "Sertoli cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sertoli_cell_tumor",
+          "label": "Sertoli cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "large_cell_calcifying_sertoli_cell_tumor",
+          "label": "Large cell calcifying Sertoli cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "granulosa_cell_tumors",
+          "label": "Granulosa cell tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adult_granulosa_cell_tumor",
+          "label": "Adult granulosa cell tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_and_other_sex_cord_stromal_tumors",
+          "label": "Mixed and other sex cord-stromal tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_sex_cord_stromal_tumor",
+          "label": "Mixed sex cord-stromal tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sex_cord_stromal_tumor_nos",
+          "label": "Sex cord stromal tumor NOS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "berney_dm_cree_i_rao_v_et_al_an_introduction_to_the_who_5th_edition_2022_classification_of_testicula",
+          "label": "Berney DM, Cree I, Rao V, et al. An introduction to the WHO 5th edition 2022 classification of testicular tumours. Histopathology. 2022; 81:459-66.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moch_h_humphrey_pa_ulbright_tm_reuter_ve_who_classification_of_tumours_of_the_urinary_system_and_mal",
+          "label": "Moch H, Humphrey PA, Ulbright TM, Reuter VE. WHO Classification of Tumours of the Urinary System and Male Genital Organs. Geneva, Switzerland: WHO Press; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eble_jn_sauter_g_epstein_ji_sesterhenn_ia_world_health_organization_classification_of_tumours_pathol",
+          "label": "Eble JN, Sauter G, Epstein JI, Sesterhenn IA. World Health Organization Classification of Tumours: Pathology and Genetics of Tumours of the Urinary System and Male Genital Organs. Lyon, France: IARC Press; 2004.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ulbright_tm_amin_mb_young_rh_tumors_of_the_testis_adnexa_spermatic_cord_and_scrotum_third_series_fas",
+          "label": "Ulbright TM, Amin MB, Young RH. Tumors of the Testis, Adnexa, Spermatic Cord, and Scrotum. Third Series. Fascicle 25. Washington, DC: Armed Forces Institute of Pathology; 1999.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheville_jc_sebo_tj_lager_dj_bostwick_dg_farrow_gm_leydig_cell_tumor_of_the_testis_a_clinicopatholog",
+          "label": "Cheville JC, Sebo TJ, Lager DJ, Bostwick DG, Farrow GM. Leydig cell tumor of the testis: a clinicopathologic, DNA content, and MIB-1 comparison of nonmetastasizing and metastasizing tumors. Am J Surg Pathol. 1998; 22:1361-1367.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "colecchia_m_bertolotti_a_paolini_b_et_al_the_leydig_cell_tumour_scaled_score_less_a_method_to_distin",
+          "label": "Colecchia M, Bertolotti A, Paolini B, et al. The Leydig cell tumour Scaled Score (LeSS): a method to distinguish benign from malignant cases, with additional correlation with MDM2 and CDK4 amplification. Histopathology. 2021; 78:290-299.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "testicular_scars_particularly_in_patients_presenting_with_metastatic_disease_and_clinically_inappare",
+          "label": "Testicular scars, particularly in patients presenting with metastatic disease and clinically inapparent testicular primaries, may represent regressed, “burnt-out” testicular germ cell tumors. There are 2 established criteria to indicate a scar is diagnostic of a regressed germ cell tumor (GCT): a scar with associated germ cell neoplasia in situ (GCNIS) or a scar that contains coarse intratubular calcifications within expanded tubular profiles, which correspond to dystrophic calcifications that occurred in completely necrotic intratubular embryonal carcinoma. Features that are suspicious for, although not diagnostic of, regressed germ cell tumors include testicular atrophy, microlithiasis, and, in the scar, lymphoplasmacytic infiltrates and prominent vascularity.1  In otherwise pure seminoma, such partial regression may have clinically important implications, since it is possible that some of these scars may represent regression of a nonseminomatous germ cell tumor component of the tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "balzer_bl_ulbright_tm_spontaneous_regression_of_testicular_germ_cell_tumors_an_analysis_of_42_cases_",
+          "label": "Balzer BL, Ulbright TM. Spontaneous regression of testicular germ cell tumors: an analysis of 42 cases. Am J Surg Pathol. 2006;30(7):858-865.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_invading_the_tunica_vaginalis_perforating_the_mesothelial_lining_figure_4_tumor_a_are_conside",
+          "label": "Tumors invading the tunica vaginalis (perforating the mesothelial lining) (Figure 4, Tumor A) are considered category pT2 by the American Joint Committee on Cancer (AJCC) TNM staging system. Invasion of rete testis is not assigned a higher pT category than that for a tumor limited to the testis. Rete testis invasion has been reported by some to be associated with higher risk of relapse in clinical stage I seminoma.1 Rete testis invasion is that the invasive tumor involves the rete testis stroma, with or without luminal involvement. Pagetoid extension of GCNIS into the rete testis should not be considered rete testis invasion. Hilar soft tissue invasion (Figure 4, Tumor B) is the predominant pathway of extratesticular extension for testicular tumors.2,3  There is evidence beginning to accumulate that rete testis and hilar soft tissue invasion have predictive value for metastatic disease in patients with nonseminomatous GCTs.3 Invasion of epididymis and hilar soft tissue is staged as pT2 by the 8th edition of AJCC TNM.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_diagrammatic_representation_of_a_tumor_tumor_a_invading_tunica_vaginalis_perforating_throug",
+          "label": "Figure 4.  Diagrammatic representation of a tumor (Tumor A) invading tunica vaginalis, perforating through the mesothelium, and another tumor (Tumor B) partly involving the rete testis and invading the hilar soft tissue. Figure courtesy of Satish K. Tickoo, MD.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "warde_p_specht_l_horwich_a_oliver_t_panzarella_t_gospodarowicz_m_von_der_maase_h_prognostic_factors_",
+          "label": "Warde P, Specht L, Horwich A, Oliver T, Panzarella T, Gospodarowicz M, von der Maase H. Prognostic factors for relapse in stage I seminoma managed by surveillance: a pooled analysis. J Clin Oncol. 2002; 20:4448-4452.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dry_sm_renshaw_aa_extratesticular_extension_of_germ_cell_tumors_preferentially_occurs_at_the_hilum_a",
+          "label": "Dry SM, Renshaw AA. Extratesticular extension of germ cell tumors preferentially occurs at the hilum. Am J Clin Pathol. 1999; 111:534-538.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yilmaz_a_cheng_t_zhang_j_trpkov_k_testicular_hilum_and_vascular_invasion_predict_advanced_clinical_s",
+          "label": "Yilmaz A, Cheng T, Zhang J, Trpkov K. Testicular hilum and vascular invasion predict advanced clinical stage in nonseminomatous germ cell tumors. Mod Pathol. 2013;26(4):579-586.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_several_studies_the_presence_of_vascular_space_invasion_usually_lymphatic_but_possibly_also_capil",
+          "label": "In several studies, the presence of vascular space invasion (usually lymphatic but possibly also capillary or venous invasion) has been correlated with a significantly elevated risk for distant metastasis.1,2,3  This observation, therefore, is most pertinent for patients who have clinical stage I disease, i.e., those who have no evidence of spread beyond the testis by clinical examination (including radiographic and serum marker studies). Some clinicians manage the patients with clinical stage I disease who lack evidence of lymphatic or vascular invasion in their orchiectomy specimens (with possibly other favorable prognostic features, such as relatively small amounts of embryonal carcinoma) by close follow-up examinations rather than intervention.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_the_8th_edition_ajcc_tnm_staging_system_discontinuous_involvement_of_the_spermatic_cord",
+          "label": "According to the 8th edition AJCC TNM staging system, discontinuous involvement of the spermatic cord soft tissue via a vascular thrombus is better regarded as a metastatic deposit (pM1), a change from the previous edition where this finding was regarded as pT3, similar to direct tumor extension into the spermatic cord. The AJCC acknowledges that the level of evidence to support this change is limited (Level III). While a subsequent retrospective analysis found no statistically significant difference in terms of clinical stage at presentation and the likelihood of recurrence between the two groups, a more recent retrospective multi-institutional study observed discontinuous involvement of the spermatic cord soft tissue via vascular thrombus was significantly associated with advanced clinical stage at presentation compared to continuous cord involvement. Presence of only an intravascular tumor in the spermatic cord in the absence of parenchymal invasion is considered pT2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sanfrancesco_jm_trevino_ke_xu_h_et_al_the_significance_of_spermatic_cord_involvement_by_testicular_g",
+          "label": "Sanfrancesco JM, Trevino KE, Xu H, et al. The significance of spermatic cord involvement by testicular germ cell tumors: should we be staging discontinuous invasion from involved lymphovascular spaces differently from direct extension? Am J Surg Pathol 2018;306-311.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rodriguez_pena_mdc_canete_portillo_s_amin_a_et_al_testicular_germ_cell_tumors_with_spermatic_cord_in",
+          "label": "Rodriguez Pena MDC, Canete-Portillo S, Amin A, et al. Testicular germ-cell tumors with spermatic cord involvement: a retrospective international multi-institutional experience. Mod Pathol 2022; 35:249-255.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_recommends_staging_according_to_the_ajcc_tnm_staging_system_figures_1_2_and_31_addition",
+          "label": "The protocol recommends staging according to the AJCC TNM staging system (Figures 1, 2 and 3).1  Additional criteria for staging seminomas according to a modification of the Royal Marsden system are also recommended.2 Some studies suggest that the staging of patients with seminoma by the TNM system is less meaningful therapeutically than staging by a modification of the Royal Marsden method. Also, the data from a large Danish study of seminomas clinically limited to the testis do not support the conclusion that local staging of the primary tumor, as performed in the TNM system, provides useful prognostic information; rather, the most valuable prognostic indicator was the size of the seminoma.3 This protocol therefore encourages the use of the TNM system with optional use of the modified Royal Marsden staging system for patients with seminoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_pt1_is_defined_as_tumor_limited_to_testis_including_rete_testis_invasion_without_lymphovasc",
+          "label": "Figure 1. pT1 is defined as tumor limited to testis (including rete testis invasion) without lymphovascular invasion. From: Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017. Reproduced with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_pt2_is_defined_as_tumor_limited_to_testis_including_rete_testis_invasion_with_lymphovascula",
+          "label": "Figure 2. pT2 is defined as tumor limited to testis (including rete testis invasion) with lymphovascular invasion, or tumor invading hilar soft tissue or epididymis or penetrating visceral mesothelial layer covering the external surface of tunica albuginea with or without lymphovascular invasion. From: Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017. Reproduced with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_pt3_is_defined_as_tumor_invading_the_spermatic_cord_and_pt4_is_defined_as_tumor_invading_th",
+          "label": "Figure 3. pT3 is defined as tumor invading the spermatic cord and pT4 is defined as tumor invading the scrotum. From: Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017. Reproduced with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajcc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_treated_",
+          "label": "By AJCC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically unfeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thomas_g_jones_w_vanoosterom_a_kawai_t_consensus_statement_on_the_investigation_and_management_of_te",
+          "label": "Thomas G, Jones W, VanOosterom A, Kawai T. Consensus statement on the investigation and management of testicular seminoma 1989. Prog Clin Biol Res. 1990; 357:285-294.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "important_findings_include_leydig_cell_hyperplasia_which_may_be_correlated_with_b_hcg_elevation_scar",
+          "label": "Important findings include Leydig cell hyperplasia, which may be correlated with b-hCG elevation; scarring, the presence of hemosiderin-laden macrophages, and coarse intratubular calcifications in expanded tubular profiles (distinct from microlithiasis), which may indicate regression of a tumor; testicular atrophy; sertoli cell nodules (Pick’s adenoma), which most often are associated with undescended testes, and abnormal testicular development (e.g., dysgenesis or androgen-insensitivity syndrome).1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rutgers_jl_scully_re_pathology_of_the_testis_in_intersex_syndromes_semin_diagn_pathol_1987_4275_291",
+          "label": "Rutgers JL, Scully RE. Pathology of the testis in intersex syndromes. Semin Diagn Pathol. 1987; 4:275-291.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wallace_tm_levin_hs_mixed_gonadal_dysgenesis_a_review_of_15_patients_reporting_single_cases_of_malig",
+          "label": "Wallace TM, Levin HS. Mixed gonadal dysgenesis: a review of 15 patients reporting single cases of malignant intratubular germ cell neoplasia of the testis, endometrial adenocarcinoma, and a complex vascular anomaly. Arch Pathol Lab Med. 1990; 114:679-688.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

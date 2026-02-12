@@ -1,0 +1,1681 @@
+{
+  "template_id": "Heme.Lymphoid.Bx.Res_1.0.0.1.REL_CAPCP",
+  "organ": "PRECURSOR AND MATURE LYMPHOID MALIGNANCIES: Targeted Biopsy, Resection, or Bone Marrow Sampling",
+  "protocol_posting_date": "September 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "sites_of_tumor_involvement_in_sample",
+          "label": "Site(s) of Tumor Involvement in Sample",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "bone_marrow",
+              "label": "Bone marrow (specify percent involvement of neoplastic cells): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "blood",
+              "label": "Blood (specify percent involvement of neoplastic cells): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_mediastinum",
+              "label": "Anterior mediastinum"
+            },
+            {
+              "value": "lymph_node",
+              "label": "Lymph node"
+            },
+            {
+              "value": "cutaneous",
+              "label": "Cutaneous"
+            },
+            {
+              "value": "extranodal_mucosal_site",
+              "label": "Extranodal / mucosal site"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "final_integrated_diagnosis",
+          "label": "Final Integrated Diagnosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "precursor_b_cell_neoplasms",
+              "label": "Precursor B-cell neoplasms"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "b_lymphoblastic_leukemia_lymphomas",
+          "label": "B-lymphoblastic leukemia / lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_nos",
+              "label": "B-lymphoblastic leukemia / lymphoma, NOS"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_high_hyperdiploidy",
+              "label": "B-lymphoblastic leukemia / lymphoma with high hyperdiploidy"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_hypodiploidy",
+              "label": "B-lymphoblastic leukemia / lymphoma with hypodiploidy"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_iamp21",
+              "label": "B-lymphoblastic leukemia / lymphoma with iAMP21"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_bcr",
+              "label": "B-lymphoblastic leukemia / lymphoma with BCR::ABL1 fusion"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_bcr",
+              "label": "B-lymphoblastic leukemia / lymphoma with BCR::ABL1-like features"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_kmt2a_rearrangement",
+              "label": "B-lymphoblastic leukemia / lymphoma with KMT2A rearrangement"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_etv6",
+              "label": "B-lymphoblastic leukemia / lymphoma with ETV6::RUNX1 fusion"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_etv6",
+              "label": "B-lymphoblastic leukemia / lymphoma with ETV6::RUNX1-like features"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_tcf3",
+              "label": "B-lymphoblastic leukemia / lymphoma with TCF3::PBX1 fusion"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_igh",
+              "label": "B-lymphoblastic leukemia / lymphoma with IGH::IL3 fusion"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_tcf3",
+              "label": "B-lymphoblastic leukemia / lymphoma with TCF3::HLF fusion"
+            },
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_with_other_defined_genetic_alterations",
+              "label": "B-lymphoblastic leukemia / lymphoma with other defined genetic alterations"
+            }
+          ]
+        },
+        {
+          "field_id": "other_precursor_b_cell_neoplasm",
+          "label": "Other precursor B-cell neoplasm",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "b_lymphoblastic_leukemia_lymphoma_pending_additional_studies",
+              "label": "B-lymphoblastic leukemia / lymphoma, pending additional studies (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mature_b_cell_neoplasms",
+              "label": "Mature B-cell neoplasms"
+            }
+          ]
+        },
+        {
+          "field_id": "pre_neoplastic_lymphoid_proliferations",
+          "label": "Pre-neoplastic lymphoid proliferations",
+          "required": true,
+          "type": "free_text",
+          "condition": "optionally reported"
+        },
+        {
+          "field_id": "monoclonal_b_cell_lymphocytosis_cll_type_low_count_specify_absolute_count_of_clonal_cells_if",
+          "label": "___ Monoclonal B-cell lymphocytosis, CLL-type, low-count (specify absolute count of clonal cells, if",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "possible_x_109l___________________x_109l",
+          "label": "possible) (x 10*9/L): _________________ x 10*9/L",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "monoclonal_b_cell_lymphocytosis_cll_type_specify_absolute_count_of_clonal_cells_if_possible_x",
+          "label": "___ Monoclonal B-cell lymphocytosis, CLL-type (specify absolute count of clonal cells, if possible) (x",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "monoclonal_b_cell_lymphocytosis_non_cll_type_specify_absolute_count_of_clonal_cells_if",
+          "label": "___ Monoclonal B-cell lymphocytosis, non-CLL type (specify absolute count of clonal cells, if",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "possible_x_109l___________________x_109l",
+          "label": "possible) (x 10*9/L): _________________ x 10*9/L",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "cll_sll",
+      "section_name": "CLL / SLL",
+      "fields": [
+        {
+          "field_id": "follicular_neoplasms",
+          "label": "Follicular neoplasms",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "in_situ_follicular_b_cell_neoplasm",
+              "label": "In situ follicular B-cell neoplasm"
+            },
+            {
+              "value": "follicular_lymphoma_classic_type",
+              "label": "Follicular lymphoma, classic type (cFL)"
+            },
+            {
+              "value": "follicular_lymphoma_with_unusual_cytologic_features",
+              "label": "Follicular lymphoma with unusual cytologic features (uFL)"
+            },
+            {
+              "value": "follicular_lymphoma_with_predominantly_diffuse_growth_pattern",
+              "label": "Follicular lymphoma with predominantly diffuse growth pattern (dFL)"
+            },
+            {
+              "value": "follicular_large_b_cell_lymphoma",
+              "label": "Follicular large B-cell lymphoma"
+            },
+            {
+              "value": "pediatric_type_follicular_lymphoma",
+              "label": "Pediatric-type follicular lymphoma"
+            },
+            {
+              "value": "duodenal_type_follicular_lymphoma",
+              "label": "Duodenal-type follicular lymphoma"
+            },
+            {
+              "value": "primary_cutaneous_follicle_center_lymphoma",
+              "label": "Primary cutaneous follicle center lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "mantle_cell_neoplasms",
+          "label": "Mantle cell neoplasms",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "in_situ_mantle_cell_neoplasm",
+              "label": "In situ mantle cell neoplasm"
+            },
+            {
+              "value": "mantle_cell_lymphoma",
+              "label": "Mantle cell lymphoma"
+            },
+            {
+              "value": "leukemic_non_nodal_mantle_cell_lymphoma",
+              "label": "Leukemic non-nodal mantle cell lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "lymphoplasmacytic_lymphoma",
+          "label": "Lymphoplasmacytic lymphoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "lymphoplasmacytic_lymphoma",
+              "label": "Lymphoplasmacytic lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "marginal_zone_lymphomas",
+          "label": "Marginal zone lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "extranodal_marginal_zone_lymphoma_of_mucosa_associated_lymphoid_tissue",
+              "label": "Extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue"
+            },
+            {
+              "value": "primary_cutaneous_marginal_zone_lymphoma",
+              "label": "Primary cutaneous marginal zone lymphoma"
+            },
+            {
+              "value": "nodal_marginal_zone_lymphoma",
+              "label": "Nodal marginal zone lymphoma"
+            },
+            {
+              "value": "pediatric_nodal_marginal_zone_lymphoma",
+              "label": "Pediatric nodal marginal zone lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "splenic_b_cell_lymphomas_leukemias",
+          "label": "Splenic B-cell lymphomas / leukemias",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "hairy_cell_leukemia",
+              "label": "Hairy cell leukemia"
+            },
+            {
+              "value": "splenic_marginal_zone_lymphoma",
+              "label": "Splenic marginal zone lymphoma"
+            },
+            {
+              "value": "splenic_diffuse_red_pulp_small_b_cell_lymphoma",
+              "label": "Splenic diffuse red pulp small B-cell lymphoma"
+            },
+            {
+              "value": "splenic_b_cell_lymphoma_leukemia_with_prominent_nucleoli",
+              "label": "Splenic B-cell lymphoma / leukemia with prominent nucleoli"
+            }
+          ]
+        },
+        {
+          "field_id": "large_b_cell_lymphomas",
+          "label": "Large B-cell lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "diffuse_large_b_cell_lymphoma_nos",
+              "label": "Diffuse large B-cell lymphoma, NOS"
+            },
+            {
+              "value": "t_cell_histiocyte_rich_large_b_cell_lymphoma",
+              "label": "T-cell / histiocyte-rich large B-cell lymphoma"
+            },
+            {
+              "value": "diffuse_large_b_cell_lymphoma_high_grade_b_cell_lymphoma_with_myc_and_bcl2_rearrangements",
+              "label": "Diffuse large B-cell lymphoma / high grade B-cell lymphoma with MYC and BCL2 rearrangements"
+            },
+            {
+              "value": "alk_positive_large_b_cell_lymphoma",
+              "label": "ALK-positive large B-cell lymphoma"
+            },
+            {
+              "value": "large_b_cell_lymphoma_with_irf4_rearrangement",
+              "label": "Large B-cell lymphoma with IRF4 rearrangement"
+            },
+            {
+              "value": "high_grade_b_cell_lymphoma_with_11q_aberrations",
+              "label": "High grade B-cell lymphoma with 11q aberrations"
+            },
+            {
+              "value": "lymphomatoid_granulomatosis",
+              "label": "Lymphomatoid granulomatosis"
+            },
+            {
+              "value": "ebv_positive_diffuse_large_b_cell_lymphoma",
+              "label": "EBV-positive diffuse large B-cell lymphoma"
+            },
+            {
+              "value": "diffuse_large_b_cell_lymphoma_associated_with_chronic_inflammation",
+              "label": "Diffuse large B-cell lymphoma associated with chronic inflammation"
+            },
+            {
+              "value": "fibrin_associated_large_b_cell_lymphoma",
+              "label": "Fibrin-associated large B-cell lymphoma"
+            },
+            {
+              "value": "fluid_overload_associated_large_b_cell_lymphoma",
+              "label": "Fluid overload-associated large B-cell lymphoma"
+            },
+            {
+              "value": "plasmablastic_lymphoma",
+              "label": "Plasmablastic lymphoma"
+            },
+            {
+              "value": "primary_large_b_cell_lymphoma_of_immune_privileged_sites",
+              "label": "Primary large B-cell lymphoma of immune-privileged sites"
+            },
+            {
+              "value": "primary_cutaneous_diffuse_large_b_cell_lymphoma_leg_type",
+              "label": "Primary cutaneous diffuse large B-cell lymphoma, leg type"
+            },
+            {
+              "value": "intravascular_large_b_cell_lymphoma",
+              "label": "Intravascular large B-cell lymphoma"
+            },
+            {
+              "value": "primary_mediastinal_large_b_cell_lymphoma",
+              "label": "Primary mediastinal large B-cell lymphoma"
+            },
+            {
+              "value": "mediastinal_grey_zone_lymphoma",
+              "label": "Mediastinal grey zone lymphoma"
+            },
+            {
+              "value": "high_grade_b_cell_lymphoma_nos",
+              "label": "High-grade B-cell lymphoma, NOS"
+            },
+            {
+              "value": "burkitt_lymphoma",
+              "label": "Burkitt lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "kshv_hhv8_associated_b_cell_lymphoid_proliferations_and_lymphomas",
+          "label": "KSHV / HHV8-associated B-cell lymphoid proliferations and lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "primary_effusion_lymphoma",
+              "label": "Primary effusion lymphoma"
+            },
+            {
+              "value": "kshv_hhv8_positive_diffuse_large_b_cell_lymphoma",
+              "label": "KSHV / HHV8-positive diffuse large B-cell lymphoma"
+            },
+            {
+              "value": "kshv_hhv8_positive_germinotropic_lymphoproliferative_disorder",
+              "label": "KSHV / HHV8-positive germinotropic lymphoproliferative disorder"
+            }
+          ]
+        },
+        {
+          "field_id": "hodgkin_lymphomas",
+          "label": "Hodgkin lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "classic_hodgkin_lymphoma",
+              "label": "Classic Hodgkin lymphoma"
+            },
+            {
+              "value": "nodular_lymphocyte_predominant_hodgkin_lymphoma",
+              "label": "Nodular lymphocyte predominant Hodgkin lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "other_mature_b_cell_neoplasm",
+          "label": "Other mature B-cell neoplasm",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mature_b_cell_neoplasm",
+              "label": "Mature B-cell neoplasm (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "precursor_t_cell_neoplasms",
+              "label": "Precursor T-cell neoplasms"
+            },
+            {
+              "value": "t_lymphoblastic_leukemia_lymphoma_nos",
+              "label": "T-lymphoblastic leukemia / lymphoma, NOS"
+            },
+            {
+              "value": "early_t_precursor_lymphoblastic_leukemia_lymphoma",
+              "label": "Early T-precursor lymphoblastic leukemia / lymphoma"
+            },
+            {
+              "value": "precursor_t_cell_neoplasm_pending_additional_studies",
+              "label": "Precursor T-cell neoplasm, pending additional studies (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mature_t_cell_and_nk_cell_neoplasms",
+              "label": "Mature T-cell and NK-cell neoplasms"
+            }
+          ]
+        },
+        {
+          "field_id": "mature_t_cell_and_nk_cell_leukemias",
+          "label": "Mature T-cell and NK-cell leukemias",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "t_prolymphocytic_leukemia",
+              "label": "T-prolymphocytic leukemia"
+            },
+            {
+              "value": "t_large_granular_lymphocytic_leukemia",
+              "label": "T-large granular lymphocytic leukemia"
+            },
+            {
+              "value": "nk_large_granular_lymphocytic_leukemia",
+              "label": "NK-large granular lymphocytic leukemia"
+            },
+            {
+              "value": "adult_t_cell_leukemia_lymphoma",
+              "label": "Adult T-cell leukemia / lymphoma"
+            },
+            {
+              "value": "sezary_syndrome",
+              "label": "Sezary syndrome"
+            },
+            {
+              "value": "aggressive_nk_cell_leukemia",
+              "label": "Aggressive NK-cell leukemia"
+            }
+          ]
+        },
+        {
+          "field_id": "primary_cutaneous_t_cell_lymphoid_proliferations_and_lymphomas",
+          "label": "Primary cutaneous T-cell lymphoid proliferations and lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "primary_cutaneous_cd4_positive_small_or_medium_t_cell_lymphoproliferative_disorder",
+              "label": "Primary cutaneous CD4-positive small or medium T-cell lymphoproliferative disorder"
+            },
+            {
+              "value": "primary_cutaneous_acral_cd8_positive_t_cell_lymphoproliferative_disorder",
+              "label": "Primary cutaneous acral CD8-positive T-cell lymphoproliferative disorder"
+            },
+            {
+              "value": "mycosis_fungoides",
+              "label": "Mycosis fungoides"
+            },
+            {
+              "value": "primary_cutaneous_cd30_positive_t_cell_lymphoproliferative_disorder",
+              "label": "Primary cutaneous CD30-positive T-cell lymphoproliferative disorder: Lymphomatoid papulosis"
+            },
+            {
+              "value": "primary_cutaneous_cd30_positive_t_cell_lymphoproliferative_disorder",
+              "label": "Primary cutaneous CD30-positive T-cell lymphoproliferative disorder: Primary cutaneous anaplastic large cell lymphoma"
+            },
+            {
+              "value": "subcutaneous_panniculitis_like_t_cell_lymphoma",
+              "label": "Subcutaneous panniculitis-like T-cell lymphoma"
+            },
+            {
+              "value": "primary_cutaneous_gamma_delta_t_cell_lymphoma",
+              "label": "Primary cutaneous gamma / delta T-cell lymphoma"
+            },
+            {
+              "value": "primary_cutaneous_cd8_positive_aggressive_epidermotropic_cytotoxic_t_cell_lymphoma",
+              "label": "Primary cutaneous CD8-positive aggressive epidermotropic cytotoxic T-cell lymphoma"
+            },
+            {
+              "value": "primary_cutaneous_peripheral_t_cell_lymphoma_nos",
+              "label": "Primary cutaneous peripheral T-cell lymphoma, NOS"
+            }
+          ]
+        },
+        {
+          "field_id": "intestinal_t_cell_and_nk_cell_lymphoid_proliferations_and_lymphomas",
+          "label": "Intestinal T-cell and NK-cell lymphoid proliferations and lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "indolent_t_cell_lymphoma_of_the_gastrointestinal_tract",
+              "label": "Indolent T-cell lymphoma of the gastrointestinal tract"
+            },
+            {
+              "value": "indolent_nk_cell_lymphoproliferative_disorder_of_the_gastrointestinal_tract",
+              "label": "Indolent NK-cell lymphoproliferative disorder of the gastrointestinal tract"
+            },
+            {
+              "value": "enteropathy_associated_t_cell_lymphoma",
+              "label": "Enteropathy-associated T-cell lymphoma"
+            },
+            {
+              "value": "monomorphic_epitheliotropic_intestinal_t_cell_lymphoma",
+              "label": "Monomorphic epitheliotropic intestinal T-cell lymphoma"
+            },
+            {
+              "value": "intestinal_t_cell_lymphoma_nos",
+              "label": "Intestinal T-cell lymphoma, NOS"
+            }
+          ]
+        },
+        {
+          "field_id": "hepatosplenic_t_cell_lymphoma",
+          "label": "Hepatosplenic T-cell lymphoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "hepatosplenic_t_cell_lymphoma",
+              "label": "Hepatosplenic T-cell lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "anaplastic_large_cell_lymphomas",
+          "label": "Anaplastic large cell lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "alk_positive_anaplastic_large_cell_lymphoma",
+              "label": "ALK-positive anaplastic large cell lymphoma"
+            },
+            {
+              "value": "alk_negative_anaplastic_large_cell_lymphoma",
+              "label": "ALK-negative anaplastic large cell lymphoma"
+            },
+            {
+              "value": "breast_implant_associated_anaplastic_large_cell_lymphoma",
+              "label": "Breast implant-associated anaplastic large cell lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_t_follicular_helper_tfh_cell_lymphomas",
+          "label": "Nodal T-follicular helper (TFH) cell lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "nodal_tfh_cell_lymphoma_angioimmunoblastic_type",
+              "label": "Nodal TFH cell lymphoma, angioimmunoblastic-type"
+            },
+            {
+              "value": "nodal_tfh_cell_lymphoma_follicular_type",
+              "label": "Nodal TFH cell lymphoma, follicular-type"
+            },
+            {
+              "value": "nodal_tfh_cell_lymphoma_nos",
+              "label": "Nodal TFH cell lymphoma, NOS"
+            }
+          ]
+        },
+        {
+          "field_id": "other_peripheral_t_cell_lymphoma",
+          "label": "Other peripheral T-cell lymphoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "peripheral_t_cell_lymphoma_nos",
+              "label": "Peripheral T-cell lymphoma, NOS"
+            }
+          ]
+        },
+        {
+          "field_id": "ebv_positive_nk_t_cell_lymphomas",
+          "label": "EBV-positive NK / T-cell lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ebv_positive_nk_cell_and_t_cell_lymphoma",
+              "label": "EBV-positive NK-cell and T-cell lymphoma"
+            },
+            {
+              "value": "ebv_positive_nodal_t_and_nk_cell_lymphoma",
+              "label": "EBV-positive nodal T- and NK-cell lymphoma"
+            },
+            {
+              "value": "extranodal_nk_t_cell_lymphoma",
+              "label": "Extranodal NK / T-cell lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "ebv_positive_t_cell_and_nk_cell_lymphoid_proliferations_and_lymphomas_of_childhood",
+          "label": "EBV-positive T-cell and NK-cell lymphoid proliferations and lymphomas of childhood",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "severe_mosquito_bite_allergy",
+              "label": "Severe mosquito bite allergy"
+            },
+            {
+              "value": "hydroa_vacciniforme_lymphoproliferative_disorder",
+              "label": "Hydroa vacciniforme lymphoproliferative disorder"
+            },
+            {
+              "value": "systemic_chronic_active_ebv_disease",
+              "label": "Systemic chronic active EBV disease"
+            },
+            {
+              "value": "systemic_ebv_positive_t_cell_lymphoma_of_childhood",
+              "label": "Systemic EBV-positive T-cell lymphoma of childhood"
+            }
+          ]
+        },
+        {
+          "field_id": "other_mature_t_or_nk_cell_neoplasm",
+          "label": "Other mature T- or NK-cell neoplasm",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mature_t_or_nk_cell_neoplasm",
+              "label": "Mature T- or NK-cell neoplasm (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lymphoid_proliferations_and_lymphomas_associated_with_immune_deficiency_and_dysregulation",
+              "label": "Lymphoid proliferations and lymphomas associated with immune deficiency and dysregulation"
+            },
+            {
+              "value": "hyperplasias_arising_in_immune_deficiency_dysregulation",
+              "label": "Hyperplasias arising in immune deficiency / dysregulation"
+            },
+            {
+              "value": "polymorphic_lymphoproliferative_disorders_arising_in_immune_deficiency_dysregulation",
+              "label": "Polymorphic lymphoproliferative disorders arising in immune deficiency / dysregulation"
+            },
+            {
+              "value": "ebv_positive_mucocutaneous_ulcer",
+              "label": "EBV-positive mucocutaneous ulcer"
+            },
+            {
+              "value": "lymphomas_arising_in_immune_deficiency_dysregulation",
+              "label": "Lymphomas arising in immune deficiency / dysregulation"
+            },
+            {
+              "value": "inborn_error_of_immunity_associated_lymphoid_proliferations_and_lymphomas",
+              "label": "Inborn error of immunity-associated lymphoid proliferations and lymphomas"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_name_of_lesion",
+          "label": "Specify Name of Lesion: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_virus_status",
+          "label": "Specify Virus Status: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_type_of_immunodeficiency",
+          "label": "Specify Type of Immunodeficiency: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "possible_transformation_from_indolent_lymphoma",
+          "label": "Possible Transformation from Indolent Lymphoma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "no_overt_evidence_of_transformation_from_more_indolent_lymphoma_other_lymphoma_type",
+              "label": "No overt evidence of transformation from more indolent lymphoma / other lymphoma type"
+            },
+            {
+              "value": "lymphoma_favored_to_represent_transformation_event_from_indolent_lymphoma",
+              "label": "Lymphoma favored to represent transformation event from indolent lymphoma (explain):"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "immunohistochemistry",
+          "label": "Immunohistochemistry",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "performed",
+              "label": "Performed (specify results): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "flow_cytometry",
+          "label": "Flow Cytometry",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "no_aberrancy_detected_at_level_of_sensitivity_of_assay",
+              "label": "No aberrancy detected at level of sensitivity of assay"
+            },
+            {
+              "value": "positive_for_abnormal_lymphoid_population",
+              "label": "Positive for abnormal lymphoid population (specify immunophenotype, if possible):"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "conventional_cytogenetics",
+          "label": "Conventional Cytogenetics",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "normal_diploid_karyotype",
+              "label": "Normal diploid karyotype"
+            },
+            {
+              "value": "abnormal_karyotype",
+              "label": "Abnormal karyotype (specify, if possible): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "fluorescence_in_situ_hybridization",
+          "label": "Fluorescence in situ Hybridization",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "normal_probes",
+              "label": "Normal probes (specify loci tested): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "abnormal_probes",
+              "label": "Abnormal probes (specify loci tested): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "molecular_alterations_detected",
+          "label": "Molecular Alterations Detected#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "alk_translocation",
+              "label": "ALK translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malt1_translocation",
+              "label": "MALT1 translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "atm_mutation",
+              "label": "ATM mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "b2m_mutation",
+              "label": "B2M mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bcl10_translocation",
+              "label": "BCL10 translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "birc3_mutation",
+              "label": "BIRC3 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "btk_mutation",
+              "label": "BTK mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "card11_mutation",
+              "label": "CARD11 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cd79a_b_mutation",
+              "label": "CD79A / B mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bcr",
+              "label": "BCR::ABL1 p190 fusion transcript"
+            },
+            {
+              "value": "bcr",
+              "label": "BCR::ABL1 p210 fusion transcript"
+            },
+            {
+              "value": "bcr",
+              "label": "BCR::ABL1, unspecified transcript"
+            },
+            {
+              "value": "bcl2_mutation",
+              "label": "BCL2 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bcl2_translocation",
+              "label": "BCL2 translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bcl6_mutation",
+              "label": "BCL6 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bcl6_translocation",
+              "label": "BCL6 translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "braf_mutation",
+              "label": "BRAF mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cdkn2a_2b_mutation",
+              "label": "CDKN2A / 2B mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ccnd1",
+              "label": "CCND1 (Cyclin D1) translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ccnd2",
+              "label": "CCND2 (Cyclin D2) translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ccnd3",
+              "label": "CCND3 (Cyclin D3) translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cxcr4_mutation",
+              "label": "CXCR4 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "dusp22_translocation",
+              "label": "DUSP22 translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "dnmt3a_mutation",
+              "label": "DNMT3A mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "etv6_mutation",
+              "label": "ETV6 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "etv6",
+              "label": "ETV6::RUNX1 fusion (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ezh2_mutation",
+              "label": "EZH2 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "fbxw7_mutation",
+              "label": "FBXW7 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gata3_mutation",
+              "label": "GATA3 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "iamp21",
+              "label": "iAMP21 (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "idh1_2_mutation",
+              "label": "IDH1 / 2 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "igh",
+              "label": "IGH::IL3 rearrangement (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ighv_mutated",
+              "label": "IGHV mutated (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ighv_unmutated",
+              "label": "IGHV unmutated (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "irf4_mutation",
+              "label": "IRF4 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "jak1_mutation",
+              "label": "JAK1 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "jak2_mutation",
+              "label": "JAK2 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "jak3_mutation",
+              "label": "JAK3 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "klkf2_mutation",
+              "label": "KLKF2 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "kras_mutation",
+              "label": "KRAS mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "kmt2a_rearrangement",
+              "label": "KMT2A rearrangement (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "myc_rearrangement",
+              "label": "MYC rearrangement (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "myd88_mutation",
+              "label": "MYD88 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "notch1_mutation",
+              "label": "NOTCH1 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "notch2_mutation",
+              "label": "NOTCH2 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "nras_mutation",
+              "label": "NRAS mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pdgfra_translocation",
+              "label": "PDGFRA translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "plcg1_2_mutation",
+              "label": "PLCG1 / 2 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pten_mutation",
+              "label": "PTEN mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "rb1_mutation",
+              "label": "RB1 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "rhoa_mutation",
+              "label": "RHOA mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "rps15_mutation",
+              "label": "RPS15 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "sf3b1_mutation",
+              "label": "SF3B1 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "stat3_mutation",
+              "label": "STAT3 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "stat5b_mutation",
+              "label": "STAT5B mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "stat6_mutation",
+              "label": "STAT6 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tet2_mutation",
+              "label": "TET2 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tcf3",
+              "label": "TCF3::PBX1 rearrangement (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tcf3",
+              "label": "TCF3::HLF fusion rearrangement (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tnfaip3_mutation",
+              "label": "TNFAIP3 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tnfrsf14_mutation",
+              "label": "TNFRSF14 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tp53_mutation",
+              "label": "TP53 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tp63_translocation",
+              "label": "TP63 translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "traf3_mutation",
+              "label": "TRAF3 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "xpo1_mutation",
+              "label": "XPO1 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_alterations_detected",
+              "label": "Other alterations detected (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending: _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Select all those with significant mutations"
+        },
+        {
+          "field_id": "specify_molecular_alterations_assayed",
+          "label": "Specify Molecular Alterations Assayed: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_cancer_case_summary_may_be_used_in_any_anatomical_site_that_is_involved_including_bone_marrow_b",
+          "label": "This cancer case summary may be used in any anatomical site that is involved including bone marrow, blood, mediastinum, lymph nodes, and skin/extranodal sites. If multiple sites are involved (for example, bone marrow and blood or cutaneous and lymph node), you may select multiple sites. For leukemias/lymphomas involving bone marrow or blood, specify the relative tumor percentage of nucleated cells.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_final_integrated_diagnoses_for_the_precursor_and_mature_lymphoid_neoplasms_are_based_on_the_who_",
+          "label": "The final integrated diagnoses for the precursor and mature lymphoid neoplasms are based on the WHO 5th edition of Haematolymphoid Tumors.1 The 5th edition significantly updates the last revision of the WHO 4th edition in 2017. There are important changes in terminology, diagnostic criteria, and increasing reliance on ancillary studies such as conventional karyotyping, fluorescence in-situ hybridization (FISH), and comprehensive molecular genetic profiling by next-generation sequencing with abilities to detect point mutations, insertions, deletions, copy number alterations, and gene rearrangements.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_final_integrated_diagnosis_should_be_based_on_the_major_subsections_of_the_who_5th_edition_inclu",
+          "label": "The final integrated diagnosis should be based on the major subsections of the WHO 5th edition, including precursor B lymphoid neoplasms, mature B-cell neoplasms, precursor T-cell lymphoid neoplasms, and mature T- and NK-cell neoplasms. It is worth noting that the WHO 5th edition includes the classification of Tumor like lesions with B-cell predominance and tumor like lesions with T-cell predominance. These were not included in the cancer case summary as these are not considered lymphoid neoplasms. Pre-neoplastic lymphoid proliferations, by virtue of being lymphoid neoplasms, albeit clinically not malignant, are included as an optional category in this cancer case summary (see below).\n\nThe diagnostic criteria for the entities in the WHO 5th edition are summarized in the WHO monograph and beyond the scope of the explanatory notes. Specific categories that may benefit from additional explanation regarding use of the cancer case summary are highlighted in the following sections.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pendingother_diagnostic_category_this_cancer_case_summary_is_designed_to_be_used_when_a_complete_int",
+          "label": "Pending/other Diagnostic Category\n\nThis cancer case summary is designed to be used when a complete, integrated diagnosis can be rendered, including ancillary comprehensive immunophenotyping, cytogenetic, and molecular. There may be some who wish to use this cancer summary to render a preliminary diagnosis prior to receipt of all pending ancillary studies; ideally, this approach would be used when a cancer case summary can be updated/ addended/ amended or a new complete cancer protocol can be issued. To accommodate that use, an optional subcategory of pending diagnostic studies has been added to precursor B- and T-cell neoplasms as an optional choice. In addition, for mature B-and T-or NK-cell lymphoid neoplasms, the category of other has been added to allow reporting of cases pending further studies or alternate terminology. If using the PENDING option, when all diagnostic ancillary studies are complete, it is strongly recommended to ensure that an updated complete diagnostic cancer case summary is submitted by updating the report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "precursor_b_cell_neoplasms_b_lymphoblastic_leukemia_b_all_is_used_when_the_blood_or_bone_marrow_is_t",
+          "label": "Precursor B-cell neoplasms\n\nB-lymphoblastic leukemia (B-ALL) is used when the blood or bone marrow is the primary site of involvement, whereas B-lymphoblastic lymphoma (B-LBL) refers to neoplasms whose primary site of involvement are lymph nodes or extra-nodal sites. Historically, B-lymphoblastic leukemia is used to denote cases with 25% or more bone marrow blasts. The distinction between B-lymphoblastic leukemia and lymphoma is somewhat arbitrary, especially when both sites are involved, and for that reason, the cancer case summary lists B-lymphoblastic leukemia/lymphoma as a single category. \n\nB-lymphoblastic leukemia/lymphoma, NOS is reserved for those neoplasms that lack diagnostic criteria for other subtypes after comprehensive testing. Do not use this category for B-lymphoblastic leukemia/lymphoma cases that are pending additional studies.\n\nB-lymphoblastic leukemia/lymphoma with high hyperdiploidy should be rendered when the karyotype identifies 51-65 chromosomes with the absence of other specific genetic subtypes defined by karyotype and/or FISH. In the setting of a failed karyotype, FISH studies for chromosomes X, 4, 6, 10, 14, 17, 18, and 21 can help identify high hyperdiploidy B-ALL.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "b_lymphoblastic_leukemialymphoma_with_hypodiploidy_is_defined_by_the_presence_of_fewer_than_43_chrom",
+          "label": "B-lymphoblastic leukemia/lymphoma with hypodiploidy is defined by the presence of fewer than 43 chromosomes with the absence of other specific genetic subtypes. Care must be taken to avoid misinterpretation of “pseudo-hyperdiploidy” due to doubling of previously hypodiploid cells.2 The diagnostic criteria for B-cell lymphoblastic leukemia/lymphoma with BCR::ABL1 -like features are described in detail in the WHO 5th edition. While initially defined by gene expression profiling, the lack of availability of this method commercially often necessitates the use of fluorescence in-situ hybridization (FISH)/ molecular studies for genetic alterations, including those involving PDGFRb (5q32), BCR/ABL1-ASS1 t(9;22), JAK2 (9p24.1), EPOR (19p13.2) and CRLF2 (Xp22.33/Yp11.32).1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "b_lymphoblastic_leukemialymphoma_with_other_defined_genetic_alterations_encompasses_those_with_the_f",
+          "label": "B-lymphoblastic leukemia/lymphoma with other defined genetic alterations encompasses those with the following genetic alterations. It is worth noting that many of these rearrangements are cryptic on conventional karyotype and require sequencing-based methodologies (RNA and/or DNA based NGS, RT-PCR) or break-apart FISH studies.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "list_of_b_lymphoblastic_leukemia_with_other_defined_genetic_alterations_b_lymphoblastic_leukemia_wit",
+          "label": "List of B-lymphoblastic leukemia with other defined genetic alterations:\nB lymphoblastic leukemia with DUX4 rearrangement \nB lymphoblastic leukemia with MEF2D rearrangement\nB lymphoblastic leukemia with ZNF384 rearrangement \nB lymphoblastic leukemia with PAX5alt \nB lymphoblastic leukemia with PAX5 p.P80R \nB lymphoblastic leukemia with NUTM1 rearrangement\nB lymphoblastic leukemia with MYC rearrangement\n\nTable 1: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF B-LYMPHOBLASTIC LEUKEMIAS/LYMPHOMAS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pre_neoplastic_and_neoplastic_small_lymphocytic_proliferations_the_reporting_of_the_pre_neoplastic_l",
+          "label": "Pre-neoplastic and Neoplastic Small Lymphocytic Proliferations\n\nThe reporting of the pre-neoplastic lymphoid category of monoclonal B-cell lymphocytosis is optional for the cancer case summary. With the development of high-sensitivity flow cytometry immunophenotypic assays, monoclonal B-cell lymphocytosis may be detected with increasing frequency depending on patient age-ranging from 5% (40-50 years) to upwards of 50-75% (over 90 years).3 If monoclonal B-cell lymphocytosis is to be reported, it is recommended to record the absolute count of the clonal B-cell population- not the absolute lymphocyte count or absolute B lymphocyte count. This will allow for distinction between low-count monoclonal B-cell lymphocytosis, CLL-type (absolute clonal lymphocyte population is below 0.5 x 109/L), and monoclonal B-cell lymphocytosis, CLL-type (≥0.5 x 109/L) in the blood. It is important to note that this diagnosis should not be rendered if there are other clinical features of lymphoma (lymphadenopathy, organomegaly) or established diagnosis of B-cell lymphoid neoplasm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "different_categories_of_the_optional_category_of_pre_neoplastic_lymphoid_proliferations_table_2_summ",
+          "label": "Different categories of the optional category of pre-neoplastic lymphoid proliferations:\n\nTable 2: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF PRE-NEOPLASTIC LYMPHOID PROLIFERATIONS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chronic_lymphocytic_leukemia_table_3_summary_of_essential_and_desirable_diagnostic_features_for_cate",
+          "label": "Chronic Lymphocytic Leukemia\n\nTable 3: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF CHRONIC LYMPHOCYTIC LEUKEMIA (CLL)1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "splenic_b_cell_lymphomas_and_leukemias_table_4_summary_of_essential_and_desirable_diagnostic_feature",
+          "label": "Splenic B-cell Lymphomas and Leukemias\n\nTable 4: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF SPLENIC B-CELL LYMPHOMAS AND LEUKEMIAS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphoplasmacytic_lymphomamarginal_zone_lymphoma_table_5_summary_of_essential_and_desirable_diagnost",
+          "label": "Lymphoplasmacytic Lymphoma/Marginal Zone Lymphoma\n\nTable 5: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF LYMPHOPLASMACYTIC LYMPHOMA AND MARGINAL ZONE LYMPHOMAS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "follicular_lymphoma",
+          "label": "Follicular Lymphoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_category_of_in_situ_follicular_neoplasia_isfn_was_recognized_to_highlight_cases_in_which_the_neo",
+          "label": "The category of In-situ follicular neoplasia (ISFN) was recognized to highlight cases in which the neoplastic cells are confined only to follicles with no extension past the mantle zones or interfollicular areas. Morphologic features by themselves are not diagnostic for this entity- although subtle changes in composition of the follicles and particularly the germinal center may suggest this diagnosis. ISFN is distinguished from normal, reactive lymphoid follicles by the presence of cells within the follicle that express abnormally bright/intense CD10 and BCL2. As there is typically partial involvement of the follicles, there exists an internal control for expression intensity of CD10 and BCL2 that can be compared to the adjacent follicular mantle zones that show less intense expression than ISFN. ISFN invariably carries BCL2 gene rearrangements; no precursor lesion is described for BCL2 gene rearrangement negative follicular lymphoma. \n\nThe grading and reporting of follicular lymphoma has changed in the WHO 5th edition of Hematolymphoid Tumors. Classic follicular lymphoma (cFL) encompasses grades 1-3A, maintains a follicular pattern, and is composed of a mixture of centrocytes and centroblasts (CB) (larger, transformed cells) as was defined in WHO 4th edition revision. Previously follicular lymphoma was graded on the basis of the number of centroblasts/transformed cells per 10 high-powered fields (HPF, 0.159 mm diameter), with grade 3A being defined as greater than 15 CB and grade 3B, those cases devoid of centrocytes. Given difficulties in reproducibility and lack of significant outcomes differences with existing treatment regimens, cFL will encompass those previously defined as grade 1-3A, with grade 3B (those with absence of centrocytes) being defined as follicular large B-cell lymphoma. One may still consider reporting a grade if this is an agreed-upon practice at the local facility, but for cancer case summary reporting purposes, such distinction is not required. Follicular lymphoma with unusual cytologic features is to be used for rare cases without typical centrocyte morphology, be it immature chromatin or large centrocyte cells with fine chromatin and inconspicuous nucleoli.4,5 Follicular lymphoma with a predominantly diffuse pattern (dFL) is another recognized variant most reliably diagnosed on excisional biopsy specimens, often involving the inguinal region and showing some microfollicles as well as diffuse areas, CD10 and CD23 positivity, absence of IGH::BCL2 rearrangement and often abnormalities of chromosome 1p36 and/or mutations of TNFRSF14.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_6_summary_of_essential_and_desirable_diagnostic_features_for_category_of_follicular_lymphoma1",
+          "label": "Table 6: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF FOLLICULAR LYMPHOMA1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mantle_cell_lymphoma",
+          "label": "Mantle Cell Lymphoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_situ_mantle_cell_neoplasm_icmcn_is_defined_as_the_presence_of_mantle_zone_cells_harboring_ccnd1ig",
+          "label": "In situ mantle cell neoplasm (ICMCN) is defined as the presence of mantle zone cells harboring CCND1::IGH fusions with resultant cyclin D1 overexpression confined to the follicular mantle. The immunophenotype may differ from overt nodal mantle cell lymphoma, with some cases showing absence of CD5 or SOX117.7 Leukemic non-nodal mantle cell lymphoma (nnMCL) represents a subset of clinically indolent mantle cell lymphoma cases that involve the bone marrow, blood and spleen without significant lymphadenopathy. Similar to mantle cell lymphoma, expression of CD5, bright CD20, and cyclin D1 overexpression attributable to a CCND1::IGH fusion are present. However, these cases are characteristically negative/weak for SOX11, show lower proliferative indexes by Ki-67, and may have some immunophenotypic overlap with chronic lymphocytic leukemia (CLL), including expression of CD200 and CD23.8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_7_summary_of_essential_and_desirable_diagnostic_features_for_category_of_mantle_cell_lymphoma1",
+          "label": "Table 7: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF MANTLE CELL LYMPHOMA1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "large_b_cell_lymphomas",
+          "label": "Large B-cell Lymphomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_have_been_important_changes_to_the_category_of_large_b_cell_lymphomas_in_the_who_5th_edition_c",
+          "label": "There have been important changes to the category of Large B-cell lymphomas in the WHO 5th edition Classification of Hematolymphoid Tumors that warrant clarification to appropriately use the cancer case summary.\n\nThe category of Diffuse Large B-cell lymphoma, NOS (DLBCL, NOS), defines lymphomas composed of medium to large cells with a diffuse or only vaguely nodular growth pattern. Cytologically, three subsets may be seen: centroblastic (large, irregular cells with ample cytoplasm, non-prominent nucleoli); immunoblastic (moderate, more basophilic cytoplasm with prominent central nucleolus); or anaplastic (marked cytomegaly with bizarre nuclear features).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gene_expression_profiling_gep_studies_recognized_cell_of_origin_and_divided_large_b_cell_lymphomas_i",
+          "label": "Gene expression profiling (GEP) studies recognized cell of origin and divided large B-cell lymphomas into germinal center B-cell like (GCB), activated B-cell like (ABC), and unclassified (~15%) groups, and the ABC group was reported to have a worse prognosis.9 However, not all studies have confirmed the association with worse prognosis, and more recent studies using GEP and other high-throughput methods have developed a far more granular system likely to be employed in the near future.10,11 Immunohistochemistry is typically employed as a surrogate for GEP in this classification: GCB and non-GCB groups can be derived using these methods, with imperfect correlation but more clinical availability. The commonly used Hans algorithm uses greater than 30% expression of CD10, BCL6, and MUM1 to separate into GCB and ABC/Non-GCB.12",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moleculargenetic_analysis_to_evaluate_for_the_presence_of_bcl2_and_myc_gene_rearrangements_is_strong",
+          "label": "Molecular/genetic analysis to evaluate for the presence of BCL2 and MYC gene rearrangements is strongly recommended in cases that are morphologically diffuse large B-cell lymphoma or high-grade B-cell lymphoma (see discussion below). Fluorescence in-situ hybridization (FISH) panels targeting BCL2 and MYC (and often BCL6) rearrangements via break-apart and/or fusion probes are the most common method. Cases that demonstrate a BCL2 and MYC rearrangement should be assigned to the category DLBCL with MYC and BCL2 gene rearrangements. Those cases that show a MYC rearrangement or MYC and BCL6 should be reported as diffuse large B-cell lymphoma, NOS in the cancer case summary. The findings of BCL6 and MYC rearrangement should be reported in the case and annotated in the molecular genetic findings portion of the Cancer Case Summary.\n\nHigh-grade B-cell lymphoma, NOS (HGBCL, NOS) is reserved for tumors that are composed of intermediate size cells with Burkitt-like or blastoid morphology and frequently evidence of high tumor proliferation (apoptotic bodies or high Ki-67 proliferative fraction). It is to be distinguished from Burkitt lymphoma in which the tumor cells are more uniform compared to the more variable nuclear and cytoplasmic variability in high-grade B-cell lymphoma, NOS. It is also important to exclude lymphoma types with similar morphology that possess defining molecular genetic findings including diffuse large B-cell lymphoma with MYC and BCL2 rearrangements, large B-cell lymphoma with IRF4 rearrangement, high-grade B-cell lymphoma with 11q alterations and blastoid mantle cell lymphoma.\n\nEBV-positive Diffuse Large B-cell Lymphoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diagnosis_of_this_entity_is_challenging_and_requires_knowledge_of_clinical_features_and_epstein_barr",
+          "label": "Diagnosis of this entity is challenging and requires knowledge of clinical features and Epstein Barr virus (EBV) status of the lymphoma. Morphologically, these are similar to diffuse large B-cell lymphoma; however, the number of neoplastic lymphocytes may be variable and display morphologic features of Hodgkin/Reed Sternberg (HRS) like cells and express bright, uniform intensity of CD30. A distinguishing feature of EBV-positive large B-cell lymphoma is expression of EBV-associated markers (typically EBV-encoded small RNA - EBER). There is considerable overlap with the immune deficiency and dysregulation associated lymphoproliferative disorders, EBV+ mucocutaneous ulcer, and lymphomatoid granulomatosis. If there is a known immunosuppressive state- such as transplantation, immunodeficiency syndrome or iatrogenic immunosuppression-the category of immune deficiency and dysregulation associated lymphoproliferative disorders should be used. This distinction can be difficult in the setting of immune senescence and there is likely some overlap; this category is best applied in the setting of a high proportion of tumor cells positive for EBV. EBV+ mucocutaneous ulcer is typically unifocal, localized, superficial, and involves mucocutaneous sites compared with the more frequent nodal and disseminated EBV+ large B-cell lymphoma. Lymphomatoid granulomatosis (LYG), another EBV-associated lymphoproliferative disorder, typically shows an angiocentric pattern in the lungs, and less often other extranodal sites, with variable numbers of small and large EBV+ cells increasing in number in higher grade lesions (Grade 3 LYG).  \n\nTable 8: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF LARGE B-CELL LYMPHOMA1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "burkitt_lymphoma_burkitt_lymphoma_bl_is_characterized_by_monomorphic_mediumintermediate_size_cells_w",
+          "label": "Burkitt Lymphoma\n\nBurkitt lymphoma (BL) is characterized by monomorphic medium/intermediate-size cells with dense basophilic cytoplasm, high proliferative fraction with frequent apoptotic bodies, and MYC gene rearrangements detectable by FISH in most cases. As in some cases, MYC rearrangements can be cryptic and missed by conventional FISH studies, absence of MYC rearrangement in the presence of other typical morphological and immunophenotypic features should not deter from a diagnosis of BL. BL is in the differential diagnosis of HGBCL, NOS, and morphologically with HGBCL/DLBCL with MYC and BCL2 rearrangements. Rearrangements of MYC and BCL2 or BCL6 exclude the diagnosis of BL. In cases with BL morphology and immunophenotype that lack a MYC gene rearrangement, it is important to exclude high-grade B-cell lymphoma with 11q aberration (duplication, inversion, or deletion). Alterations of 11q are not specific to HGBCL with 11q aberration and may occur in cases otherwise diagnostic of BL or HGBCL, NOS with MYC rearrangements.13",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_9_summary_of_major_diagnostic_features_of_dlcbl_nos_high_grade_b_cell_lymphoma_and_burkitt_lym",
+          "label": "Table 9: SUMMARY OF MAJOR DIAGNOSTIC FEATURES OF DLCBL, NOS, HIGH-GRADE B-CELL LYMPHOMA AND BURKITT LYMPHOMA1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kshvhhv_8_associated_b_cell_lymphoid_proliferations_and_lymphomas_kaposi_sarcoma_herpesvirushuman_he",
+          "label": "KSHV/HHV-8 associated B-cell Lymphoid Proliferations and Lymphomas\n\nKaposi sarcoma herpesvirus/human herpesvirus 8 (KSHV/HHV8) associated lymphoid proliferations and lymphomas encompass the diagnostic categories of primary effusion lymphoma (PEL)/extracavitary primary effusion lymphoma (EC-PEL), KSHV/HHV8 positive diffuse large B-cell lymphoma and KSHV-8/HHV8-positive germinotropic lymphoproliferative disorder. There is an update in the nomenclature in the WHO 5th edition Hematolymphoid Tumors to incorporate the full name of the associated virus (Kaposi sarcoma herpesvirus/human herpesvirus 8-KSHV/HHV8). There are a few areas of clarification that are important for the use of this diagnostic category in the Lymphoid cancer case summary.\n\nThe vast majority of KSHV/HHV8-associated lymphomas are associated with immune deficiency/dysregulation (IDD). However, there do exist cases that do not appear to have associated overt IDD. For those that arise in the clinical setting of IDD, the use of the Lymphoma arising in the setting of immune deficiency/dysregulation (IDD) is preferred. (See discussion below on IDD-associated lymphomas).\n\nPrimary effusion lymphoma is most common in patients with HIV/AIDS and treated with immunosuppression. Typically, PEL presents with pleural, pericardial, or abdominal cavity effusion containing variably immunoblastic/plasmablastic cells with a terminal B-cell immunophenotype (CD19-, CD20-, PAX5-, OCT2-, CD79a-, CD138+, CD38+, MUM1+, EMA+), and expression of the activation marker CD30.14 HHV8 is, by definition, positive by immunohistochemistry for KSHV/HHV8 latent protein LANA1. Co-infection with EBV, demonstrable by in-situ hybridization for Epstein Barr virus encoded early RNA (EBER), occurs frequently in HIV/AIDS, less often in endemic (Mediterranean) or immune senescence-associated cases. PEL may present as a solid extracavitary mass (EC-PEL).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_is_considerable_diagnostic_overlap_between_kshvhhv8_positive_diffuse_large_b_cell_lymphoma_and",
+          "label": "There is considerable diagnostic overlap between KSHV/HHV8-positive diffuse large B-cell lymphoma and EC-PEL. KSHV/HHV8-positive diffuse large B-cell lymphoma is distinguished by expression of IgM and absence of immunoglobulin somatic hypermutation (SHM) as the tumor cell of origin tumor is a naïve IgM+ without immunoglobulin somatic hypermutation (SHM).15\n\nTable 10: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF KSHV/ HHV8 ASSOCIATED B-CELL LYMPHOID PROLIFERATIONS AND LYMPHOMAS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hodgkin_lymphoma_in_this_revision_the_separate_cancer_case_summary_for_hodgkin_lymphoma_that_include",
+          "label": "Hodgkin Lymphoma\n\nIn this revision, the separate cancer case summary for Hodgkin Lymphoma that included classic Hodgkin lymphoma (CHL) and nodular lymphocyte predominant Hodgkin lymphoma (NLPHL) was removed to reflect that these neoplasms are of B-cell origin.\n\nWhile there are four subtypes of CHL recognized- nodular sclerosis, lymphocyte-rich, mixed-cellularity, and lymphocyte depleted- reporting of these in the cancer case summary is not required as there is limited prognostic relevance with modern treatments.\n\nThe diagnostic features of CHL and NLPHL are well covered in the WHO 5th edition monograph. For purposes of using the cancer case summary, it is important to remember that CHL may arise in the setting of immune deficiency and dysregulation (IDD), and when appropriate that category should be utilized.\n\nTable 11: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF HODGKIN LYMPHOMA1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "precursor_t_cell_neoplasms_the_diagnostic_categories_from_the_revised_who_4th_edition_hematolymphoid",
+          "label": "Precursor T-cell Neoplasms\n\nThe diagnostic categories from the revised WHO 4th edition Hematolymphoid classification are retained in the WHO 5th edition. T-lymphoblastic leukemia/lymphoma, NOS represents a neoplasm of T-cells with an immature immunophenotype demonstrated by expression of CD34, CD1a, CD117, CD99, or TdT. Remaining markers, when expressed, reflect various stages of T-cell maturation, including expression of cytoplasmic CD3, typically bright CD7, diminished CD5, variable CD4, and CD8 with frequent co-expression. Early T-precursor lymphoblastic leukemia/lymphoma is distinct in having a more immature immunophenotype with committed T-cell lineage (expression of cytoplasmic CD3, absent CD1a, absent CD8) and expression of stem cell and myeloid markers (one or more CD34, HLA-DR, CD11b, CD13, CD33, CD65, CD117).16",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_cancer_case_summary_combines_t_lymphoblastic_leukemia_and_lymphoma_by_convention_when_bone_marro",
+          "label": "The cancer case summary combines T-lymphoblastic leukemia and lymphoma. By convention, when bone marrow and blood are involved, leukemia is used; involvement of lymph nodes, thymus, or other extranodal sites are termed T-lymphoblastic lymphomas. Treatment protocols define T-lymphoblastic leukemia as having 25% or more blasts in the marrow when both sites are involved. This distinction can be made in the narrative diagnostic report; the cancer case summary allows reporting of the percentage of neoplastic cells in the bone marrow and/or blood.\n\nTable 12: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF PRECURSOR T-CELL NEOPLASMS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mature_t_cell_and_nk_cell_neoplasms_there_has_been_a_significant_increase_in_the_understanding_of_ma",
+          "label": "Mature T-cell and NK-cell Neoplasms\n\nThere has been a significant increase in the understanding of mature T- and NK-cell lymphomas, particularly regarding underlying molecular genetic alterations. Despite this, the diagnostic categories from the revised 4th edition of WHO remain largely the same, with some notable changes.\n\nMature T-cell and NK-cell Leukemias\n\nChronic lymphoproliferative disorder of NK-cells was changed to NK-large granular lymphocytic leukemia (NK-LGLL) to reflect clonal nature and maintain consistency with the nomenclature of T- large granular lymphocytic leukemia.\n\nTable 13: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF MATURE T-CELL AND NK-CELL LEUKEMIAS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "primary_cutaneous_t_cell_lymphoid_proliferations_and_lymphomas_the_category_cutaneous_peripheral_t_c",
+          "label": "Primary Cutaneous T-cell lymphoid Proliferations and Lymphomas\n\nThe category cutaneous peripheral T-cell lymphomas, rare subtypes in the WHO 4th edition, was expanded to separately list the diagnostic entities of subcutaneous panniculitis-like T-cell lymphoma, primary cutaneous gamma/delta T-cell lymphoma, primary cutaneous CD8-positive aggressive epidermotropic cytotoxic T-cell lymphoma and finally primary cutaneous peripheral T-cell lymphoma, NOS.\n\nTable 14: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF PRIMARY CUTANEOUS T-CELL LYMPHOID PROLIFERATIONS AND LYMPHOMAS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intestinal_t_cell_and_nk_cell_lymphoid_proliferations_and_lymphomas_indolent_t_cell_lymphoproliferat",
+          "label": "Intestinal T-cell and NK-cell lymphoid proliferations and lymphomas\n\nIndolent T-cell lymphoproliferative disorder of the gastrointestinal tract was updated in the WHO 5th edition to indolent T-cell lymphoma to reflect an often protracted clinical course, but still with significant clinical symptoms and ability to disseminate.\n\nIndolent NK-cell lymphoproliferative disorder of the gastrointestinal tract was added in the WHO 5th edition to capture cases that were previously diagnosed as NK-cell enteropathy- a clinically indolent, often regressing, non-disseminating atypical proliferation of NK-cells (CD2+, CD56+, CD7+, TIA-1+, granzyme B+, surface CD3-) in mucosal sites in the gastrointestinal tract. The recent discovery of frequent mutations supports the interpretation that this disease represents a neoplastic proliferation.17 An important consideration in the differential diagnosis is the clinically aggressive extranodal NK/T-cell lymphoma. Distinction is made based on deep mucosal involvement, near-universal association with EBV(EBER in-situ hybridization+), and clinical aggressive course.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_15_summary_of_essential_and_desirable_diagnostic_features_for_category_of_intestinal_t_cell_an",
+          "label": "Table 15: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF INTESTINAL T-CELL AND NK-CELL LYMPHOID PROLIFERATIONS AND LYMPHOMAS AND HEPATOSPLENIC T-CELL LYMPHOMA1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anaplastic_large_cell_lymphoma",
+          "label": "Anaplastic Large Cell Lymphoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_minor_change_in_nomenclature_was_adopted_in_the_who_5th_edition_hematolymphoid_classification_by_l",
+          "label": "A minor change in nomenclature was adopted in the WHO 5th edition Hematolymphoid classification by listing ALK-positive or ALK-negative before anaplastic large cell lymphoma to reflect the importance of this distinction. ALK-negative anaplastic large cell lymphomas remain a heterogenous group. DUSP22 rearrangements are not uncommon (20-30%) within this group and may be recognizable by “doughnut cell” morphology, LEF1 expression, and absence of marked pleomorphism.18 The prognostic significance of DUSP22 rearrangement is uncertain with earlier reports showing prognosis comparable to ALK-positive anaplastic large cell lymphoma; more recent studies show a prognosis intermediate between ALK-negative and ALK-positive.19 Less frequent TP63 rearrangements can also be identified that are associated with a poor prognosis.19 It is important to distinguish systemic ALK-negative anaplastic large cell lymphoma from clinically localized variants primary cutaneous anaplastic large cell lymphoma and breast implant-associated anaplastic large cell lymphoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_16_summary_of_essential_and_desirable_diagnostic_features_for_category_of_anaplastic_large_cel",
+          "label": "Table 16: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF ANAPLASTIC LARGE CELL LYMPHOMA1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nodal_t_follicular_helper_tfh_cell_lymphoma_nodal_t_follicular_helper_tfh_cell_lymphomas_represent_a",
+          "label": "Nodal T-Follicular Helper (TFH) Cell Lymphoma\n\nNodal T-follicular helper (TFH) cell lymphomas represent a category of mature T-cell neoplasms that share immunophenotypic features of T-follicular helper cells. In the WHO 5th edition Hematolymphoid Classification of Tumors the different subgroups of this lymphoma were grouped with the common prefix- nodal TFH cell lymphoma- followed by the particular subtype, including angioimmunoblastic-type, follicular type, and not otherwise specific (NOS). The lymphomas in this category share an immunophenotype that involves the expression of at least 2 T-follicular helper markers, the most commonly used being PD1, ICOS, BCL6, CXCL13, and CD10 along with variable CD2, CD3, CD5, and often diminished intensity of CD7.20 The entities in this category are distinguished by architectural pattern with angioimmunoblastic showing a polymorphous infiltrate with background expanded follicular dendritic cell networks and prominent proliferations of high endothelial venules (HEV). Nodal TFH cell lymphoma, follicular type has a distinct follicular pattern without associated follicular dendritic or HEV proliferations. Finally, nodal TFH cell lymphoma, NOS is reserved for cases with more abundant tumor cells and lack of background polymorphous infiltrate or HEV proliferation. There may be significant overlap between tumor cell-rich nodal TFH cell lymphoma, angioimmunoblastic type, and the not otherwise specified (NOS) subtype. RHOA mutations are particularly common in this group (up to 70% of nTFHL-AI). It is important to note that these lymphomas often contain marked B-cell proliferations composed of immunoblasts that may progress to overt large B-cell lymphomas, commonly EBV-positive.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_17_summary_of_essential_and_desirable_diagnostic_features_for_category_of_nodal_t_follicular_h",
+          "label": "Table 17: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF NODAL T-FOLLICULAR HELPER (TFH) CELL LYMPHOMA1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_peripheral_t_cell_lymphomas",
+          "label": "Other Peripheral T-cell Lymphomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "peripheral_t_cell_lymphoma_ptcl_nos_should_be_reserved_for_those_cases_that_do_not_fit_into_another_",
+          "label": "Peripheral T-cell lymphoma (PTCL), NOS should be reserved for those cases that do not fit into another defined diagnostic category. These neoplasms do not express 2 or more of T-follicular helper markers; ALK+ and ALK- anaplastic large cell lymphomas and extranodal NK/T-cell lymphoma are excluded. Most PTCL, NOS cases lack substantial numbers of EBV+ (EBER) cells.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_18_summary_of_essential_and_desirable_diagnostic_features_for_category_of_peripheral_t_cell_ly",
+          "label": "Table 18: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF PERIPHERAL T-CELL LYMPHOMA, NOS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ebv_positive_nk_cell_and_t_cell_lymphomas_ebv_positive_nodal_nk_cell_and_t_cell_lymphoma_is_a_predom",
+          "label": "EBV-positive NK-cell and T-cell Lymphomas\n\nEBV-positive nodal NK-cell and T-cell lymphoma is a predominantly lymph node-based neoplastic proliferation of cytotoxic T-cells or NK-cells in which the vast majority of the tumor cells are positive for Epstein Barr virus by EBV-encoded small RNA (EBER) in situ hybridization. Most of these rare lymphomas have a cytotoxic T-cell immunophenotype, with the minority having an NK-cell phenotype. These are distinguished from extranodal NK/T-cell lymphomas by having a predominantly nodal presentation, frequent expression of T-cell markers including CD8, and lack of CD56 expression as genetics features.1\n\nExtranodal NK/T-cell lymphoma, nasal type from the WHO 4th edition revised classification had the qualifier “nasal type” removed in the WHO 5th edition to reflect that it may occur in other locations. Extranodal NK/T-cell lymphoma predominantly occurs (80% of cases) in the nasal cavity, paranasal sinuses, nasopharynx, and oropharynx. The remaining cases (20%) involve skin, gastrointestinal tract, and testis, among others. Tumor cells may range from small to large in a given case but an angiocentric growth pattern with associated necrosis with EBV-positive tumor cells are present in all cases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_19_summary_of_essential_and_desirable_diagnostic_features_for_category_of_ebv_positive_nk_cell",
+          "label": "Table 19: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF EBV-POSITIVE NK-CELL AND T-CELL LYMPHOMAS1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ebv_positive_t_cell_and_nk_cell_lymphoid_proliferations_and_lymphomas_of_childhood_there_has_been_so",
+          "label": "EBV-positive T-cell and NK-cell Lymphoid Proliferations and Lymphomas of Childhood\n\nThere has been some update to the nomenclature for this group of rare Epstein Barr virus-associated lymphoproliferative disorders that have a predilection for Asians and Native Americans from Mexico, Central and South America, and most commonly occur in childhood. Severe mosquito bite allergy is a cutaneous form of chronic active EBV disease with high fever and marked skin involvement occurring after mosquito bites. Hydroa vacciniforme lymphoproliferative disease is a related process with similar morphology but absence of clear association with mosquito bites and, in the classic non-systemic form, localized to sun-exposed skin. Systemic chronic active EBV disease is a systemic EBV+ lymphoproliferative process lasting longer than 3 months, more commonly T-cell compared to NK-cell, that involves multiple organs, bone marrow, and spleen. There may be associated hemophagocytic syndrome (HLH) and the prognosis is poor. Finally, EBV-positive T-cell lymphoma of childhood represents a cytologically obvious lymphoma often with prior chronic active EBV disease.  \n\nIt is important to note that this group is reserved for the immunocompetent. If there is a prior inborn error of immunity or other immune deficiency or dysregulation (IDD) the resultant process should be classified in that category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_20_summary_of_essential_and_desirable_diagnostic_features_for_category_of_ebv_positive_t_cell_",
+          "label": "Table 20: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF EBV-POSITIVE T-CELL AND NK-CELL LYMPHOID PROLIFERATIONS OF CHILDHOOD1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphoid_proliferations_and_lymphomas_associated_with_immune_deficiency_and_dysregulation_the_who_5t",
+          "label": "Lymphoid Proliferations and Lymphomas associated with Immune Deficiency and Dysregulation\n\nThe WHO 5th edition Classification of Hematolymphoid Tumors incorporates the changes proposed by the 2015 Workshop of the Society for Hematopathology/European Association for Hematopathology to develop a more standardized framework for reporting of lymphoid proliferations/lymphomas associated with immune deficiency and dysregulation that incorporated three major elements: 1) histologic lesion; 2) presence of oncogenic virus(es); and 3) nature/etiology of the immunodeficiency.  \n\nThe WHO 5th edition Classification of Hematolymphoid Tumors recognizes mass lesions that are not overt lymphomas- notably entities considered under hyperplasias arising in immune deficiency/dysregulation (IDD), Polymorphic lymphoproliferative disorders arising in IDD and EBV-positive mucocutaneous ulcer. As these do not represent overt lymphomas- the reporting in considered optional in this cancer case summary. Briefly, the category of hyperplasias arising in IDD encompasses more uniform lymphoid/plasma cell proliferations without effacement of lymphoid architecture. Polymorphic lymphoproliferative disorders arising in IDD shows more cytologic atypia and architectural effacement. EBV-positive mucocutaneous ulcer represents a typically localized, superficial ulcer of mucosal sites or skin composed of an EBV-positive polymorphous lymphoid infiltrate with immunoblasts and HRS-like cells. A more detailed discussion is provided in the WHO 5th edition Classification of Hematolymphoid Tumors.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphomas_arising_in_immune_deficiencydysregulation_idd_and_inborn_error_of_immunity_associated_lymp",
+          "label": "Lymphomas arising in immune deficiency/dysregulation (IDD) and inborn error of immunity-associated lymphoid proliferations and lymphomas may represent any lymphoma that may occur in immunocompetent patients, including small B-cell lymphomas, diffuse large B-cell lymphomas, Burkitt lymphoma, classical Hodgkin lymphoma, and T-cell lymphomas, among others. The 2015 Society for Hematopathology/European Association for Hematopathology proposed that reporting should incorporate the nature of the lesion, presence of oncogenic virus(es), and type of immunodeficiency.  \n\nThese elements are included in the cancer case summary as optional elements. Examples of such reporting include:\n\nExample #1\nReport narrative diagnosis: Diffuse large B-cell lymphoma, EBV+, autoimmune setting\n\n_X_ Lymphoma arising in immune deficiency/dysregulation\n-Name of lesion (specify): Diffuse large B-cell lymphoma\n-Virus status (specify): EBV\n-Type of immunodeficiency (specify): Autoimmunity\n\nExample #2\nReport narrative diagnosis: Primary effusion lymphoma, KSHV/HHV8+, EBV+, acquired immunodeficiency (HIV/AIDS)\n\n_X_ Lymphoma arising in immune deficiency/dysregulation\n-Name of lesion (specify): Primary effusion lymphoma\n-Virus status (specify): KSHV/HHV8, EBV\n-Type of immunodeficiency (specify): Acquired immunodeficiency (HIV/AIDS)\n\nExample #3\nReport narrative diagnosis: Extranodal marginal zone B-cell lymphoma, no viruses detected, common variable immunodeficiency\n\n_X_ Inborn error of immunity-associated lymphoid proliferations and lymphomas\n-Name of lesion (specify): Extranodal marginal zone B-cell lymphoma\n-Virus status (specify): None\n-Type of immunodeficiency (specify): Common variable immunodeficiency",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_21_summary_of_essential_and_desirable_diagnostic_features_for_category_of_lymphoid_proliferati",
+          "label": "Table 21: SUMMARY OF ESSENTIAL AND DESIRABLE DIAGNOSTIC FEATURES FOR CATEGORY OF LYMPHOID PROLIFERATIONS AND LYMPHOMAS ASSOCIATED WITH IMMUNE DEFICIENCY AND DYSREGULATION (IDD)1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_haematolymphoid_tumours_lyon_france_international_agen",
+          "label": "WHO Classification of Tumours Editorial Board. Haematolymphoid tumours. Lyon (France): International Agency for Research on Cancer; forthcoming. (WHO classification of tumours series, 5th ed.; vol. 11). https://publications.iarc.fr.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carroll_aj_shago_m_mikhail_fm_raimondi_sc_hirsch_ba_loh_ml_raetz_ea_borowitz_mj_wood_bl_maloney_kw_m",
+          "label": "Carroll AJ, Shago M, Mikhail FM, Raimondi SC, Hirsch BA, Loh ML, Raetz EA, Borowitz MJ, Wood BL, Maloney KW, Mattano LA Jr, Larsen EC, Gastier-Foster J, Stonerock E, Ell D, Kahwash S, Devidas M, Harvey RC, Chen IL, Willman CL, Hunger SP, Winick NJ, Carroll WL, Rao KW, Heerema NA. Masked hypodiploidy: Hypodiploid acute lymphoblastic leukemia (ALL) mimicking hyperdiploid ALL in children: A report from the Children's Oncology Group. Cancer Genet. 2019 Oct; 238:62-68. doi: 10.1016/j.cancergen.2019.07.009. Epub 2019 Jul 30. PMID: 31425927; PMCID: PMC6768693.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nieto_wg_almeida_j_romero_a_teodosio_c_lópez_a_henriques_af_sánchez_ml_jara_acevedo_m_rasillo_a_gonz",
+          "label": "Nieto WG, Almeida J, Romero A, Teodosio C, López A, Henriques AF, Sánchez ML, Jara-Acevedo M, Rasillo A, González M, Fernández-Navarro P, Vega T, Orfao A; Primary Health Care Group of Salamanca for the Study of MBL. Increased frequency (12%) of circulating chronic lymphocytic leukemia-like B-cell clones in healthy subjects using a highly sensitive multicolor flow cytometry approach. Blood. 2009 Jul 2;114(1):33-7. doi: 10.1182/blood-2009-01-197368. Epub 2009 May 6. PMID: 19420353.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "laurent_c_adélaïde_j_guille_a_tesson_b_gat_e_evrard_s_escudié_f_syrykh_c_canioni_d_fabiani_b_meignin",
+          "label": "Laurent C, Adélaïde J, Guille A, Tesson B, Gat E, Evrard S, Escudié F, Syrykh C, Canioni D, Fabiani B, Meignin V, Chassagne-Clement C, Dartigues P, Traverse-Glehen A, Parrens M, Huet S, Copie-Bergman C, Salles G, Birnbaum D, Brousset P, Morschhauser F, Xerri L; Lymphoma Study Association (LYSA). High-grade Follicular Lymphomas Exhibit Clinicopathologic, Cytogenetic, and Molecular Diversity Extending Beyond Grades 3A and 3B. Am J Surg Pathol. 2021 Oct 1;45(10):1324-1336. doi: 10.1097/PAS.0000000000001726. PMID: 34334687.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "el_behery_r_laurini_ja_weisenburger_dd_smith_lm_dave_bj_yuan_j_fu_k_chan_wc_nathwani_bn_bierman_pj_b",
+          "label": "El Behery R, Laurini JA, Weisenburger DD, Smith LM, Dave BJ, Yuan J, Fu K, Chan WC, Nathwani BN, Bierman PJ, Bociek RG, Vose JM, Armitage JO, Greiner TC, Aoun P. Follicular large cleaved cell (centrocytic) lymphoma: an unrecognized variant of follicular lymphoma. Hum Pathol. 2018 Feb; 72:180-190. doi: 10.1016/j.humpath.2017.11.002. Epub 2017 Nov 21. PMID: 29170017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kurz_ks_kalmbach_s_ott_m_staiger_am_ott_g_horn_h_follicular_lymphoma_in_the_5th_edition_of_the_who_c",
+          "label": "Kurz KS, Kalmbach S, Ott M, Staiger AM, Ott G, Horn H. Follicular Lymphoma in the 5th Edition of the WHO-Classification of Haematolymphoid Neoplasms-Updated Classification and New Biological Data. Cancers (Basel). 2023 Jan 27;15(3):785. doi: 10.3390/cancers15030785. PMID: 36765742; PMCID: PMC9913816.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carvajal_cuenca_a_sua_lf_silva_nm_pittaluga_s_royo_c_song_jy_sargent_rl_espinet_b_climent_f_jacobs_s",
+          "label": "Carvajal-Cuenca A, Sua LF, Silva NM, Pittaluga S, Royo C, Song JY, Sargent RL, Espinet B, Climent F, Jacobs SA, Delabie J, Naresh KN, Bagg A, Brousset P, Warnke RA, Serrano S, Harris NL, Swerdlow SH, Jaffe ES, Campo E. In situ mantle cell lymphoma: clinical implications of an incidental finding with indolent clinical behavior. Haematologica. 2012 Feb;97(2):270-8. doi: 10.3324/haematol.2011.052621. Epub 2011 Nov 4. PMID: 22058203; PMCID: PMC3269489.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ondrejka_sl_lai_r_smith_sd_hsi_ed_indolent_mantle_cell_leukemia_a_clinicopathological_variant_charac",
+          "label": "Ondrejka SL, Lai R, Smith SD, Hsi ED. Indolent mantle cell leukemia: a clinicopathological variant characterized by isolated lymphocytosis, interstitial bone marrow involvement, kappa light chain restriction, and good prognosis. Haematologica. 2011 Aug;96(8):1121-7. doi: 10.3324/haematol.2010.036277. Epub 2011 Apr 20. PMID: 21508124; PMCID: PMC3148905.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "alizadeh_aa_eisen_mb_davis_re_ma_c_lossos_is_rosenwald_a_boldrick_jc_sabet_h_tran_t_yu_x_powell_ji_y",
+          "label": "Alizadeh AA, Eisen MB, Davis RE, Ma C, Lossos IS, Rosenwald A, Boldrick JC, Sabet H, Tran T, Yu X, Powell JI, Yang L, Marti GE, Moore T, Hudson J Jr, Lu L, Lewis DB, Tibshirani R, Sherlock G, Chan WC, Greiner TC, Weisenburger DD, Armitage JO, Warnke R, Levy R, Wilson W, Grever MR, Byrd JC, Botstein D, Brown PO, Staudt LM. Distinct types of diffuse large B-cell lymphoma identified by gene expression profiling. Nature. 2000 Feb 3;403(6769):503-11. doi: 10.1038/35000501. PMID: 10676951.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "staiger_am_ziepert_m_horn_h_scott_dw_barth_tfe_bernd_hw_feller_ac_klapper_w_szczepanowski_m_hummel_m",
+          "label": "Staiger AM, Ziepert M, Horn H, Scott DW, Barth TFE, Bernd HW, Feller AC, Klapper W, Szczepanowski M, Hummel M, Stein H, Lenze D, Hansmann ML, Hartmann S, Möller P, Cogliatti S, Lenz G, Trümper L, Löffler M, Schmitz N, Pfreundschuh M, Rosenwald A, Ott G; German High-Grade Lymphoma Study Group. Clinical Impact of the Cell-of-Origin Classification and the MYC/ BCL2 Dual Expresser Status in Diffuse Large B-Cell Lymphoma Treated Within Prospective Clinical Trials of the German High-Grade Non-Hodgkin's Lymphoma Study Group. J Clin Oncol. 2017 Aug 1;35(22):2515-2526. doi: 10.1200/JCO.2016.70.3660. Epub 2017 May 19. PMID: 28525305.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wright_gw_huang_dw_phelan_jd_coulibaly_za_roulland_s_young_rm_wang_jq_schmitz_r_morin_rd_tang_j_jian",
+          "label": "Wright GW, Huang DW, Phelan JD, Coulibaly ZA, Roulland S, Young RM, Wang JQ, Schmitz R, Morin RD, Tang J, Jiang A, Bagaev A, Plotnikova O, Kotlov N, Johnson CA, Wilson WH, Scott DW, Staudt LM. A Probabilistic Classification Tool for Genetic Subtypes of Diffuse Large B Cell Lymphoma with Therapeutic Implications. Cancer Cell. 2020 Apr 13;37(4):551-568.e14. doi: 10.1016/j.ccell.2020.03.015. PMID: 32289277; PMCID: PMC8459709.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hans_cp_weisenburger_dd_greiner_tc_gascoyne_rd_delabie_j_ott_g_müller_hermelink_hk_campo_e_braziel_r",
+          "label": "Hans CP, Weisenburger DD, Greiner TC, Gascoyne RD, Delabie J, Ott G, Müller-Hermelink HK, Campo E, Braziel RM, Jaffe ES, Pan Z, Farinha P, Smith LM, Falini B, Banham AH, Rosenwald A, Staudt LM, Connors JM, Armitage JO, Chan WC. Confirmation of the molecular classification of diffuse large B-cell lymphoma by immunohistochemistry using a tissue microarray. Blood. 2004 Jan 1;103(1):275-82. doi: 10.1182/blood-2003-05-1545. Epub 2003 Sep 22. PMID: 14504078.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grygalewicz_b_woroniecka_r_rymkiewicz_g_rygier_j_borkowska_k_kotyl_a_blachnio_k_bystydzienski_z_nowa",
+          "label": "Grygalewicz B, Woroniecka R, Rymkiewicz G, Rygier J, Borkowska K, Kotyl A, Blachnio K, Bystydzienski Z, Nowakowska B, Pienkowska-Grela B. The 11q-Gain/Loss Aberration Occurs Recurrently in MYC-Negative Burkitt-like Lymphoma With 11q Aberration, as Well as MYC-Positive Burkitt Lymphoma and MYC-Positive High-Grade B-Cell Lymphoma, NOS. Am J Clin Pathol. 2017 Dec 20;149(1):17-28. doi: 10.1093/ajcp/aqx139. PMID: 29272887; PMCID: PMC5848380.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nador_rg_cesarman_e_chadburn_a_dawson_db_ansari_mq_sald_j_knowles_dm_primary_effusion_lymphoma_a_dis",
+          "label": "Nador RG, Cesarman E, Chadburn A, Dawson DB, Ansari MQ, Sald J, Knowles DM. Primary effusion lymphoma: a distinct clinicopathologic entity associated with the Kaposi's sarcoma-associated herpes virus. Blood. 1996 Jul 15;88(2):645-56. PMID: 8695812.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "du_mq_liu_h_diss_tc_ye_h_hamoudi_ra_dupin_n_meignin_v_oksenhendler_e_boshoff_c_isaacson_pg_kaposi_sa",
+          "label": "Du MQ, Liu H, Diss TC, Ye H, Hamoudi RA, Dupin N, Meignin V, Oksenhendler E, Boshoff C, Isaacson PG. Kaposi sarcoma-associated herpesvirus infects monotypic (IgM lambda) but polyclonal naive B cells in Castleman disease and associated lymphoproliferative disorders. Blood. 2001 Apr 1;97(7):2130-6. doi: 10.1182/blood. v97.7.2130. Erratum in: Blood 2001 Jun 1;97(11):3678. PMID: 11264181.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jain_n_lamb_av_obrien_s_ravandi_f_konopleva_m_jabbour_e_zuo_z_jorgensen_j_lin_p_pierce_s_thomas_d_ry",
+          "label": "Jain N, Lamb AV, O'Brien S, Ravandi F, Konopleva M, Jabbour E, Zuo Z, Jorgensen J, Lin P, Pierce S, Thomas D, Rytting M, Borthakur G, Kadia T, Cortes J, Kantarjian HM, Khoury JD. Early T-cell precursor acute lymphoblastic leukemia/lymphoma (ETP-ALL/LBL) in adolescents and adults: a high-risk subtype. Blood. 2016 Apr 14;127(15):1863-9. doi: 10.1182/blood-2015-08-661702. Epub 2016 Jan 8. PMID: 26747249; PMCID: PMC4915808.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "de_leval_l_feldman_al_pileri_s_nakamura_s_gaulard_p_extranodal_t_and_nk_cell_lymphomas_virchows_arch",
+          "label": "de Leval L, Feldman AL, Pileri S, Nakamura S, Gaulard P. Extranodal T- and NK-cell lymphomas. Virchows Arch. 2023 Jan;482(1):245-264. doi: 10.1007/s00428-022-03434-0. Epub 2022 Nov 7. PMID: 36336765; PMCID: PMC9852223.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pedersen_mb_hamilton_dutoit_sj_bendix_k_ketterling_rp_bedroske_pp_luoma_im_sattler_ca_boddicker_rl_b",
+          "label": "Pedersen MB, Hamilton-Dutoit SJ, Bendix K, Ketterling RP, Bedroske PP, Luoma IM, Sattler CA, Boddicker RL, Bennani NN, Nørgaard P, Møller MB, Steiniche T, d'Amore F, Feldman AL. DUSP22 and TP63 rearrangements predict outcome of ALK-negative anaplastic large cell lymphoma: a Danish cohort study. Blood. 2017 Jul 27;130(4):554-557. doi: 10.1182/blood-2016-12-755496. Epub 2017 May 18. PMID: 28522440; PMCID: PMC5533203.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "qiu_l_tang_g_li_s_vega_f_lin_p_wang_sa_wang_w_iyer_sp_malpica_l_miranda_rn_konoplev_s_tang_z_fang_h_",
+          "label": "Qiu L, Tang G, Li S, Vega F, Lin P, Wang SA, Wang W, Iyer SP, Malpica L, Miranda RN, Konoplev S, Tang Z, Fang H, Medeiros LJ, Xu J. DUSP22 rearrangement is associated with distinctive immunophenotype but not outcome in patients with systemic ALK-negative anaplastic large cell lymphoma. Haematologica. 2022 Dec 1. doi: 10.3324/haematol.2022.281222. Epub ahead of print. PMID: 36453104.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "basha_bm_bryant_sc_rech_kl_feldman_al_vrana_ja_shi_m_reed_ka_king_rl_application_of_a_5_marker_panel",
+          "label": "Basha BM, Bryant SC, Rech KL, Feldman AL, Vrana JA, Shi M, Reed KA, King RL. Application of a 5 Marker Panel to the Routine Diagnosis of Peripheral T-Cell Lymphoma With T-Follicular Helper Phenotype. Am J Surg Pathol. 2019 Sep;43(9):1282-1290. doi: 10.1097/PAS.0000000000001315. PMID: 31283630.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "transformation_from_indolent_lymphoma_optional_histologic_transformation_occurs_when_a_morphological",
+          "label": "Transformation from Indolent Lymphoma (optional)\n\nHistologic transformation occurs when a morphologically higher-grade lymphoma that is clonally related arises in a patient with a previously diagnosed or concurrent more indolent low-grade lymphoma. Common examples include the transformation of follicular lymphoma to a diffuse large B-cell lymphoma. The prognosis of transformation is worse compared to de novo high-grade lymphoma.1 It can be difficult to determine if the higher-grade lymphoma is clonally related to the prior indolent lymphoma - for example, up to 20% of DLBCL arising in the setting of prior chronic lymphocytic leukemia (CLL) are clonally unrelated.2 Demonstration of clonal relationship between the transformed lymphoma and prior lymphoma are recommended; most frequently this involves demonstration of shared clonal Ig gene rearrangements or specific shared driver mutations.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "coiffier_b_thieblemont_c_van_den_neste_e_lepeu_g_plantier_i_castaigne_s_lefort_s_marit_g_macro_m_seb",
+          "label": "Coiffier B, Thieblemont C, Van Den Neste E, Lepeu G, Plantier I, Castaigne S, Lefort S, Marit G, Macro M, Sebban C, Belhadj K, Bordessoule D, Fermé C, Tilly H. Long-term outcome of patients in the LNH-98.5 trial, the first randomized study comparing rituximab-CHOP to standard CHOP chemotherapy in DLBCL patients: a study by the Groupe d'Etudes des Lymphomes de l'Adulte. Blood. 2010 Sep 23;116(12):2040-5. doi: 10.1182/blood-2010-03-276246. Epub 2010 Jun 14. PMID: 20548096; PMCID: PMC2951853.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "timár_b_fülöp_z_csernus_b_angster_c_bognár_a_szepesi_a_kopper_l_matolcsy_a_relationship_between_the_",
+          "label": "Timár B, Fülöp Z, Csernus B, Angster C, Bognár A, Szepesi A, Kopper L, Matolcsy A. Relationship between the mutational status of VH genes and pathogenesis of diffuse large B-cell lymphoma in Richter's syndrome. Leukemia. 2004 Feb;18(2):326-30. doi: 10.1038/sj.leu.2403249. PMID: 14671632.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_if_immunohistochemistry_is_utilized_to_immunophenotype_the_leukemialymphoma_cel",
+          "label": "Immunohistochemistry\n\nIf immunohistochemistry is utilized to immunophenotype the leukemia/lymphoma cells specify the results in the cancer case summary. There is no proscriptive way to accomplish this and can reflect what is used at the institutional level. Suggested reporting methods could utilize (+) for positive result and (-) for negative and include descriptors if there is variability in staining (focal, patchy) or intensity (dim, bright staining). Immunohistochemistry is delineated separately from immunophenotyping by flow cytometry as there might be differences due to the different sensitivities of the assays (flow cytometry is typically more sensitive), differences in antibody used, differences in localization of the antigens (immunohistochemistry may be positive for cytoplasmic antigens that are negative on surface analysis by flow cytometry). To avoid potential confusion, these results are separated out even though some may be redundant. \n\nFlow Cytometry\n\nFlow cytometry is a quantitative method for rapid, multiparametric evaluation of the expression of cell surface and cytoplasmic antigens of a large number of cells. If flow cytometry was performed, report if there was no aberrancy detected in the sample at the level of sensitivity of the assay or specify what specific alterations were detected. As there is significant variability in the reporting of results the cancer case summary does not require a specific method. It is recommended to report the results of the tumor cell population in a semi-quantitative manner that would allow those reviewing the report to determine if there is heterogenous expression (not all tumor cells are positive) and the level of expression on the population. Examples of this reporting include:  CD20 dim+ (low level expression of CD20), CD20+ (moderate level of expression of CD20), CD20++ (bright expression of CD20), CD20-/+ het (variable heterogeneous expression of CD20).\n\nCytogenetics\n\nReport if conventional/karyotype cytogenetic analysis was performed on the sample, and if performed, the result. For those samples with abnormal karyotypes, specify the result.\n\nMolecular Alterations Detected\n\nWith the advent of increasingly sophisticated molecular genetic techniques such as next-generation sequencing (NGS), chromosomal microarrays and large fluorescence in-situ hybridization panels reporting all these results in a synoptic format is a challenge. As many of these alterations are diagnostically, prognostically, or therapeutically important- reporting in a succinct manner is necessary. To make reporting easier for the pathologist and highlight what is most important for the treating clinician, this cancer case summary requires the reporting of any positive/abnormal alterations that were detected, followed by an optional listing of all the alterations that were tested. The cancer case summary lists some of the most common alterations that occur in lymphoid neoplasms, but it is in no way comprehensive. The option exists to provide those not specifically listed under “Other alterations listed (specify)”, where the user would enter what molecular alteration was detected.\n\nAfter each alteration, there is a specific field where users can delineate, if desired, the specific alterations, method (NGS, FISH), or additional information (variant allele frequency-VAF) that would be useful for that institution. While preferable to include specific information, this can also reference a separate report with this information (separate molecular pathology report). An example of how to use this section is as follows:\n\nMolecular alterations detected:\n__X__RHOA mutation, (specify): NGS, VAF 47%\n__X__TP53 mutation, mutation, (specify): NGS, VAF 35%\n\nMolecular alterations assayed:\n(List): ABL1, ABL2, ALK, ARHGEF1, ARID1A, ARID2, ASXL1, ATM, B2M, BCL2, BCL6, BCOR, BIRC3, BRAF, BTK, CARD11, CCND1, CCND2, CCND3, CD274, CD79A, CD79B, CDKN1B, CDKN2A, CDKN2B, CIITA, CREBBP, CRLF2, CSF1R, CTCF, CTNNB1, CXCR4, DDX3X, DIS3, DNMT3A, EBF1, EGR1, EP300, EPOR, ETV6, EZH2, FAM46C, FAS, FAT1, FBXW7, FGFR3, FOXO1, GATA3, GNA13, GNAI2, HIST1H1E, HRAS, ID3, IDH1, IDH2, IKBKB, IKZF1, IKZF3, IRAK4, ITPKB, JAK1, JAK2, JAK3, KLF2, KMT2D, KRAS, MALT1, MAP2K1, MAP3K14, MAPK1, MED12, MEF2B, MYC, MYCN, MYD88, NF1, NFKBIE, NOTCH1, NOTCH2, NOTCH3, NRAS, NT5C2, P2RY8, PDGFRB, PHF6, PIK3CA, PIK3CD, PIK3R1, PIM1, PLCG1, PLCG2, POT1, PPM1D, PRDM1, PRPS1, PTEN, PTPN11, RB1, REL, RHOA, RIPK1, RPS15, RUNX1, S1PR2, SAMHD1, SETD2, SF3B1, SGK1, SH2B3, SOCS1, SPEN, STAT3, STAT5B, STAT6, TBL1XR1, TCF3, TET2, TLR2, TNFAIP3, TNFRSF14, TP53, TRAF2, TRAF3, UBR5, WT1, XPO1, ZFHX4, ZMYM3.\n\nThis method can simplify the reporting of large numbers of genes to highlight only those with alterations identified. It also provides a means of listing what was assayed- such lists can be typically obtained from laboratory performing the molecular studies. This is less labor intensive than listing all the negative results.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

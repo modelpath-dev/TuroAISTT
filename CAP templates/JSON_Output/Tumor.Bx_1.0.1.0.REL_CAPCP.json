@@ -1,0 +1,215 @@
+{
+  "template_id": "Tumor.Bx_1.0.1.0.REL_CAPCP",
+  "organ": "GENERAL TUMOR BIOPSY: Reporting Template",
+  "protocol_posting_date": "June 2021",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "treatment_history",
+          "label": "Treatment History",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_prior_treatment",
+              "label": "No known prior treatment"
+            },
+            {
+              "value": "prior_treatment_given",
+              "label": "Prior treatment given (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "specimen_site_specify",
+          "label": "Specimen Site (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "needle_biopsy",
+              "label": "Needle biopsy"
+            },
+            {
+              "value": "incisional_biopsy",
+              "label": "Incisional biopsy"
+            },
+            {
+              "value": "excisional_biopsy",
+              "label": "Excisional biopsy"
+            },
+            {
+              "value": "fine_needle_aspiration",
+              "label": "Fine needle aspiration"
+            },
+            {
+              "value": "biopsy_not_otherwise_specified",
+              "label": "Biopsy, not otherwise specified"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_adequacy",
+          "label": "Specimen Adequacy",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adequate",
+              "label": "Adequate"
+            },
+            {
+              "value": "suboptimal",
+              "label": "Suboptimal (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "histologic_type_specify",
+          "label": "Histologic Type (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade_specify",
+          "label": "Histologic Grade (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion",
+          "label": "Lymphovascular Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "list_pending_biomarker_studies_in_the_comments_section_of_this_report",
+          "label": "List pending biomarker studies in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "biomarkers_tested",
+          "label": "Biomarkers Tested",
+          "required": true,
+          "type": "free_text",
+          "condition": "repeat as needed"
+        },
+        {
+          "field_id": "biomarker_tested",
+          "label": "Biomarker Tested: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "results",
+          "label": "Results: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "testing_method",
+          "label": "Testing Method: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

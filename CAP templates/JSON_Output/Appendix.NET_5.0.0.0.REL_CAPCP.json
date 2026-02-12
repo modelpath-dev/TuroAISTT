@@ -1,0 +1,1204 @@
+{
+  "template_id": "Appendix.NET_5.0.0.0.REL_CAPCP",
+  "organ": "APPENDIX NEUROENDOCRINE TUMOR",
+  "protocol_posting_date": "December 2023",
+  "standards": [
+    "AJCC-UICC 9"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "appendectomy",
+              "label": "Appendectomy"
+            },
+            {
+              "value": "right_hemicolectomy",
+              "label": "Right hemicolectomy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "proximal_half_of_appendix",
+              "label": "Proximal half of appendix: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal_half_of_appendix",
+              "label": "Distal half of appendix: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "diffusely_involving_appendix",
+              "label": "Diffusely involving appendix: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "appendix_not_otherwise_specified",
+              "label": "Appendix, not otherwise specified: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "histologic_type_and_grade",
+          "label": "Histologic Type and Grade#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated_neuroendocrine_tumor",
+              "label": "G1, well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "g2_well_differentiated_neuroendocrine_tumor",
+              "label": "G2, well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "g3_well_differentiated_neuroendocrine_tumor",
+              "label": "G3, well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "gx_grade_cannot_be_assessed",
+              "label": "GX, grade cannot be assessed"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B",
+            "C"
+          ],
+          "guidance": "For poorly differentiated (high-grade) neuroendocrine carcinomas, the College of American Pathologists (CAP) checklist for carcinoma of the appendix should be used."
+        },
+        {
+          "field_id": "histologic_type_and_grade_comment",
+          "label": "Histologic Type and Grade Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade_determination",
+          "label": "Histologic Grade Determination",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "mitotic_rate_and_or_ki_67_labeling_index_is_required_to_determine_histologic_grade",
+          "label": "Mitotic rate and / or Ki-67 labeling index is required to determine histologic grade",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mitotic_rate_required_only_when_ki_67_labeling_index_is_not_reported",
+          "label": "Mitotic Rate (required only when Ki-67 labeling index is not reported)#",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Mitotic rate should be reported as number of mitoses per 2 mm2, by evaluating at least 10 mm2 in the most"
+        },
+        {
+          "field_id": "mitotically_active_part_of_the_tumor_eg_if_using_a_microscope_with_a_field_diameter_of_055_mm_count_",
+          "label": "mitotically active part of the tumor (e.g., if using a microscope with a field diameter of 0.55 mm, count 42 high",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "power_fields_10_mm2_and_divide_the_resulting_number_of_mitoses_by_5_to_determine_the_number_of_mitos",
+          "label": "power fields (10 mm2) and divide the resulting number of mitoses by 5 to determine the number of mitoses per 2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mm2_needed_to_assign_tumor_grade",
+          "label": "mm2 needed to assign tumor grade).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (Ki-67 labeling index is reported)"
+            },
+            {
+              "value": "specify_number_of_mitoses_per_2_mm2",
+              "label": "Specify number of mitoses per 2 mm2: _________________ mitoses per 2 mm2",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_2_mitoses_per_2_mm2",
+              "label": "Less than 2 mitoses per 2 mm2"
+            },
+            {
+              "value": "2_to_20_mitoses_per_2_mm2",
+              "label": "2 to 20 mitoses per 2 mm2"
+            },
+            {
+              "value": "greater_than_20_mitoses_per_2_mm2",
+              "label": "Greater than 20 mitoses per 2 mm2"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ki_67_labeling_index",
+          "label": "Ki-67 Labeling Index",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (mitotic rate is reported)"
+            },
+            {
+              "value": "specify_ki_67_percentage",
+              "label": "Specify Ki-67 percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_3",
+              "label": "Less than 3%"
+            },
+            {
+              "value": "3_to_20",
+              "label": "3% to 20%"
+            },
+            {
+              "value": "greater_than_20",
+              "label": "Greater than 20%"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only when mitotic rate is not reported"
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "invades_lamina_propria",
+              "label": "Invades lamina propria"
+            },
+            {
+              "value": "invades_submucosa",
+              "label": "Invades submucosa"
+            },
+            {
+              "value": "invades_muscularis_propria",
+              "label": "Invades muscularis propria"
+            },
+            {
+              "value": "invades_subserosa_or_mesoappendix_without_involvement_of_visceral_peritoneum",
+              "label": "Invades subserosa or mesoappendix without involvement of visceral peritoneum"
+            },
+            {
+              "value": "perforates_visceral_peritoneum",
+              "label": "Perforates visceral peritoneum (serosa)"
+            },
+            {
+              "value": "directly_invades_other_adjacent_organ",
+              "label": "Directly invades other adjacent organ(s) or structure(s) (e.g., abdominal wall, skeletal muscle) excluding direct mural extension to adjacent subserosa of adjacent bowel (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_tumor",
+          "label": "Closest Margin(s) to Tumor",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "radial",
+              "label": "Radial: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mesenteric",
+              "label": "Mesenteric: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_tumor_to_closest_margin",
+          "label": "Distance from Tumor to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_present_at_margin",
+              "label": "Tumor present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_tumor",
+          "label": "Margin(s) Involved by Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "radial",
+              "label": "Radial: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mesenteric",
+              "label": "Mesenteric: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ovary",
+              "label": "Ovary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "nonregional_lymph_node",
+              "label": "Nonregional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "peritoneum",
+              "label": "Peritoneum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ],
+          "condition": "AJCC Version 9"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            },
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor less than or equal to 2 cm in greatest dimension"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor greater than 2 cm but less than or equal to 4 cm in greatest dimension"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor greater than 4 cm in greatest dimension, or with subserosal invasion, or involvement of"
+            }
+          ],
+          "guidance": "Multiple tumors should be designated as such (the largest tumor should be used to assign T category). Use T(#); e.g., pT3(4) N0 M0, OR use the m suffix, T(m); e.g., pT3(m) N0 M0."
+        },
+        {
+          "field_id": "the_mesoappendix",
+          "label": "the mesoappendix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor perforates the peritoneum, or directly invades other adjacent organs or structures"
+            }
+          ]
+        },
+        {
+          "field_id": "excluding_direct_mural_extension_to_adjacent_subserosa_of_adjacent_bowel_eg_abdominal_wall_and",
+          "label": "(excluding direct mural extension to adjacent subserosa of adjacent bowel), e.g., abdominal wall and",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No tumor involvement of regional lymph node(s)"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1:Tumor involvement of regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_microscopic_confirmation_of_distant_metastasis",
+          "label": "pM1: Microscopic confirmation of distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Microscopic confirmation of metastasis confined to liver"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b:Microscopic confirmation of metastasis in at least one extrahepatic site (e.g., lung, ovary, nonregional lymph node, peritoneum, bone)"
+            },
+            {
+              "value": "pm1c",
+              "label": "pM1c: Microscopic confirmation of both hepatic and extrahepatic metastases"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "tumor_necrosis",
+              "label": "Tumor necrosis"
+            },
+            {
+              "value": "acute_appendicitis",
+              "label": "Acute appendicitis"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to_well_differentiated_neuroendocrine_tumors_carcinoid_tumors_of_the_appendix_",
+          "label": "This protocol applies to well-differentiated neuroendocrine tumors (carcinoid tumors) of the appendix of any size. For poorly differentiated neuroendocrine carcinomas (including small cell carcinomas and large cell neuroendocrine carcinomas) and goblet cell adenocarcinoma (previously goblet cell carcinoid tumor), use the CAP cancer protocol for carcinoma of the appendix.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_appendix_is_a_common_site_of_gastrointestinal_neuroendocrine_tumors_usually_presenting_as_small_",
+          "label": "The appendix is a common site of gastrointestinal neuroendocrine tumors, usually presenting as small solitary lesions incidentally discovered after appendectomy. Appendiceal neuroendocrine tumors are commonly diagnosed at a young age and arise in the deep mucosa or submucosa. Unlike other gastrointestinal neuroendocrine tumors or appendiceal adenocarcinomas, tumor size is considered more important than depth of invasion for appendiceal neuroendocrine tumor. Therefore, the staging system for appendiceal neuroendocrine tumors is different from those for other neuroendocrine tumors of the gut.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kakar_s_shi_c_driman_dk_et_al_protocol_for_the_examination_of_specimens_from_patients_with_carcinoma",
+          "label": "Kakar S, Shi C, Driman DK, et al. Protocol for the Examination of Specimens From Patients With Carcinoma of the Appendix. 2017. Available at www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "most_appendiceal_nets_are_low_grade_with_none_to_few_mitoses_and_no_necrosis_and_have_traditionally_",
+          "label": "Most appendiceal NETs are low grade, with none to few mitoses and no necrosis, and have traditionally been classified as “carcinoids.” Although the term “carcinoid tumor” remains in widespread use, this term may cause confusion for clinicians, who might view a carcinoid tumor as a serotonin-producing tumor associated with functional manifestations of carcinoid syndrome. The use of the term “carcinoid” for neuroendocrine tumor reporting is therefore discouraged for these reasons.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_and_other_ancillary_techniques_are_generally_not_required_to_diagnose_well_diff",
+          "label": "Immunohistochemistry and other ancillary techniques are generally not required to diagnose well-differentiated neuroendocrine tumors. Specific markers that may be used to establish neuroendocrine differentiation include chromogranin A, synaptophysin, INSM1 and CD56.1,2,3 Because of their relative sensitivity and specificity, chromogranin A and synaptophysin are recommended.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_specific_histologic_patterns_in_well_differentiated_neuroendocrine_tumors_such_as_trabecula",
+          "label": "Although specific histologic patterns in well-differentiated neuroendocrine tumors, such as trabecular, insular, and glandular, roughly correlate with tumor location,4 these patterns have not been clearly shown independently to predict response to therapy or risk of nodal metastasis and are rarely reported in clinical practice. Most appendiceal neuroendocrine tumors are derived from enterochromaffin cells. Rarely, L-cell neuroendocrine tumors of the appendix are encountered; because of their distinctive growth pattern of tear-drop-shaped tubules embedded in a fibrous stroma,5 these lesions are sometimes called tubular neuroendocrine tumors. It should be noted that these tumors are negative for chromogranin A but express enteroglucagon, peptide YY, and pancreatic polypeptide. Tubular neuroendocrine tumors are usually small lesions confined to the appendix and are found in female patients. These lesions exhibit benign behavior and should not be confused with adenocarcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "williams_gt_endocrine_tumours_of_the_gastrointestinal_tract_selected_topics_histopathology_200750130",
+          "label": "Williams GT. Endocrine tumours of the gastrointestinal tract: selected topics. Histopathology. 2007;50(1):30-41.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zhang_q_huang_j_he_y_cao_r_shu_j_insulinoma_associated_protein_1insm1_is_a_superior_marker_for_the_d",
+          "label": "Zhang Q, Huang J, He Y, Cao R, Shu J. Insulinoma-associated protein 1(INSM1) is a superior marker for the diagnosis of gastroenteropancreatic neuroendoerine neoplasms: a meta-analysis. Endocrine. 2021;74(1):61-71",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mchugh_ke_mukhopadhyay_s_doxtader_ee_lanigan_c_allende_ds_insm1_is_a_highly_specific_marker_of_neuro",
+          "label": "McHugh KE, Mukhopadhyay S, Doxtader EE, Lanigan C, Allende DS. INSM1 Is a Highly Specific Marker of Neuroendocrine Differentiation in Primary Neoplasms of the Gastrointestinal Tract, Appendix, and Pancreas. Am J Clin Pathol. 2020;153(6):811-20.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "soga_j_carcinoids_of_the_colon_and_ileocecal_region_a_statistical_evaluation_of_363_cases_collected_",
+          "label": "Soga J. Carcinoids of the colon and ileocecal region: a statistical evaluation of 363 cases collected from the literature. J Exp Clin Cancer Res. 1998;17(2):139-148.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "iwafuchi_m_watanabe_h_ajioka_y_shimoda_t_iwashita_a_seiki_i_immunohistochemical_and_ultrastructural_",
+          "label": "Iwafuchi M, Watanabe H, Ajioka Y, Shimoda T, Iwashita A, Seiki I. Immunohistochemical and ultrastructural studies of twelve argentaffin and six argyrophil carcinoids of the appendix vermiformis. Hum Pathol. 1990;21(7):773-780.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cytologic_atypia_in_well_differentiated_neuroendocrine_tumors_has_no_impact_on_clinical_behavior_of_",
+          "label": "Cytologic atypia in well differentiated neuroendocrine tumors has no impact on clinical behavior of these tumors. The WHO classification1 and others2 use mitotic rate and/or Ki-67 index as one of the criteria for potential for aggressive behavior. Mitotic rate should be reported as number of mitoses per 2 mm2, by evaluating at least 10mm2 in the most mitotically active part of the tumor. Only clearly identifiable mitotic figures should be counted; hyperchromatic, karyorrhectic, or apoptotic nuclei are excluded. Because of variations in field size, the number of high-power fields (HPF) (at 40X magnification) for10 mm2 (thereby 2 mm2) must be determined for each microscope (Table 1). For example, if using a microscope with a field diameter of 0.55 mm, count 42 HPF and divide the resulting number of mitoses by 5 to determine the number of mitoses per 2 mm2  needed to assign tumor grade.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_number_of_hpf_required_for_10_mm2_using_microscopes_with_different_field_diameter",
+          "label": "Table 1. Number of HPF Required for 10 mm2 Using Microscopes With Different Field Diameter",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ki_67_index_is_reported_as_percent_positive_tumor_cells_in_area_of_highest_nuclear_labeling_hot_spot",
+          "label": "Ki-67 index is reported as percent positive tumor cells in area of highest nuclear labeling (“hot spot”), although the precise method of assessment has not been standardized. A number of methods have used to assess Ki-67 index, including automatic counting and “eyeballing”.3,4 Automated counting is not widely available and requires careful modification of the software to circumvent the inaccuracies.3 Eye-balling can be used for most tumors; however, for tumors with Ki-67 index close to grade cut-offs, it is recommended to perform the manual count on the print of camera-captured image of the hot spot. It has been recommended that a minimum of 500 tumor cells be counted to determine the Ki-67 index, and a notation is made if less cells are available. Grade assigned based on Ki-67 index is typically higher than that based on mitotic count, and the case is assigned to the higher of the 2 if both methods are performed.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_important_to_note_that_there_are_a_small_group_of_well_differentiated_neuroendocrine_tumors_wi",
+          "label": "It is important to note that there are a small group of well-differentiated neuroendocrine tumors with a Ki-67 index >20% and a mitotic rate usually <20 per 10 HPF. In WHO-2010, these tumors were considered as G3 poorly differentiated neuroendocrine carcinomas. However, they have typical morphology of well-differentiated tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "previous_studies_most_on_pancreatic_neuroendocrine_tumors_have_demonstrated_that_these_tumors_have_a",
+          "label": "Previous studies (most on pancreatic neuroendocrine tumors) have demonstrated that these tumors have a worse prognosis than grade 2 (Ki-67=3-20 % and mitosis <20/10 HPF) neuroendocrine tumors, but they are not as aggressive as poorly differentiated neuroendocrine carcinomas.5 In addition, these tumors do not have the genetic abnormalities seen in poorly differentiated neuroendocrine carcinomas.6 Furthermore, unlike poorly differentiated neuroendocrine carcinomas, they are less responsive to platinum-based chemotherapy.7 In the WHO-2019 blue book of digestive system tumors and the AJCC Version 9, those with typical morphology of well-differentiated tumors are classified as “well-differentiated neuroendocrine tumor” but as grade 3 (Table 2).1,8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_recommended_grading_system_for_well_differentiated_gastroenteropancreatic_neuroendocrine_tum",
+          "label": "Table 2 Recommended Grading System for Well-Differentiated Gastroenteropancreatic Neuroendocrine Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rindi_g_kloppel_g_alhman_h_et_al_and_all_other_frascati_consensus_conference_participants_european_n",
+          "label": "Rindi G, Kloppel G, Alhman H, et al; and all other Frascati Consensus Conference participants; European Neuroendocrine Tumor Society (ENETS). TNM staging of foregut (neuro) endocrine tumors: a consensus proposal including a grading system. Virchows Arch. 2006;449(4):395-401.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tang_lh_gonen_m_hedvat_c_modlin_i_klimstra_ds_objective_quantification_of_the_ki67_proliferative_ind",
+          "label": "Tang LH, Gonen M, Hedvat C, Modlin I, Klimstra DS. Objective quantification of the Ki67 proliferative index in neuroendocrine tumors of gastroenteropancreatic system: a comparison of digital image analysis with manual methods. Am J Surg Pathol. 2012;36(12):1761-1770.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reid_md_bagci_p_ohike_n_et_al_calculation_of_the_ki67_index_in_pancreatic_neuroendocrine_tumors_a_co",
+          "label": "Reid MD, Bagci P, Ohike N, et al. Calculation of the Ki67 index in pancreatic neuroendocrine tumors: a comparative analysis of four counting methodologies. Mod Pathol. 2016;29(1):93.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shi_c_klimstra_ds_pancreatic_neuroendocrine_tumors_pathologic_and_molecular_characteristics_semin_di",
+          "label": "Shi C, Klimstra DS. Pancreatic neuroendocrine tumors: pathologic and molecular characteristics. Semin Diagn Pathol. 2014;31(6):498-511.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yachida_s_vakiani_e_white_cm_zhong_y_saunders_t_morgan_r_et_al_small_cell_and_large_cell_neuroendocr",
+          "label": "Yachida S, Vakiani E, White CM, Zhong Y, Saunders T, Morgan R et al. Small cell and large cell neuroendocrine carcinomas of the pancreas are genetically similar and distinct from well-differentiated pancreatic neuroendocrine tumors. Am J Surg Pathol. 2012;36(2):173-184.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sorbye_h_strosberg_j_baudin_e_klimstra_ds_yao_jc_gastroenteropancreatic_high_grade_neuroendocrine_ca",
+          "label": "Sorbye H, Strosberg J, Baudin E, Klimstra DS, Yao JC. Gastroenteropancreatic high-grade neuroendocrine carcinoma. Cancer. 2014;120(18):2814-2823.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "appendiceal_neuroendocrine_tumors_smaller_than_10_cm_do_not_recur_or_metastasize_whereas_those_betwe",
+          "label": "Appendiceal neuroendocrine tumors smaller than 1.0 cm do not recur or metastasize, whereas those between 1.0 and 2.0 cm rarely do.1 A recent multi-center retrospective study on a large cohort of appendiceal NET between 1-2cm suggest that right hemicolectomy is not needed and further medical imaging or assessment of histopathologic risk factors provides no added advantage.2Tumor size >2.0 cm and mesoappendiceal invasion3,4 have been correlated with nodal metastasis, but not with poor outcome.4 For these reasons, appendectomy is usually sufficient for tumors 1.0 cm or smaller, as well as many tumors between 1.0 and 2.0 cm.  More extensive procedures (e.g., right hemicolectomy) are usually reserved for patients with tumors larger than 2.0 cm or with invasion beyond the muscularis propria. Most appendiceal neuroendocrine tumors are identified incidentally, usually for the first time on histology but sometimes during gross examination. When initially identified on histology, the entire appendix including the surgical resection margin should be submitted for histology. In this scenario, the size is estimated by number of slides involved by tumor and approximate thickness of tissue slice in each block. While the thickness of the tissue slices tends to vary between labs, prosectors and cases, these typically range between 2-5mm and an average thickness of 3mm can be used to estimate the tumor size.5 Between gross examination and histologic evaluation, the largest size estimated should be ascribed to a given case for staging.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carr_nj_sobin_lh_neuroendocrine_tumors_of_the_appendix_semin_diagn_pathol_2004212108_119",
+          "label": "Carr NJ, Sobin LH. Neuroendocrine tumors of the appendix. Semin Diagn Pathol. 2004;21(2):108-119.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nesti_c_brautigam_k_benavent_m_et_al_hemicolectomy_versus_appendectomy_for_patients_with_appendiceal",
+          "label": "Nesti C, Brautigam K, Benavent M, et al. Hemicolectomy versus appendectomy for patients with appendiceal neuroendocrine tumours 1-2 cm in size: a retrospective, Europe-wide, pooled cohort study. Lancet Oncol. Feb 2023;24(2):187-194. doi:10.1016/S1470-2045(22)00750-1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "syracuse_dc_perzin_kh_price_jb_wiedel_pd_mesa_tejada_r_carcinoid_tumors_of_the_appendix_mesoappendic",
+          "label": "Syracuse DC, Perzin KH, Price JB, Wiedel PD, Mesa-Tejada R. Carcinoid tumors of the appendix: mesoappendiceal extension and nodal metastases. Ann Surg. 1979;190(1):58-63.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rossi_g_valli_r_bertolini_f_et_al_does_mesoappendix_infiltration_predict_a_worse_prognosis_in_incide",
+          "label": "Rossi G, Valli R, Bertolini F, et al. Does mesoappendix infiltration predict a worse prognosis in incidental neuroendocrine tumors of the appendix?: a clinicopathologic and immunohistochemical study of 15 cases. Am J Clin Pathol. 2003;120(5):706-711.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sheehan_dc_hrapchak_bb_theory_and_practice_of_histotechnology_2nd_ed_battelle_press_distributed_by_l",
+          "label": "Sheehan DC, Hrapchak BB. Theory and practice of histotechnology. 2nd ed. Battelle Press; Distributed by Lipshaw; 1987:xiii, 481 p., 2 p. of plates.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins_in_a_simple_appendectomy_specimen_include_the_proximal_and_circumferential_radial_margin_it_",
+          "label": "Margins in a simple appendectomy specimen include the proximal and circumferential (radial) margin. It is recommended that the proximal margin on a simple appendectomy specimen should be taken en face in order to evaluate the entire appendiceal mucosa and muscularis circumferentially. In the vast majority of cases, the appendix is entirely peritonealized (Figure, A), and the closest distance between the tumor and the mesoappendiceal resection margin represents the radial margin and should be measured. Even retrocecal appendices are usually invested by peritoneum but have adhered to the posterior cecum, either because of inflammation or tumor. Exceptionally, a retrocecal appendix may be retroperitoneal, in which case the distance between the tumor and the nonperitonealized radial resection margin is the “surgical clearance” and should be measured.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_general_the_circumferential_radial_margin_must_be_assessed_for_any_segment_of_gastrointestinal_tr",
+          "label": "In general, the circumferential (radial) margin must be assessed for any segment of gastrointestinal tract either incompletely encased or unencased by peritoneum (Figure, B and C). The posterior surface of the ascending colon portion of a right hemicolectomy specimen lacks a peritoneal covering and thus constitutes a circumferential margin, which in rare cases may be relevant in right hemicolectomy specimens resected for treatment of appendiceal neuroendocrine tumors. The circumferential (radial) margin represents the adventitial soft tissue margin closest to the deepest penetration of tumor and is created surgically by blunt or sharp dissection of the retroperitoneal or subperitoneal aspect, respectively. The distance between the tumor and circumferential (radial) margin should be reported, if applicable.  The circumferential (radial) margin is considered positive if the tumor is present at the inked nonperitonealized surface. This assessment includes tumor within a lymph node as well as direct tumor extension, but if circumferential (radial) margin positivity is based solely on intranodal tumor, this should be so stated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_mesenteric_resection_margin_is_the_only_relevant_circumferential_margin_in_segments_completely_e",
+          "label": "The mesenteric resection margin is the only relevant circumferential margin in segments completely encased by peritoneum (e.g., cecum; mesoappendiceal resection margin for the appendix) (Figure, A). Involvement of this margin should be reported even if tumor does not penetrate the serosal surface.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_mesenteric_margin_in_viscus_completely_encased_by_peritoneum_dotted_line_b_circumferential_radial_",
+          "label": "A: Mesenteric margin in viscus completely encased by peritoneum (dotted line).  B: Circumferential (radial) margin (dotted line) in viscus incompletely encased by peritoneum. C: Circumferential (radial) margin (dotted line) in viscus completely unencased by peritoneum.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_for_appendiceal_nets_of_the_american_joint_committee_on_cancer_ajcc_and_the_i",
+          "label": "The TNM staging system for appendiceal NETs of the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) is recommended.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_pt_pn_and_pm_categories_correspond_to_the_t_n_and_m_categories_except_that_pm0_no_distant_metast",
+          "label": "The pT, pN, and pM categories correspond to the T, N, and M categories except that pM0 (no distant metastasis) does not exist as a category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_trea",
+          "label": "By AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically unfeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval, and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_that_is_adherent_to_other_organs_or_structures_macroscopically_is_classified_ct4_however_if_no",
+          "label": "Tumor that is adherent to other organs or structures, macroscopically, is classified cT4. However, if no tumor is present in the adhesion and there is no serosal penetration microscopically, the classification should be pT1 to pT3.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_regional_lymph_nodes_for_the_appendix_are_the_ileocolic_lymph_nodes_histologic_examination_of_a_",
+          "label": "The regional lymph nodes for the appendix are the ileocolic lymph nodes. Histologic examination of a regional lymphadenectomy specimen will ordinarily include 12 or more lymph nodes. If the lymph node results are negative, but the number ordinarily examined is not met, classify as pN0.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "coagulative_tumor_necrosis_usually_punctate_may_indicate_more_aggressive_behavior1_and_should_be_rep",
+          "label": "Coagulative tumor necrosis, usually punctate, may indicate more aggressive behavior1 and should be reported. Appendiceal NETs are often an incidental finding in specimens removed for acute appendicitis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rindi_g_kloppel_g_couvelard_a_et_al_tnm_staging_of_midgut_and_hindgut_neuro_endocrine_tumors_a_conse",
+          "label": "Rindi G, Kloppel G, Couvelard A, et al. TNM staging of midgut and hindgut (neuro) endocrine tumors: a consensus proposal including a grading system. Virchows Arch. 2007;451(4):757-762.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

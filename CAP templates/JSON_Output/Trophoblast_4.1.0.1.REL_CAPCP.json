@@ -1,0 +1,1061 @@
+{
+  "template_id": "Trophoblast_4.1.0.1.REL_CAPCP",
+  "organ": "TROPHOBLAST",
+  "protocol_posting_date": "November 2021",
+  "standards": [
+    "AJCC-UICC 8",
+    "FIGO Cancer Report 2018"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "dilation_and_curettage",
+              "label": "Dilation and curettage"
+            },
+            {
+              "value": "simple_hysterectomy",
+              "label": "Simple hysterectomy"
+            },
+            {
+              "value": "supracervical_hysterectomy",
+              "label": "Supracervical hysterectomy"
+            },
+            {
+              "value": "radical_hysterectomy",
+              "label": "Radical hysterectomy"
+            },
+            {
+              "value": "pelvic_exenteration",
+              "label": "Pelvic exenteration"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hysterectomy_type",
+          "label": "Hysterectomy Type",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "abdominal",
+              "label": "Abdominal"
+            },
+            {
+              "value": "vaginal",
+              "label": "Vaginal"
+            },
+            {
+              "value": "vaginal_laparoscopic_assisted",
+              "label": "Vaginal, laparoscopic-assisted"
+            },
+            {
+              "value": "laparoscopic",
+              "label": "Laparoscopic"
+            },
+            {
+              "value": "laparoscopic_robotic_assisted",
+              "label": "Laparoscopic, robotic-assisted"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_integrity",
+          "label": "Specimen Integrity",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "opened",
+              "label": "Opened"
+            },
+            {
+              "value": "morcellated",
+              "label": "Morcellated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "uterine_corpus",
+              "label": "Uterine corpus: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "uterine_cervix",
+              "label": "Uterine cervix: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "hydatidiform_mole_invasive",
+              "label": "Hydatidiform mole, invasive"
+            },
+            {
+              "value": "gestational_choriocarcinoma_nos",
+              "label": "Gestational choriocarcinoma, NOS"
+            },
+            {
+              "value": "placental_site_trophoblastic_tumor",
+              "label": "Placental site trophoblastic tumor"
+            },
+            {
+              "value": "epithelioid_trophoblastic_tumor",
+              "label": "Epithelioid trophoblastic tumor"
+            },
+            {
+              "value": "malignant_trophoblastic_tumor_type_cannot_be_determined",
+              "label": "Malignant trophoblastic tumor, type cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_tissue_organ_involvement",
+          "label": "Other Tissue / Organ Involvement",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "any_organ_not_selected_is_either_not_involved_or_was_not_submitted",
+          "label": "Any organ not selected is either not involved or was not submitted.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "ovary",
+              "label": "Ovary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "fallopian_tube",
+              "label": "Fallopian tube: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "broad_ligament",
+              "label": "Broad ligament: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vagina",
+              "label": "Vagina"
+            },
+            {
+              "value": "other_organs_tissue",
+              "label": "Other organs / tissue (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "lymphovascular_invasion",
+          "label": "Lymphovascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_tumor_to_closest_margin",
+          "label": "Distance from Tumor to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "closest_margins_to_tumor",
+          "label": "Closest Margin(s) to Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_closest_margin",
+              "label": "Specify closest margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_present_at_margin",
+              "label": "Tumor present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_tumor",
+          "label": "Margin(s) Involved by Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "spleen",
+              "label": "Spleen: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "kidney",
+              "label": "Kidney: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gastrointestinal_tract",
+              "label": "Gastrointestinal tract: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "brain",
+              "label": "Brain: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lymph_node",
+              "label": "Lymph node(s) (specify)#: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Any lymph node metastasis should be classified as metastatic (M1b) disease."
+        },
+        {
+          "field_id": "number_of_distant_metastases",
+          "label": "Number of Distant Metastases",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1_to_4",
+              "label": "1 to 4"
+            },
+            {
+              "value": "5_to_8",
+              "label": "5 to 8"
+            },
+            {
+              "value": "greater_than_8",
+              "label": "Greater than 8"
+            }
+          ]
+        },
+        {
+          "field_id": "pathologic_stage_classification",
+          "label": "PATHOLOGIC STAGE CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ],
+          "condition": "pTNM, AJCC 8th Edition"
+        },
+        {
+          "field_id": "tnm_descriptors",
+          "label": "TNM Descriptors",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "r",
+              "label": "r (recurrent)"
+            },
+            {
+              "value": "y",
+              "label": "y (post-treatment)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor confined to uterus"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor extends to other genital structures (ovary, tube, vagina, broad ligaments) by metastasis or direct extension"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_distant_metastasis",
+          "label": "pM1: Distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Lung metastasis"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: All other distant metastasis"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "figo_stage",
+      "section_name": "FIGO STAGE",
+      "fields": [
+        {
+          "field_id": "figo_stage",
+          "label": "FIGO Stage",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I: Disease confined to the uterus"
+            },
+            {
+              "value": "ii",
+              "label": "II: Gestational trophoblastic tumor extends outside of the uterus, but limited to the genital structures (adnexa, vagina, broad ligament)"
+            },
+            {
+              "value": "iii",
+              "label": "III: Gestational trophoblastic tumor extends to the lungs, with or without known genital tract involvement"
+            },
+            {
+              "value": "iv",
+              "label": "IV: All other metastatic sites"
+            }
+          ],
+          "condition": "2018 FIGO Cancer Report"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "implantation_site",
+              "label": "Implantation site"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "ancillary_studies_specify",
+          "label": "Ancillary Studies (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "previous_history",
+          "label": "Previous History",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "previous_slides_should_be_reviewed_by_the_pathologist_if_it_is_deemed_necessary_by_the_gynecologist_",
+          "label": "Previous slides should be reviewed by the pathologist if it is deemed necessary by the gynecologist or pathologist for optimal evaluation of the specimen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_classification",
+          "label": "Histologic Classification",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_modified_world_health_organization_who_classification_of_gestational_trophoblastic_lesions_is_as_f",
+          "label": "A modified World Health Organization (WHO) classification of gestational trophoblastic lesions is as follows.1,2,3,4,5,6,7,8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "exaggerated_placental_site_composed_of_seemingly_increased_intermediate_trophoblast_at_the_implantat",
+          "label": "Exaggerated placental site, composed of seemingly increased intermediate trophoblast at the implantation site, is most commonly seen in uterine curettage specimens. These lesions are benign and do not require staging.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "invasive_hydatidiform_moles_are_complete_hydatidiform_moles_with_myometrial_andor_vascular_invasion_",
+          "label": "Invasive hydatidiform moles are complete hydatidiform moles with myometrial and/or vascular invasion. Metastatic moles are complete hydatidiform molar villi in extrauterine locations.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gestational_choriocarcinoma_has_a_biphasic_pattern_with_malignant_mononuclear_villous_cytotrophoblas",
+          "label": "Gestational choriocarcinoma has a biphasic pattern, with malignant mononuclear villous cytotrophoblast and intermediate trophoblast rimmed by malignant multinucleated syncytiotrophoblast. Malignant cells show marked cytologic atypia and brisk mitotic activity. While more than 50% of choriocarcinomas are preceded by a complete mole, other cases are preceded by spontaneous or induced abortion (25%), normal pregnancy (22.5%), or ectopic pregnancy (2.5%).  Most cases of intraplacental choriocarcinoma are diagnosed in the third trimester or postpartum, although they can occur in any trimester. Intramolar or early choriocarcinoma can coexist with complete or invasive mole. The molar villi are surrounded by a markedly atypical trophoblastic proliferation with a focally biphasic pattern resembling that of choriocarcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "placental_site_nodules_are_of_benign_intermediate_trophoblastic_origin_these_lesions_are_generally_b",
+          "label": "Placental site nodules are of benign intermediate trophoblastic origin. These lesions are generally benign and do not require staging. However, placental site nodules have been described in association with epithelioid trophoblastic tumors (ETT). Furthermore, there is a morphological continuum, and atypical placental site nodules present with equivocal morphological features, being larger and showing greater cellularity than is typically seen in a placental site nodule, but having insufficient features for a diagnosis of epithelioid trophoblastic tumor. Cyclin E is useful in the distinction of placental site nodule and epithelioid trophoblastic tumor, with the former showing focal weak nuclear staining, whereas the latter typically shows diffuse (>50% of tumor nuclei) intense staining. Atypical placental site nodules may show elevated cyclin E staining. Epithelioid trophoblastic tumor presents usually as a nodular lesion with destructive growth, consisting of epithelioid intermediate trophoblastic cells. In difficult cases, a Ki-67 proliferation index of > 10% is important for diagnosis. PDL1 is highly expressed in ETT.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "placental_site_trophoblastic_tumor_pstt_is_a_malignant_tumor_of_implantation_site_intermediate_troph",
+          "label": "Placental site trophoblastic tumor (PSTT) is a malignant tumor of implantation site intermediate trophoblast. Most tumors have a low mitotic count, with 1–2 mitoses/mm2 (2–4 mitoses/10 HPF of 0.5 mm in diameter and 0.2 mm2 in area). Vascular invasion in which the tumor cells replace the vascular wall of myometrial vessels is often present.  Ki-67 is expressed in 10–30% of cells.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "composite_or_mixed_trophoblastic_lesions_are_recognized_epithelioid_trophoblastic_tumors_have_been_d",
+          "label": "Composite or mixed trophoblastic lesions are recognized. Epithelioid trophoblastic tumors have been described coexistent with placental site nodule and with placental site trophoblastic tumor and choriocarcinoma either alone or in combination. Rather than specifying the “Histologic Type” as “Unclassified,” we would recommend classifying composite lesions as “Other,” with further annotation of the different components.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_in_diagnosis_of_gestational_trophoblastic_disease",
+          "label": "Immunohistochemistry in Diagnosis of Gestational Trophoblastic Disease",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_in_the_distinction_of_placental_site_nodule_placental_site_trophoblastic_tumor_",
+          "label": "Immunohistochemistry in the Distinction of, Placental Site Nodule, Placental Site Trophoblastic Tumor, Epithelioid Trophoblastic Tumor, and Choriocarcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kurman_and_shih1234_have_dissected_subpopulations_of_trophoblast_that_give_rise_to_trophoblast_tumor",
+          "label": "Kurman and Shih1,2,3,4 have dissected subpopulations of trophoblast that give rise to trophoblast tumors and tumor-like lesions. It is proposed that exaggerated placental site and placental site trophoblastic tumor arise from implantation site intermediate trophoblast, whereas placental site nodule and epithelioid trophoblastic tumor arise from chorionic-type intermediate trophoblast. Diffuse and intense immunoreactivity for both HSD3B1 (Hydroxyl-δ-5-steroid dehydrogenase) and low-molecular weight cytokeratin suggests a neoplasm of trophoblastic origin. A panel of immunohistochemical stains (Tables 1) is recommended to distinguish these entities.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_immunohistochemical_studies_in_placental_site_nodule_placental_site_trophoblastic_tumor_epit",
+          "label": "Table 1. Immunohistochemical Studies in Placental Site Nodule, Placental Site Trophoblastic Tumor, Epithelioid Trophoblastic Tumor, and Choriocarcinoma",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Mel-CAM, melanoma cell adhesion molecule, is a marker of intermediate trophoblast of implantation site origin. Percentages refer to percentage of immunopositive cells. 12% of cases reported by Kalhor showed no staining for HPL.5 Mainly in multinucleate intermediate trophoblast."
+        },
+        {
+          "field_id": "adapted_from_tsui_lien_m_et_al2_kalhor_n_et_al5_shih_im_et_al34",
+          "label": "Adapted from Tsui-Lien M et al,2 Kalhor N et al,5 Shih IM et al.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_in_the_distinction_of_intermediate_trophoblastic_tumors_choriocarcinoma_and_cer",
+          "label": "Immunohistochemistry in the Distinction of Intermediate Trophoblastic Tumors, Choriocarcinoma, and Cervical Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_immunohistochemical_staining_results_for_intermediate_trophoblastic_tumors_itt_primary_cervi",
+          "label": "Table 2. Immunohistochemical Staining Results for Intermediate Trophoblastic Tumors (ITT), Primary Cervical Carcinomas (CA), and Choriocarcinomas",
+          "required": true,
+          "type": "free_text",
+          "condition": "CC"
+        },
+        {
+          "field_id": "adapted_from_kalhor_n_et_al5_the_percentages_refer_to_the_number_of_cases_expressing_the_marker",
+          "label": "Adapted from Kalhor N et al.5 The percentages refer to the number of cases expressing the marker.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pan_k_pankeratin_ae1ae3_cea_carcinoembryonic_antigen",
+          "label": "Pan-K, Pankeratin (AE1AE3); CEA, carcinoembryonic antigen",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_notes_on_table_2",
+          "label": "Additional Notes on Table 2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "p16_cervical_carcinomas_showed_diffuse_nuclear_staining_for_this_marker_about_half_the_itts_had_vari",
+          "label": "p16: Cervical carcinomas showed diffuse nuclear staining for this marker. About half the ITTs had variable staining (1% to 75% of cells), mainly cytoplasmic.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ck56_all_cervical_carcinomas_were_positive_staining_26_to_100_of_cells_two_cases_of_itt_were_focally",
+          "label": "CK5/6: All cervical carcinomas were positive, staining 26% to 100% of cells. Two cases of ITT were focally positive (<25% of cells).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "misinterpretation_of_early_complete_hydatidiform_mole_as_partial_mole",
+          "label": "Misinterpretation of early complete hydatidiform mole as partial mole.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "over_diagnosis_of_hydatidiform_mole_in_tubal_pregnancy_because_of_florid_appearance_of_normal_early_",
+          "label": "Over diagnosis of hydatidiform mole in tubal pregnancy because of florid appearance of normal early first-trimester trophoblastic proliferation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "misdiagnosis_of_exuberant_placental_site_nonvillous_trophoblast_as_placental_site_trophoblastic_tumo",
+          "label": "Misdiagnosis of exuberant placental site nonvillous trophoblast as placental site trophoblastic tumor or choriocarcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "misdiagnosis_of_nonvillous_trophoblast_often_seen_in_the_context_of_complete_hydatidiform_mole_as_ch",
+          "label": "Misdiagnosis of nonvillous trophoblast, often seen in the context of complete hydatidiform mole, as choriocarcinoma or placental site trophoblastic tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kurman_rj_ellenson_lh_ronnett_bm_eds_gestational_trophoblastic_tumors_and_related_tumor_like_lesions",
+          "label": "Kurman RJ, Ellenson LH, Ronnett BM (Eds.) Gestational Trophoblastic tumors and related tumor-like lesions. Blaustein’s Pathology of the Female Genital Tract. 6th ed. New York, NY: Springer-Verlag; 2011.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tsui_lien_m_seidman_jd_kurman_rj_shih_im_cyclin_e_and_p16_immunoreactivity_in_epithelioid_trophoblas",
+          "label": "Tsui-Lien M, Seidman JD, Kurman RJ, Shih IM. Cyclin E and p16 immunoreactivity in epithelioid trophoblastic tumor: an aid in differential diagnosis. Am J Surg Pathol. 2006, 30:1105-1110.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shih_im_kurman_rj_p63_expression_is_useful_in_the_distinction_of_epithelioid_trophoblastic_and_place",
+          "label": "Shih IM, Kurman RJ. p63 expression is useful in the distinction of epithelioid trophoblastic and placental site trophoblastic tumors by profiling trophoblastic subpopulations. Am J Surg Pathol. 2004; 28:1177-1183.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shih_im_trophogram_an_immunohistochemistry_based_algorithmic_approach_in_the_differential_diagnosis_",
+          "label": "Shih IM: Trophogram, an immunohistochemistry-based algorithmic approach, in the differential diagnosis of trophoblastic tumors and tumor like lesions. Annals of Diagnostic Pathology. 2007; 11: 228–234.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kalhor_n_ramirez_pt_deavers_mt_malpica_a_silva_eg_immunohistochemical_studies_of_trophoblastic_tumor",
+          "label": "Kalhor N, Ramirez PT, Deavers MT, Malpica A, Silva EG. Immunohistochemical studies of trophoblastic tumors. Am J Surg Pathol. 2009; 33:633-638.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wells_m_the_pathology_of_gestational_trophoblastic_disease_recent_advances_pathology_2007_3988_96",
+          "label": "Wells M. The pathology of gestational trophoblastic disease: recent advances. Pathology. 2007; 39:88-96.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheung_an_y_hui_p_mao_t_l_et_al_gestational_trophoblastic_neoplasms_who_classification_of_tumours_ed",
+          "label": "Cheung AN-Y, Hui P, Mao T-L et al: Gestational Trophoblastic neoplasms. WHO Classification of Tumours, Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2021 Jan 10]. (WHO classification of tumours series, 5th ed.; vol. 4). Available from: https://tumourclassification.iarc.who.int/chapters/34",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hui_p_gestational_trophoblastic_tumors_a_timely_review_of_diagnostic_pathology_arch_pathol_lab_med20",
+          "label": "Hui P: Gestational Trophoblastic tumors. A timely review of diagnostic pathology. Arch Pathol Lab Med.2019; 143: 65-74.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_8th_edition_of_the_tnm_staging_system_of_the_american_joint_committee_on_cancer_ajcc_and_the_int",
+          "label": "The 8th edition of the TNM staging system of the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC)1 and the corresponding updated staging system of the International Federation of Gynecology and Obstetrics (FIGO)2, are recommended, as shown below. Both are based not only on the anatomic extent of the tumor, but on additional factors, including clinical and laboratory findings.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previ",
+          "label": "According to AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible. Gestational trophoblastic tumors do not have an N classification (see below).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (eg, when technically infeasible) and if the highest T category or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_y_r_and_a_prefixes_are_used_a",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (ie, before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_descriptors",
+          "label": "Additional Descriptors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "residual_tumor",
+          "label": "Residual Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "R"
+        },
+        {
+          "field_id": "tumor_remaining_in_a_patient_after_therapy_with_curative_intent_eg_surgical_resection_for_cure_is_ca",
+          "label": "Tumor remaining in a patient after therapy with curative intent (eg, surgical resection for cure) is categorized by a system known as R classification, shown below.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_the_surgeon_the_r_classification_may_be_useful_to_indicate_the_known_or_assumed_status_of_the_co",
+          "label": "For the surgeon, the R classification may be useful to indicate the known or assumed status of the completeness of a surgical excision. For the pathologist, the R classification is relevant to the status of the margins of a surgical resection specimen. That is, tumor involving the resection margin on pathologic examination may be assumed to correspond to residual tumor in the patient and may be classified as macroscopic or microscopic according to the findings at the specimen margin(s).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion",
+          "label": "Lymphovascular Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion_lvi_indicates_whether_microscopic_lymphovascular_invasion_is_identified_lvi_",
+          "label": "Lymphovascular invasion (LVI) indicates whether microscopic lymphovascular invasion is identified.  LVI includes lymphatic invasion, vascular invasion, or lymphovascular invasion. According to AJCC/UICC convention, LVI does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category. At times, it may be difficult to evaluate a specimen for vascular/lymphatic vessel invasion, as in cases with crush artifact or suboptimal fixation. In these cases, it can be categorized as “cannot be determined”. At other times, it may be difficult to be definitive whether vascular/lymphatic vessel invasion is present. This can include cases where retraction artifact or artifactual transfer of tumor cells is a consideration. In other cases, foci may be suspicious but not definitive for invasion. All of these situations can be categorized as “equivocal for invasion”. In cases where one cannot be definitive, a qualifying note explaining the interpretive difficulty and the extent of possible involvement is recommended, since it may help to direct medical management.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "genital_metastasis_vagina_broad_ligament_ovary_fallopian_tube_is_classified_as_t2_direct_invasion_or",
+          "label": "Genital metastasis (vagina, broad ligament, ovary, fallopian tube) is classified as T2. Direct invasion or metastasis to any nongenital structure is classified using the M classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_score_on_the_figo_modified_world_health_organization_who_prognostic_scoring_index_given_below_is",
+          "label": "The score on the FIGO-modified World Health Organization (WHO) Prognostic Scoring Index given below is used to stratify women with gestational trophoblastic neoplasia in addition to the stage group. The risk score is appended to the anatomic FIGO stage. The current FIGO classification includes an anatomic stage designated by Roman numeral I, II, III, or IV, followed by the risk factor score expressed in Arabic numerals (e.g., stage II: 4, stage IV: 9). The risk score includes factors that are not anatomic pathology. It is best assigned by the treating clinician and is not a required element in the CAP protocol.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_3_prognostic_scoring_index_for_gestational_trophoblastic_tumors12",
+          "label": "Table 3. Prognostic Scoring Index for Gestational Trophoblastic Tumors1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "low_risk_is_a_score_of_6_or_less_high_risk_is_a_score_of_7_or_greater_hcg_human_chorionic_gonadotrop",
+          "label": "Low risk is a score of 6 or less. High risk is a score of 7 or greater. HCG, human chorionic gonadotropin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_4_figo_stage_groupings",
+          "label": "Table 4. FIGO Stage Groupings#",
+          "required": true,
+          "type": "free_text",
+          "guidance": "The T and M categories are defined to correspond to the FIGO stages."
+        },
+        {
+          "field_id": "in_summary_the_following_factors_should_be_considered_and_noted_in_reporting",
+          "label": "In summary, the following factors should be considered and noted in reporting",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prior_chemotherapy_for_known_gestational_trophoblastic_tumors_should_be_reported",
+          "label": "Prior chemotherapy for known gestational trophoblastic tumors should be reported.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "benign_placental_site_lesions_exaggerated_placental_site_and_placental_site_nodule_should_be_reporte",
+          "label": "Benign placental site lesions (exaggerated placental site and placental site nodule) should be reported separately and are not staged.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_verification_of_disease_is_not_required_when_the_hcg_is_abnormally_elevated",
+          "label": "Histologic verification of disease is not required when the HCG is abnormally elevated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_contrast_to_other_sites_an_n_classification_regional_lymph_node_status_does_not_apply_to_gestatio",
+          "label": "In contrast to other sites, an N classification (regional lymph node status) does not apply to gestational trophoblastic tumors. Any lymph node metastasis should be classified as metastatic (M1b) disease.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th Ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ngan_hys_seckl_mj_berkowitz_rs_figo_cancer_report_update_on_the_diagnosis_and_management_of_gestatio",
+          "label": "Ngan HYS, Seckl MJ, Berkowitz RS: FIGO Cancer Report. Update on the diagnosis and management of gestational trophoblastic  disease. Int J Gynecol Obstet. 2018;143(Suppl 2):79-85.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

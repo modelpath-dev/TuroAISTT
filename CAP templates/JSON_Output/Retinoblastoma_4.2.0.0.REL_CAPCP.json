@@ -1,0 +1,1816 @@
+{
+  "template_id": "Retinoblastoma_4.2.0.0.REL_CAPCP",
+  "organ": "RETINOBLASTOMA",
+  "protocol_posting_date": "September 2025",
+  "standards": [
+    "AJCC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "treatment_history",
+          "label": "Treatment History",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_preoperative_therapy",
+              "label": "No known preoperative therapy"
+            },
+            {
+              "value": "preoperative_therapy_given",
+              "label": "Preoperative therapy given (specify, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen",
+          "label": "SPECIMEN",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "enucleation",
+              "label": "Enucleation"
+            },
+            {
+              "value": "partial_exenteration",
+              "label": "Partial exenteration"
+            },
+            {
+              "value": "complete_exenteration",
+              "label": "Complete exenteration"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "total_length_of_optic_nerve",
+          "label": "Total Length of Optic Nerve",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "measurement_should_include_optic_nerve_attached_to_globe_and_any_additionally_submitted_optic_nerve_",
+          "label": "Measurement should include optic nerve attached to globe and any additionally submitted optic nerve segments",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "tumor_sampling_for_molecular_studies",
+          "label": "Tumor Sampling for Molecular Studies",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site_macroscopic_examination_transillumination",
+          "label": "Tumor Site (macroscopic examination / transillumination)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "superotemporal_quadrant_of_globe",
+              "label": "Superotemporal quadrant of globe"
+            },
+            {
+              "value": "superonasal_quadrant_of_globe",
+              "label": "Superonasal quadrant of globe"
+            },
+            {
+              "value": "inferotemporal_quadrant_of_globe",
+              "label": "Inferotemporal quadrant of globe"
+            },
+            {
+              "value": "inferonasal_quadrant_of_globe",
+              "label": "Inferonasal quadrant of globe"
+            },
+            {
+              "value": "superior_quadrant_of_globe",
+              "label": "Superior quadrant of globe"
+            },
+            {
+              "value": "inferior_quadrant_of_globe",
+              "label": "Inferior quadrant of globe"
+            },
+            {
+              "value": "nasal_quadrant_of_globe",
+              "label": "Nasal quadrant of globe"
+            },
+            {
+              "value": "temporal_quadrant_of_globe",
+              "label": "Temporal quadrant of globe"
+            },
+            {
+              "value": "anterior_chamber",
+              "label": "Anterior chamber"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D",
+            "E"
+          ]
+        },
+        {
+          "field_id": "tumor_site_after_sectioning",
+          "label": "Tumor Site after Sectioning",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "superonasal",
+              "label": "Superonasal"
+            },
+            {
+              "value": "inferonasal",
+              "label": "Inferonasal"
+            },
+            {
+              "value": "superotemporal",
+              "label": "Superotemporal"
+            },
+            {
+              "value": "inferotemporal",
+              "label": "Inferotemporal"
+            },
+            {
+              "value": "superior_quadrant_of_globe",
+              "label": "Superior quadrant of globe"
+            },
+            {
+              "value": "inferior_quadrant_of_globe",
+              "label": "Inferior quadrant of globe"
+            },
+            {
+              "value": "nasal_quadrant_of_globe",
+              "label": "Nasal quadrant of globe"
+            },
+            {
+              "value": "temporal_quadrant_of_globe",
+              "label": "Temporal quadrant of globe"
+            },
+            {
+              "value": "anterior_chamber",
+              "label": "Anterior chamber"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E",
+            "F",
+            "G"
+          ]
+        },
+        {
+          "field_id": "tumor_size_after_sectioning",
+          "label": "Tumor Size after Sectioning",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "size_can_be_determined",
+              "label": "Size can be determined"
+            }
+          ],
+          "notes": [
+            "E",
+            "F",
+            "G"
+          ]
+        },
+        {
+          "field_id": "greatest_basal_diameter_of_tumor",
+          "label": "Greatest Basal Diameter of Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "basal_diameter_at_cut_edge_of_tumor",
+          "label": "Basal Diameter at Cut Edge of Tumor",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "greatest_thickness_of_tumor",
+          "label": "Greatest Thickness of Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "thickness_at_cut_edge_of_tumor",
+          "label": "Thickness at Cut Edge of Tumor",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_measurement",
+              "label": "Exact measurement: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "percentage_of_vitreous_cavity_occupied_by_tumor",
+          "label": "Percentage of Vitreous Cavity Occupied by Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_growth_pattern",
+          "label": "Tumor Growth Pattern",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "endophytic",
+              "label": "Endophytic"
+            },
+            {
+              "value": "exophytic",
+              "label": "Exophytic"
+            },
+            {
+              "value": "combined_endophytic_exophytic",
+              "label": "Combined endophytic / exophytic"
+            },
+            {
+              "value": "diffuse",
+              "label": "Diffuse"
+            },
+            {
+              "value": "anterior_diffuse",
+              "label": "Anterior diffuse"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1",
+              "label": "G1 (tumor with areas of retinocytoma [fleurettes or neuronal differentiation accounting for more than"
+            }
+          ]
+        },
+        {
+          "field_id": "half_of_tumor",
+          "label": "half of tumor])",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g2",
+              "label": "G2 (tumor with many rosettes [Flexner–Wintersteiner or Homer Wright rosettes accounting for more"
+            }
+          ]
+        },
+        {
+          "field_id": "than_half_of_tumor",
+          "label": "than half of tumor])",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g3",
+              "label": "G3 (tumor with occasional rosettes [Flexner–Wintersteiner or Homer Wright rosettes accounting for"
+            }
+          ]
+        },
+        {
+          "field_id": "less_than_half_of_tumor",
+          "label": "less than half of tumor])",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g4",
+              "label": "G4 (tumor with poorly differentiated cells without rosettes and/or with extensive areas [more than half"
+            }
+          ]
+        },
+        {
+          "field_id": "of_tumor_of_anaplasia",
+          "label": "of tumor] of anaplasia)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gx",
+              "label": "GX (grade cannot be assessed)"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_grade_comment",
+          "label": "Histologic Grade Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anaplasia_grade",
+          "label": "Anaplasia Grade",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_based_on_the_highest_level_of_anaplasia_in_the_tumor_with_at_least_30_of_the_tumor_being_able_",
+          "label": "Grade based on the highest level of anaplasia in the tumor, with at least 30% of the tumor being able to be graded.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mild",
+              "label": "Mild"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate"
+            },
+            {
+              "value": "severe",
+              "label": "Severe"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histopathologic_features_suggesting_mycn_amplification",
+          "label": "Histopathologic Features Suggesting MYCN Amplification",
+          "required": false,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "unilateral_retinoblastoma_with_more_rounded_undifferentiated_cells_with_prominent_nucleoli_and_absen",
+          "label": "Unilateral retinoblastoma with more rounded, undifferentiated cells, with prominent nucleoli, and absence of nuclear molding, differentiated rosettes, and extensive calcification. The histology of MYCN retinoblastoma is more similar to neuroblastoma than it is to RB1− / − retinoblastoma.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ]
+        },
+        {
+          "field_id": "other_ocular_structures_involved_by_tumor",
+          "label": "Other Ocular Structures Involved by Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "cornea",
+              "label": "Cornea"
+            },
+            {
+              "value": "anterior_chamber",
+              "label": "Anterior chamber"
+            },
+            {
+              "value": "iris",
+              "label": "Iris"
+            },
+            {
+              "value": "angle",
+              "label": "Angle"
+            },
+            {
+              "value": "lens",
+              "label": "Lens"
+            },
+            {
+              "value": "ciliary_body",
+              "label": "Ciliary body"
+            },
+            {
+              "value": "vitreous",
+              "label": "Vitreous"
+            },
+            {
+              "value": "retina",
+              "label": "Retina"
+            },
+            {
+              "value": "sub_retinal_space",
+              "label": "Sub-retinal space"
+            },
+            {
+              "value": "sub_retinal_pigment_epithelial_space",
+              "label": "Sub-retinal pigment epithelial space"
+            },
+            {
+              "value": "optic_nerve_head",
+              "label": "Optic nerve head"
+            },
+            {
+              "value": "choroid_minimal",
+              "label": "Choroid, minimal (solid tumor nest less than 3 mm in maximum diameter [width or thickness])"
+            },
+            {
+              "value": "choroid_massive",
+              "label": "Choroid, massive (solid tumor nest 3 mm or more in maximum diameter [width or thickness])"
+            },
+            {
+              "value": "sclera",
+              "label": "Sclera (direct invasion into inner half)"
+            },
+            {
+              "value": "sclera",
+              "label": "Sclera (direct invasion into outer half without episcleral invasion)"
+            },
+            {
+              "value": "sclera",
+              "label": "Sclera (direct invasion into outer half with episcleral invasion)"
+            },
+            {
+              "value": "sclera",
+              "label": "Sclera (within intrascleral emissarial canals)"
+            },
+            {
+              "value": "vortex_vein",
+              "label": "Vortex vein"
+            },
+            {
+              "value": "orbit",
+              "label": "Orbit"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "extent_of_optic_nerve_invasion",
+          "label": "Extent of Optic Nerve Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "anterior_to_lamina_cribrosa",
+              "label": "Anterior to lamina cribrosa"
+            },
+            {
+              "value": "within_lamina_cribrosa",
+              "label": "Within lamina cribrosa"
+            },
+            {
+              "value": "posterior_to_lamina_cribrosa_but_not_to_end_of_nerve",
+              "label": "Posterior to lamina cribrosa but not to end of nerve"
+            },
+            {
+              "value": "to_cut_end_of_optic_nerve",
+              "label": "To cut end of optic nerve"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            },
+            {
+              "value": "tumor_present_at_surgical_margin_of_optic_nerve",
+              "label": "Tumor present at surgical margin of optic nerve"
+            },
+            {
+              "value": "extrascleral_extension_present",
+              "label": "Extrascleral extension present (for enucleation specimens)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "bone_marrow",
+              "label": "Bone marrow: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cerebrospinal_fluid",
+              "label": "Cerebrospinal fluid: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cns_parenchyma",
+              "label": "CNS parenchyma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of intraocular tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Intraocular tumor(s) without any local invasion, focal choroidal invasion, or pre- or intralaminar"
+            }
+          ],
+          "guidance": "Tumors with focal choroidal invasion ONLY (not meeting criteria for pT3a) without concomitant optic nerve invasion and tumors with pre-or intralaminar involvement of the optic nerve head ONLY without concomitant choroidal invasion are included in pT1 category."
+        },
+        {
+          "field_id": "pt2_intraocular_tumors_with_local_invasion",
+          "label": "pT2: Intraocular tumor(s) with local invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Concomitant focal choroidal invasion and pre- or intralaminar involvement of the optic nerve"
+            }
+          ]
+        },
+        {
+          "field_id": "head",
+          "label": "head",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2b",
+              "label": "pT2b: Tumor invasion of stroma of iris and / or trabecular meshwork and / or Schlemm’s canal"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_intraocular_tumors_with_significant_local_invasion",
+          "label": "pT3: Intraocular tumor(s) with significant local invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Massive choroidal invasion (greater than 3 mm in largest diameter, or multiple foci of focal"
+            }
+          ]
+        },
+        {
+          "field_id": "choroidal_involvement_totaling_greater_than_3_mm_or_any_full_thickness_choroidal_involvement",
+          "label": "choroidal involvement totaling greater than 3 mm, or any full-thickness choroidal involvement)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3b",
+              "label": "pT3b: Retrolaminar invasion of the optic nerve head, not involving the transected end of the optic"
+            }
+          ]
+        },
+        {
+          "field_id": "nerve",
+          "label": "nerve",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3c",
+              "label": "pT3c: Any partial-thickness involvement of the sclera within the inner two thirds"
+            },
+            {
+              "value": "pt3d",
+              "label": "pT3d: Full-thickness invasion into the outer third of the sclera and / or invasion into or around"
+            }
+          ]
+        },
+        {
+          "field_id": "emissary_channels",
+          "label": "emissary channels",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Evidence of extraocular tumor: tumor at the transected end of the optic nerve, tumor in the"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node involvement"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Regional lymph node involvement"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_distant_metastasis_with_histopathologic_confirmation",
+          "label": "pM1: Distant metastasis with histopathologic confirmation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Histopathologic confirmation of tumor at any distant site (e.g., bone marrow, liver, or other)"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Histopathologic confirmation of tumor in the cerebrospinal fluid or CNS parenchyma"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "heritable_trait_h_status",
+          "label": "Heritable Trait (H) Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "hx",
+              "label": "HX:Unknown or insufficient evidence of a constitutional RB1 gene mutation"
+            },
+            {
+              "value": "h0",
+              "label": "H0: Normal RB1 alleles in blood tested with demonstrated high-sensitivity assays"
+            },
+            {
+              "value": "h1",
+              "label": "H1: Bilateral retinoblastoma, any retinoblastoma with an intracranial primitive neuroectodermal tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "ie_trilateral_retinoblastoma_patient_with_family_history_of_retinoblastoma_or_molecular_definition_o",
+          "label": "(i.e., trilateral retinoblastoma), patient with family history of retinoblastoma, or molecular definition of",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "L"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "calcifications",
+              "label": "Calcifications"
+            },
+            {
+              "value": "mitotic_rate",
+              "label": "Mitotic rate (specify number of mitoses per mm2): _________________ mitoses per mm2",
+              "has_free_text": true
+            },
+            {
+              "value": "apoptosis",
+              "label": "Apoptosis"
+            },
+            {
+              "value": "necrosis",
+              "label": "Necrosis"
+            },
+            {
+              "value": "basophilic_deposits",
+              "label": "Basophilic deposits"
+            },
+            {
+              "value": "inflammatory_cells",
+              "label": "Inflammatory cells"
+            },
+            {
+              "value": "hemorrhage",
+              "label": "Hemorrhage (specify site): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retinal_detachment",
+              "label": "Retinal detachment"
+            },
+            {
+              "value": "neovascularization",
+              "label": "Neovascularization (specify site): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "treatment_effect",
+              "label": "Treatment effect (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "rb1_gene_testing",
+          "label": "RB1 Gene Testing",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "method",
+              "label": "Method (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "result",
+              "label": "Result (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_studies_specify",
+          "label": "Other Studies (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cytologic_and_biopsy_specimens_are_rarely_obtained_from_eyes_with_suspected_retinoblastoma_owing_to_",
+          "label": "Cytologic and biopsy specimens are rarely obtained from eyes with suspected retinoblastoma owing to the potential risk of tumor seeding. An anterior chamber paracentesis may be performed, if indicated by clinical findings, and is not associated with risk of tumor seeding.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "karcioglu_za_gordon_ra_karcioglu_gl_tumor_seeding_in_ocular_fine_needle_aspiration_biopsy_ophthalmol",
+          "label": "Karcioglu ZA, Gordon RA, Karcioglu GL. Tumor seeding in ocular fine needle aspiration biopsy. Ophthalmology. 1985; 92:1763-1767.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stevenson_ke_hungerford_j_garner_a_local_extraocular_extension_of_retinoblastoma_following_intraocul",
+          "label": "Stevenson KE, Hungerford J, Garner A. Local extraocular extension of retinoblastoma following intraocular surgery. Br J Ophthalmol. 1989; 73:739-742.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_minimum_recommended_fixation_time_for_whole_globes_with_intraocular_tumors_is_48_hours_the_globe",
+          "label": "The minimum recommended fixation time for whole globes with intraocular tumors is 48 hours. The globe should be fixed in an adequate volume of fixative with a 10:1 ratio of fixative volume to specimen volume recommended. Incisions or windows in the globe are not necessary for adequate penetration of fixative and are not recommended. Injection of fixative into the globe is also not recommended. These procedures induce artifacts for final interpretation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "genetic_studies_may_be_requested_on_neoplastic_tissue_and_should_be_harvested_prior_to_fixation1_ide",
+          "label": "Genetic studies may be requested on neoplastic tissue and should be harvested prior to fixation.1 Identification of RB1 mutations and other genetic studies in tumor tissue are difficult with formalin-fixed tissue.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_surgical_margin_of_the_optic_nerve_should_be_obtained_prior_to_opening_the_globe_once_tissue_is_",
+          "label": "The surgical margin of the optic nerve should be obtained prior to opening the globe . Once tissue is harvested for genetic studies, the globe can be fixed prior to completing macroscopic examination. The appropriate materials/medium required by the laboratory performing genetic testing should be obtained prior to the procedure.1,2",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shields_ja_shields_cl_de_potter_p_enucleation_technique_for_children_with_retinoblastoma_j_ped_ophth",
+          "label": "Shields JA, Shields CL, De Potter P. Enucleation technique for children with retinoblastoma. J Ped Ophthalmol Strabismus. 1992; 29:213-215.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sastre_x_chantada_gl_doz_f_wilson_mw_de_davila_mtg_rodrıguez_galindoc_chintagumpala_m_chévez_barrios",
+          "label": "Sastre, X; Chantada, GL; Doz, F; Wilson, MW; de Davila, MTG; Rodrıguez-Galindo,C; Chintagumpala, M; Chévez-Barrios P.; for the International Retinoblastoma Staging Working Group: Consensus Pathology Processing Guidelines for the Examination of Enucleated Eyes with Retinoblastoma. A Report from the International Retinoblastoma Staging Working Group. Arch Pathol Lab Med. 2009 Aug;133(8):1199-202.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_orientation_of_a_globe_may_be_determined_by_identifying_extraocular_muscle_insertions_optic_nerv",
+          "label": "The orientation of a globe may be determined by identifying extraocular muscle insertions, optic nerve and other landmarks as illustrated in Figure 1. The terms temporal and nasal are generally used in place of lateral and medial with reference to ocular anatomy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_anatomic_landmarks_of_the_posterior_aspect_of_the_globe_right_eye_the_position_of_the_infer",
+          "label": "Figure 1. Anatomic landmarks of the posterior aspect of the globe (right eye). The position of the inferior oblique muscle relative to the optic nerve is most helpful in orienting the globe. The inferior oblique muscle insertion is located temporal (lateral) to the optic nerve on the sclera, and its fibers travel inferonasally from its insertion. The long posterior ciliary artery is often seen as a blue-gray line in the sclera on either side of the optic nerve and marks the horizontal meridian of the globe. Reprinted with permission from WB Saunders Company.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_globe_is_generally_sectioned_in_the_meridian_that_includes_the_largest_or_the_most_informative_p",
+          "label": "The globe is generally sectioned in the meridian that includes the largest (or the most informative) portion of the tumor with care to include the pupil and optic nerve in the cassette to be submitted for microscopic examination (Figure 2). The surgical margin of the optic nerve should be sectioned and submitted prior to sectioning the globe to ensure that intraocular malignant cells do not contaminate this important surgical margin.1,2   Retinoblastoma is an extremely friable tumor. Each calotte should also be sampled. The calottes should be breadloafed in anterior-posterior direction and submitted on edge in a separate cassette for each calotte for processing as shown in Figure 3.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_total_4_cassettes_are_submitted_the_optic_nerve_stump_the_p_o_section_and_the_2_calottes_multiple",
+          "label": "In total, 4 cassettes are submitted: the optic nerve stump, the P-O section, and the 2 calottes.  Multiple sections should be examined, with special attention to sections containing optic nerve and tumor. The pupil optic nerve (P-O) segment should be histologically sectioned from the periphery to the center of the optic nerve along the various levels to determine tumor extension to evaluate if tumor passes the lamina cribrosa and if it reaches the meninges. Generally, the P-O segment is sectioned every 100 to 150 microns (each section being about 5 microns thick), for a total of about 10 to 20 sections. Three levels from calottes and optic nerve stump are usually sufficient for examination.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_the_most_common_methods_of_sectioning_a_globe_after_transillumination_the_tumor_base_is_mar",
+          "label": "Figure 2. The most common methods of sectioning a globe. After transillumination, the tumor base is marked, if possible, and included in the pupil-optic (p-o) nerve section and submitted for processing. The meridian in which the globe was sectioned should be included in the gross description of the pathology report. It is not uncommon to induce an artifactitious retinal detachment while sectioning the globe. This can be minimized by gentle handling and by avoiding a sawing motion with the blade. Reprinted with permission from WB Saunders Company.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_calotte_sampling_from_grossniklaus_he_reproduced_with_kind_permission_of_springer_sciencebu",
+          "label": "Figure 3. Calotte sampling. From Grossniklaus HE.  Reproduced with kind permission of Springer Science+Business Media.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shields_ja_shields_cl_de_potter_p_enucleation_technique_for_children_with_retinoblastoma_j_ped_ophth",
+          "label": "Shields JA, Shields CL, De Potter P. Enucleation technique for children with retinoblastoma. J Ped Ophthalmol Strabismus. 1992; 29:213-215.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brown_hh_wells_jr_grossniklaus_he_chapter_11_tissue_preparation_for_pathologic_examination_in_grossn",
+          "label": "Brown HH, Wells JR, Grossniklaus HE. Chapter 11. Tissue preparation for pathologic examination. In: Grossniklaus HE, ed. Pocket Guide to Ocular Oncology and Pathology. Heidelberg, Germany: Springer; 2013.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sastre_x_chantada_gl_doz_f_wilson_mw_de_davila_mtg_rodrıguez_galindoc_chintagumpala_m_chévez_barrios",
+          "label": "Sastre, X; Chantada, GL; Doz, F; Wilson, MW; de Davila, MTG; Rodrıguez-Galindo,C; Chintagumpala, M; Chévez-Barrios P.; for the International Retinoblastoma Staging Working Group: Consensus Pathology Processing Guidelines for the Examination of Enucleated Eyes with Retinoblastoma. A Report from the International Retinoblastoma Staging Working Group. Arch Pathol Lab Med. 2009 Aug;133(8):1199-202.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chévez_barrios_p_eagle_rc_jr_krailo_m_piao_j_albert_dm_gao_y_vemuganti_g_ali_mj_khetan_v_honavar_sg_",
+          "label": "Chévez-Barrios P, Eagle RC Jr, Krailo M, Piao J, Albert DM, Gao Y, Vemuganti G, Ali MJ, Khetan V, Honavar SG, O'Brien J, Leahey AM, Matthay K, Meadows A, Chintagumpala M. Study of Unilateral Retinoblastoma with and without Histopathologic High-Risk Features and the Role of Adjuvant Chemotherapy: A Children's Oncology Group Study. J Clin Oncol. 2019 Sep 20: JCO1801808. doi: 10.1200/JCO.18.01808. [Epub ahead of print] PubMed PMID: 31539297",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_collect_the_tumor_specimen_the_optic_nerve_margin_about_2_mm_thick_cross_section_of_the_margin_sh",
+          "label": "To collect the tumor specimen, the optic nerve margin (about 2 mm thick cross-section of the margin) should be removed before opening the globe to prevent the optic nerve from accidentally becoming contaminated with artifactual clumps of tumor cells (so-called “floaters”). Harvesting may be performed by the surgeon or pathologist. The surgeon should first ink the surgical margin of the optic nerve, then cut the optic nerve stump off from the sclera with a sharp razor about 2-5 mm behind the globe (depending on the length of the optic nerve to leave about 2/3 of the nerve attached and submit the 1/3 separately). The optic nerve stump, which should be kept separate from the globe, should be placed into a jar of 10% buffered formaldehyde. Then, a sample of tumor should be obtained by opening a small sclero-choroidal window adjacent to the tumor near the equator with a 6- to 8-mm corneal trephine. Once the opening into the vitreous chamber is established, tumor tissue should be gently removed with forceps and scissors. It is best to leave a hinge on 1 side of the scleral flap so that it can be closed with 1 or 2 suture(s) following the removal of tumor sample. This is done in an attempt to maintain the overall spherical architecture of the specimen during fixation. Some surgeons prefer to perform needle biopsies of the tumor and in this instance the optic nerve margin should also be taken in advance of the biopsy to avoid contamination. Unless performed carefully, this approach may induce distortion of the intraocular structures and possible artifacts that may preclude adequate evaluation of high-risk features. For the pathologist, it is preferably to gross the eye under a stereoscopic microscope for identification of least necrotic tumor for harvesting. First, the eye should be transilluminated to identify the tumor and mark the edge of the tumor with a marker. The incision of the sclera to open the sclero-choroidal window should be done at least 2 mm from the optic nerve, in the equator and at the edge of the shadow (see Figure 4). The incision should be performed parallel to the final section to obtain a pupil-optic nerve (P-O) segment (see Note E). The globe should be placed in a second jar of formalin (separate from the optic nerve stump) and be allowed to fix for at least 24 to 48 hours.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_a_transillumination_of_the_globe_to_identify_the_tumor_shadow_which_is_circled_with_the_ink",
+          "label": "Figure 4. (a) Transillumination of the globe to identify the tumor shadow, which is circled with the ink. Note the incision site (arrow) made at the edge of the tumor shadow for tumor harvesting (b,c), in parallel with the two incisions (c) to create a central pupil-optic nerve (P-O) segment (blue shadow). Courtesy of Dr. P. Chévez-Barrios.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sastre_x_chantada_gl_doz_f_wilson_mw_de_davila_mtg_rodrıguez_galindoc_chintagumpala_m_chévez_barrios",
+          "label": "Sastre, X; Chantada, GL; Doz, F; Wilson, MW; de Davila, MTG; Rodrıguez-Galindo,C; Chintagumpala, M; Chévez-Barrios P.; for the International Retinoblastoma Staging Working Group: Consensus Pathology Processing Guidelines for the Examination of Enucleated Eyes with Retinoblastoma. A Report from the International Retinoblastoma Staging Working Group. Arch Pathol Lab Med. 2009 Aug;133(8):1199-202.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_ay_milman_t_tumors_of_the_eye_in_afip_atlas_of_tumor_pathology_5th_se",
+          "label": "Folberg R, Chévez-Barrios P, Lin AY, Milman T. Tumors of the eye. In: AFIP Atlas of Tumor Pathology. 5th Ser. Arlington, VA: American Registry of Pathology; 2020 (in press).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_there_is_no_need_for_fresh_tissue_sampling_the_enucleated_globe_should_simply_be_fixed_in_10_buff",
+          "label": "If there is no need for fresh tissue sampling, the enucleated globe should simply be fixed in 10% buffered formaldehyde for at least 24 and preferably 48 hours. When the fixed globe is examined by the pathologist, if the optic nerve was not previously amputated in the operative room, that should be performed first as described above. The surgical margin of the nerve stump should be embedded face down in paraffin for sectioning (ie, thereby obtaining cross-sections of the nerve, starting at the surgical margin). Then, the eye itself is sectioned (See Note E).  First, a section should be made that extends from pupil through the optic nerve (the “P-O” section), which contains the center of the optic nerve with all the optic nerve structures (optic nerve head, lamina cribrosa, and postlaminar optic nerve). Preferably this plane should bisect the largest dimension of the tumor, previously identified by transillumination and during clinical examination. This section is critical for evaluation of the optic nerve for tumor invasion. The P-O section and minor calottes, each sectioned in a breadloaf fashion in anterior-posterior direction (See Note E) are then embedded in paraffin.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_a_y_millman_t_tumor_of_the_neurosensory_retina_and_retinal_pigment_ep",
+          "label": "Folberg R, Chévez-Barrios P, Lin A Y, Millman T. Tumor of the neurosensory retina and retinal pigment epithelium. In: Tumors of the Eye and Ocular Adnexa, Fifth Series of the AFIP Atlases of Tumor and Non-tumor Pathology. Arlington, Virginia: American Registry of Pathology; 2020. p. 191-232.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "endophytic_growth_pattern_indicates_growth_from_the_inner_retinal_surface_into_the_vitreous_cavity_e",
+          "label": "Endophytic growth pattern indicates growth from the inner retinal surface into the vitreous cavity. Exophytic tumors grow primarily from the outer surface of the retina into the subretinal space toward the choroid. Mixed growth pattern exhibits features of both endophytic and exophytic growth. Diffuse infiltrating tumors grow laterally within the retina without significant thickening.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eagle_rc_jr_chévez_barrios_p_li_b_al_hussaini_m_wilson_m_tumours_of_the_neurosensory_retina_in_gross",
+          "label": "Eagle R.C. Jr, Chévez-Barrios P, Li B, Al Hussaini M, Wilson M. Tumours of the neurosensory retina. In: Grossniklaus HE, Eberhart CG, Kivelä TT, eds. WHO Classification of Tumours of the Eye, 4th edition. Lyon: International Agency for Research on Cancer; 2018;111-117.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histopathologic_features_of_retinoblastoma_include_small_round_cells_staining_blue_on_hematoxylin_eo",
+          "label": "Histopathologic features of retinoblastoma include small round cells staining blue on hematoxylin-eosin. Flexner-Wintersteiner rosettes (typical for retinoblastoma) and Homer-Wright rosettes (characteristic of neuroectodermal tumors) both occur. Tumors with many Flexner-Wintersteiner rosettes (accounting for more than half of the tumor) are graded as moderately differentiated. Some tumors show photoreceptor-like differentiation (fleurettes) or neuronal differentiation without mitoses or apoptosis, which is evidence of an underlying premalignant lesion: retinocytoma.1,2,3,4 It is not uncommon to find a retinocytomatous area at the base of the tumor.5 Retinocytomatous areas are more resistant to chemotherapy and, occasionally, only the retinocytomatous part may remain viable, surrounded by calcifications, gliosis, and debris from the regressed retinoblastoma that it spawned (tumor regression scar). Tumors with retinocytomatous areas accounting for more than half of the tumor are graded as well-differentiated. Tumors that show no fleurettes or rosettes are graded as poorly differentiated. The nuclei of poorly differentiated tumors may show anaplasia.6 Rarely, unilateral retinoblastoma tumors show a loose cellular pattern with round nuclei and prominent multiple nucleoli indicative of MYCN amplification and normal RB1 alleles.7 Retinoblastoma undergoes pathognomonic dystrophic calcification. Small tumors initially are limited by the retinal boundaries (Bruch’s membrane and the inner limiting membrane). As the tumor grows, it spreads into the adjacent vitreous, subretinal space, underlying choroid, optic nerve, or anterior segment (iris, trabecular meshwork, or Schlemm’s canal).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gallie_bl_ellsworth_rm_abramson_dh_phillips_ra_retinoma_spontaneous_regression_of_retinoblastoma_or_",
+          "label": "Gallie BL, Ellsworth RM, Abramson DH, Phillips RA. Retinoma: spontaneous regression of retinoblastoma or benign manifestation of the mutation? Br J Cancer. 1982;45(4):513-521.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dimaras_h_khetan_v_halliday_w_et_al_loss_of_rb1_induces_non_proliferative_retinoma_increasing_genomi",
+          "label": "Dimaras H, Khetan V, Halliday W, et al. Loss of RB1 induces non-proliferative retinoma: increasing genomic instability correlates with progression to retinoblastoma. Hum Mol Genet. 2008;17(10):1363-1372.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eagle_rc_jr_chévez_barrios_p_li_b_al_hussaini_m_wilson_m_tumours_of_the_neurosensory_retina_in_gross",
+          "label": "Eagle R.C. Jr, Chévez-Barrios P, Li B, Al Hussaini M, Wilson M. Tumours of the neurosensory retina. In: Grossniklaus HE, Eberhart CG, Kivelä TT, eds. WHO Classification of Tumours of the Eye, 4th edition. Lyon: International Agency for Research on Cancer; 2018;111-117.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_a_y_millman_t_tumor_of_the_neurosensory_retina_and_retinal_pigment_ep",
+          "label": "Folberg R, Chévez-Barrios P, Lin A Y, Millman T. Tumor of the neurosensory retina and retinal pigment epithelium. In: Tumors of the Eye and Ocular Adnexa, Fifth Series of the AFIP Atlases of Tumor and Non-tumor Pathology. Arlington, Virginia: American Registry of Pathology; 2020. p. 191-232.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eagle_rc_jr_high_risk_features_and_tumor_differentiation_in_retinoblastoma_a_retrospective_histopath",
+          "label": "Eagle RC Jr. High-risk features and tumor differentiation in retinoblastoma: a retrospective histopathologic study. Arch Pathol Lab Med. 2009;133(8):1203-1209.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mendoza_pr_specht_cs_hubbard_gb_et_al_histopathologic_grading_of_anaplasia_in_retinoblastoma_am_j_op",
+          "label": "Mendoza PR, Specht CS, Hubbard GB, et al. Histopathologic grading of anaplasia in retinoblastoma. Am J Ophthalmol. 2015;159(4):764-776.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rushlow_de_mol_bm_kennett_jy_et_al_characterisation_of_retinoblastomas_without_rb1mutations_genomic_",
+          "label": "Rushlow DE, Mol BM, Kennett JY, et al. Characterisation of retinoblastomas without RB1mutations: genomic, gene expression, and clinical studies. Lancet Oncol. 2013;14(4):327-334.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "choroidal_invasion_the_presence_and_the_extent_focal_versus_see_below_for_definition_of_choroidal_in",
+          "label": "Choroidal invasion: The presence and the extent (focal versus -see below for definition) of choroidal invasion by tumor should be stated. Differentiation should be made between true choroidal invasion and artifactual invasion due to seeding of fresh tumor cells during post-enucleation retrieval of tumor tissue and/or gross sectioning.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "artifactual_invasion_is_identified_when_there_are_groups_of_tumor_cells_present_in_the_open_spaces_b",
+          "label": "Artifactual invasion is identified when there are groups of tumor cells present in the open spaces between intraocular structures, extraocular tissues and/or subarachnoid space.1,2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "true_invasion_is_defined_as_1_or_more_solid_nests_of_tumor_cells_that_fills_or_replaces_the_choroid_",
+          "label": "True invasion is defined as 1 or more solid nests of tumor cells that fills or replaces the choroid and has pushing borders. Note: Invasion of the sub-retinal pigment epithelium (RPE) space, where tumor cells are present under the RPE (but not beyond Bruch’s membrane into the choroid) is not choroidal invasion.1,2,3,4\n\nFocal choroidal invasion is defined as a solid nest of tumor that measures less than 3 mm in maximum diameter (width or thickness).1,2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "massive_choroidal_invasion_is_defined_as_a_solid_tumor_nest_3_mm_or_more_in_maximum_diameter_width_o",
+          "label": "Massive choroidal invasion is defined as a solid tumor nest 3 mm or more in maximum diameter (width or thickness) in contact with the underlying sclera.1,2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "optic_nerve_invasion_is_defined_by_tumor_infiltrating_the_optic_nerve_in_any_of_its_portions_pre_lam",
+          "label": "Optic nerve invasion is defined by tumor infiltrating the optic nerve in any of its portions (pre-laminar, laminar or post-laminar and optic nerve margin and meninges). To evaluate optic nerve invasion complete sections of the nerve that pass through the center (central vessels present at lamina cribrosa) should be reviewed. The exact length of the optic nerve invasion is measured vertically from the level of Bruchs membrane.1,2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_a_y_millman_t_tumor_of_the_neurosensory_retina_and_retinal_pigment_ep",
+          "label": "Folberg R, Chévez-Barrios P, Lin A Y, Millman T. Tumor of the neurosensory retina and retinal pigment epithelium. In: Tumors of the Eye and Ocular Adnexa, Fifth Series of the AFIP Atlases of Tumor and Non-tumor Pathology. Arlington, Virginia: American Registry of Pathology; 2020. p. 191-232.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sastre_x_chantada_gl_doz_f_wilson_mw_de_davila_mtg_rodrıguez_galindoc_chintagumpala_m_chévez_barrios",
+          "label": "Sastre, X; Chantada, GL; Doz, F; Wilson, MW; de Davila, MTG; Rodrıguez-Galindo,C; Chintagumpala, M; Chévez-Barrios P.; for the International Retinoblastoma Staging Working Group: Consensus Pathology Processing Guidelines for the Examination of Enucleated Eyes with Retinoblastoma. A Report from the International Retinoblastoma Staging Working Group. Arch Pathol Lab Med. 2009 Aug;133(8):1199-202.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chévez_barrios_p_eagle_rc_jr_krailo_m_piao_j_albert_dm_gao_y_vemuganti_g_ali_mj_khetan_v_honavar_sg_",
+          "label": "Chévez-Barrios P, Eagle RC Jr, Krailo M, Piao J, Albert DM, Gao Y, Vemuganti G, Ali MJ, Khetan V, Honavar SG, O'Brien J, Leahey AM, Matthay K, Meadows A, Chintagumpala M. Study of Unilateral Retinoblastoma with and without Histopathologic High-Risk Features and the Role of Adjuvant Chemotherapy: A Children's Oncology Group Study. J Clin Oncol. 2019 Sep 20: JCO1801808. doi: 10.1200/JCO.18.01808. [Epub ahead of print] PubMed PMID: 31539297",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eagle_rc_jr_chévez_barrios_p_li_b_al_hussaini_m_wilson_m_tumours_of_the_neurosensory_retina_in_gross",
+          "label": "Eagle R.C. Jr, Chévez-Barrios P, Li B, Al Hussaini M, Wilson M. Tumours of the neurosensory retina. In: Grossniklaus HE, Eberhart CG, Kivelä TT, eds. WHO Classification of Tumours of the Eye, 4th edition. Lyon: International Agency for Research on Cancer; 2018;111-117.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_american_joint_committee_on_cancer_ajcc_and_the_international_union_against_cancer_uicc_tnm_stag",
+          "label": "The American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) TNM staging system for retinoblastoma is shown below.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_trea",
+          "label": "By AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. It is not uncommon to receive an eye of histopathologic examination that has been enucleated after failed conservative treatment such as chemoreduction or intra-arterial chemosurgery combined with focal treatments and radiotherapy. In such cases, the symbol “y” referring to a treated tumor and/or the symbol “r” referring to a recurrent tumor may be added. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (eg, when technically unfeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.\n\nThe “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (ie, before initiation of neoadjuvant therapy).\n\nThe “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval, and is identified by the “r” prefix: rTNM.\n\nThe “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_descriptors",
+          "label": "Additional Descriptors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "residual_tumor_r_tumor_remaining_in_a_patient_after_therapy_with_curative_intent_eg_surgical_resecti",
+          "label": "Residual Tumor (R)\nTumor remaining in a patient after therapy with curative intent (eg, surgical resection for cure) is categorized by a system known as R classification, shown below.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_the_surgeon_the_r_classification_may_be_useful_to_indicate_the_known_or_assumed_status_of_the_co",
+          "label": "For the surgeon, the R classification may be useful to indicate the known or assumed status of the completeness of a surgical excision. For the pathologist, the R classification is relevant to the status of the margins of a surgical resection specimen. That is, tumor involving the resection margin on pathologic examination may be assumed to correspond to residual tumor in the patient and may be classified as macroscopic or microscopic according to the findings at the specimen margin(s).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "t_category_considerations_lymph_vascular_invasion_lvi_lvi_indicates_whether_microscopic_lymph_vascul",
+          "label": "T Category Considerations \n\nLymph-Vascular Invasion (LVI)\nLVI indicates whether microscopic lymph-vascular invasion is identified in the pathology report. LVI includes lymphatic invasion, vascular invasion, or lymph-vascular invasion. By AJCC/UICC convention, LVI does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category.\n\nClinical TNM Classifications:\n\nPrimary Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "T"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "Regional Lymph Nodes",
+          "required": true,
+          "type": "free_text",
+          "condition": "N"
+        },
+        {
+          "field_id": "metastasis",
+          "label": "Metastasis",
+          "required": true,
+          "type": "free_text",
+          "condition": "M"
+        },
+        {
+          "field_id": "definition_of_heritable_trait",
+          "label": "Definition of Heritable Trait",
+          "required": true,
+          "type": "free_text",
+          "condition": "H"
+        },
+        {
+          "field_id": "clinical_stage",
+          "label": "Clinical Stage",
+          "required": true,
+          "type": "free_text",
+          "condition": "cTNM"
+        },
+        {
+          "field_id": "pathologic_stage",
+          "label": "Pathologic Stage",
+          "required": true,
+          "type": "free_text",
+          "condition": "pTNM"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brown_hh_wells_jr_grossniklaus_he_chapter_11_tissue_preparation_for_pathologic_examination_in_grossn",
+          "label": "Brown HH, Wells JR, Grossniklaus HE. Chapter 11. Tissue preparation for pathologic examination. In: Grossniklaus HE, ed. Pocket Guide to Ocular Oncology and Pathology. Heidelberg, Germany: Springer; 2013.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_features_with_prognostic_significance_for_survival_include_the_following_invasion_of_opti",
+          "label": "Histologic features with prognostic significance for survival include the following: invasion of optic nerve, particularly if tumor is present at the surgical margin (most important feature); invasion of sclera; invasion of choroid; tumor size; basophilic staining of tumor vessels; seeding of vitreous; degree of differentiation; involvement of anterior segment; and growth pattern.1,2,3,4,5,6,7,8 This list should not be confused with the Reese-Ellsworth classification, which is intended as a predictor for visual outcome, not survival.9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "redler_ld_ellsworth_rm_prognostic_importance_of_choroidal_invasion_in_retinoblastoma_arch_ophthalmol",
+          "label": "Redler LD, Ellsworth RM. Prognostic importance of choroidal invasion in retinoblastoma. Arch Ophthalmol. 1973; 90:294-296.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kopelman_je_mclean_iw_multivariate_analysis_of_clinical_and_histological_risk_factors_for_metastasis",
+          "label": "Kopelman JE, McLean IW. Multivariate analysis of clinical and histological risk factors for metastasis in retinoblastoma [abstract]. Invest Ophthalmol Vis Sci. 1983;24(ARVO suppl):50.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kopelman_je_mclean_iw_multivariate_analysis_of_risk_factors_for_metastasis_in_retinoblastoma_treated",
+          "label": "Kopelman JE, McLean IW. Multivariate analysis of risk factors for metastasis in retinoblastoma treated by enucleation. Ophthalmology. 1987; 94:371-377.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "haik_bg_dunleavy_sa_cooke_c_et_al_retinoblastoma_with_anterior_chamber_extension_ophthalmology_1987_",
+          "label": "Haik BG, Dunleavy SA, Cooke C, et al. Retinoblastoma with anterior chamber extension. Ophthalmology. 1987; 94:367-370.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "magramm_i_abramson_dh_ellsworth_rm_optic_nerve_involvement_in_retinoblastoma_ophthalmology_1989_9621",
+          "label": "Magramm I, Abramson DH, Ellsworth RM. Optic nerve involvement in retinoblastoma. Ophthalmology. 1989; 96:217-222.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shields_cl_shields_ja_baez_ka_cater_j_de_potter_pv_choroidal_invasion_of_retinoblastoma_metastatic_p",
+          "label": "Shields CL, Shields JA, Baez KA, Cater J, De Potter PV. Choroidal invasion of retinoblastoma: metastatic potential and clinical risk factors. Br J Ophthalmol. 1993; 77:544-548.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shields_cl_shields_ja_baez_k_cater_jr_de_potter_p_optic_nerve_invasion_of_retinoblastoma_metastatic_",
+          "label": "Shields CL, Shields JA, Baez K, Cater JR, De Potter P. Optic nerve invasion of retinoblastoma: metastatic potential and clinical risk factors. Cancer. 1994; 73:692-698.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folberg_r_chévez_barrios_p_lin_a_y_millman_t_tumor_of_the_neurosensory_retina_and_retinal_pigment_ep",
+          "label": "Folberg R, Chévez-Barrios P, Lin A Y, Millman T. Tumor of the neurosensory retina and retinal pigment epithelium. In: Tumors of the Eye and Ocular Adnexa, Fifth Series of the AFIP Atlases of Tumor and Non-tumor Pathology. Arlington, Virginia: American Registry of Pathology; 2020. p. 191-232",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reese_ab_ellsworth_rm_the_evaluation_and_current_concept_of_retinoblastoma_therapy_trans_am_acad_oph",
+          "label": "Reese AB, Ellsworth RM. The evaluation and current concept of retinoblastoma therapy. Trans Am Acad Ophthalmol Otolaryngol. 1963; 67:164-172.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

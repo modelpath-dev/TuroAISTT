@@ -1,0 +1,3127 @@
+{
+  "template_id": "Lung_5.1.0.0.REL_CAPCP",
+  "organ": "LUNG",
+  "protocol_posting_date": "September 2025",
+  "standards": [
+    "AJCC 9"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "synchronous_tumors",
+          "label": "Synchronous Tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "present",
+              "label": "Present#"
+            }
+          ],
+          "condition": "required if morphologically distinct unrelated multiple primary tumors are present",
+          "guidance": "Morphologically distinct tumors that are considered to represent separate primary lung cancers should have separate synoptic reports"
+        },
+        {
+          "field_id": "total_number_of_primary_tumors",
+          "label": "Total Number of Primary Tumors: _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specimen_ids",
+          "label": "Specimen ID(s): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "wedge_resection",
+              "label": "Wedge resection"
+            },
+            {
+              "value": "segmentectomy",
+              "label": "Segmentectomy"
+            },
+            {
+              "value": "lobectomy",
+              "label": "Lobectomy"
+            },
+            {
+              "value": "completion_lobectomy",
+              "label": "Completion lobectomy"
+            },
+            {
+              "value": "sleeve_lobectomy",
+              "label": "Sleeve lobectomy"
+            },
+            {
+              "value": "bilobectomy",
+              "label": "Bilobectomy"
+            },
+            {
+              "value": "pneumonectomy",
+              "label": "Pneumonectomy"
+            },
+            {
+              "value": "major_airway_resection",
+              "label": "Major airway resection (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "adjacent_structures",
+              "label": "Adjacent structures (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "single_focus",
+              "label": "Single focus"
+            },
+            {
+              "value": "separate_tumor_nodules",
+              "label": "Separate tumor nodules (metastases) in same lobe (pT3)"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "number_of_intrapulmonary_metastases",
+          "label": "Number of Intrapulmonary Metastases: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "separate_tumor_nodules",
+              "label": "Separate tumor nodules (metastases) in different ipsilateral lobe (pT4)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_intrapulmonary_metastases",
+          "label": "Number of Intrapulmonary Metastases: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "separate_tumor_nodules",
+              "label": "Separate tumor nodules (metastases) in a contralateral lobe (pM1a)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_distant_metastases",
+          "label": "Number of Distant Metastases: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "multifocal_tumor_nodules_of_similar_histology_type_not_considered_intrapulmonary_metastases_or_too_n",
+              "label": "Multifocal tumor nodules of similar histology type not considered intrapulmonary metastases or too numerous for separate synoptic reports (e.g. multiple ground-glass/lepidic nodules or carcinoid tumors) (use m suffix)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_tumor_nodules",
+          "label": "Number of Tumor Nodules",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_number",
+              "label": "Specify number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pneumonic_type_adenocarcinoma",
+              "label": "Pneumonic-type adenocarcinoma"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "upper_lobe_of_lung",
+              "label": "Upper lobe of lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "middle_lobe_of_lung",
+              "label": "Middle lobe of lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lower_lobe_of_lung",
+              "label": "Lower lobe of lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bronchus_main",
+              "label": "Bronchus, main: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bronchus_intermedius",
+              "label": "Bronchus intermedius: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bronchus_lobar",
+              "label": "Bronchus, lobar (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "if_only_in_situ_carcinoma_is_present_complete_size_of_in_situ_carcinoma",
+          "label": "If only in situ carcinoma is present, complete size of in situ carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "invasive_tumor_size",
+          "label": "Invasive Tumor Size#",
+          "required": true,
+          "type": "free_text",
+          "condition": "required only if present",
+          "guidance": "Invasive tumor size equals total tumor size for all tumor types other than invasive non-mucinous"
+        },
+        {
+          "field_id": "invasive_tumor_size_equals_the_size_of_the_invasive_non_lepidic_component",
+          "label": "invasive tumor size equals the size of the invasive (non-lepidic) component.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "total_tumor_size_required_only_if_invasive_non_mucinous_adenocarcinoma_with_lepidic",
+          "label": "Total Tumor Size## (required only if invasive non-mucinous adenocarcinoma with lepidic",
+          "required": true,
+          "type": "free_text",
+          "guidance": "For invasive non-mucinous adenocarcinomas with lepidic component, total tumor equals the size of the non-"
+        },
+        {
+          "field_id": "mucinous_adenocarcinoma_including_the_invasive_and_the_lepidic_components",
+          "label": "mucinous adenocarcinoma including the invasive and the lepidic components.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "percentage_of_total_tumor_size_that_is_invasive",
+          "label": "Percentage of Total Tumor Size that is Invasive",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_in_situ_carcinoma_in_centimeters_cm_required_only_if_applicable",
+          "label": "Size of In Situ Carcinoma in Centimeters (cm) (required only if applicable): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma_in_situ",
+              "label": "Adenocarcinoma in situ (AIS), non-mucinous"
+            },
+            {
+              "value": "adenocarcinoma_in_situ",
+              "label": "Adenocarcinoma in situ (AIS), mucinous"
+            },
+            {
+              "value": "minimally_invasive_adenocarcinoma_non_mucinous",
+              "label": "Minimally invasive adenocarcinoma, non-mucinous"
+            },
+            {
+              "value": "minimally_invasive_adenocarcinoma_mucinous",
+              "label": "Minimally invasive adenocarcinoma, mucinous"
+            },
+            {
+              "value": "invasive_lepidic_adenocarcinoma",
+              "label": "Invasive lepidic adenocarcinoma"
+            },
+            {
+              "value": "invasive_acinar_adenocarcinoma",
+              "label": "Invasive acinar adenocarcinoma"
+            },
+            {
+              "value": "invasive_papillary_adenocarcinoma",
+              "label": "Invasive papillary adenocarcinoma"
+            },
+            {
+              "value": "invasive_micropapillary_adenocarcinoma",
+              "label": "Invasive micropapillary adenocarcinoma"
+            },
+            {
+              "value": "invasive_solid_adenocarcinoma",
+              "label": "Invasive solid adenocarcinoma"
+            },
+            {
+              "value": "invasive_mucinous_adenocarcinoma",
+              "label": "Invasive mucinous adenocarcinoma"
+            },
+            {
+              "value": "mixed_invasive_mucinous_and_non_mucinous_adenocarcinoma",
+              "label": "Mixed invasive mucinous and non-mucinous adenocarcinoma"
+            },
+            {
+              "value": "colloid_adenocarcinoma",
+              "label": "Colloid adenocarcinoma"
+            },
+            {
+              "value": "fetal_adenocarcinoma",
+              "label": "Fetal adenocarcinoma"
+            },
+            {
+              "value": "enteric_type_adenocarcinoma",
+              "label": "Enteric-type adenocarcinoma"
+            },
+            {
+              "value": "squamous_cell_carcinoma_in_situ",
+              "label": "Squamous cell carcinoma in situ (SCIS)"
+            },
+            {
+              "value": "invasive_squamous_cell_carcinoma_keratinizing",
+              "label": "Invasive squamous cell carcinoma, keratinizing"
+            },
+            {
+              "value": "invasive_squamous_cell_carcinoma_non_keratinizing",
+              "label": "Invasive squamous cell carcinoma, non-keratinizing"
+            },
+            {
+              "value": "invasive_squamous_cell_carcinoma_basaloid",
+              "label": "Invasive squamous cell carcinoma, basaloid"
+            },
+            {
+              "value": "lymphoepithelial_carcinoma",
+              "label": "Lymphoepithelial carcinoma"
+            },
+            {
+              "value": "large_cell_carcinoma",
+              "label": "Large cell carcinoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "pleomorphic_carcinoma",
+              "label": "Pleomorphic carcinoma"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "histologic_components_present_may_include_percentages",
+          "label": "Histologic Component(s) Present (may include percentages)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "spindle_cell_carcinoma",
+              "label": "Spindle cell carcinoma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "giant_cell_carcinoma",
+              "label": "Giant cell carcinoma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "large_cell_carcinoma",
+              "label": "Large cell carcinoma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pulmonary_blastoma",
+              "label": "Pulmonary blastoma"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_fetal_adenocarcinoma_component",
+          "label": "Percentage of Fetal Adenocarcinoma Component : _________________ %",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "percentage_of_primitive_mesenchymal_stromal_component",
+          "label": "Percentage of Primitive Mesenchymal Stromal Component: _________________ %",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "carcinosarcoma",
+              "label": "Carcinosarcoma"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_non_small_cell_carcinoma_component",
+          "label": "Percentage of Non-small Cell Carcinoma Component: _________________ %",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_histologic_types",
+          "label": "Specify Histologic Type(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "percentage_of_sarcomatous_component",
+          "label": "Percentage of Sarcomatous Component: _________________ %",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_histologic_types",
+          "label": "Specify Histologic Type(s): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "nut_carcinoma",
+              "label": "NUT carcinoma"
+            },
+            {
+              "value": "thoracic_smarca4_deficient_undifferentiated_tumor",
+              "label": "Thoracic SMARCA4-deficient undifferentiated tumor"
+            },
+            {
+              "value": "adenoid_cystic_carcinoma",
+              "label": "Adenoid cystic carcinoma"
+            },
+            {
+              "value": "epithelial_myoepithelial_carcinoma",
+              "label": "Epithelial-myoepithelial carcinoma"
+            },
+            {
+              "value": "mucoepidermoid_carcinoma",
+              "label": "Mucoepidermoid carcinoma"
+            },
+            {
+              "value": "hyalinizing_clear_cell_carcinoma",
+              "label": "Hyalinizing clear cell carcinoma"
+            },
+            {
+              "value": "myoepithelial_carcinoma",
+              "label": "Myoepithelial carcinoma"
+            },
+            {
+              "value": "typical_carcinoid_neuroendocrine_tumor_grade_1",
+              "label": "Typical carcinoid / Neuroendocrine tumor, grade 1"
+            },
+            {
+              "value": "atypical_carcinoid_neuroendocrine_tumor_grade_2",
+              "label": "Atypical carcinoid / Neuroendocrine tumor, grade 2"
+            },
+            {
+              "value": "carcinoid_tumor_nos_neuroendocrine_tumor_nos",
+              "label": "Carcinoid tumor, NOS / Neuroendocrine tumor, NOS"
+            },
+            {
+              "value": "small_cell_carcinoma",
+              "label": "Small cell carcinoma"
+            },
+            {
+              "value": "combined_small_cell_carcinoma",
+              "label": "Combined small cell carcinoma (small cell carcinoma and non-small cell component) (specify type of"
+            }
+          ]
+        },
+        {
+          "field_id": "non_small_cell_component",
+          "label": "non-small cell component): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "combined_large_cell_neuroendocrine_carcinoma",
+              "label": "Combined large cell neuroendocrine carcinoma (LCNEC and other non-small cell component)"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_other_type_of_non_small_cell_component",
+          "label": "(specify other type of non-small cell component): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "non_small_cell_carcinoma_subtype_cannot_be_determined",
+              "label": "Non-small cell carcinoma, subtype cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_viable_tumor_present",
+              "label": "No viable tumor present (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_patterns_may_include_percentages_in_5_increments_totaling_100_applicable_to_non_mucinous_",
+          "label": "Histologic Patterns (may include percentages in 5% increments totaling 100%) (applicable to non-mucinous adenocarcinomas only)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "acinar",
+              "label": "Acinar: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "papillary",
+              "label": "Papillary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lepidic",
+              "label": "Lepidic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "solid",
+              "label": "Solid: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "micropapillary",
+              "label": "Micropapillary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "complex_glands",
+              "label": "Complex glands (cribriform and fused glands): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well-differentiated (includes invasive lepidic adenocarcinoma with less than 20% high-grade pattern; typical carcinoid tumor)"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated (includes invasive acinar and papillary adenocarcinoma with less than 20% high-grade pattern; atypical carcinoid tumor)"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated (includes invasive non-mucinous adenocarcinoma with equal to or greater than 20% high-grade pattern)"
+            },
+            {
+              "value": "g4_undifferentiated",
+              "label": "G4, undifferentiated (includes small cell carcinoma; large cell carcinoma)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "guidance": "High-grade patterns in invasive non-mucinous adenocarcinoma include solid, micropapillary, cribriform, and fused glands patterns."
+        },
+        {
+          "field_id": "spread_through_air_spaces",
+          "label": "Spread Through Air Spaces",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ],
+          "condition": "STAS"
+        },
+        {
+          "field_id": "visceral_pleura_invasion",
+          "label": "Visceral Pleura Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "direct_invasion_of_other_structures",
+          "label": "Direct Invasion of Other Structures",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no other structures present)"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "involved_other_structures",
+          "label": "Involved Other Structures",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "adjacent_lobe_of_lung",
+              "label": "Adjacent lobe of lung"
+            },
+            {
+              "value": "parietal_pleura",
+              "label": "Parietal pleura"
+            },
+            {
+              "value": "chest_wall",
+              "label": "Chest wall"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "fibroadipose_tissue",
+              "label": "Fibroadipose tissue"
+            },
+            {
+              "value": "skeletal_muscle",
+              "label": "Skeletal muscle"
+            },
+            {
+              "value": "rib",
+              "label": "Rib(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "main_bronchus",
+              "label": "Main bronchus (up to but not including the carina)"
+            },
+            {
+              "value": "associated_with_atelectasis_or_obstructive_pneumonitis_extending_to_the_hilar_regions_involving",
+              "label": "Associated with atelectasis or obstructive pneumonitis extending to the hilar regions, involving"
+            }
+          ]
+        },
+        {
+          "field_id": "either_part_of_or_all_of_the_entire_lung",
+          "label": "either part of or all of the entire lung",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "hilar_soft_tissues",
+              "label": "Hilar soft tissues"
+            },
+            {
+              "value": "phrenic_nerve",
+              "label": "Phrenic nerve"
+            },
+            {
+              "value": "parietal_pericardium",
+              "label": "Parietal pericardium"
+            },
+            {
+              "value": "visceral_pericardium",
+              "label": "Visceral pericardium (epicardium)"
+            },
+            {
+              "value": "azygos_vein",
+              "label": "Azygos vein"
+            },
+            {
+              "value": "cervical_nerve_roots",
+              "label": "Cervical nerve roots"
+            },
+            {
+              "value": "thoracic_nerve_roots",
+              "label": "Thoracic nerve roots"
+            },
+            {
+              "value": "brachial_plexus",
+              "label": "Brachial plexus (trunks, divisions, cords, or terminal nerves)"
+            },
+            {
+              "value": "stellate_ganglion",
+              "label": "Stellate ganglion"
+            },
+            {
+              "value": "diaphragm",
+              "label": "Diaphragm"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "great_vessels",
+              "label": "Great vessels (aorta, superior / inferior vena cava, intrapericardial pulmonary arteries / veins)"
+            },
+            {
+              "value": "supra_aortic_arteries",
+              "label": "Supra-aortic arteries"
+            },
+            {
+              "value": "brachiocephalic_vein",
+              "label": "Brachiocephalic vein"
+            },
+            {
+              "value": "subclavian_vessels",
+              "label": "Subclavian vessels"
+            },
+            {
+              "value": "thymus",
+              "label": "Thymus"
+            },
+            {
+              "value": "trachea",
+              "label": "Trachea"
+            },
+            {
+              "value": "carina",
+              "label": "Carina"
+            },
+            {
+              "value": "recurrent_laryngeal_nerve",
+              "label": "Recurrent laryngeal nerve"
+            },
+            {
+              "value": "vagus_nerve",
+              "label": "Vagus nerve"
+            },
+            {
+              "value": "esophagus",
+              "label": "Esophagus"
+            },
+            {
+              "value": "vertebral_body",
+              "label": "Vertebral body"
+            },
+            {
+              "value": "lamina",
+              "label": "Lamina"
+            },
+            {
+              "value": "spinal_canal",
+              "label": "Spinal canal"
+            },
+            {
+              "value": "other",
+              "label": "Other (including mediastinal structures not listed above) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "percentage_of_residual_viable_tumor",
+          "label": "Percentage of Residual Viable Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_necrosis",
+          "label": "Percentage of Necrosis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_stroma",
+          "label": "Percentage of Stroma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "includes fibrosis and inflammation"
+        },
+        {
+          "field_id": "inflammation",
+          "label": "Inflammation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mild",
+              "label": "Mild"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate"
+            },
+            {
+              "value": "severe",
+              "label": "Severe"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "lymphatic_invasion_present",
+              "label": "Lymphatic invasion present"
+            },
+            {
+              "value": "arterial_invasion_present",
+              "label": "Arterial invasion present"
+            },
+            {
+              "value": "venous_invasion_present",
+              "label": "Venous invasion present"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_invasive_tumor",
+          "label": "Margin Status for Invasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_tumor",
+              "label": "All margins negative for invasive tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_invasive_tumor",
+          "label": "Closest Margin(s) to Invasive Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "bronchial",
+              "label": "Bronchial: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vascular",
+              "label": "Vascular: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "parenchymal",
+              "label": "Parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "chest_wall_margin",
+              "label": "Chest wall margin: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_attached_tissue_margin",
+              "label": "Other attached tissue margin(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_tumor_to_closest_margin",
+          "label": "Distance from Invasive Tumor to Closest Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters_cm",
+          "label": "Specify in Centimeters (cm).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_tumor_present_at_margin",
+              "label": "Invasive tumor present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_tumor",
+          "label": "Margin(s) Involved by Invasive Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "bronchial",
+              "label": "Bronchial: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_involves_bronchial_mucosa",
+          "label": "___ Tumor involves bronchial mucosa",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_in_submucosal_lymphatics",
+          "label": "___ Tumor in submucosal lymphatics",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_in_peribronchial_soft_tissue",
+          "label": "___ Tumor in peribronchial soft tissue",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "vascular",
+              "label": "Vascular: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "parenchymal",
+              "label": "Parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_attached_tissue_margin",
+              "label": "Other attached tissue margin(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_non_invasive_tumor",
+          "label": "Margin Status for Non-Invasive Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_non_invasive_tumor",
+              "label": "All margins negative for non-invasive tumor"
+            },
+            {
+              "value": "carcinoma_in_situ_present_at_bronchial_margin",
+              "label": "Carcinoma in situ present at bronchial margin: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_in_situ_present_at_parenchymal_margin",
+              "label": "Carcinoma in situ present at parenchymal margin: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lepidic_component_of_invasive_carcinoma_present_at_parenchymal_margin",
+              "label": "Lepidic component of invasive carcinoma present at parenchymal margin: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "lymph_nodes_from_prior_procedures",
+          "label": "Lymph Node(s) from Prior Procedures",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_prior_lymph_node_sampling_performed",
+              "label": "No known prior lymph node sampling performed"
+            },
+            {
+              "value": "not_included",
+              "label": "Not included"
+            },
+            {
+              "value": "included",
+              "label": "Included"
+            }
+          ]
+        },
+        {
+          "field_id": "prior_lymph_node_procedures_included_describe_and_specify_case_id",
+          "label": "Prior Lymph Node Procedure(s) Included (describe and specify case ID): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_with_tumor",
+          "label": "Nodal Site(s) with Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "right_nodal_stations_involved",
+          "label": "Right Nodal Stations Involved",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1r",
+              "label": "1R: Low cervical, supraclavicular, scalene and sternal notch"
+            },
+            {
+              "value": "2r",
+              "label": "2R: Upper paratracheal"
+            },
+            {
+              "value": "4r",
+              "label": "4R: Lower paratracheal"
+            },
+            {
+              "value": "8r",
+              "label": "8R: Para-esophageal (below carina)"
+            },
+            {
+              "value": "9r",
+              "label": "9R: Pulmonary ligament"
+            },
+            {
+              "value": "10r",
+              "label": "10R: Hilar"
+            },
+            {
+              "value": "11r",
+              "label": "11R: Interlobar"
+            },
+            {
+              "value": "12r_14r",
+              "label": "12R-14R: Intrapulmonary"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "12r_lobar",
+          "label": "___ 12R: Lobar",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "13r_segmental",
+          "label": "___ 13R: Segmental",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "14r_subsegmental",
+          "label": "___ 14R: Subsegmental",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_right_node",
+              "label": "Other right node(s) (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "central_nodal_stations_involved",
+          "label": "Central Nodal Stations Involved",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "3a",
+              "label": "3a: Pre-vascular"
+            },
+            {
+              "value": "3p",
+              "label": "3p: Retrotracheal"
+            },
+            {
+              "value": "7",
+              "label": "7: Subcarinal"
+            },
+            {
+              "value": "other_central_node",
+              "label": "Other central node(s) (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "left_nodal_stations_involved",
+          "label": "Left Nodal Stations Involved",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1l",
+              "label": "1L: Low cervical, supraclavicular, scalene and sternal notch"
+            },
+            {
+              "value": "2l",
+              "label": "2L: Upper paratracheal"
+            },
+            {
+              "value": "4l",
+              "label": "4L: Lower paratracheal"
+            },
+            {
+              "value": "5",
+              "label": "5: Subaortic / aortopulmonary (AP) / AP window"
+            },
+            {
+              "value": "6",
+              "label": "6: Para-aortic (ascending aorta or phrenic)"
+            },
+            {
+              "value": "8l",
+              "label": "8L: Para-esophageal (below carina)"
+            },
+            {
+              "value": "9l",
+              "label": "9L: Pulmonary ligament"
+            },
+            {
+              "value": "10l",
+              "label": "10L: Hilar"
+            },
+            {
+              "value": "11l",
+              "label": "11L: Interlobar"
+            },
+            {
+              "value": "12l_14l",
+              "label": "12L-14L: Intrapulmonary"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "12l_lobar",
+          "label": "___ 12L: Lobar",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "13l_segmental",
+          "label": "___ 13L: Segmental",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "14l_subsegmental",
+          "label": "___ 14L: Subsegmental",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_left_node",
+              "label": "Other left node(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "size_of_largest_metastatic_deposit_specify_in_millimeters___________________mm",
+          "label": "Size of Largest Metastatic Deposit (specify in Millimeters): _________________ mm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_examined",
+          "label": "Nodal Site(s) Examined",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "right_nodal_stations_examined",
+          "label": "Right Nodal Stations Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1r",
+              "label": "1R: Low cervical, supraclavicular, scalene and sternal notch"
+            },
+            {
+              "value": "2r",
+              "label": "2R: Upper paratracheal"
+            },
+            {
+              "value": "4r",
+              "label": "4R: Lower paratracheal"
+            },
+            {
+              "value": "8r",
+              "label": "8R: Para-esophageal (below carina)"
+            },
+            {
+              "value": "9r",
+              "label": "9R: Pulmonary ligament"
+            },
+            {
+              "value": "10r",
+              "label": "10R: Hilar"
+            },
+            {
+              "value": "11r",
+              "label": "11R: Interlobar"
+            },
+            {
+              "value": "12r_14r",
+              "label": "12R-14R: Intrapulmonary"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "12r_lobar",
+          "label": "___ 12R: Lobar",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "13r_segmental",
+          "label": "___ 13R: Segmental",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "14r_subsegmental",
+          "label": "___ 14R: Subsegmental",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_right_node",
+              "label": "Other right node(s) (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "central_nodal_stations_examined",
+          "label": "Central Nodal Stations Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "3a",
+              "label": "3a: Pre-vascular"
+            },
+            {
+              "value": "3p",
+              "label": "3p: Retrotracheal"
+            },
+            {
+              "value": "7",
+              "label": "7: Subcarinal"
+            },
+            {
+              "value": "other_central_node",
+              "label": "Other central node(s) (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "left_nodal_stations_examined",
+          "label": "Left Nodal Stations Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1l",
+              "label": "1L: Low cervical, supraclavicular, scalene and sternal notch"
+            },
+            {
+              "value": "2l",
+              "label": "2L: Upper paratracheal"
+            },
+            {
+              "value": "4l",
+              "label": "4L: Lower paratracheal"
+            },
+            {
+              "value": "5",
+              "label": "5: Subaortic / aortopulmonary (AP) / AP window"
+            },
+            {
+              "value": "6",
+              "label": "6: Para-aortic (ascending aorta or phrenic)"
+            },
+            {
+              "value": "8l",
+              "label": "8L: Para-esophageal (below carina)"
+            },
+            {
+              "value": "9l",
+              "label": "9L: Pulmonary ligament"
+            },
+            {
+              "value": "10l",
+              "label": "10L: Hilar"
+            },
+            {
+              "value": "11l",
+              "label": "11L: Interlobar"
+            },
+            {
+              "value": "12l_14l",
+              "label": "12L-14L: Intrapulmonary"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "12l_lobar",
+          "label": "___ 12L: Lobar",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "13l_segmental",
+          "label": "___ 13L: Segmental",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "14l_subsegmental",
+          "label": "___ 14L: Subsegmental",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_left_node",
+              "label": "Other left node(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "separate_tumor_nodule",
+              "label": "Separate tumor nodule(s) in contralateral lobe: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pleural_nodule",
+              "label": "Pleural nodule(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pericardial_nodule",
+              "label": "Pericardial nodule(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malignant_pleural_effusion",
+              "label": "Malignant pleural effusion: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malignant_pericardial_effusion",
+              "label": "Malignant pericardial effusion: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "single_extrathoracic_metastasis_in_one_organ",
+              "label": "Single extrathoracic metastasis in one organ (including a single nonregional lymph node):"
+            },
+            {
+              "value": "multiple_extrathoracic_metastases_in_a_single_organ",
+              "label": "Multiple extrathoracic metastases in a single organ: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "multiple_extrathoracic_metastasis_in_multiple_organs",
+              "label": "Multiple extrathoracic metastasis in multiple organs: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ],
+          "condition": "AJCC Version 9"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: Carcinoma in situ; or Squamous cell carcinoma in situ (SCIS); or Adenocarcinoma in situ (AIS):"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_is_less_than_or_equal_to_3_cm_in_greatest_dimension_surrounded_by_lung_or_visceral_pleura_",
+          "label": "pT1: Tumor is less than or equal to 3 cm in greatest dimension surrounded by lung or visceral pleura, or in a lobar or more peripheral bronchus",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1mi",
+              "label": "pT1mi: Minimally invasive adenocarcinoma: adenocarcinoma (less than or equal to 3 cm in greatest"
+            }
+          ]
+        },
+        {
+          "field_id": "dimension",
+          "label": "dimension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor less than or equal to 1 cm in greatest dimension OR Tumor of any size whose invasive"
+            }
+          ]
+        },
+        {
+          "field_id": "component_is_limited_to_the_bronchial_wall_and_may_extend_proximal_to_the_main_bronchus_this_is_an",
+          "label": "component is limited to the bronchial wall and may extend proximal to the main bronchus (this is an",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "uncommon_superficial_spreading_tumor",
+          "label": "uncommon superficial, spreading tumor)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor greater than 1 cm but less than or equal to 2 cm in greatest dimension"
+            },
+            {
+              "value": "pt1c",
+              "label": "pT1c: Tumor greater than 2 cm but less than or equal to 3 cm in greatest dimension"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subgroup cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt2_tumor_greater_than_3_cm_but_less_than_or_equal_to_5_cm_in_greatest_dimension_or_tumor_less_than_",
+          "label": "pT2: Tumor greater than 3 cm but less than or equal to 5 cm in greatest dimension OR tumor less than or equal to 4 cm with one or more of the following features: Invades visceral pleura; or Invades an adjacent lobe; or Involves main bronchus (up to but not including the carina) or associated with atelectasis or obstructive pneumonitis, extending to the hilar regions, involving either part of or the entire lung",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Tumor greater than 3 cm but less than or equal to 4 cm in greatest dimension OR Tumor less"
+            }
+          ]
+        },
+        {
+          "field_id": "visceral_pleura_or_invades_an_adjacent_lobe_or_involves_main_bronchus_up_to_but_not_including_the",
+          "label": "visceral pleura; or Invades an adjacent lobe; or Involves main bronchus (up to but not including the",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "involving_either_part_of_or_the_entire_lung",
+          "label": "involving either part of or the entire lung",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2b",
+              "label": "pT2b: Tumor greater than 4 cm but less than or equal to 5 cm in greatest dimension with or without"
+            }
+          ]
+        },
+        {
+          "field_id": "bronchus_up_to_but_not_including_the_carina_or_associated_with_atelectasis_or_obstructive_pneumoniti",
+          "label": "bronchus (up to but not including the carina) or associated with atelectasis or obstructive pneumonitis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extending_to_the_hilar_regions_involving_either_part_of_or_the_entire_lung",
+          "label": "extending to the hilar regions, involving either part of or the entire lung",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2",
+              "label": "pT2 (subgroup cannot be determined)"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor greater than 5 cm but less than or equal to 7 cm in greatest dimension OR Tumor less"
+            }
+          ]
+        },
+        {
+          "field_id": "or_invades_pericardium_phrenic_nerve_or_azygos_vein_although_these_structures_lie_within_the",
+          "label": "or Invades pericardium, phrenic nerve or azygos vein (although these structures lie within the",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "is_not_counted_as_t4_or_invades_thoracic_nerve_roots_ie_t1_t2_or_stellate_ganglion_or_separate",
+          "label": "is not counted as T4); or Invades thoracic nerve roots (i.e., T1, T2) or stellate ganglion; or Separate",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_nodules_in_the_same_lobe_as_the_primary",
+          "label": "tumor nodule(s) in the same lobe as the primary",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor greater than 7 cm in greatest dimension OR Tumor of any size with one or more of the"
+            }
+          ]
+        },
+        {
+          "field_id": "following_features_invades_mediastinum_except_structures_listed_in_t3_thymus_trachea_carina",
+          "label": "following features: Invades mediastinum (except structures listed in T3), thymus, trachea, carina,",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aorta_superior_inferior_vena_cava_intrapericardial_pulmonary_arteries_veins_supra_aortic_arteries",
+          "label": "(aorta, superior / inferior vena cava, intrapericardial pulmonary arteries / veins), supra-aortic arteries",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nerve_roots_or_brachial_plexus_ie_trunks_divisions_cords_or_terminal_nerves_or_separate_tumor",
+          "label": "nerve roots or brachial plexus (i.e., trunks, divisions, cords or terminal nerves); or Separate tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nodules_in_a_different_ipsilateral_lobe_than_that_of_the_primary",
+          "label": "nodule(s) in a different ipsilateral lobe than that of the primary",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "free_text",
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "the_suffix_m_or_a_specific_number_should_only_be_used_in_the_setting_of_multifocal_ground_glass_lepi",
+          "label": "The suffix m (or a specific number) should only be used in the setting of multifocal ground-glass / lepidic nodules that histologically present as adenocarcinomas with prominent lepidic component or multifocal tumors of same histologic type that are too numerous for individual separate synoptic report and that are not better classified as intrapulmonary metastases (e.g. numerous carcinoid tumors). Multiple primary lung cancers showing different histologic type or different morphology based on comprehensive histologic subtyping are better staged as independent tumors without m suffix.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ]
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No tumor involvement of regional lymph node(s)"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Tumor involvement of ipsilateral peribronchial and / or ipsilateral hilar and / or ipsilateral"
+            }
+          ]
+        },
+        {
+          "field_id": "intrapulmonary_lymph_node_stations_including_involvement_by_direct_extension",
+          "label": "intrapulmonary lymph node station(s), including involvement by direct extension",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pn2_tumor_involvement_of_ipsilateral_mediastinal_nodal_stations_and_or_subcarinal_lymph_node_station",
+          "label": "pN2: Tumor involvement of ipsilateral mediastinal nodal station(s) and / or subcarinal lymph node station",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2a",
+              "label": "pN2a: Tumor involvement of a single ipsilateral mediastinal nodal station or of the subcarinal nodal"
+            }
+          ]
+        },
+        {
+          "field_id": "station",
+          "label": "station",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2b",
+              "label": "pN2b: Tumor involvement of multiple ipsilateral mediastinal nodal stations with or without"
+            }
+          ]
+        },
+        {
+          "field_id": "involvement_of_the_subcarinal_nodal_station",
+          "label": "involvement of the subcarinal nodal station",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2",
+              "label": "pN2 (subgroup cannot be determined)"
+            },
+            {
+              "value": "pn3",
+              "label": "pN3: Tumor involvement of contralateral mediastinal, contralateral hilar, ipsilateral / contralateral"
+            }
+          ]
+        },
+        {
+          "field_id": "scalene_or_ipsilateral_contralateral_supraclavicular_lymph_node_station",
+          "label": "scalene, or ipsilateral / contralateral supraclavicular lymph node station",
+          "required": true,
+          "type": "free_text",
+          "condition": "s"
+        },
+        {
+          "field_id": "n_suffix_required_only_if_applicable",
+          "label": "N Suffix (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(sn) Sentinel node procedure"
+            },
+            {
+              "value": "",
+              "label": "(f) FNA or core needle biopsy"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1a",
+              "label": "pM1a: Microscopic confirmation of metastasis in pleural or pericardial nodules, and / or malignant"
+            }
+          ],
+          "condition": "required only if confirmed pathologically",
+          "guidance": "Most pleural (pericardial) effusions with lung cancer are a result of the tumor. In a few patients, however, multiple microscopic examinations of pleural (pericardial) fluid are negative for tumor, and the fluid is non-bloody and not an exudate. If these elements and clinical judgment dictate that the effusion is not related to the tumor, the effusion should be excluded as a staging descriptor."
+        },
+        {
+          "field_id": "pleural_or_pericardial_effusions_and_or_separate_tumor_nodules_in_a_contralateral_lobe",
+          "label": "pleural or pericardial effusions, and / or separate tumor nodule(s) in a contralateral lobe#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1b",
+              "label": "pM1b: Microscopic confirmation of single extrathoracic metastasis in a single organ system (including"
+            }
+          ]
+        },
+        {
+          "field_id": "pm1c_microscopic_confirmation_of_multiple_extrathoracic_metastases_in_a_single_or_multiple_organ_sys",
+          "label": "pM1c: Microscopic confirmation of multiple extrathoracic metastases in a single or multiple organ system",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1c1",
+              "label": "pM1c1: Microscopic confirmation of multiple extrathoracic metastases in a single organ system (For"
+            }
+          ],
+          "condition": "s"
+        },
+        {
+          "field_id": "metastases_in_several_bones_are_classified_as_m1c1",
+          "label": "metastases in several bones are classified as M1c1.)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1c2",
+              "label": "pM1c2: Microscopic confirmation of multiple extrathoracic metastases in multiple organ systems"
+            },
+            {
+              "value": "pm1c",
+              "label": "pM1c (subgroup cannot be determined)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subgroup cannot be determined)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "atypical_adenomatous_hyperplasia",
+              "label": "Atypical adenomatous hyperplasia: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumorlets",
+              "label": "Tumorlets: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "squamous_dysplasia",
+              "label": "Squamous dysplasia"
+            },
+            {
+              "value": "diffuse_neuroendocrine_hyperplasia",
+              "label": "Diffuse neuroendocrine hyperplasia"
+            },
+            {
+              "value": "biopsy_site_changes",
+              "label": "Biopsy site changes"
+            },
+            {
+              "value": "granulomatous_inflammation",
+              "label": "Granulomatous inflammation (specify necrotizing or non-necrotizing if discernible):    _____________",
+              "has_free_text": true
+            },
+            {
+              "value": "post_obstructive_changes",
+              "label": "Post-obstructive changes"
+            },
+            {
+              "value": "fibrosis",
+              "label": "Fibrosis (specify pattern if discernable): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "emphysema",
+              "label": "Emphysema"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "for_reporting_cancer_biomarker_testing_results_the_cap_lung_biomarker_template_may_be_used_pending_b",
+          "label": "For reporting cancer biomarker testing results, the CAP Lung Biomarker Template may be used. Pending biomarker studies should be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_more_than_one_tumor_nodule_is_identified_in_resection_specimens_it_is_important_to_attempt_dist",
+          "label": "When more than one tumor nodule is identified in resection specimens, it is important to attempt distinction of synchronous primary tumors from a tumor with intrapulmonary metastasis. These scenarios have different prognoses and are staged differently. Multiple tumor nodules of different histologic types (e.g., one squamous cell carcinoma and one adenocarcinoma) are considered synchronous primaries and should be recorded as such in the pathology report with an individual TNM category assigned to each tumor.1 In such cases, required reporting elements should be recorded for each primary tumor, and this is most easily achieved by issuing two synoptic reports (one for each of the cancers). For lung adenocarcinomas, comprehensive histologic assessment has been proposed for the distinction of synchronous primaries from separate tumor nodules (intrapulmonary metastasis).2 Other pathologic criteria for distinguishing synchronous primary lung adenocarcinomas from separate tumor nodules (intrapulmonary metastasis) that are not based strictly on histologic assessment (e.g., assessing similarity of breakpoints using comparative genomic hybridization) are detailed in the 8th edition of the AJCC staging manual.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "multifocal_lung_adenocarcinoma_with_lepidic_features_is_the_designation_applied_to_multiple_discrete",
+          "label": "Multifocal lung adenocarcinoma with lepidic features is the designation applied to multiple discrete foci of lepidic-predominant adenocarcinoma (LPA), minimally invasive adenocarcinoma (MIA), or adenocarcinoma in situ (AIS) with or without other subtypes of adenocarcinoma as lesser components that manifest on computed tomography (CT) as multiple subsolid (either pure ground glass or part solid) nodules.4 This designation applies whether a detailed histologic assessment shows a matching or different appearance among the tumor foci. Data suggest that in most cases, the multiple lesions represent synchronous primary tumors.5 Assignment of T category in these cases is based on the highest T lesion, followed by the suffix “m”, indicating multiplicity, or the number of tumors in parentheses (e.g., T1b(m) or T1b(2)) (Table 1).3 It should be noted that foci of atypical adenomatous hyperplasia (AAH) are not counted for the purpose of TNM classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_some_patients_adenocarcinoma_manifests_radiographically_as_diffuse_consolidation_which_has_been_d",
+          "label": "In some patients, adenocarcinoma manifests radiographically as diffuse consolidation, which has been designated as “pneumonic-type” lung adenocarcinoma. Such imaging findings typically correspond pathologically to invasive mucinous adenocarcinoma, but mixed mucinous and non-mucinous patterns may also be seen.5 Invasive mucinous adenocarcinoma often exhibits lepidic-predominant growth, but robust sampling usually discloses invasive foci. Occasionally, invasive mucinous adenocarcinoma shows a heterogeneous mixture of other growth patterns. To qualify as pneumonic-type adenocarcinoma, tumor should be diffusely distributed throughout a region(s) of lung, as opposed to forming discrete single or multiple well-demarcated nodules or masses.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_size_of_diffuse_pneumonic_type_adenocarcinomas_as_well_as_miliary_forms_of_adenocarcinoma_is_oft",
+          "label": "The size of diffuse pneumonic-type adenocarcinomas, as well as miliary forms of adenocarcinoma, is often difficult to measure. When a single tumor area is present, it is categorized according to standard TNM criteria. Multiple tumor areas are categorized according to the extent of lobar involvement: T3 when limited to a single lobe, T4 when there is involvement of other ipsilateral lobe, and M1a is used to indicate the presence of contralateral lung involvement.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_the_setting_of_multiple_lung_cancers_other_than_adenocarcinoma_pathologists_may_use_the_suffix_m_",
+          "label": "In the setting of multiple lung cancers other than adenocarcinoma, pathologists may use the suffix m for multiple tumors of same histology as long as those tumors are not better considered intrapulmonary metastases. In this situation, AJCC suggests assigning the T category based on the size of the largest tumor nodule and using the m suffix to indicate an increased tumor burden.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_schematic_summary_of_disease_patterns_and_tnm_classification_of_patients_with_lung_cancer_wi",
+          "label": "Table 1. Schematic Summary of Disease Patterns and TNM Classification of Patients with Lung Cancer with Multiple Pulmonary Sites of Involvement",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detterbeck_fc_franklin_wa_nicholson_ag_et_al_the_iaslc_lung_cancer_staging_project_background_data_a",
+          "label": "Detterbeck FC, Franklin WA, Nicholson AG, et al. The IASLC lung cancer staging project: background data and proposed criteria to distinguish separate primary lung cancers from metastatic foci in patients with two lung tumors in the forthcoming eighth edition of the TNM classification of lung cancer. J Thorac Onc. 2016;11(5):651-665.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_thoracic_tumours_lyon_france_international_agency_for_",
+          "label": "WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detterbeck_fc_nicholson_ag_franklin_wa_et_al_the_iaslc_lung_cancer_staging_project_summary_of_propos",
+          "label": "Detterbeck FC, Nicholson AG, Franklin WA, et al. The IASLC lung cancer staging project: summary of proposals for revisions of the classification of lung cancers with multiple pulmonary sites of involvement in the forthcoming eighth edition of the TNM classification of lung cancer. J Thorac Onc. 2016;11(5):639-650.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detterbeck_fc_marom_em_arenberg_da_et_al_the_iaslc_lung_cancer_staging_project_background_data_and_p",
+          "label": "Detterbeck FC, Marom EM, Arenberg DA, et al. The IASLC lung cancer staging project: background data and proposals for the application of TNM staging rules to lung cancer presenting as multiple nodules with ground glass or lepidic features or a pneumonic type of involvement in the forthcoming eighth edition of the TNM classification of lung cancer. J Thorac Onc. 2016;11(5):666-680.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "based_on_data_showing_prognosis_correlates_with_invasive_size_in_non_mucinous_adenocarcinomas_with_l",
+          "label": "Based on data showing prognosis correlates with invasive size in non-mucinous adenocarcinomas with lepidic and invasive components, the AJCC has adopted a rule that for non-mucinous adenocarcinomas with a lepidic component, only the size of the invasive component is used to assign T category.1,2,3,4,5 This rule aligns with the recommendation previously set forth by the Union for International Cancer Control (UICC) of using invasive size for T descriptor size.6 This rule does not apply to other histologic types of lung cancer, including invasive mucinous lung adenocarcinoma. Data available to establish Version 9 TNM categories were insufficient to analyze the eighth-edition proposal to distinguish invasive from non-invasive tumor size in part-solid and part-lepidic non-mucinous lung adenocarcinomas. Therefore, reporting both invasive size and total tumor size of these tumors remains important for validation of this concept.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_invasive_component_to_be_measured_in_non_mucinous_adenocarcinomas_with_a_lepidic_component_inclu",
+          "label": "The invasive component to be measured in non-mucinous adenocarcinomas with a lepidic component includes any histologic subtype other than a lepidic pattern (i.e., acinar, papillary, micropapillary, and/or solid) and/or tumor cells infiltrating myofibroblastic stroma.7 In tumors where the invasive component is not a single discrete measurable focus, estimating the percentage of the total tumor that is invasive and then multiplying by the total tumor size to estimate invasive tumor size is recommended.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_schil_pe_asamura_h_nishimura_kk_et_al_the_international_association_for_the_study_of_lung_cancer",
+          "label": "Van Schil PE, Asamura H, Nishimura KK, et al. The International Association for the Study of Lung Cancer Lung Cancer Staging Project: Proposals for the Revisions of the T-Descriptors in the Forthcoming Ninth Edition of the TNM Classification for Lung Cancer. J Thorac Oncol. 2024;19(5):749-765.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tsutani_y_miyata_y_nakayama_h_et_al_prognostic_significance_of_using_solid_versus_whole_tumor_size_o",
+          "label": "Tsutani Y, Miyata Y, Nakayama H, et al. Prognostic significance of using solid versus whole tumor size on high-resolution computed tomography for predicting pathologic malignant grade tumors in clinical stage IA lung adenocarcinoma: a multicenter study. J Thorac Cardiovasc Surg. 2012;143(3):607-612.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yoshizawa_a_motoi_n_riely_gj_et_al_impact_of_proposed_iaslcatsers_classification_of_lung_adenocarcin",
+          "label": "Yoshizawa A, Motoi N, Riely GJ, et al. Impact of proposed IASLC/ATS/ERS classification of lung adenocarcinoma: prognostic subgroups and implications for further revision of staging based on analysis of 514 stage I cases. Mod Pathol. 2011;24(5):653-664.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maeyashiki_t_suzuki_k_hattori_a_et_al_the_size_of_consolidation_on_thin_section_computed_tomography_",
+          "label": "Maeyashiki T, Suzuki K, Hattori A, et al. The size of consolidation on thin-section computed tomography is a better predictor of survival than the maximum tumour dimension in resectable lung cancer. Eur J Cardiothorac Surg. 2013;43(5):915-918.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wittekind_c_greene_fl_henson_de_hutter_rvp_sobin_lh_eds_tnm_supplement_a_commentary_on_uniform_use_3",
+          "label": "Wittekind C, Greene FL, Henson DE, Hutter RVP, Sobin LH, eds. TNM Supplement: A Commentary on Uniform Use. 3rd ed. New York, NY: Wiley-Liss; 2001.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "travis_wd_asamura_h_bankier_aa_et_al_the_iaslc_lung_cancer_staging_project_proposals_for_coding_t_ca",
+          "label": "Travis WD, Asamura H, Bankier AA, et al. The IASLC lung cancer staging project: proposals for coding T categories for subsolid nodules and assessment of tumor size in part-solid tumors in the forthcoming eighth edition of the TNM classification of lung cancer. J Thorac Onc. 2016;11(8):1204-1223.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_published_by_the_world_health_organizatio",
+          "label": "For consistency in reporting, the histologic classification published by the World Health Organization (WHO) for tumors of the lung, including carcinoids, is recommended.1 Although acceptable in small biopsies, a designation of non-small cell lung carcinoma is not acceptable in resection specimens.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lung_carcinomas_should_be_adequately_sampled_in_order_to_ensure_defining_features_are_satisfactorily",
+          "label": "Lung carcinomas should be adequately sampled in order to ensure defining features are satisfactorily represented in the sections examined histologically and the presence or absence of invasion can be thoroughly assessed. The WHO defines invasion in adenocarcinoma as: (1) any histologic subtype other than a lepidic pattern (i.e., acinar, papillary, micropapillary, and/or solid), (2) tumor cells infiltrating myofibroblastic stroma, (3) vascular or pleural invasion, or (4) spread through air spaces (STAS).1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stas_is_defined_as_micropapillary_clusters_solid_nests_or_single_cells_of_tumor_extending_beyond_the",
+          "label": "STAS is defined as micropapillary clusters, solid nests or single cells of tumor extending beyond the edge of the tumor into the air spaces of the surrounding lung parenchyma. Studies and meta-analyses have shown STAS to be an independent prognostic factor in the major histologic types of lung cancer and increased incidence of recurrence in tumors that have undergone limited resection (e.g., segmentectomy, wedge resection).1,2 STAS should not be incorporated into the measurement of tumor size.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_cases_in_which_a_diagnosis_of_adenocarcinoma_in_situ_ais_or_minimally_invasive_adenocarcinoma_mi",
+          "label": "For cases in which a diagnosis of adenocarcinoma in situ (AIS) or minimally invasive adenocarcinoma (MIA) is being considered, the lesion must be entirely submitted for histopathologic examination. A diagnosis of MIA is applied to a lepidic-predominant tumor ≤3 cm in size with an invasive component measuring ≤0.5 cm provided it does not exhibit any of the following: (1) tumor invades lymphatics, blood vessels or pleura, (2) tumor necrosis is present, (3) STAS is present.1 Tumors ≤3 cm with ≤0.5 cm of invasion exhibiting 1 or more of these exclusionary features are classified as lepidic-predominant adenocarcinoma. A diagnosis of AIS or MIA should only be made on solitary lesions ≤3 cm in diameter. Specimens showing only AIS are categorized as Tis (AIS). MIA is classified as T1mi.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_the_uncommon_occurrence_of_a_lepidic_predominant_tumor_30_cm_with_either_no_invasion_or_05_cm_of",
+          "label": "For the uncommon occurrence of a lepidic-predominant tumor >3.0 cm with either no invasion or ≤0.5 cm of invasion, it is recommended that such tumors be classified as lepidic-predominant adenocarcinoma and categorized as pT1a, as there is insufficient data to conclude they have the same prognostic features as ≤3.0 cm tumors meeting criteria for AIS or MIA.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "classification_of_adenocarcinomas_by_predominant_histologic_pattern_can_be_useful_for_assessing_path",
+          "label": "Classification of adenocarcinomas by predominant histologic pattern can be useful for assessing pathologic grade and distinguishing separate independent tumors from intrapulmonary metastases. The WHO recommends classifying invasive non-mucinous adenocarcinomas according to the predominant subtype and specifying non-predominant subtypes semi-quantitatively in 5% increments.1 In poorly differentiated cases, immunohistochemistry can greatly aid in classification. This is particularly useful in making a diagnosis of solid-type adenocarcinoma or nonkeratinizing squamous cell carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_thoracic_tumours_lyon_france_international_agency_for_",
+          "label": "WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "travis_wd_eisele_m_nishimura_kk_et_al_the_international_association_for_the_study_of_lung_cancer_ias",
+          "label": "Travis WD, Eisele M, Nishimura KK, et al. The International Association for the Study of Lung Cancer (IASLC) Staging Project for Lung Cancer: Recommendation to Introduce Spread Through Air Spaces as a Histologic Descriptor in the Ninth Edition of the TNM Classification of Lung Cancer. Analysis of 4061 Pathologic Stage I NSCLC. J Thorac Oncol. 2024 Jul;19(7):1028-1051.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_schil_pe_asamura_h_nishimura_kk_et_al_the_international_association_for_the_study_of_lung_cancer",
+          "label": "Van Schil PE, Asamura H, Nishimura KK, et al. The International Association for the Study of Lung Cancer Lung Cancer Staging Project: Proposals for the Revisions of the T-Descriptors in the Forthcoming Ninth Edition of the TNM Classification for Lung Cancer. J Thorac Oncol. 2024;19(5):749-765.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_predominant_histological_pattern_of_non_mucinous_adenocarcinomas_is_associated_with_prognosis_wi",
+          "label": "The predominant histological pattern of non-mucinous adenocarcinomas is associated with prognosis with lepidic-predominant tumors having the best prognosis, acinar and papillary-predominant tumors having an intermediate prognosis, and solid-predominant and micropapillary-predominant tumors having the worst prognosis.1 A recent study by the International Association for the Study of Lung Cancer (IASLC) Pathology Committee found that a combination of predominant and worst histological pattern improves prediction of patient outcome.1 The following grading scheme was recommended for resected early-stage non-mucinous lung adenocarcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "iaslc_histopathologic_grading_scheme_for_non_mucinous_lung_adenocarcinoma",
+          "label": "IASLC Histopathologic Grading Scheme for Non-mucinous Lung Adenocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_g1_well_differentiated",
+          "label": "Grade 1 (G1):    Well-differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "lepidic-predominant with no or < 20% high-grade pattern"
+        },
+        {
+          "field_id": "grade_2_g2_moderately_differentiated_acinar_or_papillary_predominant_with_no_or_20_high_grade",
+          "label": "Grade 2 (G2):    Moderately differentiated (acinar or papillary-predominant with no or < 20% high-grade",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_g3_poorly_differentiated_any_tumor_with_20_high_grade_pattern_ie_solid_micropapillary",
+          "label": "Grade 3 (G3):    Poorly differentiated (any tumor with ≥ 20% high-grade pattern (i.e., solid, micropapillary,",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "note_a_complex_glandular_pattern_is_defined_by_fused_glands_or_single_cells_infiltrating_in_a_desmop",
+          "label": "Note: A complex glandular pattern is defined by fused glands or single cells infiltrating in a desmoplastic stroma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_tumors_continue_to_be_classified_based_on_their_diagnostic_criteria_as_low_grade_typi",
+          "label": "Neuroendocrine tumors continue to be classified based on their diagnostic criteria as low-grade (typical carcinoid/neuroendocrine tumor, grade 1), intermediate-grade (atypical carcinoid/neuroendocrine tumor, grade 2) and neuroendocrine carcinoma (large cell carcinoma and small cell carcinoma).2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "use_of_the_above_grading_schemes_is_required_for_non_mucinous_adenocarcinomas_and_neuroendocrine_tum",
+          "label": "Use of the above grading schemes is required for non-mucinous adenocarcinomas and neuroendocrine tumors. There is currently no established grading scheme for invasive mucinous adenocarcinoma or squamous cell carcinoma of the lung.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_other_tumors_the_four_tiered_grading_scheme_for_lung_cancer_shown_below_has_been_put_forth_by_th",
+          "label": "For other tumors, the four-tiered grading scheme for lung cancer (shown below) has been put forth by the American Joint Committee on Cancer (AJCC) may be used.1,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_gx_cannot_be_assessed",
+          "label": "Grade X (GX):   Cannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_g1_well_differentiated",
+          "label": "Grade 1 (G1):    Well-differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_g2_moderately_differentiated",
+          "label": "Grade 2 (G2):    Moderately differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_g3_poorly_differentiated",
+          "label": "Grade 3 (G3):    Poorly differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_4_g4_undifferentiated",
+          "label": "Grade 4 (G4):    Undifferentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moreira_al_ocampo_pss_xia_y_et_al_a_grading_system_for_invasive_pulmonary_adenocarcinoma_a_proposal_",
+          "label": "Moreira AL, Ocampo PSS, Xia Y, et al. A Grading System for Invasive Pulmonary Adenocarcinoma: A Proposal from the International Association for the Study of Lung Cancer Pathology Committee. J Thorac Oncol. 2020 Oct;15(10):1599-1610.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_thoracic_tumours_lyon_france_international_agency_for_",
+          "label": "WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_visceral_pleural_invasion_by_tumors_3_cm_changes_the_t_category_from_pt1_to_pt2a1_st",
+          "label": "The presence of visceral pleural invasion by tumors ≤ 3 cm changes the T category from pT1 to pT2a.1 Studies have shown that tumors ≤ 3 cm that penetrate beyond the elastic layer of the visceral pleura behave similarly to similar-size tumors that extend to the visceral pleural surface.2,3 Visceral pleural invasion should therefore be considered present not only in tumors that extend to the visceral pleural surface, but also in tumors that penetrate beyond the elastic layer of the visceral pleura (Figure 1).4,5,6 To qualify for visceral pleural invasion, tumor cells must have crossed the thickest visceral pleural elastic layer, which is usually the outermost (external) elastic layer in the visceral pleura (the layer closest to the visceral pleural mesothelial-lined surface). In many patients, a thinner, sometimes discontinuous, elastic layer (internal visceral pleural elastic layer) can be appreciated closer to the lung parenchyma. Penetration of tumor through this thinner, variably discontinuous internal (i.e., closer to the lung parenchyma)) elastic layer does not qualify as visceral pleura invasion.7 The pleural elastic layers can be difficult to appreciate in hematoxylin-eosin stains. Elastic stains may facilitate the assessment of visceral pleural invasion.2,3,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_types_of_visceral_pleural_invasion_staining_for_elastin_eg_elastic_van_gieson_evg_stain_can",
+          "label": "Figure 1. Types of visceral pleural invasion. Staining for elastin (e.g., elastic-Van Gieson [EVG] stain) can aid in detection of visceral pleural invasion where it is indeterminate by hematoxylin-eosin (H&E) stain. A and B. Visceral pleural invasion is present when a tumor penetrates beyond the thick (external) elastic layer of the visceral pleura (type PL1 pleural invasion) C. Tumor extension to the visceral pleural surface is also categorized as visceral pleural invasion (type PL2). Both types of visceral pleural invasion raise the T category of otherwise T1 tumors to T2a. D. Visceral pleural invasion is categorized as absent in tumors that do not penetrate the visceral pleural elastic layer (type PL0). (Original magnifications x200 [A], x400 [B and C], x600 [D]).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "based_on_available_data_a_tumor_with_direct_invasion_across_a_fissure_or_directly_if_the_fissure_is_",
+          "label": "Based on available data, a tumor with direct invasion across a fissure or directly if the fissure is incomplete into an adjacent ipsilateral lobe should be classified as T2a unless the size of the tumor or other criteria that would dictate a higher T category are met.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pleural_tumor_nodules_including_same_lobe_visceral_pleural_nodules_separate_from_the_primary_tumor_n",
+          "label": "Pleural tumor nodules, including same lobe visceral pleural nodules, separate from the primary tumor (non-contiguous) should be categorized as M1a.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bunker_ml_raab_ss_landreneau_rj_et_al_the_diagnosis_and_significance_of_visceral_pleura_invasion_in_",
+          "label": "Bunker ML, Raab SS, Landreneau RJ, et al. The diagnosis and significance of visceral pleura invasion in lung carcinoma: histologic predictors and the role of elastic stains. Am J Clin Pathol. 1999;112(6):777-783.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shimizu_k_yoshida_j_nagai_k_et_al_visceral_pleural_invasion_classification_in_non_small_cell_lung_ca",
+          "label": "Shimizu K, Yoshida J, Nagai K, et al. Visceral pleural invasion classification in non-small cell lung cancer: a proposal on the basis of outcome assessment. J Thorac Cardiovasc Surg. 2004;127(6):1574-1578.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maeyashiki_t_suzuki_k_hattori_a_et_al_the_size_of_consolidation_on_thin_section_computed_tomography_",
+          "label": "Maeyashiki T, Suzuki K, Hattori A, et al. The size of consolidation on thin-section computed tomography is a better predictor of survival than the maximum tumour dimension in resectable lung cancer. Eur J Cardiothorac Surg. 2013;43(5):915-918.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wittekind_c_greene_fl_henson_de_hutter_rvp_sobin_lh_eds_tnm_supplement_a_commentary_on_uniform_use_3",
+          "label": "Wittekind C, Greene FL, Henson DE, Hutter RVP, Sobin LH, eds. TNM Supplement: A Commentary on Uniform Use. 3rd ed. New York, NY: Wiley-Liss; 2001.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "travis_wd_asamura_h_bankier_aa_et_al_the_iaslc_lung_cancer_staging_project_proposals_for_coding_t_ca",
+          "label": "Travis WD, Asamura H, Bankier AA, et al. The IASLC lung cancer staging project: proposals for coding T categories for subsolid nodules and assessment of tumor size in part-solid tumors in the forthcoming eighth edition of the TNM classification of lung cancer. J Thorac Onc. 2016;11(8):1204-1223.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "travis_wd_brambilla_e_rami_porta_r_et_al_visceral_pleural_invasion_pathologic_criteria_and_use_of_el",
+          "label": "Travis WD, Brambilla E, Rami-Porta R, et al. Visceral pleural invasion: pathologic criteria and use of elastic stains: proposal for the 7th edition of the TNM classification for lung cancer. J Thorac Oncol. 2008;3(12):1384-1390.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lung_tumors_sometimes_exhibit_direct_invasion_of_structures_surrounding_the_lung_parenchyma_in_which",
+          "label": "Lung tumors sometimes exhibit direct invasion of structures surrounding the lung parenchyma in which the arise. Direct hilar fat/soft tissue invasion without evidence of direct extension into other structures that would meet a higher T designation is categorized as T2a.1 Occasionally, lung cancer specimens consist of en bloc resections that incorporate extrapulmonary structures directly invaded by tumor. Accurate assessment of such specimens might require carefully study of the operative note and preoperative imaging, or communication with the surgeon regarding the nature and location of any attached extrapulmonary structures.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_the_ajcc_direct_invasion_of_the_parietal_pleura_is_categorized_as_t3_as_is_direct_invas",
+          "label": "According to the AJCC, direct invasion of the parietal pleura is categorized as T3, as is direct invasion of the chest wall (including the superior sulcus).1 Although parietal pleural invasion appears to portend a worse prognosis within the pT3 category than an intralobar metastasis, evidence was insufficient to classify it as pT4 in Version 9 of the TNM Classification for Lung Cancer.1 Specifying the chest wall structures directly invaded by tumor (e.g., intercostal muscle[s], rib[s], pectoralis muscle, latissimus muscle, serratus muscle) can facilitate patient management. Direct phrenic nerve and parietal pericardial invasion are also categorized as T3. Tumor extension into the visceral pericardium (epicardium) is categorized as T4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "direct_invasion_of_central_thoracic_structures_including_the_heart_great_vessels_mediastinum_trachea",
+          "label": "Direct invasion of central thoracic structures, including the heart, great vessels, mediastinum, trachea, recurrent laryngeal nerve, esophagus, vertebral body, and carina is considered T4. Direct invasion of the diaphragm is also categorized as T4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_schil_pe_asamura_h_nishimura_kk_et_al_the_international_association_for_the_study_of_lung_cancer",
+          "label": "Van Schil PE, Asamura H, Nishimura KK, et al. The International Association for the Study of Lung Cancer Lung Cancer Staging Project: Proposals for the Revisions of the T-Descriptors in the Forthcoming Ninth Edition of the TNM Classification for Lung Cancer. J Thorac Oncol. 2024;19(5):749-765.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_patients_who_have_received_neoadjuvant_chemotherapy_immunotherapy_andor_radiation_therapy_before",
+          "label": "For patients who have received neoadjuvant chemotherapy, immunotherapy and/or radiation therapy before surgical resection, quantifying the extent of therapy-induced tumor regression provides prognostically relevant information.1,2 Measuring residual tumor size in patients with a partial response can be challenging, as there are often discontinuous clusters of viable tumor at the peripheral edges of an irregular area of treatment-related necrosis. The IASLC recently published multidisciplinary recommendations for the pathologic assessment of lung cancer resection specimens after neoadjuvant therapy.2 To evaluate treatment effect, the resection specimen should be sectioned in the plane that shows the maximum dimension of the tumor bed and its relationship to structures relevant for determining pT category and margin status. Three-dimensional size of the tumor bed and an estimated percentage of gross necrosis should be recorded. Tumor beds up to 3.0 cm may be submitted entirely for microscopic examination. For larger tumors, the IASLC recommends complete sampling of an entire cross-section of tumor bed with mapping of each section to a gross photograph. The percentages of viable tumor, stromal tissue (i.e., fibrosis and inflammation) and necrosis (in increments of 10% totaling 100%) should be determined based on review of all microscopic sections of tumor bed. If a component amounts to less than 5%, an estimate of single percentages should be recorded. This approach to evaluating residual tumor refines that suggested by the AJCC of multiplying the percentage of the mass that is composed of viable tumor by the size of the total mass to estimate post-neoadjuvant tumor size.3 A “y” prefix is applied to the TNM classification in resections following multimodality therapy (see Note J). If no viable tumor is identified on resection, ypT0 is the appropriate designation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "junker_k_langer_k_klinke_f_bosse_u_thomas_m_grading_of_tumor_regression_in_non_small_cell_lung_cance",
+          "label": "Junker K, Langer K, Klinke F, Bosse U, Thomas M. Grading of tumor regression in non-small cell lung cancer: morphology and prognosis. Chest. 2001;120(5):1584-1591.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "travis_wd_dacic_s_wistuba_i_et_al_iaslc_multidisciplinary_recommendations_for_pathologic_assessment_",
+          "label": "Travis WD, Dacic S, Wistuba I, et al. IASLC Multidisciplinary Recommendations for Pathologic Assessment of Lung Cancer Resection Specimens After Neoadjuvant Therapy. J Thorac Oncol. 2020 May;15(5):709-740.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "travis_wd_asamura_h_bankier_aa_et_al_the_iaslc_lung_cancer_staging_project_proposals_for_coding_t_ca",
+          "label": "Travis WD, Asamura H, Bankier AA, et al. The IASLC lung cancer staging project: proposals for coding T categories for subsolid nodules and assessment of tumor size in part-solid tumors in the forthcoming eighth edition of the TNM classification of lung cancer. J Thorac Onc. 2016;11(8):1204-1223.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_data_showing_lymphatic_invasion_by_tumor_represents_an_unfavorable_prognostic_finding_but_",
+          "label": "There are data showing lymphatic invasion by tumor represents an unfavorable prognostic finding, but studies on the role of large vessel invasion have produced somewhat conflicting results.1,2 The presence of lymphovascular invasion is exclusionary of adenocarcinoma in situ (AIS) and minimally invasive adenocarcinoma (MIA).3 Angiolymphatic invasion does not alter the pT and pN classifications or the TNM stage grouping.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tsutani_y_miyata_y_nakayama_h_et_al_prognostic_significance_of_using_solid_versus_whole_tumor_size_o",
+          "label": "Tsutani Y, Miyata Y, Nakayama H, et al. Prognostic significance of using solid versus whole tumor size on high-resolution computed tomography for predicting pathologic malignant grade tumors in clinical stage IA lung adenocarcinoma: a multicenter study. J Thorac Cardiovasc Surg. 2012;143(3):607-612.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_thoracic_tumours_lyon_france_international_agency_for_",
+          "label": "WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "surgical_margins_represent_sites_that_have_either_been_cut_or_bluntly_dissected_by_the_surgeon_to_re",
+          "label": "Surgical margins represent sites that have either been cut or bluntly dissected by the surgeon to resect the specimen. The presence of tumor at a surgical margin is an important finding, because there is the potential for residual tumor remaining in the patient in the area surrounding a positive margin. Peripheral wedge resections contain a parenchymal margin, which is represented by the tissue at the staple line(s). Lobectomy and pneumonectomy specimens contain bronchial and vascular margins and, depending on the completeness of the interlobar fissures and other anatomic factors, may also contain parenchymal margins in the form of staple lines. En bloc resections that contain extrapulmonary structures as part of the specimen have additional margins (e.g., parietal pleura, chest wall), which should be designated by the surgeon for appropriate handling. Note that the visceral pleura is not a surgical margin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_of_the_ajcc_and_the_uicc_is_recommended_for_both_non_small_cell_lung_cancer_a",
+          "label": "The TNM staging system of the AJCC and the UICC is recommended for both non-small cell lung cancer and small cell lung cancer.1 Typical carcinoid and atypical carcinoid tumors should also be classified according to the TNM staging system.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_trea",
+          "label": "By AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based clinical stage information modified/refined by operative findings and pathological evaluation of the resected specimen. The pTNM classification is applicable when surgery is performed before adjuvant systemic or radiation therapy is initiated. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_and_r_prefixes",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” and “r” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_can_indicate_the_presence_of_multiple_ground_glasslepidic_adenocarcinomas_or_be_used_to",
+          "label": "The “m” suffix can indicate the presence of multiple ground-glass/lepidic adenocarcinomas or be used to indicate increased tumor burden of multifocal tumors of same histologic type that are too numerous for individual separate synoptic reports. It is recorded in parentheses: pT(m) (see Note A).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy) (see Note G).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "version_9_of_the_tnm_classification_for_lung_cancer_maintains_the_eighth_edition_t_descriptors2",
+          "label": "Version 9 of the TNM classification for lung cancer maintains the eighth-edition T descriptors.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_obstructive_pneumonitis_associated_with_tumor_is_sometimes_seen_histologically_accurate_ass",
+          "label": "Although obstructive pneumonitis associated with tumor is sometimes seen histologically, accurate assessment of tumor-associated obstructive pneumonitis as well as atelectasis requires integration of clinical and radiographic information. Atelectasis and obstructive pneumonitis recognized by pathology only should not be used for TNM staging.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_node_metastases_are_an_adverse_prognostic_factor_the_extent_of_which_is_dependent_on_the_locat",
+          "label": "Lymph node metastases are an adverse prognostic factor, the extent of which is dependent on the location and number of the involved lymph node stations.3 The involved lymph node stations should be recorded according to the International Association for the Study of Lung Cancer (IASLC) lymph node map. Given the nature of the procedure, lymph nodes obtained by mediastinoscopy are often received fragmented, and it may not be possible to distinguish a single fragmented lymph node from fragments of multiple lymph nodes. For this reason, only if the actual number of nodes is known or provided should it be quantified. Otherwise, it is permissible to report the sites of nodal metastases without specifying the number involved.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_extranodal_extension_of_a_positive_mediastinal_lymph_node_may_represent_an_unfavorable_prog",
+          "label": "Although extranodal extension of a positive mediastinal lymph node may represent an unfavorable prognostic finding, it does not change the pN classification or the TNM stage grouping. Extranodal extension refers to the extension of metastatic intranodal tumor beyond the lymph node capsule into the surrounding tissue. Direct extension of a primary tumor into a nearby lymph node does not qualify as extranodal extension.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_anatomic_classification_of_regional_lymph_nodes_proposed_by_the_iaslc_is_shown_below_a_complete_",
+          "label": "The anatomic classification of regional lymph nodes proposed by the IASLC is shown below. A complete description of the anatomic limits of each nodal station can be found in the AJCC Staging Manual.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_1_lower_cervical_supraclavicular_and_sternal_notch_nodes",
+          "label": "Station 1    Lower cervical, supraclavicular, and sternal notch nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_2_upper_paratracheal_nodes",
+          "label": "Station 2    Upper paratracheal nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_3_prevascular_and_retrotracheal_nodes",
+          "label": "Station 3    Prevascular and retrotracheal nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_4_lower_paratracheal_nodes",
+          "label": "Station 4    Lower paratracheal nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_5_subaortic_nodes",
+          "label": "Station 5    Subaortic nodes",
+          "required": true,
+          "type": "free_text",
+          "condition": "aorto-pulmonary window"
+        },
+        {
+          "field_id": "station_6_paraaortic_nodes",
+          "label": "Station 6    Paraaortic nodes",
+          "required": true,
+          "type": "free_text",
+          "condition": "ascending aorta or phrenic"
+        },
+        {
+          "field_id": "station_7_subcarinal_nodes",
+          "label": "Station 7    Subcarinal nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_8_paraesophageal_nodes",
+          "label": "Station 8    Paraesophageal nodes",
+          "required": true,
+          "type": "free_text",
+          "condition": "below carina"
+        },
+        {
+          "field_id": "station_9_pulmonary_ligament_nodes",
+          "label": "Station 9    Pulmonary ligament nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_10_hilar_nodes",
+          "label": "Station 10  Hilar nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_11_interlobar_nodes",
+          "label": "Station 11   Interlobar nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_12_lobar_nodes",
+          "label": "Station 12   Lobar nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_13_segmental_nodes",
+          "label": "Station 13   Segmental nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "station_14_subsegmental_nodes",
+          "label": "Station 14   Subsegmental nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastasis_to_nonregional_lymph_nodes_ie_lymph_nodes_that_are_not_included_in_the_iaslc_lymph_node_m",
+          "label": "Metastasis to nonregional lymph nodes (i.e., lymph nodes that are not included in the IASLC lymph node map) are assigned to the M1b or M1c category depending or whether single or multiple metastases are present.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "with_respect_to_this_protocol_reporting_a_pm_designation_is_required_only_if_metastasis_is_pathologi",
+          "label": "With respect to this protocol, reporting a pM designation is required only if metastasis is pathologically confirmed in the specimen(s) being examined. The designation pMX should not be used.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_addition_to_malignant_pleural_effusion_malignant_pericardial_effusion_as_well_as_separate_tumor_n",
+          "label": "In addition to malignant pleural effusion, malignant pericardial effusion, as well as separate tumor nodule(s) in a contralateral lobe are categorized as M1a.4 Visceral or parietal ipsilateral pleural tumor nodules and pericardial tumor nodules that are not in direct continuity with the primary lung tumor are also categorized as M1a. A single extrathoracic metastasis in a single organ system is categorized as M1b. Multiple extrathoracic metastases are categorized as M1c1 when they occur in a single organ system and M1c2 when they occur in multiple organ systems.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_schil_pe_asamura_h_nishimura_kk_et_al_the_international_association_for_the_study_of_lung_cancer",
+          "label": "Van Schil PE, Asamura H, Nishimura KK, et al. The International Association for the Study of Lung Cancer Lung Cancer Staging Project: Proposals for the Revisions of the T-Descriptors in the Forthcoming Ninth Edition of the TNM Classification for Lung Cancer. J Thorac Oncol. 2024;19(5):749-765.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "huang_j_osarogiagbon_ru_giroux_dj_et_al_the_iaslc_lung_cancer_staging_project_proposals_for_the_revi",
+          "label": "Huang J, Osarogiagbon RU, Giroux DJ, et al. The IASLC Lung Cancer Staging Project: Proposals for the Revision of the N Descriptors in the Forthcoming 9th Edition of the TNM Classification for Lung Cancer. J Thorac Oncol. (2023), doi: https://doi.org/10.1016/j.jtho.2023.10.012",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fong_km_rosenthal_a_giroux_dj_et_al_the_international_association_for_the_study_of_lung_cancer_stagi",
+          "label": "Fong KM, Rosenthal A, Giroux DJ, et al. The International Association for the Study of Lung Cancer Staging Project for Lung Cancer: Proposals for the Revision of the M Descriptors in the Forthcoming Ninth Edition of the TNM Classification for Lung Cancer. J Thorac Oncol. 2024;19(5):786-802.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

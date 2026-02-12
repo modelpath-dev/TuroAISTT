@@ -1,0 +1,1523 @@
+{
+  "template_id": "Soft.Tissue.Bx_4.2.0.0.REL_CAPCP",
+  "organ": "SOFT TISSUE: Biopsy",
+  "protocol_posting_date": "June 2024",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "associated_syndrome",
+          "label": "Associated Syndrome",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "li_fraumeni_syndrome",
+              "label": "Li-Fraumeni syndrome"
+            },
+            {
+              "value": "neurofibromatosis_type_1",
+              "label": "Neurofibromatosis type 1"
+            },
+            {
+              "value": "familial_adenomatous_polyposis",
+              "label": "Familial adenomatous polyposis"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "radiologic_findings",
+          "label": "Radiologic Findings",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify",
+              "label": "Specify: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_available",
+              "label": "Not available"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen",
+          "label": "SPECIMEN",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "core_needle_biopsy",
+              "label": "Core needle biopsy"
+            },
+            {
+              "value": "incisional_biopsy",
+              "label": "Incisional biopsy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "head_and_neck",
+              "label": "Head and neck (specify site, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "trunk_extremities_joint_intra_articular",
+              "label": "Trunk, extremities, joint / intra-articular (specify site, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "abdominal_visceral_organs",
+              "label": "Abdominal visceral organs (specify site, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "thoracic_visceral_organs",
+              "label": "Thoracic visceral organs (specify site, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retroperitoneum",
+              "label": "Retroperitoneum (specify site, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "orbit",
+              "label": "Orbit (specify site, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "tumor_laterality",
+          "label": "Tumor Laterality",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "central",
+              "label": "Central"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "based on clinicoradiologic parameters"
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adipocytic_tumors",
+              "label": "Adipocytic tumors"
+            },
+            {
+              "value": "atypical_spindle_cell_pleomorphic_lipomatous_tumor",
+              "label": "Atypical spindle cell / pleomorphic lipomatous tumor"
+            },
+            {
+              "value": "atypical_lipomatous_tumor",
+              "label": "Atypical lipomatous tumor"
+            },
+            {
+              "value": "well_differentiated_liposarcoma",
+              "label": "Well-differentiated liposarcoma"
+            },
+            {
+              "value": "dedifferentiated_liposarcoma",
+              "label": "Dedifferentiated liposarcoma"
+            },
+            {
+              "value": "myxoid_liposarcoma",
+              "label": "Myxoid liposarcoma"
+            }
+          ],
+          "notes": [
+            "C"
+          ],
+          "guidance": "The list is derived from the World Health Organization (WHO) classification of soft tissue tumors, 5th edition, to include ONLY soft tissue tumors of intermediate (locally aggressive and rarely metastasizing) potential and malignant soft tissue tumors."
+        },
+        {
+          "field_id": "percentage_of_hypercellular_areas",
+          "label": "Percentage of Hypercellular Areas",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "pleomorphic_liposarcoma_nos",
+              "label": "Pleomorphic liposarcoma, NOS"
+            },
+            {
+              "value": "epithelioid_pleomorphic_liposarcoma",
+              "label": "Epithelioid pleomorphic liposarcoma"
+            },
+            {
+              "value": "myxoid_pleomorphic_liposarcoma",
+              "label": "Myxoid pleomorphic liposarcoma"
+            },
+            {
+              "value": "fibroblastic_myofibroblastic_fibrohistiocytic_tumors",
+              "label": "Fibroblastic / myofibroblastic / fibrohistiocytic tumors"
+            },
+            {
+              "value": "solitary_fibrous_tumor",
+              "label": "Solitary fibrous tumor"
+            },
+            {
+              "value": "desmoid_type_fibromatosis",
+              "label": "Desmoid-type fibromatosis"
+            },
+            {
+              "value": "lipofibromatosis",
+              "label": "Lipofibromatosis"
+            },
+            {
+              "value": "plexiform_fibrohistiocytic_tumor",
+              "label": "Plexiform fibrohistiocytic tumor"
+            },
+            {
+              "value": "giant_cell_fibroblastoma",
+              "label": "Giant cell fibroblastoma"
+            },
+            {
+              "value": "dermatofibrosarcoma_protuberans",
+              "label": "Dermatofibrosarcoma protuberans"
+            },
+            {
+              "value": "fibrosarcomatous_dermatofibrosarcoma_protuberans",
+              "label": "Fibrosarcomatous dermatofibrosarcoma protuberans"
+            },
+            {
+              "value": "myxofibrosarcoma",
+              "label": "Myxofibrosarcoma"
+            },
+            {
+              "value": "low_grade_fibromyxoid_sarcoma",
+              "label": "Low-grade fibromyxoid sarcoma"
+            },
+            {
+              "value": "sclerosing_epithelioid_fibrosarcoma",
+              "label": "Sclerosing epithelioid fibrosarcoma"
+            },
+            {
+              "value": "myofibroblastic_sarcoma",
+              "label": "Myofibroblastic sarcoma"
+            },
+            {
+              "value": "superficial_cd34_positive_fibroblastic_tumor",
+              "label": "Superficial CD34-positive fibroblastic tumor"
+            },
+            {
+              "value": "myxoinflammatory_fibroblastic_sarcoma",
+              "label": "Myxoinflammatory fibroblastic sarcoma"
+            },
+            {
+              "value": "histiocytic_giant_cell_rich_tumors",
+              "label": "Histiocytic / giant cell rich tumors"
+            },
+            {
+              "value": "giant_cell_tumor_of_soft_tissue",
+              "label": "Giant cell tumor of soft tissue"
+            },
+            {
+              "value": "langerhans_cell_sarcoma",
+              "label": "Langerhans cell sarcoma"
+            },
+            {
+              "value": "true_histiocytic_sarcoma",
+              "label": "True histiocytic sarcoma"
+            },
+            {
+              "value": "malignant_tenosynovial_giant_cell_tumor",
+              "label": "Malignant tenosynovial giant cell tumor"
+            },
+            {
+              "value": "dendritic_reticulum_cell_sarcoma",
+              "label": "Dendritic reticulum cell sarcoma"
+            },
+            {
+              "value": "interdigitating_reticulum_cell_sarcoma",
+              "label": "Interdigitating reticulum cell sarcoma"
+            },
+            {
+              "value": "fibroblastic_reticulum_cell_sarcoma",
+              "label": "Fibroblastic reticulum cell sarcoma"
+            },
+            {
+              "value": "tyrosine_kinase_fusion_tumors_ras_map_pathway",
+              "label": "Tyrosine kinase fusion tumors, RAS-MAP pathway (Note D)"
+            },
+            {
+              "value": "ntrk_123_fusion_tumor",
+              "label": "NTRK 1/2/3 fusion tumor"
+            },
+            {
+              "value": "braf_fusion_tumor",
+              "label": "BRAF fusion tumor"
+            },
+            {
+              "value": "ret_fusion_tumor",
+              "label": "RET fusion tumor"
+            },
+            {
+              "value": "raf_fusion_tumor",
+              "label": "RAF fusion tumor"
+            },
+            {
+              "value": "alk_fusion_tumor_nos",
+              "label": "ALK fusion tumor, NOS"
+            },
+            {
+              "value": "inflammatory_myofibroblastic_tumor",
+              "label": "Inflammatory myofibroblastic tumor"
+            },
+            {
+              "value": "epithelioid_inflammatory_myofibroblastic_sarcoma",
+              "label": "Epithelioid inflammatory myofibroblastic sarcoma"
+            },
+            {
+              "value": "infantile_fibrosarcoma",
+              "label": "Infantile fibrosarcoma"
+            },
+            {
+              "value": "pericytic_myopericytic_tumors",
+              "label": "Pericytic / myopericytic tumors"
+            },
+            {
+              "value": "glomus_tumor_atypical_uncertain_biologic_potential",
+              "label": "Glomus tumor, atypical / uncertain biologic potential"
+            },
+            {
+              "value": "glomus_tumor_malignant",
+              "label": "Glomus tumor, malignant"
+            },
+            {
+              "value": "vascular_tumors",
+              "label": "Vascular tumors"
+            },
+            {
+              "value": "kaposiform_hemangioendothelioma",
+              "label": "Kaposiform hemangioendothelioma"
+            },
+            {
+              "value": "papillary_intralymphatic_angioendothelioma",
+              "label": "Papillary intralymphatic angioendothelioma"
+            },
+            {
+              "value": "retiform_hemangioendothelioma",
+              "label": "Retiform hemangioendothelioma"
+            },
+            {
+              "value": "composite_hemangioendothelioma",
+              "label": "Composite hemangioendothelioma"
+            },
+            {
+              "value": "pseudomyogenic_hemangioendothelioma",
+              "label": "Pseudomyogenic hemangioendothelioma"
+            },
+            {
+              "value": "kaposi_sarcoma",
+              "label": "Kaposi sarcoma"
+            },
+            {
+              "value": "epithelioid_hemangioendothelioma_with_wwtr1",
+              "label": "Epithelioid hemangioendothelioma with WWTR1::CAMTA1 fusion"
+            },
+            {
+              "value": "epithelioid_hemangioendothelioma_with_yap1",
+              "label": "Epithelioid hemangioendothelioma with YAP1::TFE3 fusion"
+            },
+            {
+              "value": "epithelioid_hemangioendothelioma_nos",
+              "label": "Epithelioid hemangioendothelioma, NOS"
+            },
+            {
+              "value": "epithelioid_angiosarcoma",
+              "label": "Epithelioid angiosarcoma"
+            },
+            {
+              "value": "radiation_associated_angiosarcoma",
+              "label": "Radiation-associated angiosarcoma"
+            },
+            {
+              "value": "lymphedema_associated_angiosarcoma",
+              "label": "Lymphedema-associated angiosarcoma"
+            },
+            {
+              "value": "angiosarcoma_nos",
+              "label": "Angiosarcoma, NOS"
+            },
+            {
+              "value": "smooth_muscle_tumors",
+              "label": "Smooth muscle tumors"
+            },
+            {
+              "value": "ebv_associated_smooth_muscle_tumor",
+              "label": "EBV-associated smooth muscle tumor"
+            },
+            {
+              "value": "leiomyosarcoma",
+              "label": "Leiomyosarcoma"
+            },
+            {
+              "value": "skeletal_muscle_tumors",
+              "label": "Skeletal muscle tumors"
+            },
+            {
+              "value": "embryonal_rhabdomyosarcoma",
+              "label": "Embryonal rhabdomyosarcoma"
+            },
+            {
+              "value": "alveolar_rhabdomyosarcoma",
+              "label": "Alveolar rhabdomyosarcoma"
+            },
+            {
+              "value": "pleomorphic_rhabdomyosarcoma",
+              "label": "Pleomorphic rhabdomyosarcoma"
+            },
+            {
+              "value": "spindle_cell_sclerosing_rhabdomyosarcoma_nos",
+              "label": "Spindle cell / sclerosing rhabdomyosarcoma, NOS"
+            },
+            {
+              "value": "congenital_spindle_cell_rhabdomyosarcoma_with_vgll2ncoa2cited2_fusions",
+              "label": "Congenital spindle cell rhabdomyosarcoma with VGLL2/NCOA2/CITED2 fusions"
+            },
+            {
+              "value": "spindle_cell_sclerosing_rhabdomyosarcoma_with_myod1_mutation",
+              "label": "Spindle cell / sclerosing rhabdomyosarcoma with MYOD1 mutation"
+            },
+            {
+              "value": "spindle_cell_rhabdomyosarcoma_with_fusewsr1",
+              "label": "Spindle cell rhabdomyosarcoma with FUS/EWSR1::TFCP2 or MEIS1::NCOA2 rearrangements"
+            },
+            {
+              "value": "ectomesenchymoma",
+              "label": "Ectomesenchymoma"
+            },
+            {
+              "value": "peripheral_nerve_sheath_tumors",
+              "label": "Peripheral nerve sheath tumors"
+            },
+            {
+              "value": "malignant_peripheral_nerve_sheath_tumor_nos",
+              "label": "Malignant peripheral nerve sheath tumor, NOS"
+            },
+            {
+              "value": "epithelioid_malignant_peripheral_nerve_sheath_tumor",
+              "label": "Epithelioid malignant peripheral nerve sheath tumor"
+            },
+            {
+              "value": "malignant_triton_tumor",
+              "label": "Malignant triton tumor"
+            },
+            {
+              "value": "melanotic_malignant_peripheral_nerve_sheath_tumor",
+              "label": "Melanotic malignant peripheral nerve sheath tumor"
+            },
+            {
+              "value": "malignant_granular_cell_tumor",
+              "label": "Malignant granular cell tumor"
+            },
+            {
+              "value": "malignant_perineurioma",
+              "label": "Malignant perineurioma"
+            },
+            {
+              "value": "chondro_osseous_tumors",
+              "label": "Chondro-osseous tumors"
+            },
+            {
+              "value": "extraskeletal_osteosarcoma",
+              "label": "Extraskeletal osteosarcoma"
+            },
+            {
+              "value": "mesenchymal_chondrosarcoma",
+              "label": "Mesenchymal chondrosarcoma"
+            },
+            {
+              "value": "chondrosarcoma_arising_in_synovial_chondromatosis",
+              "label": "Chondrosarcoma arising in synovial chondromatosis"
+            },
+            {
+              "value": "tumors_of_uncertain_differentiation_additional_round_and_spindle_cell_tumors",
+              "label": "Tumors of uncertain differentiation / additional round and spindle cell tumors"
+            },
+            {
+              "value": "hemosiderotic_fibrolipomatous_tumor",
+              "label": "Hemosiderotic fibrolipomatous tumor"
+            },
+            {
+              "value": "pleomorphic_hyalinizing_angiectatic_tumor",
+              "label": "Pleomorphic hyalinizing angiectatic tumor"
+            },
+            {
+              "value": "atypical_fibroxanthoma",
+              "label": "Atypical fibroxanthoma"
+            },
+            {
+              "value": "pleomorphic_dermal_sarcoma",
+              "label": "Pleomorphic dermal sarcoma"
+            },
+            {
+              "value": "angiomatoid_fibrous_histiocytoma",
+              "label": "Angiomatoid fibrous histiocytoma"
+            },
+            {
+              "value": "myoepithelioma",
+              "label": "Myoepithelioma"
+            },
+            {
+              "value": "mixed_tumor_malignant",
+              "label": "Mixed tumor, malignant"
+            },
+            {
+              "value": "myoepithelial_carcinoma",
+              "label": "Myoepithelial carcinoma"
+            },
+            {
+              "value": "ossifying_fibromyxoid_tumor",
+              "label": "Ossifying fibromyxoid tumor (Note E)"
+            },
+            {
+              "value": "phosphaturic_mesenchymal_tumor_malignant",
+              "label": "Phosphaturic mesenchymal tumor, malignant"
+            },
+            {
+              "value": "synovial_sarcoma",
+              "label": "Synovial sarcoma"
+            },
+            {
+              "value": "epithelioid_sarcoma_distal_classic_type",
+              "label": "Epithelioid sarcoma, distal classic type"
+            },
+            {
+              "value": "epithelioid_sarcoma_proximal_large_cell_type",
+              "label": "Epithelioid sarcoma, proximal large cell type"
+            },
+            {
+              "value": "alveolar_soft_part_sarcoma",
+              "label": "Alveolar soft part sarcoma"
+            },
+            {
+              "value": "clear_cell_sarcoma_of_soft_tissue",
+              "label": "Clear cell sarcoma of soft tissue"
+            },
+            {
+              "value": "extraskeletal_myxoid_chondrosarcoma",
+              "label": "Extraskeletal myxoid chondrosarcoma"
+            },
+            {
+              "value": "extraskeletal_ewing_sarcoma",
+              "label": "Extraskeletal Ewing sarcoma"
+            },
+            {
+              "value": "desmoplastic_small_round_cell_tumor",
+              "label": "Desmoplastic small round cell tumor (DSRCT)"
+            },
+            {
+              "value": "round_cell_sarcoma_with_ewsr1",
+              "label": "Round cell sarcoma with EWSR1::non-ETS fusions"
+            },
+            {
+              "value": "cic_rearranged_sarcoma",
+              "label": "CIC-rearranged sarcoma"
+            },
+            {
+              "value": "sarcoma_with_bcor_genetic_alterations",
+              "label": "Sarcoma with BCOR genetic alterations"
+            },
+            {
+              "value": "pecoma_nos",
+              "label": "PEComa, NOS"
+            },
+            {
+              "value": "pecoma_tsc2_mutated",
+              "label": "PEComa, TSC2 mutated"
+            },
+            {
+              "value": "pecoma_tfe3_rearranged",
+              "label": "PEComa, TFE3 rearranged"
+            },
+            {
+              "value": "intimal_sarcoma",
+              "label": "Intimal sarcoma"
+            },
+            {
+              "value": "extrarenal_rhabdoid_tumor",
+              "label": "Extrarenal rhabdoid tumor"
+            },
+            {
+              "value": "undifferentiated_sarcomas",
+              "label": "Undifferentiated sarcomas"
+            },
+            {
+              "value": "undifferentiated_pleomorphic_sarcoma",
+              "label": "Undifferentiated pleomorphic sarcoma"
+            },
+            {
+              "value": "undifferentiated_sarcoma_nos",
+              "label": "Undifferentiated sarcoma, NOS"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "formerly known as round cells"
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_total_differentiation_mitotic_count_and_necrosis_score_2_or_3",
+              "label": "G1, total differentiation, mitotic count and necrosis score 2 or 3"
+            },
+            {
+              "value": "g2_total_differentiation_mitotic_count_and_necrosis_score_4_or_5",
+              "label": "G2, total differentiation, mitotic count and necrosis score 4 or 5"
+            },
+            {
+              "value": "g3_total_differentiation_mitotic_count_and_necrosis_score_of_6_7_or_8",
+              "label": "G3, total differentiation, mitotic count and necrosis score of 6, 7, or 8"
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ungraded_sarcoma_not_applicable_for_this_tumor_type",
+              "label": "Ungraded sarcoma / not applicable for this tumor type"
+            }
+          ],
+          "notes": [
+            "E"
+          ],
+          "condition": "French Federation of Cancer Centers Sarcoma Group [FNCLCC]"
+        },
+        {
+          "field_id": "mitotic_rate",
+          "label": "Mitotic Rate",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_mitotic_rate_per_mm2",
+              "label": "Specify mitotic rate per mm2: _________________ mitoses per mm2",
+              "has_free_text": true
+            },
+            {
+              "value": "specify_mitotic_rate_per_10_high_power_fields",
+              "label": "Specify mitotic rate per 10 high-power fields (HPF): _________________ mitoses per 10 high-power",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "fields",
+          "label": "fields",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "HPF"
+        },
+        {
+          "field_id": "necrosis",
+          "label": "Necrosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "extent_of_necrosis",
+          "label": "Extent of Necrosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent_and_depth_of_invasion",
+          "label": "Tumor Extent and Depth of Invasion",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "dermis",
+              "label": "Dermis"
+            },
+            {
+              "value": "subcutis",
+              "label": "Subcutis"
+            },
+            {
+              "value": "deep_fascia",
+              "label": "Deep fascia"
+            },
+            {
+              "value": "skeletal_muscle_intramuscular",
+              "label": "Skeletal muscle, intramuscular"
+            },
+            {
+              "value": "skeletal_muscle_intermuscular",
+              "label": "Skeletal muscle, intermuscular"
+            },
+            {
+              "value": "bone",
+              "label": "Bone"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings_specify",
+          "label": "Additional Findings (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "immunohistochemistry",
+          "label": "Immunohistochemistry",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_results",
+              "label": "Specify results: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "cytogenetics",
+          "label": "Cytogenetics",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_results",
+              "label": "Specify results: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "molecular_studies",
+          "label": "Molecular Studies",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_results",
+              "label": "Specify results: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fresh_tissue_versus_formalin_fixation",
+          "label": "Fresh tissue versus formalin fixation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ideally_tissue_specimens_from_soft_tissue_tumors_are_received_freshunfixed_in_the_pathology_laborato",
+          "label": "Ideally, tissue specimens from soft tissue tumors are received fresh/unfixed in the pathology laboratory, in case fresh tissue for ancillary studies, such as cytogenetics, needs to be collected. Although the ability to perform diagnostic molecular studies in formalin-fixed paraffin-embedded tissue has substantially diminished the need to collect fresh tissue on every case,1,2,3,4 frozen tissue may be needed to enter patients into treatment protocols. Nevertheless, discretion should be used in triaging tissue from sarcomas. Adequate tissue should be submitted for conventional light microscopy before setting aside samples for cytogenetics or molecular analysis. Microbiology specimens should go directly from operating room to microbiology laboratory. Fresh tissue can be sent for flow cytometry, if indicated. Additional cores for special studies, including at least two blocks of cores for permanent H&E, immunohistochemistry, molecular/genetic studies, should be collected at the time the specimen is received. If decalcification is required, best to use EDTA rather than harsh acid decalcification, for additional studies or to put soft tissue into a non-decalcified block for additional studies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "molecular_studies",
+          "label": "Molecular studies",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_may_be_important_to_snap_freeze_a_small_portion_of_tissue_as_availability_of_frozen_tissue_may_be",
+          "label": "It may be important to snap freeze a small portion of tissue as availability of frozen tissue may be a requirement for patient enrollment into clinical trials. In general, approximately 1 cm3 of fresh tissue (less is acceptable for small specimens, including core biopsies) should be cut into small, 0.2 cm fragments after reserving sufficient tissue for histologic examination. This frozen tissue should ideally be stored at minus seventy (-70o C) and can be shipped on dry ice to facilities that perform molecular analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ladanyi_m_bridge_ja_contribution_of_molecular_genetic_data_to_the_classification_of_sarcomas_hum_pat",
+          "label": "Ladanyi M, Bridge JA. Contribution of molecular genetic data to the classification of sarcomas. Hum Pathol. 2000;31(5):532-538.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tomescu_o_barr_fg_chromosomal_translocations_in_sarcomas_prospects_for_therapy_trends_mol_med_200171",
+          "label": "Tomescu O, Barr FG. Chromosomal translocations in sarcomas: prospects for therapy. Trends Mol Med. 2001;7(12):554-559.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jin_l_majerus_j_oliveira_a_et_al_detection_of_fusion_gene_transcripts_in_fresh_frozen_and_formalin_f",
+          "label": "Jin L, Majerus J, Oliveira A. et al. Detection of fusion gene transcripts in fresh-frozen and formalin-fixed paraffin-embedded tissue sections of soft-tissue sarcomas after laser capture microdissection and rt-PCR, Diagn Mol Pathol. 2003 Dec;12(4):224-30",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smith_sm_coleman_j_bridge_ja_et_al_molecular_diagnostics_in_soft_tissue_sarcomas_and_gastrointestina",
+          "label": "Smith SM, Coleman J, Bridge JA et al. Molecular diagnostics in soft tissue sarcomas and gastrointestinal stromal tumors. J Surg Oncol. 2015 Apr;111(5):520-31.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_8th_edition_of_the_american_joint_committee_on_cancer_ajcc_staging_manual1_places_a_great_emphas",
+          "label": "The 8th edition of the American Joint Committee on Cancer (AJCC) staging manual1 places a great emphasis on the anatomic primary site of soft tissue sarcomas, due to implications for local recurrence and risk of metastatic disease. Separate staging systems have been developed for soft tissue sarcomas (STSs) of the extremities and trunk, retroperitoneum, head and neck, and visceral sites. For the first two sites, outcomes are well characterized, and good predictive models based on staging data are available. However, for the latter two anatomic sites, data are more limited, and the proposed staging systems are meant to be a starting point for refining risk assessment. Additionally, changes were made to the AJCC staging system for orbital sarcomas.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "head_and_neck",
+          "label": "Head and Neck",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "includes_sts_arising_in_the_neck_subcutaneous_and_deep_structures_including_neurovascular_structures",
+          "label": "Includes STS arising in the neck (subcutaneous and deep structures, including neurovascular structures); oral cavity; upper aerodigestive tract, including laryngeal structures; pharyngeal areas; nasal cavity and paranasal sinuses; infratemporal fossa and masticator space; major salivary glands, thyroid, and parathyroid glands; cervical esophagus and trachea; and peripheral and cranial nerves. Although these STSs are usually found at a smaller size than those arising in other anatomic sites, they often have a greater risk of local recurrence, and they usually present unique problems from an anatomic standpoint. Soft tissue sarcomas arising in the orbit have their own staging system (see below).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trunk_and_extremities",
+          "label": "Trunk and Extremities",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "includes_sts_arising_in_extremities_and_trunk_including_breast",
+          "label": "Includes STS arising in extremities and trunk, including breast.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abdomen_and_thoracic_visceral_organs",
+          "label": "Abdomen and Thoracic Visceral Organs",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "includes_sts_arising_from_hollow_viscera_including_esophagus_stomach_small_intestine_colon_and_rectu",
+          "label": "Includes STS arising from hollow viscera, including esophagus, stomach, small intestine, colon, and rectum, as well as solid viscera such as the liver, kidneys, lungs, and heart. Sarcomas arising within the peritoneal, pleural, or mediastinal cavities, but not from a specific visceral organ, may be staged in a manner similar to that of retroperitoneal sarcomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "retroperitoneum",
+          "label": "Retroperitoneum",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "approximately_10_of_sts_arise_in_this_complex_anatomic_compartment_sarcomas_arising_within_the_perit",
+          "label": "Approximately 10% of STS arise in this complex anatomic compartment. Sarcomas arising within the peritoneal, pleural, or mediastinal cavities, but not from a specific visceral organ, may be staged in a manner similar to that of retroperitoneal sarcomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "orbit",
+          "label": "Orbit",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_orbit_is_a_cone_shaped_cavity_surrounded_by_7_bones_numerous_anatomic_structures_that_support_th",
+          "label": "The orbit is a cone-shaped cavity surrounded by 7 bones. Numerous anatomic structures that support the globe and periorbital tissues, including the optic nerve and its meninges, lacrimal gland, extraocular muscles, fascial connective tissue, orbital fat, cranial and autonomic vessels, and blood vessels, can be the site of origin for a wide variety of primary orbital sarcomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intraoperative_consultation",
+          "label": "Intraoperative Consultation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_classification_of_soft_tissue_tumors_is_sufficiently_complex_that_in_many_cases_it_is_unr",
+          "label": "Histologic classification of soft tissue tumors is sufficiently complex that, in many cases, it is unreasonable to expect a precise classification of these tumors based on an intraoperative consultation. Mostly rapid or intraoperative review is used for assessing viable tissue and triage.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "classification_of_tumors_should_be_made_according_to_the_world_health_organization_who_classificatio",
+          "label": "Classification of tumors should be made according to the World Health Organization (WHO) classification of soft tissue tumors, 5th edition.1 As part of the WHO classification system, soft tissue tumors are divided into 4 categories: benign, intermediate (locally aggressive), intermediate (rarely metastasizing), and malignant.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_provided_list_of_histologic_types_is_derived_from_the_world_health_organization_who_classificati",
+          "label": "The provided list of histologic types is derived from the World Health Organization (WHO) classification of soft tissue tumors, 5th edition,1 edited to only include soft tissue tumors of intermediate potential, i.e., locally aggressive (including significant and problematic local recurrence and/or requiring oncologic management) and rarely metastasizing as well as malignant soft tissue tumors. The full reference contains information on additional soft tissue tumors. Table 1 lists the intermediate and malignant soft tissue tumors that demonstrate diagnostic molecular findings. Generally, the term well-differentiated liposarcoma has been used for groin/retroperitoneum and deep skeletal muscle tumors, due to their increased potential for de-differentiation, whereas atypical lipomatous tumor is preferred for superficial subcutaneous tumors with the same histology since these are generally cured by limited excision.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_subset_of_soft_tissue_tumors_that_carry_diagnostic_moleculargenetic_findings",
+          "label": "Table 1: Subset of Soft Tissue Tumors that Carry Diagnostic Molecular/Genetic Findings",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "note_this_list_is_not_exhaustive_only_the_most_common_molecular_findings_is_listed_many_molecular_fi",
+          "label": "Note: This list is not exhaustive. Only the most common molecular finding(s) is listed. Many molecular findings are not unique to a single entity.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_soft_tissue_and_bone_tumors_lyon_france_international_",
+          "label": "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumors. Lyon (France): International Agency for Research on Cancer; 2020. (WHO classification of tumours series, 5th ed.; vol. 3).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_fusions_involving_the_rasmapk_pathway_are_rare_in_mesenchymal_tumors_these_tumors_have_driver_",
+          "label": "While fusions involving the RAS::MAPK pathway are rare in mesenchymal tumors, these tumors have driver alterations in genes that encode tyrosine kinases and may respond to therapy targeting NTRK, ALK, BRAF, RET, RAF, FGFR1, or ABL1, etc. Notably, NTRK tumors fused with KANK1 or TPR have been demonstrated to exhibit higher-grade appearance, including spindled and pleomorphic characteristics, accompanied by necrosis and mitoses, leading to unfavorable outcomes. Consequently, it is advisable to conduct comprehensive RNA-based Next-Generation Sequencing (NGS) for fusions, particularly in spindled pleomorphic tumors occurring in individuals under 50 years old, especially those in soft tissue or intraosseous locations. This recommendation is especially pertinent with tumors that have variable ovoid spindled to epithelioid morphology, variable collagenous to myxoid stroma, variable gaping to staghorn vasculature, and specifically focal CD34 and/or focal S100 protein, without any staining for SOX10. In these tumors, BRAF, ALK, or panTrk or no specific immunostaining is identified.1,2,3,4,5,6,7,8,9,10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "haller_f_knopf_j_ackermann_a_et_al_paediatric_and_adult_soft_tissue_sarcomas_with_ntrk1_gene_fusions",
+          "label": "Haller F, Knopf J, Ackermann A, et al. Paediatric and adult soft tissue sarcomas with NTRK1 gene fusions: a subset of spindle cell sarcomas unified by a prominent myopericytic/haemangiopericytic pattern. J Pathol. 2016 Apr;238(5):700-10.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hung_yp_fletcher_cdm_hornick_jl_evaluation_of_pan_trk_immunohistochemistry_in_infantile_fibrosarcoma",
+          "label": "Hung YP, Fletcher CDM, Hornick JL. Evaluation of pan-TRK immunohistochemistry in infantile fibrosarcoma, lipofibromatosis-like neural tumour and histological mimics. Histopathology. 2018;73(4):634-644.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "agaram_np_zhang_l_sung_ys_et_al_recurrent_ntrk1_gene_fusions_define_a_novel_subset_of_locally_aggres",
+          "label": "Agaram NP, Zhang L, Sung YS, et al. Recurrent NTRK1 Gene Fusions Define a Novel Subset of Locally Aggressive Lipofibromatosis-like Neural Tumors. Am J Surg Pathol. 2016 Oct;40(10):1407-16.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "helm_m_chang_a_fanburg_smith_jc_zaenglein_al_helm_k_cutaneous_vclalk_fusion_ovoid_spindle_cell_neopl",
+          "label": "Helm M, Chang A, Fanburg-Smith JC, Zaenglein AL, Helm K. Cutaneous VCL::ALK fusion ovoid-spindle cell neoplasm. J Cutan Pathol. 2023;50(5):405-409. doi: 10.1111/cup.14420. Epub 2023 Mar 12. PMID: 36843055.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fanburg_smith_jc_smith_jd_flemming_dj_bone_and_soft_tissue_tumors_clinicoradiologic_pathologic_molec",
+          "label": "Fanburg-Smith JC, Smith JD, Flemming DJ. Bone and soft tissue tumors: clinicoradiologic-pathologic molecular-genetic correlation of novel fusion spindled, targetable-ovoid, giant-cell-rich, and round cell sarcomas. Skeletal Radiol. 2023 Mar;52(3):517-540. doi: 10.1007/s00256-022-04244-w. Epub 2022 Dec 21. PMID: 36542130.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wood_ml_fanburg_smith_jc_brian_jm_white_jc_powell_jl_freiberg_as_successful_crizotinib_targeted_ther",
+          "label": "Wood ML, Fanburg-Smith JC, Brian JM, White JC, Powell JL, Freiberg AS. Successful Crizotinib-targeted Therapy of Pediatric Unresectable ERC1::ALK Fusion Sarcoma. J Pediatr Hematol Oncol. 2023. doi: 10.1097/MPH.0000000000002777. Epub ahead of print. PMID: 38099690.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "davis_jl_lockwood_cm_stohr_b_et_al_expanding_the_spectrum_of_pediatric_ntrk_rearranged_mesenchymal_t",
+          "label": "Davis JL, Lockwood CM, Stohr B, et al. Expanding the Spectrum of Pediatric NTRK-rearranged Mesenchymal Tumors. Am J Surg Pathol. 2019 Apr;43(4):435-445.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_t_wang_y_goetz_l_corey_z_dougher_mc_smith_jd_fox_ej_freiberg_as_flemming_d_fanburg_smith_jc_nov",
+          "label": "Chen T, Wang Y, Goetz L, Corey Z, Dougher MC, Smith JD, Fox EJ, Freiberg AS, Flemming D, Fanburg-Smith JC. Novel fusion sarcomas including targetable NTRK and ALK. Ann Diagn Pathol. 2021;54:151800. PMID: 34464935.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tan_sy_al_ibraheemi_a_ahrens_wa_oesterheld_je_fanburg_smith_jc_liu_yj_spunt_sl_rudzinski_er_coffin_c",
+          "label": "Tan SY, Al-Ibraheemi A, Ahrens WA, Oesterheld JE, Fanburg-Smith JC, Liu YJ, Spunt SL, Rudzinski ER, Coffin C, Davis JL. ALK rearrangements in infantile fibrosarcoma-like spindle cell tumours of soft tissue and kidney. Histopathology. 2022 Mar;80(4):698-707. Epub 2022 Jan 2. PMID: 34843129.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eyerer_fir_bradshaw_g_vasalos_p_laser_js_chang_cc_kim_as_olson_dr_paler_rj_rosenbaum_jn_walk_ee_will",
+          "label": "Eyerer FIR, Bradshaw G, Vasalos P, Laser JS, Chang CC, Kim AS, Olson DR, Paler RJ, Rosenbaum JN, Walk EE, Willis JE, Yao J, Yohe SL. Getting Your Laboratory on Track with Neurotrophic Receptor Tyrosine Kinase. Arch Pathol Lab Med. 2023 Aug 1;147(8):872-884.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "unlike_with_other_organ_systems_the_clinical_staging_of_soft_tissue_sarcomas_is_largely_determined_b",
+          "label": "Unlike with other organ systems, the clinical staging of soft tissue sarcomas is largely determined by grade. Whilst nomograms assess multiple clinical and histologic parameters to calculate the probability of recurrence for a given patient,1 there is, however, no generally agreed-upon scheme for grading soft tissue tumors.2 The most widely used soft tissue grading systems are the French Federation of Cancer Centers Sarcoma Group (FNCLCC) and National Cancer Institute (NCI) systems.3,4 Both systems have 3 grades and are based on mitotic activity, necrosis, and differentiation, and are highly correlated with prognosis.5 However, in addition to these criteria, the NCI system requires the quantification of cellularity and pleomorphism for certain subtypes of sarcomas, which is difficult to determine objectively. The FNCLCC system is easier to use in our opinion, and it may be slightly better in predicting prognosis than the NCI system.5 Other systems with 2 or 4 grades also have been used. The 8th edition of the AJCC Cancer Staging Manual6 adopted the FNCLCC grading system. The revision of the American Joint Committee on Cancer (AJCC) staging system incorporates a 3-tiered grading system; however, grade 1 and separately grades 2 to 3 (effectively low and high, respectively) are used for stage grouping. Accurate grading requires an adequate sample of tissue, which is not always available from FNA or core needle biopsy specimens or in tumors previously treated with radiation or chemotherapy. However, given the importance of grade in staging and treatment, efforts to separate sarcomas on the basis of needle biopsies into at least 2 tiers (i.e., low and high-grade) is encouraged. In many instances, the histologic type of sarcoma will readily permit this distinction (i.e., Ewing sarcoma, pleomorphic liposarcoma), whereas in less obvious instances, the difficulty of assigning grade should be noted. In general, multiple needle core biopsies exhibiting a high-grade sarcoma can be regarded as high-grade since the probability of subsequent downgrading is remote, but limited core biopsies of low-grade sarcoma may carry a risk of upgrading.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_fnclcc_grade_is_based_on_three_parameters_differentiation_mitotic_activity_and_necrosis_each_of_",
+          "label": "The FNCLCC grade is based on three parameters: differentiation, mitotic activity, and necrosis. Each of these parameters receives a score: differentiation (1 to 3), mitotic activity (1 to 3), and necrosis (0 to 2). The scores are summed to produce a grade.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_2_or_3_total_score",
+          "label": "Grade 1:\t2 or 3 total score",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_4_or_5_total_score",
+          "label": "Grade 2:\t4 or 5 total score",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_6_to_8_total_score",
+          "label": "Grade 3:\t6 to 8 total score",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "differentiation_tumor_differentiation_is_scored_as_follows_see_table_2",
+          "label": "Differentiation: Tumor differentiation is scored as follows (see Table 2)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "score_1_sarcomas_closely_resembling_normal_adult_mesenchymal_tissue_and_potentially_difficult_to_dis",
+          "label": "Score 1: Sarcomas closely resembling normal, adult mesenchymal tissue and potentially difficult to distinguish from the counterpart benign tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "e.g., well-differentiated liposarcoma, well-differentiated leiomyosarcoma"
+        },
+        {
+          "field_id": "score_2_sarcomas_for_which_histologic_typing_is_certain",
+          "label": "Score 2: Sarcomas for which histologic typing is certain",
+          "required": true,
+          "type": "free_text",
+          "condition": "e.g., myxoid liposarcoma, myxofibrosarcoma"
+        },
+        {
+          "field_id": "score_3_embryonal_sarcomas_and_undifferentiated_sarcomas_synovial_sarcomas_and_sarcomas_of_uncertain",
+          "label": "Score 3: Embryonal sarcomas and undifferentiated sarcomas, synovial sarcomas, and sarcomas of uncertain tumor type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_differentiation_is_the_most_problematic_aspect_of_the_fnclcc_system_its_use_is_subjective_and_",
+          "label": "Tumor differentiation is the most problematic aspect of the FNCLCC system. Its use is subjective and does not include every subtype of sarcoma. Nevertheless, it is an integral part of the system, and an attempt should be made to assign a differentiation score.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_tumor_differentiation_score_according_to_histologic_type_in_the_updated_version_of_the_frenc",
+          "label": "Table 2. Tumor Differentiation Score According to Histologic Type in the Updated Version of the \nFrench Federation of Cancer Centers Sarcoma Group System",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_differentiation",
+          "label": "Tumor Differentiation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "note_tumors_not_included_in_the_list_such_as_desmoplastic_round_cell_tumor_alveolar_rhabdomyosarcoma",
+          "label": "Note: Tumors not included in the list, such as desmoplastic round cell tumor, alveolar rhabdomyosarcoma, and intimal sarcoma, are by definition high grade. Other tumors such as alveolar soft part sarcoma, clear cell sarcoma, epithelioid sarcoma, extraskeletal myxoid chondrosarcoma, low-grade fibromyxoid sarcoma, and sclerosing epithelioid fibrosarcoma are not assigned FNCLCC grade but may demonstrate late metastasis.4,7 Grade is not used for angiosarcoma, as deceptively bland angiosarcomas may behave poorly, thus all are considered clinically “high-grade.” The prognostic significance of FNCLCC grading in malignant peripheral nerve sheath tumor is unclear. Other tumors such as ossifying fibromyxoid tumor and solitary fibrous tumor are best categorized by risk stratification parameters (see Table 5).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_with_permission_from_coindre_jm3",
+          "label": "Modified with permission from Coindre JM.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mitosis_count",
+          "label": "Mitosis Count",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_count_is_made_in_the_most_mitotically_active_area_away_from_areas_of_necrosis_mitoses_may_be_sco",
+          "label": "The count is made in the most mitotically active area, away from areas of necrosis. Mitoses may be scored as either 10 consecutive high-power fields (HPF) (40X objective)  or in an area of 1 mm2. If whole slide digital pathology is used, 1 mm2 is measured directly on the digital image. The mitotic count is converted to a score (Table 3). If the mitotic rate is close to the cutoff between mitotic scores, the count should be repeated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_area_of_1_hpf_originally_used_for_mitotic_count_measured_01734_mm2_however_the_area_of_1_hpf_usi",
+          "label": "The area of 1 HPF originally used for mitotic count measured 0.1734 mm2. However, the area of 1 HPF using most modern microscopes with wider 40x lenses will be higher. Therefore, pathologists are encouraged to either correct for the area of their 40X objective or score mitoses per 1 mm2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_correct_for_the_area_of_a_40x_objective_determine_the_40x_field_area_table_4_and_divide_01734_by_",
+          "label": "To correct for the area of a 40X objective: determine the 40X field area (Table 4) and divide\n0.1734 by the obtained field area to obtain a conversion factor.  The number of mitotic figures in\n10 HPF multiplied by the obtained conversion factor and rounded to the nearest whole number\nshould be used for grading purposes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_determine_to_number_of_40x_fields_equivalent_to_1_mm2_consult_table_4",
+          "label": "To determine to number of 40X fields equivalent to 1 mm2, consult Table 4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_3_mitotic_count_score_equivalence",
+          "label": "Table 3. Mitotic Count Score Equivalence",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_4_approximate_number_of_fields_per_1_mm2_based_on_field_diameter",
+          "label": "Table 4.  Approximate number of fields per 1 mm2 based on field diameter",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "formula_to_calculate_the_area_of_one_high_power_field_of_a_specific_microscope_pr2total_magnificatio",
+          "label": "Formula to calculate the area of one high-power field of a specific microscope = pr2/total magnification = (½ field diameter)2 x p/total magnification",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "formula_to_calculate_the_field_diameter_objective_field_numberobjective_magnification",
+          "label": "Formula to calculate the field diameter = Objective Field Number/Objective Magnification",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_necrosis_evaluated_on_gross_examination_and_validated_with_histologic_sections",
+          "label": "Tumor Necrosis: Evaluated on gross examination and validated with histologic sections.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "score_0_no_tumor_necrosis",
+          "label": "Score 0: No tumor necrosis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "score_1_50_tumor_necrosis",
+          "label": "Score 1: <50% tumor necrosis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "score_2_50_tumor_necrosis",
+          "label": "Score 2: ≥50% tumor necrosis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_8th_edition_of_the_american_joint_committee_on_cancer_ajcc_and_international_union_against_cance",
+          "label": "The 8th edition of the American Joint Committee on Cancer (AJCC) and International Union Against Cancer (UICC) staging system for soft tissue tumors recommends the FNCLCC 3-tiered system but effectively collapses into high-grade and low-grade.6,8  This means that FNCLCC grade 2 and grade 3 tumors are considered “high-grade” for the purposes of stage grouping.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_5_risk_stratification_for_solitary_fibrous_tumor9",
+          "label": "Table 5. Risk Stratification for Solitary Fibrous Tumor9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "as_with_other_sarcoma_risk_assessment_and_grading_schemes_evaluation_of_core_biopsies_may_result_in_",
+          "label": "As with other sarcoma risk assessment and grading schemes, evaluation of core biopsies may result in inappropriately lower risk scores, due to sampling bias. Full application of the risk stratification system would be reserved for carefully sampled resection specimens.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eilber_fc_brennan_mf_eilber_fr_et_al_validation_of_postoperative_normograms_for_12_year_sarcoma_spec",
+          "label": "Eilber FC, Brennan MF, Eilber FR, et al. Validation of postoperative normograms for 12-year sarcoma-specific mortality. Cancer. 2004;101:2270-2275.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oliveira_am_nascimento_ag_grading_in_soft_tissue_tumors_principles_and_problems_skeletal_radiol_2001",
+          "label": "Oliveira AM, Nascimento AG. Grading in soft tissue tumors: principles and problems. Skeletal Radiol. 2001;30(10):543-559.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "coindre_jm_grading_of_soft_tissue_sarcomas_review_and_update_arch_pathol_lab_med_20061301448_1453",
+          "label": "Coindre JM. Grading of soft tissue sarcomas: review and update. Arch Pathol Lab Med. 2006;130:1448-1453.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "costa_j_wesley_ra_glatstein_e_rosenberg_sa_the_grading_of_soft_tissue_sarcomas_results_of_a_clinicoh",
+          "label": "Costa J, Wesley RA, Glatstein E, Rosenberg SA. The grading of soft tissue sarcomas: results of a clinicohistopathologic correlation in a series of 163 cases. Cancer. 1984;53(3):530-541.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "guillou_l_coindre_jm_bonichon_f_et_al_comparative_study_of_the_national_cancer_institute_and_french_",
+          "label": "Guillou L, Coindre JM, Bonichon F, et al. Comparative study of the National Cancer Institute and French Federation of Cancer Centers Sarcoma Group grading systems in a population of 410 adult patients with soft tissue sarcoma. J Clin Oncol. 1997;15(1):350-362.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fletcher_cdm_kempson_rl_and_weiss_sw_for_association_of_directors_of_anatomic_and_surgical_pathology",
+          "label": "Fletcher CDM, Kempson RL and Weiss SW (for Association of Directors of Anatomic and Surgical Pathology) (1998). Recommendations for the reporting of soft tissue sarcomas. Mod Pathol 11(12):1257-61.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brierley_jd_gospodarowicz_mk_wittekind_c_et_al_eds_tnm_classification_of_malignant_tumours_8th_ed_ox",
+          "label": "Brierley JD, Gospodarowicz MK, Wittekind C, et al, eds. TNM Classification of Malignant Tumours. 8th ed. Oxford, UK: Wiley; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "demicco_eg_wagner_mj_maki_rg_gupta_v_iofin_i_lazar_aj_wang_wl_risk_assessment_in_solitary_fibrous_tu",
+          "label": "Demicco EG, Wagner MJ, Maki RG, Gupta V, Iofin I, Lazar AJ, Wang WL. Risk assessment in solitary fibrous tumors: validation and refinement of a risk stratification model. Mod Pathol. 2017 Oct;30(10):1433-1442. Epub 2017 Jul 21. PMID: 28731041.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "due_to_the_limited_impact_of_depth_on_outcome_and_because_the_inherent_inability_to_use_depth_in_ana",
+          "label": "Due to the limited impact of depth on outcome and because the inherent inability to use depth in anatomic sites other than extremities and trunk, depth is no longer used in the 8th edition of the AJCC staging manual.1 In previous staging systems, depth was evaluated relative to the investing fascia of the extremity and trunk. Superficial was defined as lack of any involvement of the superficial investing muscular fascia in extremity or trunk lesions. For staging, all retroperitoneal and visceral lesions were considered to be deep lesions. Tumor extent and depth of invasion for trunk and extremity tumors are included in this protocol as optional data elements.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_and_vascular_invasion_lvi_indicates_whether_microscopic_lymphatic_andor_vascular_invasion_",
+          "label": "Lymphatic and Vascular Invasion (LVI) indicates whether microscopic lymphatic and/or vascular invasion is identified. LVI includes lymphatic invasion, vascular invasion, or lymphovascular invasion. By AJCC/UICC convention, LVI does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

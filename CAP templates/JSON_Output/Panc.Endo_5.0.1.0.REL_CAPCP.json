@@ -1,0 +1,1679 @@
+{
+  "template_id": "Panc.Endo_5.0.1.0.REL_CAPCP",
+  "organ": "PANCREAS NEUROENDOCRINE TUMOR",
+  "protocol_posting_date": "June 2024",
+  "standards": [
+    "AJCC-UICC 9"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "pancreatic_head",
+              "label": "Pancreatic head: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "uncinate_process",
+              "label": "Uncinate process: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_body",
+              "label": "Pancreatic body: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_tail",
+              "label": "Pancreatic tail: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "histologic_type_and_grade",
+          "label": "Histologic Type and Grade#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated_neuroendocrine_tumor",
+              "label": "G1, well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "g2_well_differentiated_neuroendocrine_tumor",
+              "label": "G2, well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "g3_well_differentiated_neuroendocrine_tumor",
+              "label": "G3, well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "gx_grade_cannot_be_assessed",
+              "label": "GX, grade cannot be assessed"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E",
+            "F"
+          ],
+          "guidance": "For poorly differentiated (high-grade) neuroendocrine carcinomas, the College of American Pathologists (CAP) checklist for carcinoma of the pancreas should be used."
+        },
+        {
+          "field_id": "histologic_type_and_grade_comment",
+          "label": "Histologic Type and Grade Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade_determination",
+          "label": "Histologic Grade Determination",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "mitotic_rate_and_or_ki_67_labeling_index_is_required_to_determine_histologic_grade",
+          "label": "Mitotic rate and / or Ki-67 labeling index is required to determine histologic grade",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mitotic_rate_required_only_when_ki_67_labeling_index_is_not_reported",
+          "label": "Mitotic Rate (required only when Ki-67 labeling index is not reported)#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (Ki-67 labeling index is reported)"
+            },
+            {
+              "value": "specify_number_of_mitoses_per_2_mm2",
+              "label": "Specify number of mitoses per 2 mm2: _________________ mitoses per 2 mm2",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_2_mitoses_per_2_mm2",
+              "label": "Less than 2 mitoses per 2 mm2"
+            },
+            {
+              "value": "2_to_20_mitoses_per_2_mm2",
+              "label": "2 to 20 mitoses per 2 mm2"
+            },
+            {
+              "value": "greater_than_20_mitoses_per_2_mm2",
+              "label": "Greater than 20 mitoses per 2 mm2"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Mitotic rate should be reported as number of mitoses per 2 mm2, by evaluating at least 10 mm2 in the most mitotically active part of the tumor (e.g., if using a microscope with a field diameter of 0.55 mm, count 42 high power fields (10 mm2) and divide the resulting number of mitoses by 5 to determine the number of mitoses per 2 mm2 needed to assign tumor grade)."
+        },
+        {
+          "field_id": "ki_67_labeling_index",
+          "label": "Ki-67 Labeling Index",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (mitotic rate is reported)"
+            },
+            {
+              "value": "specify_ki_67_percentage",
+              "label": "Specify Ki-67 percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_3",
+              "label": "Less than 3%"
+            },
+            {
+              "value": "3_to_20",
+              "label": "3% to 20%"
+            },
+            {
+              "value": "greater_than_20",
+              "label": "Greater than 20%"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only when mitotic rate is not reported"
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm) (specify size of largest tumor if multiple tumors are present): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal"
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "number_of_tumors",
+          "label": "Number of Tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_number",
+              "label": "Specify number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "sites_involved_by_direct_tumor_extension",
+          "label": "Site(s) Involved by Direct Tumor Extension",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "limited_to_pancreas",
+              "label": "Limited to pancreas"
+            },
+            {
+              "value": "common_bile_duct",
+              "label": "Common bile duct"
+            },
+            {
+              "value": "ampulla_of_vater",
+              "label": "Ampulla of Vater"
+            },
+            {
+              "value": "duodenum",
+              "label": "Duodenum"
+            },
+            {
+              "value": "stomach",
+              "label": "Stomach"
+            },
+            {
+              "value": "spleen",
+              "label": "Spleen"
+            },
+            {
+              "value": "colon",
+              "label": "Colon"
+            },
+            {
+              "value": "adrenal_gland",
+              "label": "Adrenal gland"
+            },
+            {
+              "value": "celiac_axis",
+              "label": "Celiac axis"
+            },
+            {
+              "value": "superior_mesenteric_artery",
+              "label": "Superior mesenteric artery"
+            },
+            {
+              "value": "superior_mesenteric_vein",
+              "label": "Superior mesenteric vein"
+            },
+            {
+              "value": "splenic_artery",
+              "label": "Splenic artery"
+            },
+            {
+              "value": "splenic_vein",
+              "label": "Splenic vein"
+            },
+            {
+              "value": "gastroduodenal_artery",
+              "label": "Gastroduodenal artery"
+            },
+            {
+              "value": "gastroduodenal_vein",
+              "label": "Gastroduodenal vein"
+            },
+            {
+              "value": "portal_vein",
+              "label": "Portal vein"
+            },
+            {
+              "value": "other_organ",
+              "label": "Other organ(s) or site(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "tumor_necrosis",
+          "label": "Tumor Necrosis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "L"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_tumor",
+          "label": "Closest Margin(s) to Tumor",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal_pancreatic_parenchymal",
+              "label": "Proximal pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal_pancreatic_parenchymal",
+              "label": "Distal pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_parenchymal",
+              "label": "Pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_neck_parenchymal",
+              "label": "Pancreatic neck / parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "uncinate",
+              "label": "Uncinate (retroperitoneal / superior mesenteric artery): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bile_duct",
+              "label": "Bile duct: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "proximal",
+              "label": "Proximal (gastric or duodenal): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal (distal duodenal or jejunal): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_tumor_to_closest_margin",
+          "label": "Distance from Tumor to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_present_at_margin",
+              "label": "Tumor present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_tumor",
+          "label": "Margin(s) Involved by Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal_pancreatic_parenchymal",
+              "label": "Proximal pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal_pancreatic_parenchymal",
+              "label": "Distal pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_parenchymal",
+              "label": "Pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_neck_parenchymal",
+              "label": "Pancreatic neck / parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "uncinate",
+              "label": "Uncinate (retroperitoneal / superior mesenteric artery): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bile_duct",
+              "label": "Bile duct: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "proximal",
+              "label": "Proximal (gastric or duodenal): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal (distal duodenal or jejunal): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ovary",
+              "label": "Ovary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "nonregional_lymph_node",
+              "label": "Nonregional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "peritoneum",
+              "label": "Peritoneum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "M"
+          ],
+          "condition": "AJCC Version 9"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            },
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor limited to the pancreas, less than or equal to 2 cm in greatest dimension##"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor limited to the pancreas, greater than 2 cm but less than or equal to 4 cm in greatest"
+            }
+          ],
+          "guidance": "Multiple tumors should be designated as such (the largest tumor should be used to assign T category). Use T(#); e.g., pT3(4) N0 M0, OR use the m suffix, T(m); e.g., pT3(m) N0 M0. Limited to the pancreas means there is no invasion of adjacent organs (stomach, spleen, colon, adrenal gland) or the wall of large vessels (celiac axis or the superior mesenteric artery). Extension of tumor into peripancreatic adipose tissue is NOT a basis for staging."
+        },
+        {
+          "field_id": "dimension",
+          "label": "dimension##",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor limited to the pancreas, greater than 4 cm in greatest dimension; or tumor invading the"
+            }
+          ]
+        },
+        {
+          "field_id": "duodenum_ampulla_of_vater_or_common_bile_duct",
+          "label": "duodenum, ampulla of Vater, or common bile duct##",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor invading adjacent organs (stomach, spleen, colon, adrenal gland) or the wall of large"
+            }
+          ]
+        },
+        {
+          "field_id": "vessels_celiac_axis_superior_mesenteric_artery_vein_splenic_artery_vein_gastroduodenal_artery",
+          "label": "vessels (celiac axis, superior mesenteric artery / vein, splenic artery / vein, gastroduodenal artery /",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No tumor involvement of regional lymph node(s)"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Tumor involvement of regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_microscopic_confirmation_of_distant_metastasis",
+          "label": "pM1: Microscopic confirmation of distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Microscopic confirmation of metastasis confined to liver"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Microscopic confirmation of metastasis in at least one extrahepatic site (e.g., lung, ovary,"
+            }
+          ]
+        },
+        {
+          "field_id": "nonregional_lymph_node_peritoneum_bone",
+          "label": "nonregional lymph node, peritoneum, bone)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1c",
+              "label": "pM1c: Microscopic confirmation of both hepatic and extrahepatic metastases"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "atrophy",
+              "label": "Atrophy"
+            },
+            {
+              "value": "chronic_inflammation",
+              "label": "Chronic inflammation"
+            },
+            {
+              "value": "acute_pancreatitis",
+              "label": "Acute pancreatitis"
+            },
+            {
+              "value": "adenomatosis",
+              "label": "Adenomatosis (multiple neuroendocrine tumors, each less than 5 mm in greatest dimension)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_etiology_of_most_sporadic_neuroendocrine_tumors_of_the_pancreas_is_not_known_however_men_1_von_h",
+          "label": "The etiology of most sporadic neuroendocrine tumors of the pancreas is not known. However, MEN 1, von Hippel-Lindau disease, and, more rarely, tuberous sclerosis complex and neurofibromatosis type 1 are associated with pancreatic neuroendocrine tumors.1 It is important to know whether the patient has a history of a genetic syndrome because tumors from such patients are more likely to be multifocal.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "knowledge_of_the_clinical_history_is_important_for_determining_whether_a_pancreatic_neuroendocrine_t",
+          "label": "Knowledge of the clinical history is important for determining whether a pancreatic neuroendocrine tumor is associated with a functional syndrome, which is an important predictor of clinical course. In particular, insulinomas behave indolently, probably because they are discovered early due to the production of a hypoglycemic state. Other functioning tumors are generally aggressive.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pancreatic_neuroendocrine_tumors_that_secrete_large_amounts_of_hormonal_product_into_the_systemic_ci",
+          "label": "Pancreatic neuroendocrine tumors that secrete large amounts of hormonal product into the systemic circulation are known as “functioning” tumors, and their classification is often based on the clinical syndrome produced by the predominant secretory product.1 Pancreatic neuroendocrine tumors are classified as “nonfunctioning” if they produce no hormonally related clinical syndrome. Some tumors assigned to the nonfunctioning category may secrete hormones that produce no clinical sequelae (such as pancreatic polypeptide) and are detectable only by specific serum analysis for the polypeptide. Most nonfunctioning pancreatic neuroendocrine tumors actually produce 1 or more peptide hormones (detectable by immunolocalization within the cells of the excised tumor tissue) but are clinically silent because they do not export their cell products because of an impaired secretory pathway. Therefore, immunohistochemical demonstration of hormone products for purposes of tumor classification is of limited utility. Classification of pancreatic neuroendocrine tumors based on their functional status is shown below. The clinical features that define the functioning tumors are shown in parentheses.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "classification_of_pancreatic_neuroendocrine_neoplasms1",
+          "label": "Classification of Pancreatic Neuroendocrine Neoplasms1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pancreatic_neuroendocrine_microadenoma",
+          "label": "Pancreatic neuroendocrine microadenoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "<0.5 cm and nonfunctional"
+        },
+        {
+          "field_id": "pancreatic_neuroendocrine_tumor",
+          "label": "Pancreatic neuroendocrine tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "nonfunctional"
+        },
+        {
+          "field_id": "pancreatic_neuroendocrine_tumor_functional",
+          "label": "Pancreatic neuroendocrine tumor, functional",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ec_cell_serotonin_producing_neuroendocrine_tumor_carcinoid_syndrome_flashing_diarrhea_rarely_encount",
+          "label": "EC cell, serotonin-producing neuroendocrine tumor (carcinoid syndrome, flashing, diarrhea); rarely encountered as primary in the pancreas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gastrin_secreting_gastrinoma",
+          "label": "Gastrin-secreting (gastrinoma)",
+          "required": true,
+          "type": "free_text",
+          "condition": "abdominal pain, ulcer disease, diarrhea, gastrointestinal bleeding"
+        },
+        {
+          "field_id": "glucagon_secreting_glucagonoma",
+          "label": "Glucagon-secreting (glucagonoma)",
+          "required": true,
+          "type": "free_text",
+          "condition": "diabetes, skin rash [necrolytic migratory erythema], stomatitis"
+        },
+        {
+          "field_id": "insulin_secreting_insulinoma",
+          "label": "Insulin-secreting (insulinoma)",
+          "required": true,
+          "type": "free_text",
+          "condition": "hypoglycemia, neuropsychiatric disturbances"
+        },
+        {
+          "field_id": "somatostatin_secreting_somatostatinoma_diabetes_steatorrhea_achlorhydria_rarely_encountered",
+          "label": "Somatostatin-secreting (somatostatinoma) (diabetes, steatorrhea, achlorhydria); rarely encountered",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vasoactive_intestinal_polypeptide_vip_secreting_vipoma",
+          "label": "Vasoactive intestinal polypeptide (VIP)-secreting (VIPoma#)",
+          "required": true,
+          "type": "free_text",
+          "condition": "watery diarrhea, hypokalemia, achlorhydria"
+        },
+        {
+          "field_id": "acth_producing_neuroendocrine_tumor",
+          "label": "ACTH-producing neuroendocrine tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "Cushing syndrome"
+        },
+        {
+          "field_id": "neuroendocrine_carcinoma",
+          "label": "Neuroendocrine carcinoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "NEC"
+        },
+        {
+          "field_id": "large_cell_nec",
+          "label": "Large cell NEC",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "small_cell_nec",
+          "label": "Small cell NEC",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_ductal_neuroendocrine_carcinoma",
+          "label": "Mixed ductal-neuroendocrine carcinoma##",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_acinar_neuroendocrine_carcinoma",
+          "label": "Mixed acinar-neuroendocrine carcinoma##",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Sometimes known as Verner-Morrison tumors. Biphasic tumors containing a significant proportion (greater than 30%) of tumor cells with differentiation along ductal or acinar cell lines are classified separately as subtypes of pancreatic neuroendocrine carcinoma. The neuroendocrine component in such tumors is often high grade. The CAP protocol for carcinoma of the pancreas should be used for these tumors."
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to_well_differentiated_neuroendocrine_tumors_of_the_pancreas_carcinoma_of_the_",
+          "label": "This protocol applies to well-differentiated neuroendocrine tumors of the pancreas. Carcinoma of the exocrine pancreas, poorly-differentiated neuroendocrine carcinoma (including small cell and large cell neuroendocrine carcinoma), and mixed neuroendocrine-non-neuroendocrine neoplasms use the CAP cancer protocol for carcinoma of the pancreas1. Use of the protocol is not required for incidentally identified pancreatic neuroendocrine tumors ≤5 mm (defined as neuroendocrine microadenoma) in specimens removed for other indications. Pancreatic neuroendocrine tumors are also known as islet cell tumors, but this terminology is considered to be outdated and misleading because these tumors may not be derived from pancreatic islets. Rather, they are believed to arise from pluripotential cells in the pancreatic ducts that have the capacity to differentiate along neuroendocrine lines.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fewer_than_5_to_l0_of_malignant_tumors_of_the_pancreas_are_neuroendocrine_tumors_surgical_resection_",
+          "label": "Fewer than 5% to l0% of malignant tumors of the pancreas are neuroendocrine tumors. Surgical resection remains the only potentially curative approach for these tumors. The prognosis of pancreatic neuroendocrine tumors is primarily dependent on the functional subtype, the completeness of the surgical resection, the anatomic extent of disease, and the tumor grade.2 In AJCC Version 9, different TNM staging systems are used for staging pancreatic neuroendocrine tumor and carcinomas of the exocrine pancreas.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "burgart_lj_chopp_wv_jain_d_protocol_for_the_examination_of_specimens_from_patients_with_carcinoma_of",
+          "label": "Burgart LJ, Chopp WV, Jain D. Protocol for the Examination of Specimens From Patients with Carcinoma of the Exocrine Pancreas. 2021. Available at www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_anatomic_subdivisions_defining_location_of_tumors_of_the_pancreas_figures_1_and_2_are_as_follows",
+          "label": "The anatomic subdivisions defining location of tumors of the pancreas (Figures 1 and 2) are as follows1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_of_the_head_of_the_pancreas_are_those_arising_to_the_right_of_the_superior_mesenteric_portal_",
+          "label": "Tumors of the head of the pancreas are those arising to the right of the superior mesenteric-portal vein confluent. The uncinate process is part of the head.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_of_the_body_of_the_pancreas_are_those_arising_between_the_left_border_of_the_superior_mesente",
+          "label": "Tumors of the body of the pancreas are those arising between the left border of the superior mesenteric vein and the left border of the aorta.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_of_the_tail_of_the_pancreas_are_those_arising_between_the_left_border_of_the_aorta_and_the_hi",
+          "label": "Tumors of the tail of the pancreas are those arising between the left border of the aorta and the hilum of the spleen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_anatomic_subsites_of_the_pancreas_from_greene_et_al1_used_with_permission_of_the_american_j",
+          "label": "Figure 1. Anatomic subsites of the pancreas. From Greene et al.1 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_ny_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York, NY: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pancreatic_neuroendocrine_neoplasms_are_classified_as_well_differentiated_pancreatic_neuroendocrine_",
+          "label": "Pancreatic neuroendocrine neoplasms are classified as well-differentiated pancreatic neuroendocrine tumors or as poorly differentiated (high-grade) neuroendocrine carcinomas. The 2017 World Health Organization (WHO) classification of pancreatic neuroendocrine tumors is based upon mitotic rate and tumor proliferative index as assessed by Ki-67 immunoreactivity.1 However, this protocol does not preclude the use of other histologic types or systems of classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pancreatic_neuroendocrine_tumors_typically_display_a_variety_of_growth_patterns_including_1_gyriform",
+          "label": "Pancreatic neuroendocrine tumors typically display a variety of growth patterns, including (1) gyriform patterns that resemble the structure of normal islets, in which thin cords of tumor cells form loops separated by a delicate stroma; (2) solid or medullary patterns, in which the tumor cells grow in sheets and have little intervening stroma; and (3) glandular patterns, in which the tumor cells form acini or pseudorosettes. Sarcomatoid or anaplastic growth may also occur. Cytologically, most tumors are composed of monomorphic cells with clear to eosinophilic cytoplasm and variable mitotic rate. Many tumors show more than 1 growth pattern. There is no correlation between growth pattern and biologic behavior or between growth pattern and functional type.2 Most pancreatic neuroendocrine tumors are strongly positive for synaptophysin and chromogranin A.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heitz_pu_kasper_m_polak_jm_kloeppel_g_pancreatic_endocrine_tumors_immunocytochemical_analysis_of_125",
+          "label": "Heitz PU, Kasper M, Polak JM, Kloeppel G. Pancreatic endocrine tumors:  immunocytochemical analysis of 125 tumors. Hum Pathol. 1982;13:263-271.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_mitotic_rate_high_ki_67_proliferative_index_and_tumor_necrosis_have_all_been_shown_to_correlate",
+          "label": "High mitotic rate, high Ki-67 proliferative index, and tumor necrosis have all been shown to correlate strongly with an aggressive behavior.1 The WHO classification2 and others3 use mitotic rate and/or Ki-67 index as one of the criteria for potential for aggressive behavior. Mitotic rate should be reported as number of mitoses per 2 mm2, at least 10 mm2 evaluated in the most mitotically active part of the tumor. Only clearly identifiable mitotic figures should be counted; hyperchromatic, karyorrhectic, or apoptotic nuclei are excluded. Because of variations in field size, the number of high-power fields (HPF) (at 40X magnification) for 10 mm2 (thereby 2 mm2) must be determined for each microscope (Table 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_number_of_hpf_required_for_10_mm2_and_2_mm2_using_microscopes_with_different_field_diameter",
+          "label": "Table 1. Number of HPF Required for 10 mm2 and 2 mm2 Using Microscopes With Different Field Diameter",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ki_67_index_is_reported_as_percent_positive_tumor_cells_in_area_of_highest_nuclear_labeling_hot_spot",
+          "label": "Ki-67 index is reported as percent positive tumor cells in area of highest nuclear labeling (“hot spot”), although the precise method of assessment has not been standardized. A number of methods have used to assess Ki-67 index, including automatic counting and “eyeballing.” 4,5 Automated counting is not widely available and requires careful modification of the software to circumvent the inaccuracies.4 Eye-balling can be used for most tumors; however, for tumors with Ki-67 index close to grade cut-offs, it is recommended to perform the manual count on the print of camera-captured image of the hot spot. It has been recommended that a minimum of 500 tumor cells be counted to determine the Ki-67 index, and a notation is made if less cells are available.2,6,7 Grade assigned based on Ki-67 index is typically higher than that based on mitotic count, and the case is assigned to the higher of the 2 if both methods are performed.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_important_to_note_that_there_are_a_small_group_of_well_differentiated_neuroendocrine_tumors_wi",
+          "label": "It is important to note that there are a small group of well-differentiated neuroendocrine tumors with a Ki-67 index >20% and a mitotic rate usually <20 per 10 HPF. In WHO-2010, these tumors were considered as G3 poorly differentiated neuroendocrine carcinomas. However, they have typical morphology of well-differentiated tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "studies_on_pancreatic_neuroendocrine_tumors_have_demonstrated_that_these_tumors_have_a_worse_prognos",
+          "label": "Studies on pancreatic neuroendocrine tumors have demonstrated that these tumors have a worse prognosis than grade 2 (Ki-67=3-20 % and mitosis <20/10 HPF) neuroendocrine tumors, but they are not as aggressive as poorly differentiated neuroendocrine carcinomas.8 In addition, these tumors do not have the genetic abnormalities seen in poorly differentiated neuroendocrine carcinomas.9 Furthermore, unlike poorly differentiated neuroendocrine carcinomas, they are less responsive to platinum-based chemotherapy.10 In the WHO-2022 blue book of endocrine tumors and AJCC 9th edition, those with typical morphology of well-differentiated tumors are classified as “well-differentiated neuroendocrine tumor” but as grade 3 (Table 2).2,11",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_recommended_grading_system_for_well_differentiated_gastroenteropancreatic_neuroendocrine_tum",
+          "label": "Table 2. Recommended Grading System for Well-Differentiated Gastroenteropancreatic Neuroendocrine Tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hruban_rh_pitman_mb_klimstra_ds_tumors_of_the_pancreas_fourth_series_fascicle_6_ed_washington_dc_arm",
+          "label": "Hruban RH, Pitman MB, Klimstra DS. Tumors of the Pancreas. Fourth series, Fascicle 6 ed. Washington, DC: Armed Forces Institute of Pathology; 2007",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ferrone_cr_tang_lh_tomlinson_j_et_al_determining_prognosis_in_patients_with_pancreatic_endocrine_neo",
+          "label": "Ferrone CR, Tang LH, Tomlinson J, et al. Determining prognosis in patients with pancreatic endocrine neoplasms: can the WHO classification system be simplified? J Clin Oncol. Dec 2007;25(35):5609-5615.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tang_lh_gonen_m_hedvat_c_modlin_i_klimstra_ds_objective_quantification_of_the_ki67_proliferative_ind",
+          "label": "Tang LH, Gonen M, Hedvat C, Modlin I, Klimstra DS. Objective quantification of the Ki67 proliferative index in neuroendocrine tumors of gastroenteropancreatic system: a comparison of digital image analysis with manual methods. Am J Surg Pathol. 2012;36(12):1761-1770.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reid_md_bagci_p_ohike_n_saka_b_erbarut_seven_i_dursun_n_et_al_calculation_of_the_ki67_index_in_pancr",
+          "label": "Reid MD, Bagci P, Ohike N, Saka B, Erbarut Seven I, Dursun N et al. Calculation of the Ki67 index in pancreatic neuroendocrine tumors: a comparative analysis of four counting methodologies. Mod Pathol. 2016;29(1):93.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heitz_pu_kasper_m_polak_jm_kloeppel_g_pancreatic_endocrine_tumors_immunocytochemical_analysis_of_125",
+          "label": "Heitz PU, Kasper M, Polak JM, Kloeppel G. Pancreatic endocrine tumors:  immunocytochemical analysis of 125 tumors. Hum Pathol. 1982;13:263-271.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tomassetti_p_campana_d_piscitelli_l_et_al_endocrine_pancreatic_tumors_factors_correlated_with_surviv",
+          "label": "Tomassetti P, Campana D, Piscitelli L, et al. Endocrine pancreatic tumors: factors correlated with survival. Ann Oncol. Nov 2005;16(11):1806-1810.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shi_c_klimstra_ds_pancreatic_neuroendocrine_tumors_pathologic_and_molecular_characteristics_semin_di",
+          "label": "Shi C, Klimstra DS. Pancreatic neuroendocrine tumors: pathologic and molecular characteristics. Semin Diagn Pathol. 2014;31(6):498-511.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yachida_s_vakiani_e_white_cm_et_al_small_cell_and_large_cell_neuroendocrine_carcinomas_of_the_pancre",
+          "label": "Yachida S, Vakiani E, White CM, et al. Small cell and large cell neuroendocrine carcinomas of the pancreas are genetically similar and distinct from well-differentiated pancreatic neuroendocrine tumors. Am J Surg Pathol. 2012;36(2):173-184.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sorbye_h_strosberg_j_baudin_e_klimstra_ds_yao_jc_gastroenteropancreatic_high_grade_neuroendocrine_ca",
+          "label": "Sorbye H, Strosberg J, Baudin E, Klimstra DS, Yao JC. Gastroenteropancreatic high-grade neuroendocrine carcinoma. Cancer. 2014;120(18):2814-2823.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_less_than_05_cm_are_regarded_as_neuroendocrine_microadenomas_these_small_nonfunctional_tumors",
+          "label": "Tumors less than 0.5 cm are regarded as neuroendocrine microadenomas; these small nonfunctional tumors rarely come to clinical attention. A case summary does not need to be completed for incidentally identified neuroendocrine microadenomas. Large tumor size (diameter 3.0 cm or greater) has been shown to correlate with aggressive biologic behavior,1 such as local invasion and vascular invasion, and with metastasis. Large size also correlates with cystic radiographic appearance and calcification.2 However, there is marked overlap in the size ranges of localized and metastatic tumors, although tumors larger than 10 cm are highly likely to be metastatic.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "panzuto_f_nasoni_s_falconi_m_et_al_prognostic_factors_and_survival_in_endocrine_tumor_patients_compa",
+          "label": "Panzuto F, Nasoni S, Falconi M, et al. Prognostic factors and survival in endocrine tumor patients: comparison between gastrointestinal and pancreatic localization. Endocr Relat Cancer. 2005;12(4):1083-1092.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buetow_pc_parrino_tv_buck_jl_et_al_islet_cell_tumors_of_the_pancreas_pathologic_imaging_correlation_",
+          "label": "Buetow PC, Parrino TV, Buck JL, et al. Islet cell tumors of the pancreas: pathologic-imaging correlation among size, necrosis and cysts, calcification, malignant behavior, and functional status. AJR Am J Roentgenol. 1995;165(5):1175-1179.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hruban_rh_pitman_mb_klimstra_ds_tumors_of_the_pancreas_fourth_series_fascicle_6_ed_washington_dc_arm",
+          "label": "Hruban RH, Pitman MB, Klimstra DS. Tumors of the Pancreas. Fourth series, Fascicle 6 ed. Washington, DC: Armed Forces Institute of Pathology; 2007.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pancreatic_neuroendocrine_tumors_are_multifocal_in_the_majority_of_multiple_endocrine_neoplasia_type",
+          "label": "Pancreatic neuroendocrine tumors are multifocal in the majority of multiple endocrine neoplasia type 1 (MEN 1) cases and in up to 30% of gastrinomas and 13% of insulinomas.1 Careful gross examination of the resection specimen with systematic sectioning at 3- to 5-mm intervals is necessary to detect small lesions within the pancreatic parenchyma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heitz_pu_kasper_m_polak_jm_kloeppel_g_pancreatic_endocrine_tumors_immunocytochemical_analysis_of_125",
+          "label": "Heitz PU, Kasper M, Polak JM, Kloeppel G. Pancreatic endocrine tumors:  immunocytochemical analysis of 125 tumors. Hum Pathol. 1982;13:263-271.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion_lvi_indicates_whether_microscopic_lymphatic_andor_vascular_invasion_is_ident",
+          "label": "Lymphovascular invasion (LVI) indicates whether microscopic lymphatic and/or vascular invasion is identified in the pathology report. LVI includes lymphatic invasion, vascular invasion, or lymphovascular invasion. By AJCC/UICC convention, LVI does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_vascular_invasion1_has_been_regarded_by_some_authors_as_histopathologic_criteria_for",
+          "label": "The presence of vascular invasion1 has been regarded by some authors as histopathologic criteria for aggressiveness. Invasion of blood vessels (particularly veins within the tumor capsule) have been observed in 90% of cases with distant metastases in some studies.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kazanjian_kk_reber_ha_hines_oj_resection_of_pancreatic_neuroendocrine_tumors_results_of_70_cases_arc",
+          "label": "Kazanjian KK, Reber HA, Hines OJ. Resection of pancreatic neuroendocrine tumors: results of 70 cases. Arch Surg. 2006;141(8):765-769; discussion 769-770.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "la_rosa_s_sessa_f_capella_c_et_al_prognostic_criteria_in_nonfunctioning_pancreatic_endocrine_tumours",
+          "label": "La Rosa S, Sessa F, Capella C, et al. Prognostic criteria in nonfunctioning pancreatic endocrine tumours. Virchows Arch. 1996;429(6):323-333",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perineural_invasion_has_been_associated_with_aggressive_behavior_and_with_shortened_survival_in_some",
+          "label": "Perineural invasion has been associated with aggressive behavior and with shortened survival in some series1 of pancreatic neuroendocrine tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "la_rosa_s_rigoli_e_uccella_s_novario_r_capella_c_prognostic_and_biological_significance_of_cytokerat",
+          "label": "La Rosa S, Rigoli E, Uccella S, Novario R, Capella C. Prognostic and biological significance of cytokeratin 19 in pancreatic endocrine tumours. Histopathology. 2007;50(5):597-606.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_necrosis_is_uncommon_in_well_differentiated_pancreatic_neuroendocrine_tumors_but_is_generally_",
+          "label": "Tumor necrosis is uncommon in well-differentiated pancreatic neuroendocrine tumors but is generally regarded as an aggressive feature.  When possible, a distinction should be made between nonischemic necrosis (usually punctate or geographic), which is associated with higher tumor grade, and ischemic necrosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_enucleation_procedures_the_periphery_of_the_resection_specimen_tissue_may_be_inked_and_radial_se",
+          "label": "For enucleation procedures, the periphery of the resection specimen tissue may be inked, and radial sections at the closest approach of tumor can be examined microscopically.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_partial_pancreatectomy_and_pancreaticoduodenectomy_specimens_sections_through_the_closest_approa",
+          "label": "For partial pancreatectomy and pancreaticoduodenectomy specimens, sections through the closest approach of the tumor to the pancreatic parenchymal resection margin(s) and to the retroperitoneal (uncinate/superior mesentery artery) margin (Figure 2) are recommended. Sampling of the deep radial surface (representing the posterior retroperitoneal surface of the specimen) is also indicated. In cases of MEN 1, tumors are frequently multiple, and microscopic tumors that are not seen on macroscopic examination may be found at the margin(s).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "overall_for_pancreatic_neuroendocrine_tumors_complete_resection_of_tumor_is_a_strong_determinant_of_",
+          "label": "Overall, for pancreatic neuroendocrine tumors, complete resection of tumor is a strong determinant of long-term survival.1,2 However, in some cases, long-term survival is possible even when the tumor cannot be completely excised. Surgical debulking procedures are of value in controlling tumor-related endocrinopathies and may prolong survival in some patients.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_posterior_view_of_tumor_arising_in_the_pancreatic_head_with_dotted_line_indicating_the_loca",
+          "label": "Figure 2. Posterior view of tumor arising in the pancreatic head, with dotted line indicating the location of the confluence of the portal and superior mesenteric veins. The hatched area shows the retroperitoneal (uncinate process/superior mesentery artery) margin. From Greene et al.4 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tomassetti_p_campana_d_piscitelli_l_et_al_endocrine_pancreatic_tumors_factors_correlated_with_surviv",
+          "label": "Tomassetti P, Campana D, Piscitelli L, et al. Endocrine pancreatic tumors: factors correlated with survival. Ann Oncol. Nov 2005;16(11):1806-1810.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chung_jc_choi_dw_jo_sh_heo_js_choi_sh_kim_yi_malignant_nonfunctioning_endocrine_tumors_of_the_pancre",
+          "label": "Chung JC, Choi DW, Jo SH, Heo JS, Choi SH, Kim YI. Malignant nonfunctioning endocrine tumors of the pancreas: predictive factors for survival after surgical treatment. World J Surg. 2007;31(3):579-585.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_ny_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York, NY: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "different_tnm_staging_systems_of_the_american_joint_committee_on_cancer_ajcc_are_now_recommended_for",
+          "label": "Different TNM staging systems of the American Joint Committee on Cancer (AJCC) are now recommended for staging carcinoma of the exocrine pancreas and well-differentiated pancreatic neuroendocrine tumors.1 The postresection prognosis of a patient with pancreatic neuroendocrine tumor is primarily determined by the tumor size and the anatomic extent of disease (including whether there is lymph node or liver metastasis) as defined by the TNM stage groupings.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previ",
+          "label": "According to AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_designation_applies_only_to_grossly_recognizable_synchronous_primary_carcinomas_and_not_to_a_s",
+          "label": "The “m” designation applies only to grossly recognizable, synchronous primary carcinomas and not to a single, grossly detected tumor with multiple separate microscopic foci.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_more_than_1_tumor_is_present_in_the_pancreas_the_tumor_with_the_highest_t_category_should_be_clas",
+          "label": "If more than 1 tumor is present in the pancreas, the tumor with the highest T category should be classified according to the pT definitions, and either the multiplicity (“m”) or the actual number of simultaneous multiple tumors (e.g., “3”) should be indicated in parentheses after the T category of the primary tumor (e.g., pT3[m] or pT3[2]).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_size_has_been_shown_to_have_independent_prognostic_significance23_limited_to_the_pancreas_is_d",
+          "label": "Tumor size has been shown to have independent prognostic significance.2,3  ”Limited to the pancreas” is defined as no invasion of adjacent organs or the wall of large vessels. Extension of tumor into peripancreatic adipose tissue is NOT a basis for staging for well-differentiated pancreatic neuroendocrine tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "n_category_considerations",
+          "label": "N Category Considerations",
+          "required": true,
+          "type": "free_text",
+          "condition": "Figures 3 and 4"
+        },
+        {
+          "field_id": "the_following_lymph_nodes_are_considered_regional_for_tumors_located_in_the_head_and_neck_of_the_pan",
+          "label": "The following lymph nodes are considered regional for tumors located in the head and neck of the pancreas: lymph nodes along the common bile duct, common hepatic artery, portal vein, posterior and anterior pancreatic duodenal arcades, the superior mesenteric vein, and right lateral wall of the superior mesenteric artery.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_following_lymph_nodes_are_considered_regional_for_tumors_located_in_the_body_and_tail_of_the_pan",
+          "label": "The following lymph nodes are considered regional for tumors located in the body and tail of the pancreas: lymph nodes along the common hepatic artery, celiac axis, splenic artery, and splenic hilum.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "involvement_of_peripancreatic_lymph_nodes_is_considered_regional_disease_and_classified_as_n1_for_pa",
+          "label": "Involvement of peripancreatic lymph nodes is considered regional disease and classified as N1 for pancreatic neuroendocrine tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_lymph_node_metastases_has_been_shown_to_have_independent_prognostic_significance_as_",
+          "label": "The presence of lymph node metastases has been shown to have independent prognostic significance as an adverse factor.4 The minimum number of lymph nodes needed for adequate staging for pancreatic neuroendocrine tumors in pancreaticoduodenectomy specimens has not been determined, although a minimum of 12 lymph nodes has been suggested for pancreatic adenocarcinoma specimens.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_regional_lymph_nodes_of_the_pancreas_anterior_view_from_greene_et_al5_used_with_permission_",
+          "label": "Figure 3. Regional lymph nodes of the pancreas (anterior view). From Greene et al.5 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_regional_lymph_nodes_of_the_pancreas_anterior_view_with_pancreatic_body_removed_to_reveal_r",
+          "label": "Figure 4. Regional lymph nodes of the pancreas (anterior view with pancreatic body removed to reveal retroperitoneal vessels and lymph nodes). From Greene et al.5 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_most_common_site_of_distant_metastasis_is_liver_in_many_cases_metastasis_is_found_only_in_the_li",
+          "label": "The most common site of distant metastasis is liver. In many cases, metastasis is found only in the liver, without regional lymph node metastasis.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "panzuto_f_nasoni_s_falconi_m_et_al_prognostic_factors_and_survival_in_endocrine_tumor_patients_compa",
+          "label": "Panzuto F, Nasoni S, Falconi M, et al. Prognostic factors and survival in endocrine tumor patients: comparison between gastrointestinal and pancreatic localization. Endocr Relat Cancer. 2005;12(4):1083-1092.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hruban_rh_pitman_mb_klimstra_ds_tumors_of_the_pancreas_fourth_series_fascicle_6_ed_washington_dc_arm",
+          "label": "Hruban RH, Pitman MB, Klimstra DS. Tumors of the Pancreas. Fourth series, Fascicle 6 ed. Washington, DC: Armed Forces Institute of Pathology; 2007",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "la_rosa_s_rigoli_e_uccella_s_novario_r_capella_c_prognostic_and_biological_significance_of_cytokerat",
+          "label": "La Rosa S, Rigoli E, Uccella S, Novario R, Capella C. Prognostic and biological significance of cytokeratin 19 in pancreatic endocrine tumours. Histopathology. 2007;50(5):597-606",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_ny_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York, NY: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

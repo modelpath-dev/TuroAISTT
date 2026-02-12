@@ -1,0 +1,1617 @@
+{
+  "template_id": "Adrenal_4.3.1.0.REL_CAPCP",
+  "organ": "ADRENAL GLAND",
+  "protocol_posting_date": "March 2023",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "patient_age_group",
+          "label": "Patient Age Group",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adult",
+              "label": "Adult (older than 18 years)"
+            },
+            {
+              "value": "pediatric",
+              "label": "Pediatric (18 years old or younger)"
+            }
+          ]
+        },
+        {
+          "field_id": "clinical_history_specify",
+          "label": "Clinical History (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "functional_status",
+          "label": "Functional Status",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "urinary_17_ketosteroids_increased",
+              "label": "Urinary 17-ketosteroids increased (10 mg / g creatinine / 24 hours)"
+            },
+            {
+              "value": "cushing_syndrome",
+              "label": "Cushing syndrome"
+            },
+            {
+              "value": "conn_syndrome",
+              "label": "Conn syndrome"
+            },
+            {
+              "value": "virilization",
+              "label": "Virilization"
+            },
+            {
+              "value": "feminization",
+              "label": "Feminization"
+            },
+            {
+              "value": "weight_loss",
+              "label": "Weight loss"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adrenalectomy_total",
+              "label": "Adrenalectomy, total"
+            },
+            {
+              "value": "adrenalectomy_partial",
+              "label": "Adrenalectomy, partial"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "bilateral",
+              "label": "Bilateral"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "histologic_subtype",
+          "label": "Histologic Subtype",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "conventional_adrenal_cortical_carcinoma",
+              "label": "Conventional adrenal cortical carcinoma"
+            },
+            {
+              "value": "oncocytic_adrenal_cortical_carcinoma",
+              "label": "Oncocytic adrenal cortical carcinoma"
+            },
+            {
+              "value": "myxoid_adrenal_cortical_carcinoma",
+              "label": "Myxoid adrenal cortical carcinoma"
+            },
+            {
+              "value": "sarcomatoid_adrenal_cortical_carcinoma",
+              "label": "Sarcomatoid adrenal cortical carcinoma"
+            },
+            {
+              "value": "other_histologic_subtype_not_listed",
+              "label": "Other histologic subtype not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_subtype_cannot_be_determined",
+              "label": "Carcinoma, subtype cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "field_id": "histologic_subtype_comment",
+          "label": "Histologic Subtype Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mitotic_tumor_grade",
+          "label": "Mitotic Tumor Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "low_grade",
+              "label": "Low grade (less than or equal to 20 mitoses per 10 mm2)"
+            },
+            {
+              "value": "high_grade",
+              "label": "High grade (greater than 20 mitoses per 10 mm2)"
+            },
+            {
+              "value": "cannot_be_assessed",
+              "label": "Cannot be assessed (explain)#: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C",
+            "D"
+          ],
+          "condition": "required for adult patients only",
+          "guidance": "Generally due to core needle biopsy, with insufficient viable tumor to count 10 mm2."
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E",
+            "F"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "adrenal_gland_weight",
+          "label": "Adrenal Gland Weight",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_weight",
+              "label": "Specify weight (g): _________________ g",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "sites_involved_by_direct_tumor_extension",
+          "label": "Site(s) Involved by Direct Tumor Extension",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "confined_to_adrenal_cortex_without_invasion_into_or_through_the_adrenal_capsule",
+              "label": "Confined to adrenal cortex without invasion into or through the adrenal capsule (if present)"
+            },
+            {
+              "value": "invades_into_or_through_the_adrenal_capsule_with_no_peri_adrenal_adipose_tissue_invasion",
+              "label": "Invades into or through the adrenal capsule, with no peri-adrenal adipose tissue invasion"
+            },
+            {
+              "value": "kidney",
+              "label": "Kidney"
+            },
+            {
+              "value": "pancreas",
+              "label": "Pancreas"
+            },
+            {
+              "value": "liver",
+              "label": "Liver"
+            },
+            {
+              "value": "spleen",
+              "label": "Spleen"
+            },
+            {
+              "value": "diaphragm",
+              "label": "Diaphragm"
+            },
+            {
+              "value": "stomach",
+              "label": "Stomach"
+            },
+            {
+              "value": "peri_adrenal_adipose_tissue",
+              "label": "Peri-adrenal adipose tissue"
+            },
+            {
+              "value": "large_blood_vessels",
+              "label": "Large blood vessels"
+            },
+            {
+              "value": "other_adjacent_organs_and_structures",
+              "label": "Other adjacent organs and structures (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no evidence of primary tumor)"
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "large_vessel_invasion_renal_vein",
+              "label": "Large vessel invasion, renal vein (including when identified clinically or grossly)"
+            },
+            {
+              "value": "large_vessel_invasion_vena_cava",
+              "label": "Large vessel invasion, vena cava (including when identified clinically or grossly)"
+            },
+            {
+              "value": "large_vessel_invasion_not_otherwise_specified",
+              "label": "Large vessel invasion, not otherwise specified"
+            },
+            {
+              "value": "microscopic_angioinvasion",
+              "label": "Microscopic angioinvasion"
+            },
+            {
+              "value": "lymphatic_invasion",
+              "label": "Lymphatic invasion"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "tumor_description",
+          "label": "Tumor Description",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "hemorrhagic",
+              "label": "Hemorrhagic"
+            },
+            {
+              "value": "necrotic",
+              "label": "Necrotic"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_carcinoma",
+              "label": "All margins negative for carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_carcinoma",
+          "label": "Closest Margin(s) to Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_closest_margin",
+              "label": "Specify closest margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_carcinoma_to_closest_margin",
+          "label": "Distance from Carcinoma to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_present_at_margin",
+              "label": "Carcinoma present at margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margins_involved_by_carcinoma",
+          "label": "Margin(s) Involved by Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            },
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor less than or equal to 5 cm in greatest dimension, no extra-adrenal invasion"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor greater than 5 cm, no extra-adrenal invasion"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor of any size with local invasion, but not invading adjacent organs"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor of any size with invasion of adjacent organs (kidney, diaphragm, pancreas, spleen, or"
+            }
+          ]
+        },
+        {
+          "field_id": "liver_or_large_blood_vessels",
+          "label": "liver) or large blood vessels",
+          "required": true,
+          "type": "free_text",
+          "condition": "renal vein or vena cava"
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis in regional lymph node(s)"
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "category",
+          "label": "Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "notes": [
+            "K"
+          ],
+          "condition": "required only if confirmed pathologically"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "hemorrhage",
+              "label": "Hemorrhage"
+            },
+            {
+              "value": "cystic_change",
+              "label": "Cystic change"
+            },
+            {
+              "value": "calcifications",
+              "label": "Calcifications"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "L"
+          ]
+        },
+        {
+          "field_id": "ki_67_labeling_index",
+          "label": "Ki-67 Labeling Index",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "biomarkers_confirming_adrenal_cortical_origin_select_positive_biomarkers_required_only_if_applicable",
+          "label": "Biomarkers Confirming Adrenal Cortical Origin (select positive biomarker(s)) (required only if applicable)#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "sf1",
+              "label": "SF1 (steroidogenic factor-1)"
+            },
+            {
+              "value": "melan_a",
+              "label": "Melan-A"
+            },
+            {
+              "value": "calretinin",
+              "label": "Calretinin"
+            },
+            {
+              "value": "alpha_inhibin",
+              "label": "Alpha-inhibin"
+            },
+            {
+              "value": "synaptophysin",
+              "label": "Synaptophysin"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Required for all non-functional adrenal tumors. SF1 (steroidogenic factor-1) is the most reliable biomarker. The remaining biomarkers listed are non-specific."
+        },
+        {
+          "field_id": "p53",
+          "label": "p53",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "overexpression",
+              "label": "Overexpression"
+            },
+            {
+              "value": "global_loss",
+              "label": "Global loss"
+            },
+            {
+              "value": "wild_type_staining",
+              "label": "Wild-type staining (variable)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "beta_catenin",
+          "label": "Beta-catenin",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "nuclear_and_cytoplasmic_reactivity",
+              "label": "Nuclear and cytoplasmic reactivity"
+            },
+            {
+              "value": "membranous",
+              "label": "Membranous"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "reticulin_stain_results_specify_types_and_results",
+          "label": "Reticulin Stain Results (specify type(s) and result(s)): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_ancillary_study_findings_specify_types_and_results",
+          "label": "Other Ancillary Study Findings (specify type(s) and result(s)): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "endocrine_manifestations_such_as_hypertension_change_in_body_habitus_feminization_or_virilism_are_im",
+          "label": "Endocrine manifestations, such as hypertension, change in body habitus, feminization, or virilism, are important, as is the knowledge of whether the patient suffers from an adrenal-related disease or syndrome (e.g., Cushing disease, Conn syndrome).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "also_of_import_are_family_history_previous_surgery_for_adrenal_tumors_both_benign_and_malignant_or_o",
+          "label": "Also of import are family history, previous surgery for adrenal tumors (both benign and malignant) or other endocrine organs, other tumors that may metastasize to the adrenal gland, and endocrine or other therapies. In addition, while the majority of adrenal cortical carcinomas occur sporadically, occasionally adrenal cortical carcinoma may be associated with hereditary cancer syndromes.1,2 Such hereditary cancer syndromes include but not limited to Li-Fraumeni syndrome or SBLA (sarcoma; breast and brain tumors; leukemia, laryngeal carcinoma, and lung cancer; and adrenal cortical carcinoma) syndrome2, Beckwith-Wiedemann syndrome1, and Lynch syndrome.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hough_aj_hollifield_jw_page_dl_hartmann_wh_prognostic_factors_in_adrenocortical_tumors_a_mathematica",
+          "label": "Hough AJ, Hollifield JW, Page DL, Hartmann WH. Prognostic factors in adrenocortical tumors: a mathematical analysis of clinical and morphologic data. Am J Clin Pathol. 1979;72:390-399.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lack_ee_tumors_of_the_adrenal_gland_and_extra_adrenal_paraganglia_afip_fascicle_no_8_fourth_series_w",
+          "label": "Lack EE. Tumors of the Adrenal Gland and Extra-Adrenal Paraganglia. AFIP Fascicle No. 8. Fourth Series. Washington DC: American Registry of Pathology; 2007.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "raymond_vm_everett_jn_furtado_lv_et_al_adrenocortical_carcinoma_is_a_lynch_syndrome_associated_cance",
+          "label": "Raymond VM, Everett JN, Furtado LV, et al. Adrenocortical carcinoma is a Lynch syndrome-associated cancer. J Clin Endocrinol Metab. 2013;20:3012-3018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "challis_bg_kandasamy_powlson_as_et_al_familial_adrenocortical_carcinoma_in_association_with_lynch_sy",
+          "label": "Challis BG, Kandasamy, Powlson AS, et al. Familial adrenocortical carcinoma in association with lynch syndrome. J Clin Endocrinol Metab. 2016;101(6):2269-2272.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "laboratory_findings_are_important_in_the_evaluation_of_an_adrenal_mass_tumors_that_are_functional_ie",
+          "label": "Laboratory findings are important in the evaluation of an adrenal mass. Tumors that are functional, i.e., secrete cortisol, aldosterone, or sex hormones, tend to be discovered at an earlier stage than nonfunctional tumors. Virilizing tumors are more frequently identified as carcinomas than adenomas in adult age groups.1 Nonfunctional tumors come to attention due to mass effect and are usually larger. Adrenal cortical neoplasms that secrete glucocorticoids can also be diagnosed by pathologists by checking the status of the non-tumorous adrenal cortex. In the absence of exogenous cortisol administration, the presence of atrophy in the non-tumorous cortex should prompt the attention of the pathologist to the possibility of glucocorticoid-secreting adrenal cortical neoplasm.1,2,3 This issue is of clinical significance, especially in patients with subclinical Cushing syndrome as affected patients may develop Addisonian crisis if postoperative cortisol replacement is not considered.1,2,3 Therefore, the thickness of the nontumorous cortex should be checked in all adrenalectomy specimens.1 In addition, careful evaluation of the non-tumorous cortex may help to identify underlying pathologies like PPNAD (primary pigmented nodular adrenal cortical disease).1,4 Evidence also suggests that functional adrenal cortical carcinomas are biologically more aggressive than non-functional carcinomas.1,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_erickson_la_juhlin_cc_de_krijger_rr_sasano_h_volante_m_papotti_mg_overview_of_the_2022_who_cl",
+          "label": "Mete O, Erickson LA, Juhlin CC, de Krijger RR, Sasano H, Volante M, Papotti MG. Overview of the 2022 WHO Classification of Adrenal Cortical Tumors. Endocr Pathol. 2022;33(1):155-196.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "duan_k_gomez_hernandez_k_mete_o_clinicopathological_correlates_of_adrenal_cushings_syndrome_j_clin_p",
+          "label": "Duan K, Gomez Hernandez K, Mete O. Clinicopathological correlates of adrenal Cushing's syndrome. J Clin Pathol. 2015;68(3):175-186.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_morphological_distinction_of_cortisol_producing_and_aldosterone_producing_adrenal_cort",
+          "label": "Mete O, Asa SL. Morphological distinction of cortisol-producing and aldosterone-producing adrenal cortical adenomas: not only possible but a critical clinical responsibility. Histopathology. 2012;60(6):1015-1016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "morin_e_mete_o_wasserman_jd_joshua_am_asa_sl_ezzat_s_carney_complex_with_adrenal_cortical_carcinoma_",
+          "label": "Morin E, Mete O, Wasserman JD, Joshua AM, Asa SL, Ezzat S. Carney complex with adrenal cortical carcinoma. J Clin Endocrinol Metab. 2012;97(2):E202-206.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zheng_s_cherniack_ad_dewal_n_et_al_comprehensive_pan_genomic_characterization_of_adrenocortical_carc",
+          "label": "Zheng S, Cherniack AD, Dewal N, et al. Comprehensive Pan-Genomic Characterization of Adrenocortical Carcinoma. Cancer Cell. 2016;29(5):723-736.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_following_histologic_classification_of_adrenal_tumors_is_from_the_5th_edition_of_the_world_healt",
+          "label": "The following histologic classification of adrenal tumors is from the 5th edition of the World Health Organization (WHO) classification of tumors of the adrenal gland.1 Thus, this protocol applies only to adrenal cortical carcinoma and its subtypes (conventional, oncocytic, myxoid, and sarcomatoid) and does not apply to other adrenal tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_assié_ga_gill_aj_et_al_adrenal_cortical_carcinoma_in_who_classification_of_tumours_editorial_",
+          "label": "Mete O, Assié GA, Gill AJ, et al. Adrenal cortical carcinoma. In: WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumors [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2022-10-11]. (WHO classification of tumours series, 5th ed.; vol.10). Available from: https://tumourclassification.iarc.who.int/chapters/53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adrenal_cortical_carcinomas_are_not_usually_graded_on_histologic_grounds_severe_nuclear_atypia_high_",
+          "label": "Adrenal cortical carcinomas are not usually graded on histologic grounds. Severe nuclear atypia, high mitotic count, vascular invasion, tumor necrosis, and other microscopic features may, in combination, support a diagnosis of adrenal cortical carcinoma using several multifactorial scoring systems (Tables 1-6). When several histologic features are present together (e.g., necrosis, vascular invasion, increased mitotic activity, and atypical mitoses), the risk of distant metastases is increased.1,2,3,4 In some studies, specific combinations of features, such as mitotic rate of >5 per 10mm2 [50 high-power fields; 50 HPF] along with atypical mitosis and venous invasion (vascular invasion), have been found to correlate with metastasis or recurrence of adult adrenal cortical carcinomas.3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mitotic_index_has_been_identified_as_a_prognostic_factor_that_is_independently_predictive_of_behavio",
+          "label": "Mitotic index has been identified as a prognostic factor that is independently predictive of behavior, with low- and high-grade categories applied based on ≤20 mitoses per 10mm2 (50 HPF) and >20 mitoses per 10mm2 (50 HPF).4,6,7 While the concept of mitotic tumor grade is often used in adult adrenal cortical carcinomas, the optimal cut-off for pediatric adrenal cortical cancers remains to be validated in large clinical series. Nevertheless, documentation of this finding in pediatric age group tumors is recommended.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_scoring_systems_are_suggested_that_are_able_to_predict_metastatic_potential_with_3_x_mitotic_r",
+          "label": "Other scoring systems are suggested that are able to predict metastatic potential, with 3 x mitotic rate (>5 mitoses per 10mm2)+ 5 x presence of necrosis + numeric value of Ki-67 proliferation index in the most proliferative areas (using an automated image analysis algorithm)8 (Table 5). Further, Ki-67 has been found to show a superior performance of estimating proliferative rate compared to mitotic count in hematoxylin-eosin sections, suggested to be a better prognostic indicator in overall patient survival.9 Finally, a reticulin algorithm (Table 3) has been recommended to assess change in reticulin pattern of staining based on necrosis, high mitotic rate (>5 mitoses per 10mm2 [50 HPF]), and vascular invasion.10,11",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_criteria_used_in_adults_to_separate_benign_from_malignant_cortical_tumors_are_not_entirely_appli",
+          "label": "The criteria used in adults to separate benign from malignant cortical tumors are not entirely applicable to adrenocortical tumors in pediatric age groups. Further, pediatric adrenocortical neoplasms showing histologic features worrisome for malignancy in adults (e.g., capsular invasion, vascular invasion, increased mitotic activity, atypical mitoses, necrosis) may not be predictive of biologic behavior; such a pediatric adrenocortical neoplasm exhibiting such histologic features may have a clinically benign course. A number of classification schemes attempting to separate benign from malignant pediatric adrenocortical tumors have been proposed. One of these studies is based on the presence (carcinoma) or absence (adenoma) of 4 histologic features (modified Weiss system) including high nuclear grade, necrosis, mitotic rate greater than 5 per 10mm2 (50 HPF), and atypical mitoses7; another study found that tumor weight was the only reliable predictor of behavior, with tumors weighing over 500 g being malignant12; and another study correlated tumor volume of greater than 200 cm3 and weight greater than 80 g associated with an adverse outcome.13 Subsequent to these studies, Wieneke et al. (Table 6) proposed classifying pediatric adrenocortical neoplasms based on a series of 9 criteria including tumor weight greater than 400 g, tumor size greater than 10.5 cm, extension into periadrenal soft tissues and/or adjacent organs, invasion into the vena cava, venous invasion, capsular invasion, presence of tumor necrosis, mitotic rate greater than 15 per 4mm2 (20 HPF), and the presence of atypical mitoses14; based on this study, the presence of up to 2 of these criteria was associated with a benign outcome, 3 criteria were considered indeterminate for malignancy, and 4 or more criteria were associated with malignant behavior. A recent series also underscored that the Wieneke multiparameter scoring system can accurately predict the clinical course of childhood adrenal cortical tumors.15",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "traditionally_the_lin_weiss_bisceglia_criteria_table_4_are_applied_to_oncocytic_adrenocortical_tumor",
+          "label": "Traditionally, the Lin-Weiss-Bisceglia criteria (Table 4) are applied to oncocytic adrenocortical tumors.16,17 The identification of one of the three major criteria (vascular invasion, atypical mitosis, and mitotic activity greater than 5 per 10mm2 [50 HPF]) supports the diagnosis of oncocytic adrenocortical carcinoma, whereas the presence of any minor criteria (large tumor size greater than 10 cm and/or tumor weight greater than 200 gram, necrosis, capsular invasion and sinusoidal invasion) warrants the diagnosis of an oncocytic adrenocortical tumor of uncertain malignant potential. The diagnosis of an oncocytic adrenocortical adenoma requires absence of all major and minor criteria.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_5th_edition_of_the_who_classification_of_adrenal_cortical_carcinomas_has_expanded_on_the_use_of_",
+          "label": "The 5th edition of the WHO classification of adrenal cortical carcinomas has expanded on the use of multiparameter algorithms18,19 (Tables 1-6). Accordingly, pediatric adrenal cortical carcinoma is rendered using the Wieneke criteria score ≥4 (Table 6). Conventional adrenal cortical carcinomas in adults can be rendered when an adrenal cortical neoplasm fulfills one of the following: Weiss score ≥3, Modified Weiss score ≥3, Helsinki score >8.5, and Reticulin algorithm (Tables 1-4). Oncocytic adrenal cortical carcinomas can be diagnosed using one of the following: Lin-Weiss-Bisceglia (any major criterion), Helsinki score >8.5, and Reticulin algorithm (Tables 3-5). Myxoid adrenal cortical carcinomas are rare and can be assessed using the Weiss, Modified Weiss, and Helsinki scoring systems, as well as the Reticulin algorithm (Tables 1,2,3, and 5).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_weiss_scoring_system",
+          "label": "Table 1. Weiss Scoring System",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_modified_weiss_system",
+          "label": "Table 2. Modified Weiss System",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_3_reticulin_algorithm",
+          "label": "Table 3. Reticulin Algorithm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_4_lin_weiss_bisceglia_criteria_for_oncocytic_adrenal_cortical_neoplasms",
+          "label": "Table 4. Lin-Weiss-Bisceglia Criteria for Oncocytic Adrenal Cortical Neoplasms*",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_5_helsinki_scoring_system",
+          "label": "Table 5. Helsinki Scoring System",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_6_wieneke_criteria_for_pediatric_adrenal_cortical_neoplasms",
+          "label": "Table 6. Wieneke Criteria for Pediatric Adrenal Cortical Neoplasms",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "medeiros_lj_weiss_lm_new_developments_in_the_pathologic_diagnosis_of_adrenal_cortical_neoplasms_a_re",
+          "label": "Medeiros LJ, Weiss LM. New developments in the pathologic diagnosis of adrenal cortical neoplasms: a review. Am J Clin Pathol. 1992;97:73-83.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hough_aj_hollifield_jw_page_dl_hartmann_wh_prognostic_factors_in_adrenocortical_tumors_a_mathematica",
+          "label": "Hough AJ, Hollifield JW, Page DL, Hartmann WH. Prognostic factors in adrenocortical tumors: a mathematical analysis of clinical and morphologic data. Am J Clin Pathol. 1979;72:390-399.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weiss_lm_comparative_histologic_study_of_43_metastasizing_and_non_metastasizing_adrenocortical_tumor",
+          "label": "Weiss LM. Comparative histologic study of 43 metastasizing and non-metastasizing adrenocortical tumors. Am J Surg Pathol. 1984;8:163-169.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weiss_lm_medeiros_lj_vickery_al_pathologic_features_of_prognostic_significance_in_adrenal_cortical_c",
+          "label": "Weiss LM, Medeiros LJ, Vickery AL. Pathologic features of prognostic significance in adrenal cortical carcinoma. Am J Surg Pathol. 1989;13:202-206.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aubert_s_wacrenier_a_leroy_x_et_al_weiss_system_revisited_a_clinicopathologic_and_immunohistochemica",
+          "label": "Aubert S, Wacrenier A, Leroy X, et al. Weiss system revisited: a clinicopathologic and immunohistochemical study of 49 adrenocortical tumors. Am J Surg Pathol. 2002;26:1612-1619.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "giordano_tj_the_argument_for_mitotic_rate_based_grading_for_the_prognostication_of_adrenocortical_ca",
+          "label": "Giordano TJ. The argument for mitotic rate-based grading for the prognostication of adrenocortical carcinoma. Am J Surg Pathol. 2011;35(4):471-473.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "assie_g_antoni_g_tissier_f_et_at_prognostic_parameters_of_metastatic_adrenocortical_carcinoma_j_clin",
+          "label": "Assie G, Antoni G, Tissier F, et at. Prognostic parameters of metastatic adrenocortical carcinoma. J Clin Endocrinol Metab. 2007;92:148-154.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pennanan_m_heiskanen_i_sane_t_et_al_helsinki_score_a_novel_model_for_prediction_of_metastases_in_adr",
+          "label": "Pennanan M, Heiskanen I, Sane T, et al. Helsinki score: a novel model for prediction of metastases in adrenocortical carcinomas. Hum Pathol. 2015;46:404-410.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "morimoto_r_satoh_f_murakami_o_et_al_immunohistochemistry_of_a_proliferation_marker_ki67mib1_in_adren",
+          "label": "Morimoto R, Satoh F. Murakami O, et al. Immunohistochemistry of a proliferation marker Ki67/MIB1 in adrenocortical carcinomas: Ki67/MIB1 labeling index is a predictor for recurrence of adrenocortical carcinomas. Endocr J. 2008;55:49-55.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "duregon_e_fassina_a_volante_m_et_al_the_reticulin_algorithm_for_adrenocortical_tumor_diagnosis_a_mul",
+          "label": "Duregon E, Fassina A. Volante M, et al. The reticulin algorithm for adrenocortical tumor diagnosis: a multicentric validation study on 245 unpublished cases. Am J Surg Pathol. 2013;37:1433-1440.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "papotti_m_libe_r_duregon_e_volante_m_bertherat_j_tissier_f_the_weiss_score_and_beyond_histopathology",
+          "label": "Papotti M, Libe R, Duregon E, Volante M, Bertherat J, Tissier F. The Weiss score and beyond: histopathology for adrenocortical carcinoma. Horm Cancer. 2011;2:333-340.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cagle_pt_hough_aj_pysher_tj_et_al_comparison_of_adrenal_cortical_tumors_in_children_and_adults_cance",
+          "label": "Cagle PT, Hough AJ, Pysher TJ, et al. Comparison of adrenal cortical tumors in children and adults. Cancer. 1986;57:2235-2237",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ribeiro_rc_sandrini_neto_rs_schell_mj_lacerda_l_sambaio_ga_cat_i_adrenocortical_carcinoma_in_childre",
+          "label": "Ribeiro RC, Sandrini Neto RS, Schell MJ, Lacerda L, Sambaio GA, Cat I. Adrenocortical carcinoma in children: a study of 40 cases. J Clin Oncol. 1990;8:67-74.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wieneke_ja_thompson_ld_heffess_cs_adrenal_cortical_neoplasms_in_the_pediatric_population_a_clinicopa",
+          "label": "Wieneke JA, Thompson LD, Heffess CS. Adrenal cortical neoplasms in the pediatric population: a clinicopathologic and immunophenotypic analysis of 83 cases. Am J Surg Pathol. 2003;27:867-881",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jehangir_s_nanjundaiah_p_sigamani_e_et_al_pathological_prognostication_of_paediatric_adrenocortical_",
+          "label": "Jehangir S, Nanjundaiah P, Sigamani E, et al. Pathological prognostication of paediatric adrenocortical tumours: Is a gold standard emerging? Pediatr Blood Cancer 2019;66:e27567.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lin_bt_bonsib_sm_mierau_gw_weiss_lm_medeiros_lj_oncocytic_adrenocortical_neoplasms_a_report_of_seven",
+          "label": "Lin BT, Bonsib SM, Mierau GW, Weiss LM, Medeiros LJ. Oncocytic adrenocortical neoplasms: a report of seven cases and review of the literature. Am. J. Surg. Pathol 1998; 22; 603–614.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bisceglia_m_ludovico_o_di_mattia_a_et_al_adrenocortical_oncocytic_tumors_report_of_10_cases_and_revi",
+          "label": "Bisceglia M, Ludovico O, Di Mattia A, et al. Adrenocortical oncocytic tumors: report of 10 cases and review of the literature. Int J Surg Pathol 2004; 12; 231–243.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_assié_ga_gill_aj_et_al_adrenal_cortical_carcinoma_in_who_classification_of_tumours_editorial_",
+          "label": "Mete O, Assié GA, Gill AJ, et al. Adrenal cortical carcinoma. In: WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumors [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2022-10-11]. (WHO classification of tumours series, 5th ed.; vol.10). Available from: https://tumourclassification.iarc.who.int/chapters/53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_erickson_la_juhlin_cc_de_krijger_rr_sasano_h_volante_m_papotti_mg_overview_of_the_2022_who_cl",
+          "label": "Mete O, Erickson LA, Juhlin CC, de Krijger RR, Sasano H, Volante M, Papotti MG. Overview of the 2022 WHO Classification of Adrenal Cortical Tumors. Endocr Pathol. 2022;33(1):155-196.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "with_the_technical_advancement_and_availability_of_radiographic_imaging_many_asymptomatic_adrenal_ne",
+          "label": "With the technical advancement and availability of radiographic imaging, many asymptomatic adrenal neoplasms are coming to clinical attention at much smaller limits. Such asymptomatic neoplasms are referred to as “adrenal incidentalomas.” Adrenal incidentalomas can present clinical dilemmas to the treating physician. A consensus statement on how to manage adrenal incidentalomas was proposed in 2002.1,2 Follow-up and treatment decisions are based on a combination of clinical/laboratory/radiologic parameters and tumor size (<4 cm, 4-6 cm, >6 cm).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_5th_edition_of_who_classification_of_adrenal_cortical_neoplasms_introduced_the_term_of_sporadic_",
+          "label": "The 5th edition of WHO classification of adrenal cortical neoplasms introduced the term of sporadic nodular adrenocortical disease for non-functional subcentimeter benign adrenal cortical proliferations identified as incidental nodular proliferations in the adrenal gland.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grumbach_mm_biller_bmk_braunstein_gd_et_al_management_of_the_clinically_inapparent_adrenal_mass_inci",
+          "label": "Grumbach MM, Biller BMK, Braunstein GD, et al. Management of the clinically inapparent adrenal mass (“incidentaloma”). Ann Intern Med. 2003;138:424-429.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nih_state_of_the_science_statement_on_management_of_the_clinically_inapparent_adrenal_mass_incidenta",
+          "label": "NIH state-of-the-science statement on management of the clinically inapparent adrenal mass (“incidentaloma”). NIH Consens State Sci Statements. 2002;19:1-25.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_assié_ga_gill_aj_et_al_adrenal_cortical_carcinoma_in_who_classification_of_tumours_editorial_",
+          "label": "Mete O, Assié GA, Gill AJ, et al. Adrenal cortical carcinoma. In: WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumors [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2022-10-11]. (WHO classification of tumours series, 5th ed.; vol.10). Available from: https://tumourclassification.iarc.who.int/chapters/53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_erickson_la_juhlin_cc_de_krijger_rr_sasano_h_volante_m_papotti_mg_overview_of_the_2022_who_cl",
+          "label": "Mete O, Erickson LA, Juhlin CC, de Krijger RR, Sasano H, Volante M, Papotti MG. Overview of the 2022 WHO Classification of Adrenal Cortical Tumors. Endocr Pathol. 2022;33(1):155-196.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_adrenal_glands_sit_in_a_supra_renal_location_retroperitoneal_surrounded_by_connective_tissue_and",
+          "label": "The adrenal glands sit in a supra-renal location (retroperitoneal) surrounded by connective tissue and a layer of adipose tissue. The adrenal glands are intimately associated with the kidneys and are enclosed within the renal fascia (Gerota’s). Each gland has an outer cortex, which is lipid-rich and on gross examination appears bright yellow, surrounding an inner “gray-white” medullary compartment composed of chromaffin cells. There is a rich vascular supply derived from the aorta, inferior phrenic arteries, and renal arteries. Veins emerge from the hila of the glands. The shorter right central vein opens into the inferior vena cava, and the left central vein opens into the renal vein. A single adrenal vein is present for each gland. The regional lymph nodes include the aortic lymph nodes (para-aortic, peri-aortic) and retroperitoneal lymph nodes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "an_entire_adrenal_tumor_may_be_removed_laparoscopically_but_with_this_technique_the_gland_may_become",
+          "label": "An entire adrenal tumor may be removed laparoscopically, but with this technique, the gland may become fragmented. This anatomic information, including maximal diameter of the resected tumor, should be provided by the surgeon. A recent study1 demonstrates a tumor size greater than 6.5 cm is likely to be malignant in adult adrenocortical neoplasms. However, the Wieneke scoring scheme2 that is used to assess the pediatric adrenocortical neoplasms considers a tumor size greater than 10.5 cm as a risk factor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aubert_s_wacrenier_a_leroy_x_et_al_weiss_system_revisited_a_clinicopathologic_and_immunohistochemica",
+          "label": "Aubert S, Wacrenier A, Leroy X, et al. Weiss system revisited: a clinicopathologic and immunohistochemical study of 49 adrenocortical tumors. Am J Surg Pathol. 2002;26:1612-1619.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wieneke_ja_thompson_ld_heffess_cs_adrenal_cortical_neoplasms_in_the_pediatric_population_a_clinicopa",
+          "label": "Wieneke JA, Thompson LD, Heffess CS. Adrenal cortical neoplasms in the pediatric population: a clinicopathologic and immunophenotypic analysis of 83 cases. Am J Surg Pathol. 2003;27:867-881.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "accurate_weights_of_adrenals_with_adrenal_cortical_neoplasms_are_important1_although_tumor_weight_ca",
+          "label": "Accurate weights of adrenals with adrenal cortical neoplasms are important.1 Although tumor weight cannot be used as the sole criterion for malignancy, adrenal cortical neoplasms weighing less than 50 g are often benign, whereas the weight of malignant tumors is usually greater than 100 g in adults. Wieneke et al.2 reported that the mean tumor weight of pediatric adrenal cortical carcinomas was 631 g (range 24–2260 g). The Wieneke scoring system uses the adrenal cortical tumor weight greater than 400 g as a risk modifier in pediatric age groups.2 The weight is a reflection of the adrenal gland's weight rather than tumor weight because, in actuality, following surgical excision, the tumor is not dissected from the gland proper and weighed separately.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "medeiros_lj_weiss_lm_new_developments_in_the_pathologic_diagnosis_of_adrenal_cortical_neoplasms_a_re",
+          "label": "Medeiros LJ, Weiss LM. New developments in the pathologic diagnosis of adrenal cortical neoplasms: a review. Am J Clin Pathol. 1992;97:73-83.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wieneke_ja_thompson_ld_heffess_cs_adrenal_cortical_neoplasms_in_the_pediatric_population_a_clinicopa",
+          "label": "Wieneke JA, Thompson LD, Heffess CS. Adrenal cortical neoplasms in the pediatric population: a clinicopathologic and immunophenotypic analysis of 83 cases. Am J Surg Pathol. 2003;27:867-881.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_5th_edition_of_the_who_classification_requires_the_distinction_between_lymphatic_and_vascular_in",
+          "label": "The 5th edition of the WHO classification requires the distinction between lymphatic and vascular invasion, and thus, the term lymphovascular invasion is not endorsed in any endocrine neoplasm including adrenal cortical carcinomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_the_weiss_classification_which_is_typically_used_in_the_diagnostic_workup_of_adult_conv",
+          "label": "According to the Weiss classification, which is typically used in the diagnostic workup of adult conventional adrenal cortical neoplasms1, distinguishing between large vessel (venous) and small vessel (capillary/lymphatic) invasion may have an impact on prognosis, with large-caliber vascular space invasion portending a worse prognosis. A recent adult series also showed that microscopic angioinvasion (venous invasion) defined as tumor cells invading through a vessel wall and intravascular tumor cells admixed with thrombus proved to be the best prognostic parameter, predicting adverse outcome in all adrenal cortical carcinomas as well as within low-grade adrenal cortical carcinomas.2 These findings underscore the importance of the identification of angioinvasion in these neoplasms. The 5th edition of the WHO classification of adrenal cortical tumors also adopted this criterion and recognized the diagnostic and prognostic impact of vascular invasion in adrenal cortical carcinomas.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weiss_lm_medeiros_lj_vickery_al_pathologic_features_of_prognostic_significance_in_adrenal_cortical_c",
+          "label": "Weiss LM, Medeiros LJ, Vickery AL. Pathologic features of prognostic significance in adrenal cortical carcinoma. Am J Surg Pathol. 1989;13:202-206.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_gucer_h_kefeli_m_asa_sl_diagnostic_and_prognostic_biomarkers_of_adrenal_cortical_carcinoma_am",
+          "label": "Mete O, Gucer H, Kefeli M, Asa SL. Diagnostic and Prognostic Biomarkers of Adrenal Cortical Carcinoma. Am J Surg Pathol. 2018;42(2):201-213.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_assié_ga_gill_aj_et_al_adrenal_cortical_carcinoma_in_who_classification_of_tumours_editorial_",
+          "label": "Mete O, Assié GA, Gill AJ, et al. Adrenal cortical carcinoma. In: WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumors [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2022-10-11]. (WHO classification of tumours series, 5th ed.; vol.10). Available from: https://tumourclassification.iarc.who.int/chapters/53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_erickson_la_juhlin_cc_de_krijger_rr_sasano_h_volante_m_papotti_mg_overview_of_the_2022_who_cl",
+          "label": "Mete O, Erickson LA, Juhlin CC, de Krijger RR, Sasano H, Volante M, Papotti MG. Overview of the 2022 WHO Classification of Adrenal Cortical Tumors. Endocr Pathol. 2022;33(1):155-196.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes_include_aortic_para_aortic_and_peri_aortic_and_retroperitoneal_peri_nephric_and",
+          "label": "Regional lymph nodes include aortic (para-aortic and peri-aortic) and retroperitoneal (peri-nephric and peri-adrenal).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_several_staging_systems_including_those_proposed_by_macfarlane1_and_modified_by_sullivan_e",
+          "label": "There are several staging systems, including those proposed by MacFarlane1 and modified by Sullivan et al2 and Henley et al3 and the European Network for the Study of Adrenal Tumors (ENSAT) staging scheme4,5 with the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) accepting the ENSAT as part of the TNM staging system for adrenal cortical carcinoma.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_t1_tumor_5_cm_in_greatest_dimension_no_extra_adrenal_invasion_used_with_the_permission_of_t",
+          "label": "Figure 1. T1: Tumor ≤5 cm in greatest dimension, no extra-adrenal invasion. Used with the permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual, 8th ed (2017) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_t2_tumor_5_cm_no_extra_adrenal_invasion_used_with_the_permission_of_the_american_joint_comm",
+          "label": "Figure 2. T2: Tumor > 5 cm, no extra-adrenal invasion. Used with the permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual, 8th ed (2016) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_t3_tumor_of_any_size_with_local_invasion_but_not_invading_adjacent_organs_used_with_the_per",
+          "label": "Figure 3. T3: Tumor of any size with local invasion, but not invading adjacent organs. Used with the permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual, 8th ed (2017) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_t4_tumor_of_any_size_with_invasion_of_adjacent_organs_used_with_the_permission_of_the_ameri",
+          "label": "Figure 4. T4: Tumor of any size with invasion of adjacent organs. Used with the permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual, 8th ed (2017) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "macfarlane_da_cancer_of_the_adrenal_cortex_the_natural_history_prognosis_and_treatment_in_a_study_of",
+          "label": "MacFarlane DA. Cancer of the adrenal cortex: the natural history, prognosis, and treatment in a study of fifty-five cases. Ann R Coll Surg Engl. 1958;23:155-186.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sullivan_m_boileau_m_hodges_cv_adrenal_cortical_carcinoma_j_urol_1978120660_665",
+          "label": "Sullivan M, Boileau M, Hodges CV. Adrenal cortical carcinoma. J Urol. 1978;120:660-665.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "henley_dj_van_heerden_ja_grant_cs_carney_ja_carpenter_pc_adrenal_cortical_carcinoma_a_continuing_cha",
+          "label": "Henley DJ, van Heerden JA, Grant CS, Carney JA, Carpenter PC. Adrenal cortical carcinoma: a continuing challenge. Surgery. 1983;94:926-931.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fassnacht_m_johanssen_s_quinkler_m_et_al_limited_prognostic_value_of_the_2004_international_union_ag",
+          "label": "Fassnacht M, Johanssen S, Quinkler M, et al. Limited prognostic value of the 2004 International Union Against Cancer staging classification for adrenocortical carcinoma: proposal for a revised TNM classification. Cancer. 2009;115:243-250.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lughezzani_g_sun_m_perrotte_p_et_al_the_european_network_for_the_study_of_adrenal_tumors_staging_sys",
+          "label": "Lughezzani G, Sun M, Perrotte P, et al. The European Network for the Study of Adrenal Tumors staging system is prognostically superior to the International Union Against Cancer staging system: a North American validation. E46:713-719.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "common_metastatic_sites_include_liver_lung_and_retroperitoneum_metastases_to_brain_and_skin_are_unco",
+          "label": "Common metastatic sites include liver, lung, and retroperitoneum. Metastases to brain and skin are uncommon, although cutaneous involvement of the scalp can simulate angiosarcoma.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lack_ee_tumors_of_the_adrenal_gland_and_extra_adrenal_paraganglia_afip_fascicle_no_8_fourth_series_w",
+          "label": "Lack EE. Tumors of the Adrenal Gland and Extra-Adrenal Paraganglia. AFIP Fascicle No. 8. Fourth Series. Washington DC: American Registry of Pathology; 2007.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "special_procedures_may_include_frozen_sections_cytologic_imprints_immunohistochemical_stains_histoch",
+          "label": "Special procedures may include frozen sections, cytologic imprints, immunohistochemical stains, histochemical stains, electron microscopy, flow cytometry, molecular studies, and cytogenetic studies. For non-functional tumors, the 5th edition of the WHO classification of adrenal cortical tumors requires the confirmation of the adrenal cortical origin by using appropriate biomarkers.1,2,3 SF1 stands out as the most reliable biomarker in the confirmation of adrenal cortical origin.1,2,3 The use of non-specific biomarkers of cortical differentiation (e.g., Melan-A, calretinin, synaptophysin and alpha-inhibin) is discouraged but they may be considered in a panel approach.1,2,3 Similar to synaptophysin, alpha-inhibin can be expressed in pheochromocytomas; therefore, alpha-inhibin is not a reliable biomarker of cortical differentiation.2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "accurate_assessment_of_ki_67_labeling_index_is_of_clinical_significance_in_all_age_groups123567_as_p",
+          "label": "Accurate assessment of Ki-67 labeling index is of clinical significance in all age groups.1,2,3,5,6,7 As per the WHO/IARC requirements, Ki-67 labeling index should be performed manually or via image analysis1,2,3,6,7,8,9; if the latter, specifying methodology, software, or technique is suggested. Mismatch repair proteins may be tested, as adrenal cortical carcinoma is recognized in approximately 3% of Lynch syndrome patients.10,11 The demonstration of abnormal p53 (loss or overexpression) and/or diffuse nuclear beta-catenin may help in the distinction of biologically aggressive forms of adrenal cortical carcinomas. Therefore, it is desirable to perform p53 and beta-catenin immunohistochemistry in all adrenal cortical carcinomas.1,2,3 Paranuclear dot-like IGF2 expression is suggested as an ancillary biomarker of adrenal cortical carcinomas in the appropriate morphological setting.1,2,3,12 Reticulin loss, which is a component of the Reticulin algorithm, can be highlighted using the Gordon-Sweet Silver histochemistry.2,3,12,13,14",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_giordano_tj_papotti_m_sasano_h_volante_m_immunohistochemical_biomarkers_of_adrenal_cor",
+          "label": "Mete O, Asa SL, Giordano TJ, Papotti M, Sasano H, Volante M. Immunohistochemical Biomarkers of Adrenal Cortical Neoplasms. Endocr Pathol. 2018;29(2):137-149.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_assié_ga_gill_aj_et_al_adrenal_cortical_carcinoma_in_who_classification_of_tumours_editorial_",
+          "label": "Mete O, Assié GA, Gill AJ, et al. Adrenal cortical carcinoma. In: WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumors [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2022-10-11]. (WHO classification of tumours series, 5th ed.; vol.10). Available from: https://tumourclassification.iarc.who.int/chapters/53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_erickson_la_juhlin_cc_de_krijger_rr_sasano_h_volante_m_papotti_mg_overview_of_the_2022_who_cl",
+          "label": "Mete O, Erickson LA, Juhlin CC, de Krijger RR, Sasano H, Volante M, Papotti MG. Overview of the 2022 WHO Classification of Adrenal Cortical Tumors. Endocr Pathol. 2022;33(1):155-196.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_pakbaz_s_lerario_am_giordano_tj_asa_sl_significance_of_alpha_inhibin_expression_in_pheochromo",
+          "label": "Mete O, Pakbaz S, Lerario AM, Giordano TJ, Asa SL. Significance of Alpha-inhibin Expression in Pheochromocytomas and Paragangliomas. Am J Surg Pathol. 2021 Sep 1;45(9):1264-1273.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fassnacht_m_dekkers_om_else_t_et_al_european_society_of_endocrinology_clinical_practice_guidelines_o",
+          "label": "Fassnacht M, Dekkers OM, Else T, et al. European Society of Endocrinology Clinical Practice Guidelines on the management of adrenocortical carcinoma in adults, in collaboration with the European Network for the Study of Adrenal Tumors. Eur J Endocrinol. 2018;179(4):G1-G46.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "picard_c_orbach_d_carton_m_et_al_revisiting_the_role_of_the_pathological_grading_in_pediatric_adrena",
+          "label": "Picard C, Orbach D, Carton M, et al. Revisiting the role of the pathological grading in pediatric adrenal cortical tumors: results from a national cohort study with pathological review. Mod Pathol. 2019;32:546-559.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "martins_filho_sn_almeida_mq_soares_i_wakamatsu_a_alves_vaf_fragoso_mcbv_zerbini_mcn_clinical_impact_",
+          "label": "Martins-Filho SN, Almeida MQ, Soares I, Wakamatsu A, Alves VAF, Fragoso MCBV, Zerbini MCN. Clinical Impact of Pathological Features Including the Ki-67 Labeling Index on Diagnosis and Prognosis of Adult and Pediatric Adrenocortical Tumors. Endocr Pathol. 2021 Jun;32(2):288-300.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "papathomas_tg_pucci_e_giordano_tj_et_al_an_international_ki_67_reproducibility_study_in_adrenal_cort",
+          "label": "Papathomas TG, Pucci E, Giordano TJ, et al. An International Ki-67 Reproducibility Study in Adrenal Cortical Carcinoma. Am J Surg Pathol. 2016;40(4):569-576.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lu_h_papathomas_tg_van_zessen_d_et_al_automated_selection_of_hotspots_ash_enhanced_automated_segment",
+          "label": "Lu H, Papathomas TG, van Zessen D, et al. Automated Selection of Hotspots (ASH): enhanced automated segmentation and adaptive step finding for Ki-67 hotspot detection in adrenal cortical cancer. Diagn Pathol. 2014;9:216.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "raymond_vm_everett_jn_furtado_lv_et_al_adrenocortical_carcinoma_is_a_lynch_syndrome_associated_cance",
+          "label": "Raymond VM, Everett JN, Furtado LV, et al. Adrenocortical carcinoma is a Lynch syndrome-associated cancer. J Clin Endocrinol Metab. 2013;20:3012-3018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "challis_bg_kandasamy_powlson_as_et_al_familial_adrenocortical_carcinoma_in_association_with_lynch_sy",
+          "label": "Challis BG, Kandasamy, Powlson AS, et al. Familial adrenocortical carcinoma in association with lynch syndrome. J Clin Endocrinol Metab. 2016;101(6):2269-2272.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_gucer_h_kefeli_m_asa_sl_diagnostic_and_prognostic_biomarkers_of_adrenal_cortical_carcinoma_am",
+          "label": "Mete O, Gucer H, Kefeli M, Asa SL. Diagnostic and Prognostic Biomarkers of Adrenal Cortical Carcinoma. Am J Surg Pathol. 2018;42(2):201-213.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "duregon_e_fassina_a_volante_m_et_al_the_reticulin_algorithm_for_adrenocortical_tumor_diagnosis_a_mul",
+          "label": "Duregon E, Fassina A. Volante M, et al. The reticulin algorithm for adrenocortical tumor diagnosis: a multicentric validation study on 245 unpublished cases. Am J Surg Pathol. 2013;37:1433-1440.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "papotti_m_libe_r_duregon_e_volante_m_bertherat_j_tissier_f_the_weiss_score_and_beyond_histopathology",
+          "label": "Papotti M, Libe R, Duregon E, Volante M, Bertherat J, Tissier F. The Weiss score and beyond: histopathology for adrenocortical carcinoma. Horm Cancer. 2011;2:333-340",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

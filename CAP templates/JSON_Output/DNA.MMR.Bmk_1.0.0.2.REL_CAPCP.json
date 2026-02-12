@@ -1,0 +1,229 @@
+{
+  "template_id": "DNA.MMR.Bmk_1.0.0.2.REL_CAPCP",
+  "organ": "DNA Mismatch Repair Biomarker Testing",
+  "protocol_posting_date": "June 2021",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "dna_mismatch_repair_testing",
+      "section_name": "DNA MISMATCH REPAIR TESTING",
+      "fields": [
+        {
+          "field_id": "specimen_site",
+          "label": "Specimen Site: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "testing_performed_on_block_numbers_specify",
+          "label": "Testing Performed on Block Number(s) (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_ihc_results_for_mismatch_repair_mmr_proteins",
+          "label": "Immunohistochemistry (IHC) Results for Mismatch Repair (MMR) Proteins",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "mlh1",
+              "label": "MLH1"
+            }
+          ]
+        },
+        {
+          "field_id": "mlh1_result",
+          "label": "MLH1 Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msh2",
+              "label": "MSH2"
+            }
+          ]
+        },
+        {
+          "field_id": "msh2_result",
+          "label": "MSH2 Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msh6",
+              "label": "MSH6"
+            }
+          ]
+        },
+        {
+          "field_id": "msh6_result",
+          "label": "MSH6 Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pms2",
+              "label": "PMS2"
+            }
+          ]
+        },
+        {
+          "field_id": "pms2_result",
+          "label": "PMS2 Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "background_non_neoplastic_tissue_internal_control_shows_intact_nuclear_expression",
+              "label": "Background non-neoplastic tissue / internal control shows intact nuclear expression"
+            }
+          ]
+        },
+        {
+          "field_id": "mismatch_repair_mmr_interpretation",
+          "label": "Mismatch Repair (MMR) Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_loss_of_nuclear_expression_of_mmr_proteins",
+              "label": "No loss of nuclear expression of MMR proteins: No evidence of deficient mismatch repair (low probability of MSI-H)"
+            },
+            {
+              "value": "loss_of_nuclear_expression_of_one_or_more_mmr_proteins",
+              "label": "Loss of nuclear expression of one or more MMR proteins: deficient mismatch repair"
+            }
+          ]
+        },
+        {
+          "field_id": "microsatellite_instability_msi_interpretation",
+          "label": "Microsatellite Instability (MSI) Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "msi_stable",
+              "label": "MSI-Stable (MSS)"
+            },
+            {
+              "value": "msi_low",
+              "label": "MSI-Low (MSI-L)"
+            },
+            {
+              "value": "1_29_of_the_markers_exhibit_instability",
+              "label": "1-29% of the markers exhibit instability"
+            },
+            {
+              "value": "1_of_the_5_nci_or_mononucleotide_markers_exhibits_instability",
+              "label": "1 of the 5 NCI or mononucleotide markers exhibits instability"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msi_high",
+              "label": "MSI-High (MSI-H)"
+            },
+            {
+              "value": "greater_than_or_equal_to_30_of_the_markers_exhibit_instability",
+              "label": "Greater than or equal to 30% of the markers exhibit instability"
+            },
+            {
+              "value": "2_or_more_of_the_5_nci_or_mononucleotide_markers_exhibit_instability",
+              "label": "2 or more of the 5 NCI or mononucleotide markers exhibit instability"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msi_cannot_be_determined",
+              "label": "MSI-Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "the_presence_of_msi_h_deficient_mismatch_repair_may_also_be_an_indication_for_additional_testing_for",
+          "label": "The presence of MSI-H / deficient mismatch repair may also be an indication for additional testing for Lynch syndrome and genetic counselling.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heterogeneous_expression_of_mlh1_and_pms2_has_been_infrequently_encountered_in_endometrial_carcinoma",
+          "label": "Heterogeneous expression of MLH1 and PMS2 has been infrequently encountered in endometrial carcinomas (up to 3% of cases). The incidence of heterogeneous expression in other cancer types and its impact on predicting sensitivity to checkpoint inhibition is not currently known.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

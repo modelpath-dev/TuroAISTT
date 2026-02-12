@@ -1,0 +1,2309 @@
+{
+  "template_id": "Bone_4.2.0.0.REL_CAPCP",
+  "organ": "BONE: Resection",
+  "protocol_posting_date": "June 2024",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intralesional_resection",
+              "label": "Intralesional resection"
+            },
+            {
+              "value": "marginal_resection",
+              "label": "Marginal resection"
+            },
+            {
+              "value": "segmental_wide_resection",
+              "label": "Segmental / wide resection"
+            },
+            {
+              "value": "limb_salvage",
+              "label": "Limb salvage (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "radical_resection_of_bone_and_soft_tissue",
+              "label": "Radical resection of bone and soft tissue"
+            },
+            {
+              "value": "amputation",
+              "label": "Amputation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "decalcification_procedure",
+          "label": "Decalcification Procedure",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "edta_decal_or_equivalent",
+              "label": "EDTA-decal or equivalent"
+            },
+            {
+              "value": "harsh_acid_decalcification",
+              "label": "Harsh acid decalcification"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "multiple_sites",
+          "label": "Multiple Sites",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "multifocal_tumor_discontinuous_tumor_at_primary_bone_site",
+              "label": "Multifocal tumor / discontinuous tumor at primary bone site"
+            },
+            {
+              "value": "additional_primary_bone_site",
+              "label": "Additional primary bone site(s) present (specify for synchronous malignant tumors or polyostotic"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "appendicular_skeleton_trunk_skull_facial_bones",
+              "label": "Appendicular skeleton, trunk, skull, facial bones (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "spine",
+              "label": "Spine (specify bone, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pelvis",
+              "label": "Pelvis (specify bone, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "tumor_laterality",
+          "label": "Tumor Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "central",
+              "label": "Central"
+            },
+            {
+              "value": "polyostotic_ipsilateral",
+              "label": "Polyostotic ipsilateral"
+            },
+            {
+              "value": "polyostotic_bilateral",
+              "label": "Polyostotic bilateral"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_location_and_extent",
+          "label": "Tumor Location and Extent",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "epiphysis_or_apophysis",
+              "label": "Epiphysis or apophysis"
+            },
+            {
+              "value": "metaphysis",
+              "label": "Metaphysis"
+            },
+            {
+              "value": "diaphysis",
+              "label": "Diaphysis"
+            },
+            {
+              "value": "cortex",
+              "label": "Cortex"
+            },
+            {
+              "value": "medullary_cavity",
+              "label": "Medullary cavity"
+            },
+            {
+              "value": "surface",
+              "label": "Surface"
+            },
+            {
+              "value": "involves_joint",
+              "label": "Involves joint"
+            },
+            {
+              "value": "extends_into_soft_tissue",
+              "label": "Extends into soft tissue"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radiologic_greatest_dimension_in_centimeters_cm___________________cm",
+          "label": "Radiologic Greatest Dimension in Centimeters (cm): _________________ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "chondrogenic_tumors",
+              "label": "Chondrogenic tumors"
+            },
+            {
+              "value": "synovial_chondromatosis",
+              "label": "Synovial chondromatosis"
+            },
+            {
+              "value": "atypical_cartilaginous_tumor",
+              "label": "Atypical cartilaginous tumor"
+            },
+            {
+              "value": "chondrosarcoma",
+              "label": "Chondrosarcoma"
+            },
+            {
+              "value": "chondrosarcoma_secondary",
+              "label": "Chondrosarcoma, secondary (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "dedifferentiated_chondrosarcoma",
+              "label": "Dedifferentiated chondrosarcoma"
+            },
+            {
+              "value": "periosteal_chondrosarcoma",
+              "label": "Periosteal chondrosarcoma"
+            },
+            {
+              "value": "clear_cell_chondrosarcoma",
+              "label": "Clear cell chondrosarcoma"
+            },
+            {
+              "value": "mesenchymal_chondrosarcoma",
+              "label": "Mesenchymal chondrosarcoma"
+            },
+            {
+              "value": "osteogenic_tumors",
+              "label": "Osteogenic tumors"
+            },
+            {
+              "value": "osteoblastoma",
+              "label": "Osteoblastoma"
+            },
+            {
+              "value": "low_grade_central_osteosarcoma",
+              "label": "Low-grade central osteosarcoma"
+            },
+            {
+              "value": "low_grade_central_osteosarcoma_with_high_grade_transformation",
+              "label": "Low-grade central osteosarcoma with high-grade transformation"
+            },
+            {
+              "value": "parosteal_osteosarcoma",
+              "label": "Parosteal osteosarcoma"
+            },
+            {
+              "value": "parosteal_osteosarcoma_with_high_grade_transformation",
+              "label": "Parosteal osteosarcoma with high-grade transformation"
+            },
+            {
+              "value": "conventional_osteosarcoma",
+              "label": "Conventional osteosarcoma"
+            },
+            {
+              "value": "telangiectatic_osteosarcoma",
+              "label": "Telangiectatic osteosarcoma"
+            },
+            {
+              "value": "small_cell_osteosarcoma",
+              "label": "Small cell osteosarcoma"
+            },
+            {
+              "value": "periosteal_osteosarcoma",
+              "label": "Periosteal osteosarcoma"
+            },
+            {
+              "value": "high_grade_surface_osteosarcoma",
+              "label": "High-grade surface osteosarcoma"
+            },
+            {
+              "value": "secondary_osteosarcoma",
+              "label": "Secondary osteosarcoma"
+            }
+          ],
+          "notes": [
+            "E"
+          ],
+          "guidance": "The list is derived from the World Health Organization (WHO) classification of bone tumors, 5th edition, to include ONLY bone tumors of intermediate (locally aggressive and rarely metastasizing) potential and malignant bone tumors."
+        },
+        {
+          "field_id": "precipitating_factor_for_secondary_osteosarcoma",
+          "label": "Precipitating Factor for Secondary Osteosarcoma: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "undifferentiated_small_round_cell_sarcomas",
+              "label": "Undifferentiated small round cell sarcomas"
+            },
+            {
+              "value": "ewing_sarcoma",
+              "label": "Ewing sarcoma"
+            },
+            {
+              "value": "round_cell_sarcoma_with_ewsr1",
+              "label": "Round cell sarcoma with EWSR1::non-ETS fusions (specify, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cic_rearranged_sarcoma",
+              "label": "CIC-rearranged sarcoma"
+            },
+            {
+              "value": "sarcoma_with_bcor_genetic_alterations",
+              "label": "Sarcoma with BCOR genetic alterations"
+            },
+            {
+              "value": "fibrogenic_fibrohistiocytic_histiocytic_tumors",
+              "label": "Fibrogenic / fibrohistiocytic / histiocytic tumors"
+            },
+            {
+              "value": "sclerosing_epithelioid_fibrosarcoma",
+              "label": "Sclerosing epithelioid fibrosarcoma"
+            },
+            {
+              "value": "primary_malignant_giant_cell_tumor_of_bone",
+              "label": "Primary malignant giant cell tumor of bone"
+            },
+            {
+              "value": "secondary_malignant_giant_cell_tumor_of_bone",
+              "label": "Secondary malignant giant cell tumor of bone"
+            },
+            {
+              "value": "giant_cell_tumor_of_bone",
+              "label": "Giant cell tumor of bone"
+            },
+            {
+              "value": "langerhans_cell_histiocytosis",
+              "label": "Langerhans cell histiocytosis"
+            }
+          ]
+        },
+        {
+          "field_id": "system_involvement",
+          "label": "System Involvement",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "single_system",
+              "label": "Single system (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "multisystem",
+              "label": "Multisystem (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (leukemic, atypical, or other, specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "desmoplastic_fibroma",
+              "label": "Desmoplastic fibroma"
+            },
+            {
+              "value": "notochordal_tumors",
+              "label": "Notochordal tumors"
+            },
+            {
+              "value": "conventional_chordoma",
+              "label": "Conventional chordoma"
+            },
+            {
+              "value": "poorly_differentiated_chordoma",
+              "label": "Poorly differentiated chordoma"
+            },
+            {
+              "value": "dedifferentiated_chordoma",
+              "label": "Dedifferentiated chordoma"
+            },
+            {
+              "value": "vascular_tumors",
+              "label": "Vascular tumors"
+            },
+            {
+              "value": "epithelioid_hemangioma",
+              "label": "Epithelioid hemangioma"
+            },
+            {
+              "value": "pseudomyogenic_hemangioendothelioma",
+              "label": "Pseudomyogenic hemangioendothelioma"
+            },
+            {
+              "value": "epithelioid_hemangioendothelioma",
+              "label": "Epithelioid hemangioendothelioma"
+            },
+            {
+              "value": "angiosarcoma",
+              "label": "Angiosarcoma"
+            },
+            {
+              "value": "epithelial_tumors",
+              "label": "Epithelial tumors"
+            },
+            {
+              "value": "adamantinoma_of_long_bones",
+              "label": "Adamantinoma of long bones"
+            },
+            {
+              "value": "osteofibrous_dysplasia_like_adamantinoma",
+              "label": "Osteofibrous dysplasia-like adamantinoma"
+            },
+            {
+              "value": "dedifferentiated_adamantinoma",
+              "label": "Dedifferentiated adamantinoma"
+            },
+            {
+              "value": "other_mesenchymal_tumors_or_tumors_of_uncertain_differentiation",
+              "label": "Other mesenchymal tumors or tumors of uncertain differentiation"
+            },
+            {
+              "value": "leiomyosarcoma_of_bone",
+              "label": "Leiomyosarcoma of bone"
+            },
+            {
+              "value": "rhabdomyosarcoma_of_bone",
+              "label": "Rhabdomyosarcoma of bone (specify fusion, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tk_fusion",
+              "label": "TK-fusion (NTRK, ALK, BRAF) tumor, primary intraosseous (specify fusion, if known):"
+            },
+            {
+              "value": "undifferentiated_pleomorphic_sarcoma",
+              "label": "Undifferentiated pleomorphic sarcoma"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated_low_grade",
+              "label": "G1, well-differentiated, low-grade"
+            },
+            {
+              "value": "g2_moderately_differentiated_high_grade",
+              "label": "G2, moderately differentiated, high-grade"
+            },
+            {
+              "value": "g3_poorly_differentiated_high_grade",
+              "label": "G3, poorly differentiated, high-grade"
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ungraded_tumor_not_applicable_for_this_tumor_type",
+              "label": "Ungraded tumor / not applicable for this tumor type"
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "mitotic_rate",
+          "label": "Mitotic Rate",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_mitotic_rate_per_mm2",
+              "label": "Specify mitotic rate per mm2: _________________ mitoses per mm2",
+              "has_free_text": true
+            },
+            {
+              "value": "specify_mitotic_rate_per_10_high_power_fields",
+              "label": "Specify mitotic rate per 10 high-power fields (HPF): _________________ mitoses per 10 high-power",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "fields",
+          "label": "fields",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "HPF"
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present (specify overall percentage of treatment effect)#: _________________ %",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "H"
+          ],
+          "condition": "for post-neoadjuvant treatment",
+          "guidance": "Therapy response is expressed as a percentage of total tumor area that is non-viable."
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "geographic_necrosis",
+          "label": "___ Geographic necrosis",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fibrosis",
+          "label": "___ Fibrosis",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hyalinization",
+          "label": "___ Hyalinization",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hemorrhage",
+          "label": "___ Hemorrhage",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cystic_change",
+          "label": "___ Cystic change",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histiocytic_response",
+          "label": "___ Histiocytic response",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "inflammation",
+          "label": "___ Inflammation",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "necrosis_in_the_absence_of_neoadjuvant_therapy",
+          "label": "Necrosis in the Absence of Neoadjuvant Therapy",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (neoadjuvant therapy was administered)"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "condition": "required only if neoadjuvant therapy was not administered"
+        },
+        {
+          "field_id": "extent_of_necrosis",
+          "label": "Extent of Necrosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_tumor",
+          "label": "Closest Margin(s) to Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_closest_margin",
+              "label": "Specify closest margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_tumor_to_closest_margin",
+          "label": "Distance from Tumor to Closest Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "other_close_margins_to_tumor",
+          "label": "Other Close Margin(s) to Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_other_close_margin",
+              "label": "Specify other close margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "tumor_present_at_margin",
+              "label": "Tumor present at margin"
+            }
+          ],
+          "condition": "less than 0.2 cm"
+        },
+        {
+          "field_id": "margins_involved_by_tumor",
+          "label": "Margin(s) Involved by Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "L"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM Classification",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (histologic type not appropriate for staging)#"
+            },
+            {
+              "value": "histologic_type_appropriate_for_staging",
+              "label": "Histologic type appropriate for staging"
+            }
+          ],
+          "condition": "required only if applicable",
+          "guidance": "Regardless of the anatomic site, certain specific types of bone neoplasms for which pTNM staging is not clinically relevant are excluded from the staging system."
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "appendicular_skeleton_trunk_skull_and_facial_bones",
+              "label": "Appendicular skeleton, trunk, skull, and facial bones"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor less than or equal to 8 cm in greatest dimension"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor greater than 8 cm in greatest dimension"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Discontinuous tumors in the primary bone site"
+            },
+            {
+              "value": "spine",
+              "label": "Spine"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor confined to one vertebral segment or two adjacent vertebral segments"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor confined to three adjacent vertebral segments"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor confined to four or more adjacent vertebral segments, or any nonadjacent vertebral"
+            }
+          ]
+        },
+        {
+          "field_id": "pt4_extension_into_the_spinal_canal_or_great_vessels",
+          "label": "pT4: Extension into the spinal canal or great vessels",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Extension into the spinal canal"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Evidence of gross vascular invasion or tumor thrombus in the great vessels"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pelvis",
+              "label": "Pelvis"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_confined_to_one_pelvic_segment_with_no_extraosseous_extension",
+          "label": "pT1: Tumor confined to one pelvic segment with no extraosseous extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor less than or equal to 8 cm in greatest dimension"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor greater than 8 cm in greatest dimension"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "extraosseous_extension",
+          "label": "extraosseous extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Tumor less than or equal to 8 cm in greatest dimension"
+            },
+            {
+              "value": "pt2b",
+              "label": "pT2b: Tumor greater than 8 cm in greatest dimension"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_tumor_spanning_two_pelvic_segments_with_extraosseous_extension",
+          "label": "pT3: Tumor spanning two pelvic segments with extraosseous extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Tumor less than or equal to 8 cm in greatest dimension"
+            },
+            {
+              "value": "pt3b",
+              "label": "pT3b: Tumor greater than 8 cm in greatest dimension"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt4_tumor_spanning_three_pelvic_segments_or_crossing_the_sacroiliac_joint",
+          "label": "pT4: Tumor spanning three pelvic segments or crossing the sacroiliac joint",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Tumor involves sacroiliac joint and extends medial to the sacral neuroforamen"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Tumor encasement of external iliac vessels or presence of gross tumor thrombus in"
+            }
+          ]
+        },
+        {
+          "field_id": "major_pelvic_vessels",
+          "label": "major pelvic vessels",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in single anatomic site"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Regional lymph node metastasis"
+            }
+          ],
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_distant_metastasis",
+          "label": "pM1: Distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Lung"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Bone or other distant sites"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings_specify",
+          "label": "Additional Findings (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "the_previously_reported_biopsy_immunohistochemistry_cytogenetics_and_molecular_studies_can_be_includ",
+          "label": "The previously reported biopsy immunohistochemistry, cytogenetics, and molecular studies can be included in the resection report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry",
+          "label": "Immunohistochemistry",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_results",
+              "label": "Specify results: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "cytogenetics",
+          "label": "Cytogenetics",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_results",
+              "label": "Specify results: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "molecular_studies",
+          "label": "Molecular Studies",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_results",
+              "label": "Specify results: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anatomical_staging_using_the_ajcc_system_8th_ed_is_considered_clinically_relevant_only_for_the_speci",
+          "label": "Anatomical staging using the AJCC system 8th ed. is considered clinically relevant only for the specific malignant entities listed in World Health Organization classification 5th ed. This includes malignant chondrogenic tumors, osteogenic tumors, fibrogenic tumors, osteoclastic giant cell-rich tumors, notochordal tumors, myogenic tumors, lipogenic tumors, undifferentiated small round cell sarcomas and other mesenchymal tumors arising in bone. Locally aggressive entities such as synovial chondromatosis, osteoblastoma, giant cell tumor of bone, epithelioid hemangioma, pseudomyogenic hemangioma, and desmoplastic fibroma may be reported using this protocol but are not staged. Radiologic parameters include bone involved, size and extent (compartment) of tumor, location of tumor and extent, radiologic intrinsic characteristics including matrix or mineralization in bone-forming tumors, and differential diagnosis. Clinical parameters include patient age, sex, exact anatomic location, size, solitary or polyostotic, syndromes, and other pertinent medical and surgical history, if clinically relevant.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radiographic_imaging_plays_an_especially_critical_role_in_the_diagnosis_of_bone_tumors_close_collabo",
+          "label": "Radiographic imaging plays an especially critical role in the diagnosis of bone tumors. Close collaboration with an experienced musculoskeletal radiologist and orthopedic surgeon is advised.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_is_a_diagrammatic_representation_of_the_anatomic_regions_of_a_long_bone_these_locations_are",
+          "label": "Figure 1 is a diagrammatic representation of the “anatomic” regions of a long bone. These locations are very important in classifying bone tumors. For instance, chondroblastoma almost always arises in the epiphysis. Epiphyses and apophyses are secondary ossification centers and therefore are embryonic equivalents; “epiphyses” are found within joints, whereas “apophyses”, the sites of tendonous and ligamentous attachments, are not found within joints. The greater and lesser trochanters are apophyses, while the epiphyses are at the ends of long bones.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_important_anatomic_landmarks_for_tumor_diagnosis_in_long_bones_adapted_from_grays_anatomy1",
+          "label": "Figure 1. Important anatomic landmarks for tumor diagnosis in long bones. Adapted from Gray’s Anatomy.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gray_h_lewis_wh_grays_anatomy_of_the_human_body_20th_ed_philadelphia_pa_lea_febiger_1918",
+          "label": "Gray H, Lewis WH. Gray’s Anatomy of the Human Body. 20th ed. Philadelphia, PA: Lea & Febiger; 1918.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_following_is_a_list_of_guidelines_to_be_used_in_defining_what_type_of_procedure_has_been_perform",
+          "label": "The following is a list of guidelines to be used in defining what type of procedure has been performed. This is based on the surgeon’s intent and not based on the pathologic assessment of the margins.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intralesional_resection_leaving_gross_tumor_behind_partial_debulking_is_an_example",
+          "label": "Intralesional Resection: Leaving gross tumor behind. Partial debulking is an example.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "marginal_resection_removing_the_tumor_and_its_pseudocapsule_with_a_relatively_small_amount_of_adjace",
+          "label": "Marginal Resection: Removing the tumor and its pseudocapsule with a relatively small amount of adjacent tissue. There is no gross tumor at the margin; however, microscopic tumor may be present. Note that occasionally, a surgeon will perform an “excisional” biopsy, which effectively accomplishes the same thing as a marginal resection.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "segmentalwide_resection_an_intracompartmental_resection_a_single_piece_of_bone_is_resected_including",
+          "label": "Segmental/Wide Resection: An intracompartmental resection. A single piece of bone is resected, including the lesion, adjacent soft tissue, and a cuff of normal bone. Limb salvage is an example.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radical_resection_the_removal_of_an_entire_bone_and_the_excision_of_the_adjacent_muscle_groups_if_th",
+          "label": "Radical Resection: The removal of an entire bone, and the excision of the adjacent muscle groups if the tumor is extracompartmental. Amputation is an example.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fixation",
+          "label": "Fixation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tissue_specimens_from_bone_tumors_optimally_are_received_freshunfixed_in_case_fresh_tissue_for_ancil",
+          "label": "Tissue specimens from bone tumors optimally are received fresh/unfixed in case fresh tissue for ancillary studies, such as cytogenetics, is required. All tissue should be processed in a manner that would allow molecular studies to be undertaken successfully.1,2,3 Decalcification using harsh acidic reagents may be detrimental for nucleic acid-based molecular studies and therefore utilization of EDTA as a decalcifying agent has been advised. Freezing a portion of the sample and/or fixing soft portions of the lesion in buffered formalin is encouraged over EDTA decalcification, for molecular studies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tissue_submission_for_histologic_evaluation_and_geneticmolecular_studies",
+          "label": "Tissue Submission for Histologic Evaluation and Genetic/Molecular Studies",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "one_section_per_centimeter_of_maximum_dimension_is_usually_recommended_although_fewer_sections_are_n",
+          "label": "One section per centimeter of maximum dimension is usually recommended, although fewer sections are needed for very large tumors, especially if these are homogeneous. Tumors known to be high grade from a previous biopsy do not require as many sections as those that were previously diagnosed as low grade, as documentation of a high-grade component will change stage, prognosis, and treatment in the latter case. All bone tumors that are post-adjuvant therapy (chemotherapy or radiation) have a central slab section entirely mapped and submitted to assess necrosis. Cystic or hemorrhagic areas should be grossly estimated, and the rim entirely submitted. Always, sections should be taken of grossly heterogeneous areas.4,5 Occasionally, gross findings can be misleading, and areas that appear to be necrotic may actually be myxoid or edematous. Tumors that have not had pre-adjuvant chemotherapy require at least 1 section per cm and all heterogeneous areas, including those appearing necrotic.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_it_has_been_helpful_and_often_required_for_clinical_trials_to_have_snap_frozen_tissue_approxim",
+          "label": "While it has been helpful and often required for clinical trials to have snap frozen tissue, approximately 1 cm3 of fresh tissue stored at minus seventy (-70o C) that can be shipped on dry ice to facilities that perform molecular analysis, most full evaluations of sarcomas can be made on formalin-fixed and EDTA decalcified paraffin-embedded tissue. Adequate tissue should be submitted for conventional light microscopy before tissue has been taken for other analysis. Other than for flow cytometry, microbiology cultures (to send directly to the Microbiology Laboratory from the Operating Room), EM, and cytogenetics, most additional studies for FISH, molecular and copy number/methylation profiling can all be performed on both formalin-fixed and EDTA-fixed tissue (and not on acid decalcified tissue).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intraoperative_consultation",
+          "label": "Intraoperative Consultation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "most_intraoperative_assessment_is_for_margins_histologic_classification_of_bone_tumors_is_sufficient",
+          "label": "Most intraoperative assessment is for margins. Histologic classification of bone tumors is sufficiently complex that it is unreasonable to expect a precise classification of these tumors based on an intraoperative consultation. A complete understanding of the surgeon’s treatment algorithm is recommended before rendering a frozen section diagnosis. In the case of primary bone tumors, an intraoperative diagnosis of benign versus malignant will generally guide the immediate decision to curette, excise, or wait for permanent sections, and certain therapeutic options may be lost if the wrong path is pursued. Intraoperative consultation is useful in assessing if “lesional” tissue is present and whether or not this tissue is necrotic, and in constructing a differential diagnosis that can direct the proper triage of tissue for flow cytometry (lymphoma), electron microscopy, and molecular studies/cytogenetics. Tissue triage optimally is performed at the time of frozen section.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "taylor_bs_barretina_j_maki_rg_antonescu_cr_singer_s_ladanyi_m_advances_in_sarcoma_genomics_and_new_t",
+          "label": "Taylor BS, Barretina J, Maki RG, Antonescu CR, Singer S, Ladanyi M. Advances in sarcoma genomics and new therapeutic targets. Nat Rev Cancer. 2011;11(8):541-547.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rubin_bp_lazar_jf_oliveira_am_molecular_pathology_of_bone_and_soft_tissue_tumors_in_tubbs_r_stoler_m",
+          "label": "Rubin BP, Lazar JF, Oliveira AM. Molecular pathology of bone and soft tissue tumors. In: Tubbs R, Stoler M. Cell and Tissue Based Molecular Pathology. Philadelphia, PA: Churchill Livingstone; 2009.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_soft_tissue_and_bone_tumors_lyon_france_international_",
+          "label": "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumors. Lyon (France): International Agency for Research on Cancer; 2020. (WHO classification of tumours series, 5th ed.; vol. 3).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pawel_b_bahrami_a_hicks_mj_rudzinski_e_protocol_for_the_examination_of_specimens_from_pediatric_pati",
+          "label": "Pawel B, Bahrami A, Hicks MJ, Rudzinski E. Protocol for the Examination of Specimens From Pediatric Patients With Ewing Sarcoma (ES). 2016. Available at www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "given_the_strong_association_between_the_primary_anatomic_site_and_outcome_the_8th_edition_of_the_aj",
+          "label": "Given the strong association between the primary anatomic site and outcome, the 8th edition of the AJCC Cancer Staging Manual1 uses the following site groups for staging purposes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "appendicular_skeleton_including_trunk_skull_and_facial_bones",
+          "label": "Appendicular skeleton, including trunk, skull, and facial bones",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pelvis",
+          "label": "Pelvis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spine",
+          "label": "Spine",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_site_grouping_is_reflected_by_the_provision_of_separate_definitions_for_the_primary_tumor_t_for",
+          "label": "This site grouping is reflected by the provision of separate definitions for the primary tumor (T) for each anatomic site.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_list_is_derived_from_the_world_health_organization_who_classification_of_soft_tissue_tumors_5th_",
+          "label": "The list is derived from the World Health Organization (WHO) classification of soft tissue tumors, 5th edition,1 edited to include ONLY bone tumors of intermediate (locally aggressive and rarely metastasizing) potential and malignant bone tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "note_on_atypical_cartilaginous_tumorgrade_1_chondrosarcoma",
+          "label": "Note on atypical cartilaginous tumor/grade 1 chondrosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "atypical_cartilaginous_tumor_act_refers_to_cartilaginous_neoplasms_demonstrating_features_of_a_grade",
+          "label": "Atypical cartilaginous tumor (ACT) refers to cartilaginous neoplasms demonstrating features of a grade 1 chondrosarcoma and arising in the short and long tubular bones. This terminology should not be used when a pathologist cannot decide on the classification for the cartilaginous neoplasm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bone_primary_tyrosine_kinase_fusion_tumors",
+          "label": "Bone Primary Tyrosine Kinase Fusion Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_fusions_involving_the_rasmapk_pathway_are_rare_among_bone_tumors_these_tumors_have_driver_alte",
+          "label": "While fusions involving the RAS::MAPK pathway are rare among bone tumors, these tumors have driver alterations in genes that encode tyrosine kinases and may respond to therapy targeting NTRK, ALK, BRAF, RET, RAF, FGFR1, or ABL1, etc. Notably, NTRK tumors fused with KANK1 or TPR have been demonstrated to exhibit higher-grade appearance, including spindled and pleomorphic characteristics, accompanied by necrosis and mitoses, leading to unfavorable outcomes. Consequently, it is advisable to conduct comprehensive RNA-based Next-Generation Sequencing (NGS) for fusions, particularly in spindled pleomorphic tumors occurring in individuals under 50 years old, especially those in soft tissue or intraosseous locations. This recommendation is especially pertinent with tumors that have variable ovoid spindled to epithelioid morphology, variable collagenous to myxoid stroma, variable gaping to staghorn vasculature and specifically focal CD34 and/or focal S100 protein, without any staining for SOX10. In these tumors, BRAF, ALK, or panTrk or other immunostain may be identified.2,3,4,5,6,7,8,9,10,11",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "most_common_moleculargenetic_findings",
+          "label": "Most Common Molecular/Genetic Findings",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_most_common_moleculargenetic_findings_in_a_subset_of_intermediatemalignant_bone_tumors_are_liste",
+          "label": "The most common molecular/genetic findings in a subset of intermediate/malignant bone tumors are listed (Table 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_subset_of_bone_intermediate_and_malignant_tumors_with_the_most_common_diagnostic_molecularge",
+          "label": "Table 1: Subset of bone intermediate and malignant tumors with the most common diagnostic molecular/genetic findings.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_soft_tissue_and_bone_tumors_lyon_france_international_",
+          "label": "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumors. Lyon (France): International Agency for Research on Cancer; 2020.",
+          "required": true,
+          "type": "free_text",
+          "condition": "WHO classification of tumours series, 5th ed.; vol. 3"
+        },
+        {
+          "field_id": "haller_f_knopf_j_ackermann_a_et_al_paediatric_and_adult_soft_tissue_sarcomas_with_ntrk1_gene_fusions",
+          "label": "Haller F, Knopf J, Ackermann A, et al. Paediatric and adult soft tissue sarcomas with NTRK1 gene fusions: a subset of spindle cell sarcomas unified by a prominent myopericytic/haemangiopericytic pattern. J Pathol. 2016 Apr;238(5):700-10.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hung_yp_fletcher_cdm_hornick_jl_evaluation_of_pan_trk_immunohistochemistry_in_infantile_fibrosarcoma",
+          "label": "Hung YP, Fletcher CDM, Hornick JL. Evaluation of pan-TRK immunohistochemistry in infantile fibrosarcoma, lipofibromatosis-like neural tumour and histological mimics. Histopathology. 2018;73(4):634-644.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "agaram_np_zhang_l_sung_ys_et_al_recurrent_ntrk1_gene_fusions_define_a_novel_subset_of_locally_aggres",
+          "label": "Agaram NP, Zhang L, Sung YS, et al. Recurrent NTRK1 Gene Fusions Define a Novel Subset of Locally Aggressive Lipofibromatosis-like Neural Tumors. Am J Surg Pathol. 2016 Oct;40(10):1407-16.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "helm_m_chang_a_fanburg_smith_jc_zaenglein_al_helm_k_cutaneous_vclalk_fusion_ovoid_spindle_cell_neopl",
+          "label": "Helm M, Chang A, Fanburg-Smith JC, Zaenglein AL, Helm K. Cutaneous VCL::ALK fusion ovoid-spindle cell neoplasm. J Cutan Pathol. 2023;50(5):405-409. doi: 10.1111/cup.14420. Epub 2023 Mar 12. PMID: 36843055.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fanburg_smith_jc_smith_jd_flemming_dj_bone_and_soft_tissue_tumors_clinicoradiologic_pathologic_molec",
+          "label": "Fanburg-Smith JC, Smith JD, Flemming DJ. Bone and soft tissue tumors: clinicoradiologic-pathologic molecular-genetic correlation of novel fusion spindled, targetable-ovoid, giant-cell-rich, and round cell sarcomas. Skeletal Radiol. 2023 Mar;52(3):517-540. doi: 10.1007/s00256-022-04244-w. Epub 2022 Dec 21. PMID: 36542130.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wood_ml_fanburg_smith_jc_brian_jm_white_jc_powell_jl_freiberg_as_successful_crizotinib_targeted_ther",
+          "label": "Wood ML, Fanburg-Smith JC, Brian JM, White JC, Powell JL, Freiberg AS. Successful Crizotinib-targeted Therapy of Pediatric Unresectable ERC1::ALK Fusion Sarcoma. J Pediatr Hematol Oncol. 2023. doi: 10.1097/MPH.0000000000002777. Epub ahead of print. PMID: 38099690.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "davis_jl_lockwood_cm_stohr_b_et_al_expanding_the_spectrum_of_pediatric_ntrk_rearranged_mesenchymal_t",
+          "label": "Davis JL, Lockwood CM, Stohr B, et al. Expanding the Spectrum of Pediatric NTRK-rearranged Mesenchymal Tumors. Am J Surg Pathol. 2019 Apr;43(4):435-445.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_t_wang_y_goetz_l_corey_z_dougher_mc_smith_jd_fox_ej_freiberg_as_flemming_d_fanburg_smith_jc_nov",
+          "label": "Chen T, Wang Y, Goetz L, Corey Z, Dougher MC, Smith JD, Fox EJ, Freiberg AS, Flemming D, Fanburg-Smith JC. Novel fusion sarcomas including targetable NTRK and ALK. Ann Diagn Pathol. 2021;54:151800. PMID: 34464935.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tan_sy_al_ibraheemi_a_ahrens_wa_oesterheld_je_fanburg_smith_jc_liu_yj_spunt_sl_rudzinski_er_coffin_c",
+          "label": "Tan SY, Al-Ibraheemi A, Ahrens WA, Oesterheld JE, Fanburg-Smith JC, Liu YJ, Spunt SL, Rudzinski ER, Coffin C, Davis JL. ALK rearrangements in infantile fibrosarcoma-like spindle cell tumours of soft tissue and kidney. Histopathology. 2022 Mar;80(4):698-707. Epub 2022 Jan 2. PMID: 34843129.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eyerer_fir_bradshaw_g_vasalos_p_laser_js_chang_cc_kim_as_olson_dr_paler_rj_rosenbaum_jn_walk_ee_will",
+          "label": "Eyerer FIR, Bradshaw G, Vasalos P, Laser JS, Chang CC, Kim AS, Olson DR, Paler RJ, Rosenbaum JN, Walk EE, Willis JE, Yao J, Yohe SL. Getting Your Laboratory on Track With Neurotrophic Receptor Tyrosine Kinase. Arch Pathol Lab Med. 2023 Aug 1;147(8):872-884.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_grading_of_bone_tumors_is_largely_driven_by_the_histologic_diagnosis_and_traditionally_grading_h",
+          "label": "The grading of bone tumors is largely driven by the histologic diagnosis, and traditionally grading has been based on the system advocated by Broders, which assesses cellularity and nuclear features/degree of anaplasia.1 The eighth edition of the AJCC Cancer Staging Manual recommends a 2-tiered system (low vs high-grade) for recording grading.2 Histologic grading uses a 3-tiered system: Grade 1 is considered low-grade, and Grade 2 and Grade 3 are grouped together as high-grade for biological grading. In bone sarcomas, the histologic subtype often determines the clinical behavior and grade. Therefore, a more pragmatic approach to grading aggressive and malignant primary tumors of bone can be used.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "two_bone_tumors_that_are_locally_aggressive_and_metastasize_infrequently_and_thus_are_usually_low_gr",
+          "label": "Two bone tumors that are locally aggressive and metastasize infrequently, and thus are usually low-grade, are low-grade central osteosarcoma and parosteal osteosarcoma. Periosteal osteosarcoma is generally regarded as a grade 2 osteosarcoma. Primary bone tumors that are generally high-grade include malignant giant cell tumor, Ewing sarcoma, angiosarcoma, dedifferentiated chondrosarcoma, conventional osteosarcoma, telangiectatic osteosarcoma, small cell osteosarcoma, secondary osteosarcoma, and high-grade surface osteosarcoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grading_of_conventional_chondrosarcoma_is_based_on_cellularity_cytologic_atypia_and_mitotic_figures_",
+          "label": "Grading of conventional chondrosarcoma is based on cellularity, cytologic atypia, and mitotic figures, following the grading system proposed by Evans et al.4 Grade 1 (low-grade) chondrosarcoma is hypocellular and similar histologically to enchondroma. Grade 2 (intermediate-grade) chondrosarcoma is myxoid and more cellular/atypical than grade 1 chondrosarcoma. Grade 3 (high-grade) chondrosarcoma is hypercellular, pleomorphic, and contains observed mitotic activity.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mesenchymal_chondrosarcoma_fibrosarcoma_leiomyosarcoma_liposarcoma_undifferentiated_pleomorphic_sarc",
+          "label": "Mesenchymal chondrosarcoma, fibrosarcoma, leiomyosarcoma, liposarcoma, undifferentiated pleomorphic sarcoma of bone and other “soft tissue-type” sarcomas that rarely occur in bone can be graded according to the French Federation of Cancer Centers Sarcoma Group (FNCLCC) grading system.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chordomas_are_locally_aggressive_lesions_with_a_propensity_for_metastasis_late_in_their_clinical_cou",
+          "label": "Chordomas are locally aggressive lesions with a propensity for metastasis late in their clinical course and are not graded. Adamantinomas tend to have a low-grade clinical course, but this is variable.  Fortunately, these are very rare. Other tumors such as periosteal chondrosarcoma (grading does not predict behavior) or bone angiosarcoma (always considered high-grade behavior) are also not graded. According to the 2020 WHO classification of tumors of bone, adamantinomas are not graded.2,3,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bone_tumor_grades",
+          "label": "Bone Tumor Grades",
+          "required": true,
+          "type": "free_text",
+          "condition": "Most Common"
+        },
+        {
+          "field_id": "grade_1",
+          "label": "Grade 1",
+          "required": true,
+          "type": "free_text",
+          "condition": "Low-Grade"
+        },
+        {
+          "field_id": "low_grade_intramedullary_central_osteosarcoma",
+          "label": "Low-grade intramedullary (central) osteosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "parosteal_osteosarcoma",
+          "label": "Parosteal osteosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_i_chondrosarcoma",
+          "label": "Grade I chondrosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_chondrosarcoma",
+          "label": "Clear cell chondrosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2",
+          "label": "Grade 2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "periosteal_osteosarcoma",
+          "label": "Periosteal osteosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_ii_chondrosarcoma",
+          "label": "Grade II chondrosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3",
+          "label": "Grade 3",
+          "required": true,
+          "type": "free_text",
+          "condition": "High-Grade"
+        },
+        {
+          "field_id": "ewing_sarcoma",
+          "label": "Ewing sarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "most_round_cell_sarcomas",
+          "label": "Most round cell sarcomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sarcoma_with_bcor_genetic_alterations",
+          "label": "Sarcoma with BCOR genetic alterations",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "conventional_osteosarcoma",
+          "label": "Conventional osteosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "telangiectactic_osteosarcoma",
+          "label": "Telangiectactic osteosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mesenchymal_chondrosarcoma",
+          "label": "Mesenchymal chondrosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "small_cell_osteosarcoma",
+          "label": "Small cell osteosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "secondary_osteosarcoma",
+          "label": "Secondary osteosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_grade_surface_osteosarcoma",
+          "label": "High-grade surface osteosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dedifferentiated_chondrosarcoma",
+          "label": "Dedifferentiated chondrosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dedifferentiated_chordoma",
+          "label": "Dedifferentiated chordoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "poorly_differentiated_chordoma",
+          "label": "Poorly differentiated chordoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignancy_in_giant_cell_tumor",
+          "label": "Malignancy in giant cell tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "primary and secondary malignant giant cell tumor of bone"
+        },
+        {
+          "field_id": "grade_iii_chondrosarcoma",
+          "label": "Grade III chondrosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leiomyosarcoma",
+          "label": "Leiomyosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rhabdomyosarcoma",
+          "label": "Rhabdomyosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "undifferentiated_pleomorphic_sarcoma",
+          "label": "Undifferentiated pleomorphic sarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_8th_edition_of_the_american_joint_committee_on_cancer_ajcc_and_international_union_against_cance",
+          "label": "The 8th edition of the American Joint Committee on Cancer (AJCC) and International Union Against Cancer (UICC) staging system for bone tumors includes a 3-grade system but effectively collapses into high-grade and low-grade.2,5 Other grading systems in (TNM) are based on differentiation, yet this is not applicable to primary intraosseous sarcomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_purposes_of_using_the_ajcc_staging_system_see_note_l_3_grade_systems_can_be_converted_to_a_2_gra",
+          "label": "For purposes of using the AJCC staging system (see note L), 3-grade systems can be converted to a 2-grade (TNM) system as follows: grade 1= low-grade; grade 2 and grade 3 = high-grade.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "inwards_cy_unni_kk_classification_and_grading_of_bone_sarcomas_hematol_oncol_clin_north_am_199593545",
+          "label": "Inwards CY, Unni KK. Classification and grading of bone sarcomas. Hematol Oncol Clin North Am. 1995;9(3):545-569.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_soft_tissue_and_bone_tumors_lyon_france_international_",
+          "label": "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumors. Lyon (France): International Agency for Research on Cancer; 2020.",
+          "required": true,
+          "type": "free_text",
+          "condition": "WHO classification of tumours series, 5th ed.; vol. 3"
+        },
+        {
+          "field_id": "evans_hl_ayala_ag_romsdahl_mm_prognostic_factors_in_chondrosarcoma_of_bone_a_clinicopathologic_analy",
+          "label": "Evans HL, Ayala AG, Romsdahl MM. Prognostic factors in chondrosarcoma of bone: a clinicopathologic analysis with emphasis on histologic grading. Cancer. 1977 Aug;40(2):818-31.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "guillou_l_coindre_jm_bonichon_f_et_al_comparative_study_of_the_national_cancer_institute_and_french_",
+          "label": "Guillou L, Coindre JM, Bonichon F, et al. Comparative study of the National Cancer Institute and French Federation of Cancer Centers Sarcoma Group grading systems in a population of 410 adult patients with soft tissue sarcoma. J Clin Oncol. 1997;15(1):350-362.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brierley_jd_gospodarowicz_mk_wittekind_c_et_al_eds_tnm_classification_of_malignant_tumours_8th_ed_ox",
+          "label": "Brierley JD, Gospodarowicz MK, Wittekind C, et al., eds. TNM Classification of Malignant Tumours. 8th ed. Oxford, UK: Wiley; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mitotic_rate_is_determined_by_counting_mitotic_figures_in_the_most_mitotically_active_area_away_from",
+          "label": "Mitotic rate is determined by counting mitotic figures in the most mitotically active area, away from areas of necrosis, in either 10 consecutive high-power fields (HPF) (use the X40 objective) (1 HPF x 400 = 0.1734 mm2) or in the appropriate number of HPF to encompass 1 mm2 based on each individual microscope.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_area_of_1_hpf_originally_used_measured_01734_mm2_however_the_area_of_1_hpf_using_most_modern_mic",
+          "label": "The area of 1 HPF originally used measured 0.1734 mm2. However, the area of 1 HPF using most modern microscopes with wider 40x lenses will most likely be higher. Pathologists are encouraged to determine the field area of their 40x lenses and divide 0.1734 by the obtained field area to obtain a conversion factor. The number of mitotic figures in 10 HPF multiplied by the obtained conversion factor and rounded to the nearest whole number should be used for reporting purposes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "an_important_change_in_the_5th_edition_of_the_who_classification_of_tumours_series1_is_the_conversio",
+          "label": "An important change in the 5th Edition of the WHO Classification of Tumours series1 is the conversion of mitotic count from the traditional denominator of 10 HPF to a defined area expressed in 1 mm2, as an attempt to standardize the area used for mitotic count. Table 2 demonstrates the approximate number of fields required to encompass 1 mm2 based on the field diameter and its corresponding area.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_approximate_number_of_fields_per_1_mm2_based_on_field_diameter",
+          "label": "Table 2. Approximate number of fields per 1 mm2 based on field diameter",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "formula_to_calculate_the_area_of_one_high_power_field_of_a_specific_microscope_pr2total_magnificatio",
+          "label": "Formula to calculate the area of one high power field of a specific microscope = pr2/total magnification = (½ field diameter)2 x p/total magnification",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "formula_to_calculate_the_field_diameter_objective_field_numberobjective_magnification",
+          "label": "Formula to calculate the field diameter = Objective Field Number/Objective Magnification",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_soft_tissue_and_bone_tumors_lyon_france_international_",
+          "label": "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumors. Lyon (France): International Agency for Research on Cancer; 2020. (WHO classification of tumours series, 5th ed.; vol. 3).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_essential_to_estimate_neoadjuvant_treatment_effect_in_primary_ewing_sarcoma_and_osteosarcoma_o",
+          "label": "It is essential to estimate neoadjuvant treatment effect in primary Ewing sarcoma and osteosarcoma of bone, as these have been shown to have prognostic significance.1,2,3,4,5,6 An entire representative slice of the tumor taken through the long axis should be mapped using a grid pattern diagram, photocopy, or radiologic film to indicate the site for each tumor block. In addition, the remainder of the neoplasm should be sampled at the rate of 1 section per centimeter. Areas of soft tissue extension and the interface of tumor with normal tissue should also be sampled. The sum of all viable areas measured microscopically is divided by the total cross-sectional area occupied by tumor to arrive at a percentage. One way to do so is to estimate the percent treatment effect (necrosis/fibrosis/hemorrhage/histiocytic response) on each slide of the grid slab (greatest surface area of tumor in the longest axis) and put these measurements into an Excel spreadsheet and assess the average necrosis of all slides examined. This yields a finding that is compatible with treatment assessment. Prognostically significant therapy response in osteosarcoma, according to most series, is defined >90%, with those tumors showing >90% therapy response associated with a favorable prognosis.2,3,4 There are 2 protocols to assess response to therapy in Ewing sarcoma. Response can be assessed in the same manner as osteosarcoma or by the system of Picci, which is expressed as grade I (macroscopic viable tumor), grade II (microscopic viable tumor), or grade III (no viable tumor).5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_classification_of_treated_lesions",
+          "label": "Histologic Classification of Treated Lesions",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "due_to_extensive_treatment_effect_such_as_necrosis_fibrosis_and_chemotherapy_induced_and_radiation_i",
+          "label": "Due to extensive treatment effect, such as necrosis, fibrosis, and chemotherapy-induced and radiation-induced pleomorphism, it may not be possible to classify some lesions that were either never biopsied or where the biopsy was insufficient for a precise diagnosis. In problematic cases, the grade of the pretreatment specimen (i.e., biopsy, if available) should take precedence.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "picci_p_sangiorgi_l_rougraff_bt_et_al_relationship_of_chemotherapy_induced_necrosis_and_surgical_mar",
+          "label": "Picci P, Sangiorgi L, Rougraff BT, et al. Relationship of chemotherapy-induced necrosis and surgical margins to local recurrence in osteosarcoma. J Clin Oncol. 1994;12(12):2699-2705.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "raymond_ak_chawla_sp_carrasco_ch_et_al_osteosarcoma_chemotherapy_effect_a_prognostic_factor_semin_di",
+          "label": "Raymond AK, Chawla SP, Carrasco CH, et al. Osteosarcoma chemotherapy effect: a prognostic factor. Semin Diagn Pathol. 1987;4(3):212-236.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "richardson_sm_wurtz_ld_collier_cd_ninety_percent_or_greater_tumor_necrosis_is_associated_with_surviv",
+          "label": "Richardson SM, Wurtz LD, Collier CD. Ninety Percent or Greater Tumor Necrosis Is Associated With Survival and Social Determinants of Health in Patients With Osteosarcoma in the National Cancer Database. Clin Orthop Relat Res. 2023;481(3):512-522. PMID: 36099400; PMCID: PMC9928876.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bacci_g_ferrari_s_bertoni_f_et_al_prognostic_factors_in_nonmetastatic_ewings_sarcoma_of_bone_treated",
+          "label": "Bacci G, Ferrari S, Bertoni F, et al. Prognostic factors in nonmetastatic Ewing's sarcoma of bone treated with adjuvant chemotherapy: analysis of 359 patients at the Istituto Ortopedico Rizzoli. J Clin Oncol. 2000;18(1):4-11.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "picci_p_bohling_t_bacci_g_et_al_chemotherapy_induced_tumor_necrosis_as_a_prognostic_factor_in_locali",
+          "label": "Picci P, Bohling T, Bacci G, et al. Chemotherapy-induced tumor necrosis as a prognostic factor in localized Ewing's sarcoma of the extremities. J Clin Oncol. 1997;15(4):1553-1559.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_or_vascular_invasion_lvi_indicates_whether_microscopic_lymphatic_or_vascular_invasion_is_i",
+          "label": "Lymphatic or vascular invasion (LVI) indicates whether microscopic lymphatic or vascular invasion is identified. LVI includes lymphatic invasion or vascular invasion or both. By AJCC/UICC convention, LVI does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_has_been_recommended_that_for_all_margins_located_less_than_2_cm_the_distance_of_the_tumor_from_t",
+          "label": "It has been recommended that for all margins located less than 2 cm, the distance of the tumor from the margin be reported in centimeters.1 However, there is a lack of agreement on this issue.2 We recommend specifying the closest margin only and optionally the location of all margins less than 0.2 cm.3 Margins from bone tumors should be taken as perpendicular (radial) margins, if possible. If the tumor is located more than 2 cm from the bone margin, the marrow can be scooped out and submitted as a margin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abdul_karim_fw_bauer_tw_kilpatrick_se_et_al_recommendations_for_the_reporting_of_bone_tumors_associa",
+          "label": "Abdul-Karim FW, Bauer TW, Kilpatrick SE, et al. Recommendations for the reporting of bone tumors. Association of Directors of Anatomic and Surgical Pathology. Hum Pathol. 2004;35(10):1173-1178.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "evrard_r_schubert_t_paul_l_docquier_pl_quality_of_resection_margin_with_patient_specific_instrument_",
+          "label": "Evrard R, Schubert T, Paul L, Docquier PL. Quality of resection margin with patient specific instrument for bone tumor resection. J Bone Oncol. 2022;34:100434. doi: 10.1016/j.jbo.2022.100434. PMID: 35601663; PMCID: PMC9115318.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gomez_brouchet_a_mascard_e_siegfried_a_de_pinieux_g_gaspar_n_bouvier_c_aubert_s_marec_bérard_p_piper",
+          "label": "Gomez-Brouchet A, Mascard E, Siegfried A, de Pinieux G, Gaspar N, Bouvier C, Aubert S, Marec-Bérard P, Piperno-Neumann S, Marie B, Larousserie F, Galant C, Fiorenza F, Anract P, Sales de Gauzy J, Gouin F; GROUPOS (GSF-GETO RESOS). Assessment of resection margins in bone sarcoma treated by neoadjuvant chemotherapy: Literature review and guidelines of the bone group (GROUPOS) of the French sarcoma group and bone tumor study group (GSF-GETO/RESOS). Orthop Traumatol Surg Res. 2019;105(4):773-780. Epub 2019. PMID: 30962172.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_node_metastasis_is_extremely_rare_in_adult_bone_sarcomas_nodes_are_not_sampled_routin",
+          "label": "Regional lymph node metastasis is extremely rare in adult bone sarcomas. Nodes are not sampled routinely, and it is not necessary to exhaustively search for nodes. When no lymph nodes are resected, the pathologic ‘N’ category is not assigned (pNX is not used for bone tumors).1 When present, regional lymph node metastasis has prognostic importance and should be reported. Patients whose nodal status is not determined to be positive for tumor, either clinically or pathologically, should be designated as N0.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_8th_edition_tnm_staging_system_for_bone_tumors_of_the_ajcc_and_the_uicc_is_recommended12",
+          "label": "The 8th edition TNM staging system for bone tumors of the AJCC and the UICC is recommended.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anatomical_staging_using_the_ajcc_system_8th_ed_is_considered_clinically_relevant_only_for_the_speci",
+          "label": "Anatomical staging using the AJCC system 8th ed. is considered clinically relevant only for the specific malignant entities listed in the World Health Organization classification 5th ed. This includes malignant chondrogenic tumors, osteogenic tumors, fibrogenic tumors, osteoclastic giant cell-rich tumors, notochordal tumors, myogenic tumors, lipogenic tumors, undifferentiated small round cell sarcomas and other mesenchymal tumors arising in bone. Locally aggressive entities such as synovial chondromatosis, osteoblastoma, giant cell tumor of bone, epithelioid hemangioma, pseudomyogenic hemangioma, and desmoplastic fibroma may be reported using this protocol but are not staged. Site groups for bone sarcomas are the following: appendicular skeleton, including trunk, skull and facial bones, pelvis, and spine. Pathologic staging includes pathologic data obtained from examination of a resected specimen sufficient to evaluate the highest T category, histopathologic type and grade, regional lymph nodes as appropriate, or distant metastasis. Because regional lymph node involvement from bone tumors is rare, the pathologic stage grouping includes any of the following combinations: pT pG pN pM, or pT pG cN cM, or cT cN pM. Biological grade should be assigned to all bone sarcomas, and based on published outcomes data, the current staging system accommodates a two-tiered (low- vs high-grade) system for recording grade. Histologic grading (G) uses a three-tiered system: G1 is considered low-grade, and G2 and G3 are grouped together as high-grade for biological grading.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_the_y_and_r_pref",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and the “y” and “r” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "t_category_considerations",
+          "label": "T Category Considerations",
+          "required": true,
+          "type": "free_text",
+          "condition": "Figures 2 and 3"
+        },
+        {
+          "field_id": "spine_segments_for_staging",
+          "label": "Spine segments for staging",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_spine_segments_for_staging_used_with_permission_of_the_american_joint_committee_on_cancer_a",
+          "label": "Figure 2. Spine segments for staging. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual (2017) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_pelvic_segments_for_staging_used_with_permission_of_the_american_joint_committee_on_cancer_",
+          "label": "Figure 3. Pelvic segments for staging. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual (2017) published by Springer Science and Business Media LLC, www.springerlink.com",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "because_of_the_rarity_of_lymph_node_involvement_in_sarcomas_the_designation_nx_may_not_be_appropriat",
+          "label": "Because of the rarity of lymph node involvement in sarcomas, the designation NX may not be appropriate and could be considered N0 if no clinical involvement is evident.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brierley_jd_gospodarowicz_mk_wittekind_c_et_al_eds_tnm_classification_of_malignant_tumours_8th_ed_ox",
+          "label": "Brierley JD, Gospodarowicz MK, Wittekind C, et al., eds. TNM Classification of Malignant Tumours. 8th ed. Oxford, UK: Wiley; 2016.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

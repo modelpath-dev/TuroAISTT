@@ -1,0 +1,3699 @@
+{
+  "template_id": "Ovary_FT_Perit_1.5.0.0.REL_CAPCP",
+  "organ": "OVARY or FALLOPIAN TUBE or PRIMARY PERITONEUM",
+  "protocol_posting_date": "June 2024",
+  "standards": [
+    "AJCC-UICC 8",
+    "FIGO Cancer Report 2021"
+  ],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "clinical_history",
+          "label": "Clinical History",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "hereditary_breast_and_ovarian_cancer_syndrome",
+              "label": "Hereditary breast and ovarian cancer syndrome (specify gene mutation, if known):"
+            },
+            {
+              "value": "lynch_syndrome",
+              "label": "Lynch syndrome (specify gene mutation, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "specimen",
+          "label": "SPECIMEN",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_information_about_lymph_node_sampling_please_refer_to_the_regional_lymph_node_section",
+          "label": "For information about lymph node sampling, please refer to the Regional Lymph Node section.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "total_hysterectomy_and_bilateral_salpingo_oophorectomy",
+              "label": "Total hysterectomy and bilateral salpingo-oophorectomy"
+            },
+            {
+              "value": "radical_hysterectomy",
+              "label": "Radical hysterectomy"
+            },
+            {
+              "value": "simple_hysterectomy",
+              "label": "Simple hysterectomy"
+            },
+            {
+              "value": "supracervical_hysterectomy",
+              "label": "Supracervical hysterectomy"
+            },
+            {
+              "value": "bilateral_salpingo_oophorectomy",
+              "label": "Bilateral salpingo-oophorectomy"
+            },
+            {
+              "value": "right_salpingo_oophorectomy",
+              "label": "Right salpingo-oophorectomy"
+            },
+            {
+              "value": "left_salpingo_oophorectomy",
+              "label": "Left salpingo-oophorectomy"
+            },
+            {
+              "value": "salpingo_oophorectomy_side_not_specified",
+              "label": "Salpingo-oophorectomy, side not specified"
+            },
+            {
+              "value": "right_oophorectomy",
+              "label": "Right oophorectomy"
+            },
+            {
+              "value": "left_oophorectomy",
+              "label": "Left oophorectomy"
+            },
+            {
+              "value": "oophorectomy_side_not_specified",
+              "label": "Oophorectomy, side not specified"
+            },
+            {
+              "value": "bilateral_salpingectomy",
+              "label": "Bilateral salpingectomy"
+            },
+            {
+              "value": "right_salpingectomy",
+              "label": "Right salpingectomy"
+            },
+            {
+              "value": "left_salpingectomy",
+              "label": "Left salpingectomy"
+            },
+            {
+              "value": "salpingectomy_side_not_specified",
+              "label": "Salpingectomy, side not specified"
+            },
+            {
+              "value": "omentectomy",
+              "label": "Omentectomy"
+            },
+            {
+              "value": "peritoneal_biopsies",
+              "label": "Peritoneal biopsies"
+            },
+            {
+              "value": "peritoneal_tumor_debulking",
+              "label": "Peritoneal tumor debulking"
+            },
+            {
+              "value": "peritoneal_washing",
+              "label": "Peritoneal washing"
+            },
+            {
+              "value": "pelvic_washing",
+              "label": "Pelvic washing"
+            },
+            {
+              "value": "ascitic_fluid",
+              "label": "Ascitic fluid"
+            },
+            {
+              "value": "pleurocentesis",
+              "label": "Pleurocentesis (pleural fluid)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hysterectomy_type",
+          "label": "Hysterectomy Type",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "abdominal",
+              "label": "Abdominal"
+            },
+            {
+              "value": "vaginal",
+              "label": "Vaginal"
+            },
+            {
+              "value": "vaginal_laparoscopic_assisted",
+              "label": "Vaginal, laparoscopic-assisted"
+            },
+            {
+              "value": "laparoscopic",
+              "label": "Laparoscopic"
+            },
+            {
+              "value": "laparoscopic_robotic_assisted",
+              "label": "Laparoscopic, robotic-assisted"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_integrity",
+          "label": "Specimen Integrity",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_primary_ovarian_tumors_if_the_ovary_containing_primary_tumor_is_removed_intact_into_a_laparoscop",
+          "label": "For primary ovarian tumors, if the ovary containing primary tumor is removed intact into a laparoscopy bag and ruptured in the bag by the surgeon without spillage into the peritoneal cavity (to allow for removal via laparoscopy port site or small incision), the specimen integrity should be listed as “capsule intact” with a comment explaining this in the report. For primary peritoneal tumors in women with prior salpingo-oophorectomy, select “Not applicable”.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "right_ovary",
+              "label": "Right ovary"
+            }
+          ]
+        },
+        {
+          "field_id": "right_ovary_integrity",
+          "label": "Right Ovary Integrity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "capsule_intact",
+              "label": "Capsule intact"
+            },
+            {
+              "value": "capsule_ruptured",
+              "label": "Capsule ruptured"
+            }
+          ]
+        },
+        {
+          "field_id": "time_of_rupture",
+          "label": "Time of Rupture",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "preoperative",
+              "label": "Preoperative"
+            },
+            {
+              "value": "intraoperative",
+              "label": "Intraoperative"
+            },
+            {
+              "value": "unknown",
+              "label": "Unknown"
+            },
+            {
+              "value": "fragmented",
+              "label": "Fragmented"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_ovary",
+              "label": "Left ovary"
+            }
+          ]
+        },
+        {
+          "field_id": "left_ovary_integrity",
+          "label": "Left Ovary Integrity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "capsule_intact",
+              "label": "Capsule intact"
+            },
+            {
+              "value": "capsule_ruptured",
+              "label": "Capsule ruptured"
+            }
+          ]
+        },
+        {
+          "field_id": "time_of_rupture",
+          "label": "Time of Rupture",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "preoperative",
+              "label": "Preoperative"
+            },
+            {
+              "value": "intraoperative",
+              "label": "Intraoperative"
+            },
+            {
+              "value": "unknown",
+              "label": "Unknown"
+            },
+            {
+              "value": "fragmented",
+              "label": "Fragmented"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ovary_laterality_not_specified",
+              "label": "Ovary, laterality not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "ovary_integrity",
+          "label": "Ovary Integrity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "capsule_intact",
+              "label": "Capsule intact"
+            },
+            {
+              "value": "capsule_ruptured",
+              "label": "Capsule ruptured"
+            }
+          ]
+        },
+        {
+          "field_id": "time_of_rupture",
+          "label": "Time of Rupture",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "preoperative",
+              "label": "Preoperative"
+            },
+            {
+              "value": "intraoperative",
+              "label": "Intraoperative"
+            },
+            {
+              "value": "unknown",
+              "label": "Unknown"
+            },
+            {
+              "value": "fragmented",
+              "label": "Fragmented"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_fallopian_tube",
+              "label": "Right fallopian tube"
+            }
+          ]
+        },
+        {
+          "field_id": "right_fallopian_tube_integrity",
+          "label": "Right Fallopian Tube Integrity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "serosa_intact",
+              "label": "Serosa intact"
+            },
+            {
+              "value": "serosa_ruptured",
+              "label": "Serosa ruptured"
+            },
+            {
+              "value": "fragmented",
+              "label": "Fragmented"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_fallopian_tube",
+              "label": "Left fallopian tube"
+            }
+          ]
+        },
+        {
+          "field_id": "left_fallopian_tube_integrity",
+          "label": "Left Fallopian Tube Integrity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "serosa_intact",
+              "label": "Serosa intact"
+            },
+            {
+              "value": "serosa_ruptured",
+              "label": "Serosa ruptured"
+            },
+            {
+              "value": "fragmented",
+              "label": "Fragmented"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "fallopian_tube_laterality_not_specified",
+              "label": "Fallopian tube, laterality not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "fallopian_tube_integrity",
+          "label": "Fallopian Tube Integrity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "serosa_intact",
+              "label": "Serosa intact"
+            },
+            {
+              "value": "serosa_ruptured",
+              "label": "Serosa ruptured"
+            },
+            {
+              "value": "fragmented",
+              "label": "Fragmented"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "uterus_integrity",
+          "label": "Uterus Integrity",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "opened",
+              "label": "Opened"
+            },
+            {
+              "value": "morcellated",
+              "label": "Morcellated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C",
+            "D",
+            "E"
+          ]
+        },
+        {
+          "field_id": "please_select_the_primary_tumor_site_of_origin_only_for_bilateral_ovarian_tumors_with_identical_hist",
+          "label": "Please select the primary tumor site of origin only. For bilateral ovarian tumors with identical histology, choose \"bilateral ovaries\".",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right_ovary",
+              "label": "Right ovary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_ovary",
+              "label": "Left ovary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bilateral_ovaries",
+              "label": "Bilateral ovaries: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ovary_laterality_cannot_be_determined",
+              "label": "Ovary, laterality cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_fallopian_tube",
+              "label": "Right fallopian tube: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_fallopian_tube",
+              "label": "Left fallopian tube: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bilateral_fallopian_tubes",
+              "label": "Bilateral fallopian tubes: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "fallopian_tube_laterality_cannot_be_determined",
+              "label": "Fallopian tube, laterality cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_tubo_ovarian",
+              "label": "Right tubo-ovarian: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_tubo_ovarian",
+              "label": "Left tubo-ovarian: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bilateral_tubo_ovarian",
+              "label": "Bilateral tubo-ovarian: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tubo_ovarian_laterality_cannot_be_determined",
+              "label": "Tubo-ovarian, laterality cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "primary_peritoneum",
+              "label": "Primary peritoneum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_bilateral_tumors_please_report_maximum_dimension_for_the_largest_if_borderline_only_or_malignant",
+          "label": "For bilateral tumors, please report maximum dimension for the largest (if borderline only) or malignant tumor. For carcinomas that arise in a borderline tumor, report the size of the carcinoma component only.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "serous_borderline_tumor",
+              "label": "Serous borderline tumor"
+            },
+            {
+              "value": "serous_borderline_tumor_micropapillary_cribriform_variant",
+              "label": "Serous borderline tumor, micropapillary / cribriform variant"
+            },
+            {
+              "value": "serous_borderline_tumor_with_microinvasion",
+              "label": "Serous borderline tumor with microinvasion"
+            },
+            {
+              "value": "microinvasive_low_grade_serous_carcinoma",
+              "label": "Microinvasive low-grade serous carcinoma"
+            },
+            {
+              "value": "low_grade_serous_carcinoma",
+              "label": "Low-grade serous carcinoma"
+            },
+            {
+              "value": "high_grade_serous_carcinoma",
+              "label": "High-grade serous carcinoma"
+            },
+            {
+              "value": "mucinous_borderline_tumor",
+              "label": "Mucinous borderline tumor"
+            },
+            {
+              "value": "mucinous_borderline_tumor_with_intraepithelial_carcinoma",
+              "label": "Mucinous borderline tumor with intraepithelial carcinoma"
+            },
+            {
+              "value": "mucinous_borderline_tumor_with_microinvasion",
+              "label": "Mucinous borderline tumor with microinvasion"
+            },
+            {
+              "value": "microinvasive_mucinous_adenocarcinoma",
+              "label": "Microinvasive mucinous adenocarcinoma"
+            },
+            {
+              "value": "mucinous_adenocarcinoma",
+              "label": "Mucinous adenocarcinoma"
+            },
+            {
+              "value": "endometrioid_borderline_tumor",
+              "label": "Endometrioid borderline tumor"
+            },
+            {
+              "value": "endometrioid_carcinoma",
+              "label": "Endometrioid carcinoma"
+            },
+            {
+              "value": "endometrioid_carcinoma_seromucinous_type",
+              "label": "Endometrioid carcinoma, seromucinous type"
+            },
+            {
+              "value": "seromucinous_borderline_tumor",
+              "label": "Seromucinous borderline tumor"
+            },
+            {
+              "value": "clear_cell_borderline_tumor",
+              "label": "Clear cell borderline tumor"
+            },
+            {
+              "value": "clear_cell_carcinoma",
+              "label": "Clear cell carcinoma"
+            },
+            {
+              "value": "borderline_brenner_tumor",
+              "label": "Borderline Brenner tumor"
+            },
+            {
+              "value": "malignant_brenner_tumor",
+              "label": "Malignant Brenner tumor"
+            },
+            {
+              "value": "mesonephric_like_adenocarcinoma",
+              "label": "Mesonephric-like adenocarcinoma"
+            },
+            {
+              "value": "small_cell_carcinoma_hypercalcemic_type",
+              "label": "Small cell carcinoma, hypercalcemic type"
+            },
+            {
+              "value": "dedifferentiated_carcinoma",
+              "label": "Dedifferentiated carcinoma"
+            },
+            {
+              "value": "undifferentiated_carcinoma_nos",
+              "label": "Undifferentiated carcinoma, NOS"
+            },
+            {
+              "value": "carcinosarcoma",
+              "label": "Carcinosarcoma"
+            },
+            {
+              "value": "carcinoma_subtype_cannot_be_determined",
+              "label": "Carcinoma, subtype cannot be determined"
+            },
+            {
+              "value": "mixed_epithelial_borderline_tumor",
+              "label": "Mixed epithelial borderline tumor (specify types and percentages): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mixed_carcinoma",
+              "label": "Mixed carcinoma (specify types and percentages): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "endometrioid_stromal_sarcoma_low_grade",
+              "label": "Endometrioid stromal sarcoma, low-grade"
+            },
+            {
+              "value": "endometrioid_stromal_sarcoma_high_grade",
+              "label": "Endometrioid stromal sarcoma, high-grade"
+            },
+            {
+              "value": "adenosarcoma",
+              "label": "Adenosarcoma"
+            },
+            {
+              "value": "leiomyosarcoma",
+              "label": "Leiomyosarcoma"
+            },
+            {
+              "value": "fibrosarcoma",
+              "label": "Fibrosarcoma"
+            },
+            {
+              "value": "granulosa_cell_tumor_adult_type",
+              "label": "Granulosa cell tumor, adult type"
+            },
+            {
+              "value": "granulosa_cell_tumor_juvenile_type",
+              "label": "Granulosa cell tumor, juvenile type"
+            },
+            {
+              "value": "steroid_cell_tumor_nos",
+              "label": "Steroid cell tumor, NOS"
+            },
+            {
+              "value": "steroid_cell_tumor_malignant",
+              "label": "Steroid cell tumor, malignant"
+            },
+            {
+              "value": "sertoli_leydig_cell_tumor",
+              "label": "Sertoli-Leydig cell tumor"
+            },
+            {
+              "value": "other_sex_cord_stromal_tumor",
+              "label": "Other sex cord-stromal tumor (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "immature_teratoma",
+              "label": "Immature teratoma"
+            },
+            {
+              "value": "teratoma_with_malignant_transformation",
+              "label": "Teratoma with malignant transformation (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malignant_struma_ovarii",
+              "label": "Malignant struma ovarii (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "dysgerminoma",
+              "label": "Dysgerminoma"
+            },
+            {
+              "value": "yolk_sac_tumor",
+              "label": "Yolk sac tumor"
+            },
+            {
+              "value": "embryonal_carcinoma",
+              "label": "Embryonal carcinoma"
+            },
+            {
+              "value": "gonadoblastoma",
+              "label": "Gonadoblastoma"
+            },
+            {
+              "value": "choriocarcinoma_non_gestational_type",
+              "label": "Choriocarcinoma, non-gestational type"
+            },
+            {
+              "value": "mixed_malignant_germ_cell_tumor",
+              "label": "Mixed malignant germ cell tumor (specify types and percentages): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F",
+            "G"
+          ]
+        },
+        {
+          "field_id": "primary_peritoneal_tumors",
+          "label": "Primary Peritoneal Tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gastrointestinal_stromal_tumor",
+              "label": "Gastrointestinal stromal tumor"
+            },
+            {
+              "value": "solitary_fibrous_tumor_malignant",
+              "label": "Solitary fibrous tumor, malignant"
+            },
+            {
+              "value": "desmoplastic_small_round_cell_tumor",
+              "label": "Desmoplastic small round cell tumor"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ],
+          "condition": "required for endometrioid and mucinous carcinomas, immature teratomas, and Sertoli-Leydig cell tumors"
+        },
+        {
+          "field_id": "endometrioid_carcinomas_are_graded_via_a_3_tier_figo_system_identical_to_their_endometrial_counterpa",
+          "label": "Endometrioid carcinomas are graded via a 3-tier FIGO system identical to their endometrial counterparts. Mucinous carcinomas are graded via Silverberg, FIGO or growth pattern-based systems. Immature teratomas can be graded using either a 2-tier or 3-tier system. Sertoli-Leydig cell tumors are graded via a 3-tier grading system based on the degree of tubular differentiation of the Sertoli component, the quantity of gonadal stroma, and the number of Leydig cells. For mixed tumors, report the highest grade tumor and comment on all others.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "who_grading_system",
+          "label": "WHO Grading System",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gb_borderline_tumor",
+              "label": "GB, borderline tumor"
+            },
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well-differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "figo_grading_system_recommended_for_endometrioid_carcinomas_and_may_also_be_used_for_mucinous_carcin",
+          "label": "FIGO Grading System (recommended for endometrioid carcinomas and may also be used for mucinous carcinomas; when severe nuclear atypia is present in the majority of the tumor cells in grade 1 or 2 tumors (grade 3 nuclei), the FIGO grade is increased by one)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "figo_grade_1",
+              "label": "FIGO Grade 1 (5% or less of non-squamous solid growth)"
+            },
+            {
+              "value": "figo_grade_2",
+              "label": "FIGO Grade 2 (6% to 50% of non-squamous solid growth)"
+            },
+            {
+              "value": "figo_grade_3",
+              "label": "FIGO Grade 3 (more than 50% of non-squamous solid growth)"
+            }
+          ]
+        },
+        {
+          "field_id": "silverberg_grading_system",
+          "label": "Silverberg Grading System",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "silverberg_grade_1",
+              "label": "Silverberg Grade 1 (scores 3-5)"
+            },
+            {
+              "value": "silverberg_grade_2",
+              "label": "Silverberg Grade 2 (scores 6-7)"
+            },
+            {
+              "value": "silverberg_grade_3",
+              "label": "Silverberg Grade 3 (scores 8-9)"
+            }
+          ],
+          "condition": "recommended for mucinous carcinomas and may also be used for endometrioid carcinomas"
+        },
+        {
+          "field_id": "growth_pattern_based_grading",
+          "label": "Growth Pattern-based Grading",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "low_grade_growth_pattern_based",
+              "label": "Low-grade, growth pattern-based (confluent / expansile growth, or less than or equal to 10%"
+            }
+          ],
+          "condition": "recommended for mucinous carcinomas only"
+        },
+        {
+          "field_id": "infiltrative_growth",
+          "label": "infiltrative growth)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "high_grade_growth_pattern_based",
+              "label": "High-grade, growth pattern-based (infiltrative growth in greater than 10% of tumor)"
+            },
+            {
+              "value": "other_growth_pattern_based_grading",
+              "label": "Other growth pattern-based grading (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "2_tier_grading_system",
+          "label": "2-Tier Grading System",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "low_grade",
+              "label": "Low-grade"
+            },
+            {
+              "value": "high_grade",
+              "label": "High-grade"
+            }
+          ],
+          "condition": "recommended for immature teratomas only"
+        },
+        {
+          "field_id": "3_tier_grading_system",
+          "label": "3-Tier Grading System",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "grade_1",
+              "label": "Grade 1 (low-grade)"
+            },
+            {
+              "value": "grade_2",
+              "label": "Grade 2 (high-grade)"
+            },
+            {
+              "value": "grade_3",
+              "label": "Grade 3 (high-grade)"
+            }
+          ],
+          "condition": "recommended for immature teratomas only"
+        },
+        {
+          "field_id": "ovarian_surface_involvement",
+          "label": "Ovarian Surface Involvement",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_right",
+              "label": "Present, right"
+            },
+            {
+              "value": "present_left",
+              "label": "Present, left"
+            },
+            {
+              "value": "present_right_and_left",
+              "label": "Present, right and left"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "fallopian_tube_surface_involvement",
+          "label": "Fallopian Tube Surface Involvement",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_right",
+              "label": "Present, right"
+            },
+            {
+              "value": "present_left",
+              "label": "Present, left"
+            },
+            {
+              "value": "present_right_and_left",
+              "label": "Present, right and left"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "implants",
+          "label": "Implants",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ],
+          "condition": "required for advanced stage serous / seromucinous borderline tumors only"
+        },
+        {
+          "field_id": "serous_borderline_tumor_implants_that_were_formerly_classified_as_invasive_implants_are_now_consider",
+          "label": "Serous borderline tumor implants that were formerly classified as \"invasive implants\" are now considered extraovarian low-grade serous carcinoma. If the foci cannot be categorized as non-invasive or invasive, they are indeterminate.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_sampled",
+              "label": "Not sampled"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present (specify sites): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "indeterminate",
+              "label": "Indeterminate"
+            }
+          ]
+        },
+        {
+          "field_id": "other_tissue_organ_involvement",
+          "label": "Other Tissue / Organ Involvement",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "any_organ_not_selected_is_either_not_involved_or_was_not_submitted",
+          "label": "Any organ not selected is either not involved or was not submitted.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "right_ovary",
+              "label": "Right ovary"
+            },
+            {
+              "value": "left_ovary",
+              "label": "Left ovary"
+            },
+            {
+              "value": "ovary",
+              "label": "Ovary (side not specified)"
+            },
+            {
+              "value": "right_fallopian_tube",
+              "label": "Right fallopian tube"
+            },
+            {
+              "value": "left_fallopian_tube",
+              "label": "Left fallopian tube"
+            },
+            {
+              "value": "fallopian_tube",
+              "label": "Fallopian tube (side not specified)"
+            },
+            {
+              "value": "uterine_corpus",
+              "label": "Uterine corpus"
+            },
+            {
+              "value": "uterine_cervix",
+              "label": "Uterine cervix"
+            },
+            {
+              "value": "pelvic_peritoneum",
+              "label": "Pelvic peritoneum"
+            },
+            {
+              "value": "abdominal_peritoneum",
+              "label": "Abdominal peritoneum"
+            },
+            {
+              "value": "omentum",
+              "label": "Omentum"
+            },
+            {
+              "value": "other_organs_tissue",
+              "label": "Other organs / tissue (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "largest_extrapelvic_peritoneal_focus",
+          "label": "Largest Extrapelvic Peritoneal Focus",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "microscopic",
+              "label": "Microscopic"
+            },
+            {
+              "value": "macroscopic",
+              "label": "Macroscopic (2 cm or less) (specify site, if applicable): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "macroscopic",
+              "label": "Macroscopic (greater than 2 cm) (specify site, if applicable): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "peritoneal_ascitic_fluid_involvement",
+          "label": "Peritoneal / Ascitic Fluid Involvement",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_submitted_unknown",
+              "label": "Not submitted / unknown"
+            },
+            {
+              "value": "negative_for_malignant_cells",
+              "label": "Negative for malignant cells"
+            },
+            {
+              "value": "atypical",
+              "label": "Atypical# (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "J"
+          ],
+          "guidance": "If the ovary shows borderline tumor, but neoplastic cells are present in fluids, they should be classified as “atypia of undetermined significance”, rather than “suspicious for malignancy”, if the International System for Reporting Serous Fluid Cytopathology categories are used. If the staging is category T1, borderline tumors with neoplastic cells in fluids are staged as T1c3. The category of “suspicious for malignancy” should be reserved only for malignant ovarian tumors."
+        },
+        {
+          "field_id": "neoplastic_cells_present",
+          "label": "___ Neoplastic cells present",
+          "required": false,
+          "type": "free_text",
+          "condition": "serous neoplasm, low-grade, see corresponding surgical specimen"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "suspicious",
+              "label": "Suspicious# (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malignant_cells_present",
+              "label": "Malignant cells present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "results_pending",
+              "label": "Results pending"
+            }
+          ]
+        },
+        {
+          "field_id": "chemotherapy_response_score_crs",
+          "label": "Chemotherapy Response Score (CRS)",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "required_only_for_high_grade_serous_carcinomas_treatment_effect_is_based_on_assessment_of_residual_t",
+          "label": "Required only for high-grade serous carcinomas. Treatment effect is based on assessment of residual tumor in the omentum.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "crs1",
+              "label": "CRS1 (no definite or minimal response)"
+            },
+            {
+              "value": "crs2",
+              "label": "CRS2 (moderate response)"
+            },
+            {
+              "value": "crs3",
+              "label": "CRS3 (marked response with no or minimal residual cancer)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor_cells",
+              "label": "All regional lymph nodes negative for tumor cells"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ],
+          "guidance": "Lymph nodes designated as pelvic (parametrial, obturator, internal iliac (hypogastric), external iliac, common iliac, sacral), para-aortic, and retroperitoneal are considered regional lymph nodes. Intra-omental and peri-intestinal lymph nodes are not considered regional nodes and their involvement is regarded as part of T3 intraperitoneal disease for staging purposes. Any other involved nodes should be categorized as metastases (pM1) and reported on in the distant metastasis section. Although there is limited evidence, Stage IIIA1 is subdivided based on the 10 mm cut-off for nodal metastases. The presence of isolated tumor cells no greater than 0.2 mm in regional lymph node(s) is considered N0(i+)."
+        },
+        {
+          "field_id": "number_of_nodes_with_metastasis_greater_than_10_mm",
+          "label": "Number of Nodes with Metastasis Greater than 10 mm",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_nodes_with_metastasis_10_mm_or_less",
+          "label": "Number of Nodes with Metastasis 10 mm or Less",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "excluding isolated tumor cells"
+        },
+        {
+          "field_id": "number_of_nodes_with_isolated_tumor_cells_itcs_02_mm_or_less_required_only_if",
+          "label": "Number of Nodes with Isolated Tumor Cells (ITCs) (0.2 mm or less) (required only if",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Reporting the number of lymph nodes with isolated tumor cells is required only in the absence of metastasis"
+        },
+        {
+          "field_id": "greater_than_02_mm_in_other_lymph_nodes",
+          "label": "greater than 0.2 mm in other lymph nodes.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_with_tumor",
+          "label": "Nodal Site(s) with Tumor",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_pelvic",
+              "label": "Right pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_pelvic",
+              "label": "Left pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pelvic_nos",
+              "label": "Pelvic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_para_aortic",
+              "label": "Right para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_para_aortic",
+              "label": "Left para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "para_aortic_nos",
+              "label": "Para-aortic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "location_of_largest_nodal_metastatic_deposit",
+          "label": "Location of Largest Nodal Metastatic Deposit",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right_pelvic",
+              "label": "Right pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_pelvic",
+              "label": "Left pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pelvic_nos",
+              "label": "Pelvic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_para_aortic",
+              "label": "Right para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_para_aortic",
+              "label": "Left para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "para_aortic_nos",
+              "label": "Para-aortic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_examined",
+          "label": "Nodal Site(s) Examined",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_pelvic",
+              "label": "Right pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_pelvic",
+              "label": "Left pelvic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pelvic_nos",
+              "label": "Pelvic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "right_para_aortic",
+              "label": "Right para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_para_aortic",
+              "label": "Left para-aortic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "para_aortic_nos",
+              "label": "Para-aortic, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "pleural_effusion_with_positive_cytology",
+              "label": "Pleural effusion with positive cytology##: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver_parenchyma",
+              "label": "Liver parenchyma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "splenic_parenchyma",
+              "label": "Splenic parenchyma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "extra_abdominal_organ",
+              "label": "Extra-abdominal organ(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "inguinal_lymph_node",
+              "label": "Inguinal lymph node(s) and lymph node(s) outside of the abdominal cavity (such as supraclavicular"
+            }
+          ],
+          "guidance": "This excludes metastasis to retroperitoneal, pelvic, para-aortic, or any regional lymph nodes. Positive cytology indicates confirmed malignant cells"
+        },
+        {
+          "field_id": "or_axillary",
+          "label": "or axillary): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "transmural_involvement_of_intestine",
+              "label": "Transmural involvement of intestine: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "L"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_limited_to_ovaries_one_or_both_or_fallopian_tube",
+          "label": "pT1: Tumor limited to ovaries (one or both) or fallopian tube",
+          "required": true,
+          "type": "free_text",
+          "condition": "s"
+        },
+        {
+          "field_id": "when_found_incidentally_or_in_risk_reducing_salpingo_oophorectomy_specimens_serous_tubal_intraepithe",
+          "label": "When found incidentally or in risk reducing salpingo-oophorectomy specimens, serous tubal intraepithelial carcinoma (STIC) does not need synoptic reporting. If staging procedure was performed, STIC without invasion or extratubal spread may be staged as pT1a if it involves one fallopian tube only, as pT1b if it involves both fallopian tubes, and as pT1c3 if it is accompanied by positive peritoneal washings or ascites, with an annotation that there is no “invasive” carcinoma. The presence of ascites does not affect staging unless malignant cells are present.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor limited to one ovary (capsule intact) or fallopian tube, no tumor on ovarian or fallopian"
+            }
+          ]
+        },
+        {
+          "field_id": "tube_surface_no_malignant_cells_in_ascites_or_peritoneal_washings",
+          "label": "tube surface; no malignant cells in ascites or peritoneal washings",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor limited to both ovaries (capsules intact) or fallopian tubes; no tumor on ovarian or"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1c_tumor_limited_to_one_or_both_ovaries_or_fallopian_tubes_with_any_of_the_following",
+          "label": "pT1c: Tumor limited to one or both ovaries or fallopian tubes, with any of the following",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1c1",
+              "label": "pT1c1: Surgical spill"
+            },
+            {
+              "value": "pt1c2",
+              "label": "pT1c2: Capsule ruptured before surgery or tumor on ovarian or fallopian tube surface"
+            },
+            {
+              "value": "pt1c3",
+              "label": "pT1c3: Malignant cells in ascites or peritoneal washings"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt2_tumor_involves_one_or_both_ovaries_or_fallopian_tubes_with_pelvic_extension_below_pelvic_brim_or",
+          "label": "pT2: Tumor involves one or both ovaries or fallopian tubes with pelvic extension below pelvic brim or primary peritoneal cancer",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt2a",
+              "label": "pT2a: Extension and / or implants on the uterus and / or fallopian tube(s) and / or ovaries"
+            },
+            {
+              "value": "pt2b",
+              "label": "pT2b: Extension to and / or implants on other pelvic tissues"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt3_tumor_involves_one_or_both_ovaries_or_fallopian_tubes_or_primary_peritoneal_cancer_with_microsco",
+          "label": "pT3: Tumor involves one or both ovaries or fallopian tubes, or primary peritoneal cancer, with microscopically confirmed peritoneal metastasis outside the pelvis and / or metastasis to the retroperitoneal (pelvic and / or para-aortic) lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Microscopic extrapelvic (above the pelvic brim) peritoneal involvement with or without positive"
+            }
+          ]
+        },
+        {
+          "field_id": "retroperitoneal_lymph_nodes",
+          "label": "retroperitoneal lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3b",
+              "label": "pT3b: Macroscopic peritoneal metastasis beyond pelvis 2 cm or less in greatest dimension with or"
+            }
+          ]
+        },
+        {
+          "field_id": "without_metastasis_to_the_retroperitoneal_lymph_nodes",
+          "label": "without metastasis to the retroperitoneal lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3c",
+              "label": "pT3c: Macroscopic peritoneal metastasis beyond the pelvis more than 2 cm in greatest dimension"
+            }
+          ]
+        },
+        {
+          "field_id": "with_or_without_metastasis_to_the_retroperitoneal_lymph_nodes_includes_extension_of_tumor_to_capsule",
+          "label": "with or without metastasis to the retroperitoneal lymph nodes (includes extension of tumor to capsule",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "of_liver_and_spleen_without_parenchymal_involvement_of_either_organ",
+          "label": "of liver and spleen without parenchymal involvement of either organ)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0(i+): Isolated tumor cells in regional lymph node(s) no greater than 0.2 mm"
+            }
+          ],
+          "condition": "required only if applicable",
+          "guidance": "For ovarian, fallopian tube, or primary peritoneal tumors, lymph nodes designated as pelvic [parametrial, obturator, internal iliac (hypogastric), external iliac, common iliac, sacral, presacral], para-aortic, and retroperitoneal are considered regional lymph nodes. Intra-omental and peri-intestinal lymph nodes are not considered regional nodes and their involvement is regarded as part of T3 intraperitoneal disease for staging purposes. Any other involved nodes should be categorized as metastases (pM1) and reported in the distant metastasis section. Although there is limited evidence, Stage IIIA1 is subdivided based on the 10 mm cut-off for nodal metastases. The presence of isolated tumor cells no greater than 0.2 mm in regional lymph node(s) is considered N0(i+)."
+        },
+        {
+          "field_id": "pn1_positive_retroperitoneal_pelvic_and_or_para_aortic_lymph_nodes_only",
+          "label": "pN1: Positive retroperitoneal (pelvic and / or para-aortic) lymph nodes only",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1a",
+              "label": "pN1a: Metastasis up to and including 10 mm in greatest dimension"
+            },
+            {
+              "value": "pn1b",
+              "label": "pN1b: Metastasis more than 10 mm in greatest dimension"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1 (subcategory cannot be determined)"
+            }
+          ],
+          "condition": "histologically confirmed"
+        },
+        {
+          "field_id": "n_suffix",
+          "label": "N Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(sn) metastasis is identified only by sentinel lymph node biopsy"
+            },
+            {
+              "value": "",
+              "label": "(f) metastasis is identified only by FNA or core biopsy"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "free_text",
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "parenchymal_liver_or_splenic_metastasis_is_classified_as_stage_iv_disease_whereas_liver_or_splenic_c",
+          "label": "Parenchymal liver or splenic metastasis is classified as stage IV disease, whereas liver or splenic capsule metastasis is classified as stage III disease. Non-regional lymph node metastases (such as inguinal, supraclavicular, and axillary nodes) are considered M1. Involvement of diaphragm surface is considered pT3; however, involvement of diaphragm skeletal muscle or abdominal wall tissue beyond the peritoneum is considered distant metastasis (M1).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "pm1_distant_metastasis_including_pleural_effusion_with_positive_cytology_liver_or_splenic_parenchyma",
+          "label": "pM1: Distant metastasis, including pleural effusion with positive cytology; liver or splenic parenchymal metastasis; metastasis to extra-abdominal organs (including inguinal lymph nodes and lymph nodes outside the abdominal cavity); and transmural involvement of intestine",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Pleural effusion with positive cytology"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Liver or splenic parenchymal metastases; metastases to extra-abdominal organs (including"
+            }
+          ]
+        },
+        {
+          "field_id": "intestine",
+          "label": "intestine",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "figo_stage",
+      "section_name": "FIGO STAGE",
+      "fields": [
+        {
+          "field_id": "figo_stage_2021_figo_cancer_report",
+          "label": "FIGO Stage (2021 FIGO Cancer Report)#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I: Tumor confined to ovaries or fallopian tube(s)"
+            },
+            {
+              "value": "ia",
+              "label": "IA: Tumor limited to one ovary (capsule intact) or fallopian tube; no tumor on ovarian or fallopian tube"
+            }
+          ],
+          "guidance": "Measurements denote size of the tumor within the lymph node and not lymph node dimension."
+        },
+        {
+          "field_id": "surface_no_malignant_cells_in_ascites_or_peritoneal_washings",
+          "label": "surface; no malignant cells in ascites or peritoneal washings",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ib",
+              "label": "IB: Tumor limited to both ovaries (capsules intact) or fallopian tubes; no tumor on ovarian or fallopian"
+            }
+          ]
+        },
+        {
+          "field_id": "ic_tumor_limited_to_one_or_both_ovaries_or_fallopian_tubes_with_any_of_the_following",
+          "label": "IC: Tumor limited to one or both ovaries or fallopian tubes, with any of the following",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ic1",
+              "label": "IC1: Surgical spill"
+            },
+            {
+              "value": "ic2",
+              "label": "IC2: Capsule ruptured before surgery or tumor on ovarian or fallopian tube surface"
+            },
+            {
+              "value": "ic3",
+              "label": "IC3: Malignant cells in the ascites or peritoneal washings"
+            },
+            {
+              "value": "ic",
+              "label": "IC: Tumor limited to one or both ovaries or fallopian tubes, not otherwise specified"
+            },
+            {
+              "value": "ii",
+              "label": "II: Tumor involves one or both ovaries or fallopian tubes with pelvic extension (below pelvic brim) or"
+            }
+          ]
+        },
+        {
+          "field_id": "peritoneal_cancer",
+          "label": "peritoneal cancer",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "iia",
+              "label": "IIA: Extension and / or implants on uterus and / or fallopian tubes and / or ovaries"
+            },
+            {
+              "value": "iib",
+              "label": "IIB: Extension to other pelvic intraperitoneal tissues"
+            },
+            {
+              "value": "iii",
+              "label": "III: Tumor involves one or both ovaries or fallopian tubes, or peritoneal cancer, with cytologically or"
+            }
+          ]
+        },
+        {
+          "field_id": "retroperitoneal_lymph_nodes",
+          "label": "retroperitoneal lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "iiia1",
+              "label": "IIIA1: Positive retroperitoneal lymph nodes only (cytologically or histologically proven)"
+            },
+            {
+              "value": "iiia1",
+              "label": "IIIA1(i): Metastasis up to 10 mm in greatest dimension"
+            },
+            {
+              "value": "iiia1",
+              "label": "IIIA1(ii): Metastasis more than 10 mm in greatest dimension"
+            },
+            {
+              "value": "iiia2",
+              "label": "IIIA2: Microscopic extrapelvic (above the pelvic brim) peritoneal involvement with or without positive"
+            }
+          ]
+        },
+        {
+          "field_id": "retroperitoneal_lymph_nodes",
+          "label": "retroperitoneal lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "iiib",
+              "label": "IIIB: Macroscopic peritoneal metastases beyond the pelvis up to 2 cm in greatest dimension, with or"
+            }
+          ]
+        },
+        {
+          "field_id": "without_metastasis_to_the_retroperitoneal_lymph_nodes",
+          "label": "without metastasis to the retroperitoneal lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "iiic",
+              "label": "IIIC: Macroscopic peritoneal metastasis beyond the pelvis more than 2 cm in greatest dimension,"
+            }
+          ]
+        },
+        {
+          "field_id": "with_or_without_metastasis_to_the_retroperitoneal_lymph_nodes_includes_extension_of_tumor_to_capsule",
+          "label": "with or without metastasis to the retroperitoneal lymph nodes (includes extension of tumor to capsule",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "of_liver_and_spleen_without_parenchymal_involvement_of_either_organ",
+          "label": "of liver and spleen without parenchymal involvement of either organ)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "iv",
+              "label": "IV: Distant metastasis excluding peritoneal metastases"
+            },
+            {
+              "value": "iva",
+              "label": "IVA: Pleural effusion with positive cytology"
+            },
+            {
+              "value": "ivb",
+              "label": "IVB: Parenchymal metastases and metastases to extra-abdominal organs (including inguinal lymph"
+            }
+          ],
+          "guidance": "Stage IVB includes parenchymal metastases to liver or spleen (only capsular involvement is IIIC), invasion through the bowel wall and into the mucosa, or any metastasis to extra-abdominal organs."
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "M"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "serous_tubal_intraepithelial_carcinoma",
+              "label": "Serous tubal intraepithelial carcinoma (STIC)"
+            }
+          ]
+        },
+        {
+          "field_id": "left",
+          "label": "___ Left",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "right",
+          "label": "___ Right",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bilateral",
+          "label": "___ Bilateral",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "endometriosis",
+              "label": "Endometriosis"
+            }
+          ]
+        },
+        {
+          "field_id": "within_tumor",
+          "label": "___ Within tumor",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "outside_of_tumor",
+          "label": "___ Outside of tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "endosalpingiosis",
+              "label": "Endosalpingiosis"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "N"
+          ]
+        },
+        {
+          "field_id": "for_reporting_molecular_testing_immunohistochemistry_and_other_cancer_biomarker_testing_results_the_",
+          "label": "For reporting molecular testing, immunohistochemistry, and other cancer biomarker testing results, the appropriate CAP biomarker template should be used. Pending biomarker studies should be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "p53_immunohistochemistry",
+          "label": "p53 Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "normal",
+              "label": "Normal (wild-type) expression"
+            },
+            {
+              "value": "abnormal",
+              "label": "Abnormal (mutated) expression"
+            },
+            {
+              "value": "overexpression",
+              "label": "Overexpression (strong, diffuse nuclear expression)"
+            },
+            {
+              "value": "null",
+              "label": "Null (lack of nuclear or cytoplasmic expression)"
+            },
+            {
+              "value": "cytoplasmic_only",
+              "label": "Cytoplasmic only (with or without nuclear expression)"
+            },
+            {
+              "value": "subclonal_abnormal",
+              "label": "Subclonal abnormal (mutated) expression"
+            },
+            {
+              "value": "overexpression",
+              "label": "Overexpression (strong, diffuse nuclear expression)"
+            },
+            {
+              "value": "null",
+              "label": "Null (lack of nuclear or cytoplasmic expression)"
+            },
+            {
+              "value": "cytoplasmic_only",
+              "label": "Cytoplasmic only (with or without nuclear expression)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ovarian_surface",
+          "label": "Ovarian Surface",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "involvement_of_the_surface_of_the_ovary_or_ovarian_tumor_is_an_important_element_in_staging_tumors_l",
+          "label": "Involvement of the surface of the ovary or ovarian tumor is an important element in staging tumors limited to the ovary, and the presence of surface involvement may influence treatment. Therefore, careful examination of the ovarian surface is crucial. Furthermore, in patients who undergo risk-reducing salpingo-oophorectomy (see below), small foci of involvement of the ovarian surface or serous tubal intraepithelial carcinoma with or without associated tubal mucosal high-grade serous carcinoma may be present that may be potentially lethal and may be missed if the macroscopic inspection is not optimal.1,2,3,4,5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ovarianadnexal_tumor",
+          "label": "Ovarian/Adnexal Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "one_section_for_each_centimeter_of_the_tumors_largest_dimension_is_generally_recommended_with_modifi",
+          "label": "One section for each centimeter of the tumor’s largest dimension is generally recommended, with modification based on the degree of heterogeneity of the tumor and the difficulty of diagnosis. Serous borderline tumor (especially micropapillary/cribriform variant), and mucinous borderline tumors require more sections (2 sections for each centimeter of the tumor’s largest dimension, excluding smooth-walled cystic foci). The ovarian surface where it is most closely approached by tumor on gross examination should be sampled, with the number of sections depending on the degree of suspicion of surface involvement. Tumor adhesions and sites of rupture should be sampled and labeled specifically for microscopic identification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "risk_reducing_salpingo_oophorectomy_specimens",
+          "label": "Risk Reducing Salpingo-Oophorectomy Specimens",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_ovary_and_fallopian_tube_should_be_submitted_entirely_in_patients_with_known_gene_mutations_such",
+          "label": "The ovary and fallopian tube should be submitted entirely in patients with known gene mutations such as BRCA1/BRCA2 (hereditary breast and ovarian cancer syndrome), RADB51, PALB2, etc., or suspected to be at increased risk of ovarian/fallopian tube cancer, even when grossly normal. This detailed examination results in an approximately 4-fold increase in detection of precursor lesions or early microscopic carcinoma.7 Appropriate handling implies that all ovarian and tubal tissue should be serially sectioned and submitted.8,9 For fallopian tubes, amputate the fimbriated ends and section parallel to the long axis of the fallopian tube to maximize the amount of tubal epithelium available for histologic examination (SEE-FIM protocol)10 (Figure 1). The remainder of the fallopian tube is submitted as serial cross-sections. Fixation for 1 to 2 hours prior to sectioning and/or manipulation may help prevent sloughing of the epithelium.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_protocol_for_sectioning_and_extensively_examining_the_fimbriated_end_see_fim_of_the_fallopi",
+          "label": "Figure 1. Protocol for Sectioning and Extensively Examining the Fimbriated End (SEE-FIM) of the Fallopian Tube. This protocol entails amputation and longitudinal sectioning of the infundibulum and fimbriated end (distal 2 cm) to allow maximal exposure of the tubal plicae. The isthmus and ampulla are cut transversely at 2- to 3-mm intervals. From Crum et al.10 Copyright © 2007 Lippincott Williams & Wilkins. Reproduced with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sampling_issues",
+          "label": "Sampling Issues",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_recommendation_for_the_number_of_sections_to_be_taken_of_an_ovarianadnexal_tumor_is_a_general_gu",
+          "label": "The recommendation for the number of sections to be taken of an ovarian/adnexal tumor is a general guideline, with the pathologist determining how many sections are necessary. If a tumor is obviously malignant and homogeneous throughout on gross examination, fewer sections may be needed. In contrast, if there is great variability in the gross appearance of the sectioned surfaces or opened cysts, it may be necessary to take more sections to sample the tumor adequately. In addition, as a general recommendation, borderline serous tumors with micropapillary foci or with microinvasion should be extensively sampled to ensure adequate assessment of the extent of invasion, when present. Mucinous tumors (particularly those with solid areas), solid teratomas, and malignant germ cell tumors often require careful gross examination and judicious sampling. Of note, additional sampling of a tumor that poses problems in differential diagnosis may be more informative than special studies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fallopian_tube",
+          "label": "Fallopian Tube",
+          "required": true,
+          "type": "free_text",
+          "condition": "s"
+        },
+        {
+          "field_id": "for_patients_with_high_grade_serous_carcinoma_if_no_gross_lesion_is_present_in_the_fimbriated_end_of",
+          "label": "For patients with high-grade serous carcinoma, if no gross lesion is present in the fimbriated end of each fallopian tube, complete microscopic examination is recommended using the SEE-FIM protocol.10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "uterus",
+          "label": "Uterus",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_tumor_is_grossly_present_sections_should_be_taken_to_determine_its_extent_including_depth_of_myom",
+          "label": "If tumor is grossly present, sections should be taken to determine its extent, including depth of myometrial invasion if tumor possibly originated in endometrium, and to determine its relation to ovarian tumor (metastatic to, metastatic from, independent primary). If uterine serosa is grossly involved, representative sections should be taken.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_conflicting_reports_on_whether_patients_with_brca1brca2_mutations_or_those_suspected_to_be",
+          "label": "There are conflicting reports on whether patients with BRCA1/BRCA2 mutations or those suspected to be at increased risk of hereditary breast and ovarian cancer syndrome are also at increased risk of endometrial carcinoma, in particular serous carcinoma. If no gross lesion is identified in the endometrium, submission of the entire endometrium may be considered.11,12,13",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "omentum",
+          "label": "Omentum",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_implanttumor_is_grossly_identifiable_multiple_representative_sections_should_be_submitted_althoug",
+          "label": "If implant/tumor is grossly identifiable, multiple representative sections should be submitted. Although there is no general consensus regarding the number of sections that should be taken from a grossly unremarkable omentum from a patient with an ovarian serous borderline tumor, serous carcinoma, or immature teratoma, a general recommendation is to take 5 to 10 sections. One model demonstrated that 5 blocks produced a sensitivity of 82%, whereas 10 blocks increased the sensitivity to 95%.14",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_patients_who_have_received_neoadjuvant_chemotherapy_for_advanced_stage_tubo_ovarian_carcinoma_ty",
+          "label": "For patients who have received neoadjuvant chemotherapy for advanced stage tubo-ovarian carcinoma (typically high-grade serous carcinoma), 4 to 6 sections of omentum, to sample the most abnormal areas, are recommended to allow assessment of response to chemotherapy (see Note K).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_nodes",
+          "label": "Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_lymph_nodes_are_grossly_involved_by_tumor_representative_sections_are_sufficient_however_if_t",
+          "label": "If the lymph nodes are grossly involved by tumor, representative sections are sufficient. However, if the lymph nodes appear grossly free of tumor, they should be entirely submitted. In either case, the dimension of the largest metastatic deposit should be documented.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_staging_biopsy_specimens",
+          "label": "Other Staging Biopsy Specimens",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "staging_biopsy_tissues_should_be_entirely_processed_unless_grossly_positive_for_tumor_if_tumor_is_gr",
+          "label": "Staging biopsy tissues should be entirely processed unless grossly positive for tumor. If tumor is grossly seen, representative sections are usually sufficient. For borderline tumors or immature teratomas with grossly apparent implants, multiple sections of the implants should be taken (as in omental sampling).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_organ_or_tissue_removed",
+          "label": "Other Organ or Tissue Removed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sections_should_be_taken_to_determine_the_presence_or_absence_as_well_as_location_and_extent_of_tumo",
+          "label": "Sections should be taken to determine the presence or absence, as well as location and extent, of tumor, if present. Resection margins should be taken, if applicable.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singh_n_gilks_cb_wilkinson_n_et_al_assessment_of_a_new_system_for_primary_site_assignment_in_high_gr",
+          "label": "Singh N, Gilks CB, Wilkinson N, et al. Assessment of a new system for primary site assignment in high-grade serous carcinoma of the fallopian tube, ovary, and peritoneum. Histopathology. 2015;67(3):331-337.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gilks_cb_irving_j_kobel_m_et_al_incidental_nonuterine_high_grade_serous_carcinomas_arise_in_the_fall",
+          "label": "Gilks CB, Irving J, Kobel M, et al. Incidental nonuterine high-grade serous carcinomas arise in the fallopian tube in most cases: further evidence for the tubal origin of high-grade serous carcinomas. Am J Surg Pathol. 2015;39:357-364.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gilks_cb_selinger_ci_davidson_b_et_al_data_set_for_the_reporting_of_ovarian_fallopian_tube_and_prima",
+          "label": "Gilks CB, Selinger CI, Davidson B, et al. Data set for the reporting of ovarian, fallopian tube and primary peritoneal carcinoma: Recommendations from the International Collaboration on Cancer Reporting (ICCR). Int J Gynecol Pathol. 2022;41(Suppl 1):S119-S142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "morrison_jc_blanco_lz_jr_vang_r_ronnett_bm_incidental_serous_tubal_intraepithelial_carcinoma_and_ear",
+          "label": "Morrison JC, Blanco LZ Jr, Vang R, Ronnett BM. Incidental serous tubal intraepithelial carcinoma and early invasive serous carcinoma in the nonprophylactic setting: analysis of a case series. Am J Surg Pathol. 2015;39(4):442-53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singh_n_gilks_cb_hirschowitz_l_et_al_adopting_a_uniform_approach_to_site_assignment_in_tubo_ovarian_",
+          "label": "Singh N, Gilks CB, Hirschowitz L, et al. Adopting a uniform approach to site assignment in tubo-ovarian high grade serous carcinoma – the time has come. Int J Gynecol Pathol. 2016;35(3):230-237.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bell_da_scully_re_early_de_novo_ovarian_carcinoma_a_study_of_fourteen_cases_cancer_19947371859_1864",
+          "label": "Bell DA, Scully RE. Early de novo ovarian carcinoma: a study of fourteen cases. Cancer. 1994;73(7):1859-1864.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lamb_jd_garcia_rl_goff_ba_et_al_predictors_of_occult_neoplasia_in_women_undergoing_risk_reducing_sal",
+          "label": "Lamb JD, Garcia RL, Goff BA, et al. Predictors of occult neoplasia in women undergoing risk-reducing salpingo-oophorectomy. Am J Obstet Gynecol. 2006;194(6):1702-1709.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kindelberger_dw_lee_y_miron_a_et_al_intraepithelial_carcinoma_of_the_fimbria_and_pelvic_serous_carci",
+          "label": "Kindelberger DW, Lee Y, Miron A, et al. Intraepithelial carcinoma of the fimbria and pelvic serous carcinoma: evidence for a causal relationship. Am J Surg Pathol. 2007;31(2):161-169.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "medeiros_f_muto_mg_lee_y_et_al_the_tubal_fimbria_is_a_preferred_site_for_early_adenocarcinoma_in_wom",
+          "label": "Medeiros F, Muto MG, Lee Y, et al. The tubal fimbria is a preferred site for early adenocarcinoma in women with familial ovarian cancer syndrome. Am J Surg Pathol. 2006;30(2):230-236.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "crum_cp_drapkin_r_miron_a_et_al_the_distal_fallopian_tube_a_new_model_for_pelvic_serous_carcinogenes",
+          "label": "Crum CP, Drapkin R, Miron A, et al. The distal fallopian tube: a new model for pelvic serous carcinogenesis. Curr Opin Obstet Gynecol. 2007;19(1):3-9.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "de_jonge_mm_ritterhouse_ll_de_kroon_cd_et_al_germline_brca_associated_endometrial_carcinoma_is_a_dis",
+          "label": "de Jonge MM, Ritterhouse LL, de Kroon CD, et al. Germline BRCA-associated endometrial carcinoma is a distinct clinicopathologic entity. Clin Cancer Res. 2019;25(24):7517-7526.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gasparri_ml_bellaminutti_s_farooqi_aa_et_al_endometrial_cancer_and_brca_mutations_a_systematic_revie",
+          "label": "Gasparri ML, Bellaminutti S, Farooqi AA, et al. Endometrial cancer and BRCA mutations: A systematic review. J Clin Med. 2022;11(11):3114.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "de_jonge_mm_de_kroon_cd_jenner_dj_et_al_endometrial_cancer_risk_in_women_with_germline_brca1_or_brca",
+          "label": "de Jonge MM, de Kroon CD, Jenner DJ, et al. Endometrial cancer risk in women with germline BRCA1 or BRCA2 mutations: multicenter cohort study. J Natl Cancer Inst. 2021;113(9):1203-1211.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "skala_sl_hagemann_is_optimal_sampling_of_grossly_normal_omentum_in_staging_of_gynecologic_malignanci",
+          "label": "Skala SL, Hagemann IS. Optimal sampling of grossly normal omentum in staging of gynecologic malignancies. Int J Gynecol Pathol. 2015; 34(3):281-287.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_important_to_establish_if_the_tumor_is_intact_or_ruptured_because_in_the_latter_scenario_neopl",
+          "label": "It is important to establish if the tumor is intact or ruptured, because in the latter scenario, neoplastic cells may have spilled into the abdominal cavity. In a meta-analysis of early stage epithelial ovarian cancer with rupture, pre-operative rupture decreased progression free survival when compared with intraoperative rupture, but both showed reduced progression free survival compared to no rupture.1 In tumors that have an admixture of benign, borderline, and/or malignant areas, it may also be important to know which area ruptured.2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kim_hs_ahn_jh_chung_hh_et_al_impact_of_intraoperative_rupture_of_the_ovarian_capsule_on_prognosis_in",
+          "label": "Kim HS, Ahn JH, Chung HH, et al. Impact of intraoperative rupture of the ovarian capsule on prognosis in patients with early-stage epithelial ovarian cancer: a meta-analysis. Eur J Surg Oncol. 2013;39(3):179-89.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vergote_i_de_brabanter_j_fyles_a_et_al_prognostic_importance_of_degree_of_differentiation_and_cyst_r",
+          "label": "Vergote I, De Brabanter J, Fyles A, et al. Prognostic importance of degree of differentiation and cyst rupture in stage I invasive epithelial ovarian carcinoma. Lancet. 2001;357(9251):176-182.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trimble_el_prospects_for_improving_staging_of_ovarian_cancers_lancet_20013579251159_160",
+          "label": "Trimble EL. Prospects for improving staging of ovarian cancers. Lancet. 2001;357(9251):159-160.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "determination_of_primary_site_for_most_histologic_types_of_adnexal_tumor_is_relatively_straightforwa",
+          "label": "Determination of primary site for most histologic types of adnexal tumor is relatively straightforward when the tumor is confined to the ovary. When the ovary(ies), fallopian tube(s), uterus, and/or multiple intraperitoneal sites are involved, it may be difficult or impossible to determine the primary site.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "historically_a_primary_site_was_assigned_based_on_the_dominant_mass_but_this_resulted_in_ovarian_met",
+          "label": "Historically, a primary site was assigned based on the dominant mass, but this resulted in ovarian metastases from a number of extra-ovarian primary sites (e.g., stomach, appendix, colon, pancreas, endocervix, endometrium) being mistaken for primary ovarian neoplasms. Increased awareness of the ability of small extra-ovarian primary tumors to metastasize to the ovary, their characteristic morphologic features, and the introduction of immunostains that aid in primary site determination have led to improved recognition of ovarian metastases in practice. It is widely accepted that most high-grade serous carcinomas (HGSC) arise from the fallopian tube or less commonly from the ovarian surface or epithelial inclusion cysts.1,2,3 Table 1 reflects current recommendations for primary site assignment.4,5,6,7 Although ascertaining the primary site is important for evaluation of tumor incidence and mortality, epidemiologic studies, and cancer registry data, currently distinguishing between primary sites of origin for HGSC has no clinical management implications.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_criteria_for_assignment_of_primary_site_in_high_grade_serous_carcinoma_hgsc4567",
+          "label": "Table 1. Criteria for Assignment of Primary Site in High-Grade Serous Carcinoma (HGSC)4,5,6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adopted_from_cheung_an_ellenson_lh_gilks_cb_et_al_tumours_of_the_ovary_in_who_classification_of_tumo",
+          "label": "(Adopted from Cheung AN, Ellenson LH, Gilks CB, et al. Tumours of the ovary. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Dec 2]. (WHO classification of tumours series, 5th ed; vol 4). Available from https://tumoursclassification.iarc.who.int/chpters/1.)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "assigning_a_tubo_ovarian_primary_site_should_be_reserved_for_small_biopsy_samples_or_hgsc_developing",
+          "label": "Assigning a “tubo-ovarian” primary site should be reserved for small biopsy samples or HGSC developing in patients with a prior salpingo-oophorectomy with incomplete tubal examination but may also be applicable in cases of previously treated tumor specimens. Site assignment as “undesignated” should be avoided. If a case does not fit into any of the above categories and/or there remains doubt over whether it is of tubo-ovarian or endometrial origin, synoptic reporting may be omitted.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_important_to_note_that_it_may_be_difficult_to_assign_tumor_origin_in_cases_when_there_is_multi",
+          "label": "It is important to note that it may be difficult to assign tumor origin in cases when there is multifocal high-grade serous neoplasia. Although endometrial and adnexal HGSC may arise independently, most cases of simultaneous involvement of the adnexa and endometrium by HGSC represent spread from the endometrium to adnexa, while secondary involvement of the endometrium (“drop metastasis”) from a likely tubal primary is less common. Endometrial serous carcinoma may present with adnexal mass(es) and/or may involve the fallopian tube(s) with STIC-like features. In such cases, extensive omental involvement characteristic of primary tubo-ovarian HGSC is usually lacking. WT-1 staining is typically strong and diffuse in tubo-ovarian HGSC and weak/focal or negative in endometrial serous carcinoma. However, WT-1 is not completely sensitive or specific in determining primary site.4,5 In most cases of high-grade serous neoplasia identified at more than one site, this is one primary tumor with metastasis to the other rather than two separate primaries.8 Finding the same genetic alterations, such as TP53 mutations, in two different sites may be helpful.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kim_j_park_eu_kim_o_et_al_cell_origins_of_high_grade_serous_ovarian_cancer_cancers_basel_20181011433",
+          "label": "Kim J, Park EU, Kim O, et al. Cell origins of high-grade serous ovarian cancer. Cancers (Basel). 2018;10(11):433.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zhang_s_dolgaley_i_zhang_t_et_al_both_fallopian_tube_and_ovarian_surface_epithelium_are_cells_of_ori",
+          "label": "Zhang S, Dolgaley I, Zhang T, et al. Both fallopian tube and ovarian surface epithelium are cells-of-origin for high-grade serous ovarian carcinoma. Nat Commun. 2019;10(1):5367.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singh_n_mccluggage_wg_gilks_cb_high_grade_serous_carcinoma_of_tubo_ovarian_origin_recent_development",
+          "label": "Singh N, McCluggage WG, Gilks CB. High-grade serous carcinoma of tubo-ovarian origin: recent developments. Histopathol. 2017;71(3):339-356.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singh_n_gilks_cb_wilkinson_n_et_al_assessment_of_a_new_system_for_primary_site_assignment_in_high_gr",
+          "label": "Singh N, Gilks CB, Wilkinson N, et al. Assessment of a new system for primary site assignment in high-grade serous carcinoma of the fallopian tube, ovary, and peritoneum. Histopathol. 2015;67(3):331-337.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gilks_cb_selinger_ci_davidson_b_et_al_data_set_for_the_reporting_of_ovarian_fallopian_tube_and_prima",
+          "label": "Gilks CB, Selinger CI, Davidson B, et al. Data set for the reporting of ovarian, fallopian tube and primary peritoneal carcinoma: Recommendations from the International Collaboration on Cancer Reporting (ICCR). Int J Gynecol Pathol. 2022;41(Suppl 1):S119-S142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singh_n_benson_jl_gan_c_et_al_disease_distribution_in_low_stage_tubo_ovarian_high_grade_serous_carci",
+          "label": "Singh N, Benson JL, Gan C, et al. Disease distribution in low-stage tubo-ovarian high-grade serous carcinoma (HGSC): implication for assigning primary site and FIGO stage. Int J Gynecol Pathol. 2018;37(4):324-330.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheung_an_ellenson_lh_gilks_cb_et_al_tumours_of_the_ovary_in_who_classification_of_tumours_editorial",
+          "label": "Cheung AN, Ellenson LH, Gilks CB, et al. Tumours of the ovary. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Dec 2]. (WHO classification of tumours series, 5th ed; vol 4). Available from https://tumoursclassification.iarc.who.int/chpters/1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stewart_cjr_crum_cp_mccluggage_wg_et_al_guidelines_to_aid_in_the_distinction_of_endometrial_and_endo",
+          "label": "Stewart CJR, Crum CP, McCluggage WG, et al. Guidelines to aid in the distinction of endometrial and endocervical carcinomas, and the distinction of independent primary carcinomas of the endometrium and adnexa from metastatic spread between these and other sites. Int J Gynecol Pathol. 2019;38 Suppl 1(Iss 1 Suppl 1):S75-S92.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distribution_of_tumor_in_the_ovary_may_provide_clues_to_its_origin_tumor_present_mainly_on_the_ovari",
+          "label": "Distribution of tumor in the ovary may provide clues to its origin. Tumor present mainly on the ovarian surface without forming a discrete lesion is more likely to represent metastasis. A tumor centered on or mainly involving the ovarian hilum is more likely metastatic. Mucinous neoplasms, if bilateral or associated with mucinous ascites or peritoneal/ovarian surface involvement, are more likely to be metastatic (see Note F, Table 2).1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lee_kr_young_rh_the_distinction_between_primary_and_metastatic_mucinous_carcinomas_of_the_ovary_gros",
+          "label": "Lee KR, Young RH. The distinction between primary and metastatic mucinous carcinomas of the ovary: gross and histologic findings in 50 cases. Am J Surg Pathol. 2003;27(3):281-292.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yemelyanova_av_vang_r_judson_k_et_al_distinction_of_primary_and_metastatic_mucinous_tumors_involving",
+          "label": "Yemelyanova AV, Vang R, Judson K, et al. Distinction of primary and metastatic mucinous tumors involving the ovary: analysis of size and laterality data by primary site with reevaluation of an algorithm for tumor classification. Am J Surg Pathol. 2008;32(1):128-38.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "contralateral_ovary_refers_to_the_ovary_that_is_non_dominant_because_it_is_either_1_involved_by_a_tu",
+          "label": "Contralateral ovary refers to the ovary that is non-dominant because it is either (1) involved by a tumor that is similar to but smaller than the dominant ovarian tumor, (2) contains only what appears to be metastatic tumor on gross and/or microscopic examination, or (3) is negative for tumor. If the contralateral ovary contains only focal tumor, the gross and microscopic examination should concentrate on determining whether the tumor is an independent primary or is metastatic from the dominant ovary. Metastatic involvement is supported by the same criteria that are used to distinguish primary and metastatic malignancies of the ovary (multiple nodules, surface implants, and hilar vascular space invasion favor metastasis). If the contralateral ovary shows a borderline tumor of a different histotype in a case of a primary ovarian malignancy, the malignant tumor is reported first with a separate synoptic report for the contralateral borderline tumor. If the contralateral ovary shows the same histotype (whether malignant or borderline), then one synoptic report is sufficient, and the contralateral ovary is reported “bilateral ovaries” should be checked under “Tumor Site”. Only the largest ovarian tumor size is required if the tumor is bilateral. Of note, designation of contralateral versus ipsilateral ovary is usually clinically inconsequential for high-grade serous carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_world_health_organization_who_classification_and_nomenclature_of_ovarian_tumors_is_widely_used1_",
+          "label": "The World Health Organization (WHO) classification and nomenclature of ovarian tumors is widely used.1 Different histotypes of ovarian carcinoma can be diagnosed with a high degree of reproducibility in routine practice, which has clinical implications.1 For example, hereditary breast and ovarian cancer syndrome is associated with high-grade serous carcinoma (HGSC), while Lynch syndrome is associated with endometrioid and clear cell tumors (both are frequently associated with endometriosis), so accurate diagnosis is important.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_ovaryies_contains_more_than_one_malignant_tumor_type_report_either_mixed_carcinoma_or_the_mos",
+          "label": "If the ovary(ies) contain(s) more than one malignant tumor type, report either “mixed carcinoma” or the most aggressive malignant tumor, with a clinical note that clarifies the presence of multiple tumors and the percentage of each. Although it is rare to have two different malignant tumors in the separate ovaries, this circumstance requires separate synoptic reports. If a malignant tumor is arising from a borderline or benign tumor in the same site, one report with a note clarifying the co-existence of a borderline or benign tumor is sufficient with both tumor types selected under Histologic Type.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "serous_tumors",
+          "label": "Serous Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "serous_borderline_tumor_sbt_shows_epithelial_proliferation_with_papillary_hierarchical_branching_and",
+          "label": "Serous borderline tumor (SBT) shows epithelial proliferation with papillary hierarchical branching and low-grade cytology, involving at least 10% of the overall tumor volume, and lacking stromal invasion.1,2 It is often surgically staged to include peritoneal washings, peritoneal and omental biopsies. Omitting staging in SBT may increase recurrence rates but has no effect on overall survival.3 Although it is uncommon to have positive cytology with borderline tumors, in one study, SBT was the most common finding after HGSC.4 Borderline tumor cells in peritoneal fluids are reported as atypia of undetermined significance (AUS) based on the International System for Reporting Serous Fluid Cytopathology5 (see Explanatory Note J below).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_micropapillarycribriform_variant_of_serous_borderline_tumor_sbt_shows_elongated_micropapillae_wi",
+          "label": "The micropapillary/cribriform variant of serous borderline tumor (SBT) shows elongated micropapillae without fibrovascular cores that are at least 5 times longer than wide, measure at least 5 mm, and directly emanate from broad papillae, imparting a “Medusa-head” appearance, and/or small cribriform spaces.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_term_implant_is_used_in_the_context_of_extraovarian_disease_associated_with_ovarian_sbt_or_serom",
+          "label": "The term “implant” is used in the context of extraovarian disease associated with ovarian SBT or seromucinous borderline tumors. Implants are non-invasive by definition (see Note I). The previously recognized “invasive implants” are now considered extraovarian low-grade serous carcinoma (LGSC). If the ovarian tumor is suspected to be SBT but shows “invasive implants”, additional sampling is warranted, but the tumor should be categorized as LGSC.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lgsc_has_many_morphologic_appearances_but_typically_forms_small_nests_glands_micropapillae_and_inver",
+          "label": "LGSC has many morphologic appearances but typically forms small nests, glands, micropapillae and inverted macropapillae lying within clear spaces (retraction artifact). Psammoma bodies are often abundant. Microinvasive LGSC is the term used when the overall histology resembles a LGSC but only individual foci of invasion less than 5 mm in dimension are found. Extensive sampling should be done to exclude larger invasive foci; otherwise, these tumors usually behave similar to SBTs at lower stages (I and II) and are often associated with areas of conventional SBT.6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_distinction_between_high_grade_serous_carcinoma_hgsc_and_lgsc_is_not_an_assignment_of_grade_base",
+          "label": "The distinction between high-grade serous carcinoma (HGSC) and LGSC is not an assignment of grade based on a continuum of differentiation. These are two distinct tumors that differ with respect to risk factors, precursor lesions, response to chemotherapy, and genetic events during oncogenesis, and merit consideration as separate histologic types. The criteria for distinguishing between LGSC and HGSC are primarily based on nuclear variability (at least 3-fold nuclear size variation for HGSC). In cases where the distinction is difficult, block-like p16 expression and abnormal (aberrant) p53 expression in HGSC and assessment of mitotic activity (at least 12 mitoses/10 high-power fields in HGSC) may be used. This system has molecular and prognostic validity and excellent inter-observer agreement.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "serous_tubal_intraepithelial_carcinoma_stic_is_a_precursor_for_hgsc_although_an_in_situ_neoplasm_it_",
+          "label": "Serous tubal intraepithelial carcinoma (STIC) is a precursor for HGSC. Although an “in situ” neoplasm, it has the potential to metastasize throughout the peritoneal cavity.8 Therefore, when staging procedure was performed and there is only fallopian tube involvement with STIC and peritoneal washings are negative, the tumor is staged as AJCC pT1a/FIGO IA with an annotation that there is no “invasive” carcinoma. Incidentally identified STIC in risk-reducing salpingo-oophorectomy or opportunistic salpingectomy specimens does not require synoptic reporting.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucinous_tumors",
+          "label": "Mucinous Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucinous_borderline_tumor_mbt_shows_proliferation_of_gastrointestinal_type_mucinous_epithelium_with_",
+          "label": "Mucinous borderline tumor (MBT) shows proliferation of gastrointestinal-type mucinous epithelium with low-grade nuclear atypia involving at least 10% of the total tumor, lining cysts with variable degrees of epithelial stratification, tufting, and villous or slender filiform papillae. Lesser degrees of proliferation are mucinous cystadenomas “with focal epithelial proliferation”. MBT and primary ovarian mucinous adenocarcinoma must be differentiated from metastatic carcinoma from the endocervix, appendix, colon, stomach, pancreaticobiliary system, and breast.11,12,13,14,15 Metastatic mucinous carcinoma is more common than primary ovarian mucinous carcinoma.16 There is significant histologic overlap of metastatic tumors to the ovary, which may “differentiate” (maturation phenomenon) to more benign-appearing epithelium, mimicking primary ovarian mucinous tumors. Features that suggest metastatic carcinoma are listed below (see Table 2).16 Primary mucinous carcinoma may exhibit expansile or infiltrative growth. Expansile growth is more common and consists of at least 5 mm or more of back-to-back glands with minimal intervening stroma, without a desmoplastic reaction or stromal invasion. Infiltrative growth pattern demonstrates individual glands and cell clusters inciting a stromal (often desmoplastic) response.17",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_features_that_suggest_particular_primary_sites_include_villoglandular_growth_with_epithel",
+          "label": "Histologic features that suggest particular primary sites include villoglandular growth with epithelial basal apoptotic figures and apical mitoses (human papillomavirus [HPV] associated endocervical adenocarcinoma); cribriform/”garland” growth and “dirty” luminal necrosis with significant epithelial atypia (colorectal carcinoma); and extensive poorly-cellular mucinous dissection of stroma (pseudomyxoma ovarii) with incomplete gland formation and subepithelial “clefts” (appendiceal mucinous neoplasm). Metastatic pancreaticobiliary carcinoma and HPV-independent gastric-type endocervical adenocarcinoma are particularly likely to mimic ovarian mucinous tumors, even mucinous cystadenoma.18 Pseudomyxoma peritonei is most often associated with appendiceal mucinous tumors.19 An immunohistochemical panel is of limited value as the patterns are highly variable. Primary mucinous adenocarcinoma may be positive for PAX8 and/or PAX2 and CK7, and negative for SATB2 and CDX2.15,17,19,20 DPC4 expression, intact in most primary ovarian mucinous carcinomas, lower gastrointestinal tract and gastric tumors, but absent in mucin-producing tumors of the pancreaticobiliary tract, may also be helpful.17",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "borderline_brenner_tumors_are_cystic_and_highly_papillary_tumors_lined_by_transitional_epithelium_bu",
+          "label": "Borderline Brenner tumors are cystic and highly papillary tumors lined by transitional epithelium but lacking stromal invasion; metastatic urothelial carcinoma should be excluded. Malignant Brenner tumors mimic urothelial carcinoma but show stromal invasion in association with benign or borderline Brenner tumor. Most cases of ovarian “transitional cell carcinoma” represent a morphologic variant of HGSC with TP53 mutations or occasionally endometrioid carcinoma and can be distinguished from borderline Brenner tumor by morphology and immunohistochemistry.21,22",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mesonephric_like_adenocarcinoma_is_a_solid_or_solidcystic_tumor_with_mesonephric_differentiation_and",
+          "label": "Mesonephric-like adenocarcinoma is a solid or solid/cystic tumor with mesonephric differentiation and a variety of glandular patterns, including tubular, pseudoendometrioid, angulated, slit-like, and papillary. Intraluminal colloid-like material is often present. The cells are low-columnar, crowded and have inconspicuous nucleoli. Tumor cells are positive for GATA3, TTF1, CD10 (luminal), and PAX8,and negative for ER, PR and WT1, with wild-type p53.1,23",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "undifferentiated_carcinoma_refers_to_a_malignant_tumor_that_lacks_any_evidence_of_a_line_of_differen",
+          "label": "Undifferentiated carcinoma refers to a malignant tumor that lacks any evidence of a line of differentiation. Dedifferentiated carcinoma shows foci of identifiable epithelial differentiation, usually low-grade endometrioid carcinoma or, less often, serous carcinoma.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_features_of_primary_versus_metastatic_mucinous_tumors_of_ovary16",
+          "label": "Table 2. Features of Primary versus Metastatic Mucinous Tumors of Ovary16",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sarcomas",
+          "label": "Sarcomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "apart_from_ovarian_epithelial_carcinomas_ovarian_sarcomas_are_the_tumor_category_most_likely_to_meta",
+          "label": "Apart from ovarian epithelial carcinomas, ovarian sarcomas are the tumor category most likely to metastasize.24 Sarcomas are added to this protocol because the WHO Classification of Tumours recommends the use of the conventional ovarian tumor staging system for ovarian sarcomas.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "primary_peritoneal_tumors",
+          "label": "Primary Peritoneal Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "these_tumors_are_extremely_rare_most_tumors_previously_designated_as_primary_peritoneal_serous_carci",
+          "label": "These tumors are extremely rare. Most tumors previously designated as primary peritoneal serous carcinoma are likely of tubo-ovarian origin, but exceptions occur.25,26,27 To designate a serous tumor as primary peritoneal, there must be no ovarian or fallopian tube involvement, and no serous tubal intraepithelial carcinoma (STIC) in the entirely submitted ovaries and fallopian tubes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignant_struma_ovarii",
+          "label": "Malignant Struma Ovarii",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignant_struma_ovarii_is_rare_it_may_occur_independently_or_within_struma_ovarii_andor_teratoma_as",
+          "label": "Malignant struma ovarii is rare. It may occur independently or within struma ovarii and/or teratoma as papillary, follicular, or other histologic subtypes of thyroid-type malignancy. The specific subtype is annotated in the protocol. Peritoneal implants of benign-appearing follicular cells, previously termed “strumosis”, are currently regarded as metastases from well-differentiated carcinoma.28 Clinical management of these tumors remains controversial, and their clinical behavior is not reliably predictable.29,30,31,32,33 Thyroid carcinoma arising from struma ovarii is staged using the AJCC and/or FIGO systems. Use of the FIGO staging system allows direct correlation with prognostic predictors in recent studies.34,35 Pathologists must document histologic tumor types and subtypes based on the 5th edition of the WHO classification of thyroid tumors.36",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_tumors",
+          "label": "Other Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_grade_tumors_with_ambiguous_features_such_that_one_of_the_specific_histologic_types_listed_cann",
+          "label": "High-grade tumors with ambiguous features, such that one of the specific histologic types listed cannot be assigned, should be classified as “carcinoma, subtype cannot be determined”. This is an infrequent situation and every effort should be made to subclassify these tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ovarian_tumors_are_characterized_by_a_variety_of_molecular_alterations_that_may_be_helpful_in_their_",
+          "label": "Ovarian tumors are characterized by a variety of molecular alterations that may be helpful in their differential diagnosis (see Table 3).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_3_molecular_associations_with_ovarian_tumors121737",
+          "label": "Table 3. Molecular Associations with Ovarian Tumors1,2,17,37",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheung_an_ellenson_lh_gilks_cb_et_al_tumours_of_the_ovary_in_who_classification_of_tumours_editorial",
+          "label": "Cheung AN, Ellenson LH, Gilks CB, et al. Tumours of the ovary. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Dec 2]. (WHO classification of tumours series, 5th ed; vol 4). Available from https://tumoursclassification.iarc.who.int/chpters/1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "turashvili_g_grisham_rn_chiang_s_et_al_brafv600e_mutations_and_immunohistochemical_expression_of_ve1",
+          "label": "Turashvili G, Grisham RN, Chiang S, et al. BRAFV600E mutations and immunohistochemical expression of VE1 protein in low-grade serous neoplasms of the ovary. Histopathology. 2018;73(3):438-443.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hacker_ke_uppal_s_johnston_c_principles_of_treatment_for_borderline_micropapillary_serous_and_low_gr",
+          "label": "Hacker KE, Uppal S, Johnston C. Principles of treatment for borderline, micropapillary serous, and low-grade ovarian cancer. J Nat Comp Canc Netw. 2016;14(9):1175-82.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hou_y_bruehl_fk_mchugh_ke_reynolds_j_primary_tumor_types_and_origins_in_positive_abdominopelvic_wash",
+          "label": "Hou Y, Bruehl FK, McHugh KE, Reynolds J. Primary tumor types and origins in positive abdominopelvic washing cytology, a single institution experience. J Am Soc Cytopathol. 2020;9(2):89-94.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chandra_a_crothers_b_kurtycz_d_schmitt_f_eds_the_international_system_for_serous_fluid_cytopathology",
+          "label": "Chandra A, Crothers B, Kurtycz D, Schmitt F, eds. The International System for Serous Fluid Cytopathology. Springer, Switzerland, 2020.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "slomavitz_b_gourley_c_carey_ms_et_al_low_grade_serous_ovarian_cancer_state_of_the_science_gynecol_on",
+          "label": "Slomavitz B, Gourley C, Carey MS, et al. Low-grade serous ovarian cancer: state of the science. Gynecol Oncol. 2020;156(3):715-725.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hatano_y_hatano_k_morishige_tm_et_al_a_comprehensive_review_of_ovarian_serous_carcinoma_adv_anat_pat",
+          "label": "Hatano Y, Hatano K, Morishige TM, et al. A comprehensive review of ovarian serous carcinoma. Adv Anat Pathol. 2019;26(5):329-339.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schneider_s_heikaus_s_harter_p_et_al_serous_tubal_intraepithelial_carcinoma_associated_with_extraova",
+          "label": "Schneider S, Heikaus S, Harter P, et al. Serous tubal intraepithelial carcinoma associated with extraovarian metastases. Int J Gynecol Cancer. 2017;27(3):444-451.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rambau_pf_mcintyre_jb_taylor_j_et_al_morphologic_reproducibility_genotyping_and_immunohistochemical_",
+          "label": "Rambau PF, McIntyre JB, Taylor J, et al. Morphologic reproducibility, genotyping, and immunohistochemical profiling do not support a category of seromucinous carcinoma of the ovary. Am J Surg Pathol. 2017;41(5):685-695.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kurman_rj_shih_im_seromucinous_tumors_of_the_ovary_whats_in_a_name_int_j_gynecol_pathol_20153578_81",
+          "label": "Kurman RJ, Shih IM. Seromucinous tumors of the ovary: what’s in a name? Int J Gynecol Pathol. 2015;35:78-81.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mills_am_shanes_ed_mucinous_ovarian_tumors_surg_pathol_201912565_585",
+          "label": "Mills AM, Shanes ED. Mucinous ovarian tumors. Surg Pathol. 2019;12:565-585.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "young_rh_ovarian_tumors_a_survey_of_selected_advances_of_note_during_the_life_of_this_journal_hum_pa",
+          "label": "Young RH. Ovarian tumors: a survey of selected advances of note during the life of this journal. Hum Pathol. 2020;95:169-206.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "young_rh_from_krukenberg_to_today_the_ever_present_problems_posed_by_metastatic_tumors_in_the_ovary_",
+          "label": "Young RH. From Krukenberg to today: the ever present problems posed by metastatic tumors in the ovary. Part I: Historical perspective, general principles, mucinous tumors including the Krukenberg tumor. Adv Anat Pathol. 2006;13:205-227.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "young_rh_from_krukenberg_to_today_the_ever_present_problems_posed_by_metastatic_tumors_in_the_ovary_",
+          "label": "Young RH. From Krukenberg to today: the ever present problems posed by metastatic tumors in the ovary. Part II. Adv Anat Pathol. 2007;14(3):149-177.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hu_a_li_h_zhang_l_et_al_differentiating_primary_and_extragenital_metastatic_mucinous_ovarian_tumours",
+          "label": "Hu A, Li H, Zhang L, et al. Differentiating primary and extragenital metastatic mucinous ovarian tumours: an algorithm combining PAX8 with tumor size and laterality. J Clin Pathol. 2015;68:522-528.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buza_n_frozen_section_diagnosis_of_ovarian_epithelial_tumors_diagnostic_pearls_and_pitfalls_arch_pat",
+          "label": "Buza N. Frozen section diagnosis of ovarian epithelial tumors: diagnostic pearls and pitfalls. Arch Pathol. Lab Med. 2019;143:47-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ramalingam_p_morphologic_immunophenotypic_and_molecular_features_of_epithelial_ovarian_cancer_oncolo",
+          "label": "Ramalingam P. Morphologic, immunophenotypic, and molecular features of epithelial ovarian cancer. Oncology. 2016;30(2):166-176.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meridan_z_yemelyanova_av_vang_r_ronnett_bm_ovarian_metastases_of_pancreaticobiliary_tract_adenocarci",
+          "label": "Meridan Z, Yemelyanova AV, Vang R, Ronnett BM. Ovarian metastases of pancreaticobiliary tract adenocarcinomas: analysis of 35 cases, with emphasis on the ability of metastases to simulate primary ovarian mucinous tumors. Am J Surg Pathol. 2011;35(2):276-288.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "govaerts_k_lurvink_rj_de_hingh_ihjt_et_al_for_the_peritoneal_surface_oncology_group_international_ap",
+          "label": "Govaerts K, Lurvink RJ, De Hingh IHJT, et al for the Peritoneal Surface Oncology Group International. Appendiceal tumours and pseudomyxoma peritonei: Literature review with PSOGI/EURACAN clinical practice guidelines for diagnosis and treatment. Eur J Surg Oncol. 2021;47(1):11-35.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ates_ozsdemir_d_usubutun_a_pax2_pax8_and_cdx2_expression_in_metastatic_mucinous_primary_ovarian_muci",
+          "label": "Ates Ozsdemir D, Usubutun A. PAX2, PAX8 and CDX2 expression in metastatic mucinous, primary ovarian mucinous and seromucinous tumors and review of the literature. Pathol Oncol Res. 2016;22(3):595-599.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ali_rh_seidman_jd_luk_m_et_al_transitional_cell_carcinoma_of_the_ovary_is_related_to_high_grade_sero",
+          "label": "Ali RH, Seidman JD, Luk M, et al. Transitional cell carcinoma of the ovary is related to high-grade serous carcinoma and is distinct from malignant Brenner tumor. Int J Gynecol Pathol. 2012;31:499-506.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "karnezis_an_aysal_a_zaloudek_cj_rabban_jt_transitional_cell_like_morphology_in_ovarian_endometrioid_",
+          "label": "Karnezis AN, Aysal A, Zaloudek CJ, Rabban JT. Transitional cell-like morphology in ovarian endometrioid carcinoma: morphologic, immunohistochemical, and behavioral features distinguishing it from high-grade serous carcinoma. Am J Surg Pathol. 2013;37(1):24-37.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_q_shen_y_xie_c_mesonephric_like_adenocarcinoma_of_the_ovary_a_case_report_and_review_of_the_lit",
+          "label": "Chen Q, Shen Y, Xie C. Mesonephric-like adenocarcinoma of the ovary: a case report and review of the literature. Medicine. 2020;99(48):48:e23450.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rose_pg_piver_ms_tsukada_y_lau_t_metastatic_patterns_in_histologic_variants_of_ovarian_cancer_an_aut",
+          "label": "Rose PG, Piver MS, Tsukada Y, Lau T. Metastatic patterns in histologic variants of ovarian cancer: an autopsy study. Cancer. 1989;64:1508-1513.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yun_ws_jung_min_b_primary_peritoneal_serous_carcinoma_an_extremely_rare_malignancy_a_case_report_and",
+          "label": "Yun WS, Jung-Min, B. Primary peritoneal serous carcinoma, an extremely rare malignancy: a case report and review of the literature. Oncol Lett. 2016;11(6):4063-4065.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "blontzos_n_vafias_e_vorgias_g_at_el_primary_peritoneal_serous_papillary_carcinoma_a_case_series_arch",
+          "label": "Blontzos N, Vafias E, Vorgias G, at el. Primary peritoneal serous papillary carcinoma: a case series. Arch Gynecol Obstet. 2019;300(4):1023-1028.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "komiyama_s_nishijima_y_kondo_h_et_al_multicenter_clinicopathological_study_of_high_grade_serous_carc",
+          "label": "Komiyama S, Nishijima Y, Kondo H, et al. Multicenter clinicopathological study of high-grade serous carcinoma presenting as primary peritoneal carcinoma. Int J Gynecol Cancer. 2018; 28(4):657-665.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "giovannopoulou_e_saliaris_k_kavoura_e_et_al_highly_differentiated_follicular_carcinoma_of_ovarian_or",
+          "label": "Giovannopoulou E, Saliaris K, Kavoura E, et al. Highly differentiated follicular carcinoma of ovarian origin: a systemic review of the literature. Curr Oncol. 2022; 23(12):9105-9116.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "addley_s_mihai_r_alazzam_m_et_al_malignant_struma_ovarii_surgical_histopathological_and_survival_out",
+          "label": "Addley S, Mihai R, Alazzam M, et al. Malignant struma ovarii: surgical, histopathological and survival outcomes for thyroid-type carcinoma of struma ovarii with recommendations for standardizing multi-modal management. Arch Gynecol Obstet. 2021; 303(4):863-870.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "egan_c_stefanova_d_thiesmeyer_j_et_al_proposed_risk_stratification_and_patterns_of_radioactive_iodin",
+          "label": "Egan C, Stefanova D, Thiesmeyer J, et al. Proposed risk stratification and patterns of radioactive iodine therapy in malignant struma ovarii. Thyroid. 2022; 32(9):1101-1108.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asaturova_a_magnaeva_a_tregubova_a_et_al_malignant_clinical_course_of_proliferative_ovarian_struma_d",
+          "label": "Asaturova A, Magnaeva A, Tregubova A, et al. Malignant clinical course of “proliferative” ovarian struma: diagnostic challenges and treatment pitfalls. Diagnostics (Basel). 2022;12(6):1411.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roth_lm_karseladze_ai_highly_differentiated_follicular_carcinoma_arising_from_struma_ovarii_a_report",
+          "label": "Roth LM, Karseladze AI. Highly differentiated follicular carcinoma arising from struma ovarii: a report of 3 cases, a review of the literature, and a reassessment of so-called peritoneal strumosis. Int J Gynecol Pathol. 2008; 27(2):213-222.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "robboy_sj_shaco_levy_r_peng_ry_et_al_malignant_struma_ovarii_an_analysis_of_88_cases_including_27_wi",
+          "label": "Robboy SJ, Shaco-Levy R, Peng RY, et al. Malignant struma ovarii: an analysis of 88 cases, including 27 with extraovarian spread. Int J Gynecol Pathol. 2009;28(5):405-22.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "li_s_yang_t_li_x_et_al_figo_stage_iv_and_age_over_55_years_as_prognostic_predictors_in_patients_with",
+          "label": "Li S, Yang T, Li X, et al. FIGO Stage IV and age over 55 years as prognostic predictors in patients with metastatic malignant struma ovarii. Front Oncol. 2020;10:584917.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "li_s_kong_s_wang_x_et_al_survival_outcomes_and_prognostic_predictors_in_patients_with_malignant_stru",
+          "label": "Li S, Kong S, Wang X, et al. Survival outcomes and prognostic predictors in patients with malignant struma ovarii. Front Med (Lausanne). 2021;8:774691.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_internet_lyon_fra",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and Neuroendocrine Tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 17]. (WHO classification of tumour series, 5th ed.; vol.10). Available from: https://tumourclassification.iarc.who.int/chapters/53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "karnezis_an_wang_y_keul_j_et_al_dicer1_and_foxl2_mutation_status_correlates_with_clinicopathologic_f",
+          "label": "Karnezis AN, Wang Y, Keul J, et al. DICER1 and FOXL2 mutation status correlates with clinicopathologic features in ovarian Sertoli-Leydig cell tumors. Am J Surg Pathol. 2019;43(5):628-638.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_term_mixed_carcinoma_should_only_be_used_when_2_or_more_distinctive_subtypes_of_carcinomas_are_i",
+          "label": "The term mixed carcinoma should only be used when 2 or more distinctive subtypes of carcinomas are identified and preferably confirmed by ancillary testing. There is no minimal percentage of tumor required for reporting a second component. When a carcinoma is classified as “mixed”, the major and minor types and their relative proportions (percentages) should be specified.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_diagnosis_of_mixed_carcinoma_was_relatively_common_in_the_past_but_with_application_of_current_h",
+          "label": "The diagnosis of mixed carcinoma was relatively common in the past, but with application of current histopathologic criteria, less than 1% of tubo-ovarian carcinomas are mixed, and the most common admixture is of endometrioid and clear cell carcinoma.1 It is now established that high-grade serous carcinomas show a wide range of histopathologic features, including glandular (pseudoendometrioid), solid and transitional architecture, or clear cell change, and the presence of these variants does not warrant diagnosis as mixed carcinoma.1,2 Quantitation of various epithelial cell types within a carcinoma, as well as quantitation of tumor types within malignant germ cell tumors, may be prognostically important.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mackenzie_r_talhouk_a_eshragh_s_et_al_morphologic_and_molecular_characteristics_of_ovarian_mixed_epi",
+          "label": "MacKenzie R, Talhouk A, Eshragh S, et al. Morphologic and molecular characteristics of ovarian mixed epithelial cancers. Am J Surg Pathol. 2015;39:1548-1557.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheung_an_ellenson_lh_gilks_cb_et_al_tumours_of_the_ovary_in_who_classification_of_tumours_editorial",
+          "label": "Cheung AN, Ellenson LH, Gilks CB, et al. Tumours of the ovary. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Dec 2]. (WHO classification of tumours series, 5th ed; vol 4). Available from https://tumoursclassification.iarc.who.int/chpters/1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kurman_rj_norris_hj_malignant_mixed_germ_cell_tumors_of_the_ovary_a_clinical_and_pathologic_analysis",
+          "label": "Kurman RJ, Norris HJ. Malignant mixed germ-cell tumors of the ovary: a clinical and pathologic analysis of 30 cases. Obstet Gynecol. 1976;48(5):579-589.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ulbright_tm_germ_cell_tumors_of_the_gonads_a_selective_review_emphasizing_problems_in_differential_d",
+          "label": "Ulbright TM. Germ cell tumors of the gonads: a selective review emphasizing problems in differential diagnosis, newly appreciated and controversial issues. Mod Pathol. 2005; 18(Suppl2):S61-79.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinomas",
+          "label": "Carcinomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_carcinomas_malignant_brenner_tumors_un_dedifferentiated_carcinomas_mesonephric_like_carci",
+          "label": "Clear cell carcinomas, malignant Brenner tumors, un-/dedifferentiated carcinomas, mesonephric-like carcinomas, and carcinosarcomas are not graded. Serous carcinomas are not graded as low-grade serous carcinoma and high-grade serous carcinoma represent distinct tumor types rather than low- and high-grade subtypes of the same tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "endometrioid_carcinomas_are_graded_according_to_the_figo_system_used_for_endometrioid_carcinomas_of_",
+          "label": "Endometrioid carcinomas are graded according to the FIGO system used for endometrioid carcinomas of the endometrium, as shown below. Notable nuclear atypia in the majority of the tumor cells in a grade 1 or 2 tumor, evident at low power and discordant with the architectural grade, raises the FIGO grade by one. Before upgrading an endometrioid carcinoma based on nuclear atypia, the possibility of a high-grade serous carcinoma should be considered.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_5_or_less_of_non_squamous_solid_growth",
+          "label": "Grade 1\t5% or less of non-squamous solid growth",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_6_to_50_of_non_squamous_solid_growth",
+          "label": "Grade 2 \t6% to 50% of non-squamous solid growth",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_more_than_50_of_non_squamous_solid_growth",
+          "label": "Grade 3\tMore than 50% of non-squamous solid growth",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucinous_carcinomas_can_be_graded_via_silverberg_figo_and_growth_based_classification_systems_silver",
+          "label": "Mucinous carcinomas can be graded via Silverberg, FIGO and growth-based classification systems. Silverberg system is prognostically significant, while FIGO grading is not.1,",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "silverberg_grading",
+          "label": "Silverberg grading",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_3_5",
+          "label": "Grade 1 \t3-5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_6_7",
+          "label": "Grade 2 \t6-7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_8_9",
+          "label": "Grade 3\t8-9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_above_combined_score_is_based_on_3_parameters",
+          "label": "The above combined score is based on 3 parameters",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "predominant_architecture",
+          "label": "Predominant architecture",
+          "required": true,
+          "type": "free_text",
+          "condition": "score 1 = glandular, 2 = papillary, 3 = solid"
+        },
+        {
+          "field_id": "nuclear_atypia",
+          "label": "Nuclear atypia",
+          "required": true,
+          "type": "free_text",
+          "condition": "score 1 = mild, 2 = moderate, 3 = severe"
+        },
+        {
+          "field_id": "mitoses10_high_power_fields",
+          "label": "Mitoses/10 high-power fields",
+          "required": true,
+          "type": "free_text",
+          "condition": "score 1 = 0-9, 2 = 10-24, 3 = 25 or more"
+        },
+        {
+          "field_id": "mitotic_count_assessed_using_a_10x_wide_field_eyepiece_and_40x_objective_with_field_diameter_and_are",
+          "label": "(Mitotic count assessed using a 10x wide field eyepiece and 40x objective with field diameter and area being 0.663 mm and 0.345 mm2, respectively; only nuclei with definite morphologic features of metaphase, anaphase, or telophase are counted.)1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "growth_pattern_based_grading_is_based_on_confluentexpansile_vs_infiltrative_growth_pattern_and_has_b",
+          "label": "Growth pattern-based grading is based on confluent/expansile vs infiltrative growth pattern, and has been shown association with survival.2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "low_grade_confluentexpansile_growth_or_less_than_or_equal_to_10_infiltrative_growth",
+          "label": "Low-grade     Confluent/expansile growth, or less than or equal to 10% infiltrative growth",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_grade_infiltrative_growth_in_greater_than_10_of_tumor",
+          "label": "High-grade     Infiltrative growth in greater than 10% of tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_tumors",
+          "label": "Germ Cell Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immature_teratomas_are_the_only_malignant_germ_cell_tumors_that_are_graded_they_are_classically_grad",
+          "label": "Immature teratomas are the only malignant germ cell tumors that are graded. They are classically graded on the basis of the quantity of immature/embryonal elements (the number of low-power microscopic fields containing aggregated amounts of immature neuroepithelium) that are present in any one slide.4,5 Immature elements other than neuroepithelial elements are not considered for grading purposes. The most widely implemented grading system to classify immature teratomas is a 3-tier system (see Table 4 below). However, a 2-tier grading system (low versus high-grade) has been proposed by some experts as being more reproducible. Grade 1 tumors are low-grade and curable with resection while grade 2 and 3 tumors are considered high-grade. Implants associated with immature teratomas must be assessed for the presence of immature elements. Although immature neuroepithelium is most common, implants may be entirely comprised of mature glial tissue (gliomatosis).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_4_grading_immature_teratomas",
+          "label": "Table 4. Grading Immature Teratomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sertoli_leydig_cell_tumors",
+          "label": "Sertoli-Leydig Cell Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sertoli_leydig_cell_tumors_are_graded_with_a_3_tier_grading_system_as_described_in_the_who_2020_clas",
+          "label": "Sertoli-Leydig cell tumors are graded with a 3-tier grading system, as described in the WHO 2020 classification.6 As differentiation of the Sertoli cell component decreases, so does the extent of tubular differentiation and number of Leydig cells, while the amount of primitive gonadal stroma increases. Briefly, in well-differentiated tumors, the Sertoli cells lack significant atypia or mitotic activity and are present in hollow or solid tubules in association with readily identified clusters, cords, and single Leydig cells. Moderately differentiated tumors have a lobular pattern and exhibit Sertoli cells that form nests, tubules, or cords with mild, moderate, or rarely bizarre cytologic atypia and modest mitotic activity with minimal amounts of Leydig cells at the periphery. In poorly differentiated tumors, there is sarcomatous stroma resembling primitive gonadal stroma, sparse Leydig cells, associated with a minor component of moderately differentiated Sertoli-Leydig cell tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "three_molecular_subtypes_of_sertoli_leydig_cell_tumors_have_been_described_1_dicer1_mutant_younger_p",
+          "label": "Three molecular subtypes of Sertoli-Leydig cell tumors have been described: 1) DICER1-mutant (younger patient age, moderately/poorly differentiated tumor, retiform or heterologous elements), 2) FOXL2 c.402C>G (p.Cys134Trp)-mutant (postmenopausal patients, moderately/poorly differentiated tumor, no retiform or heterologous elements), and 3) DICER1/FOXL2-wild-type (intermediate patient age, no retiform or heterologous elements, including well-differentiated tumors).7 The morphologic differences between well-differentiated and moderately/poorly differentiated tumors, together with the presence of DICER1 mutations only in moderately/poorly differentiated tumors, suggests that well-differentiated and moderately/poorly differentiated tumors may represent two distinct neoplasms with different requirements for DICER1 germline testing, analogous to low-grade and high-grade serous carcinomas.7,8,9 Similarly, FOXL2 mutation has been considered a hallmark of adult granulosa cell tumor.10,11 The presence of FOXL2 hotspot mutation in neoplasms that are morphologically consistent with moderate/poorly differentiated Sertoli-Leydig cell tumors admittedly poses a diagnostic challenge as to the primacy of morphology vs molecular findings in histopathologic diagnosis, and it raises the possibility that these FOXL2 mutant tumors could represent either bona fide Sertoli-Leydig cell tumors or adult granulosa cell tumors with infiltrates of Leydig-like luteinized stromal cells, resulting in morphologic mimicry of Sertoli-Leydig cell tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shimizu_y_kamoi_s_amada_s_et_al_toward_the_development_of_a_universal_grading_system_for_ovarian_epi",
+          "label": "Shimizu Y, Kamoi S, Amada S, et al. Toward the development of a universal grading system for ovarian epithelial carcinoma: testing of a proposed system in a series of 461 patients with uniform treatment and follow-up. Cancer. 1998;82(5):893-901.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "busca_a_nofech_mozes_s_olkhov_mitsel_e_et_al_histological_grading_of_ovarian_mucinous_carcinoma_an_o",
+          "label": "Busca A, Nofech-Mozes S, Olkhov-Mitsel E, et al. Histological grading of ovarian mucinous carcinoma - an outcome-based analysis of traditional and novel systems. Histopathology. 2020;77(1):26-34.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "momeni_boroujeni_a_song_h_irshaid_l_et_al_outcome_based_validation_of_confluentexpansile_versus_infi",
+          "label": "Momeni-Boroujeni A, Song H, Irshaid L, et al. Outcome-based validation of confluent/expansile versus infiltrative pattern assessment and growth-based grading in ovarian mucinous carcinoma. Am J Surg Pathol. 2022;46(9):1250-1259.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "norris_hj_zirkin_hj_benson_wl_immature_malignant_teratoma_of_the_ovary_a_clinical_and_pathologic_stu",
+          "label": "Norris HJ, Zirkin HJ, Benson WL. Immature (malignant) teratoma of the ovary: a clinical and pathologic study of 58 cases. Cancer. 1976;37(5):2359-2372.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oconnor_dm_norris_hj_the_influence_of_grade_on_the_outcome_of_stage_i_ovarian_immature_malignant_ter",
+          "label": "O'Connor DM, Norris HJ. The influence of grade on the outcome of stage I ovarian immature (malignant) teratomas and the reproducibility of grading. Int J Gynecol Pathol. 1994;13(4):283-289.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheung_an_ellenson_lh_gilks_cb_et_al_tumours_of_the_ovary_in_who_classification_of_tumours_editorial",
+          "label": "Cheung AN, Ellenson LH, Gilks CB, et al. Tumours of the ovary. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Dec 2]. (WHO classification of tumours series, 5th ed; vol 4). Available from https://tumoursclassification.iarc.who.int/chpters/1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "karnezis_an_wang_y_keul_j_et_al_dicer1_and_foxl2_mutation_status_correlates_with_clinicopathologic_f",
+          "label": "Karnezis AN, Wang Y, Keul J, et al. DICER1 and FOXL2 mutation status correlates with clinicopathologic features in ovarian Sertoli-Leydig cell tumors. Am J Surg Pathol. 2019;43(5):628-638.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "de_kock_l_terzic_t_mccluggage_wg_et_al_dicer1_mutations_are_consistently_present_in_moderately_and_p",
+          "label": "de Kock L, Terzic T, McCluggage WG, et al. DICER1 mutations are consistently present in moderately and poorly differentiated Sertoli-Leydig cell tumors. Am J Surg Pathol. 2017;41(9):1178-1187.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mccluggage_wg_rivera_b_chong_as_et_al_well_differentiated_sertoli_leydig_cell_tumors_slcts_are_not_a",
+          "label": "McCluggage WG, Rivera B, Chong AS, et al. Well-differentiated Sertoli-Leydig cell tumors (SLCTs) are not associated with DICER1 pathogenic variants and represent a different tumor type to moderately and poorly differentiated SLCTs. Am J Surg Pathol. 2023;47(4):490-496.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shah_sp_köbel_m_senz_j_et_al_mutation_of_foxl2_in_granulosa_cell_tumors_of_the_ovary_n_engl_j_med_20",
+          "label": "Shah SP, Köbel M, Senz J, et al. Mutation of FOXL2 in granulosa-cell tumors of the ovary. N Engl J Med. 2009;360(26):2719-29.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mcconechy_mk_färkkilä_a_horlings_hm_et_al_molecularly_defined_adult_granulosa_cell_tumor_of_the_ovar",
+          "label": "McConechy MK, Färkkilä A, Horlings HM, et al. Molecularly defined adult granulosa cell tumor of the ovary: The clinical phenotype. J Natl Cancer Inst. 2016;108(11):djw134. Erratum in: J Natl Cancer Inst. 2017;109(4).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "i_implants",
+          "label": "I. Implants",
+          "required": true,
+          "type": "free_text",
+          "condition": "Serous/Seromucinous Borderline Tumors Only"
+        },
+        {
+          "field_id": "the_term_implant_is_reserved_for_serous_and_seromucinous_borderline_tumors_whereas_involvement_of_pe",
+          "label": "The term “implant” is reserved for serous and seromucinous borderline tumors, whereas involvement of peritoneal surfaces and organs by malignant tumor constitutes metastasis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "implants_previously_known_as_non_invasive_implants_are_associated_with_a_favorable_prognosis_and_can",
+          "label": "Implants (previously known as “non-invasive implants”) are associated with a favorable prognosis and can be divided into epithelial and desmoplastic subtypes. Epithelial implants are complex papillary structures and detached cell clusters on tissue surfaces or within peritoneal invaginations, without a stromal reaction. Desmoplastic implants are small groups or single cells confined to the surface, producing a significant granulation-type stromal reaction, but lacking retraction artifact and infiltration within fat.1 Distinction between these subtypes is academic and of no clinical significance, and reporting of separate subtypes of implants is not required.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "invasive_implant_is_a_term_no_longer_applied_to_serousseromucinous_borderline_tumors_invasive_implan",
+          "label": "“Invasive implant” is a term no longer applied to serous/seromucinous borderline tumors. “Invasive implants” are now considered extraovarian low-grade serous carcinomas, which may present with different patterns, including small or haphazardly arranged micropapillae, “inverted” glands and macropapillae, or densely packed small nests or papillae. Usually, the epithelial component predominates which is sharply demarcated from the surrounding stroma and may be associated with retraction artifact. Destructive invasion of the normal organ architecture is characteristic. If an ovarian serous “borderline” tumor has “invasive implants”, the ovarian tumor should be sampled extensively; the diagnosis comment should state that the primary ovarian neoplasm is a serous borderline tumor, while extraovarian site(s) show(s) low-grade serous carcinoma either from unsampled carcinoma in the ovary or tumor evolution at an extraovarian site. Invasive implants are associated with a shorter overall survival.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rare_implants_cannot_be_classified_as_either_non_invasive_or_invasive_because_of_ambiguous_morpholog",
+          "label": "Rare implants cannot be classified as either non-invasive or invasive because of ambiguous morphology and are designated as indeterminate.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheung_an_ellenson_lh_gilks_cb_et_al_tumours_of_the_ovary_in_who_classification_of_tumours_editorial",
+          "label": "Cheung AN, Ellenson LH, Gilks CB, et al. Tumours of the ovary. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Dec 2]. (WHO classification of tumours series, 5th ed; vol 4). Available from https://tumoursclassification.iarc.who.int/chpters/1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_international_system_tis_for_reporting_serous_cytopathology12_has_been_adopted_as_standardized_t",
+          "label": "The International System (TIS) for Reporting Serous Cytopathology1,2 has been adopted as standardized terminology for reporting peritoneal and ascitic fluid involvement by tumor cells. The preferred categories for reporting are “nondiagnostic”, “negative for malignancy”, “atypia of undetermined significance” (AUS), “suspicious for malignancy”, and “malignant”.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_malignant_specimen_is_one_containing_unequivocally_malignant_cells_whereas_the_aus_and_suspicious_",
+          "label": "A “malignant” specimen is one containing unequivocally malignant cells, whereas the “AUS” and “suspicious for malignancy” categories connotate uncertainty. In order to avoid overuse of the latter two categories, pathologists are encouraged to microscopically compare the atypical/suspicious cells in the fluid specimen to the tumor cells in the surgical specimen and correlate the cytologic findings with the surgical specimen, specifically to understand if the presence of tumor cells in the fluid specimen can be explained by the findings in the surgical specimen (i.e., ovarian surface involvement, intraoperative spill, fallopian tube serosal involvement). Attempt to resolve uncertainty with ancillary testing should be made.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_aus_category_represents_a_gray_zone_and_should_be_reserved_in_situations_when_the_further_charac",
+          "label": "The “AUS” category represents a gray zone and should be reserved in situations when the further characterization of the cells in the fluid sample quantitatively or qualitatively is not possible and there is no explanation for their origin based on the surgical specimen. AUS is the proposed category for reporting the presence of neoplastic epithelial cells from the primary ovarian borderline tumor in peritoneal fluids, after the tumor is confirmed to be borderline without associated carcinoma in the surgical specimen. In such cases, the preferred wording for the cytologic diagnosis is “neoplastic cells present (serous neoplasm, low-grade, see corresponding surgical specimen)”. If the staging is category T1, borderline tumors with neoplastic cells in fluids are staged as pT1c3. Teratomas may also result in benign-appearing tumor cells in fluids when malignant components may be present in the surgical specimen; these cells may also be classified as “AUS” rather than malignant.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_category_of_suspicious_for_malignancy_should_not_be_used_for_borderline_tumors_and_should_be_res",
+          "label": "The category of “suspicious for malignancy” should not be used for borderline tumors and should be reserved for those tumor cells with some, but not all, features of malignancy, or that show malignant features but are qualitatively or quantitatively inferior for a definitive interpretation, in cases of a known malignant neoplasm in a surgical specimen. Cases commonly fall into the “suspicious” category due to the inability to confirm malignancy using ancillary tests, most often due to insufficient cell numbers.3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chandra_a_crothers_b_kurtycz_d_schmitt_f_eds_the_international_system_for_serous_fluid_cytopathology",
+          "label": "Chandra A, Crothers B, Kurtycz D, Schmitt F, eds. The International System for Serous Fluid Cytopathology. Springer, Switzerland, 2020.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pinto_d_chandra_a_crothers_ba_et_al_the_international_system_for_reporting_serous_fluid_cytopatholog",
+          "label": "Pinto D, Chandra A, Crothers BA, et al. The international system for reporting serous fluid cytopathology-diagnostic categories and clinical management. J Am Soc Cytopathol. 2020;9(6):469-477.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gokozan_hn_harbhajanka_a_lyden_s_michael_cw_root_cause_analysis_of_indeterminate_diagnoses_in_serous",
+          "label": "Gokozan HN, Harbhajanka A, Lyden S, Michael CW. Root cause analysis of indeterminate diagnoses in serous fluid cytopathology. Diagn Cytopathol. 2021;49(5):633-639.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hou_t_landon_g_stewart_j_roy_chowdhuri_s_the_value_of_a_tiered_cytology_diagnostic_reporting_system_",
+          "label": "Hou T, Landon G, Stewart J, Roy-Chowdhuri S. The value of a tiered cytology diagnostic reporting system in assessing the risk of malignancy in indeterminate serous effusions. Cancer Cytopathol. 2021;129(1):75-82.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rodriguez_e_pastorello_rg_morris_p_et_al_suspicious_for_malignancy_diagnoses_on_pleural_effusion_cyt",
+          "label": "Rodriguez E, Pastorello RG, Morris P, et al. Suspicious for malignancy diagnoses on pleural effusion cytology. Am J Clin Pathol. 2020;154(3):394-402.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_system_for_histopathologic_assessment_of_response_to_neoadjuvant_chemotherapy_chemotherapy_respons",
+          "label": "A system for histopathologic assessment of response to neoadjuvant chemotherapy (chemotherapy response score or CRS) for high-grade serous carcinoma has been developed and validated, and shown to be highly reproducible.1,2 This 3-tiered scoring system is based on assessment of the section of omentum that shows the least response to chemotherapy. The criteria are shown in Table 5.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_5_criteria_of_the_chemotherapy_response_score",
+          "label": "Table 5. Criteria of the Chemotherapy Response Score",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Regression-associated fibro-inflammatory changes: Fibrosis associated with macrophages, including foam cells, mixed inflammatory cells, and psammoma bodies; to distinguish from tumor-related inflammation or desmoplasia."
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "böhm_s_faruqi_a_said_i_et_al_chemotherapy_response_score_development_and_validation_of_a_system_to_q",
+          "label": "Böhm S, Faruqi A, Said I, et al. Chemotherapy response score: development and validation of a system to quantify histopathologic response to neoadjuvant chemotherapy in tubo-ovarian high-grade serous carcinoma. J Clin Oncol. 2015;33(22):2457-2463.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cohen_pa_powell_a_böhm_s_et_al_pathological_chemotherapy_response_score_is_prognostic_in_tubo_ovaria",
+          "label": "Cohen PA, Powell A, Böhm S, et al. Pathological chemotherapy response score is prognostic in tubo-ovarian high-grade serous carcinoma: a systematic review and meta-analysis of individual patient data. Gynecol Oncol. 2019;154(2):441-448.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_view_of_the_role_of_the_pathologist_in_the_staging_of_cancers_the_staging_system_for_ovarian_canc",
+          "label": "In view of the role of the pathologist in the staging of cancers, the staging system for ovarian cancer endorsed by the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC), as well as the parallel system formulated by the International Federation of Gynecology and Obstetrics (FIGO), are recommended.1,2,3,4 This does not preclude the use of other staging systems.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_ct_refers_to_a_primary_tumor_that_has_not_been_previously_tre",
+          "label": "By AJCC/UICC convention, the designation “cT” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and the pathologist’s contribution is based on gross and microscopic examination after primary surgical treatment. pT entails a surgical treatment resection of the primary tumor or biopsy adequate to evaluate the highest pT category and highest pN categories, pN entails removal or biopsy of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient. Pathologic classification (pTNM) must be assigned by the managing physician based on the clinical stage information, the operative findings, and the gross and microscopic examination of the surgical resection specimen. The pathologist provides vital information, but it is not the patient’s final pT, pN, and/or pM categories.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_biopsies_of_al",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Biopsies of all frequently involved sites, such as the omentum, mesentery, diaphragm, peritoneal surfaces, pelvic nodes, and para-aortic nodes, are required for ideal staging of early disease. For example, a patient can be confidently coded as stage IA (T1 N0 M0), if negative biopsies of all of the aforementioned sites are obtained to exclude microscopic metastases. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically infeasible), and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy); prior hormonal therapy does not qualify for a “y” prefix. The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_t_suffix_and_sn_and_f_n_suf",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “(m)” T suffix and “(sn)” and “(f)” N suffixes are used. Although they do not affect the stage grouping, they indicate cases needing special analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_t_suffix_indicates_the_presence_of_multiple_primary_synchronous_tumors_in_a_single_site_and_is",
+          "label": "The “(m)” T suffix indicates the presence of multiple primary synchronous tumors in a single site and is recorded in parentheses: e.g., pT1(m).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_sn_n_suffix_indicates_a_sentinel_node_procedure_only_without_resection_of_the_nodal_basin_was_pe",
+          "label": "The “(sn)” N suffix indicates a sentinel node procedure only, without resection of the nodal basin, was performed and is recorded in parentheses: e.g., pN1(sn).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_f_n_suffix_indicates_a_fine_needle_aspiration_fna_or_core_needle_biopsy_without_a_sentinel_node_",
+          "label": "The “(f)” N suffix indicates a fine needle aspiration (FNA) or core needle biopsy, without a sentinel node procedure or resection of nodal basin, was performed and is recorded in parentheses: e.g., pN1(f).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_there_is_limited_evidence_stage_iiia1_is_subdivided_based_on_the_10_mm_cut_off_for_nodal_me",
+          "label": "Although there is limited evidence, Stage IIIA1 is subdivided based on the 10 mm cut-off for nodal metastases, while isolated tumor cells (ITCs) are single cells or small clusters of cells not more than 0.2 mm in greatest dimension. Cases with ITCs only in lymph nodes are classified as pN0(i+). Sentinel lymph node evaluation in early stage ovarian carcinoma is under investigation and not universally applied.5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wittekind_ch_henson_de_hutter_rvp_sobin_lh_tnm_supplement_a_commentary_on_uniform_use_2nd_ed_new_yor",
+          "label": "Wittekind CH, Henson DE, Hutter RVP, Sobin LH. TNM Supplement: A Commentary on Uniform Use. 2nd ed. New York, NY: Wiley-Liss; 2001.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brierley_jd_gospodarowicz_m_wittekind_ch_eds_tnm_classification_of_malignant_tumors_8th_ed_oxford_uk",
+          "label": "Brierley JD, Gospodarowicz M, Wittekind Ch, eds. TNM Classification of Malignant Tumors. 8th ed. Oxford, UK: Wiley; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "berek_js_renz_m_kehoe_s_et_al_cancer_of_the_ovary_fallopian_tube_and_peritoneum_2021_update_int_j_gy",
+          "label": "Berek JS, Renz M, Kehoe S, et al. Cancer of the ovary, fallopian tube, and peritoneum: 2021 update. Int J Gynaecol Obstet. 2021;155 Suppl 1(Suppl 1):61-85.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "scambia_g_nero_c_uccella_s_et_al_sentinel_node_biopsy_in_early_stage_ovarian_cancer_a_prospective_mu",
+          "label": "Scambia G, Nero C, Uccella S, et al. Sentinel-node biopsy in early stage ovarian cancer: a prospective multicentre study (SELLY). Int J Gynecol Cancer. 2019;29(9):1437-1439.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "uccella_s_zorzato_pc_lanzo_g_et_al_the_role_of_sentinel_node_in_early_ovarian_cancer_a_systematic_re",
+          "label": "Uccella S, Zorzato PC, Lanzo G, et al. The role of sentinel node in early ovarian cancer: a systematic review. Minerva Med. 2019;110(4):358-366.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_endometriosis_is_an_important_clue_as_to_the_primary_nature_of_the_ovarian_tumor_it_",
+          "label": "The presence of endometriosis is an important clue as to the primary nature of the ovarian tumor. It may be associated with endometrioid and clear cell borderline tumors and carcinomas, mesonephric-like adenocarcinomas, and seromucinous borderline tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "special_studies_including_histochemical_immunohistochemical_and_molecular_genetic_studies_may_be_use",
+          "label": "Special studies including histochemical, immunohistochemical, and molecular genetic studies may be used in some cases. The appropriate biomarker template is suggested for reporting the results of prognostic or therapeutic tests. Evaluation for germline BRCA1/BRCA2 testing on patients with high-grade serous carcinoma of tubal/ovarian/primary peritoneal origin should be performed at the discretion of genetic counselors with assessment of other risk factors. Homologous recombination deficiency testing may be performed on high-grade serous carcinomas. Immunohistochemical stains for DNA mismatch repair (MMR) proteins (MLH1, PMS2, MSH2, and MSH6) for Lynch syndrome screening is recommended in all adnexal endometrioid and clear cell carcinomas.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_p53_immunostain_should_be_performed_in_carcinomas_and_granulosa_cell_tumors_with_high_grade_transf",
+          "label": "A p53 immunostain should be performed in carcinomas and granulosa cell tumors with high-grade transformation. An abnormal (mutated) immunohistochemical pattern serves as a surrogate marker for TP53 gene mutations. The abnormal patterns are: 1) Overexpression (diffuse, strong nuclear positivity) due to a missense mutation, usually seen in at least 80% of tumor cells; 2) Null-type (complete absence of nuclear or cytoplasmic reactivity) that usually arises from insertion or deletion of the TP53 gene. It is important to ensure that internal positive control cells (lymphocytes, non-neoplastic cells) are present and show staining; 3) Cytoplasmic staining with or without nuclear reactivity, resulting from a mutation at the nuclear localization domain that does not allow p53 to enter the nucleus, thereby resulting in loss of function. The normal or “wild-type” pattern of reactivity, which is variable nuclear staining of varying intensity, can rarely be associated with high-grade serous carcinoma when the TP53 mutation is the result of truncated or 3’ splicing mutation.4,5 To prevent confusion, p53 expression should be reported as normal (wild-type) or abnormal with the pattern of abnormal expression in parenthesis.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "subclonal_abnormal_p53_pattern_has_been_described_in_up_to_21_of_endometrial_carcinomas_usually_seen",
+          "label": "Subclonal abnormal p53 pattern has been described in up to 21% of endometrial carcinomas, usually seen in association with MMR-deficiency or POLE mutations.6,7 Such subclonal abnormal p53 patterns in ovarian carcinomas are poorly understood,8 but should be reported if present. When unusual abnormal patterns occur, TP53 mutation analysis may be considered.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lu_fi_gilks_cb_mulligan_am_et_al_prevalence_of_loss_of_expression_of_dna_mismatch_repair_proteins_in",
+          "label": "Lu FI, Gilks CB, Mulligan AM, et al. Prevalence of loss of expression of DNA mismatch repair proteins in primary epithelial ovarian tumors. Int J Gynecol Pathol. 2012;31(6):524-31.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bennett_ja_morales_oyarvide_v_campbell_s_et_al_mismatch_repair_protein_expression_in_clear_cell_carc",
+          "label": "Bennett JA, Morales-Oyarvide V, Campbell S, et al. Mismatch repair protein expression in clear cell carcinoma of the ovary: incidence and morphologic associations in 109 cases. Am J Surg Pathol. 2016;40(5):656-663.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tajima_y_eguchi_h_chika_n_et_al_prevalence_and_molecular_characteristics_of_defective_mismatch_repai",
+          "label": "Tajima Y, Eguchi H, Chika N, et al. Prevalence and molecular characteristics of defective mismatch repair epithelial ovarian cancer in Japanese hospital-based population. Jpn J Clin Oncol. 2018;48(8):728-735.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "köbel_m_piskorz_am_lee_s_et_al_optimized_p53_immunohistochemistry_is_an_accurate_predictor_of_tp53_m",
+          "label": "Köbel M, Piskorz AM, Lee S, et al. Optimized p53 immunohistochemistry is an accurate predictor of TP53 mutation in ovarian carcinoma. J Pathol Clin Res. 2016;2(4):247-258.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hatano_y_hatano_k_tamada_m_et_al_a_comprehensive_review_of_ovarian_serous_carcinoma_adv_anat_pathol_",
+          "label": "Hatano Y, Hatano K, Tamada M, et al. A comprehensive review of ovarian serous carcinoma. Adv Anat Pathol. 2019; 26(5):329-339. Oncotarget. 2018;9(22):15818-15827.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "köbel_m_kang_ey_the_many_uses_of_p53_immunohistochemistry_in_gynecologic_pathology_proceedings_of_th",
+          "label": "Köbel M, Kang EY. The many uses of p53 immunohistochemistry in gynecologic pathology: proceedings of the ISGyP Companion Society session at the 2020 USCAP annual meeting. Int J Gynecol Pathol. 2021;40(1):32-40.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vermij_l_léon_castillo_a_singh_n_et_al_p53_immunohistochemistry_in_endometrial_cancer_clinical_and_m",
+          "label": "Vermij L, Léon-Castillo A, Singh N, et al. p53 immunohistochemistry in endometrial cancer: clinical and molecular correlates in the PORTEC-3 trial. Mod Pathol. 2022;35(10):1475-1483.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "park_e_han_h_choi_se_et_al_p53_immunohistochemistry_and_mutation_types_mismatching_in_high_grade_ser",
+          "label": "Park E, Han H, Choi SE, et al. p53 Immunohistochemistry and mutation types mismatching in high-grade serous ovarian cancer. Diagnostics (Basel). 2022;12(3):579.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

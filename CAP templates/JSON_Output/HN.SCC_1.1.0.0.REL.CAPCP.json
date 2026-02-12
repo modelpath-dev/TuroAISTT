@@ -1,0 +1,1996 @@
+{
+  "template_id": "HN.SCC_1.1.0.0.REL.CAPCP",
+  "organ": "CUTANEOUS SQUAMOUS CELL CARCINOMA OF THE HEAD AND NECK",
+  "protocol_posting_date": "December 2024",
+  "standards": [
+    "AJCC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "multiple_primary_sites",
+          "label": "Multiple Primary Sites",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no additional primary site(s) present)"
+            },
+            {
+              "value": "present",
+              "label": "Present: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "please_complete_a_separate_checklist_for_each_primary_site_if_required_as_above",
+          "label": "Please complete a separate checklist for each primary site if required as above.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_site",
+              "label": "Specify site: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_laterality",
+          "label": "Tumor Laterality",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "midline",
+              "label": "Midline"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "this_protocol_can_be_used_to_report_basal_cell_and_appendageal_carcinoma_please_complete_a_separate_",
+          "label": "This protocol can be used to report basal cell and appendageal carcinoma. Please complete a separate protocol for each separate primary tumor as applicable.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma_nos",
+              "label": "Squamous cell carcinoma, NOS"
+            }
+          ]
+        },
+        {
+          "field_id": "squamous_cell_carcinomas",
+          "label": "Squamous cell carcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "verrucous_squamous_cell_carcinoma",
+              "label": "Verrucous squamous cell carcinoma"
+            },
+            {
+              "value": "acantholytic_squamous_cell_carcinoma",
+              "label": "Acantholytic squamous cell carcinoma"
+            },
+            {
+              "value": "lymphoepithelial_carcinoma",
+              "label": "Lymphoepithelial carcinoma"
+            },
+            {
+              "value": "clear_cell_squamous_cell_carcinoma",
+              "label": "Clear cell squamous cell carcinoma"
+            },
+            {
+              "value": "spindle_cell_squamous_cell_carcinoma",
+              "label": "Spindle cell squamous cell carcinoma"
+            },
+            {
+              "value": "squamous_cell_carcinoma_with_sarcomatoid_differentiation",
+              "label": "Squamous cell carcinoma with sarcomatoid differentiation"
+            }
+          ]
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "basal_cell_carcinoma",
+              "label": "Basal cell carcinoma (specify subtype, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "appendageal_carcinoma",
+              "label": "Appendageal carcinoma (specify subtype, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gx",
+              "label": "GX: Cannot be assessed"
+            },
+            {
+              "value": "g1",
+              "label": "G1: Well-differentiated"
+            },
+            {
+              "value": "g2",
+              "label": "G2: Moderately differentiated"
+            },
+            {
+              "value": "g3",
+              "label": "G3: Poorly differentiated"
+            },
+            {
+              "value": "g4",
+              "label": "G4: Undifferentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "tumor_depth_of_invasion",
+          "label": "Tumor Depth of Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_depth_in_millimeters",
+              "label": "Specify depth in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least_in_millimeters",
+              "label": "At least in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ],
+          "notes": [
+            "E"
+          ],
+          "condition": "DOI"
+        },
+        {
+          "field_id": "anatomic_level",
+          "label": "Anatomic Level",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "i",
+              "label": "I (carcinoma in situ)"
+            },
+            {
+              "value": "ii",
+              "label": "II (carcinoma present in but does not fill and expand papillary dermis)"
+            },
+            {
+              "value": "iii",
+              "label": "III (carcinoma fills and expands papillary dermis)"
+            },
+            {
+              "value": "iv",
+              "label": "IV (carcinoma invades reticular dermis)"
+            },
+            {
+              "value": "v",
+              "label": "V (carcinoma invades subcutaneum)"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent_specify_other_structures_involved",
+          "label": "Tumor Extent (specify other structures involved): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "less_than_01_mm_in_caliber",
+              "label": "Less than 0.1 mm in caliber"
+            }
+          ],
+          "notes": [
+            "F"
+          ],
+          "guidance": "Location of the involved nerve deep to the dermis serves as a surrogate for this size cut-off and qualifies as"
+        },
+        {
+          "field_id": "greater_than_or_equal_to_01_mm",
+          "label": "greater than or equal to 0.1 mm.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greater_than_or_equal_to_01_mm_in_caliber",
+              "label": "Greater than or equal to 0.1 mm in caliber#"
+            },
+            {
+              "value": "specify",
+              "label": "Specify: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_invasive_tumor",
+          "label": "Margin Status for Invasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_tumor",
+              "label": "All margins negative for invasive tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_tumor_to_closest_margin",
+          "label": "Distance from Invasive Tumor to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "closest_margins_to_invasive_tumor",
+          "label": "Closest Margin(s) to Invasive Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_location",
+              "label": "Specify location(s) of closest margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "other_close_margins_to_invasive_tumor",
+          "label": "Other Close Margin(s) to Invasive Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_location",
+              "label": "Specify location(s) and distance(s) of other close margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "invasive_tumor_present_at_margin",
+              "label": "Invasive tumor present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_tumor",
+          "label": "Margin(s) Involved by Invasive Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_noninvasive_tumor",
+          "label": "Margin Status for Noninvasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_noninvasive_tumor",
+              "label": "All margins negative for noninvasive tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_noninvasive_tumor_to_closest_margin",
+          "label": "Distance from Noninvasive Tumor to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "closest_margins_to_noninvasive_tumor",
+          "label": "Closest Margin(s) to Noninvasive Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_closest_margin",
+              "label": "Specify closest margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "in_situ_disease_present_at_margin",
+              "label": "In situ disease present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_noninvasive_tumor",
+          "label": "Margin(s) Involved by Noninvasive Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "peripheral",
+              "label": "Peripheral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "laterality_of_lymph_nodes_with_tumor",
+          "label": "Laterality of Lymph Node(s) with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ipsilateral",
+              "label": "Ipsilateral (including midline): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "contralateral",
+              "label": "Contralateral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bilateral",
+              "label": "Bilateral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size (specify): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "H"
+          ],
+          "condition": "ENE"
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "brain",
+              "label": "Brain: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "prior_procedure_classification",
+          "label": "Prior Procedure Classification",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_general_cap_cancer_protocol_case_summaries_are_intended_to_guide_reporting_on_the_specimen_that_t",
+          "label": "In general, CAP cancer protocol case summaries are intended to guide reporting on the specimen that the pathologist is evaluating at that time. However, cutaneous squamous cell carcinoma cases frequently include multiple procedures. Because of this, a prior procedure that was performed may affect the pathologic classification of the tumor. In order to represent this appropriately in the pathology report, information from prior procedures may be incorporated into the assignment of pathologic classification if it is available. When information from a prior procedure is included in this report, details of that procedure should be documented in the report as well.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_information_from_a_prior_procedure_is_included_in_the_classification_assigned_in_this_report",
+              "label": "No information from a prior procedure is included in the classification assigned in this report"
+            },
+            {
+              "value": "classification_assigned_in_this_report_includes_information_from_a_prior_procedure",
+              "label": "Classification assigned in this report includes information from a prior procedure (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: Carcinoma in situ"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor smaller than or equal to 2 cm in greatest dimension"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor larger than 2 cm, but smaller than or equal to 4 cm in greatest dimension"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor larger than 4 cm in maximum dimension or minor bone erosion or perineural invasion or"
+            }
+          ],
+          "guidance": "Deep invasion is defined as invasion beyond the subcutaneous fat (i.e., to underlying microanatomic landmarks such as fascia, muscle, perichondrium, and / or periosteum) or greater than 6 mm (as measured from the granular layer of adjacent normal epidermis to the base of the tumor); perineural invasion for T3 classification is defined as tumor cells within the nerve sheath of a nerve lying deeper than the dermis or measuring 0.1 mm or larger in caliber, or presenting with clinical or radiographic involvement of named nerves without skull base invasion or transgression."
+        },
+        {
+          "field_id": "pt4_tumor_with_gross_cortical_bone_marrow_skull_base_invasion_and_or_skull_base_foramen_invasion",
+          "label": "pT4: Tumor with gross cortical bone / marrow, skull base invasion and / or skull base foramen invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Tumor with gross cortical bone / marrow invasion"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Tumor with skull base invasion and / or skull base foramen involvement"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis in a single ipsilateral lymph node, 3 cm or smaller in greatest dimension and ENE(-)"
+            }
+          ],
+          "condition": "required only if applicable",
+          "guidance": "A designation of “U” or “L” may be used for any N category to indicate metastasis above the lower border of the cricoid (U) or below the lower border of the cricoid (L). Similarly, clinical and pathological ENE should be recorded as ENE(−) or ENE(+)."
+        },
+        {
+          "field_id": "pn2_metastasis_in_a_single_ipsilateral_lymph_node_3_cm_or_smaller_in_greatest_dimension_and_ene_or_l",
+          "label": "pN2: Metastasis in a single ipsilateral lymph node, 3 cm or smaller in greatest dimension and ENE(+); or larger than 3 cm but not larger than 6 cm in greatest dimension and ENE(-); or metastases in multiple ipsilateral lymph nodes, none larger than 6 cm in greatest dimension and ENE(-); or in bilateral or contralateral lymph node(s), none larger than 6 cm in greatest dimension, ENE",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2a",
+              "label": "pN2a: Metastasis in single ipsilateral node 3 cm or smaller in greatest dimension and ENE(+); or a"
+            }
+          ],
+          "condition": "-"
+        },
+        {
+          "field_id": "single_ipsilateral_node_larger_than_3_cm_but_not_larger_than_6_cm_in_greatest_dimension_and_ene",
+          "label": "single ipsilateral node larger than 3 cm but not larger than 6 cm in greatest dimension and ENE",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2b",
+              "label": "pN2b: Metastases in multiple ipsilateral nodes, none larger than 6 cm in greatest dimension and"
+            }
+          ],
+          "condition": "-"
+        }
+      ]
+    },
+    {
+      "section_id": "ene",
+      "section_name": "ENE(-)",
+      "fields": [
+        {
+          "field_id": "dimension_and_ene",
+          "label": "dimension and ENE",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2",
+              "label": "pN2 (subcategory cannot be determined)"
+            }
+          ],
+          "condition": "-"
+        },
+        {
+          "field_id": "pn3_metastasis_in_a_lymph_node_larger_than_6_cm_in_greatest_dimension_and_ene_or_in_a_single_ipsilat",
+          "label": "pN3: Metastasis in a lymph node larger than 6 cm in greatest dimension and ENE(-); or in a single ipsilateral node larger than 3 cm in greatest dimension and ENE(+); or multiple ipsilateral, contralateral, or bilateral nodes, any with ENE(+); or a single contralateral node of any size and ENE",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn3a",
+              "label": "pN3a: Metastasis in a lymph node larger than 6 cm in greatest dimension and ENE(-)"
+            },
+            {
+              "value": "pn3b",
+              "label": "pN3b: Metastasis in a single ipsilateral node larger than 3 cm in greatest dimension and ENE(+); or"
+            }
+          ],
+          "condition": "+"
+        },
+        {
+          "field_id": "multiple_ipsilateral_contralateral_or_bilateral_nodes_any_with_ene_or_a_single_contralateral_node_of",
+          "label": "multiple ipsilateral, contralateral, or bilateral nodes, any with ENE(+); or a single contralateral node of",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "any_size_and_ene",
+          "label": "any size and ENE",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn3",
+              "label": "pN3 (subcategory cannot be determined)"
+            }
+          ],
+          "condition": "+"
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "brigham_and_womens_bwh_tumor_classification_system",
+          "label": "Brigham and Women's (BWH) Tumor Classification System",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "high_risk_factors",
+          "label": "High-risk Factors",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "tumor_diameter_greater_than_or_equal_to_2_cm",
+              "label": "Tumor diameter greater than or equal to 2 cm"
+            },
+            {
+              "value": "poorly_differentiated_histology",
+              "label": "Poorly differentiated histology"
+            },
+            {
+              "value": "perineural_invasion_greater_than_or_equal_to_01_mm_in_caliber",
+              "label": "Perineural invasion greater than or equal to 0.1 mm in caliber"
+            },
+            {
+              "value": "tumor_invasion_beyond_subcutaneous_fat",
+              "label": "Tumor invasion beyond subcutaneous fat (excluding bone invasion, which upgrades tumor to"
+            }
+          ]
+        },
+        {
+          "field_id": "bwh_tumor_classification",
+          "label": "BWH Tumor Classification",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "t1",
+              "label": "T1: 0 high-risk factor"
+            },
+            {
+              "value": "t2a",
+              "label": "T2a: 1 high-risk factor"
+            },
+            {
+              "value": "t2b",
+              "label": "T2b: 2-3 high-risk factors"
+            },
+            {
+              "value": "t3",
+              "label": "T3: 4 risk factors or bone invasion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "immunosuppressed_status",
+              "label": "Immunosuppressed status (specify cause, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "biomarkers_tested_may_be_included_in_the_section_below_pending_biomarker_studies_may_be_listed_in_th",
+          "label": "Biomarkers tested may be included in the section below. Pending biomarker studies may be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "biomarkers_tested",
+          "label": "Biomarkers Tested",
+          "required": true,
+          "type": "free_text",
+          "condition": "may repeat for up to 10 biomarkers"
+        },
+        {
+          "field_id": "specify_test_and_result",
+          "label": "Specify Test and Result: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_reporting_of_cutaneous_squamous_cell_carcinoma_of_head_and_neck_is_facilitated_by_the_provision_",
+          "label": "The reporting of cutaneous squamous cell carcinoma of head and neck is facilitated by the provision of a case summary illustrating the features required for comprehensive patient care. However, there are many cases in which the individual practicalities of applying such a case summary may not be straightforward. Common examples include finding the prescribed number of lymph nodes, trying to determine the levels of the radical neck dissection, and determining if isolated tumor cells in a lymph node represent metastatic disease. Case summaries have evolved to include clinical, radiographic, morphologic, immunohistochemical, and molecular results in an effort to guide clinical management. Adjuvant and neoadjuvant therapy can significantly alter histologic findings, making accurate classification an increasingly complex and demanding task. This protocol tries to remain simple while still incorporating important pathologic features as proposed by the American Joint Committee on Cancer (AJCC) cancer staging manual, the World Health Organization (WHO) classification of tumors, the TNM classification1, the American College of Surgeons Commission on Cancer, and the International Union on Cancer (UICC). This protocol is to be used as a guide and resource, an adjunct to diagnosing and managing cancers of the skin in a standardized manner. It should not be used as a substitute for dissection or grossing techniques and does not give histologic parameters to reach the diagnosis. Subjectivity is always a factor, and elements listed are not meant to be arbitrary but are meant to provide uniformity of reporting across all the disciplines that use the information. It is a foundation of practical information that will help to meet the requirements of daily practice to benefit both clinicians and patients alike.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gress_dm_edge_sb_greene_fl_et_al_principles_of_cancer_staging_in_amin_mb_ed_ajcc_cancer_staging_manu",
+          "label": "Gress DM, Edge SB, Greene FL, et al. Principles of cancer staging. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "optimal_pathologic_evaluation_of_squamous_cell_carcinomas_requires_complete_excision_that_incorporat",
+          "label": "Optimal pathologic evaluation of squamous cell carcinomas requires complete excision that incorporates the entire lesion removed intact.1,2 While the type of biopsy may be depend on the anatomic location and size of the lesion, such as shave, punch, incisional or excisional,1 the curative surgical excision is aimed at complete removal of the tumor along with surrounding tumor-free skin and soft tissue to ensure adequate risk-adapted safety margin.2 For scalp and forehead tumors lacking bone invasion, the excision often includes aponeurosis/galea, while the underlying periosteum is typically spared.2,3 En-bloc excision may be necessary in patients with multiple closely clustered tumors,2 and may include portion of underlying bone, if bone involvement is suspected or noted by imaging studies. The use of intraoperative frozen sections for margin control is a common practice,2,3 and may be in the form of standard excision or Mohs micrographic surgery. In rare instances, curettage and electrodesiccation may be used as an alternative treatment strategy for small low-risk keratinocytic carcinomas.4 However, margin status cannot evaluated in such specimens; and, determination of tumor thickness may also be precluded due to tissue fragmentation and tangential processing of tissue fragments.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "alexander_j_stratigos_aj_garbe_c_dessinioti_c_et_al_european_consensus_based_interdisciplinary_guide",
+          "label": "Alexander J Stratigos AJ, Garbe C, Dessinioti C, et al. European consensus-based interdisciplinary guideline for invasive cutaneous squamous cell carcinoma. Part 1: Diagnostics and prevention-Update 2023. Eur J Cancer. 2023 Nov:193:113251.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "alexander_j_stratigos_aj_garbe_c_dessinioti_c_et_al_european_consensus_based_interdisciplinary_guide",
+          "label": "Alexander J Stratigos AJ, Garbe C, Dessinioti C, et al. European consensus-based interdisciplinary guideline for invasive cutaneous squamous cell carcinoma: Part 2. Treatment-Update 2023. Eur J Cancer. 2023 Nov:193:113252.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sforl_work_group_durbec_m_couloigner_v_tronche_s_et_al_guidelines_of_the_french_society_of_otorhinol",
+          "label": "SFORL work group; Durbec M, Couloigner V, Tronche S, et al. Guidelines of the French Society of Otorhinolaryngology (SFORL), short version. Extension assessment and principles of resection in cutaneous head and neck tumors. Eur Ann Otorhinolaryngol Head Neck Dis. 2014 Dec;131(6):375-383.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yakish_k_graham_j_hossler_ew_efficacy_of_curettage_alone_for_invasive_cutaneous_squamous_cell_carcin",
+          "label": "Yakish K, Graham J, Hossler EW. Efficacy of curettage alone for invasive cutaneous squamous cell carcinoma: A retrospective cohort study. J Am Acad Dermatol. 2017 Sep;77(3):582-584.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_world_health_organization_who_classification1_of_epidermal_and_appendageal_carcinomas_of_the_ski",
+          "label": "The World Health Organization (WHO) classification1 of epidermal and appendageal carcinomas of the skin is shown below",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_cell_carcinomas",
+          "label": "Squamous cell carcinomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "verrucous_squamous_cell_carcinoma",
+          "label": "Verrucous squamous cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "acantholytic_squamous_cell_carcinoma",
+          "label": "Acantholytic squamous cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphoepithelial_carcinoma",
+          "label": "Lymphoepithelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clear_cell_squamous_cell_carcinoma",
+          "label": "Clear cell squamous cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spindle_cell_squamous_cell_carcinoma",
+          "label": "Spindle cell squamous cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_cell_carcinoma_with_sarcomatoid_differentiation",
+          "label": "Squamous cell carcinoma with sarcomatoid differentiation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "basal_cell_carcinomas",
+          "label": "Basal cell carcinomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "superficial_basal_cell_carcinoma",
+          "label": "Superficial basal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nodular_basal_cell_carcinoma",
+          "label": "Nodular basal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "micronodular_basal_cell_carcinoma",
+          "label": "Micronodular basal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "infiltrating_basal_cell_carcinoma",
+          "label": "Infiltrating basal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sclerosingmorphoeic_basal_cell_carcinoma",
+          "label": "Sclerosing/morphoeic basal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "basosquamous_carcinoma",
+          "label": "Basosquamous carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "basal_cell_carcinoma_with_sarcomatoid_differentiation",
+          "label": "Basal cell carcinoma with sarcomatoid differentiation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "basal_cell_carcinoma_with_adnexal_differentiation",
+          "label": "Basal cell carcinoma with adnexal differentiation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fibroepithelial_basal_cell_carcinoma",
+          "label": "Fibroepithelial basal cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignant_apocrine_and_eccrine_tumors",
+          "label": "Malignant apocrine and eccrine tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adnexal_adenocarcinoma_nos",
+          "label": "Adnexal adenocarcinoma, NOS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "microcystic_adnexal_carcinoma",
+          "label": "Microcystic adnexal carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cribriform_tumor",
+          "label": "Cribriform tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "previously carcinoma"
+        },
+        {
+          "field_id": "porocarcinoma",
+          "label": "Porocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignant_neoplasms_arising_from_spiradenoma_cylindroma_or_spiradenocylindroma",
+          "label": "Malignant neoplasms arising from spiradenoma, cylindroma, or spiradenocylindroma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignant_mixed_tumor",
+          "label": "Malignant mixed tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hidradenocarcinoma",
+          "label": "Hidradenocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "endocrine_mucin_producing_sweat_gland_carcinoma",
+          "label": "Endocrine mucin-producing sweat gland carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucinous_carcinoma",
+          "label": "Mucinous carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "digital_papillary_adenocarcinoma",
+          "label": "Digital papillary adenocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenoid_cystic_carcinoma",
+          "label": "Adenoid cystic carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "apocrine_carcinoma",
+          "label": "Apocrine carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamoid_ductal_eccrine_carcinoma",
+          "label": "Squamoid ductal eccrine carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "syringocystadenocarcinoma_papilliferum",
+          "label": "Syringocystadenocarcinoma papilliferum",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "secretory_carcinoma",
+          "label": "Secretory carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "signet_ring_cellhistiocytoid_carcinoma",
+          "label": "Signet-ring cell/histiocytoid carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignant_tumors_with_follicular_differentiation",
+          "label": "Malignant tumors with follicular differentiation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "proliferating_trichilemmal_tumor",
+          "label": "Proliferating trichilemmal tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pilomatrical_carcinoma",
+          "label": "Pilomatrical carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trichoblastic_carcinomacarcinosarcoma",
+          "label": "Trichoblastic carcinoma/carcinosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trichilemmal_carcinoma",
+          "label": "Trichilemmal carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignant_tumors_with_sebaceous_differentiation",
+          "label": "Malignant tumors with sebaceous differentiation",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sebaceous_carcinoma",
+          "label": "Sebaceous carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_skin_tumours_internet_beta_version_ahead_of_print_lyon",
+          "label": "WHO Classification of Tumours Editorial Board. Skin tumours [Internet; beta version ahead of print]. Lyon (France): International Agency for Research on Cancer; 2023 [cited YYYY Mmm D]. (WHO classification of tumours series, 5th ed.; vol. 12). Available from: https://tumourclassification.iarc.who.int/chapters/64",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grading_of_cutaneous_squamous_cell_carcinoma_is_not_standardized_classically_tumors_graded_qualitati",
+          "label": "Grading of cutaneous squamous cell carcinoma is not standardized. Classically, tumors graded qualitatively using 4 tiers as follows:1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated_tumors_are_characterized_by_squamous_epithelium_that_frequently_shows_ea",
+          "label": "Grade 1: Well-differentiated tumors are characterized by squamous epithelium that frequently shows easily recognizable and often abundant keratinization. Intercellular bridges are readily apparent. There is minimal pleomorphism, and mitotic figures are mainly basally located.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated_tumors_show_more_structural_disorganization_in_which_squamous_epit",
+          "label": "Grade 2: Moderately differentiated tumors show more structural disorganization in which squamous epithelial derivation is less obvious. Nuclear and cytoplasmic pleomorphism are more pronounced, and mitotic figures may be numerous. Keratin formation is typically limited to keratin pearls, horn cysts, and scattered individually keratinized cells.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_in_poorly_differentiated_tumors_it_may_be_difficult_to_establish_squamous_differentiation_us",
+          "label": "Grade 3:  In poorly differentiated tumors it may be difficult to establish squamous differentiation, usually by identification of rare intercellular bridges or small foci of keratinization.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_4_used_to_denote_anaplastic_or_undifferentiated_tumors",
+          "label": "Grade 4: Used to denote anaplastic or undifferentiated tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "broders_classification_of_histologic_grading2_is_a_popular_alternative_single_parameter_quantitative",
+          "label": "Broders classification of histologic grading2 is a popular alternative single parameter quantitative grading system often utilized as well and is summarized as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_less_than_25_is_undifferentiated",
+          "label": "Grade 1    Less than 25% is undifferentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_greater_than_or_equal_to_25_but_less_than_50_is_undifferentiated",
+          "label": "Grade 2    Greater than or equal to 25% but less than 50% is undifferentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_greater_than_or_equal_to_50_but_less_than_75_is_undifferentiated",
+          "label": "Grade 3    Greater than or equal to 50% but less than 75% is undifferentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_4_greater_than_or_equal_to_75_is_undifferentiated",
+          "label": "Grade 4    Greater than or equal to 75% is undifferentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_has_remained_a_key_independent_prognosticator_in_cutaneous_squamous_cell_carcinoma34_despite_l",
+          "label": "Grade has remained a key independent prognosticator in cutaneous squamous cell carcinoma3,4 despite limited data showing weak to moderate interobserver concordance.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "from_a_management_perspective_grade_is_typically_reduced_to_two_tiers_with_poorly_differentiated_tum",
+          "label": "From a management perspective, grade is typically reduced to two tiers with poorly differentiated tumors (Grades 3 and 4) constituting the high risk category.3 However, limited evidence suggests that even moderately differentiated tumors (Grade 2) may show a higher risk for subclinical spread requiring more layers of clearance by Mohs micrographic surgery. 6 Of note, it is this grade of tumors that appears to show the highest interobserver variability.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_application_of_grading_to_subtypes_in_cutaneous_squamous_cell_carcinoma_is_not_well_studied_thou",
+          "label": "The application of grading to subtypes in cutaneous squamous cell carcinoma is not well studied, though some subtypes (i.e. verrucous squamous cell carcinoma) have a well-established intrinsic biologic behavior.4  It is thus reasonable to use the “not applicable” category when a subtype comprises the bulk of the tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_of_the_surface_epithelium_in_mckee_ph_calonje_e_brenn_t_lazar_aj_billings_sd_mckees_pathology",
+          "label": "Tumors of the surface epithelium. In: McKee PH, Calonje E, Brenn T, Lazar AJ, Billings SD. McKee's Pathology of the Skin with Clinical Correlations. 5th ed. Philadelphia, PA: Elsevier Mosby; 2020.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "broders_ac_squamous_cell_epithelioma_of_the_lip_j_am_med_assoc_1920_74_656_64",
+          "label": "Broders AC. Squamous cell epithelioma of the lip. J Am Med Assoc 1920; 74: 656-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prezzano_jc_scott_ga_lambert_smith_f_mannava_ka_ibrahim_sf_concordance_of_squamous_cell_carcinoma_hi",
+          "label": "Prezzano JC, Scott GA, Lambert Smith F, Mannava KA, Ibrahim SF. Concordance of Squamous Cell Carcinoma Histologic Grading Among Dermatopathologists and Mohs Surgeons. Dermatol Surg. 2021 Nov 1;47(11):1433-1437.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kyrgidis_a_tzellos_tg_kechagias_n_patrikidou_a_xirou_p_kitikidou_k_bourlidou_e_vahtsevanos_k_antonia",
+          "label": "Kyrgidis A, Tzellos TG, Kechagias N, Patrikidou A, Xirou P, Kitikidou K, Bourlidou E, Vahtsevanos K, Antoniades K. Cutaneous squamous cell carcinoma (SCC) of the head and neck: risk factors of overall and recurrence-free survival. Eur J Cancer. 2010 Jun;46(9):1563-72.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lohmann_cm_solomon_ar_clinicopathologic_variants_of_cutaneous_squamous_cell_carcinoma_adv_anat_patho",
+          "label": "Lohmann CM, Solomon AR. Clinicopathologic variants of cutaneous squamous cell carcinoma. Adv Anat Pathol. 2001;8(1):27-36.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eversman_a_tracey_eh_michalik_d_rodriguez_m_varra_v_briskin_in_vidimos_at_poblete_lopez_cm_moderate_",
+          "label": "Eversman A, Tracey EH, Michalik D, Rodriguez M, Varra V, Briskin IN, Vidimos AT, Poblete-Lopez CM. Moderate differentiation is a risk factor for extensive subclinical spread of cutaneous squamous cell carcinoma. J Am Acad Dermatol. 2021 Dec;85(6):1606-1608.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_tumor_thickness_breslowdepth_of_invasion_doi_are_key_risk_factors_for_nodal_disease_on_univari",
+          "label": "While tumor thickness (Breslow)/depth of invasion (DOI) are key risk factors for nodal disease on univariate and multivariate analysis,1,2,3 both terms are often interchangeable, but as per AJCC 8th edition, whenever possible, DOI, as measured from the granular layer of the adjacent normal epidermis to the base of the tumor is recommended for determining T status. This DOI is measured at a right angle to the adjacent normal skin, with the upper point of reference the granular layer of the epidermis of the adjacent uninvolved epidermis. The lower reference point is the deepest point of tumor invasion (i.e., the leading edge of a single mass or an isolated group of cells deep to the main mass).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_tumor_is_transected_by_the_deep_margin_of_the_specimen_the_thickness_may_be_indicated_as_at_l",
+          "label": "If the tumor is transected by the deep margin of the specimen, the thickness may be indicated as “at least __ mm” with a comment explaining the limitation of thickness assessment.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anatomic_clark_levels_are_defined_as_follows",
+          "label": "Anatomic (Clark) levels are defined as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "saito_y_fujikawa_h_takatsuka_s_abe_r_takenouchi_t_risk_factors_for_lymph_node_metastasis_in_cutaneou",
+          "label": "Saito Y, Fujikawa H, Takatsuka S, Abe R, Takenouchi T. Risk factors for lymph node metastasis in cutaneous squamous cell carcinoma: a long-term retrospective study of Japanese patients. Int J Clin Oncol. 2021 Mar;26(3):606-612.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schmitz_l_kanitakis_j_histological_classification_of_cutaneous_squamous_cell_carcinomas_with_differe",
+          "label": "Schmitz L, Kanitakis J. Histological classification of cutaneous squamous cell carcinomas with different severity. J Eur Acad Dermatol Venereol. 2019 Dec;33 Suppl 8:11-15.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thompson_ak_kelley_bf_prokop_lj_murad_mh_baum_cl_risk_factors_for_cutaneous_squamous_cell_carcinoma_",
+          "label": "Thompson AK, Kelley BF, Prokop LJ, Murad MH, Baum CL. Risk Factors for Cutaneous Squamous Cell Carcinoma Recurrence, Metastasis, and Disease-Specific Death: A Systematic Review and Meta-analysis. JAMA Dermatol. 2016 Apr;152(4):419-28.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_perineural_invasion_in_cutaneous_squamous_cell_carcinoma_is_an_independent_poor_prognosticator",
+          "label": "While perineural invasion in cutaneous squamous cell carcinoma is an independent poor prognosticator,1  evidence suggests that a more nuanced approach to this parameter allows for improved stratification of patients. Size, location with respect to tumor, anatomic depth, number and even microscopic extent (circumferential vs focal) are key features to consider.2 Of these, the diameter of involved nerve is more studied and a diameter of greater than or equal to 0.1 mm is included in the definition of “deep invasion” in pT status.3,4 Location of the involved nerve deep to the dermis serves as a surrogate for this size cut-off and can be used even in the absence of a reticle or ocular micrometer to help assign a pT category. In other words, the size of involved nerves deep to the dermis can be classified as greater than or equal to 0.1 mm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zhang_j_wang_y_wijaya_wa_liang_z_chen_jj_efficacy_and_prognostic_factors_of_adjuvant_radiotherapy_fo",
+          "label": "Zhang J, Wang Y, Wijaya WA, Liang Z, Chen J.J. Efficacy and prognostic factors of adjuvant radiotherapy for cutaneous squamous cell carcinoma: A systematic review and meta-analysis. Eur Acad Dermatol Venereol. 2021 Sep;35(9):1777-1787.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "totonchy_mb_mcniff_jm_suozzi_kc_leffell_dj_christensen_sr_a_histopathologic_scoring_system_for_perin",
+          "label": "Totonchy MB, McNiff JM, Suozzi KC, Leffell DJ, Christensen SR. A Histopathologic Scoring System for Perineural Invasion Correlates with Adverse Outcomes in Patients with Cutaneous Squamous Cell Carcinoma. Dermatol Surg. 2021 Apr 1;47(4):445-451.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ross_as_whalen_fm_elenitsas_r_xu_x_troxel_ab_schmults_cd_diameter_of_involved_nerves_predicts_outcom",
+          "label": "Ross AS, Whalen FM, Elenitsas R, Xu X, Troxel AB, Schmults CD. Diameter of involved nerves predicts outcomes in cutaneous squamous cell carcinoma with perineural invasion: an investigator-blinded retrospective cohort study. Dermatol Surg. 2009 Dec;35(12):1859-66.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "karia_ps_jambusaria_pahlajani_a_harrington_dp_murphy_gf_qureshi_aa_schmults_cd_evaluation_of_america",
+          "label": "Karia PS, Jambusaria-Pahlajani A, Harrington DP, Murphy GF, Qureshi AA, Schmults CD. Evaluation of American Joint Committee on Cancer, International Union Against Cancer, and Brigham and Women's Hospital tumor staging for cutaneous squamous cell carcinoma. J Clin Oncol. 2014 Feb 1;32(4):327-34.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margin_status_emerges_as_a_key_adverse_prognosticator_on_meta_analysis_and_is_a_critical_factor_to_c",
+          "label": "Margin status emerges as a key adverse prognosticator on meta-analysis and is a critical factor to consider for consideration of adjuvant radiotherapy and is thus a required reporting element.1 If the specimen is oriented or can be oriented based on anatomic landmarks, the position of margins involved by tumor should be indicated. Although a comment on margins is necessary only for wide local excisions or formal resections, it is commonly employed in many (dermato)pathology laboratories on all specimens and has been advocated as part of a standard diagnostic template.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distance_of_tumor_to_margins_is_not_well_studied_in_cutaneous_squamous_cell_carcinomas_and_is_thus_c",
+          "label": "Distance of tumor to margins is not well studied in cutaneous squamous cell carcinomas and is thus currently not required. Nonetheless reporting of this parameter is highly recommended to maintain equivalence of reporting standards with mucosal counterparts. Current NCCN guidelines recommend gross clearance of 4-6 mm for tumors less than 2.0 cm, and wider (without specifying) on larger advanced stage tumors under the purview of this protocol.3 However, only a single prospective study using Mohs technique was the basis for these guidelines.4 Equivalence to margin distances for wide local excision/resection let alone microscopic margin distances is not established in these guidelines. However, for head and neck sites limited evidence does suggest some prognostic value at a cutoff of 5 mm on univariate analysis.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zhang_j_wang_y_wijaya_wa_liang_z_chen_jj_efficacy_and_prognostic_factors_of_adjuvant_radiotherapy_fo",
+          "label": "Zhang J, Wang Y, Wijaya WA, Liang Z, Chen J.J. Efficacy and prognostic factors of adjuvant radiotherapy for cutaneous squamous cell carcinoma: A systematic review and meta-analysis. Eur Acad Dermatol Venereol. 2021 Sep;35(9):1777-1787.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "khanna_m_fortier_riberdy_g_dinehart_sm_smoller_b_histopathologic_evaluation_of_cutaneous_squamous_ce",
+          "label": "Khanna M, Fortier-Riberdy G, Dinehart SM, Smoller B. Histopathologic evaluation of cutaneous squamous cell carcinoma: results of a survey among dermatopathologists. J Am Acad Dermatol. 2003;48(5):721-726.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brodland_dg_zitelli_ja_surgical_margins_for_excision_of_primary_cutaneous_squamous_cell_carcinoma_j_",
+          "label": "Brodland DG, Zitelli JA. Surgical margins for excision of primary cutaneous squamous cell carcinoma. J Am Acad Dermatol. 1992;27(2 Pt 1):241–248.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nccn_clinical_practice_guidelines_in_oncology_nccn_guidelines_squamous_cell_skin_cancer_2018_1108201",
+          "label": "NCCN clinical practice guidelines in oncology (NCCN Guidelines®) squamous cell skin cancer. 2018 11/08/2018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "phillips_tj_harris_bn_moore_mg_farwell_dg_bewley_af_pathological_margins_and_advanced_cutaneous_squa",
+          "label": "Phillips TJ, Harris BN, Moore MG, Farwell DG, Bewley AF. Pathological margins and advanced cutaneous squamous cell carcinoma of the head and neck. J Otolaryngol Head Neck Surg. 2019 Oct 25;48(1):55.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_node_status_specifically_size_number_and_extranodal_extension_have_been_noted_to_represent_adv",
+          "label": "Lymph node status, specifically size, number and extranodal extension have been noted to represent adverse prognosticators.1,2 As such they have been incorporated into AJCC N categorization in a fashion similar to that of human papillomavirus (HPV) unrelated mucosal HNSCC. But while these parameters are impactful, the actual performance of this adaptation of mucosal HNSCC N classification system cutaneous HNSCC has been shown to be suboptimal.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amit_m_liu_c_gleber_netto_fo_kini_s_tam_s_benov_a_aashiq_m_el_naggar_ak_moreno_ac_rosenthal_di_gliss",
+          "label": "Amit M, Liu C, Gleber-Netto FO, Kini S, Tam S, Benov A, Aashiq M, El-Naggar AK, Moreno AC, Rosenthal DI, Glisson BS, Ferrarotto R, Wong MK, Migden MR, Baruch EN, Li G, Khanna A, Goepfert RP, Nagarajan P, Weber RS, Myers JN, Gross ND.Inclusion of extranodal extension in the lymph node classification of cutaneous squamous cell carcinoma of the head and neck. Cancer. 2021 Apr 15;127(8):1238-1245.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "varra_v_woody_nm_reddy_c_joshi_np_geiger_j_adelstein_dj_burkey_bb_scharpf_j_prendes_b_lamarre_ed_lor",
+          "label": "Varra V, Woody NM, Reddy C, Joshi NP, Geiger J, Adelstein DJ, Burkey BB, Scharpf J, Prendes B, Lamarre ED, Lorenz R, Gastman B, Manyam BV, Koyfman SA.Suboptimal Outcomes in Cutaneous Squamous Cell Cancer of the Head and Neck with Nodal Metastases. Anticancer Res. 2018 Oct;38(10):5825-5830.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "luk_pp_ebrahimi_a_veness_mj_mcdowell_l_magarey_m_gao_k_palme_ce_clark_jr_gupta_rprognostic_value_of_",
+          "label": "Luk PP, Ebrahimi A, Veness MJ, McDowell L, Magarey M, Gao K, Palme CE, Clark JR, Gupta R.Prognostic value of the 8th edition American Joint Commission Cancer nodal staging system for patients with head and neck cutaneous squamous cell carcinoma: A multi-institutional study. Head Neck. 2021 Feb;43(2):558-567.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "watts_f_palme_ce_porceddu_s_sundaresan_p_clark_jr_gupta_rclinician_perspectives_on_the_factors_influ",
+          "label": "Watts F, Palme CE, Porceddu S, Sundaresan P, Clark JR, Gupta R.Clinician perspectives on the factors influencing prognostic stratification by the American Joint Commission on Cancer Head and Neck Cutaneous Squamous Cell Carcinoma Staging. Surgery. 2021 Nov;170(5):1467-1473. doi: 10.1016/j.surg.2021.04.019. Epub 2021 Jun 12.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_for_cutaneous_squamous_cell_carcinoma_of_the_head_and_neck_of_the_american_jo",
+          "label": "The TNM staging system for cutaneous squamous cell carcinoma of the head and neck of the American Joint Committee on Cancer (AJCC) is recommended.1  By AJCC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_and_depends_on",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor and depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor cannot be resected for any reason and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_risk_features_for_primary_t_tumor_staging1",
+          "label": "High-Risk Features for Primary (T) Tumor Staging1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "deep_invasion_invasion_beyond_the_subcutaneous_fat_or_6_mm_in_depth_extension_into_microanatomic_lan",
+          "label": "Deep invasion: Invasion beyond the subcutaneous fat or >6 mm in depth. Extension into microanatomic landmarks such as fascia, muscle, perichondrium, and/or periosteum underlying subcutaneous fat qualify as deep invasion.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perineural_invasion_for_t3_classification_tumor_cells_within_the_nerve_sheath_of_a_nerve_lying_deepe",
+          "label": "Perineural invasion for T3 classification: Tumor cells within the nerve sheath of a nerve lying deeper than the dermis or measuring 0.1 mm or larger in caliber, or presenting with clinical or radiographic involvement of named nerves without skull base invasion or transgression.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_categorization_is_not_an_estimate_of_tumor_prior_to_multimodality_therapy_ie_before_initiation",
+          "label": "The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brigham_and_womens_hospital_bwh_tumor_staging",
+          "label": "Brigham and Women’s Hospital (BWH) Tumor Staging",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_brigham_and_womens_hospital_bwh_system_is_an_alternative_tumor_classification_system_prior_analy",
+          "label": "The Brigham and Women’s Hospital (BWH) system is an alternative tumor classification system. Prior analysis from a single institution cohort demonstrated that the BWH staging system offers improved distinctiveness, homogeneity, and monotonicity over the AJCC 7th edition staging system.2 Compared to the AJCC 8th edition staging system, BWH had higher specificity and positive predictive value for identifying cases at risk for metastasis or death.3 A systematic review of sentinel node biopsy in CSCC demonstrated that BWH T2b/T3 tumors have a high risk of sentinel node positivity (29.4%).4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bwh_staging_high_risk_features",
+          "label": "*BWH staging high-risk features",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clinical_tumor_diameter_greater_than_or_equal_2_cm",
+          "label": "Clinical tumor diameter greater than or equal 2 cm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_invasion_beyond_subcutaneous_fat_excluding_bone_invasion_which_upgrades_tumor_to_stage_pt3",
+          "label": "Tumor invasion beyond subcutaneous fat, excluding bone invasion, which upgrades tumor to stage pT3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "poorly_differentiated_histology",
+          "label": "Poorly differentiated histology",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perineural_invasion_of_nerves_greater_than_or_equal_01_mm_in_caliber",
+          "label": "Perineural invasion of nerve(s) greater than or equal 0.1 mm in caliber",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "karia_ps_jambusaria_pahlajani_a_harrington_dp_murphy_gf_qureshi_aa_schmults_cd_evaluation_of_america",
+          "label": "Karia PS, Jambusaria-Pahlajani A, Harrington DP, Murphy GF, Qureshi AA, Schmults CD. Evaluation of American Joint Committee on Cancer, International Union Against Cancer, and Brigham and Women’s Hospital tumor staging for cutaneous squamous cell carcinoma. J Clin Oncol. 2014;32(4):327-334.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ruiz_es_karia_ps_besaw_r_schmults_cd_performance_of_the_american_joint_committee_on_cancer_staging_m",
+          "label": "Ruiz ES, Karia PS, Besaw R, Schmults, CD. Performance of the American Joint Committee on Cancer Staging Manual, 8th Edition vs the Brigham and Women’s Hospital Tumor Classification System for Cutaneous Squamous Cell Carcinoma. JAMA Dermatol. 2019;155(7):819-825.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schmitt_ar_brewer_jd_bordeaux_js_baum_cl_staging_for_cutaneous_squamous_cell_carcinoma_as_a_predicto",
+          "label": "Schmitt AR, Brewer JD, Bordeaux JS, Baum CL. Staging for cutaneous squamous cell carcinoma as a predictor of sentinel lymph node biopsy results: meta-analysis of American Joint Committee on Cancer criteria and a proposed alternative system. JAMA Dermatol. 2014;150(1):19-24.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

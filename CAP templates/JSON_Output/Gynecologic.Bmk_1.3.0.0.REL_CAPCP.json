@@ -1,0 +1,1402 @@
+{
+  "template_id": "Gynecologic.Bmk_1.3.0.0.REL_CAPCP",
+  "organ": "Gynecologic Biomarker Reporting Template",
+  "protocol_posting_date": "September 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "additional_tests_performed",
+      "section_name": "ADDITIONAL TESTS PERFORMED",
+      "fields": [
+        {
+          "field_id": "her2_by_in_situ_hybridization",
+          "label": "HER2 by In Situ Hybridization",
+          "required": false,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "number_of_observers_and_number_of_tumor_cells_counted_are_required_only_when_negative_or_positive_is",
+          "label": "\"Number of Observers\" and \"Number of Tumor Cells Counted\" are required only when Negative or Positive is selected.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (not amplified)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (amplified)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_observers_required_only_if_applicable",
+          "label": "Number of Observers (required only if applicable): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "number_of_tumor_cells_counted_required_only_if_applicable___________________cells",
+          "label": "Number of Tumor Cells Counted (required only if applicable): _________________ cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "method",
+          "label": "Method",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "dual_probe_assay",
+              "label": "Dual probe assay"
+            }
+          ]
+        },
+        {
+          "field_id": "average_number_of_her2_signals_per_cell",
+          "label": "Average Number of HER2 Signals per Cell: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "average_number_of_cep17_signals_per_cell",
+          "label": "Average Number of CEP17 Signals per Cell: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "her2_cep17_ratio",
+          "label": "HER2 / CEP17 Ratio: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "single_probe_assay",
+              "label": "Single probe assay"
+            }
+          ]
+        },
+        {
+          "field_id": "average_number_of_her2_signals_per_cell",
+          "label": "Average Number of HER2 Signals per Cell: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aneusomy",
+          "label": "Aneusomy",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "as defined by vendor kit used"
+        },
+        {
+          "field_id": "heterogeneous_signals",
+          "label": "Heterogeneous Signals",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_cells_with_amplified_her2_signals",
+          "label": "Percentage of Cells with Amplified HER2 Signals",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "test_type",
+          "label": "Test Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "non_us_based_health_systems",
+          "label": "___ Non-U.S.-based health systems",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "health_canada_approved_specify_test_vendor",
+          "label": "___ Health Canada Approved (specify test / vendor): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "her2_by_in_situ_hybridization_comment",
+          "label": "HER2 by In Situ Hybridization Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "microsatellite_instability_msi_interpretation",
+          "label": "Microsatellite Instability (MSI) Interpretation",
+          "required": false,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "the_presence_of_msi_h_mismatch_repair_deficient_phenotype_may_also_be_an_indication_for_additional_t",
+          "label": "The presence of MSI-H / mismatch repair deficient phenotype may also be an indication for additional testing for Lynch syndrome and genetic counselling.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "msi_stable",
+              "label": "MSI-Stable (MSS)"
+            },
+            {
+              "value": "msi_low",
+              "label": "MSI-Low (MSI-L)"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "1_29_of_the_markers_exhibit_instability",
+          "label": "___ 1-29% of the markers exhibit instability",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "1_of_the_5_national_cancer_institute_nci_or_mononucleotide_markers_exhibits_instability",
+          "label": "___ 1 of the 5 National Cancer Institute (NCI) or mononucleotide markers exhibits instability",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "msi_high",
+              "label": "MSI-High (MSI-H)"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greater_than_or_equal_to_30_of_the_markers_exhibit_instability",
+          "label": "___ Greater than or equal to 30% of the markers exhibit instability",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "2_or_more_of_the_5_national_cancer_institute_nci_or_mononucleotide_markers_exhibit_instability",
+          "label": "___ 2 or more of the 5 National Cancer Institute (NCI) or mononucleotide markers exhibit instability",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "test_type",
+          "label": "Test Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "non_us_based_health_systems",
+          "label": "___ Non-U.S.-based health systems",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "health_canada_approved_specify_test_vendor",
+          "label": "___ Health Canada Approved (specify test / vendor): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "microsatellite_instability_msi_comment",
+          "label": "Microsatellite Instability (MSI) Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mlh1_promoter_methylation_analysis",
+          "label": "MLH1 Promoter Methylation Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mlh1_promoter_methylation_present",
+              "label": "MLH1 promoter methylation present"
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_methylation",
+          "label": "Specify Percentage of Methylation: _________________ %",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mlh1_promoter_methylation_absent",
+              "label": "MLH1 promoter methylation absent"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "test_type",
+          "label": "Test Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "non_us_based_health_systems",
+          "label": "___ Non-U.S.-based health systems",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "health_canada_approved_specify_test_vendor",
+          "label": "___ Health Canada Approved (specify test / vendor): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mlh1_promoter_methylation_comment",
+          "label": "MLH1 Promoter Methylation Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "biomarkers_scored_by_image_analysis",
+          "label": "Biomarkers Scored by Image Analysis",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "her2_by_ish",
+              "label": "HER2 by ISH"
+            },
+            {
+              "value": "her2_by_ihc",
+              "label": "HER2 by IHC"
+            },
+            {
+              "value": "pgr",
+              "label": "PgR"
+            },
+            {
+              "value": "er",
+              "label": "ER"
+            },
+            {
+              "value": "pd_l1",
+              "label": "PD-L1"
+            },
+            {
+              "value": "folate_receptor_alpha",
+              "label": "Folate receptor alpha"
+            }
+          ]
+        },
+        {
+          "field_id": "test_type",
+          "label": "Test Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "non_us_based_health_systems",
+          "label": "___ Non-U.S.-based health systems",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "health_canada_approved_specify_test_vendor",
+          "label": "___ Health Canada Approved (specify test / vendor): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "biomarkers_scored_by_image_analysis_comment",
+          "label": "Biomarkers Scored by Image Analysis Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tests_pending_specify",
+          "label": "Tests Pending (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "biomarker_testing_in_gynecologic_malignancies_is_an_evolving_practice_with_numerous_candidates_under",
+          "label": "Biomarker testing in gynecologic malignancies is an evolving practice with numerous candidates under investigation for targeted therapies.1,2 Many of these markers have a major role in the diagnostic assessment of tumor type. Only a few have been incorporated in clinical guidelines or recommendations. Thus, this protocol only includes biomarkers of prognostic and/or therapeutic significance. The American Society of Clinical Oncology and the College of American Pathologists (ASCO/CAP) guidelines for breast cancer tissue ischemia and fixation for testing ER, PgR, and HER2 have been proposed for gynecologic tumors and may be adopted but are not currently required.3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wong_rw_cheung_any_predictive_and_prognostic_biomarkers_in_female_genital_tract_tumours_an_update_hi",
+          "label": "Wong RW, Cheung ANY. Predictive and prognostic biomarkers in female genital tract tumours: an update highlighting their clinical relevance and practical issues. Pathology. 2024;56(2):214-227.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vrede_sw_van_weelden_wj_visser_ncm_et_al_immunohistochemical_biomarkers_are_prognostic_relevant_in_a",
+          "label": "Vrede SW, van Weelden WJ, Visser NCM, et al. Immunohistochemical biomarkers are prognostic relevant in addition to the ESMO-ESGO-ESTRO risk classification in endometrial cancer. Gynec Oncol. 2021;161;787-794.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "allison_kh_hammond_meh_dowsett_m_et_al_estrogen_and_progesterone_receptor_testing_in_breast_cancer_a",
+          "label": "Allison KH, Hammond MEH, Dowsett M, et al. Estrogen and progesterone receptor testing in breast cancer: American Society of Clinical Oncology/College of American Pathologists guideline update. Arch Pathol Lab Med. 2020;144(5):545-563.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wolff_ac_somerfield_mr_dowsett_m_et_al_human_epidermal_growth_factor_receptor_2_testing_in_breast_ca",
+          "label": "Wolff AC, Somerfield MR, Dowsett M, et al. Human Epidermal Growth Factor Receptor 2 testing in breast cancer: ASCO-College of American Pathologists guideline update. J Clin Oncol. 2023;41(22):3867-3872.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hormone_receptor_expression_has_prognostic_and_predictive_significance12_although_recording_specific",
+          "label": "Hormone receptor expression has prognostic and predictive significance.1,2 Although recording specific preanalytic and analytic variables recommended for breast cancer is not currently required for gynecologic neoplasms, appropriate positive and negative controls should be used and evaluated.3 There are many variables that can affect test results, and the assays must be validated to ensure their accuracy. In the endometrium, non-neoplastic endometrial glands, endometrial stroma, or myometrium may serve as internal positive control. If internal control cells are not present, the test should be repeated on another specimen containing internal control cells (if available). Reasons for false-negative results include the following variables that may result in diminished or lost immunoreactivity",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "exposure_of_tumor_cells_to_heat_eg_cauterization_during_surgery",
+          "label": "Exposure of tumor cells to heat (e.g., cauterization during surgery).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prolonged_cold_ischemic_time",
+          "label": "Prolonged cold ischemic time.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "under_or_over_fixation_less_than_6_hours_or_over_72_hours_fixation_for_at_least_6_hours_but_no_more_",
+          "label": "Under- or over-fixation (less than 6 hours or over 72 hours); fixation for at least 6 hours but no more than 72 hours in buffered formalin is therefore recommended.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "type_of_fixative_hormone_receptors_are_degraded_in_acidic_fixatives_such_as_bouins_and_b_5_formalin_",
+          "label": "Type of fixative: hormone receptors are degraded in acidic fixatives such as Bouin’s and B-5; formalin should be buffered to ensure pH range between 7.0 and 7.4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "non_optimized_antigen_retrieval_or_use_of_weeks_old_tissue_sections",
+          "label": "Non-optimized antigen retrieval or use of (weeks) old tissue sections.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "type_of_antibody",
+          "label": "Type of antibody.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "decalcification",
+          "label": "Decalcification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dark_hematoxylin_counterstain_obscuring_faint_diaminobenzidine_staining",
+          "label": "Dark hematoxylin counterstain obscuring faint diaminobenzidine staining.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "false_positive_results_occur_less_frequently_rare_reasons_include_the_use_of_an_impure_andor_polyclo",
+          "label": "False-positive results occur less frequently. Rare reasons include the use of an impure and/or polyclonal antibody that cross-reacts with another antigen or misinterpretation of entrapped normal or hyperplastic cells as neoplastic cells. False-positive tests can also be generated by image analysis devices that mistakenly count overstained nuclei or non-neoplastic cells.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reporting_guidelines",
+          "label": "Reporting Guidelines",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_currently_no_outcome_driven_consensus_recommendations_that_have_been_developed_for_the_rep",
+          "label": "There are currently no outcome-driven consensus recommendations that have been developed for the reporting of the results of estrogen receptor (ER) and progesterone receptor (PgR) immunohistochemistry (IHC) for endometrial or other gynecologic cancers. In the absence of robust data, the CAP recommends using a modified reporting format similar to the American Society of Clinical Oncology and the College of American Pathologists (ASCO/CAP) guidelines for breast cancer (Table 1).3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_uniform_reporting_scheme_using_the_proportion_of_positive_cells_as_well_as_the_intensity_of_immuno",
+          "label": "A uniform reporting scheme using the proportion of positive cells as well as the intensity of immunoreactivity is recommended",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_number_of_positive_tumor_cells_reported_as_a_percentage_or_within_discrete_categories_eg_10_20",
+          "label": "●    The number of positive tumor cells, reported as a percentage or within discrete categories (e.g., 10-20%).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "staining_intensity_denoting_the_degree_of_nuclear_positivity_ie_weak_to_strong_the_intensity_can_be_",
+          "label": "●    Staining intensity, denoting the degree of nuclear positivity (i.e., weak to strong). The intensity can be affected by the amount of protein present, as well as the antibody used and the antigen retrieval system. Most cancers show heterogeneous immunoreactivity with variable staining intensity.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_reporting_results_of_estrogen_receptor_er_and_progesterone_receptor_pgr_testing_by_immunohis",
+          "label": "Table 1. Reporting Results of Estrogen Receptor (ER) and Progesterone Receptor (PgR) Testing by Immunohistochemistry",
+          "required": true,
+          "type": "free_text",
+          "condition": "IHC"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "guan_j_xie_l_luo_x_et_al_the_prognostic_significance_of_estrogen_and_progesterone_receptors_in_grade",
+          "label": "Guan J, Xie L, Luo X, et al. The prognostic significance of estrogen and progesterone receptors in grade I and II endometrioid endometrial adenocarcinoma: hormone receptors in risk stratification. J Gynecol Oncol. 2019; 30(1):e13.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jrezak_kj_duska_l_mackay_hj_endocrine_therapy_in_endometrial_cancer_an_old_dog_with_new_tricks_gynec",
+          "label": "Jrezak KJ, Duska L, MacKay HJ. Endocrine therapy in endometrial cancer: an old dog with new tricks. Gynecol Oncol. 2019; 153(1):175-183.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "allison_kh_hammond_meh_dowsett_m_et_al_estrogen_and_progesterone_receptor_testing_in_breast_cancer_a",
+          "label": "Allison KH, Hammond MEH, Dowsett M, et al. Estrogen and progesterone receptor testing in breast cancer: American Society of Clinical Oncology/College of American Pathologists guideline update. Arch Pathol Lab Med. 2020;144(5):545-563.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "c_her2_erbb2_testing",
+          "label": "C. HER2 (ERBB2) Testing",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_her2_erbb2_gene_is_located_on_chromosome_17_and_codes_for_a_tyrosine_kinase_receptor_from_the_ep",
+          "label": "The HER2 (ERBB2) gene is located on chromosome 17 and codes for a tyrosine kinase receptor from the epidermal growth factor receptor (EGFR) family. This protein is critical in signaling pathways that regulate cell division, proliferation, differentiation, and apoptosis. HER2 protein overexpression and/or gene amplification has been reported in 30% of endometrial serous carcinomas, 16% of carcinosarcomas, and 48% of clear cell carcinomas.1,2,3,4,5 HER2 status appears to be associated with abnormal p53 expression.1,4 Thus, the current National Comprehensive Cancer Network Guidelines recommend HER2 testing in endometrial serous carcinomas and carcinosarcomas, and considering testing for all p53-abnormal carcinomas irrespective of histotype.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "her2_directed_therapy_with_trastuzumab_is_standard_of_care_for_her2_positive_unresectable_or_metasta",
+          "label": "HER2-directed therapy with trastuzumab is standard of care for HER2-positive unresectable or metastatic cancers of the breast and gastrointestinal tract. In addition, trastuzumab in combination with chemotherapy has been shown to improve progression-free survival (PFS) and overall survival (OS) in HER2-positive advanced stage and recurrent endometrial serous carcinomas in a randomized phase II clinical trial NCT01367002.7,8  Based on the patient enrollment criteria in this trial, a highly reproducible endometrial cancer-specific HER2 testing algorithm was proposed, which is based on the 30% cut-off for HER2 protein overexpression by immunohistochemistry (IHC).9,10,11 This testing algorithm has 98% concordance with the latest American Society of Clinical Oncology/College of American Pathologists (ASCO/CAP) guidelines for breast cancer for final HER2 status.12,13 Unlike the patterns seen in breast carcinoma, HER2 staining in endometrial carcinoma is often lateral or basolateral and spares the apical portion of the tumor cells.5,9,10 Heterogeneous staining is frequently seen denoting at least two degree difference in staining intensity in more than 5% of the tumor.5,13,14 In the absence of alternative conclusive data, for determining trastuzumab eligibility, CAP suggests reporting results of HER2 testing using the enrollment criteria for the clinical trial NCT01367002 (Table 2).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_reporting_results_of_her2_testing_by_immunohistochemistry_ihc_for_trastuzumab_use_based_on_t",
+          "label": "Table 2. Reporting Results of HER2 Testing by Immunohistochemistry (IHC) for Trastuzumab Use Based on the Enrollment Criteria for the Phase II Clinical Trial NCT013670027,8,9,10,11",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "must_order_reflex_in_situ_hybridization_test_same_specimen",
+          "label": "* Must order reflex in situ hybridization test (same specimen).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastatic_breast_cancer_with_low_expression_of_her2_defined_as_a_ihc_score_of_1_or_score_of_2_with_",
+          "label": "Metastatic breast cancer with low expression of HER2 (defined as a IHC score of 1+ or score of 2+ with negative in situ hybridization) as well as those with weak incomplete HER2 expression in less than 10% of tumor cells can be treated with trastuzumab-deruxtecan (T-DXd), an antibody-drug conjugate (ADC). HER2-positive solid tumors, including gynecologic tumors, often progress on standard therapy and have a poor prognosis. The DESTINY-PanTumor02 trial (NCT04482309) recently showed that T-DXd improves PFS and OS in patients with multiple tumor types, with IHC 3+ tumors exhibiting the greatest benefit. The highest objective response rates were observed in gynecologic carcinomas among all tumor types (57.5% for endometrial, 50.0% for cervical, 45.0% for ovarian).15 The enrollment criteria for this trial used guidelines for HER2 testing in gastric cancer and included tumors with 3+ or 2+ HER2 IHC scores, without considering HER2 gene amplification status.15,16 Based on these findings, in April 2024, the Food and Drug Administration (FDA) granted a “tumor agnostic” accelerated approval to T-DXd for adult patients with unresectable or metastatic solid tumors with 3+ HER2 IHC expression who have failed prior systemic treatment and have no satisfactory alternative therapeutic options. Thus, determining T-DXd eligibility would require only HER2 IHC with the application of gastric cancer specific criteria, without determining gene amplification status in IHC 2+ tumors (Table 3).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_addition_statice_trial_demonstrated_that_t_dxd_is_effective_in_carcinosarcomas_with_an_objective_",
+          "label": "In addition, STATICE trial demonstrated that T-DXd is effective in carcinosarcomas, with an objective response rate of 54.5% in cases with IHC scores of at least 2+ and 70% in cases with IHC 1+ scores.17 Preliminary results of other clinical trials have also show promising results of other ADCs in advanced/metastatic solid tumors, including endometrial cancer. However, given the limited data available for HER2-low gynecologic cancers to date, reporting low levels of HER2 expression in gynecologic tumors is not required at this time.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_concordance_of_84_has_been_shown_in_final_her2_status_between_biopsycurettings_and_hysterectomy_sp",
+          "label": "A concordance of 84% has been shown in final HER2 status between biopsy/curettings and hysterectomy specimens.18 HER2 testing may be performed on either biopsy/curettings or hysterectomy specimens. However, HER2 testing of multiple specimens (biopsy/curetting, hysterectomy, metastatic sites) is encouraged in order to increase the rate of HER2 positivity and patient eligibility for targeted therapy.18",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_3_reporting_results_of_her2_testing_by_immunohistochemistry_ihc_for_trastuzumab_deruxtecan_use",
+          "label": "Table 3. Reporting Results of HER2 Testing by Immunohistochemistry (IHC) for Trastuzumab-Deruxtecan Use Based on the Enrollment Criteria for the DESTINY-PanTumor02 trial (NCT04482309)15,16",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "given_the_potential_need_for_rescoring_the_her2_expression_depending_on_the_clinical_indication_the_",
+          "label": "Given the potential need for rescoring the HER2 expression depending on the clinical indication, the percentage of tumor cells with strong complete or basolateral/lateral membrane staining may be reported, in addition to the overall HER2 IHC result.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_with_equivocal_2_ihc_scores_are_reflexed_to_fluorescent_in_situ_hybridization_fish_for_trastu",
+          "label": "Tumors with equivocal (2+) IHC scores are reflexed to fluorescent in situ hybridization (FISH). For trastuzumab use, a HER2/CEP17 ratio of ≥2.0 or a ratio of <2.0 and an average HER2 copy number of ≥6.0 per nucleus is considered positive for HER2 (ERBB2) gene amplification, similar to breast cancer (Table 4).9,10,12 Heterogeneity at the genetic level has been reported. A subset of tumor cells with gene amplification may be seen as group(s) of 20 or more cells (cluster amplification) or as isolated tumor cells (mosaic amplification).9,14 FISH signals should be counted in at least 20 contiguous tumor cells in conjunction with the highest protein expression by IHC. Heterogeneity in HER2 amplification should be reported when present.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "as_stated_above_since_the_destiny_pantumor02_trial_was_based_solely_on_her2_status_by_ihc_and_did_no",
+          "label": "As stated above, since the DESTINY-PanTumor02 trial was based solely on HER2 status by IHC and did not include FISH results for equivocal (2+) cases, FISH is not currently indicated in tumors being tested for T-DXd eligibility.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_4_reporting_results_of_her2_testing_by_dual_probe_fluorescence_in_situ_hybridization_fish_for_",
+          "label": "Table 4. Reporting Results of HER2 Testing by Dual-probe Fluorescence In Situ Hybridization (FISH) for Trastuzumab Use9,10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cagaanan_a_stelter_b_vu_n_et_al_her2_expression_in_endometrial_cancers_diagnosed_as_clear_cell_carci",
+          "label": "Cagaanan A, Stelter B, Vu N, et al. HER2 expression in endometrial cancers diagnosed as clear cell carcinoma. Int J Gynecol Pathol. 2022;41(2):132-141.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rottmann_d_snir_ol_wu_x_et_al_her2_testing_of_gynecologic_carcinosarcomas_tumor_stratification_for_p",
+          "label": "Rottmann D, Snir OL, Wu X, et al. HER2 testing of gynecologic carcinosarcomas: tumor stratification for potential targeted therapy. Mod Pathol. 2020;33(1):118-127.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yoshida_h_nishikawa_t_matsumoto_k_et_al_histopathological_features_of_her2_overexpression_in_uterine",
+          "label": "Yoshida H, Nishikawa T, Matsumoto K, et al. Histopathological features of HER2 overexpression in uterine carcinosarcoma: proposal for requirements in HER2 testing for targeted therapy. Virchows Arch. 2021;478(6):1161-1171.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vermij_l_horeweg_n_leon_castillo_a_et_al_her2_status_in_high_risk_endometrial_cancers_portec_3_relat",
+          "label": "Vermij L, Horeweg N, Leon-Castillo A, et al. HER2 status in high-risk endometrial cancers (PORTEC-3): Relationship with histotype, molecular classification, and clinical outcomes. Cancers (Basel). 2020;13(1):44.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buza_n_english_dp_santin_ad_hui_p_toward_standard_her2_testing_of_endometrial_serous_carcinoma_4_yea",
+          "label": "Buza N, English DP, Santin AD, Hui P. Toward standard HER2 testing of endometrial serous carcinoma: 4-year experience at a large academic center and recommendations for clinical practice. Mod Pathol. 2013;26(12):1605-1612.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nccn_clinical_practice_guidelines_in_oncology_nccn_guidelines_uterine_neoplasms_version_212024_acces",
+          "label": "NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®). Uterine Neoplasms. Version 21.2024; accessed May 1, 2024; https://www.nccn.org/professionals/physician_gls/pdf/uterine.pdf",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fader_an_roque_dm_siegel_e_et_al_randomized_phase_ii_trial_of_carboplatin_paclitaxel_versus_carbopla",
+          "label": "Fader AN, Roque DM, Siegel E, et al. Randomized phase II trial of carboplatin-paclitaxel versus carboplatin-paclitaxel-trastuzumab in uterine serous carcinomas that overexpress human epidermal growth factor receptor 2/neu. J Clin Oncol. 2018;36(20):2044-2051.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fader_an_roque_dm_siegel_e_et_al_randomized_phase_ii_trial_of_carboplatin_paclitaxel_compared_with_c",
+          "label": "Fader AN, Roque DM, Siegel E, et al. Randomized phase II trial of carboplatin-paclitaxel compared with carboplatin-paclitaxel-trastuzumab in advanced (Stage III-IV) or recurrent uterine serous carcinomas that overexpress Her2/Neu (NCT01367002): updated overall survival analysis. Clin Cancer Res. 2020;26(15):3928-3935.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buza_n_her2_testing_in_endometrial_serous_carcinoma_time_for_standardized_pathology_practice_to_meet",
+          "label": "Buza N. HER2 testing in endometrial serous carcinoma: time for standardized pathology practice to meet the clinical demand. Arch Pathol Lab Med. 2021;145(6):687-691.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buza_n_her2_testing_and_reporting_in_endometrial_serous_carcinoma_practical_recommendations_for_her2",
+          "label": "Buza N. HER2 testing and reporting in endometrial serous carcinoma: practical recommendations for HER2 immunohistochemistry and fluorescent in situ hybridization: proceedings of the ISGyP companion society session at the 2020 USCAP annual meeting. Int J Gynecol Pathol. 2021;40(1):17-23.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buza_n_euscher_ed_matias_guiu_x_et_al_reproducibility_of_scoring_criteria_for_her2_immunohistochemis",
+          "label": "Buza N, Euscher ED, Matias-Guiu X, et al. Reproducibility of scoring criteria for HER2 immunohistochemistry in endometrial serous carcinoma: a multiinstitutional interobserver agreement study. Mod Pathol. 2021;34(6):1194-1202.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wolff_ac_somerfield_mr_dowsett_m_et_al_human_epidermal_growth_factor_receptor_2_testing_in_breast_ca",
+          "label": "Wolff AC, Somerfield MR, Dowsett M, et al. Human Epidermal Growth Factor Receptor 2 testing in breast cancer: ASCO-College of American Pathologists guideline update. J Clin Oncol. 2023;41(22):3867-3872.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hashem_s_zare_sy_fadare_o_her2_status_assessment_in_endometrial_serous_carcinoma_comparative_analysi",
+          "label": "Hashem S, Zare SY, Fadare O. HER2 status assessment in endometrial serous carcinoma: Comparative analysis of two proposed testing and interpretation algorithms. Int J Gynecol Pathol. 2024;43(1):4-14.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buza_n_hui_p_marked_heterogeneity_of_her2neu_gene_amplification_in_endometrial_serous_carcinoma_gene",
+          "label": "Buza N, Hui P. Marked heterogeneity of HER2/NEU gene amplification in endometrial serous carcinoma. Genes Chromosomes Cancer. 2013;52(12):1178-1186.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meric_bernstam_f_makker_v_oaknin_a_et_al_efficacy_and_safety_of_trastuzumab_deruxtecan_in_patients_w",
+          "label": "Meric-Bernstam F, Makker V, Oaknin A, et al. Efficacy and safety of trastuzumab deruxtecan in patients with HER2-expressing solid tumors: Primary results from the DESTINY-PanTumor02 phase II trial. J Clin Oncol. 2024;42(1):47-58.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bang_yj_van_cutsem_e_feyereislova_a_et_al_trastuzumab_in_combination_with_chemotherapy_versus_chemot",
+          "label": "Bang YJ, Van Cutsem E, Feyereislova A, et al. Trastuzumab in combination with chemotherapy versus chemotherapy alone for treatment of HER2-positive advanced gastric or gastro-oesophageal junction cancer (ToGA): a phase 3, open-label, randomized controlled trial. Lancet. 2010;376(9742):687-697.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nishikawa_t_hasegawa_k_matsumoto_k_et_al_trastuzumab_deruxtecan_for_human_epidermal_growth_factor_re",
+          "label": "Nishikawa T, Hasegawa K, Matsumoto K, et al. Trastuzumab deruxtecan for Human Epidermal Growth Factor Receptor 2-expressing advanced or recurrent uterine carcinosarcoma (NCCH1615): The STATICE trial. J Clin Oncol. 2023; 41:2789-2799.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rottmann_d_assem_h_matsumoto_n_et_al_does_specimen_type_have_an_impact_on_her2_status_in_endometrial",
+          "label": "Rottmann D, Assem H, Matsumoto N, et al. Does specimen type have an impact on HER2 status in endometrial serous carcinoma? discordant HER2 status of paired endometrial biopsy and hysterectomy specimens in the presence of frequent intratumoral heterogeneity. Int J Gynecol Pathol. 2021;40(3):263-271.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mismatch_repair_mmr_testing_may_be_performed_for_diagnostic_screening_prognostic_and_therapeutic_pur",
+          "label": "Mismatch repair (MMR) testing may be performed for diagnostic, screening, prognostic, and therapeutic purposes. MMR-deficiency would favor endometrioid or clear cell carcinoma depending on the differential diagnosis. Approximately 30% of all endometrial carcinomas, 14% of ovarian endometrioid carcinomas, and 6% of ovarian clear cell carcinomas are MMR-deficient. Lynch syndrome accounts for 5-6% of endometrial and 1% of ovarian carcinomas. Lynch syndrome screening can be performed by universal MMR testing of all endometrial carcinomas (including carcinosarcoma), and endometriosis associated extrauterine carcinomas, such as endometrioid and clear cell carcinomas. Immunohistochemistry (IHC) for MMR proteins and p53 (see Note E) has been included in the diagnostic algorithm for the integrated histomolecular classification of endometrial carcinoma by the World Health Organization to identify molecular subtypes that have prognostic significance.1 In addition, patients with MMR-deficient endometrial carcinoma are eligible for immune checkpoint inhibitors.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "universal_screening_for_lynch_syndrome_may_be_performed_using_different_algorithms_incorporating_mmr",
+          "label": "Universal screening for Lynch syndrome may be performed using different algorithms incorporating MMR IHC and/or polymerase chain reaction (PCR) testing for microsatellite instability (MSI) in formalin-fixed, paraffin-embedded tumor tissue (see Note H for MSI testing).3,4 MMR proteins work in dimers – loss of MLH1 expression leads to loss of MLH1 and PMS2, while loss of MSH2 expression leads to loss of MSH2 and MSH6. Although staining for all 4 MMR proteins (MLH1, PMS2, MSH2, MSH6) is the standard, a two-antibody testing algorithm (PMS2 and MSH6 only) has been validated in a recent meta-analysis and can be used in certain circumstances (e.g., limited tumor tissue) or when desired.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mmr_ihc_is_reported_as_intact_expression_loss_of_expression_or_subclonal_loss_of_expression_intact_n",
+          "label": "MMR IHC is reported as intact expression, loss of expression, or subclonal loss of expression. Intact (normal) expression of MMR proteins is nuclear staining with similar or stronger intensity compared with the background internal control cells (endometrial stromal cells, smooth muscle cells, non-neoplastic epithelial cells, inflammatory cells). Loss of expression denotes absence of nuclear staining in tumor cells and should only be reported if internal control cells are positive.6,7 Subclonal loss of MMR protein expression occurs when there are discrete areas of tumor with complete loss of nuclear expression adjacent to tumor cells with retained expression. It should be distinguished from patchy staining that can be seen in cases of intact expression. Subclonal loss of MLH1/ PMS2 and MSH6 expression has been described in 7% of endometrial endometrioid carcinomas and may be due to epigenetic silencing such as MLH1 promoter methylation or POLE mutations.6,8 Subclonal loss may rarely occur in Lynch syndrome associated endometrial carcinomas;8 therefore, it is important not to regard any positive nuclear staining as intact expression.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "interpretation_of_mmr_ihc_may_be_affected_by_technical_variables_as_well_as_the_pathologists_trainin",
+          "label": "Interpretation of MMR IHC may be affected by technical variables as well as the pathologist's training and experience level. Missense mutations in MMR genes may result in intact IHC expression due to a non-functional protein product. Aberrant expression patterns include cytoplasmic, nucleolar, or punctate nuclear staining, and should not be interpreted as intact expression.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "patients_with_patterns_reflecting_a_high_likelihood_of_lynch_syndrome_should_be_referred_to_genetic_",
+          "label": "Patients with patterns reflecting a high likelihood of Lynch syndrome should be referred to genetic counseling. No loss of nuclear expression of MMR proteins indicates a low probability of MSI-high phenotype. Loss of DNA MMR protein expression is may be due to MLH1 promoter methylation or mutation (either germline or somatic) in one of the MMR genes.9,10 The pattern of specific MMR protein loss will help identify which gene is most likely to have a mutation (e.g., a patient whose tumor shows loss of MSH2 and MSH6 expression, but retention of MLH1 and PMS2 expression, may have an MSH2 germline mutation). Loss of nuclear expression of MLH1 and PMS2 should be triaged for MLH1 promoter methylation studies. The presence of MLH1 promoter methylation suggests a sporadic tumor rather than a germline mutation, and further germline testing is likely not indicated. Absence of MLH1 promoter methylation suggests Lynch syndrome and sequencing and/or large deletion/duplication testing of germline MLH1 is indicated.11 Loss of nuclear expression of MSH2 and MSH6, isolated loss of MSH6 or PMS2 all have a high probability of Lynch syndrome and genetic counseling should be considered. Subclonal loss of MMR expression should also be reported along with the most likely explanation (if known, e.g. POLE mutation).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_college_of_american_pathologists_in_collaboration_with_the_association_for_molecular_pathology_a",
+          "label": "The College of American Pathologists in Collaboration with the Association for Molecular Pathology and Fight Colorectal Cancer published guidelines for the use of MMR and MSI testing as immunotherapeutic predictor: a) To determine eligibility of endometrial cancer patients for immune checkpoint inhibitor therapy, MMR IHC is preferred over MSI testing by PCR or next generation sequencing (strong recommendation); and b) To determine eligibility of cancer types other than colorectal, gastroesophageal, small bowel, and endometrial carcinomas, the optimal approach for the detection of MMR defects has not been established (conditional recommendation).12,13 In addition, Society for Immunotherapy of Cancer (SITC) clinical practice guideline also recommends MMR IHC as first line immunotherapy biomarker for endometrial carcinoma.14 The preference of MMR IHC is related to accessibility, relatively low cost, and the ability to identify the specific MMR protein that is deficient.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "matias_guiu_x_oliva_e_mccluggage_wg_et_al_tumours_of_the_uterine_corpus_in_who_classification_of_tum",
+          "label": "Matias-Guiu X, Oliva E, McCluggage WG, et al. Tumours of the uterine corpus. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Nov 20]. (WHO classification of tumours series, 5th ed.; vol. 4). Available from: https://tumourclassification.iarc.who.int/chapters/34",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "casey_l_singh_n_pole_mmr_and_msi_testing_in_endometrial_cancer_proceedings_of_the_isgyp_companion_so",
+          "label": "Casey L, Singh N. POLE, MMR, and MSI testing in endometrial cancer: proceedings of the ISGyP Companion Society session at the USCAP 2020 annual meeting. Int J Gynecol Pathol. 2020;40(1):5-16.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mcconechy_mk_talhouk_a_li_chang_hh_et_al_detection_of_dna_mismatch_repair_mmr_deficiencies_by_immuno",
+          "label": "McConechy MK, Talhouk A, Li-Chang HH, et al. Detection of DNA mismatch repair (MMR) deficiencies by immunohistochemistry can effectively diagnose the microsatellite instability (MSI) phenotype in endometrial carcinomas. Gynecol Oncol. 2015; 137(2):306-310.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buza_n_immunohistochemistry_in_gynecologic_carcinomas_practical_update_with_diagnostic_and_clinical_",
+          "label": "Buza N. Immunohistochemistry in gynecologic carcinomas: Practical update with diagnostic and clinical considerations based on the 2020 WHO classification of tumors. Semin Diagn Pathol. 2022;39(1):58-77.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aiyer_kts_doeleman_t_ryan_na_et_al_validity_of_a_two_antibody_testing_algorithm_for_mismatch_repair_",
+          "label": "Aiyer KTS, Doeleman T, Ryan NA, et al. Validity of a two-antibody testing algorithm for mismatch repair deficiency testing in cancer; a systematic literature review and meta-analysis. Mod Pathol. 2022;35(12):1775-1783.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "watkins_jc_nucci_mr_ritterhouse_ll_et_al_unusual_mismatch_repair_immunohistochemical_patterns_in_end",
+          "label": "Watkins JC, Nucci MR, Ritterhouse LL, et al. Unusual mismatch repair immunohistochemical patterns in endometrial carcinoma. Am J Surg Pathol. 2016;40(7):909-916.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stelloo_e_jansen_aml_osse_em_et_al_practical_guidance_for_mismatch_repair_deficiency_testing_in_endo",
+          "label": "Stelloo E, Jansen AML, Osse EM, et al. Practical guidance for mismatch repair-deficiency testing in endometrial cancer. Ann Oncol. 2017; 28:96-102.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mendoza_rp_wang_p_schulte_jj_et_al_endometrial_carcinomas_with_subclonal_loss_of_mismatch_repair_pro",
+          "label": "Mendoza RP, Wang P, Schulte JJ, et al. Endometrial carcinomas with subclonal loss of mismatch repair proteins: a clinicopathologic and genomic Study. Am J Surg Pathol. 2023; 47(5):589-598.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ligtenberg_mj_kuiper_rp_chan_tl_et_al_heritable_somatic_methylation_and_inactivation_of_msh2_in_fami",
+          "label": "Ligtenberg MJ, Kuiper RP, Chan TL, et al. Heritable somatic methylation and inactivation of MSH2 in families with Lynch syndrome due to deletion of the 3’ exons of TACSTD1. Nat Genet. 2009; 41(1):112-117.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "geurts_giele_wr_leenen_ch_dubbink_hj_et_al_somatic_aberrations_of_mismatch_repair_genes_as_a_cause_o",
+          "label": "Geurts-Giele WR, Leenen CH, Dubbink HJ, et al. Somatic aberrations of mismatch repair genes as a cause of microsatellite-unstable cancers. J Pathol. 2014;234(4):548-559.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "niessen_rc_hofstra_rm_westers_h_et_al_germline_hypermethylation_of_mlh1_and_epcam_deletions_are_a_fr",
+          "label": "Niessen RC, Hofstra RM, Westers H, et al. Germline hypermethylation of MLH1 and EPCAM deletions are a frequent cause of Lynch syndrome. Genes Chromosomes Cancer. 2009;48(8):737-744.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bartley_an_mills_am_konnick_e_et_al_mismatch_repair_and_microsatellite_instability_testing_for_immun",
+          "label": "Bartley AN, Mills AM, Konnick E, et al. Mismatch repair and microsatellite instability testing for immune checkpoint inhibitor therapy: Guideline from the College of American Pathologists in collaboration with the Association for Molecular Pathology and Fight Colorectal Cancer. Arch Pathol Lab Med. 2022;146(10):1194-1210.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vikas_p_messersmith_h_compton_c_et_al_mismatch_repair_and_microsatellite_instability_testing_for_imm",
+          "label": "Vikas P, Messersmith H, Compton C, et al. Mismatch repair and microsatellite instability testing for immune checkpoint inhibitor therapy: ASCO endorsement of College of American Pathologists Guideline. J Clin Oncol. 2023;41(10):1943-1948.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "disis_ml_adams_sf_bajpai_j_et_al_society_for_immunotherapy_of_cancer_sitc_clinical_practice_guidelin",
+          "label": "Disis ML, Adams SF, Bajpai J, et al. Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immunotherapy for the treatment of gynecologic cancer. J Immunother Cancer. 2023;11(6):e006624. Erratum in: J Immunother Cancer. 2023;11(6):1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "p53_is_a_tumor_suppressor_protein_that_regulates_cell_proliferation_dna_repair_apoptosis_and_genetic",
+          "label": "p53 is a tumor suppressor protein that regulates cell proliferation, DNA repair, apoptosis, and genetic stability. Inactivation of p53 occurs through mutations of TP53 or deactivation of p53 through binding proteins (e.g., expression of the E6 oncoprotein from high-risk human papillomavirus), resulting in dysregulated growth. Mutations result in abnormal protein expression that can be detected by immunohistochemistry (IHC). A p53 immunostain may be performed in endometrial carcinomas for histotyping or molecular subtyping, ovarian carcinomas, granulosa cell tumors with high-grade transformation, mesenchymal tumors, and vulvar intraepithelial lesions and squamous cell carcinomas.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_latest_edition_of_the_world_health_organization_classification_of_female_genital_tumors_has_incl",
+          "label": "The latest edition of the World Health Organization classification of female genital tumors has included p53 status into its diagnostic algorithm for the integrated histomolecular classification of endometrial carcinoma.3 The Cancer Genome Atlas (TCGA) identified four distinct molecular subtypes of endometrial carcinoma with significant differences in progression-free survival: 1) POLE mutant (ultramutated); 2) Microsatellite instability high (MSI-H; hypermutated); 3) Copy number low; and 4) Copy number high.4 POLE mutated tumors have a favorable prognosis, copy number high (TP53 mutated) tumors have a poor prognosis, while MSI-H and copy number low tumors exhibit an intermediate clinical behavior. A diagnostic algorithm using surrogate IHC markers has been validated in subsequent studies and includes IHC for p53 and mismatch repair (MMR) proteins, and POLE mutation analysis.5,6,7 In contrast to MMR and p53 IHC, limited availability of POLE mutation analysis hinders the universal adoption of this algorithm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tp53_mutations_are_identified_in_most_adnexal_high_grade_serous_carcinomas_endometrial_serous_carcin",
+          "label": "TP53 mutations are identified in most adnexal high-grade serous carcinomas, endometrial serous carcinomas and carcinosarcomas, as well as a subset of endometrioid (up to 5% of low-grade and 20% of high-grade) carcinomas, clear cell carcinomas (at least 30%) and un-/dedifferentiated carcinomas (approximately 31%).1,8 An abnormal (mutated) IHC pattern serves as a surrogate marker for TP53 gene mutation status. The abnormal patterns are:1,2,9 1) Overexpression (diffuse, strong nuclear positivity) in at least 80% of tumor cells due to a missense mutation; 2) Null-type (complete absence of nuclear and cytoplasmic reactivity) arise due to a variety of mechanisms, including insertions, deletions, nonsense or frameshift mutations of the TP53 gene. It is important to ensure that internal positive control cells (lymphocytes, non-neoplastic cells) are present and show staining; 3) Cytoplasmic staining with or without nuclear reactivity, often resulting from a mutation at the nuclear localization domain that does not allow p53 to enter the nucleus efficiently, thereby resulting in loss of function.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_normal_or_wild_type_pattern_of_reactivity_denotes_nuclear_staining_of_varying_intensity_usually_",
+          "label": "The normal or “wild-type” pattern of reactivity denotes nuclear staining of varying intensity, usually in association with non-mutated TP53 gene. Of note, 4% of high-grade serous carcinomas have been shown to display wild-type p53 pattern by IHC while harboring a loss of function mutation in the TP53 gene.10 To prevent confusion, p53 IHC expression should be reported as normal (wild-type) or abnormal with the pattern of abnormal expression in parenthesis (Table 5).1,2 TP53 gene mutation status can also be specified if known.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "subclonal_abnormal_p53_pattern_has_been_described_in_up_to_21_of_endometrial_carcinomas_usually_sugg",
+          "label": "Subclonal abnormal p53 pattern has been described in up to 21% of endometrial carcinomas, usually suggesting a secondary mutational event in the setting of MMR-deficiency or POLE mutations.1,2 11 In addition, subclonal abnormal p53 pattern may indicate a mixed (serous and endometrioid, or serous and clear cell) carcinoma. Correlation between the p53 protein expression and morphologic features can help identify a mixed carcinoma. Ovarian mucinous borderline tumors and mucinous carcinomas may also show subclonal abnormal p53 pattern or intratumoral heterogeneity, with abnormal overexpression seen in the basal layer of the neoplastic glands while sparing superficial areas (“terminal differentiation” pattern).12",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "accuracy_of_p53_ihc_may_be_impacted_by_a_number_of_variables_there_are_interlaboratory_differences_i",
+          "label": "Accuracy of p53 IHC may be impacted by a number of variables. There are interlaboratory differences in p53 IHC protocols, with the D07 clone showing the best performance and a high interobserver agreement.10 Although experts have a high agreement for p53 IHC interpretation in biopsy samples13 trainees and less experienced pathologists may need to familiarize themselves with the abnormal expression patterns. Lastly, p53 IHC may be significantly affected by non-optimized antigen retrieval, use of archival (weeks old) tissue sections, poor fixation, or other variables. On the other hand, some tumors may show staining that is significantly enhanced above background but failing to meet threshold for overexpression. In cases of ambiguous p53 IHC expression, both biopsy and hysterectomy specimens may be tested, and TP53 gene sequencing may be considered.11",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_5_reporting_results_of_p53_status_by_immunohistochemistry",
+          "label": "Table 5. Reporting Results of p53 Status by Immunohistochemistry",
+          "required": true,
+          "type": "free_text",
+          "condition": "IHC"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buza_n_immunohistochemistry_in_gynecologic_carcinomas_practical_update_with_diagnostic_and_clinical_",
+          "label": "Buza N. Immunohistochemistry in gynecologic carcinomas: Practical update with diagnostic and clinical considerations based on the 2020 WHO classification of tumors. Semin Diagn Pathol. 2022;39(1):58-77.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "köbel_m_kang_ey_the_many_uses_of_p53_immunohistochemistry_in_gynecologic_pathology_proceedings_of_th",
+          "label": "Köbel M, Kang EY. The many uses of p53 immunohistochemistry in gynecologic pathology: proceedings of the ISGyP Companion Society session at the 2020 USCAP annual meeting. Int J Gynecol Pathol. 2021;40(1):32-40.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "matias_guiu_x_oliva_e_mccluggage_wg_et_al_tumours_of_the_uterine_corpus_in_who_classification_of_tum",
+          "label": "Matias-Guiu X, Oliva E, McCluggage WG, et al. Tumours of the uterine corpus. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2020 Nov 20]. (WHO classification of tumours series, 5th ed.; vol. 4). Available from: https://tumourclassification.iarc.who.int/chapters/34",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cancer_genome_atlas_research_network_kandoth_c_schultz_n_cherniack_ad_et_al_integrated_genomic_chara",
+          "label": "Cancer Genome Atlas Research Network; Kandoth C, Schultz N, Cherniack AD, et al. Integrated genomic characterization of endometrial carcinoma. Nature. 2013;497(7447):67-73. Erratum in: Nature. 2013;500(7461):242.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "talhouk_a_hoang_ln_mcconechy_mk_et_al_molecular_classification_of_endometrial_carcinoma_on_diagnosti",
+          "label": "Talhouk A, Hoang LN, McConechy MK, et al. Molecular classification of endometrial carcinoma on diagnostic specimens is highly concordant with final hysterectomy: Earlier prognostic information to guide treatment. Gynecol Oncol. 2016;143(1):46-53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "talhouk_a_mcconechy_mk_leung_s_et_al_confirmation_of_promise_a_simple_genomics_based_clinical_classi",
+          "label": "Talhouk A, McConechy MK, Leung S, et al. Confirmation of ProMisE: A simple, genomics-based clinical classifier for endometrial cancer. Cancer. 2017;123(5):802-813.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kommoss_s_mcconechy_mk_kommoss_f_et_al_final_validation_of_the_promise_molecular_classifier_for_endo",
+          "label": "Kommoss S, McConechy MK, Kommoss F, et al. Final validation of the ProMisE molecular classifier for endometrial carcinoma in a large population-based case series. Ann Oncol. 2018;29(5):1180-1188.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ramalingam_p_masand_rp_euscher_ed_malpica_a_undifferentiated_carcinoma_of_the_endometrium_an_expande",
+          "label": "Ramalingam P, Masand RP, Euscher ED, Malpica A. Undifferentiated carcinoma of the endometrium: An expanded immunohistochemical analysis including PAX-8 and basal-like carcinoma surrogate markers. Int J Gynecol Pathol. 2016;35(5):410-418.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rabban_jt_garg_k_ladwig_nr_et_al_cytoplasmic_pattern_p53_immunoexpression_in_pelvic_and_endometrial_",
+          "label": "Rabban JT, Garg K, Ladwig NR, et al. Cytoplasmic pattern p53 immunoexpression in pelvic and endometrial carcinomas with TP53 mutation involving nuclear localization domains: an uncommon but potential diagnostic pitfall with clinical implications. Am J Surg Pathol. 2021;45(11):1441-1451.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "köbel_m_piskorz_am_lee_s_et_al_optimized_p53_immunohistochemistry_is_an_accurate_predictor_of_tp53_m",
+          "label": "Köbel M, Piskorz AM, Lee S, et al. Optimized p53 immunohistochemistry is an accurate predictor of TP53 mutation in ovarian carcinoma. J Pathol Clin Res. 2016;2(4):247-258.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vermij_l_léon_castillo_a_singh_n_et_al_p53_immunohistochemistry_in_endometrial_cancer_clinical_and_m",
+          "label": "Vermij L, Léon-Castillo A, Singh N, et al. p53 immunohistochemistry in endometrial cancer: clinical and molecular correlates in the PORTEC-3 trial. Mod Pathol. 2022;35(10):1475-1483.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kang_ey_cheasley_d_lepage_c_et_al_refined_cut_off_for_tp53_immunohistochemistry_improves_prediction_",
+          "label": "Kang EY, Cheasley D, LePage C, et al. Refined cut-off for TP53 immunohistochemistry improves prediction of TP53 mutation status in ovarian mucinous tumors: implications for outcome analyses. Mod Pathol. 2021;34(1):194-206.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singh_n_piskorz_am_bosse_t_et_al_p53_immunohistochemistry_is_an_accurate_surrogate_for_tp53_mutation",
+          "label": "Singh N, Piskorz AM, Bosse T, et al. p53 immunohistochemistry is an accurate surrogate for TP53 mutational analysis in endometrial carcinoma biopsies. J Pathol. 2020; 250:336-345.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunotherapy_with_immune_checkpoint_inhibitors_can_be_effective_in_patients_with_cervical_and_endom",
+          "label": "Immunotherapy with immune checkpoint inhibitors can be effective in patients with cervical and endometrial carcinomas.1,2,3,4 Based on the results of KEYNOTE 158 (NCT02628067) trial, in 2018 the Food and Drug Administration (FDA) approved pembrolizumab for PD-L1 expressing recurrent or metastatic cervical cancer with disease progression on or after chemotherapy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_determine_eligibility_for_immunotherapy_in_cervical_cancer_patients_pd_l1_immunohistochemistry_ih",
+          "label": "To determine eligibility for immunotherapy in cervical cancer patients, PD-L1 immunohistochemistry (IHC) is performed using the FDA-approved 22C3 pharmDx Kit (Agilent Technologies, Santa Clara, CA) on the Dako Autostainer (Dako, Carpinteria, CA). PD-L1 is reported using the Combined Positive Score (CPS) (Table 6). Specimen adequacy requires a minimum of 100 viable tumor cells in a slide. The CPS is determined by dividing the total number of PD-L1 positive cells (tumor cells and immune cells, including lymphocytes and macrophages) by the total number of viable tumor cells and multiplying it by 100. The maximum CPS is defined as 100.5 PD-L1 expression is evaluated and averaged in the entire tumor area, rather than hot spots. In order to capture focal expression, 20x objective should be used. PD-L1 positive cells include tumor cells with membrane staining of any intensity and immune cells with either membrane or cytoplasmic staining. Only tumor associated (either intra- or peritumoral, including lymphoid aggregates) immune cells are counted. Stromal cells, neutrophils and plasma cells should be excluded. Using the cut-off of CPS ≥1, up to 82% of cervical carcinomas are PD-L1 positive.4,6 Experienced gynecologic pathologists have been shown to achieve substantial interobserver agreement in the interpretation of PD-L1 CPS.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_6_reporting_results_of_pd_l1_testing_by_immunohistochemistry",
+          "label": "Table 6. Reporting Results of PD-L1 Testing by Immunohistochemistry",
+          "required": true,
+          "type": "free_text",
+          "condition": "IHC"
+        },
+        {
+          "field_id": "pd_l1_testing_may_also_be_requested_on_vulvar_and_endometrial_cancers_up_to_50_of_vulvar_cancers_exp",
+          "label": "PD-L1 testing may also be requested on vulvar and endometrial cancers. Up to 50% of vulvar cancers express PD-L1. Although there is no current FDA approval, there has been some response in case reports,8 and the current National Comprehensive Cancer Network Guidelines recommend pembrolizumab is a second-line, useful in certain circumstances option for PD-L1-expressing or mismatch repair (MMR)-deficient / microsatellite instability high (MSI-H) advanced or recurrent / metastatic vulvar cancer.9 For previously treated patients with recurrent or metastatic vulvar or vaginal squamous cell carcinoma, Society for Immunotherapy of Cancer (SITC) also recommends second-line treatment with pembrolizumab (tumors with PD-L1 expression, high tumor mutational burden, MMR-deficiency or MSI-H status) or nivolumab (human papillomavirus associated tumors).10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_endometrial_cancer_patients_pd_l1_testing_is_not_required_as_eligibility_for_immunotherapy_is_det",
+          "label": "In endometrial cancer patients, PD-L1 testing is not required as eligibility for immunotherapy is determined based on MMR/MSI status. Approximately 80% of endometrial cancers are positive for PD-1 and PD-L1 expression, with increased PD-L1 expression in MMR-deficient tumors.11,12 PD-L1 testing can be considered for patients with normal MMR/MSI results.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "marabelle_a_le_dt_ascierto_pa_et_al_efficacy_of_pembrolizumab_in_patients_with_noncolorectal_high_mi",
+          "label": "Marabelle A, Le DT, Ascierto PA, et al. Efficacy of pembrolizumab in patients with noncolorectal high microsatellite instability/mismatch repair-deficient cancer: Results from the phase II KEYNOTE-158 study. J Clin Oncol. 2020;38(1):1-10.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chung_hc_ros_w_delord_jp_et_al_efficacy_and_safety_of_pembrolizumab_in_previously_treated_advanced_c",
+          "label": "Chung HC, Ros W, Delord JP, et al. Efficacy and safety of pembrolizumab in previously treated advanced cervical cancer: Results from the phase II KEYNOTE-158 study. J Clin Oncol. 2019;37(17):1470-1478.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "frenel_js_le_tourneau_c_oneil_b_et_al_safety_and_efficacy_of_pembrolizumab_in_advanced_programmed_de",
+          "label": "Frenel JS, Le Tourneau C, O'Neil B, et al. Safety and efficacy of pembrolizumab in advanced, Programmed Death Ligand 1-positive cervical cancer: Results from the phase Ib KEYNOTE-028 trial. J Clin Oncol. 2017;35(36):4035-4041.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "santin_ad_deng_w_frumovitz_m_et_al_phase_ii_evaluation_of_nivolumab_in_the_treatment_of_persistent_o",
+          "label": "Santin AD, Deng W, Frumovitz M, et al. Phase II evaluation of nivolumab in the treatment of persistent or recurrent cervical cancer (NCT02257528/NRG-GY002). Gynecol Oncol. 2020;157(1):161-166.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mills_am_pd_l1_interpretation_in_cervical_carcinomas_proceedings_of_the_isgyp_companion_society_sess",
+          "label": "Mills AM. PD-L1 Interpretation in cervical carcinomas: Proceedings of the ISGyP companion Society Session at the 2020 USCAP Annual Meeting. Int J Gynecol Pathol. 2021;40(1):1-4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kim_m_kim_h_suh_dh_et_al_identifying_rational_candidates_for_immunotherapy_targeting_pd_1pd_l1_in_ce",
+          "label": "Kim M, Kim H, Suh DH, et al. Identifying rational candidates for immunotherapy targeting PD-1/PD-L1 in cervical cancer. Anticancer Res. 2017;37(9):5087-5094.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mills_am_bennett_ja_banet_n_et_al_interobserver_agreement_on_the_interpretation_of_programmed_death_",
+          "label": "Mills AM, Bennett JA, Banet N, et al. Interobserver agreement on the interpretation of Programmed Death-ligand 1 (PD-L1) Combined Positive Score (CPS) among gynecologic pathologists. Am J Surg Pathol. 2023;47(8):889-896.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shields_lbe_gordinier_me_pembrolizumab_in_recurrent_squamous_cell_carcinoma_of_the_vulva_case_report",
+          "label": "Shields LBE, Gordinier ME. Pembrolizumab in recurrent squamous cell carcinoma of the vulva: Case Report and review of the literature. Gynecol Obstet Invest. 2019;84(1):94-98.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nccn_clinical_practice_guidelines_in_oncology_nccn_guidelines_vulvar_cancer_version_42024_accessed_m",
+          "label": "NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®). Vulvar Cancer. Version 4.2024; accessed May 1, 2024; https://www.nccn.org/professionals/physician_gls/pdf/vulvar.pdf",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "disis_ml_adams_sf_bajpai_j_et_al_society_for_immunotherapy_of_cancer_sitc_clinical_practice_guidelin",
+          "label": "Disis ML, Adams SF, Bajpai J, et al. Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immunotherapy for the treatment of gynecologic cancer. J Immunother Cancer. 2023;11(6):e006624. Erratum in: J Immunother Cancer. 2023;11(6):1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "green_ak_feinberg_j_makker_v_a_review_of_immune_checkpoint_blockade_therapy_in_endometrial_cancer_am",
+          "label": "Green AK, Feinberg J, Makker V. A Review of immune checkpoint blockade therapy in endometrial cancer. Am Soc Clin Oncol Educ Book. 2020; 40:1-7.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sloan_ea_ring_kl_willis_bc_et_al_pd_l1_expression_in_mismatch_repair_deficient_endometrial_carcinoma",
+          "label": "Sloan EA, Ring KL, Willis BC, et al. PD-L1 expression in mismatch repair-deficient endometrial carcinomas, including Lynch syndrome-associated and MLH1 promoter hypermethylated tumors. Am J Surg Pathol. 2017;41(3):326-333.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folate_a_naturally_occurring_form_of_vitamin_b9_is_essential_in_dna_synthesis_repair_and_methylation",
+          "label": "Folate, a naturally occurring form of vitamin B9, is essential in DNA synthesis, repair, and methylation. One of the ways folate can be transported across the cellular membrane is folate receptors. The alpha isoform, folate receptor alpha (FOLR1) and folate have an important role in carcinogenesis. Growing evidence suggests that FOLR1 is overexpressed in a variety of solid tumors, including ovarian, fallopian tube and endometrial cancers.1,2 In contrast, normal tissues only show low levels of FOLR1 expression (e.g., apical surfaces of some organs such as the kidney, lung and choroid plexus).3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_ovarian_and_other_solid_tumors_high_folr1_expression_has_been_shown_to_predict_resistance_to_chem",
+          "label": "In ovarian and other solid tumors, high FOLR1 expression has been shown to predict resistance to chemotherapy. Mirvetuximab soravtansine-gynx (MIRV) is a conjugate of a FOLR1-directed antibody and the maytansinoid microtubule inhibitor, DM4. Pre-clinical and clinical data first showed variable efficacy of MIRV in FOLR1-positive tumors (promising results in a phase I expansion study in 2017, and lack of significant benefit in the phase III FORWARD I study).4,5 After exploring MIRV only in tumors with high levels of FOLR1 using a different assay in the latter study, the phase II SORAYA trial supported the use of MIRV in this setting,6 which lead to accelerated approval of MIRV by the Food and Drug Administration (FDA) in November 2022 for patients with FOLR1-positive platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer who have received 1-3 prior systemic treatment regimens. There are several ongoing trials, including the MIRASOL, FORWARD II, MIROVA and others.7 The National Comprehensive Cancer Network Guidelines currently recommend MIRV in FOLR1-expressing recurrent platinum-resistant disease as a single agent or useful in certain circumstances in combination with bevacizumab, as well as in FOLR1-expressing recurrent platinum-sensitive disease useful in certain circumstances.8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_fda_approved_the_ventana_folr1_folr_21_rxdx_assay_ventana_medical_systems_roche_tissue_diagnosti",
+          "label": "The FDA approved the VENTANA FOLR1 (FOLR-2.1) RxDx Assay (VENTANA Medical Systems, Roche Tissue Diagnostics) as a companion diagnostic test to select patients for MIRV. This qualitative immunohistochemical (IHC) assay using mouse monoclonal anti-folate receptor alpha (FOLR1) is validated for formalin-fixed paraffin-embedded specimens. FOLR1 positivity is defined as at least 75% of viable tumor cells with at least moderate (i.e., moderate to strong) membrane staining (Table 7).6 Tumors with moderate to strong staining in less than 75% of tumor cells, weak staining in any proportion of tumor cells or no staining are considered FOLR1-negative. For positive and negative results, re-reading by an additional pathologist is recommended. If there are significant artifacts making interpretation challenging, FOLR1 can be reported as not evaluable.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_7_reporting_results_of_folate_receptor_alpha_folr1_testing_by_immunohistochemistry",
+          "label": "Table 7. Reporting Results of Folate Receptor Alpha (FOLR1) Testing by Immunohistochemistry",
+          "required": true,
+          "type": "free_text",
+          "condition": "IHC"
+        },
+        {
+          "field_id": "for_folr1_ihc_normal_fallopian_tube_should_be_used_as_a_positive_and_negative_control_the_expected_s",
+          "label": "For FOLR1 IHC, normal fallopian tube should be used as a positive and negative control. The expected staining patterns are predominantly moderate circumferential membrane expression of FOLR1 on the luminal surface of the epithelial cells, and absence of staining in the normal fallopian tube stroma. Strong apical membrane staining of the first layer of the luminal cells should be disregarded. A tumor case with at least moderate membrane staining may also be used for monitoring performance of reagents and instruments.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rubinsak_la_cohen_c_khanna_n_et_al_folate_receptor_alpha_expression_in_platinum_resistantrefractory_",
+          "label": "Rubinsak LA, Cohen C, Khanna N, et al. Folate receptor alpha expression in platinum resistant/refractory ovarian carcinomas and primary endocervical adenocarcinomas. Appl Immunohistochem Mol Morphol. 2018;26(8):567-572.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oshannessy_dj_somers_eb_smale_r_et_al_expression_of_folate_receptor_alpha_fra_in_gynecologic_maligna",
+          "label": "O’Shannessy DJ, Somers EB, Smale R, et al. Expression of folate receptor-alpha (FRA) in gynecologic malignancies and its relationship to the tumor type. Int J Gynecol Pathol. 2013; 32:258-268.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kelemen_le_the_role_of_folate_receptor_alpha_in_cancer_development_progression_and_treatment_cause_c",
+          "label": "Kelemen LE. The role of folate receptor alpha in cancer development, progression and treatment: cause, consequence or innocent bystander? Int J Cancer. 2006; 119:243-250.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moore_kn_martin_lp_omalley_dm_et_al_safety_and_activity_of_mirvetuximab_soravtansine_imgn853_a_folat",
+          "label": "Moore KN, Martin LP, O’Malley DM, et al. Safety and activity of mirvetuximab soravtansine (IMGN853), a folate receptor alpha-targeting antibody-drug conjugate, in platinum-resistant ovarian, fallopian tube, or primary peritoneal cancer: a phase I expansion study. J Clin Oncol. 2017; 35:1112-1118.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moore_kn_oza_am_colombo_n_et_al_phase_iii_randomized_trial_of_mirvetuximab_soravtansine_versus_chemo",
+          "label": "Moore KN, Oza AM, Colombo N, et al. Phase III, randomized trial of mirvetuximab soravtansine versus chemotherapy in patients with platinum-resistant ovarian cancer: primary analysis of FORWARD I. Ann Oncol. 2021; 32:757-765.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "matulonis_ua_lorusso_d_oaknin_a_et_al_efficacy_and_safety_of_mirvetuximab_soravtansine_in_patients_w",
+          "label": "Matulonis UA, Lorusso D, Oaknin A, et al. Efficacy and safety of mirvetuximab soravtansine in patients with platinum-resistant ovarian cancer with high folate receptor alpha expression: results from the SORAYA study. J Clin Oncol. 2023; 41:2436-2445.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bogani_g_coleman_rl_vergote_i_et_al_mirvetuximab_soravtansine_gynx_first_antibodyantigen_drug_conjug",
+          "label": "Bogani G, Coleman RL, Vergote I, et al. Mirvetuximab soravtansine-gynx: first antibody/antigen-drug conjugate (ADC) in advanced or recurrent ovarian cancer. Int J Gynecol Cancer. 2024;34(4):469-477.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nccn_clinical_practice_guidelines_in_oncology_nccn_guidelines_ovarian_cancer_including_fallopian_tub",
+          "label": "NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®). Ovarian cancer including fallopian tube cancer and primary peritoneal cancer. Version 1.2024; Accessed on May 1, 2024; https://www.nccn.org/professionals/physician_gls/pdf/ovarian.pdf",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "microsatellite_instability_msi_in_tumor_dna_is_defined_as_the_presence_of_short_repetitive_sequences",
+          "label": "Microsatellite instability (MSI) in tumor DNA is defined as the presence of short repetitive sequences that are not present in the corresponding germline DNA, usually due to a defective DNA mismatch repair (MMR) system. Patients with MMR-deficient or MSI-high (MSI-H) tumors may have a germline mutation in one of the MMR genes (e.g., MLH1, MSH2, MSH6, or PMS2) or, rarely, an altered EPCAM (TACSTD1) gene.1,2,3 Thus, MSI represents the product of defective MMR.4 MMR immunohistochemistry (IHC) is the primary testing method of choice in many institutions; however, if MMR IHC has not been performed, this testing should be recommended for any case that shows an MSI-H phenotype, because this information will help identify the gene that is most likely to have a germline (or somatic) mutation.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "studies_have_shown_variable_concordance_between_mmr_ihc_and_msi_testing_by_polymerase_chain_reaction",
+          "label": "Studies have shown variable concordance between MMR IHC and MSI testing by polymerase chain reaction (PCR), ranging from 58% to 93%.6,7,8,9 While both assays are equally sensitive in colorectal cancer, MSI testing has a higher false-negative rate (i.e., lower sensitivity) in endometrial cancer.10 Discordant results between MMR IHC and MSI testing may be due to retained MMR protein expression and minimal microsatellite shift in in some MSI-H tumors. Minimal microsatellite shift, defined as a 1-3 nucleotide repeat shift at an involved locus, is more common in endometrial cancer compared with colorectal cancer (52% vs 16%), coinciding with a higher frequency of MLH1/PMS2 loss (65% vs 33%) within the tumors showing minimal microsatellite shift, and a higher overall frequency of isolated MSH6 loss (15% vs 7%).11 In discordant cases, the laboratory should make sure that the same sample was used for MSI and MMR IHC testing and that there was no sample mix-up.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "msi_testing_protocols_are_similar_to_those_developed_for_colon_cancer_these_are_briefly_summarized_h",
+          "label": "MSI testing protocols are similar to those developed for colon cancer. These are briefly summarized here, but more complete details are available in the separately issued “Template for Reporting Results of Biomarker Testing of Specimens From Patients With Carcinoma of the Colon and Rectum”.5 Testing is generally performed with at least 5 microsatellite markers, generally mononucleotide or dinucleotide repeat markers. In 1998, a National Institutes of Health (NCI) consensus panel proposed that laboratories use a 5-marker panel consisting of 3 dinucleotide and 2 mononucleotide repeats for MSI testing. Recent data suggest that dinucleotide repeats may have lower sensitivity and specificity for identifying tumors with an MSI-H phenotype. Consequently, there has been a move towards including more mononucleotides and fewer dinucleotides in MSI testing panels. Many laboratories now use a commercially available kit for MSI testing that utilizes 5 mononucleotide markers.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "haraldsdottir_s_hampel_h_tomsic_j_et_al_colon_and_endometrial_cancers_with_mismatch_repair_deficienc",
+          "label": "Haraldsdottir S, Hampel H, Tomsic J, et al. Colon and endometrial cancers with mismatch repair deficiency can arise from somatic, rather than germline, mutations. Gastroenterology. 2014;147(6):1308-1316.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ligtenberg_mj_kuiper_rp_chan_tl_et_al_heritable_somatic_methylation_and_inactivation_of_msh2_in_fami",
+          "label": "Ligtenberg MJ, Kuiper RP, Chan TL, et al. Heritable somatic methylation and inactivation of MSH2 in families with Lynch syndrome due to deletion of the 3’ exons of TACSTD1. Nat Genet. 2009;41(1):112-117.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "geurts_giele_wr_leenen_ch_dubbink_hj_et_al_somatic_aberrations_of_mismatch_repair_genes_as_a_cause_o",
+          "label": "Geurts-Giele WR, Leenen CH, Dubbink HJ, et al. Somatic aberrations of mismatch repair genes as a cause of microsatellite-unstable cancers. J Pathol. 2014;234(4):548-559.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "casey_l_singh_n_pole_mmr_and_msi_testing_in_endometrial_cancer_proceedings_of_the_isgyp_companion_so",
+          "label": "Casey L, Singh N. POLE, MMR, and MSI testing in endometrial cancer: proceedings of the ISGyP Companion Society session at the USCAP 2020 annual meeting. Int J Gynecol Pathol. 2020; 40(1):5-16.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "burgart_lj_chopp_wv_jain_d_et_al_template_for_reporting_results_of_biomarker_testing_of_specimens_fr",
+          "label": "Burgart LJ, Chopp WV, Jain D, et al. Template for Reporting Results of Biomarker Testing of Specimens from Patients with Carcinoma of the Colon and Rectum. https://documents.cap.org/protocols/ColoRectal.Bmk_1.3.0.0.REL_CAPCP.pdf Published June 2021. Accessed May 14, 2024.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mcconechy_mk_talhouk_a_li_chang_hh_et_al_detection_of_dna_mismatch_repair_mmr_deficiencies_by_immuno",
+          "label": "McConechy MK, Talhouk A, Li-Chang HH, et al. Detection of DNA mismatch repair (MMR) deficiencies by immunohistochemistry can effectively diagnose the microsatellite instability (MSI) phenotype in endometrial carcinomas. Gynecol Oncol. 2015;137(2):306-310.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dedeurwaerdere_f_claes_kb_van_dorpe_j_et_al_comparison_of_microsatellite_instability_detection_by_im",
+          "label": "Dedeurwaerdere F, Claes KB, Van Dorpe J, et al. Comparison of microsatellite instability detection by immunohistochemistry and molecular techniques in colorectal and endometrial cancer. Sci Rep. 2021;11(1):12880.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ferguson_se_aronson_m_pollett_a_et_al_performance_characteristics_of_screening_strategies_for_lynch_",
+          "label": "Ferguson SE, Aronson M, Pollett A, et al. Performance characteristics of screening strategies for Lynch syndrome in unselected women with newly diagnosed endometrial cancer who have undergone universal germline mutation testing. Cancer. 2014;120(24):3932-3939.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hampel_h_frankel_w_panescu_j_et_al_screening_for_lynch_syndrome_hereditary_nonpolyposis_colorectal_c",
+          "label": "Hampel H, Frankel W, Panescu J, et al. Screening for Lynch syndrome (hereditary nonpolyposis colorectal cancer) among endometrial cancer patients. Cancer Res. 2006;66(15):7810-7817.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wang_y_shi_c_eisenberg_r_vnencak_jones_cl_differences_in_microsatellite_instability_profiles_between",
+          "label": "Wang Y, Shi C, Eisenberg R, Vnencak-Jones CL. Differences in microsatellite instability profiles between endometrioid and colorectal cancers: a potential cause for false-negative results? J Mol Diagn. 2017; 19:57-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wu_x_snir_o_rottmann_d_et_al_minimal_microsatellite_shift_in_microsatellite_instability_high_endomet",
+          "label": "Wu X, Snir O, Rottmann D, et al. Minimal microsatellite shift in microsatellite instability high endometrial cancer: a significant pitfall in diagnostic interpretation. Mod Pathol. 2019; 32:650-658.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mismatch_repair_deficiency_in_sporadic_endometrial_cancer_is_most_often_due_to_inactivation_of_the_m",
+          "label": "Mismatch repair deficiency in sporadic endometrial cancer is most often due to inactivation of the MLH1 gene promoter by methylation (epigenetic silencing).1 Most laboratories utilize a methylation-specific real-time polymerase chain reaction (PCR) assay to determine the presence of methylation. In contrast to colorectal cancer, BRAF mutations are extremely rare in endometrial cancer (0.1%), and therefore BRAF testing has no role in gynecologic tumors.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "niessen_rc_hofstra_rm_westers_h_et_al_germline_hypermethylation_of_mlh1_and_epcam_deletions_are_a_fr",
+          "label": "Niessen RC, Hofstra RM, Westers H, et al. Germline hypermethylation of MLH1 and EPCAM deletions are a frequent cause of Lynch syndrome. Genes Chromosomes Cancer. 2009;48(8):737-744.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metcalf_am_spurdle_ab_endometrial_tumour_braf_mutations_and_mlh1_promoter_methylation_as_predictors_",
+          "label": "Metcalf AM, Spurdle AB. Endometrial tumour BRAF mutations and MLH1 promoter methylation as predictors of germline mismatch repair gene mutation status: a literature review. Fam Cancer. 2014;13(1):1-12.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

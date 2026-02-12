@@ -1,0 +1,1567 @@
+{
+  "template_id": "Appendix_5.1.0.0.REL_CAPCP",
+  "organ": "APPENDIX: Resection",
+  "protocol_posting_date": "December 2022",
+  "standards": [
+    "AJCC-UICC 9"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal_half_of_appendix",
+              "label": "Proximal half of appendix"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "base_of_appendix_involvement",
+          "label": "Base of Appendix Involvement",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal_half_of_appendix",
+              "label": "Distal half of appendix"
+            },
+            {
+              "value": "diffusely_involving_appendix",
+              "label": "Diffusely involving appendix"
+            },
+            {
+              "value": "appendix_not_otherwise_specified",
+              "label": "Appendix, not otherwise specified"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma"
+            },
+            {
+              "value": "mucinous_adenocarcinoma",
+              "label": "Mucinous adenocarcinoma"
+            },
+            {
+              "value": "low_grade_appendiceal_mucinous_neoplasm",
+              "label": "Low-grade appendiceal mucinous neoplasm"
+            },
+            {
+              "value": "high_grade_appendiceal_mucinous_neoplasm",
+              "label": "High-grade appendiceal mucinous neoplasm"
+            },
+            {
+              "value": "signet_ring_cell_carcinoma",
+              "label": "Signet-ring cell carcinoma"
+            },
+            {
+              "value": "goblet_cell_adenocarcinoma",
+              "label": "Goblet cell adenocarcinoma"
+            },
+            {
+              "value": "neuroendocrine_carcinoma",
+              "label": "Neuroendocrine carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "mixed_neuroendocrine_non_neuroendocrine_neoplasm",
+              "label": "Mixed neuroendocrine-non-neuroendocrine neoplasm"
+            },
+            {
+              "value": "medullary_carcinoma",
+              "label": "Medullary carcinoma"
+            },
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "undifferentiated_carcinoma",
+              "label": "Undifferentiated carcinoma"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "guidance": "The grade of the appendiceal and peritoneal tumors is concordant in most instances but can be discordant in some cases. In case of discordance of grades, the final grade should be assigned based on the peritoneal metastasis. (Note D)"
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_deposits",
+          "label": "Tumor Deposits",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "number_of_deposits",
+          "label": "Number of Deposits",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_number",
+              "label": "Specify number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "tumor_invades_lamina_propria_or_muscularis_mucosa",
+              "label": "Tumor invades lamina propria or muscularis mucosa"
+            },
+            {
+              "value": "acellular_mucin_invades_submucosa",
+              "label": "Acellular mucin invades submucosa"
+            },
+            {
+              "value": "tumor_invades_submucosa",
+              "label": "Tumor invades submucosa"
+            },
+            {
+              "value": "acellular_mucin_invades_muscularis_propria",
+              "label": "Acellular mucin invades muscularis propria"
+            },
+            {
+              "value": "tumor_invades_muscularis_propria",
+              "label": "Tumor invades muscularis propria"
+            },
+            {
+              "value": "acellular_mucin_invades_subserosa_or_mesoappendix_but_does_not_extend_to_serosal_surface",
+              "label": "Acellular mucin invades subserosa or mesoappendix but does not extend to serosal surface"
+            },
+            {
+              "value": "tumor_invades_through_muscularis_propria_into_subserosa_or_mesoappendix_but_does_not_extend_to_seros",
+              "label": "Tumor invades through muscularis propria into subserosa or mesoappendix but does not extend to serosal surface"
+            },
+            {
+              "value": "acellular_mucin_invades_visceral_peritoneum",
+              "label": "Acellular mucin invades visceral peritoneum (serosa)"
+            },
+            {
+              "value": "tumor_invades_visceral_peritoneum",
+              "label": "Tumor invades visceral peritoneum (serosa)"
+            },
+            {
+              "value": "tumor_directly_invades_adjacent_organ",
+              "label": "Tumor directly invades adjacent organ(s) or structure(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_mesenteric_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Mesenteric Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mesenteric",
+              "label": "Mesenteric: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_non_invasive_tumor_including_lamn_and_hamn",
+          "label": "Margin Status for Non-Invasive Tumor (including LAMN and HAMN)#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_non_invasive_tumor",
+              "label": "All margins negative for non-invasive tumor"
+            },
+            {
+              "value": "low_grade_dysplasia_present_at_proximal_margin",
+              "label": "Low-grade dysplasia present at proximal margin: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_dysplasia_present_at_proximal_margin",
+              "label": "High-grade dysplasia present at proximal margin: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "low_grade_appendiceal_mucinous_neoplasm_present_at_margin",
+              "label": "Low-grade appendiceal mucinous neoplasm present at margin"
+            }
+          ],
+          "guidance": "Presence of acellular mucin is not considered a positive margin in the context of LAMN or HAMN but should be recorded in a comment or note. (Note H)"
+        },
+        {
+          "field_id": "margins_involved_by_low_grade_appendiceal_mucinous_neoplasm",
+          "label": "Margin(s) Involved by Low-grade Appendiceal Mucinous Neoplasm",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mesenteric",
+              "label": "Mesenteric: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_appendiceal_mucinous_neoplasm_present_at_margin",
+              "label": "High-grade appendiceal mucinous neoplasm present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_high_grade_appendiceal_mucinous_neoplasm",
+          "label": "Margin(s) Involved by High-grade Appendiceal Mucinous Neoplasm",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mesenteric",
+              "label": "Mesenteric: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_specimens_containing_acellular_mucin_without_identifiable_tumor_cells_efforts_should_be_made_to_",
+          "label": "For specimens containing acellular mucin without identifiable tumor cells, efforts should be made to obtain additional tissue for thorough histologic examination to evaluate for cellularity.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_regional_lymph_node",
+              "label": "Non-regional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "intraperitoneal_acellular_mucin_without_identifiable_tumor_cells_in_the_disseminated_peritoneal_muci",
+              "label": "Intraperitoneal acellular mucin without identifiable tumor cells in the disseminated peritoneal mucinous deposits: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "intraperitoneal_metastasis_only",
+              "label": "Intraperitoneal metastasis only (including peritoneal mucinous deposits containing tumor cells): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ovary",
+              "label": "Ovary#: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "fallopian_tube",
+              "label": "Fallopian tube#: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "spleen",
+              "label": "Spleen#: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_intraperitoneal_metastasis_including_peritoneal_mucinous_deposits_containing_tumor_cells",
+              "label": "Other intraperitoneal metastasis, including peritoneal mucinous deposits containing tumor cells (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "site",
+              "label": "Site(s) other than peritoneum (specify, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Involvement of organs such as ovary, fallopian tube or spleen underlying involved peritoneum is still considered intraperitoneal metastasis. Involvement of lung or hepatic parenchyma distinct from peritoneal involvement is considered extraperitoneal distant metastasis."
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ],
+          "condition": "AJCC 9th Version"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: Carcinoma in situ (intramucosal carcinoma; invasion of the lamina propria or extension into but not through the muscularis mucosae)"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis (LAMN): Low-grade appendiceal mucinous neoplasm confined to the muscularis propria; Acellular mucin or mucinous epithelium may invade into the muscularis propria. (T1 and T2 are not applicable to LAMN; Acellular mucin or mucinous epithelium that extends into the subserosa or serosa should be classified as T3 or T4a, respectively.)#"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor invades the submucosa (through the muscularis mucosa but not into the muscularis propria)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor invades the muscularis propria"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor invades through the muscularis propria into the subserosa or the mesoappendix"
+            }
+          ],
+          "guidance": "pTis LAMN is applicable only to LAMN. High-grade appendiceal mucinous neoplasms (HAMN) are staged similar to mucinous adenocarcinoma, even though robust data on HAMN are lacking."
+        },
+        {
+          "field_id": "pt4_tumor_invades_the_visceral_peritoneum_including_the_acellular_mucin_or_mucinous_epithelium_invol",
+          "label": "pT4: Tumor invades the visceral peritoneum, including the acellular mucin or mucinous epithelium involving the serosa of the appendix or mesoappendix, and / or directly invades adjacent organs or structures",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Tumor invades through the visceral peritoneum, including the acellular mucin or mucinous epithelium involving the serosa of the appendix or serosa of the mesoappendix"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Tumor directly invades (or adheres to##) adjacent organs or structures"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            }
+          ],
+          "guidance": "The text in parentheses is not applicable to pT determination. A tumor grossly adherent to other organs or structures is classified as cT4b; however, if no tumor is identified on pathological examination of the adhesion, the T category assigned is based on the depth of wall invasion observed on microscopic examination (typically pT1-3)."
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No tumor involvement of regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "pn1_tumor_involvement_of_one_to_three_regional_lymph_nodes_tumor_in_lymph_node_measuring_greater_tha",
+          "label": "pN1: Tumor involvement of one to three regional lymph nodes (tumor in lymph node measuring greater than or equal to 0.2 mm) or any number of tumor deposits is present with no tumor involvement in all identifiable lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn1a",
+              "label": "pN1a: Tumor involvement of one regional lymph node"
+            },
+            {
+              "value": "pn1b",
+              "label": "pN1b: Tumor involvement of two or three regional lymph nodes"
+            },
+            {
+              "value": "pn1c",
+              "label": "pN1c: No tumor involvement of regional lymph nodes, but there are tumor deposits in the subserosa or mesentery"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2: Tumor involvement of four or more regional lymph nodes"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category_required_only_if_confirmed_pathologically",
+          "label": "pM Category (required only if confirmed pathologically)#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "guidance": "For specimens containing acellular mucin without identifiable tumor cells, efforts should be made to obtain additional tissue for thorough histologic examination to evaluate for cellularity."
+        },
+        {
+          "field_id": "pm1_microscopic_confirmation_of_distant_metastasis",
+          "label": "pM1: Microscopic confirmation of distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Intraperitoneal acellular mucin, without identifiable tumor cells in the disseminated peritoneal mucinous deposits"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Intraperitoneal metastasis only, including peritoneal mucinous deposits containing tumor cells"
+            },
+            {
+              "value": "pm1c",
+              "label": "pM1c: Microscopic confirmation of metastasis to sites other than peritoneum"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "appendicitis",
+              "label": "Appendicitis"
+            },
+            {
+              "value": "perforation_not_at_tumor",
+              "label": "Perforation, not at tumor"
+            },
+            {
+              "value": "ulcerative_colitis",
+              "label": "Ulcerative colitis"
+            },
+            {
+              "value": "crohn_disease",
+              "label": "Crohn disease"
+            },
+            {
+              "value": "diverticulosis",
+              "label": "Diverticulosis"
+            },
+            {
+              "value": "sessile_serrated_lesion_adenoma_polyp",
+              "label": "Sessile serrated lesion / adenoma / polyp"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "ancillary_studies",
+          "label": "Ancillary Studies",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "performed",
+              "label": "Performed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_located_at_the_base_of_the_appendix_must_be_distinguished_from_cecal_carcinomas_extending_int",
+          "label": "Tumors located at the base of the appendix must be distinguished from cecal carcinomas extending into the appendix, a distinction based primarily on a careful gross examination of the specimen with determination of the location of the bulk of the tumor. Microscopic examination may reveal a precursor lesion, and its location may indicate the primary site of origin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "appendiceal_tumors_located_in_the_base_of_the_appendix_may_cause_obstruction_of_the_lumen_early_in_t",
+          "label": "Appendiceal tumors located in the base of the appendix may cause obstruction of the lumen early in their course, resulting in acute appendicitis and their early recognition, with a resultant better prognosis compared to tumors located either in the colon or distal appendix.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_of_appendiceal_carcinomas_proposed_by_the",
+          "label": "For consistency in reporting, the histologic classification of appendiceal carcinomas proposed by the World Health Organization (WHO) is recommended.1 However, this protocol does not preclude the use of other systems of classification or histologic types.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_is_applicable_to_low_grade_or_high_grade_appendiceal_mucinous_neoplasms_as_well_as_inv",
+          "label": "This protocol is applicable to low-grade (or high-grade) appendiceal mucinous neoplasms as well as invasive carcinomas. Adenomatous proliferation with an intact muscularis mucosae is considered an appendiceal adenoma. Tumors with obliteration of muscularis mucosa in which the neoplastic epithelium rests on fibrous tissue or tumors with nondestructive mural or peritoneal involvement qualify for the diagnosis of LAMN.2 Low-grade appendiceal mucinous neoplasm (LAMN) is considered a low-grade carcinoma. Tumors with destructive invasion and desmoplasia are classified as invasive adenocarcinoma. Both LAMN and invasive carcinomas should be staged as per this protocol.2 If the histologic features of the appendiceal primary qualify for LAMN, the histologic type in the tumor synoptic should be selected as LAMN even if there is peritoneal involvement.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_grade_appendiceal_mucinous_neoplasms_hamns_are_rare_tumors_that_resemble_lamn_in_lacking_destru",
+          "label": "High-grade appendiceal mucinous neoplasms (HAMNs) are rare tumors that resemble LAMN in lacking destructive invasion but show high-grade cytologic features.3 This is now included in WHO 20191 and also in the AJCC 9th edition.2 HAMNs are rare, and there are limited data regarding their prognosis when they are confined to the appendix. As per WHO1 and AJCC2, they are staged similarly to mucinous adenocarcinomas. 'HAMNs that have disseminated to the peritoneal cavity are likely to behave like other mucinous tumors that have spread to the peritoneum.'1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "goblet_cell_adenocarcinoma12_has_replaced_goblet_cell_carcinoid_and_mixed_goblet_cell_carcinoidadeno",
+          "label": "Goblet cell adenocarcinoma1,2 has replaced goblet cell carcinoid and mixed goblet cell carcinoid/adenocarcinoma terms.4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenocarcinoma_subtypes_are_included_in_the_menu_of_diagnostic_terms_of_ajcc_9th_edition_but_are_not",
+          "label": "Adenocarcinoma subtypes are included in the menu of diagnostic terms of AJCC 9th edition but are not included as independent diagnostic options in WHO 5th edition. Some studies have shown that mucinous carcinomas in the appendix have a better prognosis than nonmucinous adenocarcinomas5,6 and are less likely to demonstrate lymphatic or hematogenous spread.6,7,8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "forthcoming_ajcc_version_9_appendix_cancer_staging_system_copyright_2022_american_college_of_surgeon",
+          "label": "Forthcoming AJCC Version 9 Appendix Cancer Staging System. Copyright 2022 American College of Surgeons.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carr_nj_cecil_td_mohamed_f_et_al_peritoneal_surface_oncology_group_international_a_consensus_for_cla",
+          "label": "Carr NJ, Cecil TD, Mohamed F, et al; Peritoneal Surface Oncology Group International. A consensus for classification and pathologic reporting of pseudomyxoma peritonei and associated appendiceal neoplasia: the results of the Peritoneal Surface Oncology Group International (PSOGI) Modified Delphi Process. Am J Surg Pathol. 2016;40(1):14-26.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carr_nj_sobin_lh_neuroendocrine_tumors_of_the_appendix_semin_diagn_pathol_2004212108_119",
+          "label": "Carr NJ, Sobin LH. Neuroendocrine tumors of the appendix. Semin Diagn Pathol. 2004;21(2):108-119.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tang_lh_shia_j_soslow_ra_et_al_pathologic_classification_and_clinical_behavior_of_the_spectrum_of_go",
+          "label": "Tang LH, Shia J, Soslow RA, et al. Pathologic classification and clinical behavior of the spectrum of goblet cell carcinoid tumors of the appendix. Am J Surg Pathol. 2008;32(10):1429-1443.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kabbani_w_houlihan_ps_luthra_r_hamilton_sr_rashid_a_mucinous_and_nonmucinous_appendiceal_adenocarcin",
+          "label": "Kabbani W, Houlihan PS, Luthra R, Hamilton SR, Rashid A. Mucinous and nonmucinous appendiceal adenocarcinomas: different clinicopathological features but similar genetic alterations. Mod Pathol. 2002;15(6):599-605.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mcgory_ml_maggard_ma_kang_h_oconnell_jb_ko_cy_malignancies_of_the_appendix_beyond_case_series_report",
+          "label": "McGory ML, Maggard MA, Kang H, O'Connell JB, Ko CY. Malignancies of the appendix: beyond case series reports. Dis Colon Rectum. 2005;48(12):2264-2271.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gonzalez_moreno_s_sugarbaker_ph_right_hemicolectomy_does_not_confer_a_survival_advantage_in_patients",
+          "label": "Gonzalez-Moreno S, Sugarbaker PH. Right hemicolectomy does not confer a survival advantage in patients with mucinous carcinoma of the appendix and peritoneal seeding. Br J Surg. 2004;91(3):304-311.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_rigorous_criteria_for_grading_have_not_been_applied_histologic_grade_has_been_shown_to_be_a",
+          "label": "Although rigorous criteria for grading have not been applied, histologic grade has been shown to be a prognostic factor in several series of appendiceal carcinoma.1,2,3,4,5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nonmucinous_tumors_these_tumors_are_graded_as_well_differentiated_g1_95_gland_formation_moderately_d",
+          "label": "Nonmucinous tumors: These tumors are graded as well differentiated (G1, >95% gland formation), moderately differentiated (G2, 50-95% gland formation), and poorly differentiated (G3, <50% gland formation).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "appendiceal_mucinous_tumors_have_been_graded_as_low_or_high_grade_based_on_cytologic_features_in_the",
+          "label": "Appendiceal mucinous tumors have been graded as low or high grade based on cytologic features in the WHO 2019 scheme. For mucinous tumors involving the peritoneum, the AJCC recommends a 3-tier grading scheme as the prognostic significance of three groups has been shown in multiple studies for mucinous tumors involving the peritoneum. The proposed 3-tier grading scheme by AJCC is modified from Davison et al5 and is based on cytologic features, tumor cellularity, and presence of a signet-ring component. The grade of the appendiceal and peritoneal tumors is concordant in most instances, but some cases this can be discordant. In case of discordance of grades, while the grade of appendiceal tumor and the peritoneal tumor is recorded independently, the final grade of the tumor for staging is assigned based on the peritoneal metastasis (see note I).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_three_tier_grading_scheme_recommended_by_ajcc7",
+          "label": "Table: Three-Tier Grading Scheme Recommended by AJCC7",
+          "required": true,
+          "type": "free_text",
+          "condition": "based on scheme proposed by Davison et al5"
+        },
+        {
+          "field_id": "appendiceal_mucinous_neoplasms_with_only_pushing_borders_are_represented_by_lamn_and_hamn_which_repr",
+          "label": "Appendiceal mucinous neoplasms with only pushing borders are represented by LAMN and HAMN, which represent G1 and G2 tumors respectively. In cancer protocols, the histologic type and grade of the primary appendiceal neoplasm (LAMN or HAMN) and peritoneal metastasis should be recorded independent of each other. G1 tumors are typically represented by LAMN with or without peritoneal involvement. G2 mucinous tumors in the appendix are represented by HAMN with or without peritoneal involvement or mucinous adenocarcinomas with destructive invasion and associated desmoplasia. The G2 mucinous tumors often show complex architecture, such as cribriform glandular spaces and complex papillary structures. G3 mucinous tumors in the appendix are high-grade, invasive tumors that usually have a signet ring cell component (>10%). With extra-appendiceal spread, G2 tumors can show invasion (with desmoplasia) in the peritoneum or a pattern of small mucin pools with numerous strips, buds, or tumor clusters. There may be perineural invasion and lymphovascular invasion. Most mucinous G2 tumors with peritoneal involvement would correspond to terms such as high-grade mucinous carcinoma peritonei and peritoneal mucinous adenocarcinoma. By convention, signet-ring cell carcinomas are grade 3, and these can be either pure signet ring cell adenocarcinoma or high-grade goblet cell adenocarcinoma, which can be difficult to distinguish in some cases. Peritoneal tumors are classified as G3 when they have a signet ring cell component. When making this assessment, “pseudosignet ring cells” (degenerate tumor cells that resemble signet ring cells floating in mucin) do not qualify as G3.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_above_grading_schemes_are_not_applicable_to_poorly_differentiated_neuroendocrine_carcinoma_and_g",
+          "label": "The above grading schemes are not applicable to poorly differentiated neuroendocrine carcinoma and goblet cell adenocarcinoma. Tumors with no differentiation (undifferentiated carcinomas) are categorized as grade 4 in the WHO 2010 classification, but G4 is not included in the AJCC 9th edition7.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sugarbaker_ph_chang_d_koslowe_p_prognostic_features_for_peritoneal_carcinomatosis_in_colorectal_and_",
+          "label": "Sugarbaker PH, Chang D, Koslowe P. Prognostic features for peritoneal carcinomatosis in colorectal and appendiceal cancer patients when treated by cytoreductive surgery and intraperitoneal chemotherapy. Cancer Treat Res. 1996;81:89-104.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ronnett_bm_yan_h_kurman_rj_shmookler_bm_lee_w_sugarbaker_ph_patients_with_pseudomyxoma_peritonei_ass",
+          "label": "Ronnett BM, Yan H, Kurman RJ, Shmookler BM, Lee W, Sugarbaker PH. Patients with pseudomyxoma peritonei associated with disseminated peritoneal adenomucinosis have a significantly more favorable prognosis than patients with peritoneal mucinous carcinomatosis. Cancer. 2001;92:85-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bradley_rf_stewart_jh_russell_gb_levine_ea_geisinger_kr_pseudomyxoma_peritonei_of_appendiceal_origin",
+          "label": "Bradley RF, Stewart JH, Russell GB, Levine EA, Geisinger KR. Pseudomyxoma peritonei of appendiceal origin: a clinicopathologic analysis of 101 patients uniformly treated at a single institution, with literature review. Am J Surg Pathol. 2006;30(5):551-559.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shetty_s_natarajan_b_thomas_p_govindarajan_v_sharma_p_loggie_b_proposed_classification_of_pseudomyxo",
+          "label": "Shetty S, Natarajan B, Thomas P, Govindarajan V, Sharma P, Loggie B. Proposed classification of pseudomyxoma peritonei: influence of signet ring cells on survival. Am Surg. 2013;79(11):1171-1176.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "davison_jm_choudry_ha_pingpank_jf_et_al_clinicopathologic_and_molecular_analysis_of_disseminated_app",
+          "label": "Davison JM, Choudry HA, Pingpank JF, et al. Clinicopathologic and molecular analysis of disseminated appendiceal mucinous neoplasms: identification of factors predicting survival and proposed criteria for a three-tiered assessment of tumor grade. Mod Pathol. 2014;27(11):1521-1539.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asare_ea_compton_cc_hanna_nn_et_al_the_impact_of_stage_grade_and_mucinous_histology_on_the_efficacy_",
+          "label": "Asare EA, Compton CC, Hanna NN, et al. The impact of stage, grade, and mucinous histology on the efficacy of systemic chemotherapy in adenocarcinomas of the appendix: Analysis of the National Cancer Data Base. Cancer. 2016;122(2):213-221.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "forthcoming_ajcc_version_9_appendix_cancer_staging_system_copyright_2022_american_college_of_surgeon",
+          "label": "Forthcoming AJCC Version 9 Appendix Cancer Staging System. Copyright 2022 American College of Surgeons.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_tumor_focus_in_the_periappendiceal_fat_or_mesoappendix_but_without_identifiable_lymph_node_tissue_",
+          "label": "A tumor focus in the periappendiceal fat or mesoappendix, but without identifiable lymph node tissue or vascular structure, is considered a tumor deposit. If the vessel wall or its remnant is identified (H&E, elastic, or any other stain), it should be classified as vascular (venous) invasion, and not as tumor deposit. Similarly, a tumor focus is present in or around a large nerve, should be classified as perineural invasion and not as tumor deposit. Size and shape of the tumor focus are not relevant for classification as a tumor deposit. The presence of tumor deposits in the absence of any regional node involvement is categorized as N1c, irrespective of T category. Tumor deposits are not relevant for LAMN or HAMN. The significance of tumor deposits has not been specifically examined in appendiceal tumors. In view of the established prognostic significance of tumor deposits in colorectal cancer, this feature has been adopted into the AJCC staging scheme for the appendix.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "forthcoming_ajcc_version_9_appendix_cancer_staging_system_copyright_2022_american_college_of_surgeon",
+          "label": "Forthcoming AJCC Version 9 Appendix Cancer Staging System. Copyright 2022 American College of Surgeons.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_vascular_invasion_lvi_includes_small_vessel_lymphatic_or_vascular_invasion_and_large_vessel_ve",
+          "label": "Lymph-vascular invasion (LVI) includes small vessel (lymphatic or vascular) invasion and large vessel (venous) invasion. The prognostic significance of lymph-vascular invasion has not been widely studied in appendiceal carcinoma. However, given their significance in colorectal carcinoma, this feature should be reported in all cases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_prognostic_significance_of_perineural_invasion_has_not_been_widely_studied_in_appendiceal_carcin",
+          "label": "The prognostic significance of perineural invasion has not been widely studied in appendiceal carcinomas. Based on limited studies1 and its prognostic significance in colorectal cancer, its presence or absence should be recorded for appendiceal carcinomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "davison_jm_choudry_ha_pingpank_jf_et_al_clinicopathologic_and_molecular_analysis_of_disseminated_app",
+          "label": "Davison JM, Choudry HA, Pingpank JF, et al. Clinicopathologic and molecular analysis of disseminated appendiceal mucinous neoplasms: identification of factors predicting survival and proposed criteria for a three-tiered assessment of tumor grade. Mod Pathol. 2014;27(11):1521-1539.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins_in_a_simple_appendectomy_specimen_include_the_proximal_and_in_some_cases_radial_margin_it_is",
+          "label": "Margins in a simple appendectomy specimen include the proximal and, in some cases, radial margin. It is recommended that the proximal margin on a simple appendectomy specimen be taken en face in order to evaluate the entire appendiceal mucosa and muscularis circumferentially. In the vast majority of cases, the appendix is entirely peritonealized, and the mesenteric resection margin represents the radial margin. The closest distance between the invasive carcinoma and this margin should be measured. Even retrocecal appendices are usually invested by peritoneum but have adhered to the posterior cecum, either because of inflammation or tumor. Exceptionally, a retrocecal appendix may be retroperitoneal, in which case the nonperitonealized surface is the radial resection margin. The distance between the invasive carcinoma and this margin should be measured.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_staging_protocols_the_presence_of_mucin_pool_with_cells_and_lamnhamn_at_the_appendiceal_margin_s",
+          "label": "For staging protocols, the presence of mucin pool with cells and LAMN/HAMN at the appendiceal margin should be recorded. The presence of acellular mucin pools at the margin has not adequately studied, and at present for clinical purposes it is not considered a positive margin (AJCC,9th ed)1 (Yantiss 2009, Arnason T, 2015)2. The presence of cellular mucin or LAMN at the margin does not predict recurrence and a conservative approach is recommended (Arnason T, 2015)3.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_right_hemicolectomy_specimens_the_ileal_and_colonic_margins_are_the_proximal_and_distal_margins_r",
+          "label": "In right hemicolectomy specimens, the ileal and colonic margins are the proximal and distal margins, respectively. The distance between the tumor and the ileal and colonic margins should be measured, and these margins are considered to be grossly negative if they are greater than 5 cm from the tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "forthcoming_ajcc_version_9_appendix_cancer_staging_system_copyright_2022_american_college_of_surgeon",
+          "label": "Forthcoming AJCC Version 9 Appendix Cancer Staging System. Copyright 2022 American College of Surgeons.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yantiss_rk_shia_j_klimstra_ds_hahn_hp_odze_rd_misdraji_j_prognostic_significance_of_localized_extra_",
+          "label": "Yantiss RK, Shia J, Klimstra DS, Hahn HP, Odze RD, Misdraji J. Prognostic significance of localized extra-appendiceal mucin deposition in appendiceal mucinous neoplasms. Am J Surg Pathol. 2009;33(2):248-255.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "arnason_t_kamionek_m_yang_m_yantiss_rk_misdraji_j_significance_of_proximal_margin_involvement_in_low",
+          "label": "Arnason T, Kamionek M, Yang M, Yantiss RK, Misdraji J. Significance of proximal margin involvement in low-grade appendiceal mucinous neoplasms. Arch Pathol Lab Med.2015;139(4):518-521.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_revised_tnm_staging_system_has_been_developed_by_the_american_joint_committee_on_cancer_ajcc_for_t",
+          "label": "A revised TNM staging system has been developed by the American Joint Committee on Cancer (AJCC) for the 9 edition of the AJCC Cancer Staging Manual.1 This system also incorporates tumor grade to subclassify stage IV tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (ie, before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_confined_to_submucosa_or_muscularis_propria_lamn_is_still_classified_as_tis_lamn_as_there_is_no",
+          "label": "When confined to submucosa or muscularis propria, LAMN is still classified as Tis (LAMN) as there is no significant risk of progression to pseudomyxoma peritonei, and only designated as T3 or T4a if the neoplastic epithelium or acellular mucin extend beyond the muscularis propria. On the other hand, HAMNs are staged similarly to mucinous adenocarcinomas. The invasion in LAMN and HAMN is of a pushing nature, with epithelium herniating or dissecting through the appendix wall, with or without mucin extrusion.   Acellular mucin on the serosal surface without a stromal reaction is likely to be the result of contamination of the specimen by handling during dissection, while acellular mucin on the serosal surface with mesothelial reaction, stromal fibrosis and/or neovascularization represents involvement of the serosa by LAMN/HAMN and is relevant for staging. Tumors (including acellular mucin) that involve the serosal surface (visceral peritoneum) or directly invade adjacent organs or structures are assigned to the T4 category.   T4a tumors are characterized by localized involvement of the serosal surface (visceral peritoneum) in the area of the primary tumor by acellular mucin or cellular tumor. Serosal involvement of the appendix by acellular mucin may demonstrate an excellent outcome with only localized surgical resection.2,3 In view of the small risk of recurrence, this localized involvement is categorized as T4a along with tumors with cellular mucinous involvement of appendiceal serosa. Tumors with perforation in which tumor cells or acellular\\mucin are continuous with the serosal surface through inflammation also are considered T4a. Acellular mucin involving the serosal surface is considered as T4a, due to a small risk of peritoneal recurrence. In some instances, acellular mucin may be seen on the serosal surface due to “carryover” related to specimen handling or sectioning artifact. In these instances, mucin dissection into the stroma and tissue reaction such as inflammation, mesothelial hyperplasia and neovascularization can help in this distinction.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_that_directly_invade_other_organs_or_structures_are_categorized_as_t4b_however_luminal_or_mur",
+          "label": "Tumors that directly invade other organs or structures are categorized as T4b. However, luminal or mural spread into adjacent parts of the bowel (e.g., appendiceal tumor extending into the cecum through the lumen or wall) is not considered T4b and should be categorized by the deepest area of invasion. Direct invasion of other segments of the colorectum via the serosa (e.g., invasion of adherent ileum) is considered T4b. A tumor grossly adherent to other organs or structures is classified as cT4b; however, if no tumor is identified on pathological examination of the adhesion, the T category is assigned based on the depth of wall invasion observed on microscopic examination (typically pT1–3).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_regional_lymph_nodes_for_the_appendix_include_the_anterior_cecal_posterior_cecal_ileocolic_and_r",
+          "label": "The regional lymph nodes for the appendix include the anterior cecal, posterior cecal, ileocolic, and right colic lymph nodes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_lymph_node_metastasis_is_relatively_rare_in_appendiceal_carcinoma4_but_is_an_adverse",
+          "label": "The presence of lymph node metastasis is relatively rare in appendiceal carcinoma4 but is an adverse prognostic finding.5 For staging purposes presence of acellular mucin pools in the lymph nodes is not considered as metastasis (i.e. N0) (AJCC, 9th ed)1. Among patients with high-stage disease (peritoneal spread of appendiceal carcinoma), lymph node status appears to have less impact on overall survival.6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "seeding_of_peritoneum_or_abdominal_organs_is_considered_distant_metastasis_one_of_the_most_critical_",
+          "label": "Seeding of peritoneum or abdominal organs is considered distant metastasis. One of the most critical prognostic factors in mucinous appendiceal neoplasms is the presence or absence of mucinous epithelial cells in extra-appendiceal mucin.8  Hence the presence or absence of epithelial cells in mucin should be clearly noted in the surgical pathology report. In the peritoneum, G1 tumors may involve peritoneal surfaces or organs with a pushing front without desmoplasia and lack infiltrative invasion. Perineural invasion and lymphovascular invasion are usually not seen. Extensive sampling should be performed before using the designation of M1a. Peritoneal mucinous deposits containing tumor cells should be staged as M1b and are grouped based on tumor grade as stage IVA (mucinous G1 tumors) or stage IVB (nonmucinous G1 and all G2/G3/G4 tumors). If the grade of the primary appendiceal tumor and the peritoneal tumor are discordant, both should be recorded in the case; however, the grade of the peritoneal tumor will drive prognosis. Peritoneal implants involving abdominopelvic organs, such as the serosa of the small or large bowel and the surfaces of the ovary, spleen, or liver, should be classified as M1b, even if the implants demonstrate infiltration of underlying tissue, such as frequently occurs with the ovary. M1c designation is used for metastasis to nonperitoneal sites, such as the lung.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "forthcoming_ajcc_version_9_appendix_cancer_staging_system_copyright_2022_american_college_of_surgeon",
+          "label": "Forthcoming AJCC Version 9 Appendix Cancer Staging System. Copyright 2022 American College of Surgeons.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carr_nj_mccarthy_wf_sobin_lh_epithelial_noncarcinoid_tumors_and_tumor_like_lesions_of_the_appendix_a",
+          "label": "Carr NJ, McCarthy WF, Sobin LH. Epithelial noncarcinoid tumors and tumor-like lesions of the appendix. A clinicopathologic study of 184 patients with a multivariate analysis of prognostic factors. Cancer. 1995;75(3):757-768.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yantiss_rk_shia_j_klimstra_ds_hahn_hp_odze_rd_misdraji_j_prognostic_significance_of_localized_extra_",
+          "label": "Yantiss RK, Shia J, Klimstra DS, Hahn HP, Odze RD, Misdraji J. Prognostic significance of localized extra-appendiceal mucin deposition in appendiceal mucinous neoplasms. Am J Surg Pathol. 2009;33(2):248-255.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "davison_jm_choudry_ha_pingpank_jf_et_al_clinicopathologic_and_molecular_analysis_of_disseminated_app",
+          "label": "Davison JM, Choudry HA, Pingpank JF, et al. Clinicopathologic and molecular analysis of disseminated appendiceal mucinous neoplasms: identification of factors predicting survival and proposed criteria for a three-tiered assessment of tumor grade. Mod Pathol. 2014;27(11):1521-1539.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kabbani_w_houlihan_ps_luthra_r_hamilton_sr_rashid_a_mucinous_and_nonmucinous_appendiceal_adenocarcin",
+          "label": "Kabbani W, Houlihan PS, Luthra R, Hamilton SR, Rashid A. Mucinous and nonmucinous appendiceal adenocarcinomas: different clinicopathological features but similar genetic alterations. Mod Pathol. 2002;15(6):599-605.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gonzalez_moreno_s_sugarbaker_ph_right_hemicolectomy_does_not_confer_a_survival_advantage_in_patients",
+          "label": "Gonzalez-Moreno S, Sugarbaker PH. Right hemicolectomy does not confer a survival advantage in patients with mucinous carcinoma of the appendix and peritoneal seeding. Br J Surg. 2004;91(3):304-311.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gonzalez_moreno_s_brun_e_sugarbaker_ph_lymph_node_metastasis_in_epithelial_malignancies_of_the_appen",
+          "label": "Gonzalez-Moreno S, Brun E, Sugarbaker PH. Lymph node metastasis in epithelial malignancies of the appendix with peritoneal dissemination does not reduce survival in patients treated by cytoreductive surgery and perioperative intraperitoneal chemotherapy. Ann Surg Oncol. 2005;12(1):72-80.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "arnason_t_kamionek_m_yang_m_yantiss_rk_misdraji_j_significance_of_proximal_margin_involvement_in_low",
+          "label": "Arnason T, Kamionek M, Yang M, Yantiss RK, Misdraji J. Significance of proximal margin involvement in low-grade appendiceal mucinous neoplasms. Arch Pathol Lab Med.2015;139(4):518-521.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "appendiceal_perforation_may_be_an_adverse_prognostic_factor_but_its_adverse_significance_as_an_indep",
+          "label": "Appendiceal perforation may be an adverse prognostic factor, but its adverse significance as an independent prognostic is not well established.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diverticula_are_a_common_finding_in_the_appendix_and_may_represent_a_route_of_egress_for_mucin_in_ca",
+          "label": "Diverticula are a common finding in the appendix and may represent a route of egress for mucin in cases of LAMN.4 Ruptured diverticula can show extra-appendiceal mucin with or without epithelium and should not be mistaken for LAMN.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "appendiceal_adenocarcinomas_have_been_reported_in_the_setting_of_inflammatory_bowel_disease_although",
+          "label": "Appendiceal adenocarcinomas have been reported in the setting of inflammatory bowel disease, although causation has not been established.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "well_differentiated_neuroendocrine_tumors_typical_carcinoid_tumor_of_any_size_should_be_reported_usi",
+          "label": "Well-differentiated neuroendocrine tumors (typical carcinoid tumor) of any size should be reported using the CAP protocol for neuroendocrine tumors of the appendix.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gonzalez_moreno_s_sugarbaker_ph_right_hemicolectomy_does_not_confer_a_survival_advantage_in_patients",
+          "label": "Gonzalez-Moreno S, Sugarbaker PH. Right hemicolectomy does not confer a survival advantage in patients with mucinous carcinoma of the appendix and peritoneal seeding. Br J Surg. 2004;91(3):304-311.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cortina_r_mccormick_j_kolm_p_perry_rr_management_and_prognosis_of_adenocarcinoma_of_the_appendix_dis",
+          "label": "Cortina R, McCormick J, Kolm P, Perry RR. Management and prognosis of adenocarcinoma of the appendix. Dis Colon Rectum. 1995;38(8):848-852.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "madani_a_van_der_bilt_jd_consten_ec_vriens_mr_borel_rinkes_ih_perforation_in_appendiceal_well_differ",
+          "label": "Madani A, van der Bilt JD, Consten EC, Vriens MR, Borel Rinkes IH. Perforation in appendiceal well-differentiated carcinoid and goblet cell tumors: impact on prognosis? A systematic review. Ann Surg Oncol.2015;22(3):959-965.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "misdraji_j_yantiss_rk_graeme_cook_fm_balis_uj_young_rh_appendiceal_mucinous_neoplasms_a_clinicopatho",
+          "label": "Misdraji J, Yantiss RK, Graeme-Cook FM, Balis UJ, Young RH. Appendiceal mucinous neoplasms: a clinicopathologic analysis of 107 cases. Am J Surg Pathol. 2003;27(8):1089-1103.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hsu_m_young_rh_misdraji_j_ruptured_appendiceal_diverticula_mimicking_low_grade_appendiceal_mucinous_",
+          "label": "Hsu M, Young RH, Misdraji J. Ruptured appendiceal diverticula mimicking low-grade appendiceal mucinous neoplasms. Am J Surg Pathol. 2009;33(10):1515-1521.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lyda_mh_noffsinger_a_belli_j_fischer_j_fenoglio_preiser_cm_multifocal_neoplasia_involving_the_colon_",
+          "label": "Lyda MH, Noffsinger A, Belli J, Fischer J, Fenoglio-Preiser CM. Multifocal neoplasia involving the colon and appendix in ulcerative colitis: pathological and molecular features. Gastroenterology. 1998;115(6):1566-1573.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shi_c_volkan_a_bergsland_ed_et_al_protocol_for_the_examination_of_specimens_from_patients_with_neuro",
+          "label": "Shi C, Volkan A, Bergsland ED, et al. Protocol for the Examination of Specimens From Patients With Neuroendocrine Tumors of the Appendix. 2017. Available at www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_minority_of_appendiceal_carcinomas_show_high_levels_of_microsatellite_instability_msi_h12_although",
+          "label": "A minority of appendiceal carcinomas show high levels of microsatellite instability (MSI-H).1,2 Although data regarding use of therapies directed at MSI-H appendiceal tumors is sparse, in view of implications for identifying Lynch syndrome and potential immunotherapy, MSI and/or DNA-MMR testing is considered appropriate for all invasive carcinomas (mucinous or non-mucinous).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "misdraji_j_burgart_lj_lauwers_gy_defective_mismatch_repair_in_the_pathogenesis_of_low_grade_appendic",
+          "label": "Misdraji J, Burgart LJ, Lauwers GY. Defective mismatch repair in the pathogenesis of low-grade appendiceal mucinous neoplasms and adenocarcinomas. Mod Pathol. 2004;17(12):1447-1454.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "taggart_mw_galbincea_j_mansfield_pf_et_al_high_level_microsatellite_instability_in_appendiceal_carci",
+          "label": "Taggart MW, Galbincea J, Mansfield PF, et al. High-level microsatellite instability in appendiceal carcinomas. Am J Surg Pathol. 2013;37(8):1192-1200.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

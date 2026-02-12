@@ -1,0 +1,1029 @@
+{
+  "template_id": "HN.Bmk_2.2.0.0.REL_CAPCP",
+  "organ": "Head and Neck Biomarker Reporting",
+  "protocol_posting_date": "September 2023",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "morphologic_diagnosis",
+      "section_name": "MORPHOLOGIC DIAGNOSIS",
+      "fields": [
+        {
+          "field_id": "diagnosis",
+          "label": "Diagnosis: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "results",
+      "section_name": "RESULTS",
+      "fields": [
+        {
+          "field_id": "head_and_neck_squamous_cell_carcinoma",
+          "label": "Head and Neck Squamous Cell Carcinoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "HNSCC"
+        },
+        {
+          "field_id": "human_papillomavirus_hpv_testing",
+          "label": "Human Papillomavirus (HPV) Testing",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "p16_ihc_as_a_surrogate_for_transcriptionally_active_high_risk_hpv",
+          "label": "p16 IHC as a Surrogate for Transcriptionally Active High-Risk HPV",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (less than 50% diffuse and moderate-to-strong nuclear and cytoplasmic staining)"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (less than 70% but greater than or equal to 50% diffuse and moderate-to-strong"
+            }
+          ]
+        },
+        {
+          "field_id": "nuclear_and_cytoplasmic_staining",
+          "label": "nuclear and cytoplasmic staining)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive (greater than or equal to 70% diffuse and moderate-to-strong nuclear and cytoplasmic"
+            }
+          ]
+        },
+        {
+          "field_id": "staining",
+          "label": "staining)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_results",
+              "label": "Other results (including cytology specimens, specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hpv_e6_e7_mrna_ish",
+          "label": "HPV E6 / E7 mRNA ISH",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (no signal)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (cytoplasmic and / or nuclear signals)"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_subtypes_if_available",
+          "label": "Specify Subtypes (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hpv_dna_ish",
+          "label": "HPV-DNA ISH",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (no nuclear signal)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (punctate and / or diffuse nuclear staining)"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_subtypes_if_available",
+          "label": "Specify Subtypes (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hpv_dna_pcr",
+          "label": "HPV-DNA PCR",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_subtypes_if_available",
+          "label": "Specify Subtypes (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hpv_e6_e7_mrna_rt_pcr",
+          "label": "HPV E6 / E7 mRNA RT-PCR",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_subtypes_if_available",
+          "label": "Specify Subtypes (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "epstein_barr_virus_ebv_testing",
+          "label": "Epstein-Barr Virus (EBV) Testing",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ebv_early_mrna_eber_ish",
+          "label": "EBV Early mRNA (EBER) ISH",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (no signal)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (nuclear signal)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nut_ihc",
+          "label": "NUT IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (no nuclear staining)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (nuclear staining)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nut_rearrangements",
+          "label": "NUT Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_nut_rearrangement_detected",
+              "label": "No NUT rearrangement detected"
+            },
+            {
+              "value": "nut_rearrangement_detected",
+              "label": "NUT rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "salivary_gland_carcinoma",
+          "label": "Salivary Gland Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucoepidermoid_carcinoma",
+          "label": "Mucoepidermoid Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maml2_rearrangements",
+          "label": "MAML2 Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_maml2_rearrangement_detected",
+              "label": "No MAML2 rearrangement detected"
+            },
+            {
+              "value": "maml2_rearrangement_detected",
+              "label": "MAML2 rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "adenoid_cystic_carcinoma",
+          "label": "Adenoid Cystic Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "myb_ihc",
+          "label": "MYB IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (no nuclear staining)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (nuclear staining)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "myb_rearrangements",
+          "label": "MYB Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_myb_rearrangement_detected",
+              "label": "No MYB rearrangement detected"
+            },
+            {
+              "value": "myb_rearrangement_detected",
+              "label": "MYB rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "myb_l1_ihc",
+          "label": "MYB-L1 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (no nuclear staining)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (nuclear staining)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "myb_l1_rearrangements",
+          "label": "MYB-L1 Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_myb_l1_rearrangement_detected",
+              "label": "No MYB-L1 rearrangement detected"
+            },
+            {
+              "value": "myb_l1_rearrangement_detected",
+              "label": "MYB-L1 rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "salivary_duct_carcinoma",
+          "label": "Salivary Duct Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ar_ihc",
+          "label": "AR IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (no nuclear staining)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (nuclear staining)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "her2_immunohistochemistry_interpretation",
+          "label": "HER2 Immunohistochemistry Interpretation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            }
+          ]
+        },
+        {
+          "field_id": "her2_immunohistochemistry_scoring_system",
+          "label": "HER2 Immunohistochemistry Scoring System",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "breast",
+              "label": "Breast"
+            },
+            {
+              "value": "gastric",
+              "label": "Gastric"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "her2_immunohistochemistry_score",
+          "label": "HER2 Immunohistochemistry Score",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "0",
+              "label": "0"
+            },
+            {
+              "value": "1",
+              "label": "1+"
+            },
+            {
+              "value": "2",
+              "label": "2+"
+            },
+            {
+              "value": "3",
+              "label": "3+"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_cells_with_uniform_intense_complete_membrane_staining",
+          "label": "Specify Percentage of Cells with Uniform Intense Complete Membrane Staining",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "",
+              "label": "%"
+            }
+          ]
+        },
+        {
+          "field_id": "her2_immunohistochemistry_antibody",
+          "label": "HER2 Immunohistochemistry Antibody",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "herceptest",
+              "label": "HercepTest"
+            },
+            {
+              "value": "4b5",
+              "label": "4B5"
+            },
+            {
+              "value": "sp3",
+              "label": "SP3"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "her2_immunohistochemistry_assay_information",
+          "label": "HER2 Immunohistochemistry Assay Information",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared test / vendor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "her2_by_in_situ_hybridization",
+          "label": "HER2 by in situ Hybridization",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (not amplified)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (amplified)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (indeterminate) (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "aneusomy",
+          "label": "Aneusomy",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "as defined by vendor kit used"
+        },
+        {
+          "field_id": "heterogeneous_signals",
+          "label": "Heterogeneous Signals",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_cells_with_amplified_her2_signals",
+          "label": "Specify Percentage of Cells with Amplified HER2 Signals: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinoma_ex_pleomorphic_adenoma_pleomorphic_adenoma",
+          "label": "Carcinoma ex Pleomorphic Adenoma / Pleomorphic Adenoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "plag1_ihc",
+          "label": "PLAG1 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (no nuclear staining)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (nuclear staining)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "plag1_rearrangements",
+          "label": "PLAG1 Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_plag1_rearrangement_detected",
+              "label": "No PLAG1 rearrangement detected"
+            },
+            {
+              "value": "plag1_rearrangement_detected",
+              "label": "PLAG1 rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hmga2_ihc",
+          "label": "HMGA2 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (no nuclear staining)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (nuclear staining)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hmga2_rearrangements",
+          "label": "HMGA2 Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_hmga2_rearrangement_detected",
+              "label": "No HMGA2 rearrangement detected"
+            },
+            {
+              "value": "hmga2_rearrangement_detected",
+              "label": "HMGA2 rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "mammary_analogue_secretory_carcinoma",
+          "label": "(Mammary Analogue) Secretory Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "etv6_rearrangements",
+          "label": "ETV6 Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_etv6_rearrangement_detected",
+              "label": "No ETV6 rearrangement detected"
+            },
+            {
+              "value": "etv6_rearrangement_detected",
+              "label": "ETV6 rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ntrk_rearrangements",
+          "label": "NTRK Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ntrk_rearrangement_detected",
+              "label": "NTRK rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "ntrk_type",
+          "label": "NTRK Type",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ntrk1",
+              "label": "NTRK1"
+            },
+            {
+              "value": "ntrk2",
+              "label": "NTRK2"
+            },
+            {
+              "value": "ntrk3",
+              "label": "NTRK3"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_ntrk_rearrangement_detected",
+              "label": "No NTRK rearrangement detected"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "hyalinizing_clear_cell_carcinoma",
+          "label": "(Hyalinizing) Clear Cell Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ewsr1_rearrangements",
+          "label": "EWSR1 Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_ewsr1_rearrangement_detected",
+              "label": "No EWSR1 rearrangement detected"
+            },
+            {
+              "value": "ewsr1_rearrangement_detected",
+              "label": "EWSR1 rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "sinonasal_malignancies",
+          "label": "Sinonasal Malignancies",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smarcb1_ini_1_and_smarca4_brg_1_deficient_sinonasal_carcinoma_rhabdoid_tumor_teratocarcinosarcoma",
+          "label": "SMARCB1 (INI-1) and SMARCA4 (BRG-1) Deficient Sinonasal Carcinoma / Rhabdoid Tumor / Teratocarcinosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ini1_ihc",
+          "label": "INI1 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_staining",
+              "label": "Intact nuclear staining (negative for deletion / alteration)"
+            },
+            {
+              "value": "loss_of_nuclear_staining",
+              "label": "Loss of nuclear staining (positive for deletion / alteration)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "brg1_ihc",
+          "label": "BRG1 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_staining",
+              "label": "Intact nuclear staining (negative for deletion / alteration)"
+            },
+            {
+              "value": "loss_of_nuclear_staining",
+              "label": "Loss of nuclear staining (positive for deletion / alteration)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "biphenotypic_sinonasal_sarcoma",
+          "label": "Biphenotypic Sinonasal Sarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pax_rearrangements",
+          "label": "PAX Rearrangements",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pax_rearrangement_detected",
+              "label": "PAX rearrangement detected"
+            }
+          ],
+          "condition": "by Molecular Methods"
+        },
+        {
+          "field_id": "pax_type",
+          "label": "PAX Type",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pax3",
+              "label": "PAX3"
+            },
+            {
+              "value": "pax7",
+              "label": "PAX7"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_fusion_partner_if_available",
+          "label": "Specify Fusion Partner (if available): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_pax_rearrangement_detected",
+              "label": "No PAX rearrangement detected"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "paraganglioma",
+          "label": "Paraganglioma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sdhb_ihc",
+          "label": "SDHB IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_cytoplasmic_staining",
+              "label": "Intact cytoplasmic staining"
+            },
+            {
+              "value": "loss_of_cytoplasmic_staining",
+              "label": "Loss of cytoplasmic staining"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_markers",
+          "label": "Other Markers",
+          "required": true,
+          "type": "free_text",
+          "condition": "repeat up to 10X, as needed"
+        },
+        {
+          "field_id": "specify_other_marker_and_results",
+          "label": "Specify Other Marker and Results: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

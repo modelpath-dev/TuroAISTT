@@ -1,0 +1,681 @@
+{
+  "template_id": "Vagina.Bx_4.3.0.0.REL_CAPCP",
+  "organ": "VAGINA: Biopsy",
+  "protocol_posting_date": "June 2021",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "incisional_biopsy",
+              "label": "Incisional biopsy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "vagina_upper_third",
+              "label": "Vagina, upper third"
+            },
+            {
+              "value": "vagina_middle_third",
+              "label": "Vagina, middle third"
+            },
+            {
+              "value": "vagina_lower_third",
+              "label": "Vagina, lower third"
+            },
+            {
+              "value": "vagina_not_otherwise_specified",
+              "label": "Vagina, not otherwise specified"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma_hpv_associated",
+              "label": "Squamous cell carcinoma, HPV-associated"
+            },
+            {
+              "value": "squamous_cell_carcinoma_hpv_independent",
+              "label": "Squamous cell carcinoma, HPV-independent"
+            },
+            {
+              "value": "squamous_cell_carcinoma_nos",
+              "label": "Squamous cell carcinoma, NOS"
+            },
+            {
+              "value": "adenocarcinoma_nos",
+              "label": "Adenocarcinoma, NOS"
+            },
+            {
+              "value": "adenocarcinoma_hpv_associated",
+              "label": "Adenocarcinoma, HPV-associated"
+            },
+            {
+              "value": "adenocarcinoma_skene_cowper_and_littre_gland_origin",
+              "label": "Adenocarcinoma, Skene, Cowper and Littre gland origin"
+            },
+            {
+              "value": "mucinous_carcinoma_nos",
+              "label": "Mucinous carcinoma, NOS"
+            },
+            {
+              "value": "mucinous_carcinoma_gastric_type",
+              "label": "Mucinous carcinoma, gastric type"
+            },
+            {
+              "value": "mucinous_carcinoma_intestinal_type",
+              "label": "Mucinous carcinoma, intestinal type"
+            },
+            {
+              "value": "endometrioid_carcinoma",
+              "label": "Endometrioid carcinoma"
+            },
+            {
+              "value": "clear_cell_carcinoma",
+              "label": "Clear cell carcinoma"
+            },
+            {
+              "value": "mesonephric_adenocarcinoma",
+              "label": "Mesonephric adenocarcinoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "adenoid_basal_carcinoma",
+              "label": "Adenoid basal carcinoma"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "combined_small_cell_neuroendocrine_carcinoma",
+              "label": "Combined small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "combined_large_cell_neuroendocrine_carcinoma",
+              "label": "Combined large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "neuroendocrine_tumor_nos",
+              "label": "Neuroendocrine tumor, NOS"
+            },
+            {
+              "value": "undifferentiated_carcinoma",
+              "label": "Undifferentiated carcinoma"
+            },
+            {
+              "value": "mixed_tumor_nos",
+              "label": "Mixed tumor NOS"
+            },
+            {
+              "value": "carcinosarcoma",
+              "label": "Carcinosarcoma"
+            },
+            {
+              "value": "adenosarcoma",
+              "label": "Adenosarcoma"
+            },
+            {
+              "value": "germ_cell_tumor",
+              "label": "Germ cell tumor (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "subepithelial_stromal_invasion",
+              "label": "Subepithelial stromal invasion"
+            },
+            {
+              "value": "muscle_invasion",
+              "label": "Muscle invasion"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            },
+            {
+              "value": "tumor_present_at_margin",
+              "label": "Tumor present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_tumor",
+          "label": "Margin(s) Involved by Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "high_grade_squamous_intraepithelial_lesion_vaginal_intraepithelial_neoplasia_grade_3",
+              "label": "High grade squamous intraepithelial lesion / vaginal intraepithelial neoplasia, grade 3 (VaIN3)"
+            },
+            {
+              "value": "high_grade_squamous_intraepithelial_lesion_vaginal_intraepithelial_neoplasia_grade_2",
+              "label": "High grade squamous intraepithelial lesion / vaginal intraepithelial neoplasia, grade 2 (VaIN2)"
+            },
+            {
+              "value": "low_grade_squamous_intraepithelial_lesion_vaginal_intraepithelial_neoplasia_grade_1",
+              "label": "Low grade squamous intraepithelial lesion / vaginal intraepithelial neoplasia, grade 1 (VaIN1)"
+            },
+            {
+              "value": "condyloma_acuminatum",
+              "label": "Condyloma acuminatum"
+            },
+            {
+              "value": "adenocarcinoma_in_situ",
+              "label": "Adenocarcinoma in situ (AIS)"
+            },
+            {
+              "value": "atypical_adenosis",
+              "label": "Atypical adenosis"
+            },
+            {
+              "value": "adenoma",
+              "label": "Adenoma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "ancillary_studies_specify",
+          "label": "Ancillary Studies (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "p16_immunohistochemistry",
+          "label": "p16 Immunohistochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "local_excision_wide_local_excision_is_employed_primarily_for_smaller_lesions_and_should_have_margins",
+          "label": "Local excision (wide local excision) is employed primarily for smaller lesions and should have margins surgically oriented. A partial vaginectomy leaves a portion of the vagina intact as a conduit to drain menses (if the uterus is retained). Radical (complete) vaginectomy removes the entire vagina and may be part of infralevatoric exenteration, radical hysterectomy and/or bilateral lymphadenectomy. Trachelectomy (removal of the lower portion of the cervix along with the upper vagina) may be employed when the cervix is involved for fertility-sparing. The peripheral margin is the tumor resection margin with mucosa and may be designated as proximal and distal (upper vaginal / lower vaginal). The deep margin is the tumor resection margin with soft tissue and may be designated as anterior, posterior, right or left lateral vaginal wall.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_cell_carcinoma_the_most_frequent_tumor_typically_involves_the_posterior_vagina_while_adenoc",
+          "label": "Squamous cell carcinoma, the most frequent tumor, typically involves the posterior vagina, while adenocarcinoma almost exclusively involves the anterior vaginal wall. Both are most common in the upper 1/3rd of the vagina.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prenatal_des_exposure",
+          "label": "Prenatal DES Exposure",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prenatal_exposure_to_diethylstilbestrol_des_or_related_synthetic_drugs_was_relatively_common_in_the_",
+          "label": "Prenatal exposure to diethylstilbestrol (DES) or related synthetic drugs was relatively common in the United States and other countries until 1971, when its relation to clear cell adenocarcinomas of the vagina and cervix led to proscription of these drugs by the Food and Drug Administration. From the 1970s to the turn of the 21st century, most patients with clear cell adenocarcinoma of the vagina had a history of DES exposure.2 As this cohort ages, the diagnosis has been less common, and most women with this diagnosis currently have no DES exposure history. Furthermore, it has been reported that these patients have significantly worse outcomes than do patients with a history of DES exposure and patients with squamous cell carcinoma.3 A bimodal age peak for DES-related carcinoma has, however, been reported, and therefore a history of this type of prenatal drug exposure should alert the pathologist to the possible presence of those tumors and associated lesions.4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ectropion_erosion_eversion_of_the_cervix_which_is_characterized_by_the_appearance_of_glandular_colum",
+          "label": "Ectropion (erosion, eversion) of the cervix, which is characterized by the appearance of glandular (columnar) epithelium outside the external os of the cervix, is seen in approximately 90% of women exposed to DES in utero (but is often seen in unexposed women as well). Approximately one-third of patients exposed to DES have 1 or more gross structural abnormalities of the cervix.2,5 The fallopian tubes are abnormal in some women exposed to DES in the form of hypoplasia or defects demonstrated on hysterosalpingographic examination.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "third_generation_exposure_to_des_is_associated_with_decreased_fertility_irregular_menses_continued_r",
+          "label": "Third-generation exposure to DES is associated with decreased fertility, irregular menses, continued risk for clear cell adenocarcinoma, pregnancy mishaps such as preterm delivery, and psychosomatic disorders, indicating that DES adverse effects are genetically transmissible, possibly through epigenetics and transformation of protein 63 (TRP63.p63) that drives differentiation of Mullerian duct epithelium to squamous differentiation.6,7,8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prior_tumors_and_operations",
+          "label": "Prior Tumors and Operations",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clinical_findings_and_des_exposure",
+          "label": "Clinical Findings and DES Exposure",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "naked_eye_examination_colposcopy_and_iodine_staining_of_the_cervix_and_vagina_may_disclose_a_variety",
+          "label": "Naked-eye examination, colposcopy, and iodine staining of the cervix and vagina may disclose a variety of changes highly suspicious of prenatal DES exposure, such as cervical hypoplasia, pseudopolyp, or coxcomb deformity, and vaginal adenosis or ridge, any of which should alert the pathologist to look carefully for DES changes.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lima_m_rio_g_horta_m_cunha_tm_primary_vaginal_malignancies_a_single_oncology_centre_experience_j_obs",
+          "label": "Lima M, Rio G, Horta M, Cunha TM. Primary vaginal malignancies: a single oncology centre experience. J Obstet Gynecol. 2019;39(6):827-832.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "herbst_al_ulfelder_h_poskanzer_dc_adenocarcinoma_of_the_vagina_association_of_maternal_stilbestrol_t",
+          "label": "Herbst AL, Ulfelder H, Poskanzer DC. Adenocarcinoma of the vagina: association of maternal stilbestrol therapy with tumor appearance in young women. N Engl J Med. 1971;284:878-881.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "frank_sj_deavers_mt_jhingran_a_et_al_primary_adenocarcinoma_of_the_vagina_not_associated_with_diethy",
+          "label": "Frank SJ, Deavers MT, Jhingran A, et al. Primary adenocarcinoma of the vagina not associated with diethylstilbestrol (DES) exposure. Gynecol Oncol. 2007;105:470-474.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hanselaar_a_van_loosbroek_m_schuurbiers_o_et_al_clear_cell_adenocarcinoma_of_the_vagina_and_cervix_a",
+          "label": "Hanselaar A, van Loosbroek M, Schuurbiers O, et al. Clear cell adenocarcinoma of the vagina and cervix: an update of the central Netherlands registry showing twin age incidence peaks. Cancer. 1997;79:2229-2236.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kaufman_rh_noller_k_adam_e_et_al_upper_genital_tract_abnormalities_and_pregnancy_outcome_in_diethyls",
+          "label": "Kaufman RH, Noller K, Adam E, et al. Upper genital tract abnormalities and pregnancy outcome in diethylstilbestrol-exposed progeny. Am J Obstet Gynecol. 1984;148:973-984.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clement_r_guilbaud_e_barrios_l_rouge_maillart_c_jousset_n_rodat_o_des_daughters_in_france_experts_po",
+          "label": "Clement R, Guilbaud E, Barrios L, Rouge-Maillart C, Jousset N, Rodat O. DES daughters in France: experts’ points of view on the various genital, uterine and obstetric pathologies, and in utero DES exposure. Med Sci Law. 2014; 54(4):219-29.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "titus_l_hatch_ee_drake_km_et_al_reproductive_and_hormone_related_outcomes_in_women_whose_mothers_wer",
+          "label": "Titus L, Hatch EE, Drake KM, et al. Reproductive and hormone-related outcomes in women whose mothers were exposed to in utero diethylstilbestrol (DES): a report from the UN National Cancer Institute DES Third Generation Study. Reprod Toxicol. 2019;84:32-38.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "laronda_mm_unno_k_butler_lm_kurita_t_the_development_of_cervical_and_vaginal_adenosis_as_a_result_of",
+          "label": "Laronda MM, Unno K, Butler LM, Kurita T. The development of cervical and vaginal adenosis as a result of diethylstilbestrol exposure in utero. Differentiation. 2012;84(3):252-60.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_adheres_to_the_standardized_terminology_proposed_by_the_world_health_organization_who_c",
+          "label": "The protocol adheres to the standardized terminology proposed by the World Health Organization (WHO) classification of malignant and premalignant vaginal epithelial tumors.1 This protocol is also used for adenosarcoma. The most common tumor subtype is squamous cell carcinoma. However, when such tumor simultaneously involves the cervix or the vulva and the vagina, the tumor is considered to originate from the cervix or vulva, with secondary extension to the vagina. Categorization of squamous cell carcinoma has been simplified into HPV-associated and HPV-independent types based upon their pathogenesis. If this association is unknown or unable to be determined, “not otherwise specified (NOS)” is appropriate. Former descriptive terms such as “warty”, “basaloid”, “verrucous” and “papillary” are no longer necessary components of the histologic type. Adjacent squamous intraepithelial lesions, the putative precursors, are a helpful clue to subtype. For HPV-associated precursors, low grade or high grade squamous intraepithelial lesion (SIL) is the preferred terminology but vaginal intraepithelial lesion (VaIN) may also be used, with appropriate grades 1, 2 or 3 (eg. VaIN2).  Microinvasive / superficially invasive carcinoma is not a recognized entity in the vagina, and thus the term is not used.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_adenocarcinoma_is_present_in_the_vagina_it_is_important_to_remember_that_many_of_those_tumors_rep",
+          "label": "If adenocarcinoma is present in the vagina, it is important to remember that many of those tumors represent secondary involvement either by direct extension or metastases, most commonly from the endometrium, colorectum, ovary, vulva, urethra, or urinary bladder. Although rare, pprimary intestinal-type mucinous (adeno)carcinoma has been described in the vagina.2,3 These tumors usually arise in a background of a benign adenomatous lesion or polyp. Awareness of this subtype is necessary to avoid misdiagnosis of a metastatic colorectal adenocarcinoma.3,4,5 Primary gastric-type adenocarcinoma is also rare and usually associated with non-DES vaginal adenosis. The most differentiated form was previously known as “adenoma malignum” or “minimal deviation adenocarcinoma” but these tumors are now recognized as part of a spectrum of malignancy with gastric-type epithelium under the rubric of mucinous carcinoma, gastric-type. It has features identical to this entity in the cervix.6,7 The tall columnar cells are characterized by abundant pale pink cytoplasm, distinct cell borders, basal nuclei and often minimal nuclear atypia, with immunoreactivity for MUC6 (more specific) and HIK1083, and mutation-type p53 patterns.8 It is not associated with HPV or DES. p16 is block-like; ER and PR are generally nonreactive. Goblet and neuroendocrine cells may be present. Glandular patterns of invasion are subtle, typically lack stromal reaction, and are characterized by haphazardly arranged “claw-like” glands deep in the stroma, with focal or extensive glandular dilatation.8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_very_rare_adenocarcinoma_of_skene_gland_origin_mimics_prostatic_adenocarcinoma_and_is_reactive_w",
+          "label": "The very rare adenocarcinoma of Skene gland origin mimics prostatic adenocarcinoma and is reactive with prostatic markers.9 Equally rare is mesonephric adenocarcinoma, which is typically para-urethral and characterized by a diversity of architectural patterns within the tumor. They are presumed to arise from vaginal mesonephric remnants and thus are most often located in the lateral vaginal wall.9,10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_tumor_are_extremely_rare_in_the_gynecologic_tract_other_than_ovary_or_cervix_the_comb",
+          "label": "Neuroendocrine tumor are extremely rare in the gynecologic tract other than ovary or cervix. The “combined” category must include the presence of a non-neuroendocrine carcinoma along with a neuroendocrine tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "herrington_cs_kim_k_r_kong_cs_mccluggage_wg_ordi_j_tumours_of_the_vagina_in_who_classification_of_tu",
+          "label": "Herrington CS, Kim K-R, Kong CS, McCluggage WG, Ordi J. Tumours of the vagina. In: WHO Classification of Tumours Editorial Board. Female genital tumours [Internet]. Lyon (France): International Agency for Research on Cancer; 2020 [cited 2021 Jan 05]. (WHO classification of tumours series, 5th ed; vol 4). Available from https://tumoursclassification.iarc.who.int/chpters/1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tjalma_wa_colpaert_cg_primary_vaginal_adenocarcinoma_of_intestinal_type_arising_from_a_tubulovillous",
+          "label": "Tjalma WA, Colpaert CG. Primary vaginal adenocarcinoma of intestinal type arising from a tubulovillous adenoma. Int J Gynecol Cancer. 2006;16:1461-1465.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ditto_a_martinelli_f_carcangiu_ml_et_al_incidental_diagnosis_of_primary_vaginal_adenocarcinoma_of_in",
+          "label": "Ditto A, Martinelli F, Carcangiu ML, et al. Incidental diagnosis of primary vaginal adenocarcinoma of intestinal type: a case report and review of the literature. Int J Gynecol Pathol. 2007;26(4):490-493.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mudhar_hs_smith_jh_tidy_j_primary_vaginal_adenocarcinoma_of_intestinal_type_arising_from_an_adenoma_",
+          "label": "Mudhar HS, Smith JH, Tidy J. Primary vaginal adenocarcinoma of intestinal type arising from an adenoma: case report and review of the literature. Int J Gynecol Pathol. 2001;20:204-209.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ditto_a_martinelli_f_carcangiu_ml_et_al_incidental_diagnosis_of_primary_vaginal_adenocarcinoma_of_in",
+          "label": "Ditto A, Martinelli F, Carcangiu ML, et al. Incidental diagnosis of primary vaginal adenocarcinoma of intestinal type: a case report and review of the literature. Int J Gynecol Pathol. 2007;26:490-493.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wong_rw_moore_m_talia_kl_ganesan_r_mccluggage_wg_primary_vaginal_gastric_type_adenocarcinoma_and_vag",
+          "label": "Wong RW, Moore M, Talia KL, Ganesan R, McCluggage WG. Primary vaginal gastric-type adenocarcinoma and vaginal adenosis exhibiting gastric differentiation: report of a series with detailed immunehistochemical analysis. Am J Surg Pathol. 2018;42(7):958-970.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carleton_c_hoang_l_sah_s_et_al_a_detailed_immunohistochemical_analysis_of_a_large_series_of_cervical",
+          "label": "Carleton C, Hoang L, Sah S, et al. A detailed immunohistochemical analysis of a large series of cervical and vaginal gastric-type adenocarcinomas. Am J Surg Pathol. 2016;40(5):636-44.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "talia_kl_mccluggage_wg_the_developing_spectrum_of_gastric_type_cervical_glandular_lesions_pathol_201",
+          "label": "Talia KL, McCluggage WG. The developing spectrum of gastric-type cervical glandular lesions. Pathol. 2018;50(2):122-133.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mueller_i_kametriser_g_jacobs_vr_et_al_mesonephric_adenocarcinoma_of_the_vagina_diagnosis_and_multim",
+          "label": "Mueller I, Kametriser G, Jacobs VR, et al. Mesonephric adenocarcinoma of the vagina: diagnosis and multimodal treatment of a rare tumor and analysis of worldwide experience. Review. Strahlnther Onkol. 2016;192(9):668-671.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mahasmej_t_alhamss_s_almusa_z_et_al_periurethral_adenocarcinoma_of_mesonephric_origin_a_case_report_",
+          "label": "Mahasmej T, Alhamss S, Almusa Z, et al. Periurethral adenocarcinoma of mesonephric origin: a case report and review of the literature. Urol Case Rep. 2018;20:25-27.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_wide_variety_of_grading_systems_including_some_that_evaluate_only_the_extent_of_cellular_different",
+          "label": "A wide variety of grading systems, including some that evaluate only the extent of cellular differentiation and others that assess additional features such as the appearance of the tumor margin, the extent of inflammatory cell infiltration, and vascular invasion, have been used for squamous cell carcinoma of the cervix. However, there is no consensus emerging from the literature that any of these systems are reproducible or that they provide useful prognostic information. Similar problems arise with grading adenocarcinoma. Therefore, no specific grading system for vaginal cancers is recommended.\n\nFor the sake of uniformity, 3 grades may be used, as shown below, with the understanding that these have not been clinically validated. Grades 1 to 3 are assigned to carcinoma showing squamous or glandular differentiation; undifferentiated carcinoma is not graded (not applicable).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_cannot_be_assessed",
+          "label": "Grade X\tCannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1\tWell differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2\tModerately differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated",
+          "label": "Grade 3\tPoorly differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_dysplasia_or_carcinoma_in_situ_adenocarcinoma_in_situ_adenomatous_lesions_or_atypical_adeno",
+          "label": "Squamous dysplasia or carcinoma in situ, adenocarcinoma in situ, adenomatous lesions or atypical adenosis, particularly if such changes are at the resection margin, may increase the frequency of recurrent tumor. A few cases of primary invasive carcinoma of vagina have been reported to occur in association with severe vaginal prolapse.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lavazzo_c_vorgias_g_vecchini_g_et_al_vaginal_carcinoma_in_a_completely_prolapsed_uterus_a_case_repor",
+          "label": "Lavazzo C, Vorgias G, Vecchini G, et al. Vaginal carcinoma in a completely prolapsed uterus: a case report. Arch Gynecol Obstet. 2007;275:503-505.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "batista_tp_morais_ja_reis_tj_et_ai_a_rare_case_of_invasive_vaginal_carcinoma_associated_with_vaginal",
+          "label": "Batista TP, Morais JA, Reis TJ, et aI. A rare case of invasive vaginal carcinoma associated with vaginal prolapse. Arch Gynecol Obstet. 2009;280(5):845-848.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gupta_n_mittal_s_dalmia_s_et_al_a_rare_case_of_primary_invasive_carcinoma_of_vagina_associated_with_",
+          "label": "Gupta N, Mittal S, Dalmia S, et al. A rare case of primary invasive carcinoma of vagina associated with irreducible third degree uterovaginal prolapse. Arch Gynecol Obstet. 2007; 276:563-564.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1198 @@
+{
+  "template_id": "Breast.Phyllodes_1.1.0.1.REL_CAPCP",
+  "organ": "PHYLLODES OF THE BREAST: Resection",
+  "protocol_posting_date": "September 2022",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "excision",
+              "label": "Excision (less than total mastectomy)"
+            },
+            {
+              "value": "total_mastectomy",
+              "label": "Total mastectomy (including nipple-sparing and skin-sparing mastectomy)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_laterality",
+          "label": "Specimen Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "upper_outer_quadrant",
+              "label": "Upper outer quadrant"
+            },
+            {
+              "value": "lower_outer_quadrant",
+              "label": "Lower outer quadrant"
+            },
+            {
+              "value": "upper_inner_quadrant",
+              "label": "Upper inner quadrant"
+            },
+            {
+              "value": "lower_inner_quadrant",
+              "label": "Lower inner quadrant"
+            },
+            {
+              "value": "central",
+              "label": "Central"
+            },
+            {
+              "value": "nipple",
+              "label": "Nipple"
+            },
+            {
+              "value": "clock_position",
+              "label": "Clock position"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_clock_position",
+          "label": "Specify Clock Position",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "1_oclock",
+              "label": "1 o'clock"
+            },
+            {
+              "value": "2_oclock",
+              "label": "2 o'clock"
+            },
+            {
+              "value": "3_oclock",
+              "label": "3 o'clock"
+            },
+            {
+              "value": "4_oclock",
+              "label": "4 o'clock"
+            },
+            {
+              "value": "5_oclock",
+              "label": "5 o'clock"
+            },
+            {
+              "value": "6_oclock",
+              "label": "6 o'clock"
+            },
+            {
+              "value": "7_oclock",
+              "label": "7 o'clock"
+            },
+            {
+              "value": "8_oclock",
+              "label": "8 o'clock"
+            },
+            {
+              "value": "9_oclock",
+              "label": "9 o'clock"
+            },
+            {
+              "value": "10_oclock",
+              "label": "10 o'clock"
+            },
+            {
+              "value": "11_oclock",
+              "label": "11 o'clock"
+            },
+            {
+              "value": "12_oclock",
+              "label": "12 o'clock"
+            },
+            {
+              "value": "specify_distance_from_nipple_in_centimeters",
+              "label": "Specify distance from nipple in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_millimeters",
+              "label": "Greatest dimension in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_millimeters_mm______x______mm",
+          "label": "Additional Dimension in Millimeters (mm): ____ x ____ mm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "a_diagnosis_of_malignant_phyllodes_tumor_requires_the_presence_of_all_five_of_the_following_features",
+          "label": "A diagnosis of malignant phyllodes tumor requires the presence of all five of the following features: marked stromal cellularity, marked stromal atypia, stromal overgrowth, an infiltrative tumor border and greater than or equal to 10 mitoses per 10 high power fields (HPFs). Tumors should be classified as borderline when some but not all of these changes are present. Malignant phyllodes tumor is also diagnosed when malignant heterologous elements other than pure well differentiated liposarcoma are present, even if not all of the other histologic features of malignancy are observed.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "phyllodes_tumor_benign",
+              "label": "Phyllodes tumor, benign"
+            },
+            {
+              "value": "phyllodes_tumor_borderline",
+              "label": "Phyllodes tumor, borderline"
+            },
+            {
+              "value": "phyllodes_tumor_malignant",
+              "label": "Phyllodes tumor, malignant"
+            }
+          ]
+        },
+        {
+          "field_id": "stromal_cellularity",
+          "label": "Stromal Cellularity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mild",
+              "label": "Mild (stromal nuclei are non-overlapping)"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate (some overlapping stromal nuclei)"
+            },
+            {
+              "value": "marked",
+              "label": "Marked (many overlapping stromal nuclei)"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "stromal_atypia",
+          "label": "Stromal Atypia",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "mild",
+              "label": "Mild (minimal variation in nuclear size, even chromatin, and smooth nuclear contours)"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate (more variation in nuclear size and irregular nuclear membranes)"
+            },
+            {
+              "value": "marked",
+              "label": "Marked (marked nuclear pleomorphism, hyperchromasia, and irregular nuclear contours)"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "stromal_overgrowth",
+          "label": "Stromal Overgrowth",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "stromal_overgrowth_is_present_when_there_is_at_least_one_low_power_microscopic_field_4x_objective_an",
+          "label": "Stromal overgrowth is present when there is at least one low-power microscopic field (4x objective and 10x eyepiece or 22.9 mm2) that contains stroma only without epithelial elements.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "absent",
+              "label": "Absent"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "mitotic_rate",
+          "label": "Mitotic Rate",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "malignant_phyllodes_tumors_have_greater_than_or_equal_to_10_mitoses_per_10_high_power_fields_40x_obj",
+          "label": "Malignant phyllodes tumors have greater than or equal to 10 mitoses per 10 high-power fields (40x objective and 10x eyepiece) or greater than or equal to 5 mitoses / mm2. Benign phyllodes tumors have less than 5 mitoses per 10 HPFs (less than 2.5 mitoses / mm2).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "specify_number_of_mitoses_per_10_high_power_fields",
+              "label": "Specify number of mitoses per 10 high power fields: _________________ mitoses per 10 High Power Fields (HPFs)",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "or",
+          "label": "OR",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_number_of_mitoses_per_square_millimeter",
+              "label": "Specify number of mitoses per square Millimeter (mm): _________________ mitoses per mm2",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_tumor_border",
+          "label": "Histologic Tumor Border",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_circumscribed_border_is_smooth_and_well_defined_or_shows_a_minimally_irregular_tumor_interface_wit",
+          "label": "A circumscribed border is smooth and well-defined or shows a minimally irregular tumor interface with adjacent stroma. Infiltrative (permeative) tumor borders can be focally infiltrative (unequivocal invasion into adjacent stroma in one low power field) or extensively infiltrative (unequivocal invasion in a wide area or in multiple foci along the tumor periphery).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "circumscribed",
+              "label": "Circumscribed (well-defined; pushing)"
+            },
+            {
+              "value": "infiltrative",
+              "label": "Infiltrative (permeative)"
+            }
+          ]
+        },
+        {
+          "field_id": "focal",
+          "label": "___ Focal",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extensive",
+          "label": "___ Extensive",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "malignant_heterologous_elements",
+          "label": "Malignant Heterologous Elements",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "a_phyllodes_tumor_is_regarded_as_malignant_when_there_are_malignant_heterologous_elements_even_when_",
+          "label": "A phyllodes tumor is regarded as malignant when there are malignant heterologous elements, even when not all of the other histological features of malignancy are present. This rule does not apply if the only heterologous element is well differentiated liposarcoma. In the breast, those tumors usually lack MDM2 and CDK4 amplifications and have a low metastatic risk. A diagnosis of malignant phyllodes tumor should therefore not be based solely on the presence of well-differentiated liposarcoma without all of the other histologic features of malignancy.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "liposarcoma",
+              "label": "Liposarcoma (excluding well-differentiated liposarcoma)"
+            },
+            {
+              "value": "osteosarcoma",
+              "label": "Osteosarcoma"
+            },
+            {
+              "value": "chondrosarcoma",
+              "label": "Chondrosarcoma"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status_for_phyllodes_tumor",
+          "label": "Margin Status for Phyllodes Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margin_status_is_listed_as_positive_if_there_is_ink_on_phyllodes_tumor",
+          "label": "Margin status is listed as positive if there is ink on phyllodes tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_phyllodes_tumor",
+              "label": "All margins negative for phyllodes tumor"
+            }
+          ],
+          "condition": "i.e., the distance is 0 mm"
+        },
+        {
+          "field_id": "closest_margins_to_phyllodes_tumor",
+          "label": "Closest Margin(s) to Phyllodes Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "anterior",
+              "label": "Anterior"
+            },
+            {
+              "value": "posterior",
+              "label": "Posterior"
+            },
+            {
+              "value": "superior",
+              "label": "Superior"
+            },
+            {
+              "value": "inferior",
+              "label": "Inferior"
+            },
+            {
+              "value": "medial",
+              "label": "Medial"
+            },
+            {
+              "value": "lateral",
+              "label": "Lateral"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_phyllodes_tumor_to_closest_margin",
+          "label": "Distance from Phyllodes Tumor to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "phyllodes_tumor_present_at_margin",
+              "label": "Phyllodes tumor present at margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margins_involved_by_phyllodes_tumor",
+          "label": "Margin(s) Involved by Phyllodes Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "anterior",
+              "label": "Anterior"
+            },
+            {
+              "value": "posterior",
+              "label": "Posterior"
+            },
+            {
+              "value": "superior",
+              "label": "Superior"
+            },
+            {
+              "value": "inferior",
+              "label": "Inferior"
+            },
+            {
+              "value": "medial",
+              "label": "Medial"
+            },
+            {
+              "value": "lateral",
+              "label": "Lateral"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_nodes",
+              "label": "Tumor present in regional lymph nodes"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "pathologic_stage_classification",
+          "label": "PATHOLOGIC STAGE CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ],
+          "condition": "pTNM, AJCC 8th Edition"
+        },
+        {
+          "field_id": "staging_applies_only_to_malignant_phyllodes_tumors_pt_and_pn_categories_should_not_be_assigned_for_b",
+          "label": "Staging applies only to malignant phyllodes tumors. pT and pN categories should not be assigned for benign and borderline tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_stage_classification_ptnm_ajcc_8th_edition",
+          "label": "Pathologic Stage Classification (pTNM, AJCC 8th Edition)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (tumor is not graded as malignant)"
+            },
+            {
+              "value": "tumor_is_malignant",
+              "label": "Tumor is malignant"
+            }
+          ],
+          "condition": "required only if the tumor is malignant"
+        },
+        {
+          "field_id": "the_following_section_applies_only_if_the_tumor_is_malignant_do_not_assign_pt_and_pn_stage_categorie",
+          "label": "The following section applies only if the tumor is malignant. Do not assign pT and pN stage categories for benign or borderline tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tnm_descriptors",
+          "label": "TNM Descriptors",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "m",
+              "label": "m (multiple)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrent)"
+            },
+            {
+              "value": "y",
+              "label": "y (post treatment)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor 5 cm or less in greatest dimension"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor more than 5 cm but not more than 10 cm"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor more than 10 cm but not more than 15 cm"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor more than 15 cm in greatest dimension"
+            }
+          ]
+        },
+        {
+          "field_id": "when_no_lymph_nodes_are_present_the_pathologic_n_category_is_not_assigned",
+          "label": "When no lymph nodes are present, the pathologic 'N' category is not assigned",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Regional lymph node metastasis"
+            }
+          ],
+          "condition": "pNX is not used and should not be reported"
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "fibroepithelial_proliferation",
+              "label": "Fibroepithelial proliferation (coexisting fibroadenoma or fibroadenomatoid change in the tissue surrounding the phyllodes tumor)"
+            },
+            {
+              "value": "atypical_ductal_hyperplasia",
+              "label": "Atypical ductal hyperplasia"
+            },
+            {
+              "value": "atypical_lobular_hyperplasia",
+              "label": "Atypical lobular hyperplasia"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "phyllodes_tumors_are_classified_as_malignant_when_all_five_of_the_following_histological_features_ar",
+          "label": "Phyllodes tumors are classified as malignant when all five of the following histological features are present: marked stromal hypercellularity; marked stromal atypia; stromal overgrowth; an infiltrative (permeative) tumor border; and greater than or equal to 10 mitotic figures in 10 high power fields (see Table 1). Tumors should be classified as borderline if some but not all of these changes are present.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_rare_phyllodes_tumors_that_do_not_have_all_five_histologic_features_but_display_malignant_",
+          "label": "There are rare phyllodes tumors that do not have all five histologic features but display malignant behavior. When a tumor lacks one or two features but shows severe abnormalities in others, the pathologist should consider adding a comment that such tumors may exhibit aggressive behavior.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "benign_phyllodes_tumors_have_mild_stromal_hypercellularity_minimal_to_no_stromal_atypia_no_stromal_o",
+          "label": "Benign phyllodes tumors have mild stromal hypercellularity, minimal to no stromal atypia, no stromal overgrowth, circumscribed (pushing) tumor borders and less than or equal to 4 mitoses per 10 high-power fields (HPFs).1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_distinction_between_benign_and_borderline_phyllodes_tumors_is_not_well_defined_and_there_is_no_u",
+          "label": "The distinction between benign and borderline phyllodes tumors is not well-defined and there is no universal agreement which histologic features should be given greater emphasis. When the distinction between a benign and borderline tumor is unclear, it may be helpful to include a comment about this in the pathology report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_phyllodes_tumor_is_also_categorized_as_malignant_if_there_is_a_malignant_heterologous_mesenchymal_",
+          "label": "A phyllodes tumor is also categorized as malignant if there is a malignant heterologous mesenchymal component (e.g. liposarcoma, chondrosarcoma, osteosarcoma) even if the other histological parameters are not present, or if only some are present. An exception to this rule is if the heterologous element is atypical lipomatous tumor/well-differentiated liposarcoma. Well-differentiated liposarcomas in the breast usually lack MDM2 and CDK4 amplifications and appear to have a low metastatic risk. Hence, a diagnosis of malignant phyllodes tumor should not be based solely on the presence of well-differentiated liposarcoma without the other histologic features that support malignancy.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_histologic_features_of_phyllodes_tumors",
+          "label": "Table 1. Histologic features of phyllodes tumors",
+          "required": true,
+          "type": "free_text",
+          "condition": "adapted from Tse G, et al2"
+        },
+        {
+          "field_id": "hpf_high_power_field",
+          "label": "HPF: High power field",
+          "required": true,
+          "type": "free_text",
+          "condition": "40x objective and 10x eyepiece"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tan_by_apple_sk_badve_s_et_al_phyllodes_tumours_of_the_breast_a_consensus_review_histopathology_2016",
+          "label": "Tan BY, Apple SK, Badve S, et al. Phyllodes tumours of the breast: a consensus review. Histopathology. 2016;68:5-21.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tse_g_koo_js_thike_aa_phyllodes_tumour_in_who_classification_of_tumours_editorial_board_breast_tumou",
+          "label": "Tse G, Koo JS, Thike AA. Phyllodes tumour. In: WHO Classification of Tumours Editorial Board. Breast Tumours, 5th ed, vol 2. Lyon (France): International Agency for Research on Cancer; 2019:172-176.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mild_hypercellularity_is_characterized_by_a_slight_increase_in_stromal_cells_as_compared_with_normal",
+          "label": "Mild hypercellularity is characterized by a slight increase in stromal cells as compared with normal perilobular stroma, with evenly spaced nuclei that are not touching or overlapping, while marked stromal cellularity shows confluent areas of densely overlapping nuclei. Moderate stromal cellularity has findings that are intermediate between the two, with some overlapping stromal nuclei.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tan_by_apple_sk_badve_s_et_al_phyllodes_tumours_of_the_breast_a_consensus_review_histopathology_2016",
+          "label": "Tan BY, Apple SK, Badve S, et al. Phyllodes tumours of the breast: a consensus review. Histopathology. 2016;68:5-21.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jara_lazaro_ar_akhilesh_m_thike_aa_et_al_predictors_of_phyllodes_tumours_on_core_biopsy_specimens_of",
+          "label": "Jara-Lazaro AR, Akhilesh M, Thike AA, et al. Predictors of phyllodes tumours on core biopsy specimens of fibroepithelial neoplasms. Histopathology. 2010; 57:220–232.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mild_stromal_atypia_is_reported_when_there_is_little_variation_in_nuclear_size_and_the_nuclear_conto",
+          "label": "Mild stromal atypia is reported when there is little variation in nuclear size and the nuclear contours are smooth. Cases with moderate atypia show some variation in the size of stromal nuclei and some wrinkling of nuclear membranes. Marked stromal atypia is identified when there is marked variation in nuclear size, coarse chromatin and irregular nuclear membranes with discernible nucleoli.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tan_by_apple_sk_badve_s_et_al_phyllodes_tumours_of_the_breast_a_consensus_review_histopathology_2016",
+          "label": "Tan BY, Apple SK, Badve S, et al. Phyllodes tumours of the breast: a consensus review. Histopathology. 2016;68:5-21.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jara_lazaro_ar_akhilesh_m_thike_aa_et_al_predictors_of_phyllodes_tumours_on_core_biopsy_specimens_of",
+          "label": "Jara-Lazaro AR, Akhilesh M, Thike AA, et al. Predictors of phyllodes tumours on core biopsy specimens of fibroepithelial neoplasms. Histopathology. 2010; 57:220–232.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stromal_overgrowth_is_defined_by_the_absence_of_epithelial_elements_in_at_least_one_low_power_micros",
+          "label": "Stromal overgrowth is defined by the absence of epithelial elements in at least one low-power microscopic field containing only stroma. A low-power field can be defined either as a 4x objective and 10x eyepiece or as 22.9 mm2.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tan_by_apple_sk_badve_s_et_al_phyllodes_tumours_of_the_breast_a_consensus_review_histopathology_2016",
+          "label": "Tan BY, Apple SK, Badve S, et al. Phyllodes tumours of the breast: a consensus review. Histopathology. 2016;68:5-21.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jara_lazaro_ar_akhilesh_m_thike_aa_et_al_predictors_of_phyllodes_tumours_on_core_biopsy_specimens_of",
+          "label": "Jara-Lazaro AR, Akhilesh M, Thike AA, et al. Predictors of phyllodes tumours on core biopsy specimens of fibroepithelial neoplasms. Histopathology. 2010; 57:220–232.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tan_ph_thike_aa_tan_wj_et_al_predicting_clinical_behaviour_of_breast_phyllodes_tumours_a_nomogram_ba",
+          "label": "Tan PH, Thike AA, Tan WJ, et al. Predicting clinical behaviour of breast phyllodes tumours: a nomogram based on histological criteria and surgical margins. J Clin Pathol 2012;65:69-76.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_diagnosis_of_malignant_phyllodes_tumor_requires_at_least_10_mitoses_per_10_high_power_fields_40x_o",
+          "label": "A diagnosis of malignant phyllodes tumor requires at least 10 mitoses per 10 high power fields (40x objective and 10x eyepiece) or at least 5 mitoses/mm2. Mitotic activity in benign phyllodes tumor is usually low (less than or equal to 4 mitoses per 10 HPFs or less than 2.5 mitoses per mm2). Borderline phyllodes tumors usually have 5 to 9 mitoses per 10 HPF (2.5 to 5 mitoses/mm2).1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_report_the_number_of_mitoses_per_square_millimeter_the_area_of_the_high_power_field_must_be_known",
+          "label": "To report the number of mitoses per square millimeter, the area of the high power field must be known, but microscopes vary in field size so the area must be determined for each microscope. The diameter of an HPF can be determined using a micrometer or calculated by using the method below",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "using_a_clear_ruler_measure_the_diameter_of_a_low_power_field_this_number_can_be_used_to_calculate_a",
+          "label": "Using a clear ruler, measure the diameter of a low-power field. This number can be used to calculate a constant based on the following formula",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eyepiece_magnification_x_objective_magnification_x_microscopic_field_diameter_a_constant",
+          "label": "Eyepiece Magnification x Objective Magnification x Microscopic Field Diameter = A Constant",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "once_the_value_of_the_constant_is_known_the_diameter_of_the_high_power_field_can_be_calculated_by_us",
+          "label": "Once the value of the constant is known, the diameter of the high power field can be calculated by using the following formula",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_power_field_diameter_constant",
+          "label": "High Power Field Diameter = Constant /",
+          "required": true,
+          "type": "free_text",
+          "condition": "Eyepiece Magnification x Objective Magnification"
+        },
+        {
+          "field_id": "half_of_the_field_diameter_is_the_radius_of_the_field_r_which_can_then_be_used_to_calculate_the_area",
+          "label": "Half of the field diameter is the radius of the field (r), which can then be used to calculate the area of the HPF",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "area_of_high_power_field_r2_x_31415",
+          "label": "Area of High Power Field = r2 x 3.1415",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tse_g_koo_js_thike_aa_phyllodes_tumour_in_who_classification_of_tumours_editorial_board_breast_tumou",
+          "label": "Tse G, Koo JS, Thike AA. Phyllodes tumour. In: WHO Classification of Tumours Editorial Board. Breast Tumours, 5th ed, vol 2. Lyon (France): International Agency for Research on Cancer; 2019:172-176.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malignant_heterologous_elements_include_osteosarcoma_chondrosarcoma_rhabdomyosarcoma_and_rarely_othe",
+          "label": "Malignant heterologous elements include osteosarcoma, chondrosarcoma, rhabdomyosarcoma, and rarely other types of sarcoma. The presence of well differentiated liposarcoma alone is not used to categorize a phyllodes tumor as malignant.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tan_by_apple_sk_badve_s_et_al_phyllodes_tumours_of_the_breast_a_consensus_review_histopathology_2016",
+          "label": "Tan BY, Apple SK, Badve S, et al. Phyllodes tumours of the breast: a consensus review. Histopathology. 2016;68:5-21.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jara_lazaro_ar_akhilesh_m_thike_aa_et_al_predictors_of_phyllodes_tumours_on_core_biopsy_specimens_of",
+          "label": "Jara-Lazaro AR, Akhilesh M, Thike AA, et al. Predictors of phyllodes tumours on core biopsy specimens of fibroepithelial neoplasms. Histopathology. 2010; 57:220–232.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_american_joint_committee_on_cancer_ajcc_eighth_edition1_and_the_world_health_organization_who2_r",
+          "label": "The American Joint Committee on Cancer (AJCC) eighth edition1 and the World Health Organization (WHO)2 recommend staging malignant phyllodes tumors according to guidelines established for soft tissue sarcomas – extremity and trunk. T category, N category and stage group assignments do not apply to benign or borderline phyllodes tumors and should only be reported if the tumor is malignant.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_and_r_prefixes",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y” and “r” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (ie, before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "only_malignant_phyllodes_tumors_are_staged_according_to_ajcc_staging_rules_the_pathologic_t_category",
+          "label": "Only malignant phyllodes tumors are staged according to AJCC staging rules. The pathologic 'T' category (pT) is not assigned for benign and borderline phyllodes tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_nodal_metastasis_is_uncommon_in_phyllodes_tumor_and_lymph_nodes_may_not_be_sampled_when_no_",
+          "label": "Regional nodal metastasis is uncommon in phyllodes tumor and lymph nodes may not be sampled. When no lymph nodes are resected or present in the specimen, the pathologic ‘N’ category is not assigned; pNX should not be used.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maki_rg_folpe_al_guadagnolo_ba_et_al_chapter_45_soft_tissue_sarcoma_unusual_histologies_and_sites_in",
+          "label": "Maki RG, Folpe AL, Guadagnolo BA, et al. Chapter 45. Soft tissue sarcoma – Unusual histologies and sites. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York: Springer; 2017:539-544.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tse_g_koo_js_thike_aa_phyllodes_tumour_in_who_classification_of_tumours_editorial_board_breast_tumou",
+          "label": "Tse G, Koo JS, Thike AA. Phyllodes tumour. In: WHO Classification of Tumours Editorial Board. Breast Tumours, 5th ed, vol 2. Lyon (France): International Agency for Research on Cancer; 2019:172-176.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

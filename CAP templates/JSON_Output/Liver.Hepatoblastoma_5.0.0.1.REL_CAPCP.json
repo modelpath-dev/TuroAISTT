@@ -1,0 +1,1609 @@
+{
+  "template_id": "Liver.Hepatoblastoma_5.0.0.1.REL_CAPCP",
+  "organ": "HEPATOBLASTOMA: Resection",
+  "protocol_posting_date": "June 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "expert_consultation",
+      "section_name": "EXPERT CONSULTATION",
+      "fields": [
+        {
+          "field_id": "expert_consultation",
+          "label": "Expert Consultation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pending_completion_of_this_cap_cancer_protocol_is_awaiting_expert_consultation",
+              "label": "Pending - Completion of this CAP Cancer Protocol is awaiting expert consultation"
+            },
+            {
+              "value": "completed_this_cap_cancer_protocol_or_some_elements_have_been_performed_following_expert",
+              "label": "Completed - This CAP Cancer Protocol or some elements have been performed following expert"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "consultation",
+          "label": "consultation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "preoperative_treatment",
+          "label": "Preoperative Treatment",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_preoperative_therapy",
+              "label": "No known preoperative therapy"
+            },
+            {
+              "value": "preoperative_therapy_given",
+              "label": "Preoperative therapy given"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right_lobectomy",
+              "label": "Right lobectomy"
+            },
+            {
+              "value": "extended_right_lobectomy",
+              "label": "Extended right lobectomy"
+            },
+            {
+              "value": "medial_segmentectomy",
+              "label": "Medial segmentectomy"
+            },
+            {
+              "value": "left_lateral_segmentectomy",
+              "label": "Left lateral segmentectomy"
+            },
+            {
+              "value": "total_left_lobectomy",
+              "label": "Total left lobectomy"
+            },
+            {
+              "value": "explanted_liver",
+              "label": "Explanted liver"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "within liver"
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right_lobe",
+              "label": "Right lobe"
+            },
+            {
+              "value": "left_lobe",
+              "label": "Left lobe"
+            },
+            {
+              "value": "right_and_left_lobes",
+              "label": "Right and left lobes"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "condition": "specify for each nodule"
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_assessed",
+              "label": "Cannot be assessed (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "ancillary_studies_immunohistochemistry_molecular_may_be_performed_to_clarify_histologic_type",
+          "label": "Ancillary studies (immunohistochemistry, molecular) may be performed to clarify histologic type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "hepatoblastoma_epithelial_type_fetal_pattern",
+              "label": "Hepatoblastoma, epithelial type, fetal pattern (mitotically inactive / well differentiated)"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_fetal_pattern",
+              "label": "Hepatoblastoma, epithelial type, fetal pattern (mitotically active / crowded)"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_embryonal_pattern",
+              "label": "Hepatoblastoma, epithelial type, embryonal pattern"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_pleomorphic_pattern",
+              "label": "Hepatoblastoma, epithelial type, pleomorphic pattern (poorly differentiated)"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_macrotrabecular_pattern",
+              "label": "Hepatoblastoma, epithelial type, macrotrabecular pattern"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_small_cell_undifferentiated_pattern",
+              "label": "Hepatoblastoma, epithelial type, small cell undifferentiated pattern"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_and_mesenchymal_type_without_teratoid_features",
+              "label": "Hepatoblastoma, epithelial and mesenchymal type, without teratoid features"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_and_mesenchymal_type_with_teratoid_features",
+              "label": "Hepatoblastoma, epithelial and mesenchymal type, with teratoid features"
+            },
+            {
+              "value": "hepatoblastoma_other",
+              "label": "Hepatoblastoma, other (specify, i.e., blastemal, cholangioblastic, squamoid or glandular patterns): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "hepatocellular_neoplasm_nos",
+              "label": "Hepatocellular neoplasm, NOS"
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "post_treatment_histologic_type_required_only_if_preoperative_therapy_was_given",
+          "label": "Post Treatment Histologic Type (required only if preoperative therapy was given)",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "ancillary_studies_immunohistochemistry_may_be_performed_to_clarify_histologic_type",
+          "label": "Ancillary studies (immunohistochemistry) may be performed to clarify histologic type.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_fetal_pattern",
+              "label": "Hepatoblastoma, epithelial type, fetal pattern (mitotically inactive / well differentiated)"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_fetal_pattern",
+              "label": "Hepatoblastoma, epithelial type, fetal pattern (mitotically active / crowded)"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_embryonal_pattern",
+              "label": "Hepatoblastoma, epithelial type, embryonal pattern"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_pleomorphic_pattern",
+              "label": "Hepatoblastoma, epithelial type, pleomorphic pattern (poorly differentiated)"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_macrotrabecular_pattern",
+              "label": "Hepatoblastoma, epithelial type, macrotrabecular pattern"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_type_small_cell_undifferentiated_pattern",
+              "label": "Hepatoblastoma, epithelial type, small cell undifferentiated pattern"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_and_mesenchymal_type_without_teratoid_features",
+              "label": "Hepatoblastoma, epithelial and mesenchymal type, without teratoid features"
+            },
+            {
+              "value": "hepatoblastoma_epithelial_and_mesenchymal_type_with_teratoid_features",
+              "label": "Hepatoblastoma, epithelial and mesenchymal type, with teratoid features"
+            },
+            {
+              "value": "hepatoblastoma_other",
+              "label": "Hepatoblastoma, other (specify, i.e., blastemal, cholangioblastic, squamoid or glandular patterns):"
+            },
+            {
+              "value": "hepatocellular_neoplasm_nos",
+              "label": "Hepatocellular neoplasm, NOS"
+            },
+            {
+              "value": "no_viable_tumor",
+              "label": "No viable tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "macroscopic_extent_of_tumor",
+          "label": "Macroscopic Extent of Tumor",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "confined_to_liver",
+              "label": "Confined to liver"
+            },
+            {
+              "value": "adjacent_organ",
+              "label": "Adjacent organ(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "diaphragm",
+              "label": "Diaphragm"
+            },
+            {
+              "value": "abdominal_wall",
+              "label": "Abdominal wall"
+            },
+            {
+              "value": "adjacent_soft_tissue",
+              "label": "Adjacent soft tissue: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "intraoperative_tumor_spill",
+              "label": "Intraoperative tumor spill"
+            },
+            {
+              "value": "preoperative_gross_tumor_rupture",
+              "label": "Preoperative gross tumor rupture"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "macroscopic_vascular_invasion",
+          "label": "Macroscopic Vascular Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_in_portal_vein",
+              "label": "Present in portal vein"
+            },
+            {
+              "value": "present_in_hepatic_vein",
+              "label": "Present in hepatic vein"
+            },
+            {
+              "value": "present_in_portal_and_hepatic_veins",
+              "label": "Present in portal and hepatic veins"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "microscopic_lymphatic_and_or_vascular_invasion",
+          "label": "Microscopic Lymphatic and / or Vascular Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": false,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "to_include_necrosis_fibrosis_and_other_treatment_effects",
+          "label": "To include necrosis, fibrosis, and other treatment effects",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_treatment_effect",
+          "label": "Percentage of Treatment Effect",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "resection_margin_status",
+          "label": "Resection Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_resection_margins_negative_for_tumor",
+              "label": "All resection margins negative for tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_resection_margins_to_tumor",
+          "label": "Closest Resection Margin(s) to Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_closest_resection_margin",
+              "label": "Specify closest resection margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_tumor_to_closest_resection_margin",
+          "label": "Distance from Tumor to Closest Resection Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_01_cm",
+              "label": "Less than 0.1 cm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_present_at_resection_margin",
+              "label": "Tumor present at resection margin"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "macroscopic_tumor_present_at_margin",
+          "label": "___ Macroscopic tumor present at margin",
+          "required": false,
+          "type": "free_text",
+          "condition": "e.g., grossly positive margin"
+        },
+        {
+          "field_id": "microscopic_tumor_present_at_margin",
+          "label": "___ Microscopic tumor present at margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "resection_margins_involved_by_tumor",
+          "label": "Resection Margin(s) Involved by Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_resection_margin",
+              "label": "Specify resection margin(s) involved: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "capsular_surface_status",
+          "label": "Capsular Surface Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "tumor_present_at_capsular_surface",
+              "label": "Tumor present at capsular surface"
+            },
+            {
+              "value": "capsular_surface_negative_for_tumor",
+              "label": "Capsular surface negative for tumor"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_with_tumor_if_known",
+          "label": "Nodal Site(s) with Tumor, if known",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_known",
+              "label": "Not known"
+            },
+            {
+              "value": "specify_nodal_site",
+              "label": "Specify nodal site(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_present_in_involved_node",
+          "label": "Histologic Type Present in Involved Node",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_histologic_type",
+              "label": "Specify histologic type: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "s"
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distant_metastasis",
+          "label": "DISTANT METASTASIS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "inferior_phrenic_lymph_node",
+              "label": "Inferior phrenic lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lymph_node",
+              "label": "Lymph node(s) distal to hilum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "hepatoduodenal_ligament_lymph_node",
+              "label": "Hepatoduodenal ligament lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "caval_region_lymph_node",
+              "label": "Caval region lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_present_in_distant_metastasis",
+          "label": "Histologic Type Present in Distant Metastasis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_histologic_type",
+              "label": "Specify histologic type: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "no_background_liver_available_for_evaluation",
+              "label": "No background liver available for evaluation (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cirrhosis_fibrosis",
+              "label": "Cirrhosis / fibrosis (specify stage of fibrosis): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "iron_overload",
+              "label": "Iron overload"
+            },
+            {
+              "value": "hepatitis",
+              "label": "Hepatitis (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "serum_alpha_fetoprotein_afp_level_at_diagnosis",
+          "label": "Serum Alpha-Fetoprotein (AFP) Level at Diagnosis",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "level_at_time_of_diagnosis_may_be_prognostically_important",
+          "label": "Level at time of diagnosis may be prognostically important.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_100_ng_ml",
+              "label": "Less than 100 ng / mL"
+            },
+            {
+              "value": "100_ng_ml_12_million_ng_ml",
+              "label": "100 ng / mL - 1.2 million ng / mL"
+            },
+            {
+              "value": "greater_than_12_million_ng_ml",
+              "label": "Greater than 1.2 million ng / mL"
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            }
+          ]
+        },
+        {
+          "field_id": "beta_catenin_ihc",
+          "label": "Beta-catenin IHC",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (specify pattern): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "glypican_3_ihc",
+          "label": "Glypican-3 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            }
+          ]
+        },
+        {
+          "field_id": "pattern_of_glypican_3_ihc_staining",
+          "label": "Pattern of Glypican-3 IHC Staining: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "ini_1_ihc",
+      "section_name": "INI-1 IHC",
+      "fields": [
+        {
+          "field_id": "other_ancillary_studies_specify",
+          "label": "Other Ancillary Studies (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "expert_consultation_is_not_required_this_question_has_been_added_to_annotate_if_so_desired_that_the_",
+          "label": "Expert consultation is not required. This question has been added to annotate, if so desired, that the case has been sent out for consultation and thus items of the CAP protocol could not be completed pending expert consultation. Completion of the CAP protocol will then be performed following consultation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_various_surgical_procedures_listed_include_those_that_attempt_primary_resection_or_resection_pos",
+          "label": "The various surgical procedures listed include those that attempt primary resection or resection post chemotherapy and the judicious use of transplant where necessary due to overall improved outcome following transplant for nonresectable cases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "use_of_intraoperative_frozen_sections_should_be_avoided_unless_the_operative_procedure_will_be_alter",
+          "label": "Use of intraoperative frozen sections should be avoided unless the operative procedure will be altered by the result. For resection specimens, sections should be prepared from each major tumor nodule, with representative sampling of smaller nodules if macroscopically different in appearance. At least 1 section per centimeter of greatest diameter should be taken to assure detection of areas with unfavorable (e.g., small cell undifferentiated) histopathologic features. Sections from the uninvolved background liver, inked margins of resection, as well as portal vein or hepatic vein/inferior vena cava involvement should also be submitted if this feature is seen grossly.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_photographic_map_of_the_sections_taken_is_recommended_to_help_the_pathologist_target_areas_of_inte",
+          "label": "A photographic map of the sections taken is recommended to help the pathologist target areas of interest, especially in postchemotherapy specimens, where most of the tumor may be necrotic. This map also ensures adequate sampling of margins (lobectomy specimen) and hilar and vena caval margins in explants (see Figure 1.). Every attempt should be made, via photographic map or detailed gross description, to document the site of biopsy or specific regions of tumor sampling, including sections from various nodules, because of the possibility of differential histology in the different tumor nodules. While the overall prognosis is determined by several factors, adequate sampling may identify small cell undifferentiated or pleomorphic epithelial components, which may suggest more therapy-resistant clones of tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1",
+          "label": "Figure 1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "photographic_map_of_liver_sections_with_tumor_evident_and_areas_for_sectioning_marked",
+          "label": "Photographic map of liver sections with tumor evident and areas for sectioning marked.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "per_institutional_practices_and_feasibility_consider_1_snap_freezing_1_gram_minimum_of_100_mg_of_tum",
+          "label": "Per institutional practices and feasibility consider: 1) snap-freezing 1 gram (minimum of 100 mg) of tumor from regions of the resection specimen with different gross appearance for molecular studies, 2) viable sterile tumor for cytogenetic studies, and 3) samples of snap-frozen nontumoral liver.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "not_only_are_hepatoblastomas_rare_but_their_diversity_significantly_limits_the_experience_of_any_sin",
+          "label": "Not only are hepatoblastomas rare, but their diversity significantly limits the experience of any single center or pathologist.1 A classification scheme for hepatoblastoma that divides the more frequently or prognostically influential features from infrequent or inconsequential (minor) components is presented in Table 1.2 The significance of a biopsy classification is that it reflects the true components of the tumor and is not limited by chemotherapy effects that alter the morphology of these tumors. It should, however, be noted that not all components may necessarily be sampled in a biopsy, and radiologic features, especially the presence of bone, need to be considered for subtyping.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_from_lopez_terrada_et_al2",
+          "label": "Modified from Lopez-Terrada et al.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detailed_descriptions_of_the_various_epithelial_patterns_and_subtypes_of_hepatoblastoma_can_be_found",
+          "label": "Detailed descriptions of the various epithelial patterns and subtypes of hepatoblastoma can be found in recent reviews.3,4 More concise descriptions are provided below to aid accurate classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epithelial_patterns_fetal_with_low_mitotic_activity",
+          "label": "Epithelial patterns: Fetal with low mitotic activity",
+          "required": true,
+          "type": "free_text",
+          "condition": "well-differentiated/mitotically inactive fetal"
+        },
+        {
+          "field_id": "the_designation_of_pure_fetal_hepatoblastoma_is_restricted_to_primary_resection_specimens_where_the_",
+          "label": "The designation of “pure fetal hepatoblastoma” is restricted to primary resection specimens where the entire (100%) tumor consists of well-differentiated/mitotically inactive fetal pattern hepatoblastoma. By definition, a diagnosis of “pure fetal hepatoblastoma” cannot be made on a biopsy specimen, although the biopsy may demonstrate varying proportions of this epithelial pattern. “Pure fetal hepatoblastoma” is the least common amongst the histologic subgroups of HB but its recognition is important as it may obviate the need for chemotherapy. The current Children’s Oncology Group (COG) study is treating stage I “pure fetal hepatoblastoma” as very low risk tumors treated with surgery alone.2,5,6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "well_differentiatedmitotically_inactive_fetal_pattern_is_characterized_by_uniform_appearing_round_to",
+          "label": "Well-differentiated/mitotically inactive fetal pattern is characterized by uniform-appearing round to polygonal cells with small central nuclei and clear or pale eosinophilic cytoplasm that may give the tumor a light cell-dark cell pattern at low-power. Nuclei are usually inconspicuous and, by definition, the mitotic rate is low (2 or fewer mitoses per 10 high-power fields). Rare interspersed extramedullary hematopoiesis (EMH) may be seen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_may_aid_in_differentiating_this_pattern_from_uninvolved_background_liver_which_",
+          "label": "Immunohistochemistry may aid in differentiating this pattern from uninvolved background liver, which may show overlapping histologic features particularly in very young patients. The well-differentiated fetal (WDF) areas typically show a 1-2+ fine stippled pericanalicular (cytoplasmic) staining pattern with glypican-3 (GPC3) and variable nuclear staining for beta-catenin. Glutamine synthetase (GS) is usually diffusely positive in tumor cells whereas background liver shows a pericentral zonal distribution. SALL4 is negative in WDF.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epithelial_patterns_fetal_with_mitoses",
+          "label": "Epithelial patterns: Fetal with mitoses",
+          "required": true,
+          "type": "free_text",
+          "condition": "crowded/mitotically active fetal"
+        },
+        {
+          "field_id": "this_is_the_most_common_pattern_seen_in_biopsy_specimens_and_resections_by_definition_2_mitoses_per_",
+          "label": "This is the most common pattern seen in biopsy specimens and resections. By definition, >2 mitoses per 10 high-power fields are seen. Cells are of similar size as those seen in WDF pattern but show more granular cytoplasm and larger nuclei. EMH is frequently seen. Beta-catenin shows more frequent nuclear staining compared to WDF but is not diffuse, with variable cytoplasmic staining. GPC3 typically shows a course diffuse cytoplasmic staining pattern that is 2-3+. GS shows diffuse strong staining and SALL4 is negative.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epithelial_patterns_embryonal",
+          "label": "Epithelial patterns: Embryonal",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_embryonal_pattern_is_composed_of_cells_with_high_nuclear_to_cytoplasmic_ratio_with_oval_to_angul",
+          "label": "The embryonal pattern is composed of cells with high nuclear-to-cytoplasmic ratio with oval to angulated nuclei that are hyperchromatic with prominent single nucleoli and scant cytoplasm. A transition from crowded fetal to embryonal pattern can be seen and may be subtle or abrupt. Rosettes and tubular structures may be seen in this pattern. Mitoses are frequent. Nuclear staining for beta-catenin is more diffuse than fetal patterns. GPC3 is typically strongly positive (3+ staining), with the exception of some primitive embryonal components that may be negative for GPC3. GS usually shows variable staining. SALL4 is frequently strongly nuclear positive.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epithelial_patterns_pleomorphic",
+          "label": "Epithelial patterns: Pleomorphic",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_tumor_cells_of_either_fetal_or_embryonal_type_show_prominent_nucleoli_and_more_atypical_morphol",
+          "label": "When tumor cells of either fetal or embryonal type show prominent nucleoli and more atypical morphology resembling hepatocellular carcinoma, the term pleomorphic epithelial is used. Most instances of these pleomorphic (previously also called “anaplastic fetal”) epithelial components are seen in post-chemotherapy resection specimens, but this pattern can also be present in diagnostic biopsy specimens. Tumor cells are usually positive for GPC3 and beta-catenin (nuclear).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epithelial_patterns_macrotrabecular",
+          "label": "Epithelial patterns: Macrotrabecular",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "unlike_the_epithelial_patterns_noted_above_ie_fetal_embryonal_pleomorphic_the_macrotrabecular_patter",
+          "label": "Unlike the epithelial patterns noted above (i.e., fetal, embryonal, pleomorphic), the macrotrabecular pattern is an architectural pattern, with arrangement of cells in trabeculae 5 cells thick and greater. The original descriptions of 20-cell-thick plates were problematic, and most cases represented hepatocellular carcinoma (HCC), not HB. Particularly in biopsy specimens, if tumor cells demonstrate pleomorphic cytomorphology with macrotrabecular arrangement, then consideration should be given to hepatocellular neoplasm (HCN), NOS (HCN-NOS) or HCC.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_epithelial_patterns",
+          "label": "Other epithelial patterns",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamoid_and_glandular_tumor_components_may_be_seen_in_hb_biliary_like_profiles_at_the_edges_of_tumo",
+          "label": "Squamoid and glandular tumor components may be seen in HB. Biliary-like profiles at the edges of tumor nodules, designated cholangioblastic, can also be seen and is distinct from ductular reaction seen at the junction with background liver.8 The biliary-like profiles of cholangioblastic pattern show nuclear beta-catenin staining (versus membranous beta-catenin staining only in ductular reaction) and are typically positive for CK19 and pankeratin, with less frequent CK7 expression.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "primitive_cell_patterns_small_cell_undifferentiated_scu_and_blastemal",
+          "label": "Primitive cell patterns: Small cell undifferentiated (SCU) and blastemal",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_scu_pattern_has_been_the_most_controversial_pattern_in_hb_earlier_studies_included_a_category_of",
+          "label": "The SCU pattern has been the most controversial pattern in HB. Earlier studies included a category of “pure small cell undifferentiated HB” with poor prognosis which are now known to represent malignant rhabdoid tumor with SMARCB1 alterations and loss of INI-1 expression. If this category is excluded, small foci of SCU in otherwise conventional HB no longer appears to be significant and the last COG trial showed no prognostic value to this histologic pattern.9 Nests of SCU pattern, characterized by small blue cells with scant mitoses and cytoplasm, are often identified within areas of embryonal pattern HB.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "more_frequently_nests_of_cells_with_similar_morphology_to_scu_are_seen_in_areas_of_cf_and_at_the_per",
+          "label": "More frequently, nests of cells with similar morphology to SCU are seen in areas of CF and at the periphery of nodules of HB and are designated blastemal. It is possible that the two patterns (SCU and blastemal) are related and represent primitive cells in HB capable of multidirectional differentiation. The full significance of these patterns is still to be determined but should be recognized as primitive components of HB that are not seen in either HCN-NOS or HCC. SCU and blastemal cells show nuclear expression of beta-catenin and co-expression of cytokeratins (pankeratin, CK19, CK7) and vimentin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mixed_epithelial_mesenchymal_hb",
+          "label": "Mixed epithelial-mesenchymal HB",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_the_consensus_classification_mesenchymal_hb_is_noted_as_part_of_a_mixed_epithelial_mesenchymal_hb",
+          "label": "In the consensus classification, mesenchymal HB is noted as part of a mixed epithelial-mesenchymal HB with or without teratoid elements. It is unusual to find a pure mesenchymal HB, except in rare cases post-chemotherapy where epithelial elements have responded to therapy and only the mesenchymal elements remain, mainly osteoid and bone. Other mesenchymal elements that can be seen include cartilage (mature or immature), muscle or rhabdomyoblastic areas, and spindle cell mesenchyme. Of note, nests/aggregates of blastemal HB can be seen in the vicinity of mesenchymal components, most often osteoid. Nuclear beta-catenin may be seen in any of the mesenchymal components. GPC3 and SALL4 are usually negative but may highlight epithelial components in between.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "presence_of_neural_elements_such_as_primitive_neuroepithelium_melanin_glial_or_ganglion_cells_may_al",
+          "label": "Presence of neural elements such as primitive neuroepithelium, melanin, glial or ganglion cells may all represent features of teratoid differentiation in HB.10 Still other unusual patterns of teratoid HB include glandular elements admixed with primitive neuroepithelium, with cytoplasmic supranuclear and subnuclear vacuolation in the glandular epithelium resembling yolk sac tumor.11 These glands are different from the occasional intestinal-type glands that may be seen in epithelial HB and seem to occur in the vicinity of immature neuroepithelium. These glands show nuclear staining for beta-catenin and are also positive for GPC3 and SALL4, also similar to yolk sac tumor. The neuroepithelial elements show variable nuclear beta-catenin and are negative for GPC3 and may show variable staining for SALL4. They usually show multilayering when arranged in rosette form, helping to differentiate them from embryonal rosettes, although this distinction may sometimes be difficult.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "finegold_mj_hepatic_tumors_in_childhood_in_russo_p_re_piccoli_d_eds_pathology_of_pediatric_gastroint",
+          "label": "Finegold MJ. Hepatic Tumors in Childhood. In: Russo P RE, Piccoli D, eds. Pathology of Pediatric Gastrointestinal and Liver Disease. New York, NY: Springer-Verlag; 2004:300-346.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lopez_terrada_d_alaggio_r_de_davila_mt_et_al_towards_an_international_pediatric_liver_tumor_consensu",
+          "label": "Lopez-Terrada D, Alaggio R, de Davila MT, et al. Towards an international pediatric liver tumor consensus classification: proceedings of the Los Angeles COG liver tumors symposium. Mod Pathol. 2014;27(3):472-491.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ranganathan_s_lopez_terrada_d_alaggio_r_hepatoblastoma_and_pediatric_hepatocellular_carcinoma_an_upd",
+          "label": "Ranganathan S, Lopez-Terrada D, Alaggio R. Hepatoblastoma and Pediatric Hepatocellular Carcinoma: An Update. Pediatr Dev Pathol. 2020 Mar-Apr;23(2):79-95.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cho_sj_pediatric_liver_tumors_updates_in_classification_surg_pathol_clin_2020_dec134601_623",
+          "label": "Cho SJ. Pediatric Liver Tumors: Updates in Classification. Surg Pathol Clin. 2020 Dec;13(4):601-623.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "czauderna_p_lopez_terrada_d_hiyama_e_häberle_b_malogolowkin_mh_meyers_rl_hepatoblastoma_state_of_the",
+          "label": "Czauderna P, Lopez-Terrada D, Hiyama E, Häberle B, Malogolowkin MH, Meyers RL. Hepatoblastoma state of the art: pathology, genetics, risk stratification, and chemotherapy. Curr Opin Pediatr. 2014;26(1):19-28.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meyers_rl_tiao_g_de_ville_de_goyet_j_superina_r_aronson_dc_hepatoblastoma_state_of_the_art_pre_treat",
+          "label": "Meyers RL, Tiao G, de Ville de Goyet J, Superina R, Aronson DC. Hepatoblastoma state of the art: pre-treatment extent of disease, surgical resection guidelines and the role of liver transplantation. Curr Opin Pediatr. 2014;26(1):29-36.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malogolowkin_mh_katzenstein_hm_meyers_rl_et_al_complete_surgical_resection_is_curative_for_children_",
+          "label": "Malogolowkin MH, Katzenstein HM, Meyers RL, et al. Complete surgical resection is curative for children with hepatoblastoma with pure fetal histology: a report from the Children's Oncology Group. J Clin Oncol. 2011;29(24):3301-3306.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zimmermann_a_hepatoblastoma_with_cholangioblastic_features_cholangioblastic_hepatoblastoma_and_other",
+          "label": "Zimmermann A. Hepatoblastoma with cholangioblastic features ('cholangioblastic hepatoblastoma') and other liver tumors with bimodal differentiation in young patients. Med Pediatr Oncol. 2002 Nov;39(5):487-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trobaugh_lotrario_ad_tomlinson_ge_finegold_mj_gore_l_feusner_jh_small_cell_undifferentiated_variant_",
+          "label": "Trobaugh-Lotrario AD, Tomlinson GE, Finegold MJ, Gore L, Feusner JH. Small cell undifferentiated variant of hepatoblastoma: adverse clinical and molecular features similar to rhabdoid tumors. Pediatr Blood Cancer. 2009;52(3):328-334.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "manivel_c_wick_mr_abenoza_p_dehner_lp_teratoid_hepatoblastoma_the_nosologic_dilemma_of_solid_embryon",
+          "label": "Manivel C, Wick MR, Abenoza P, Dehner LP. Teratoid hepatoblastoma. The nosologic dilemma of solid embryonic neoplasms of childhood. Cancer. 1986 Jun 1;57(11):2168-74.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smith_ja_ranganathan_s_teratoid_hepatoblastoma_with_yolk_sac_like_and_neuroendocrine_elements_pediat",
+          "label": "Smith JA, Ranganathan S. Teratoid Hepatoblastoma with Yolk Sac-Like and Neuroendocrine Elements. Pediatr Dev Pathol. 2020 Sep-Oct;23(5):387-391.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "post_chemotherapy_resection_specimens_often_show_eradication_of_the_embryonal_cells_and_more_prevale",
+          "label": "Post-chemotherapy resection specimens often show eradication of the embryonal cells and more prevalent osteoid-like foci. Vascular invasion, amount of mesenchyme, persistence of embryonal epithelium, extent of tumor necrosis, and mitotic activity of the epithelial component may raise concern as indicative of tumor chemoresistance and should be documented. Histologic components should therefore be assigned based on the features seen in the post-therapy specimen regardless of the original biopsy diagnosis. With current treatment protocols, post-chemotherapy changes may result in complete necrosis, replacement by fibrosis and macrophages, differentiation/maturation of tumor nests to resemble mature hepatocytes within the tumor nodules, and persistence of conventional hepatoblastoma components that can still be recognized.1 There is often a prominent ductular proliferation separating the treated tumor nodule from adjacent uninvolved liver.1 These proliferating ductules need to be distinguished from cholangioblastic areas of hepatoblastoma, as noted above. The histologic review of post-chemotherapy specimens should reflect, where possible, the degree of chemotherapy response, though the significance of this finding is still unknown.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wang_ll_filippi_rz_zurakowski_d_archibald_t_vargas_so_voss_sd_shamberger_rc_davies_k_kozakewich_h_pe",
+          "label": "Wang LL, Filippi RZ, Zurakowski D, Archibald T, Vargas SO, Voss SD, Shamberger RC, Davies K, Kozakewich H, Perez-Atayde AR. Effects of neoadjuvant chemotherapy on hepatoblastoma: a morphologic and immunohistochemical study. Am J Surg Pathol. 2010 Mar;34(3):287-99.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "documentation_should_include_gross_vascular_invasion_versus_intravascular_growth_found_only_microsco",
+          "label": "Documentation should include gross vascular invasion versus intravascular growth found only microscopically, and whether it is within the tumor mass or outside of it. Evidence of vascular invasion has been usually associated with worse outcomes, and COG study AHEP0731 is the first study to evaluate the significance prospectively. It is generally believed that vascular invasion is more common in embryonal hepatoblastomas and tumors with more aggressive phenotypes and may warrant adjuvant therapy to prevent disease spread or recurrence. Large vessel involvement is known to be associated with worse outcome, but it is unclear if microscopic vascular invasion may carry the same significance. Presence or absence of large vessel invasion radiologically is assessed as part of PRETEXT staging of tumors and may preclude the possibility of primary resection of the tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_evaluation_of_margins_of_total_or_partial_hepatectomy_specimens_depends_on_the_method_and_extent",
+          "label": "The evaluation of margins of total or partial hepatectomy specimens depends on the method and extent of the resection. It is recommended that the surgeon be consulted to determine the critical foci within the margins that require microscopic evaluation. The transection margin of a partial hepatectomy may be large, rendering it impractical for complete examination. In this setting, grossly positive margins should be microscopically confirmed and documented. If the margins are grossly free of tumor, judicious sampling of the cut surface in the region closest to the nearest identified tumor nodule is indicated. In selected cases, adequate random sampling of the cut surface may be sufficient. If the neoplasm is found near the surgical margin, the distance from the margin should be reported. For multiple tumors, the distance from the margin to the nearest tumor should be reported.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_examination_of_a_regional_lymphadenectomy_specimen_usually_involves_examination_of_3_or_m",
+          "label": "Histologic examination of a regional lymphadenectomy specimen usually involves examination of 3 or more lymph nodes. The regional lymph nodes of the hepatic region include the hilar, hepatoduodenal ligament, and caval lymph nodes, which are likely to be sampled only at the time of surgical resection or transplant. Nodal involvement of the inferior phrenic lymph nodes or other lymph nodes distal to the hilar, hepatoduodenal ligament, and caval lymph nodes is considered distant metastasis. Presence of distant metastasis is a general contraindication to primary surgery, especially transplantation, and is an indication for biopsy. While the primary tumor is biopsied in most instances, biopsy of metastasis may become necessary in some cases. Metastatic tumors are more likely to show more aggressive histologic patterns, either embryonal, macrotrabecular, or pleomorphic. Postchemotherapy metastasectomy specimens may show effects of therapy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clinical_features_and_differential_diagnosis",
+          "label": "Clinical Features and Differential Diagnosis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presenting_symptom_of_virtually_all_liver_tumors_in_children_is_abdominal_swelling_secondary_to_",
+          "label": "The presenting symptom of virtually all liver tumors in children is abdominal swelling secondary to hepatomegaly. When confronted with this symptom, it is useful to consider the age at which liver tumors tend to occur (see Table 2).1 Exceptions are frequent, but age can serve as a guide when the presenting symptoms lack specificity. In the Pediatric Oncology Group series from 1986-2002,2,3 66% of hepatoblastomas were manifest by the second year, and 11% before 6 months of age. Approximately 50% of those in infants were congenital, given their size when discovered by 2-3 months of age; 6% of hepatoblastomas occurred after 5 years of age. Hepatocellular carcinomas have been observed as early as 6 months of age. Seven examples of mixed hepatoblastomas and hepatocellular carcinomas have been observed at a mean age of 8.5 years; perinatally acquired hepatitis B virus was responsible in 3 instances. Yolk sac tumors are more common in early childhood, but they also occur rarely in older adults; of note, a component of yolk sac tumor may be present in teratoid hepatoblastoma. Systemic malignancies and metastatic disease must be considered at all ages because hepatomegaly due to megakaryoblastic leukemia, Langerhans cell histiocytosis, and neuroblastoma are important sources of confusion with hepatoblastoma in infancy, as are intraabdominal desmoplastic small round cell tumors later in childhood.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "environmental_factors",
+          "label": "Environmental Factors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hepatoblastoma_occurs_in_association_with_several_well_described_environmental_factors_and_cancer_ge",
+          "label": "Hepatoblastoma occurs in association with several well-described environmental factors and cancer genetic syndromes (see Table 3); however, not all of these associations are necessarily of statistical significance. Environmental factors and prenatal exposure to different agents have been implicated in hepatoblastoma.4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "data_from_the_us_national_cancer_institute_surveillance_epidemiology_and_end_result_seer_program_rev",
+          "label": "Data from the US National Cancer Institute Surveillance, Epidemiology, and End Result (SEER) program revealed an average annual increase of 2.2% in the incidence of hepatoblastoma from 2004-2015.6 This increase may be in part explained by surviving premature infants. Hepatoblastomas in Japan accounted for 58% of all malignancies in children who weighed less than 1000 g at birth. Further analysis of the Japanese Children’s Cancer Registry data revealed that 15 of 303 (5%) hepatoblastomas between 1985-1995 occurred in infants with a history of prematurity and weight less than 1500 g at birth.4 This rate was greater than 10 times that for all live births. The histologic features of hepatoblastoma after prematurity are indistinguishable from those of other hepatoblastomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "genetic_factors",
+          "label": "Genetic Factors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hepatoblastomas_are_genomically_stable_embryonal_neoplasms_generally_carrying_a_very_low_rate_of_som",
+          "label": "Hepatoblastomas are genomically stable embryonal neoplasms generally carrying a very low rate of somatic mutations.7,8,9,10 Karyotyping of hepatoblastomas initially demonstrated few recurrent chromosomal abnormalities including trisomies of chromosomes 20, 2 and 8, and abnormalities involving gains of chromosome 1q, sometimes associated with t(1;4)(q12;q34) or other unbalanced translocations.11 However, aberrant activation of the Wnt/β-catenin pathway appears to be the main hepatoblastoma driver, with close to 90% harboring CTNNB1 mutation.7,12 NFE2L2 has been reported to represent the second most commonly mutated gene in small series of hepatoblastomas (5% to 10%) and associated with poor prognosis. The presence of TERT promoter mutations is characteristic of the hepatocellular neoplasm, not otherwise specified (HCN-NOS) provisional subtype. Several recent hepatoblastoma genomic profiling studies have reported variants and copy number alterations in additional genes7,9,10 involving pathways potentially implicated in hepatoblastoma development and clinical behavior, including Notch, Sonic Hedgehog, PI3K/AKT, EGFR and Hippo pathway (YAP), among others.7,8,13,14",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "several_hepatoblastoma_genomic_profiling_studies_have_attempted_to_better_understand_the_biological_",
+          "label": "Several hepatoblastoma genomic profiling studies have attempted to better understand the biological factors associated with hepatoblastoma prognosis, response to therapy, and define biological groups to develop a more precise risk stratification. Transcriptomic profiling initially demonstrated two distinct genotype-phenotype hepatoblastoma subtypes, one with a more mature phenotype corresponding to fetal histology, and a second one recapitulating early fetal life liver, and with embryonal histology.15 Later genomic studies demonstrated additional molecular risk-associated subtypes, with high-risk tumors being characterized by high NFE2L2 activity, high LIN28B, HMGA2, SALL4, and AFP expression, as well as low let-7 expression and HNF1A activity.7 Recently, HB epigenomic profiling demonstrated genome-wide dysregulation of RNA editing in HB and identified additional epigenomic clusters, including an aggressive subgroup identified by characteristic methylation features, strong 14q32 locus expression, as well as CTNNB1 and NFE2L2 mutations and a progenitor-like phenotype.16 Unfortunately, none of these transcriptomic or epigenomic prognostic-associated clusters have yet been clinically validated in large prospective studies and are currently not being used for risk stratification. Systematic banking of hepatoblastoma tumor material remains of great importance to further investigate the clinical relevance of these molecular abnormalities and biological groups, so they could be incorporated in more precise risk stratification algorithms.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "malogolowkin_mh_katzenstein_hm_meyers_rl_et_al_complete_surgical_resection_is_curative_for_children_",
+          "label": "Malogolowkin MH, Katzenstein HM, Meyers RL, et al. Complete surgical resection is curative for children with hepatoblastoma with pure fetal histology: a report from the Children's Oncology Group. J Clin Oncol. 2011;29(24):3301-3306.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ross_ja_gurney_jg_hepatoblastoma_incidence_in_the_united_states_from_1973_to_1992_med_pediatr_oncol_",
+          "label": "Ross JA, Gurney JG. Hepatoblastoma incidence in the United States from 1973 to 1992. Med Pediatr Oncol. 1998;30(3):141-142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ortega_ja_douglass_ec_feusner_jh_et_al_randomized_comparison_of_cisplatinvincristinefluorouracil_and",
+          "label": "Ortega JA, Douglass EC, Feusner JH, et al. Randomized comparison of cisplatin/vincristine/fluorouracil and cisplatin/continuous infusion doxorubicin for treatment of pediatric hepatoblastoma: a report from the Children's Cancer Group and the Pediatric Oncology Group. J Clin Oncol. 2000;18(14):2665-2675.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ikeda_h_hachitanda_y_tanimura_m_maruyama_k_koizumi_t_tsuchida_y_development_of_unfavorable_hepatobla",
+          "label": "Ikeda H, Hachitanda Y, Tanimura M, Maruyama K, Koizumi T, Tsuchida Y. Development of unfavorable hepatoblastoma in children of very low birth weight: results of a surgical and pathologic review. Cancer. 1998;82(9):1789-1796.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spector_lg_birch_j_the_epidemiology_of_hepatoblastoma_pediatr_blood_cancer_2012595776_779",
+          "label": "Spector LG, Birch J. The epidemiology of hepatoblastoma. Pediatr Blood Cancer. 2012;59(5):776-779.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "feng_j_he_y_wei_l_et_al_assessment_of_survival_of_pediatric_patients_with_hepatoblastoma_who_receive",
+          "label": "Feng J, He Y, Wei L, et al. Assessment of Survival of Pediatric Patients with Hepatoblastoma who Received Chemotherapy Following Liver Transplant or Liver Resection. JAMA Netw Open. 2019;2(10):e1912676",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sumazin_p_chen_y_treviño_lr_sarabia_sf_hampton_oa_patel_k_mistretta_ta_zorman_b_thompson_p_heczey_a_",
+          "label": "Sumazin P, Chen Y, Treviño LR, Sarabia SF, Hampton OA, Patel K, Mistretta TA, Zorman B, Thompson P, Heczey A, Comerford S, Wheeler DA, Chintagumpala M, Meyers R, Rakheja D, Finegold MJ, Tomlinson G, Parsons DW, López-Terrada D. Genomic analysis of hepatoblastoma identifies distinct molecular and prognostic subgroups. Hepatology. 2017 Jan;65(1):104-121.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "eichenmüller_m_trippel_f_kreuder_m_beck_a_schwarzmayr_t_häberle_b_cairo_s_leuschner_i_von_schweinitz",
+          "label": "Eichenmüller M, Trippel F, Kreuder M, Beck A, Schwarzmayr T, Häberle B, Cairo S, Leuschner I, von Schweinitz D, Strom TM, Kappler R. The genomic landscape of hepatoblastoma and their progenies with HCC-like features. J Hepatol. 2014 Dec;61(6):1312-20.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nagae_g_yamamoto_s_fujita_m_fujita_t_nonaka_a_umeda_t_fukuda_s_tatsuno_k_maejima_k_hayashi_a_kurihar",
+          "label": "Nagae G, Yamamoto S, Fujita M, Fujita T, Nonaka A, Umeda T, Fukuda S, Tatsuno K, Maejima K, Hayashi A, Kurihara S, Kojima M, Hishiki T, Watanabe K, Ida K, Yano M, Hiyama Y, Tanaka Y, Inoue T, Ueda H, Nakagawa H, Aburatani H, Hiyama E. Genetic and epigenetic basis of hepatoblastoma diversity. Nat Commun. 2021 Sep 20;12(1):5423.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hirsch_tz_pilet_j_morcrette_g_roehrig_a_monteiro_bje_molina_l_bayard_q_trépo_e_meunier_l_caruso_s_re",
+          "label": "Hirsch TZ, Pilet J, Morcrette G, Roehrig A, Monteiro BJE, Molina L, Bayard Q, Trépo E, Meunier L, Caruso S, Renault V, Deleuze JF, Fresneau B, Chardot C, Gonzales E, Jacquemin E, Guerin F, Fabre M, Aerts I, Taque S, Laithier V, Branchereau S, Guettier C, Brugières L, Rebouissou S, Letouzé E, Zucman-Rossi J. Integrated Genomic Analysis Identifies Driver Genes and Cisplatin-Resistant Progenitor Phenotype in Pediatric Liver Cancer. Cancer Discov. 2021 Oct;11(10):2524-2543.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tomlinson_ge_douglass_ec_pollock_bh_finegold_mj_schneider_nr_cytogenetic_evaluation_of_a_large_serie",
+          "label": "Tomlinson GE, Douglass EC, Pollock BH, Finegold MJ, Schneider NR. Cytogenetic evaluation of a large series of hepatoblastomas: numerical abnormalities with recurring aberrations involving 1q12-q21. Genes Chromosomes Cancer. 2005 Oct;44(2):177-84.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bell_d_ranganathan_s_tao_j_monga_sp_novel_advances_in_understanding_of_molecular_pathogenesis_of_hep",
+          "label": "Bell D, Ranganathan S, Tao J, Monga SP. Novel Advances in Understanding of Molecular Pathogenesis of Hepatoblastoma: A Wnt/β-Catenin Perspective. Gene Expr. 2017 Feb 10;17(2):141-154.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "luo_jh_ren_b_keryanov_s_tseng_gc_rao_un_monga_sp_strom_s_demetris_aj_nalesnik_m_yu_yp_ranganathan_s_",
+          "label": "Luo JH, Ren B, Keryanov S, Tseng GC, Rao UN, Monga SP, Strom S, Demetris AJ, Nalesnik M, Yu YP, Ranganathan S, Michalopoulos GK. Transcriptomic and genomic analysis of human hepatocellular carcinomas and hepatoblastomas. Hepatology. 2006 Oct;44(4):1012-24.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tao_j_calvisi_df_ranganathan_s_cigliano_a_zhou_l_singh_s_jiang_l_fan_b_terracciano_l_armeanu_ebinger",
+          "label": "Tao J, Calvisi DF, Ranganathan S, Cigliano A, Zhou L, Singh S, Jiang L, Fan B, Terracciano L, Armeanu-Ebinger S, Ribback S, Dombrowski F, Evert M, Chen X, Monga SPS. Activation of β-catenin and Yap1 in human hepatoblastoma and induction of hepatocarcinogenesis in mice. Gastroenterology. 2014 Sep;147(3):690-701.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cairo_s_armengol_c_de_reyniès_a_wei_y_thomas_e_renard_ca_goga_a_balakrishnan_a_semeraro_m_gresh_l_po",
+          "label": "Cairo S, Armengol C, De Reyniès A, Wei Y, Thomas E, Renard CA, Goga A, Balakrishnan A, Semeraro M, Gresh L, Pontoglio M, Strick-Marchand H, Levillayer F, Nouet Y, Rickman D, Gauthier F, Branchereau S, Brugières L, Laithier V, Bouvier R, Boman F, Basso G, Michiels JF, Hofman P, Arbez-Gindre F, Jouan H, Rousselet-Chapeau MC, Berrebi D, Marcellin L, Plenat F, Zachar D, Joubert M, Selves J, Pasquier D, Bioulac-Sage P, Grotzer M, Childs M, Fabre M, Buendia MA. Hepatic stem-like phenotype and interplay of Wnt/beta-catenin and Myc signaling in aggressive childhood liver cancer. Cancer Cell. 2008 Dec 9;14(6):471-84.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carrillo_reixach_j_torrens_l_simon_coma_m_royo_l_domingo_sàbat_m_abril_fornaguera_j_akers_n_sala_m_r",
+          "label": "Carrillo-Reixach J, Torrens L, Simon-Coma M, Royo L, Domingo-Sàbat M, Abril-Fornaguera J, Akers N, Sala M, Ragull S, Arnal M, Villalmanzo N, Cairo S, Villanueva A, Kappler R, Garrido M, Guerra L, Sábado C, Guillén G, Mallo M, Piñeyro D, Vázquez-Vitali M, Kuchuk O, Mateos ME, Ramírez G, Santamaría ML, Mozo Y, Soriano A, Grotzer M, Branchereau S, de Andoin NG, López-Ibor B, López-Almaraz R, Salinas JA, Torres B, Hernández F, Uriz JJ, Fabre M, Blanco J, Paris C, Bajčiová V, Laureys G, Masnou H, Clos A, Belendez C, Guettier C, Sumoy L, Planas R, Jordà M, Nonell L, Czauderna P, Morland B, Sia D, Losic B, Buendia MA, Sarrias MR, Llovet JM, Armengol C. Epigenetic footprint enables molecular risk stratification of hepatoblastoma with clinical implications. J Hepatol. 2020 Aug;73(2):328-341.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "alpha_fetoprotein_afp_is_a_circulating_tumor_marker_elevated_in_all_cases_of_hb_historically_it_was_",
+          "label": "Alpha-fetoprotein (AFP) is a circulating tumor marker elevated in all cases of HB. Historically, it was thought that tumors with an AFP level less than 100 ng/mL carried a poor prognosis, particularly given the perceived link between low AFP with small cell undifferentiated (SCU) histologic pattern. This concern has since been refuted in a publication from a recently concluded Children’s Oncology Group trial demonstrating that the presence of SCU pattern is not associated with a poor prognosis.1 There is consensus opinion from HB experts that low AFP (<100 ng/mL) values can be seen in association with small tumors incidentally diagnosed on imaging obtained for an unrelated reason or during surveillance for a known cancer predisposition syndrome. Tumors associated with a normal AFP, previously perceived to be HB, are now, on hindsight, known to be malignant rhabdoid tumors or tumors of a different histology altogether.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clinically_afp_is_a_useful_diagnostic_biomarker_to_monitor_response_to_therapy_and_to_evaluate_for_d",
+          "label": "Clinically, AFP is a useful diagnostic biomarker to monitor response to therapy and to evaluate for disease progression. There are two important factors to keep in mind when interpreting the clinical utility of AFP.  First, there are tumors other than HB that secrete AFP, including pediatric hepatocellular carcinomas, germ cell tumors, and rare pancreatic tumors. Second, AFP is markedly elevated in the perinatal period and in the subsequent months of life which can impact the diagnostic relevance of this lab value. The Children’s Hepatic tumors International Collaboration (CHIC) risk-stratification tool derived from the retrospective analysis of 1200 patients with HB treated on clinical trials conducted within four consortia demonstrates that gradations of AFP at diagnosis <100, 100-1000, or >1000 might be relevant for prognosis.2 While work in the germ cell tumor literature links the kinetics of AFP decline during therapy with long-term outcome, there is limited data in hepatoblastoma linking log-fold decline of AFP to outcome and more work is being done to clarify this relationship.3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meyers_rl_rowland_jr_krailo_m_chen_z_katzenstein_hm_malogolowkin_mh_predictive_power_of_pretreatment",
+          "label": "Meyers RL, Rowland JR, Krailo M, Chen Z, Katzenstein HM, Malogolowkin MH. Predictive power of pretreatment prognostic factors in children with hepatoblastoma: a report from the Children's Oncology Group. Pediatr Blood Cancer. 2009;53(6):1016-1022.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meyers_rl_maibach_r_hiyama_e_häberle_b_krailo_m_rangaswami_a_aronson_dc_malogolowkin_mh_perilongo_g_",
+          "label": "Meyers RL, Maibach R, Hiyama E, Häberle B, Krailo M, Rangaswami A, Aronson DC, Malogolowkin MH, Perilongo G, von Schweinitz D, Ansari M, Lopez-Terrada D, Tanaka Y, Alaggio R, Leuschner I, Hishiki T, Schmid I, Watanabe K, Yoshimura K, Feng Y, Rinaldi E, Saraceno D, Derosa M, Czauderna P. Risk-stratified staging in paediatric hepatoblastoma: a unified analysis from the Children's Hepatic tumors International Collaboration. Lancet Oncol. 2017 Jan;18(1):122-131.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_tornout_jm_buckley_jd_quinn_jj_feusner_jh_krailo_md_king_dr_hammond_gd_ortega_ja_timing_and_magn",
+          "label": "Van Tornout JM, Buckley JD, Quinn JJ, Feusner JH, Krailo MD, King DR, Hammond GD, Ortega JA. Timing and magnitude of decline in alpha-fetoprotein levels in treated children with unresectable or metastatic hepatoblastoma are predictors of outcome: a report from the Children's Cancer Group. J Clin Oncol. 1997 Mar;15(3):1190-7.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "koh_kn_park_m_kim_be_bae_kw_kim_km_im_hj_seo_jj_prognostic_implications_of_serum_alpha_fetoprotein_r",
+          "label": "Koh KN, Park M, Kim BE, Bae KW, Kim KM, Im HJ, Seo JJ. Prognostic implications of serum alpha-fetoprotein response during treatment of hepatoblastoma. Pediatr Blood Cancer. 2011 Oct;57(4):554-60.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fuchs_j_rydzynski_j_von_schweinitz_d_bode_u_hecker_h_weinel_p_bürger_d_harms_d_erttmann_r_oldhafer_k",
+          "label": "Fuchs J, Rydzynski J, Von Schweinitz D, Bode U, Hecker H, Weinel P, Bürger D, Harms D, Erttmann R, Oldhafer K, Mildenberger H; Study Committee of the Cooperative Pediatric Liver Tumor Study Hb 94 for the German Society for Pediatric Oncology and Hematology. Pretreatment prognostic factors and treatment results in children with hepatoblastoma: a report from the German Cooperative Pediatric Liver Tumor Study HB 94. Cancer. 2002 Jul 1;95(1):172-82.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "currently_no_pathologic_staging_system_is_clinically_applicable_in_hepatoblastoma_historically_cog_p",
+          "label": "Currently, no pathologic staging system is clinically applicable in hepatoblastoma. Historically, COG pathologic staging was used in the United States which combines data from imaging and pathologic data from surgical resection. However, this COG staging has been supplanted by the PRETEXT/POSTTEXT staging system, which is strictly based on imaging data. \n\nPRETEXT/POSTEXT staging\nComputed tomography and magnetic resonance imaging are used exclusively to determine the location and extent of hepatic involvement of hepatoblastoma preoperatively (PRETEXT) based on Couinaud’s system of segmentation of the liver.1,2 PRETEXT is based on cross-sectional imaging assessment of the extent of tumor involvement of the 4 main sections of the liver: right posterior section (Couinaud 6 and 7); right anterior section (Couinaud 5 and 8); left medial section (Couinaud 4a and 4b); left lateral section (Couinaud 2 and 3). PRETEXT assignment to 1 of 4 PRETEXT groups (PRETEXT I, II, III, or IV) is determined by the number of contiguous uninvolved sections of the liver.3 Tumors sparing the left medial and right anterior sectors are primarily resected.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_5_pretext_annotation_factors",
+          "label": "Table 5. PRETEXT annotation factors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dissemination_of_hepatic_malignancies_occurs_within_portal_veins_and_follows_the_expected_ready_acce",
+          "label": "Dissemination of hepatic malignancies occurs within portal veins and follows the expected ready access of infiltration into hepatic veins, with frequent lung involvement. Further spread to the brain may occur. Hilar lymph node metastases are relatively infrequent, but capsular rupture of subcapsular masses either before or during surgery can occur.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cclinicaltrialsgov_internet_bethesda_md_us_national_library_of_medicine2020_identifier_nct03017326_p",
+          "label": "CClinicalTrials.gov [Internet]. Bethesda (MD): U.S. National Library of Medicine;2020. Identifier NCT03017326, Paediatric Hepatic International Tumour Trial (PHITT); first posted 2017 Jan 11 [updated 2022 May 19]. Available from: https://clinicaltrials.gov/ct2/show/NCT03017326.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "towbin_aj_meyers_rl_woodley_h_miyazaki_o_weldon_cb_morland_b_hiyama_e_czauderna_p_roebuck_dj_tiao_gm",
+          "label": "Towbin AJ, Meyers RL, Woodley H, Miyazaki O, Weldon CB, Morland B, Hiyama E, Czauderna P, Roebuck DJ, Tiao GM. 2017 PRETEXT: radiologic staging system for primary hepatic malignancies of childhood revised for the Paediatric Hepatic International Tumour Trial (PHITT). Pediatr Radiol. 2018 Apr;48(4):536-554.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meyers_rl_maibach_r_hiyama_e_häberle_b_krailo_m_rangaswami_a_aronson_dc_malogolowkin_mh_perilongo_g_",
+          "label": "Meyers RL, Maibach R, Hiyama E, Häberle B, Krailo M, Rangaswami A, Aronson DC, Malogolowkin MH, Perilongo G, von Schweinitz D, Ansari M, Lopez-Terrada D, Tanaka Y, Alaggio R, Leuschner I, Hishiki T, Schmid I, Watanabe K, Yoshimura K, Feng Y, Rinaldi E, Saraceno D, Derosa M, Czauderna P. Risk-stratified staging in paediatric hepatoblastoma: a unified analysis from the Children's Hepatic tumors International Collaboration. Lancet Oncol. 2017 Jan;18(1):122-131.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

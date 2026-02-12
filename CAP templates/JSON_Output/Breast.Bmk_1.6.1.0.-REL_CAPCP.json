@@ -1,0 +1,2438 @@
+{
+  "template_id": "Breast.Bmk_1.6.1.0.-REL_CAPCP",
+  "organ": "Breast Biomarker Reporting Template",
+  "protocol_posting_date": "June 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "tests_performed",
+      "section_name": "TEST(S) PERFORMED",
+      "fields": [
+        {
+          "field_id": "testing_performed_on_specimen_block_numbers_specify_add_lesion_site_if_applicable",
+          "label": "Testing Performed on Specimen / Block Number(s) (specify, add lesion / site if applicable): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tests_performed",
+          "label": "Test(s) Performed",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "estrogen_receptor",
+              "label": "Estrogen Receptor (ER) Status"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "estrogen_receptor_er_status",
+          "label": "Estrogen Receptor (ER) Status",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ],
+          "guidance": "Percentage of cells with nuclear positivity for ER may be reported as a specific number or a range if more than"
+        },
+        {
+          "field_id": "10",
+          "label": "10%.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive (greater than 10% of cells demonstrate nuclear positivity)#"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_cells_with_nuclear_positivity",
+          "label": "Percentage of Cells with Nuclear Positivity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "or",
+      "section_name": "--OR--",
+      "fields": [
+        {
+          "field_id": "select_range_below",
+          "label": "Select range below",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "11_20",
+              "label": "11-20%"
+            },
+            {
+              "value": "21_30",
+              "label": "21-30%"
+            },
+            {
+              "value": "31_40",
+              "label": "31-40%"
+            },
+            {
+              "value": "41_50",
+              "label": "41-50%"
+            },
+            {
+              "value": "51_60",
+              "label": "51-60%"
+            },
+            {
+              "value": "61_70",
+              "label": "61-70%"
+            },
+            {
+              "value": "71_80",
+              "label": "71-80%"
+            },
+            {
+              "value": "81_90",
+              "label": "81-90%"
+            },
+            {
+              "value": "91_100",
+              "label": "91-100%"
+            }
+          ]
+        },
+        {
+          "field_id": "average_intensity_of_staining",
+          "label": "Average Intensity of Staining",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "weak",
+              "label": "Weak (1+)"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate (2+)"
+            },
+            {
+              "value": "strong",
+              "label": "Strong (3+)"
+            },
+            {
+              "value": "low_positive",
+              "label": "Low Positive (1-10% of cells with nuclear positivity)##"
+            }
+          ],
+          "guidance": "Include standardized reporting comment for Low Positive results (see ER Comments section below)"
+        },
+        {
+          "field_id": "specify_percentage_of_cells_with_nuclear_positivity",
+          "label": "Specify Percentage of Cells with Nuclear Positivity: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "average_intensity_of_staining",
+          "label": "Average Intensity of Staining",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "weak",
+              "label": "Weak (1+)"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate (2+)"
+            },
+            {
+              "value": "strong",
+              "label": "Strong (3+)"
+            },
+            {
+              "value": "negative",
+              "label": "Negative (less than 1%)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "status_of_internal_controls",
+          "label": "Status of Internal Controls",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "internal_control_present_and_stains_as_expected",
+              "label": "Internal control present and stains as expected"
+            },
+            {
+              "value": "internal_control_absent_external_controls_stain_as_expected",
+              "label": "Internal control absent; external controls stain as expected"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if low positive or negative"
+        },
+        {
+          "field_id": "alternative_scoring_system_scores",
+          "label": "Alternative Scoring System Scores",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "allred",
+              "label": "Allred"
+            }
+          ]
+        },
+        {
+          "field_id": "proportion_score",
+          "label": "Proportion Score: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intensity_score",
+          "label": "Intensity Score: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "total_allred_score",
+          "label": "Total Allred Score: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_scoring_system",
+              "label": "Other scoring system"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_system",
+          "label": "Specify System: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_score_result",
+          "label": "Specify Score Result: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "comments_on_er_result",
+          "label": "Comment(s) on ER Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "see_standardized_er_comment",
+              "label": "See standardized ER comment(s) below"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "progesterone_receptor",
+              "label": "Progesterone Receptor (PgR) Status"
+            }
+          ]
+        },
+        {
+          "field_id": "progesterone_receptor_pgr_status",
+          "label": "Progesterone Receptor (PgR) Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive#"
+            }
+          ],
+          "notes": [
+            "B"
+          ],
+          "guidance": "Percentage of cells with nuclear positivity may be reported as a specific number or a range if more than 10%."
+        },
+        {
+          "field_id": "percentage_of_cells_with_nuclear_positivity",
+          "label": "Percentage of Cells with Nuclear Positivity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "or",
+      "section_name": "--OR--",
+      "fields": [
+        {
+          "field_id": "select_range_below",
+          "label": "Select range below",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "1_10",
+              "label": "1-10% (specify): _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "11_20",
+              "label": "11-20%"
+            },
+            {
+              "value": "21_30",
+              "label": "21-30%"
+            },
+            {
+              "value": "31_40",
+              "label": "31-40%"
+            },
+            {
+              "value": "41_50",
+              "label": "41-50%"
+            },
+            {
+              "value": "51_60",
+              "label": "51-60%"
+            },
+            {
+              "value": "61_70",
+              "label": "61-70%"
+            },
+            {
+              "value": "71_80",
+              "label": "71-80%"
+            },
+            {
+              "value": "81_90",
+              "label": "81-90%"
+            },
+            {
+              "value": "91_100",
+              "label": "91-100%"
+            }
+          ]
+        },
+        {
+          "field_id": "average_intensity_of_staining",
+          "label": "Average Intensity of Staining",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "weak",
+              "label": "Weak (1+)"
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate (2+)"
+            },
+            {
+              "value": "strong",
+              "label": "Strong (3+)"
+            },
+            {
+              "value": "negative",
+              "label": "Negative (less than 1%)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "status_of_internal_controls",
+          "label": "Status of Internal Controls",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "internal_control_present_and_stains_as_expected",
+              "label": "Internal control present and stains as expected"
+            },
+            {
+              "value": "internal_control_absent_external_controls_stain_as_expected",
+              "label": "Internal control absent; external controls stain as expected"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if negative"
+        },
+        {
+          "field_id": "alternative_scoring_system_scores",
+          "label": "Alternative Scoring System Scores",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "allred",
+              "label": "Allred"
+            }
+          ]
+        },
+        {
+          "field_id": "proportion_score",
+          "label": "Proportion Score: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intensity_score",
+          "label": "Intensity Score: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "total_allred_score",
+          "label": "Total Allred Score: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_scoring_system",
+              "label": "Other scoring system"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_system",
+          "label": "Specify System: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_score_result",
+          "label": "Specify Score Result: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "comments_on_pgr_results",
+          "label": "Comment(s) on PgR Results: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "her2_by_immunohistochemistry",
+              "label": "HER2 by Immunohistochemistry (IHC) Status"
+            }
+          ]
+        },
+        {
+          "field_id": "her2_by_immunohistochemistry_ihc_status",
+          "label": "HER2 by Immunohistochemistry (IHC) Status",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ],
+          "guidance": "Breast cancers with HER2 IHC scores of 0+, 1+, or 2+ (ISH negative) may be eligible for treatment targeting"
+        },
+        {
+          "field_id": "by_ihc_0_are_ineligible_excluded_consider_using_the_optional_standardized_her2_ihc_report_comment_to",
+          "label": "by IHC (0) are ineligible / excluded. Consider using the optional standardized HER2 IHC report comment to",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ultralow_and_low_her2_used_in_clinical_trials_see_note_c",
+          "label": "“ultralow and low” HER2 used in clinical trials. See Note C.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (Score 0)#"
+            },
+            {
+              "value": "no_membrane_staining_detected",
+              "label": "No membrane staining detected (0 / absent membrane staining)"
+            },
+            {
+              "value": "membrane_staining_that_is_incomplete_and_is_faint_barely_perceptible_and_in_less_than_or_equal",
+              "label": "Membrane staining that is incomplete and is faint / barely perceptible and in less than or equal"
+            }
+          ]
+        },
+        {
+          "field_id": "to_10_of_tumor_cells",
+          "label": "to 10% of tumor cells",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "negative",
+              "label": "Negative (Score 1+)#"
+            },
+            {
+              "value": "incomplete_membrane_staining_that_is_faint_barely_perceptible_and_in_greater_than_10_of_tumor",
+              "label": "Incomplete membrane staining that is faint / barely perceptible and in greater than 10% of tumor"
+            }
+          ],
+          "condition": "0+ / with membrane staining"
+        },
+        {
+          "field_id": "cells",
+          "label": "cells",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Most often, equivocal staining has the first staining pattern defined below, but other less common staining"
+        },
+        {
+          "field_id": "crush_etc_describe_in_the_other_specify_category",
+          "label": "(crush, etc.), describe in the \"Other (specify)\" category.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "equivocal",
+              "label": "Equivocal (Score 2+)#,##"
+            },
+            {
+              "value": "weak_to_moderate_complete_membrane_staining_observed_in_greater_than_10_of_tumor_cells",
+              "label": "Weak to moderate complete membrane staining observed in greater than 10% of tumor cells"
+            },
+            {
+              "value": "moderate_to_intense_but_incomplete_membrane_staining",
+              "label": "Moderate to intense but incomplete membrane staining (basolateral)#"
+            },
+            {
+              "value": "less_than_or_equal_to_10_of_the_cancer_has_circumferential_staining_that_is_complete_and",
+              "label": "Less than or equal to 10% of the cancer has circumferential staining that is complete and"
+            }
+          ],
+          "guidance": "This pattern can be seen in some micropapillary cancers that are HER2 gene amplified There should be a clearly clustered pattern of heterogeneity"
+        },
+        {
+          "field_id": "intense_3_heterogeneous_but_very_limited_in_extent_consider_results_of_additional",
+          "label": "intense (3+) (heterogeneous, but very limited in extent; consider results of additional",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "samples",
+          "label": "samples)##",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "abundant_cytoplasmic_staining_present_obscuring_evaluation_of_membrane_stain_intensity",
+              "label": "Abundant cytoplasmic staining present, obscuring evaluation of membrane stain intensity"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "positive",
+              "label": "Positive (Score 3+)"
+            }
+          ],
+          "guidance": "Readily appreciated using a low-power objective and observed within a homogeneous and contiguous"
+        },
+        {
+          "field_id": "population",
+          "label": "population",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "circumferential_membrane_staining_that_is_complete_intense_and_in_greater_than_10_of_tumor",
+              "label": "Circumferential membrane staining that is complete, intense, and in greater than 10% of tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "cells",
+          "label": "cells#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "clustered_heterogeneity_required_only_if_clustered_heterogeneity_is_present_as_discrete",
+          "label": "Clustered Heterogeneity (required only if clustered heterogeneity is present as discrete,",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "separate_populations_one_of_which_has_3_staining",
+          "label": "separate populations, one of which has 3+ staining)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified (3+ staining is homogeneous throughout sample)"
+            },
+            {
+              "value": "present",
+              "label": "Present (distinct 3+ as well as non-3+ staining populations)"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_percentage_of_cancer_with_3_staining_must_be_greater_than_10",
+          "label": "Specify Percentage of Cancer with 3+ Staining (must be greater than 10%)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "",
+              "label": "%"
+            }
+          ]
+        },
+        {
+          "field_id": "staining_score_in_non_3_areas",
+          "label": "Staining Score in Non-3+ Areas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "0",
+              "label": "0"
+            },
+            {
+              "value": "1",
+              "label": "1+"
+            },
+            {
+              "value": "2",
+              "label": "2+"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "comments_on_her2_ihc",
+          "label": "Comment(s) on HER2 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "see_standardized_her2_ihc_comment",
+              "label": "See standardized HER2 IHC comment(s) below"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "her2_by_in_situ_hybridization",
+              "label": "HER2 by In Situ Hybridization (ISH) Status"
+            }
+          ]
+        },
+        {
+          "field_id": "her2_by_in_situ_hybridization_ish_status",
+          "label": "HER2 by In Situ Hybridization (ISH) Status",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ],
+          "guidance": "See Note C for more detailed definitions and recommendations for ISH Groups 1-5. Use standardized or free"
+        },
+        {
+          "field_id": "for_quick_reference",
+          "label": "For quick reference",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ratio_greater_than_or_equal_to_20_and_greater_than_or_equal_to_40_her2_signals_cell_group_1",
+          "label": "Ratio greater than or equal to 2.0 and greater than or equal to 4.0 HER2 signals / cell = Group 1",
+          "required": true,
+          "type": "free_text",
+          "condition": "amplified"
+        },
+        {
+          "field_id": "ratio_greater_than_or_equal_to_20_and_less_than_40_her2_signals_cell_group_2",
+          "label": "Ratio greater than or equal to 2.0 and less than 4.0 HER2 signals / cell = Group 2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ratio_less_than_20_and_greater_than_or_equal_to_60_her2_signals_cell_group_3",
+          "label": "Ratio less than 2.0 and greater than or equal to 6.0 HER2 signals / cell = Group 3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ratio_less_than_20_and_greater_than_or_equal_to_40_and_less_than_60_her2_signals_cell_group_4",
+          "label": "Ratio less than 2.0 and greater than or equal to 4.0 and less than 6.0 HER2 signals / cell = Group 4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ratio_less_than_20_and_less_than_40_her2_signals_cell_group_5",
+          "label": "Ratio less than 2.0 and less than 4.0 HER2 signals / cell = Group 5",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "negative",
+              "label": "Negative (not amplified, Group 5 result)"
+            },
+            {
+              "value": "negative_based_on_ihc_and_ish_results",
+              "label": "Negative, based on IHC and ISH results#"
+            },
+            {
+              "value": "group_2_ish_result",
+              "label": "Group 2 ISH result (with IHC 0-2+)"
+            },
+            {
+              "value": "group_3_ish_result",
+              "label": "Group 3 ISH result (with IHC 0-1+)"
+            },
+            {
+              "value": "group_4_ish_result",
+              "label": "Group 4 ISH result (with IHC 0-2+)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (amplified, Group 1 result in greater than 10% of cell population)"
+            },
+            {
+              "value": "positive_based_on_ihc_and_ish_results",
+              "label": "Positive based on IHC and ISH results#"
+            },
+            {
+              "value": "group_2_ish_result",
+              "label": "Group 2 ISH result (with IHC 3+)"
+            },
+            {
+              "value": "group_3_ish_result",
+              "label": "Group 3 ISH result (with IHC 2-3+)"
+            },
+            {
+              "value": "group_4_ish_result",
+              "label": "Group 4 ISH result (with IHC 3+)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "not amplified"
+        },
+        {
+          "field_id": "average_number_of_her2_signals_per_cell_required_only_if_applicable",
+          "label": "Average Number of HER2 Signals per Cell (required only if applicable): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "average_number_of_cep17_signals_per_cell_required_only_if_applicable",
+          "label": "Average Number of CEP17 Signals per Cell (required only if applicable): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "her2_cep17_ratio_required_only_if_applicable",
+          "label": "HER2 / CEP17 Ratio (required only if applicable): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "number_of_observers_required_only_if_applicable",
+          "label": "Number of Observers (required only if applicable): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "number_of_invasive_tumor_cells_counted_required_only_if_applicable___________________cells",
+          "label": "Number of Invasive Tumor Cells Counted (required only if applicable): _________________ cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heterogeneity",
+          "label": "Heterogeneity",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "condition": "distinct clustered populations with different scores"
+        },
+        {
+          "field_id": "specify_percentage_of_cell_population_her2_amplified_by_ish",
+          "label": "Specify Percentage of Cell Population HER2 Amplified by ISH: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ihc_score_in_this_amplified_population",
+          "label": "IHC Score in this Amplified Population",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "0",
+              "label": "0"
+            },
+            {
+              "value": "1",
+              "label": "1+"
+            },
+            {
+              "value": "2",
+              "label": "2+"
+            },
+            {
+              "value": "3",
+              "label": "3+"
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            }
+          ]
+        },
+        {
+          "field_id": "description_of_heterogeneity_present",
+          "label": "Description of Heterogeneity Present: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "comments_on_her2_ish_result",
+          "label": "Comment(s) on HER2 ISH Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "see_standardized_her2_ish_comment",
+              "label": "See standardized HER2 ISH comment(s) below"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ki_67_proliferative_index",
+              "label": "Ki-67 Proliferative Index"
+            }
+          ]
+        },
+        {
+          "field_id": "ki_67_proliferative_index",
+          "label": "Ki-67 Proliferative Index",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage_of_positive_nuclei",
+              "label": "Specify percentage of positive nuclei: _________________ %",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "or",
+      "section_name": "--OR--",
+      "fields": [
+        {
+          "field_id": "select_range_below",
+          "label": "Select range below",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "0_5",
+              "label": "0-5%"
+            },
+            {
+              "value": "6_10",
+              "label": "6-10%"
+            },
+            {
+              "value": "11_15",
+              "label": "11-15%"
+            },
+            {
+              "value": "16_20",
+              "label": "16-20%"
+            },
+            {
+              "value": "21_30",
+              "label": "21-30%"
+            },
+            {
+              "value": "31_40",
+              "label": "31-40%"
+            },
+            {
+              "value": "41_50",
+              "label": "41-50%"
+            },
+            {
+              "value": "51_60",
+              "label": "51-60%"
+            },
+            {
+              "value": "61_70",
+              "label": "61-70%"
+            },
+            {
+              "value": "71_80",
+              "label": "71-80%"
+            },
+            {
+              "value": "81_90",
+              "label": "81-90%"
+            },
+            {
+              "value": "91_100",
+              "label": "91-100%"
+            }
+          ]
+        },
+        {
+          "field_id": "comments_on_ki_67_results",
+          "label": "Comment(s) on Ki-67 Results: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tests_performed_standardized_comments",
+          "label": "Test(s) Performed Standardized Comments",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "comments_on_er_results",
+          "label": "Comment(s) on ER Results",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "the_cancer_in_this_sample_has_a_low_level",
+              "label": "The cancer in this sample has a low level (1-10%) of ER expression by IHC. There are limited data"
+            }
+          ]
+        },
+        {
+          "field_id": "on_the_overall_benefit_of_endocrine_therapies_for_patients_with_low_level_1_10_er_expression_but",
+          "label": "on the overall benefit of endocrine therapies for patients with low level (1-10%) ER expression, but",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_data_that_suggest_invasive_cancers_with_these_results_are_heterogeneous_in_both_behavior",
+          "label": "There are data that suggest invasive cancers with these results are heterogeneous in both behavior",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "and_biology_and_often_have_gene_expression_profiles_more_similar_to_er_negative_cancers",
+          "label": "and biology and often have gene expression profiles more similar to ER negative cancers.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_internal_controls_are_present_but_external_controls_are_appropriately_positive_if_needed_testing",
+              "label": "No internal controls are present, but external controls are appropriately positive. If needed, testing"
+            }
+          ]
+        },
+        {
+          "field_id": "another_specimen_that_contains_internal_controls_may_be_warranted_for_confirmation_of_er_status",
+          "label": "another specimen that contains internal controls may be warranted for confirmation of ER status.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "comments_on_her2_ihc_results",
+          "label": "Comment(s) on HER2 IHC Results#",
+          "required": false,
+          "type": "free_text",
+          "guidance": "Breast cancers with HER2 IHC scores of 0+, 1+, or 2+ (ISH negative) may be eligible for treatment targeting"
+        },
+        {
+          "field_id": "by_ihc_0_are_ineligible_excluded_consider_using_the_optional_standardized_her2_ihc_report_comment_to",
+          "label": "by IHC (0) are ineligible / excluded. Consider using the optional standardized HER2 IHC report comment to",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ultralow_and_low_her2_used_in_clinical_trials",
+          "label": "“ultralow and low” HER2 used in clinical trials.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "in_the_destiny_breast_04_and_06_trials_her2_low_was_considered_ihc_score_1_or_2_ish",
+              "label": "In the DESTINY-Breast 04 and 06 trials, “HER2 low” was considered IHC Score 1+ or 2+ / ISH"
+            }
+          ]
+        },
+        {
+          "field_id": "negative_and_her2_ultralow_was_her2_ihc_score_of_0_pattern_0_with_membrane_staining_that_is",
+          "label": "negative, and “HER2 ultralow” was HER2 IHC Score of 0 (pattern 0+) with membrane staining that is",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastatic_setting_but_those_with_no_staining_ihc_0_are_currently_excluded",
+          "label": "metastatic setting (but those with no staining, IHC 0, are currently excluded).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "comments_on_her2_ish_results",
+          "label": "Comment(s) on HER2 ISH Results#",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "this_sample_has_a_group_2_her2_ish_result",
+              "label": "This sample has a Group 2 HER2 ISH result (ratio greater than or equal to 2.0; less than 4.0"
+            }
+          ],
+          "notes": [
+            "C"
+          ],
+          "guidance": "Use appropriate comment when reporting ISH Groups 2-4 (or similar free text comment). See Note C for details."
+        },
+        {
+          "field_id": "number_by_ish_and_lack_of_protein_overexpression",
+          "label": "number by ISH and lack of protein overexpression.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "this_sample_has_a_group_3_her2_ish_result",
+              "label": "This sample has a Group 3 HER2 ISH result (ratio less than 2.0; greater than or equal to 6.0"
+            }
+          ]
+        },
+        {
+          "field_id": "negative_0_or_1_it_is_recommended_that_the_specimen_be_considered_her2_negative",
+          "label": "negative (0 or 1+), it is recommended that the specimen be considered HER2 negative.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "this_sample_has_a_group_4_result",
+              "label": "This sample has a Group 4 result (ratio less than 2.0; greater than or equal to 4.0 and less than"
+            }
+          ]
+        },
+        {
+          "field_id": "therapy_in_the_absence_of_protein_overexpression_ihc_3_if_the_specimen_test_result_is_close_to_the",
+          "label": "therapy in the absence of protein overexpression (IHC 3+). If the specimen test result is close to the",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "be_considered_her2_negative_without_additional_testing_on_the_same_specimen",
+          "label": "be considered HER2 negative without additional testing on the same specimen.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "methods",
+      "section_name": "METHODS",
+      "fields": [
+        {
+          "field_id": "cold_ischemia_and_fixation_times",
+          "label": "Cold Ischemia and Fixation Times",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "meet_requirements_specified_in_latest_version_of_the_asco_cap_guidelines",
+              "label": "Meet requirements specified in latest version of the ASCO / CAP Guidelines"
+            },
+            {
+              "value": "do_not_meet_requirements_specified_in_latest_version_of_the_asco_cap_guidelines",
+              "label": "Do not meet requirements specified in latest version of the ASCO / CAP Guidelines (explain):"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "cold_ischemia_time",
+          "label": "Cold Ischemia Time",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_60_minutes",
+              "label": "Less than 60 minutes"
+            },
+            {
+              "value": "specify",
+              "label": "Specify: _________________ minutes",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            }
+          ],
+          "condition": "Minutes"
+        },
+        {
+          "field_id": "fixation_time_hours___________________hours",
+          "label": "Fixation Time (Hours): _________________ hours",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fixative",
+          "label": "Fixative",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "formalin",
+              "label": "Formalin"
+            },
+            {
+              "value": "decalcification",
+              "label": "Decalcification"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "comments_on_fixation",
+          "label": "Comment(s) on Fixation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "this_assay_has_not_been_validated_on_decalcified_tissues_results_should_be_interpreted_with_caution",
+              "label": "This assay has not been validated on decalcified tissues. Results should be interpreted with caution"
+            }
+          ]
+        },
+        {
+          "field_id": "given_the_possibility_of_false_negative_results_on_decalcified_specimens",
+          "label": "given the possibility of false negative results on decalcified specimens.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "er_test_type",
+          "label": "ER Test Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "non_us_based_health_systems",
+          "label": "___ Non-U.S.-based health systems",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "health_canada_approved_specify_test_vendor",
+          "label": "___ Health Canada Approved (specify test / vendor): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "er_primary_antibody",
+          "label": "ER Primary Antibody",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "sp1",
+              "label": "SP1"
+            },
+            {
+              "value": "6f11",
+              "label": "6F11"
+            },
+            {
+              "value": "1d5",
+              "label": "1D5"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pgr_testing_methodology",
+          "label": "PgR Testing Methodology",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pgr_test_type",
+          "label": "PgR Test Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "non_us_based_health_systems",
+          "label": "___ Non-U.S.-based health systems",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "health_canada_approved_specify_test_vendor",
+          "label": "___ Health Canada Approved (specify test / vendor): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pgr_primary_antibody",
+          "label": "PgR Primary Antibody",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "1e2",
+              "label": "1E2"
+            },
+            {
+              "value": "636",
+              "label": "636"
+            },
+            {
+              "value": "16",
+              "label": "16"
+            },
+            {
+              "value": "1a6",
+              "label": "1A6"
+            },
+            {
+              "value": "1294",
+              "label": "1294"
+            },
+            {
+              "value": "312",
+              "label": "312"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "her2_ihc_test_type",
+          "label": "HER2 IHC Test Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "non_us_based_health_systems",
+          "label": "___ Non-U.S.-based health systems",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "health_canada_approved_specify_test_vendor",
+          "label": "___ Health Canada Approved (specify test / vendor): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "her2_ihc_primary_antibody",
+          "label": "HER2 IHC Primary Antibody",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "4b5",
+              "label": "4B5"
+            },
+            {
+              "value": "herceptest",
+              "label": "HercepTest"
+            },
+            {
+              "value": "a0485",
+              "label": "A0485"
+            },
+            {
+              "value": "sp3",
+              "label": "SP3"
+            },
+            {
+              "value": "cb11",
+              "label": "CB11"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "her2_ish_test_type",
+          "label": "HER2 ISH Test Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "non_us_based_health_systems",
+          "label": "___ Non-U.S.-based health systems",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "health_canada_approved_specify_test_vendor",
+          "label": "___ Health Canada Approved (specify test / vendor): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ki_67_primary_antibody",
+          "label": "Ki-67 Primary Antibody",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (not performed)"
+            },
+            {
+              "value": "mib1",
+              "label": "MIB1"
+            },
+            {
+              "value": "sp6",
+              "label": "SP6"
+            },
+            {
+              "value": "mm1",
+              "label": "MM1"
+            },
+            {
+              "value": "30_9",
+              "label": "30-9"
+            },
+            {
+              "value": "ir_is626",
+              "label": "IR / IS626"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "image_analysis",
+          "label": "Image Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "performed",
+              "label": "Performed"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_method",
+          "label": "Specify Method: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "biomarkers_scored_by_image_analysis",
+          "label": "Biomarkers Scored by Image Analysis",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "er",
+              "label": "ER"
+            },
+            {
+              "value": "pgr",
+              "label": "PgR"
+            },
+            {
+              "value": "her2_by_ihc",
+              "label": "HER2 by IHC"
+            },
+            {
+              "value": "her2_by_ish",
+              "label": "HER2 by ISH"
+            },
+            {
+              "value": "ki_67",
+              "label": "Ki-67"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_recommended_that_standardized_hormone_receptor_and_her2_testing_be_done_on_all_primary_invasiv",
+          "label": "It is recommended that standardized hormone receptor and HER2 testing be done on all primary invasive breast carcinomas and on recurrent or metastatic tumors to determine overall treatment pathways and specific therapy options (see notes B and C). Ki-67 testing of invasive carcinoma is optional but is included in the reporting template (see note D).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_ductal_carcinoma_in_situ_dcis_samples_including_encapsulated_papillary_carcinoma_and_solid_papil",
+          "label": "For ductal carcinoma in situ (DCIS) samples (including encapsulated papillary carcinoma and solid papillary carcinoma in situ) without invasion, ER testing is recommended to determine potential benefit of endocrine therapies for local recurrence risk reduction. PgR testing of DCIS is considered optional and HER2 testing is not currently recommended (other than when used for diagnostic purposes).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "core_needle_biopsy_samples_are_preferred_for_breast_cancer_biomarker_testing_at_primary_diagnosis_fo",
+          "label": "Core needle biopsy samples are preferred for breast cancer biomarker testing at primary diagnosis for initial treatment planning. If hormone receptors and HER2 are negative on a core biopsy or initial results need confirmation, repeat testing on a subsequent specimen can be considered, particularly when the initial results are close to a threshold, unusual or discordant with the histopathologic findings (such as an ER negative or HER2 positive result on a grade 1 invasive carcinoma; See Table 1 below). When multiple invasive foci are present, the largest invasive focus should be tested. Testing smaller invasive carcinomas is also recommended if they are of different histologic type or higher grade.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "biomarker_testing_can_be_performed_on_cytology_specimens_if_there_is_certainty_the_sample_represents",
+          "label": "Biomarker testing can be performed on cytology specimens if there is certainty the sample represents invasive breast cancer, such as a positive lymph node or other metastatic site, or rarely when a primary core biopsy is clinically contraindicated. Cell blocks fixed in formalin are preferred. Biomarker results on cytology samples may need confirmation on a subsequent histology sample if there are concerns about the sample adequacy or quality of results.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fresh_tissue_should_not_be_used_up_on_other_special_studies_eg_rna_expression_profiling_or_investiga",
+          "label": "Fresh tissue should not be used up on other special studies (e.g., RNA expression profiling or investigational studies) unless the invasive carcinoma is of sufficient size that histologic evaluation and ER, PgR, and HER2 assessment will not be compromised or will not be needed.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_specimenblock_tested_should_be_indicated_when_reporting_results_if_more_than_one_cancer_is_prese",
+          "label": "The specimen/block tested should be indicated when reporting results. If more than one cancer is present, this section should also specify what lesion was tested (e.g., “Block D5, R1 invasive ductal carcinoma”). Multiple breast cancer biomarker reporting templates may be used on one case to report results on different lesions. When there is both invasive cancer and DCIS, the hormone receptor status of the invasive cancer is priority to report but if negative, the clinical team may be interested in the ER status of the DCIS. The specific lesion being reported (DCIS vs invasion, etc.) should be clear.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_college_of_american_pathologists_cap_and_american_society_of_clinical_oncology_asco_hormone_rece",
+          "label": "The College of American Pathologists (CAP) and American Society of Clinical Oncology (ASCO) hormone receptor and HER2 testing in breast cancer guideline recommendations should be followed (see references below). These guidelines note that specific pre-analytic and analytic variables can affect test results and should be recorded so they are available to determine if they may have negatively affected test results. Such variables include cold ischemia time (time between tissue removal and initiation of fixation) and time of fixation. Alternatively, laboratories may record the time the specimen was removed from the patient and the time the specimen was placed in formalin. Both the time the tissue is removed from the patient and the time it is placed in fixative should be communicated to the processing laboratory. These times are used to determine if the specimen meets requirements specified in latest version of the ASCO/CAP guidelines for cold ischemia time and fixation time. Reporting these times in the pathology report is optional.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_fixatives_other_than_buffered_formalin_decalcification_or_any_other_treatment_of_the_tissue_that_",
+          "label": "If fixatives other than buffered formalin, decalcification, or any other treatment of the tissue that could potentially alter immunoreactivity are used, this should also be reported with information on whether the testing was validated in this setting. A standardized comment on decalcification is available in the fixative section the methods in the reporting template as well a free text option to report on any validation that has occurred.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_factors_that_may_affect_evaluation_such_as_the_specimen_adequacy_status_of_controls_inter",
+          "label": "Additional factors that may affect evaluation such as the specimen adequacy, status of controls (internal and external) and methodology such as primary antibody clone and regulatory status (FDA cleared versus laboratory-developed test) should also be included as relevant.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "information_regarding_assay_validation_or_verification_should_be_available_in_the_laboratory_any_dev",
+          "label": "Information regarding assay validation or verification should be available in the laboratory. Any deviation(s) from the laboratory’s validated methods should be recorded. Appropriate positive and negative controls should be used and evaluated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_correlation_of_er_and_her2_status_with_specific_histologic_features",
+          "label": "Table 1: Correlation of ER and HER2 status with specific histologic features",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "note_if_a_result_is_considered_unusual_and_possibly_discordant_additional_steps_should_be_taken_to_c",
+          "label": "Note: If a result is considered unusual and possibly discordant, additional steps should be taken to check the accuracy of the histologic type or grade as well as pre-analytic and analytic testing factors. Considering repeat testing and second reviews may be appropriate. If results appear valid, a report comment should note the findings are unusual and that future samples may be informative for additional testing to confirm results.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references_for_note_a_are_as_follows123456789",
+          "label": "References for Note A are as follows:1,2,3,4,5,6,7,8,9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "national_comprehensive_cancer_network_nccn_clinical_practice_guideline_in_oncology_version_62024_htt",
+          "label": "National Comprehensive Cancer Network (NCCN) Clinical Practice Guideline in Oncology, Version 6.2024. https://www.nccn.org/professionals/physician_gls/pdf/breast.pdf Accessed Jan 22, 2025.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "allison_kh_hammond_meh_dowsett_m_et_al_estrogen_and_progesterone_receptor_testing_in_breast_cancer_a",
+          "label": "Allison KH, Hammond MEH, Dowsett M, et al. Estrogen and progesterone receptor testing in breast cancer: ASCO/CAP guideline update. Arch Pathol Lab Med. 2020 May;144(5):545-563.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wolff_ac_hammond_meh_allison_kh_et_al_her2_testing_in_breast_cancer_american_society_of_clinical_onc",
+          "label": "Wolff AC, Hammond MEH, Allison KH, et al. HER2 testing in breast cancer: American Society of Clinical Oncology/College of American Pathologists clinical practice guideline focused update. Arch Pathol Lab Med. 2018;142(11):1364-1382.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wolff_ac_somerfield_mr_dowsett_m_hammond_meh_hayes_df_mcshane_lm_saphner_tj_spears_pa_allison_kh_hum",
+          "label": "Wolff AC, Somerfield MR, Dowsett M, Hammond MEH, Hayes DF, McShane LM, Saphner TJ, Spears PA, Allison KH. Human Epidermal Growth Factor Receptor 2 Testing in Breast Cancer. Arch Pathol Lab Med. 2023 Sep 1;147(9):993-1000. doi: 10.5858/arpa.2023-0950-SA. PMID: 37303228.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "goldsmith_jd_troxell_ml_roy_chowdhuri_s_et_al_principles_of_analytic_validation_of_immunohistochemic",
+          "label": "Goldsmith JD, Troxell ML, Roy-Chowdhuri S, et al. Principles of analytic validation of immunohistochemical assays: guideline update. Arch Pathol Lab Med. Published online.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yildiz_aktas_iz_dabbs_dj_bhargava_r_the_effect_of_cold_ischemic_time_on_the_immunohistochemical_eval",
+          "label": "Yildiz-Aktas IZ, Dabbs DJ, Bhargava R. The effect of cold ischemic time on the immunohistochemical evaluation of estrogen receptor, progesterone receptor, and HER2 expression in invasive breast carcinoma. Mod Pathol. 2012;25(8):1098-1105.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "arber_jm_arber_da_jenkins_ka_battifora_h_effect_of_decalcification_and_fixation_in_paraffin_section_",
+          "label": "Arber JM, Arber DA, Jenkins KA, Battifora H. Effect of decalcification and fixation in paraffin-section immunohistochemistry. Appl Immunohistochem. 1996; 4:241-248.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gorman_bk_kosarac_o_chakraborty_s_et_al_comparison_of_breast_carcinoma_prognosticpredictive_biomarke",
+          "label": "Gorman BK, Kosarac O, Chakraborty S, et al. Comparison of breast carcinoma prognostic/predictive biomarkers on cell blocks obtained by various methods: Cellient, formalin and thrombin. Acta Cytol 2012;56(3):289-96.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kumar_sk_gupta_n_rajwanshi_a_joshi_k_singh_g_immunochemistry_for_oestrogen_receptor_progesterone_rec",
+          "label": "Kumar SK, Gupta N, Rajwanshi A, Joshi K, Singh G. Immunochemistry for oestrogen receptor, progesterone receptor and HER2 on cell blocks in primary breast carcinoma. Cytopathology 2012 Jun;23(3):181-6. PMID: 21375607.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "scientific_rationale_normal_breast_epithelial_cells_have_receptors_for_estrogen_and_progesterone_and",
+          "label": "Scientific rationale: Normal breast epithelial cells have receptors for estrogen and progesterone and proliferate under their influence. Luminal-type breast carcinomas have increased levels of these receptors and may be stimulated to grow by these hormones. Removal of endogenous hormones by oophorectomy or blocking hormonal action pharmaceutically (e.g., with tamoxifen or aromatase inhibitors) can slow or prevent tumor growth and prolong survival in cancers with hormone receptor expression.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clinical_rationale_estrogen_receptor_status_is_determined_both_to_predict_which_invasive_breast_canc",
+          "label": "Clinical rationale: Estrogen receptor status is determined both to predict which invasive breast cancer patients may benefit from hormonal therapy as well as to determine overall treatment pathways and risk reduction strategies. About 75% to 80% of invasive breast cancers are positive for ER (depending on the population tested), including almost all grade 1 cancers and most grade 2 cancers (see Table 1 expected vs usual ER results based on histology). Studies have shown a substantial survival benefit using endocrine therapies in patients with ER-positive cancers (and a lack of benefit in ER-negative cancers).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pgr_expression_is_more_variable_than_er_and_may_help_stratify_prognosis_in_er_positive_invasive_canc",
+          "label": "PgR expression is more variable than ER and may help stratify prognosis in ER positive invasive cancers (most of which are uniformly ER positive). PgR expression may also serve as an informal control for samples that test ER negative but PgR positive (raising consideration for false negative ER testing). Although controversial as a result category, confirmed ER-negative/PgR-positive samples may be a rare biologic phenotype that may be offered endocrine therapies, although due to the rarity of this result group, there are limited data to support this.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_dcis_without_invasion_er_testing_is_used_to_determine_potential_benefit_from_endocrine_therapies",
+          "label": "For DCIS without invasion, ER testing is used to determine potential benefit from endocrine therapies for local recurrence risk reduction. PgR testing of DCIS is considered optional.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "method_hormone_receptor_status_should_be_determined_in_formalin_fixed_paraffin_embedded_tissue_secti",
+          "label": "Method: Hormone receptor status should be determined in formalin-fixed, paraffin-embedded tissue sections by immunohistochemistry (IHC). Only nuclear staining is considered positive. Use of single-gene expression assays are not recommended for the purpose of determining hormone receptor status.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "quality_assurance_there_are_many_tissue_and_technical_variables_that_can_affect_test_results_and_the",
+          "label": "Quality assurance: There are many tissue and technical variables that can affect test results, and the assays must be validated to ensure their accuracy. External proficiency testing surveys for ER and PgR are valuable tools to help ensure that assays perform as expected, and they are available from the CAP and other organizations.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "confirmation_of_er_negative_or_low_positive_1_10_results_false_negative_or_lower_than_expected_resul",
+          "label": "Confirmation of ER negative or Low Positive (1-10%) results: False negative or lower than expected results may occur if specimen handling was inadequate, if artifacts (crush or edge artifacts) make interpretation difficult, or if the analytic testing failed. When considering negative or Low Positive results, guidelines recommend a standard operating procedure be established to confirm the result. This should include evaluation of appropriate internal and external controls to ensure the assay is not “false negative” or falsely low.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_the_internal_controls_are_also_negative_the_test_should_not_be_reported_as_negative_but_should_be",
+          "label": "If the internal controls are also negative, the test should not be reported as negative but should be considered indeterminate (“Cannot be determined”). The test should be repeated on another block or specimen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_a_cancer_is_negative_or_low_positive_1_10_but_no_internal_control_cells_are_present_in_the_test",
+          "label": "When a cancer is negative or Low Positive (1-10%) but no internal control cells are present in the test section, the pathologist must exercise judgment as to whether the assay can be interpreted as a true negative or Low Positive result. This should include consideration of histologic type and grade, cold ischemia and fixation times, and the status of external controls. Second reviews by another pathologist may be helpful to establish consensus.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "standardized_reporting_comments_for_er_can_be_used_as_well_as_free_text_ones_to_describe_the_specifi",
+          "label": "Standardized reporting comments for ER can be used (as well as free text ones) to describe the specific scenario and communicate the certainty of the results.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "potential_reasons_for_false_negative_results_include_the_following",
+          "label": "Potential reasons for false-negative results include the following",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "exposure_of_tumor_cells_to_heat",
+          "label": "Exposure of tumor cells to heat",
+          "required": true,
+          "type": "free_text",
+          "condition": "e.g., carcinomas transected by using cautery during surgery"
+        },
+        {
+          "field_id": "prolonged_cold_ischemic_time_which_may_result_in_antigenic_degradation_one_hour_or_less_is_preferabl",
+          "label": "Prolonged cold ischemic time, which may result in antigenic degradation. One hour or less is preferable.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "under_or_overfixation_fixation_for_at_least_6_hours_in_buffered_formalin_is_recommended_and_prolonge",
+          "label": "Under or overfixation; fixation for at least 6 hours in buffered formalin is recommended, and prolonged fixation can also diminish immunoreactivity.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "type_of_fixative_er_is_degraded_in_acidic_fixatives_such_as_bouins_and_b_5_formalin_should_be_buffer",
+          "label": "Type of fixative: ER is degraded in acidic fixatives such as Bouin’s and B-5; formalin should be buffered to ensure pH range between 7.0 and 7.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "decalcification_which_may_result_in_loss_of_immunoreactivity",
+          "label": "Decalcification, which may result in loss of immunoreactivity",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nonoptimized_antigen_retrieval",
+          "label": "Nonoptimized antigen retrieval",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "type_of_antibody",
+          "label": "Type of antibody",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dark_hematoxylin_counterstain_obscuring_faintly_positive_diaminobenzidine_dab_staining",
+          "label": "Dark hematoxylin counterstain obscuring faintly positive diaminobenzidine (DAB) staining",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "false_positive_results_false_positive_results_occur_less_frequently_rare_reasons_would_be_the_use_of",
+          "label": "False-positive results: False-positive results occur less frequently. Rare reasons would be the use of an impure antibody that cross-reacts with another antigen or misinterpretation of entrapped normal cells or an in situ component as invasive carcinoma. False-positive tests can also be generated by image analysis devices that mistakenly count overstained nuclei. It has been suggested that highly sensitive assays may detect very low levels of ER in cancers that will not respond to hormonal therapy, but that has not been proven by a clinical trial. A false positive PgR assay is also a consideration in the setting of confirmed ER negative results.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "false_negative_and_false_positive_results_can_be_reduced_by_paying_attention_to_the_following",
+          "label": "False-negative and false-positive results can be reduced by paying attention to the following",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "staining_of_normal_breast_epithelial_cells_normal_epithelial_cells_serve_as_a_positive_internal_cont",
+          "label": "Staining of normal breast epithelial cells. Normal epithelial cells serve as a positive internal control and should always be assessed. If the normal cells are negative, repeat studies on the same specimen or on a different specimen should be considered. If normal cells are not present (e.g., core biopsy) and the test results are negative, testing may be repeated on another block or subsequent specimen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "external_controls_must_stain_as_expected_these_controls_help_ensure_that_the_reagents_have_been_appr",
+          "label": "External controls (must stain as expected). These controls help ensure that the reagents have been appropriately dispensed onto the slide with the clinical sample. Ideally, external ER controls should include negative and positive samples as well as samples with lower percentages of ER expression (such as tonsil). On-slide external controls are recommended when feasible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "correlation_with_histologic_type_and_grade_of_the_cancer_the_study_should_be_repeated_if_the_results",
+          "label": "Correlation with histologic type and grade of the cancer. The study should be repeated if the results are discordant (e.g., ER-negative low-grade carcinoma). See Table 1 above.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reporting_guidelines_capasco_have_issued_recommendations_for_reporting_the_results_of_immunohistoche",
+          "label": "Reporting guidelines: CAP/ASCO have issued recommendations for reporting the results of immunohistochemical assays for ER and PgR. Carcinomas with <1% positive cells are considered negative for ER and PgR since there is no evidence of endocrine therapy benefit in this group. However, ER expression as low as 1% positive staining has been associated with clinical response to endocrine treatment. As a result, the guidelines recommend considering all cases with at least 1% ER positive cells as eligible for endocrine treatment. However, cancers with only 1-10% ER expression may behave in other ways more similar to ER negative cancers (e.g., high-grade, basal like gene expression profiles and better response to neoadjuvant chemotherapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_er_reporting_categories_are_detailed_in_table_2_below_cancers_with_10_er_nuclear_staining_are_re",
+          "label": "The ER reporting categories are detailed in Table 2 below. Cancers with > 10% ER nuclear staining are reported as Positive and the percent and intensity of staining is included in the report. Cases with low ER expression in the 1-10% range should be reported as ER Low Positive with a recommended report comment about the limitations of the data in this group. This reporting comment is available in the reporting template to add in standardized form in the “Comments on ER Results” section. The Low Positive result reporting category applies only to invasive carcinoma and is not required for PgR or DCIS reporting and should only represent a small minority of invasive breast cancers (< 5-10%). Cancers with < 1 % cells staining are reported as Negative.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_status_of_controls_should_also_be_reported_for_er_low_positive_and_negative_results_if_internal_",
+          "label": "The status of controls should also be reported for ER Low Positive and negative results. If internal controls are not present but external controls are appropriate, a reporting comment about possible future confirmatory testing is recommended. These reporting comments are available in the reporting template to add in standardized form in the “Comments on ER Results” section.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_reporting_results_of_estrogen_receptor_er_testing",
+          "label": "Table 2. Reporting Results of Estrogen Receptor (ER) Testing",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "quantification_of_er_and_pgr_there_is_a_wide_range_of_receptor_levels_in_cancers_as_shown_by_the_bio",
+          "label": "Quantification of ER and PgR: There is a wide range of receptor levels in cancers as shown by the biochemical ligand binding assay and as observed with IHC. Patients whose carcinomas have higher levels have improved survival when treated with hormonal therapy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_there_are_different_quantification_systems_such_as_allred_scores_and_h_scores_that_may_be_incl",
+          "label": "While there are different quantification systems such as Allred Scores and H-scores that may be included in reports (under Alternative Scoring System Scores) these are optional, and all reports should include the percentage of positive cells and semi-quantitative intensity score per CAP/ASCO guidelines.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "percentage_of_positive_cells_the_number_of_positive_cells_can_be_reported_as_a_specific_percentage_o",
+          "label": "Percentage of positive cells: The number of positive cells can be reported as a specific percentage or within discrete percentage categories (Figure 1 below).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intensity_refers_to_degree_of_nuclear_positivity_ie_pale_to_dark_and_is_scored_in_a_semi_quantitativ",
+          "label": "Intensity: Refers to degree of nuclear positivity (i.e., pale to dark) and is scored in a semi-quantitative manner such that weak is 1+, moderate is 2+ and strong is 3+. The average intensity is included in the report. The intensity can be affected by the amount of protein present, as well as the antibody used and the antigen retrieval system, therefore, only the overall percentage is used to determine the result category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_quantification_of_immunohistochemical_findings_the_percentage_of_positive_cells_can_be_visu",
+          "label": "Figure 1. Quantification of Immunohistochemical Findings. The percentage of positive cells can be visually estimated.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references_for_note_b_are_as_follows12345",
+          "label": "References for Note B are as follows:1,2,3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "allison_kh_hammond_meh_dowsett_m_et_al_estrogen_and_progesterone_receptor_testing_in_breast_cancer_a",
+          "label": "Allison KH, Hammond MEH, Dowsett M, et al. Estrogen and progesterone receptor testing in breast cancer: ASCO/CAP guideline update. Arch Pathol Lab Med. 2020 May;144(5):545-563.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "national_comprehensive_cancer_network_nccn_clinical_practice_guideline_in_oncology_version_62024_htt",
+          "label": "National Comprehensive Cancer Network (NCCN) Clinical Practice Guideline in Oncology, Version 6.2024. https://www.nccn.org/professionals/physician_gls/pdf/breast.pdf Accessed Jan 22, 2025.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "davies_c_godwin_j_gray_r_et_al_relevance_of_breast_cancer_hormone_receptors_and_other_factors_to_the",
+          "label": "Davies C, Godwin J, Gray R, et al: Relevance of breast cancer hormone receptors and other factors to the efficacy of adjuvant tamoxifen: Patient-level meta-analysis of randomized trials. Lancet. 2011; 378:771-784.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fitzgibbons_pl_murphy_da_hammond_eh_allred_dc_valenstein_pn_recommendations_for_validating_estrogen_",
+          "label": "Fitzgibbons PL, Murphy DA, Hammond EH, Allred DC, Valenstein PN. Recommendations for validating estrogen and progesterone receptor Immunohistochemistry assays. Arch Pathol Lab Med. 2010;134(6):930-935.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "harvey_jm_clark_gm_osborne_ck_et_al_estrogen_receptor_status_by_immunohistochemistry_is_superior_to_",
+          "label": "Harvey JM, Clark GM, Osborne CK, et al. Estrogen receptor status by immunohistochemistry is superior to the ligand binding assay for predicting response to adjuvant endocrine therapy in breast cancer. J Clin Oncol. 1999;17(5):1474-1481.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "c_her2_erbb2_testing",
+          "label": "C. HER2 (ERBB2) Testing",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "scientific_rationale_a_subset_of_breast_carcinomas_overexpress_human_epidermal_growth_factor_recepto",
+          "label": "Scientific rationale: A subset of breast carcinomas overexpress human epidermal growth factor receptor 2 (HER2; HUGO nomenclature ERBB2) due to gene amplification (ranging from 10-20% depending on the population tested). This subset of breast cancers are considered a distinct subtype with aggressive behavior and biology, and are oncologically driven by their HER2 over-expression/amplification. Rarely, HER2 protein overexpression may occur by different mechanisms such as an activating gene mutation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clinical_rationale_her2_status_is_both_a_prognostic_and_predictive_biomarker_in_breast_cancer_clinic",
+          "label": "Clinical rationale: HER2 status is both a prognostic and predictive biomarker in breast cancer. Clinical guidelines such as NCCN utilize HER2 status both to determine overall treatment pathways because of its prognostic relevance and use it predictively to determine patient eligibility for approved anti-HER2 therapies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "most_anti_her2_therapies_such_as_monoclonal_antibodies_and_antibody_drug_conjugates_are_approved_onl",
+          "label": "Most anti-HER2 therapies, such as monoclonal antibodies and antibody-drug-conjugates are approved only in HER2 positive breast cancers, as defined by 3+ protein over-expression/gene amplification. Therefore, accurate testing to discriminate HER2 positive verses negative breast cancers is essential for primary and metastatic breast cancers and is the main focus of HER2 testing guidelines and proficiency testing.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "however_more_recently_one_her2_antibody_drug_conjugate_trastuzumab_deruxtecan_was_approved_for_treat",
+          "label": "However, more recently one HER2 antibody-drug-conjugate (trastuzumab-deruxtecan) was approved for treating metastatic breast cancers that have non-overexpressed levels of HER2 by IHC. Although not yet considered a predictive test in this setting, in the DESTINY-Breast04 trial, HER2 IHC results of IHC 1+ or IHC 2+/ISH negative (termed “HER2 Low” in the trial) were used for clinical trial eligibility and are now approved to determine which metastatic patients may be eligible for this treatment.  DESTINTY-Breast06 has also been published with similar results that include metastatic breast cancers with IHC Score 0 but with “membrane staining that is incomplete and is faint/barely perceptible and in less than or equal to 10% of tumor cells” (termed “HER2 ultralow” in the trial). In order to identify these results in CAP Breast Cancer Biomarker reporting, the HER2 IHC Score 0 category is further detailed as either “no staining (0/absent membrane staining)” or “membrane staining that is incomplete and faint/barely perceptible and in less than or equal to 10% of tumor cells” (0+/with membrane staining). These are the same two staining pattern definitions used for the IHC Score 0 in the CAP/ASCO HER2 testing in breast cancer 2018 and 2023 guidelines updates.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "methods_her2_status_can_be_determined_in_formalin_fixed_paraffin_embedded_tissue_by_assessing_protei",
+          "label": "Methods: HER2 status can be determined in formalin-fixed paraffin-embedded tissue by assessing protein expression on the membrane of cancer cells using IHC or by assessing the number of HER2 gene copies using in situ hybridization (ISH). When both IHC and ISH are performed on the same tumor, the results should be correlated. The most likely reason for a discrepancy is that one of the assays is incorrect, but in a small number of cases there may be protein overexpression without amplification, amplification without protein overexpression, or intratumoral heterogeneity. In addition, ISH results close to a threshold for positive are more likely to be discrepant with IHC.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "her2_erbb2_testing_by_immunohistochemistry",
+          "label": "HER2 (ERBB2) Testing by Immunohistochemistry",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "factors_altering_the_detection_of_her2_erbb2_by_ihc_have_not_been_studied_as_well_as_for_er_and_pgr_",
+          "label": "Factors altering the detection of HER2 (ERBB2) by IHC have not been studied as well as for ER and PgR. It is recommended that tissue be fixed in buffered 10% formalin for at least 6 hours unless another fixative has been validated. External proficiency testing surveys for HER2 are available from the CAP and other organizations. These surveys are invaluable tools to ensure that the laboratory assays are working as expected.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "false_positive_ihc_results_for_her2_may_be_due_to",
+          "label": "False-positive IHC results for HER2 may be due to",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "edge_artifact_this_is_usually_seen_in_core_biopsies_where_cells_near_the_edges_of_the_tissue_stain_s",
+          "label": "Edge artifact. This is usually seen in core biopsies, where cells near the edges of the tissue stain stronger than in the center, possibly because antibody pools at the sides. Specimens with stronger staining at the edge of the tissue should be interpreted with caution.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cytoplasmic_positivity_which_can_obscure_membrane_staining_and_make_interpretation_difficult",
+          "label": "Cytoplasmic positivity, which can obscure membrane staining and make interpretation difficult.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "overstaining_strong_membrane_staining_of_normal_cells_may_be_due_to_improper_antibody_titration_conc",
+          "label": "Overstaining (strong membrane staining of normal cells). May be due to improper antibody titration (concentration too high).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "misinterpretation_of_ductal_carcinoma_in_situ_dcis_high_grade_dcis_is_often_her2_positive_in_cases_w",
+          "label": "Misinterpretation of ductal carcinoma in situ (DCIS). High-grade DCIS is often HER2 positive. In cases with extensive DCIS relative to invasive carcinoma (particularly microinvasive carcinoma), HER2 scoring may mistakenly be done on the DCIS component. Care must be taken to score only the invasive component.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "false_negative_ihc_results_for_her2_may_be_due_to",
+          "label": "False-negative IHC results for HER2 may be due to",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prolonged_cold_ischemia_time",
+          "label": "Prolonged cold ischemia time.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_heterogeneity_when_a_negative_result_is_found_but_only_a_small_biopsy_sample_was_tested_repeat",
+          "label": "Tumor heterogeneity. When a negative result is found, but only a small biopsy sample was tested, repeat testing on a subsequent specimen with a larger area of carcinoma should be considered, particularly if the tumor has characteristics associated with HER2 positivity (i.e., tumor grade 2 or 3, weak or negative PgR expression, increased proliferation index).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "improper_antibody_titration",
+          "label": "Improper antibody titration",
+          "required": true,
+          "type": "free_text",
+          "condition": "concentration too low"
+        },
+        {
+          "field_id": "false_negative_and_false_positive_results_can_be_reduced_by_paying_attention_to_the_following",
+          "label": "False-negative and false-positive results can be reduced by paying attention to the following",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tissue_controls_external_controls_must_stain_as_expected_there_are_no_normal_internal_controls_for_h",
+          "label": "Tissue controls. External controls must stain as expected. There are no normal internal controls for HER2 protein assessment by IHC.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "correlation_with_histologic_and_other_biomarker_results_see_table_1_above",
+          "label": "Correlation with histologic and other biomarker results. See Table 1 above.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reporting_guidelines_cap_and_asco_have_issued_recommendations_for_reporting_the_results_of_her2_test",
+          "label": "Reporting guidelines: CAP and ASCO have issued recommendations for reporting the results of HER2 testing by IHC (Table 4). The definitions of staining patterns in each score category are now included in the reporting templates as well as some less common staining patterns that guidelines specify should be classified as IHC equivocal (2+) or heterogeneous.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "an_optional_standardized_her2_ihc_reporting_comment_can_be_used_to_indicate_to_clinical_teams_the_sp",
+          "label": "An optional standardized HER2 IHC reporting comment can be used to indicate to clinical teams the specific HER2 IHC result categories that were defined as “HER2 Low“ and “HER2 ultralow” in the DESTINY-Breast 04 and 06 trials (see Comment on HER2 IHC section of template).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_4_reporting_results_of_her2_testing_by_immunohistochemistry",
+          "label": "Table 4. Reporting Results of HER2 Testing by Immunohistochemistry",
+          "required": true,
+          "type": "free_text",
+          "condition": "IHC"
+        },
+        {
+          "field_id": "additional_less_common_staining_patterns_such_as_moderate_to_intense_but_incomplete_membrane_stainin",
+          "label": "† Additional less common staining patterns such as moderate to intense but incomplete membrane staining (basolateral) are also categorized as Score 2+. Equivocal 2+ results should reflex to testing to determine final HER2 status (same specimen using ISH) or order a new test (new specimen if available, using IHC or ISH).",
+          "required": true,
+          "type": "free_text",
+          "guidance": "An optional standardized reporting comment for HER2 0, 0+, 1+ or 2+ IHC results can be included as follows: “In the DESTINY-Breast 04 and 06 trials, “HER2 low” was considered IHC Score 1+ or 2+/ISH negative, and “HER2 ultralow” was HER2 IHC Score of 0 (pattern 0+) with membrane staining that is incomplete and faint/barely perceptible in less than or equal to 10% of tumor cells. Breast cancers with these staining patterns may be eligible for treatment with trastuzumab-deruxtecan in the metastatic setting (but those with no staining, IHC 0, are currently excluded).”"
+        },
+        {
+          "field_id": "heterogeneity_for_her2_over_expression_is_rare_in_breast_cancers_when_3_over_expression_is_not_unifo",
+          "label": "Heterogeneity for HER2 over-expression is rare in breast cancers. When 3+ over-expression is not uniform but present as distinct clustered separate populations in a non-over-expressed background, the case is reported as Positive (3+) if the population is > 10% and the Clustered Heterogeneity section of the reporting template is used to clarify the percentage of the invasive cancer in the sample with over-expression. The IHC Score of the Non-3+ areas is also reported. If ISH testing will be performed, it should be scored in the area with 3+ IHC staining, with a separate count in the IHC negative or equivocal areas rather than averaged over both. In the even more uncommon scenario of less than or equal to 10% 3+ staining in a clustered pattern, the result is interpreted as HER2 equivocal (2+) with indication of this specific staining pattern and consideration for testing additional samples. Other uncommon staining scenarios may exist, and the Other (specify) category and/or Comments section can be used to describe these.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fluorescence_in_situ_hybridization_fish_chromogenic_in_situ_hybridization_cish_and_silver_enhanced_i",
+          "label": "Fluorescence in situ hybridization (FISH), chromogenic in situ hybridization (CISH), and silver-enhanced in situ hybridization (SISH) studies for HER2 determine the presence or absence of gene amplification. The average of HER2 gene signals as well as the central chromosome enumeration probe (CEP17 or other) and the ratio of HER2 signals to copies of chromosome 17 are used to determine result categories. Single probe testing is no longer recommended.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "failure_to_obtain_results_with_ish_may_be_due_to_the_following",
+          "label": "Failure to obtain results with ISH may be due to the following",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prolonged_fixation_in_formalin",
+          "label": "Prolonged fixation in formalin",
+          "required": true,
+          "type": "free_text",
+          "condition": ">1 week"
+        },
+        {
+          "field_id": "fixation_in_non_formalin_fixatives",
+          "label": "Fixation in non-formalin fixatives",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "procedures_or_fixation_involving_acid_eg_decalcification_may_degrade_dna",
+          "label": "Procedures or fixation involving acid (e.g., decalcification) may degrade DNA",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "insufficient_protease_treatment_of_tissue",
+          "label": "Insufficient protease treatment of tissue",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "external_proficiency_testing_surveys_for_her2_by_ish_are_available_from_cap_and_other_organizations",
+          "label": "External proficiency testing surveys for HER2 by ISH are available from CAP and other organizations.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "these_surveys_are_invaluable_tools_to_ensure_that_the_laboratory_assays_are_working_as_expected",
+          "label": "These surveys are invaluable tools to ensure that the laboratory assays are working as expected.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reporting_guidelines_asco_and_cap_have_issued_recommendations_for_reporting_the_results_of_her2_test",
+          "label": "Reporting guidelines: ASCO and CAP have issued recommendations for reporting the results of HER2 testing by ISH (Table 5).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dual_probe_ish_group_definitions",
+          "label": "Dual Probe ISH Group Definitions",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "group_1_her2cep17_ratio_20_40_her2_signalscell",
+          "label": "Group 1 = HER2/CEP17 ratio ≥2.0; ≥4.0 HER2 signals/cell",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "group_2_her2cep17_ratio_20_40_her2_signalscell",
+          "label": "Group 2 = HER2/CEP17 ratio ≥2.0; <4.0 HER2 signals/cell",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "group_3_her2cep17_ratio_20_60_her2_signalscell",
+          "label": "Group 3 = HER2/CEP17 ratio <2.0; ≥6.0 HER2 signals/cell",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "group_4_her2cep17_ratio_20_40_and_60_her2_signalscell",
+          "label": "Group 4 = HER2/CEP17 ratio <2.0; ≥4.0 and <6.0 HER2 signals/cell",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "group_5_her2cep17_ratio_20_40_her2_signalscell",
+          "label": "Group 5 = HER2/CEP17 ratio <2.0; <4.0 HER2 signals/cell",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_5_reporting_results_of_her2_testing_by_in_situ_hybridization",
+          "label": "Table 5. Reporting Results of HER2 Testing by In Situ Hybridization",
+          "required": true,
+          "type": "free_text",
+          "condition": "dual-probe assay"
+        },
+        {
+          "field_id": "for_groups_2_4_final_ish_results_are_based_on_concurrent_review_of_ihc_with_recounting_of_the_ish_te",
+          "label": "*For Groups 2-4 final ISH results are based on concurrent review of IHC, with recounting of the ISH test by a second reviewer if IHC is 2+ (per 2018 CAP/ASCO Update recommendations).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "standardized_guidelines_comments_for_the_group_2_4_ish_results_are_available_to_add_to_reports_in_th",
+          "label": "Standardized guidelines comments for the Group 2-4 ISH results are available to add to reports in the Comments on HER2 ISH Results section and are as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "comment_for_group_2_result_this_sample_has_a_group_2_her2_ish_result_ratio_greater_than_or_equal_to_",
+          "label": "Comment for Group 2 result: This sample has a Group 2 HER2 ISH result (ratio greater than or equal to 2.0; less than 4.0 HER2 signals / cell) Evidence is limited on the efficacy of HER2-targeted therapy in the small subset of cases with HER2/CEP17 ratio ≥2.0 and an average HER2 copy number <4.0/cell. In the first generation of adjuvant trastuzumab trials, patients in this subgroup who were randomized to the trastuzumab arm did not appear to derive an improvement in disease free or overall survival, but there were too few such cases to draw definitive conclusions. IHC expression for HER2 should be used to complement ISH and define HER2 status. If IHC result is not 3+ positive, it is recommended that the specimen be considered HER2 negative because of the low HER2 copy number by ISH and lack of protein overexpression.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "comment_for_group_3_result_this_sample_has_a_group_3_her2_ish_result_ratio_less_than_20_greater_than",
+          "label": "Comment for Group 3 result: This sample has a Group 3 HER2 ISH result (ratio less than 2.0; greater than or equal to 6.0 HER2 signals / cell). There are insufficient data on the efficacy of HER2-targeted therapy in cases with HER2 ratio <2.0 in the absence of protein overexpression because such patients were not eligible for the first generation of adjuvant trastuzumab clinical trials. When concurrent IHC results are negative (0-1+), it is recommended that the specimen be considered HER2 negative.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "comment_for_group_4_result_this_sample_has_a_group_4_result_ratio_less_than_20_greater_than_or_equal",
+          "label": "Comment for Group 4 result: This sample has a Group 4 result (ratio less than 2.0; greater than or equal to 4.0 and less than 6.0 HER2 signals / cell). It is uncertain whether patients with ≥4.0 and <6.0 average HER2 signals/cell and HER2/CEP17 ratio <2.0 benefit from HER2 targeted therapy in the absence of protein overexpression (IHC 3+). If the specimen test result is close to the ISH ratio threshold for positive, there is a high likelihood that repeat testing will result in different results by chance alone. Therefore, when IHC results are not 3+ positive, it is recommended that the sample be considered HER2 negative without additional testing on the same specimen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "important_issues_in_interpreting_ish_are_the_following",
+          "label": "Important issues in interpreting ISH are the following",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "identification_of_invasive_carcinoma_a_pathologist_should_identify_on_the_hematoxylin_and_eosin_he_o",
+          "label": "Identification of invasive carcinoma: A pathologist should identify on the hematoxylin and eosin (H&E) or HER2 IHC slide the area of invasive carcinoma to be evaluated by ISH.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "identification_of_associated_dcis_in_some_cases_dcis_will_show_gene_amplification_whereas_the_associ",
+          "label": "Identification of associated DCIS: In some cases, DCIS will show gene amplification, whereas the associated invasive carcinoma will not. ISH analysis must be performed on the invasive carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "use_of_her2_ihc_to_guide_areas_to_score_in_heterogeneous_cases",
+          "label": "Use of HER2 IHC to guide areas to score in heterogeneous cases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distinct_clustered_areas_of_her2_amplification_typically_match_areas_of_increased_ihc_expression_and",
+          "label": "Distinct clustered areas of HER2 amplification typically match areas of increased IHC expression and are considered heterogenous. This is rare, but when identified can be reported as a percentage of the cell population HER2 amplified by ISH with the concurrent IHC results. Complex cases can be described in report sections for descriptions of the heterogeneity present.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references_for_note_c_are_as_follows12345",
+          "label": "References for Note C are as follows:1,2,3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "national_comprehensive_cancer_network_nccn_clinical_practice_guideline_in_oncology_version_62024_htt",
+          "label": "National Comprehensive Cancer Network (NCCN) Clinical Practice Guideline in Oncology, Version 6.2024. https://www.nccn.org/professionals/physician_gls/pdf/breast.pdf Accessed Jan 22, 2025.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wolff_ac_hammond_meh_allison_kh_et_al_her2_testing_in_breast_cancer_american_society_of_clinical_onc",
+          "label": "Wolff AC, Hammond MEH, Allison KH, et al. HER2 testing in breast cancer: American Society of Clinical Oncology/College of American Pathologists clinical practice guideline focused update. Arch Pathol Lab Med. 2018;142(11):1364-1382.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wolff_ac_somerfield_mr_dowsett_m_hammond_meh_hayes_df_mcshane_lm_saphner_tj_spears_pa_allison_kh_hum",
+          "label": "Wolff AC, Somerfield MR, Dowsett M, Hammond MEH, Hayes DF, McShane LM, Saphner TJ, Spears PA, Allison KH. Human Epidermal Growth Factor Receptor 2 Testing in Breast Cancer. Arch Pathol Lab Med. 2023 Sep 1;147(9):993-1000.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modi_s_jacot_w_yamashita_t_et_al_trastuzumab_deruxtecan_in_previously_treated_her2_low_advanced_brea",
+          "label": "Modi S, Jacot W, Yamashita T, et al. Trastuzumab Deruxtecan in Previously Treated HER2-Low Advanced Breast Cancer. N Engl J Med 2022;387(1):9–20.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bardia_a_hu_x_dent_r_et_al_trastuzumab_deruxtecan_after_endocrine_therapy_in_metastatic_breast_cance",
+          "label": "Bardia A, Hu X, Dent R, et al. Trastuzumab Deruxtecan after Endocrine Therapy in Metastatic Breast Cancer. N Engl J Med. 2024 Dec 5;391(22):2110-2122.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ki_67_is_a_nuclear_protein_found_in_all_phases_of_the_cell_cycle_and_is_a_marker_of_cell_proliferati",
+          "label": "Ki-67 is a nuclear protein found in all phases of the cell cycle and is a marker of cell proliferation. The monoclonal antibody MIB-1 is the most commonly used antibody for assessing Ki-67 in formalin-fixed paraffin-embedded tissue sections. The percentage of Ki-67 positive cancer cells determined by IHC is used to provide additional data on the proliferation rate of the cancer and as a correlate with the overall grade. It is incorporated into some prognostic scoring schemes and sometimes used in neoadjuvant treatment trials to determine if proliferation decreases with treatment. However, Ki-67 proliferative rates have not been validated as a predictive biomarker. Currently, routine testing of breast cancers for Ki-67 expression is not standard by either ASCO or the National Comprehensive Cancer Network (NCCN). However, it may be reported as an additional data element in breast cancer characterization and reporting. Using a standardized approach to scoring, such as that recommended by the International Ki-67 in Breast Cancer Working Group, can be useful. The Ki-67 proliferation index can be reported either as a discrete numerical percentage or as a range.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references_for_note_d_are_as_follows12",
+          "label": "References for Note D are as follows:1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dowsett_m_nielsen_to_ahern_r_et_al_assessment_of_ki67_in_breast_cancer_recommendations_from_the_inte",
+          "label": "Dowsett M, Nielsen TO, A'Hern R, et al. Assessment of Ki67 in breast cancer: recommendations from the International Ki67 in breast cancer working group. J Natl Cancer Inst. 2011;103(22):1656-1664.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nielsen_to_leung_scy_rimm_dl_et_al_assessment_of_ki67_in_breast_cancer_updated_recommendations_from_",
+          "label": "Nielsen TO, Leung SCY, Rimm DL, et al. Assessment of Ki67 in Breast Cancer: Updated Recommendations from the International Ki67 in Breast Cancer Working Group. J Natl Cancer Inst. 2021 Jul 1;113(7):808-819. doi: 10.1093/jnci/djaa201. PMID: 33369635; PMCID: PMC8487652.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1394 @@
+{
+  "template_id": "Liver.HCC_4.3.0.0.REL_CAPCP",
+  "organ": "HEPATOCELLULAR CARCINOMA",
+  "protocol_posting_date": "June 2022",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "hepatocellular_carcinoma",
+              "label": "Hepatocellular carcinoma"
+            },
+            {
+              "value": "hepatocellular_carcinoma_fibrolamellar",
+              "label": "Hepatocellular carcinoma, fibrolamellar"
+            },
+            {
+              "value": "hepatocellular_carcinoma_scirrhous",
+              "label": "Hepatocellular carcinoma, scirrhous"
+            },
+            {
+              "value": "hepatocellular_carcinoma_clear_cell_type",
+              "label": "Hepatocellular carcinoma, clear cell type"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "for_multiple_tumors_select_the_worst_grade",
+          "label": "For multiple tumors, select the worst grade.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "g4_undifferentiated",
+              "label": "G4, undifferentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "solitary",
+              "label": "Solitary"
+            },
+            {
+              "value": "multiple",
+              "label": "Multiple: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_characteristics",
+          "label": "TUMOR CHARACTERISTICS#",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ],
+          "guidance": "For multiple tumors, repeat this section for up to 5 largest tumor nodules."
+        },
+        {
+          "field_id": "tumor_identification",
+          "label": "Tumor Identification: _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right_lobe",
+              "label": "Right lobe: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "left_lobe",
+              "label": "Left lobe: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "caudate_lobe",
+              "label": "Caudate lobe: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "quadrate_lobe",
+              "label": "Quadrate lobe: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "segmental_location",
+              "label": "Segmental location (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_of_viable_tumor_in_centimeters",
+              "label": "Greatest dimension of viable tumor in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greatest_dimension_of_tumor_on_gross_exam_in_centimeters_cm___________________cm",
+          "label": "Greatest Dimension of Tumor on Gross Exam in Centimeters (cm): _________________ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "complete_necrosis",
+              "label": "Complete necrosis (no viable tumor)"
+            },
+            {
+              "value": "incomplete_necrosis",
+              "label": "Incomplete necrosis (viable tumor present)"
+            }
+          ]
+        },
+        {
+          "field_id": "extent_of_tumor_necrosis",
+          "label": "Extent of Tumor Necrosis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_necrosis",
+              "label": "No necrosis"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "%"
+        },
+        {
+          "field_id": "satellitosis",
+          "label": "Satellitosis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "confined_to_liver",
+              "label": "Confined to liver"
+            },
+            {
+              "value": "involves_a_major_branch_of_the_portal_vein",
+              "label": "Involves a major branch of the portal vein"
+            },
+            {
+              "value": "involves_hepatic_vein",
+              "label": "Involves hepatic vein(s)"
+            },
+            {
+              "value": "perforates_visceral_peritoneum",
+              "label": "Perforates visceral peritoneum"
+            },
+            {
+              "value": "directly_invades_gallbladder",
+              "label": "Directly invades gallbladder"
+            },
+            {
+              "value": "directly_invades_diaphragm",
+              "label": "Directly invades diaphragm"
+            },
+            {
+              "value": "directly_invades_other_adjacent_organ",
+              "label": "Directly invades other adjacent organ(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "vascular_invasion",
+          "label": "Vascular Invasion",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "small_vessel",
+              "label": "Small vessel (specify tumor nodule(s), if applicable): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "large_vessel",
+              "label": "Large vessel (major branch of hepatic vein or portal vein) (specify tumor nodule(s), if applicable): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "present",
+              "label": "Present (not otherwise specified) (specify tumor nodule(s), if applicable): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present (specify tumor nodule(s), if applicable): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_invasive_carcinoma",
+          "label": "Closest Margin(s) to Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "parenchymal",
+              "label": "Parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "parenchymal",
+              "label": "Parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_regional_lymph_node",
+              "label": "Non-regional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pathologic_stage_classification",
+          "label": "PATHOLOGIC STAGE CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ],
+          "condition": "pTNM, AJCC 8th Edition"
+        },
+        {
+          "field_id": "tnm_descriptors",
+          "label": "TNM Descriptors",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "m",
+              "label": "m (multiple primary tumors)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrent)"
+            },
+            {
+              "value": "y",
+              "label": "y (post-treatment)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_solitary_tumor_less_than_or_equal_to_2_cm_or_greater_than_2_cm_without_vascular_invasion",
+          "label": "pT1: Solitary tumor less than or equal to 2 cm, or greater than 2 cm without vascular invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Solitary tumor less than or equal to 2 cm"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Solitary tumor greater than 2 cm without vascular invasion"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Solitary tumor greater than 2 cm with vascular invasion, or multiple tumors, none greater than 5 cm"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Multiple tumors, at least one of which is greater than 5 cm"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Single tumor or multiple tumors of any size involving a major branch of the portal vein or hepatic vein, or tumor(s) with direct invasion of adjacent organs other than the gallbladder or with perforation of visceral peritoneum"
+            }
+          ]
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Regional lymph node metastasis"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "fibrosis",
+              "label": "Fibrosis (specify extent, providing name of the scheme and assessment scale used): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cirrhosis",
+              "label": "Cirrhosis"
+            },
+            {
+              "value": "low_grade_dysplastic_nodule",
+              "label": "Low-grade dysplastic nodule"
+            },
+            {
+              "value": "high_grade_dysplastic_nodule",
+              "label": "High-grade dysplastic nodule"
+            },
+            {
+              "value": "steatosis",
+              "label": "Steatosis"
+            },
+            {
+              "value": "steatohepatitis",
+              "label": "Steatohepatitis"
+            },
+            {
+              "value": "iron_overload",
+              "label": "Iron overload"
+            },
+            {
+              "value": "chronic_hepatitis",
+              "label": "Chronic hepatitis (specify etiology): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "ancillary_studies_specify",
+          "label": "Ancillary Studies (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_only_to_hepatic_resection_specimens_containing_hepatocellular_carcinoma_includ",
+          "label": "This protocol applies only to hepatic resection specimens containing hepatocellular carcinoma including fibrolamellar carcinoma. Carcinomas of the intrahepatic bile ducts (cholangiocarcinomas) are staged using a separate TNM system.1 This scheme is also not used for combined HCC-cholangiocarcinoma, sarcomas, and metastatic tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_recommends_the_following_modified_classification_of_the_world_health_organization_who1_",
+          "label": "The protocol recommends the following modified classification of the World Health Organization (WHO).1 In the United States, almost 70% of the primary malignant tumors of the liver are hepatocellular carcinomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fibrolamellar_carcinoma_has_distinct_morphologic_features_and_occurs_predominantly_in_young_adults_c",
+          "label": "Fibrolamellar carcinoma has distinct morphologic features and occurs predominantly in young adults. CK7 and CD68 are positive in nearly all fibrolamellar carcinomas but are not specific as a subset of classical HCC can be positive for these markers.2 Earlier studies reported a relatively favorable outcome of fibrolamellar carcinoma compared to HCC,3 but several recent studies have shown that the outcome is similar to classical HCC in noncirrhotic liver.4,5,6 Recently, a ~400 bp deletion on chromosome 19 has been described in fibrolamellar carcinoma, which leads to fusion of DNAJB1 and PRKACA genes, and a novel DNAJB1-PRKACA fusion transcript.7 This can be detected by reverse transcription polymerase chain reaction (RT-PCR) or fluorescence in situ hybridization (FISH) break-apart probes.8 This alteration is seen in 80% to 100% of FLM cases and has not been reported in classical HCC. For cases showing borderline features of fibrolamellar carcinoma, the diagnosis can be confirmed by 1 of these molecular techniques. Scirrhous and sarcomatoid HCC are separately listed in the AJCC 8th edition but are considered histologic variants of HCC and not as distinct entities in the WHO 2010 classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ross_hm_daniel_hd_vivekanandan_p_et_al_fibrolamellar_carcinomas_are_positive_for_cd68_mod_pathol_201",
+          "label": "Ross HM, Daniel HD, Vivekanandan P, et al. Fibrolamellar carcinomas are positive for CD68. Mod Pathol. 2011;24(3):390-395.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stipa_f_yoon_ss_liau_kh_et_al_outcome_of_patients_with_fibrolamellar_hepatocellular_carcinoma_cancer",
+          "label": "Stipa F, Yoon SS, Liau KH, et al. Outcome of patients with fibrolamellar hepatocellular carcinoma. Cancer.  2006;106(6):1331-1338.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kakar_s_burgart_lj_batts_kp_garcia_j_jain_d_ferrell_ld_clinicopathologic_features_and_survival_in_fi",
+          "label": "Kakar S, Burgart LJ, Batts KP, Garcia J, Jain D, Ferrell LD. Clinicopathologic features and survival in fibrolamellar carcinoma: comparison with conventional hepatocellular carcinoma with and without cirrhosis. Mod Pathol. 2005;18(11):1417-1423.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "njei_b_konjeti_vr_ditah_i_prognosis_of_patients_with_fibrolamellar_hepatocellular_carcinoma_versus_c",
+          "label": "Njei B, Konjeti VR, Ditah I. Prognosis of Patients With Fibrolamellar Hepatocellular Carcinoma Versus Conventional Hepatocellular Carcinoma: A Systematic Review and Meta-analysis. Gastrointest Cancer Res. 2014;7(2):49-54.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mayo_sc_mavros_mn_nathan_h_et_al_treatment_and_prognosis_of_patients_with_fibrolamellar_hepatocellul",
+          "label": "Mayo SC, Mavros MN, Nathan H, et al. Treatment and prognosis of patients with fibrolamellar hepatocellular carcinoma: a national perspective. J Am Coll Surg. 2014;218(2):196-205.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "honeyman_jn_simon_ep_robine_n_et_al_detection_of_a_recurrent_dnajb1_prkaca_chimeric_transcript_in_fi",
+          "label": "Honeyman JN, Simon EP, Robine N, et al. Detection of a recurrent DNAJB1-PRKACA chimeric transcript in fibrolamellar hepatocellular carcinoma. Science. 2014;343(6174):1010-1014.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "graham_rp_jin_l_knutson_dl_et_al_dnajb1_prkaca_is_specific_for_fibrolamellar_carcinoma_mod_pathol_20",
+          "label": "Graham RP, Jin L, Knutson DL, et al. DNAJB1-PRKACA is specific for fibrolamellar carcinoma. Mod Pathol. 2015;28(6):822-9.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grading_of_hepatocellular_carcinoma",
+          "label": "Grading of Hepatocellular Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_variety_of_grading_systems_including_edmondson_and_steiner1_and_who_2010_scheme2_have_been_advocat",
+          "label": "A variety of grading systems including Edmondson and Steiner1 and WHO 2010 scheme2 have been advocated. The former is based on nuclear features, while the latter is based on differentiation. AJCC Cancer Staging Manual, 8th edition3 advocates a 4-tier grading scheme",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "well_differentiated_tumors_closely_resemble_normal_liver_and_have_minimal_to_mild_cytologic_atypia_l",
+          "label": "Well-differentiated tumors closely resemble normal liver and have minimal to mild cytologic atypia, limited reticulin loss and relatively thin cell plates. Moderately differentiated HCC show thick cell plates with mild to moderate nuclear atypia and more prominent loss of reticulin. Poorly differentiated tumors show marked nuclear atypia and/or high mitotic activity; the hepatocellular nature in some of these tumors may not be clearly evident on morphology. Undifferentiated category is rarely used and is reserved for tumors that do not show obvious hepatocellular or other differentiation on morphology or immunohistochemistry. It is more appropriate to categorize these as undifferentiated carcinomas rather than a subgroup of HCC. This protocol does not preclude the use of other grading systems. The grading system used should be specified.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade_has_been_shown_to_have_a_relationship_to_tumor_size_tumor_presentation_and_metastat",
+          "label": "Histologic grade has been shown to have a relationship to tumor size, tumor presentation, and metastatic rate.4 Grade has been shown to be an independent predictor of outcome in many studies.5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "edmonson_ha_steiner_pe_primary_carcinoma_of_the_liver_cancer_19547462_503",
+          "label": "Edmonson HA, Steiner PE. Primary carcinoma of the liver. Cancer. 1954;7:462-503.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bosman_ft_carneiro_f_hruban_rh_theise_nd_eds_who_classification_of_tumours_of_the_digestive_system_g",
+          "label": "Bosman FT, Carneiro F, Hruban RH, Theise ND, eds. WHO Classification of Tumours of the Digestive System. Geneva, Switzerland: WHO Press; 2010.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lauwers_gy_terris_b_balis_uj_et_al_prognostic_histologic_indicators_of_curatively_resected_hepatocel",
+          "label": "Lauwers GY, Terris B, Balis UJ, et al. Prognostic histologic indicators of curatively resected hepatocellular carcinomas: a multi-institutional analysis of 425 patients with definition of a histologic prognostic index. Am J Surg Pathol. 2002;26:23-34.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spolverato_g_kim_y_alexandrescu_s_et_al_is_hepatic_resection_for_large_or_multifocal_intrahepatic_ch",
+          "label": "Spolverato G, Kim Y, Alexandrescu S, et al. Is hepatic resection for large or multifocal intrahepatic cholangiocarcinoma justified?: results from a multi-institutional collaboration. Ann Surg Oncol. 2015;22(7):2218-2225.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hyder_o_marques_h_pulitano_c_et_al_a_nomogram_to_predict_long_term_survival_after_resection_for_intr",
+          "label": "Hyder O, Marques H, Pulitano C, et al. A nomogram to predict long-term survival after resection for  intrahepatic cholangiocarcinoma: an Eastern and Western experience. JAMA Surg. 2014;149(5):432-438.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_segmental_anatomy_of_the_liver_is_shown_in_figure_1_although_these_divisions_are_useful_for_anat",
+          "label": "The segmental anatomy of the liver is shown in Figure 1. Although these divisions are useful for anatomic localization of tumors, it is often not possible to assign segmental location on resection specimens, and such information is best provided by the surgeon. Tumor location can be recorded as right or left lobe, and more specific information about the segmental location can be included if provided.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_segmental_anatomy_of_the_liver_from_greene_et_al1_used_with_permission_of_the_american_join",
+          "label": "Figure 1.  Segmental anatomy of the liver. From Greene et al.1 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sections_should_be_prepared_from_each_major_tumor_nodule_with_representative_sampling_of_smaller_nod",
+          "label": "Sections should be prepared from each major tumor nodule, with representative sampling of smaller nodules. For multiple tumors, size and pathologic parameters can be provided for the five largest tumors, while size range and location can be provided for the rest. If there are differences in tumor characteristics such as differentiation, satellitosis, lymphovascular invasion, margin status, etc, in individual tumor nodules, this can be recorded using optional features in the synoptic. Further details about any differences in tumor nodules can be added as a separate comment, if necessary. Cirrhotic nodules appreciably larger than the surrounding background liver should also be sampled, because such nodules may harbor dysplastic changes.2 For purposes of staging, satellite nodules, multifocal primary hepatocellular carcinomas, and intrahepatic metastases are considered to be multiple tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_tumors_treated_with_radiofrequency_ablation_or_transarterial_chemo_embolization_the_extent_of_ne",
+          "label": "For tumors treated with radiofrequency ablation or transarterial chemo-embolization, the extent of necrosis on pathologic evaluation can provide valuable for correlation with down-staging observed on imaging.3 The extent of necrosis that would correlate with outcome is not known.4 Hence there are no definite guidelines for pathologic assessment of the specimen and how to assess the extent of necrosis. The entire tumor should be examined microscopically, when possible, especially for tumors up to 2 cm. For larger tumors, an additional section for each 1 cm is recommended, with additional sampling as necessary from the periphery of the tumor or areas that appear viable. The overall extent of necrosis is determined by a combination of gross and microscopic findings, and should be reported in up to 5 of the largest tumour nodules.5 Both gross size and size of viable tumor for each focus (up to 5) can be provided, and only size of viable tumor should be used for staging.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_united_network_for_organ_sharing_unos_requires_reporting_of_satellite_hcc_lesions_in_explanted_l",
+          "label": "The United Network for Organ Sharing (UNOS) requires reporting of satellite HCC lesions in explanted livers. There is no universally accepted definition for satellitosis, and different criteria have been used in different studies. The definition suggested by International Collaboration on Cancer Reporting (ICCR) is recommended: HCC nodule smaller than the primary tumor, within 2 cm of the primary tumor, but separated by nontumor tissue. Tumor within a vascular structure should be categorized as lymphatic/vascular invasion and not as satellitosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York: Springer; 2006",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "international_working_party_terminology_of_nodular_hepatocellular_lesions_hepatology_199522983_993",
+          "label": "International Working Party. Terminology of nodular hepatocellular lesions. Hepatology. 1995;22:983-993.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yao_fy_kerlan_rk_jr_hirose_r_et_al_excellent_outcome_following_down_staging_of_hepatocellular_carcin",
+          "label": "Yao FY, Kerlan RK Jr, Hirose R, et al. Excellent outcome following down-staging of hepatocellular carcinoma prior to liver transplantation: an intention-to-treat analysis. Hepatology. 2008;48(3):819-827.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cotoi_cg_khorsandi_se_plesea_ie_quaglia_a_histological_aspects_of_post_tace_hepatocellular_carcinoma",
+          "label": "Cotoi CG, Khorsandi SE, Plesea IE, Quaglia A. Histological aspects of post-TACE hepatocellular carcinoma. Rom J Morphol Embryol. 2012;53(3 Suppl):677-682.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pomfret_ea_washburn_k_wald_c_et_al_report_of_a_national_conference_on_liver_allocation_in_patients_w",
+          "label": "Pomfret EA, Washburn K, Wald C, et al. Report of a national conference on liver allocation in patients with hepatocellular carcinoma in the United States. Liver Transpl. 2010;16(3):262-278.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vascular_invasion_includes_gross_as_well_as_microscopic_invasion_of_vessels_macroscopic_venous_invas",
+          "label": "Vascular invasion includes gross as well as microscopic invasion of vessels. Macroscopic venous invasion is generally accompanied by microscopic invasion.1 Both are associated with lower survival post resection. Larger tumors (greater than 5 cm) or multiple tumors are more likely to exhibit vascular invasion than single small lesions.2 The presence of a portal vein tumor thrombus should be included in the report due to its adverse impact on outcome.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "microscopic_vascular_invasion_is_defined_by_tumor_within_a_vascular_space_lined_by_endothelium_ident",
+          "label": "Microscopic vascular invasion is defined by tumor within a vascular space lined by endothelium, identified only on microscopy in the capsule or noncapsular fibrous septa, or liver tissue surrounding the tumor.4 Attachment of the tumor to vessel wall or presence of smooth muscle/elastic lamina (for larger vessels) helps in confirming vascular invasion. Elastic stain or immunohistochemistry for smooth muscle can be helpful in challenging situations, but their routine use is not advocated. The outcome may be worse with increasing number of foci with lymph-vascular invasion (LVI), but further subclassification based on extent of LVI is not supported by current data.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tsai_t_j_chau_g_y_lui_w_y_et_al_clinical_significance_of_microscopic_tumor_venous_invasion_in_patien",
+          "label": "Tsai T-J, Chau G-Y, Lui W-Y, et al. Clinical significance of microscopic tumor venous invasion in patients with resectable hepatocellular carcinoma. Surgery. 2000;127:603-608.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pawlik_tm_delman_ka_vauthey_j_n_et_al_tumor_size_predicts_vascular_invasion_and_histologic_grade_imp",
+          "label": "Pawlik TM, Delman KA, Vauthey J-N, et al. Tumor size predicts vascular invasion and histologic grade: implications for expanding the criteria for hepatic transplantation. Liver Transpl. 2005;11(9):1086-1092.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fan_l_mac_mt_frishberg_dp_et_al_interobserver_and_intraobserver_variability_in_evaluating_vascular_i",
+          "label": "Fan L, Mac MT, Frishberg DP, et al. Interobserver and intraobserver variability in evaluating vascular invasion in hepatocellular carcinoma. J Gastroenterol Hepatol. 2010;25(9):1556-1561.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "iguchi_t_shirabe_k_aishima_s_et_al_new_pathologic_stratification_of_microvascular_invasion_in_hepato",
+          "label": "Iguchi T, Shirabe K, Aishima S, et al. New pathologic stratification of microvascular invasion in hepatocellular carcinoma: predicting prognosis after living-donor liver transplantation. Transplantation. 2015;99(6):1236-1242.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_evaluation_of_margins_for_total_or_partial_hepatectomy_specimens_depends_on_the_method_and_exten",
+          "label": "The evaluation of margins for total or partial hepatectomy specimens depends on the method and extent of resection. It is recommended that the surgeon be consulted to determine the critical foci within the margins that require microscopic evaluation. The transection margin of a partial hepatectomy may be large, rendering it impractical for complete examination. In this setting, grossly positive margins should be microscopically confirmed and documented. If the margins are grossly free of tumor, judicious sampling of the cut surface in the region closest to the nearest identified tumor nodule is indicated. In selected cases, adequate random sampling of the cut surface may be sufficient. If the neoplasm is found near the surgical margin, the distance from the margin should be reported. For multiple tumors, the distance from the nearest tumor should be reported. Tumor within 1 mm of the resection margin may have increased risk of recurrence,1,2 but several studies have reported that a minimal surgical margin in the liver is sufficient for HCC.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gluer_am_cocco_n_laurence_jm_et_al_systematic_review_of_actual_10_year_survival_following_resection_",
+          "label": "Gluer AM, Cocco N, Laurence JM, et al. Systematic review of actual 10-year survival following resection for hepatocellular carcinoma. HPB (Oxford). 2012;14(5):285-290.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kumar_am_fredman_et_coppa_c_el_gazzaz_g_aucejo_fn_abdel_wahab_m_patterns_of_cancer_recurrence_in_loc",
+          "label": "Kumar AM, Fredman ET, Coppa C, El-Gazzaz G, Aucejo FN, Abdel-Wahab M. Patterns of cancer recurrence in localized resected hepatocellular carcinoma. Hepatobiliary Pancreat Dis Int. 2015;14(3):269-275.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shindoh_j_hasegawa_k_inoue_y_et_al_risk_factors_of_post_operative_recurrence_and_adequate_surgical_a",
+          "label": "Shindoh J, Hasegawa K, Inoue Y, et al. Risk factors of post-operative recurrence and adequate surgical approach to improve long-term outcomes of hepatocellular carcinoma. HPB (Oxford). 2013;15(1):31-39.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_of_the_american_joint_committee_on_cancer_ajcc_and_the_international_union_ag",
+          "label": "The TNM staging system of the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) applies to hepatocellular carcinomas.1 It does not apply to hepatic sarcomas or to metastatic tumors of the liver. The T classification depends on the number of tumor nodules, the size of the largest nodule, and the presence or absence of blood vessel invasion. The TNM classification does not discriminate between multiple independent primary tumors or intrahepatic metastasis from a single primary hepatic carcinoma. Vascular invasion includes either the gross or the histologic involvement of vessels. Portal vein invasion is an important adverse prognostic factor and should be reported.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previ",
+          "label": "According to AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (eg, when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_t_categories_for_hcc_are_based_on_tumor_size_number_and_vascular_invasion_since_some_studies_sho",
+          "label": "The T categories for HCC are based on tumor size, number and vascular invasion. Since some studies showed lack of adverse prognostic impact of vascular invasion in tumors less than 2 cm, these tumors have been classified under the T1 category.2 For treated tumors, the size of the viable tumor used for assigning the T category. Tumors with major vascular invasion3 are now categorized as T4 as they have a similar outcome compared to T4 tumors defined by extrahepatic or peritoneal involvement. Major vascular invasion is defined by involvement of branches of main portal vein (right or left, excluding sectoral and segmental branches), hepatic veins (right, middle or left) or main branches of hepatic artery (right or left).1 Involvement of falciform or other ligaments is not considered T4, and should be categorized as T1-T3 based on other parameters. Direct invasion into diaphragm is considered as T4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (ie, before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_t1_is_defined_as_a_solitary_tumor_2_cm_irrespective_of_vascular_invasion_or_2_cm_without_va",
+          "label": "Figure 2.  T1 is defined as a solitary tumor ≤2 cm irrespective of vascular invasion or >2 cm without vascular invasion. From Greene et al. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_a_solitary_tumors_2_cm_with_vascular_invasion_are_classified_as_t2_b_multiple_tumors_none_m",
+          "label": "Figure 3.  A. Solitary tumors >2 cm with vascular invasion are classified as T2.  B. Multiple tumors, none measuring 5 cm or greater in greatest dimension, are also classified as T2. From Greene et al.4 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_a_multiple_tumors_any_more_than_5_cm_are_classified_as_t3_b_tumor_involving_a_major_branch_",
+          "label": "Figure 4.  A. Multiple tumors, any more than 5 cm, are classified as T3. B. Tumor involving a major branch of the portal or hepatic vein(s) is classified as T4. From Greene et al.4 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_5_tumor_with_direct_invasion_of_adjacent_organs_other_than_gallbladder_or_with_perforation_of",
+          "label": "Figure 5.  Tumor with direct invasion of adjacent organs other than gallbladder or with perforation of the visceral peritoneum is also classified as T4. From Greene et al.4 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_nodes",
+          "label": "Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_regional_lymph_nodes_for_the_liver_include_hilar_hepatoduodenal_ligament_inferior_phrenic_caval_",
+          "label": "The regional lymph nodes for the liver include hilar, hepatoduodenal ligament, inferior phrenic, caval, common hepatic artery and portal vein lymph nodes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shindoh_j_andreou_a_aloia_ta_et_al_microvascular_invasion_does_not_predict_long_term_survival_in_hep",
+          "label": "Shindoh J, Andreou A, Aloia TA, et al. Microvascular invasion does not predict long-term survival in hepatocellular carcinoma up to 2 cm: reappraisal of the staging system for solitary tumors. Ann Surg Oncol. 2013;20(4):1223-1229.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vauthey_jn_lauwers_gy_esnaola_nf_et_al_simplified_staging_for_hepatocellular_carcinoma_j_clin_oncol_",
+          "label": "Vauthey JN, Lauwers GY, Esnaola NF, et al. Simplified staging for hepatocellular carcinoma. J Clin Oncol. 2002;20(6):1527-1536.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fibrosis",
+          "label": "Fibrosis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_extent_of_fibrosis_should_be_reported_because_cirrhosis_or_advanced_fibrosis_have_an_adverse_eff",
+          "label": "The extent of fibrosis should be reported because cirrhosis or advanced fibrosis have an adverse effect on outcome.1  The scoring system described by Ishak2 is recommended by the AJCC Cancer Staging Manual, 8 edition,3 but other commonly used schemes (Batts-Ludwig, Metavir) can be used. The name of the staging scheme and its scale should be included.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dysplastic_nodules",
+          "label": "Dysplastic Nodules",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_grade_dysplastic_nodules_are_considered_to_be_the_precursors_of_hepatocellular_carcinoma_the_cr",
+          "label": "High-grade dysplastic nodules are considered to be the precursors of hepatocellular carcinoma. The criteria outlined by the International Working Party are recommended,4 although difficulties in assessment of these lesions and variation in interobserver agreement are recognized. Low-grade dysplastic nodules are difficult or impossible to distinguish from large regenerative nodules, and their inclusion in the report is not necessary.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hepatocellular_adenomas",
+          "label": "Hepatocellular Adenomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_noncirrhotic_liver_hepatocellular_carcinoma_may_arise_in_hepatocellular_adenoma_in_this_setting_t",
+          "label": "In noncirrhotic liver, hepatocellular carcinoma may arise in hepatocellular adenoma. In this setting, the size of the hepatocellular adenoma and the hepatocellular carcinoma should both be conveyed in the report. Only the hepatocellular carcinoma size is used for staging purposes. Subtyping of hepatocellular adenoma can be considered but is not required.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "underlying_liver_disease",
+          "label": "Underlying Liver Disease",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specific_types_of_underlying_disease_such_as_viral_hepatitis_or_hemochromatosis_should_be_evaluated_",
+          "label": "Specific types of underlying disease, such as viral hepatitis or hemochromatosis, should be evaluated and assigned a grade and stage, if appropriate.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bilmoria_mm_lauwers_gy_doherty_da_et_al_underlying_liver_disease_not_tumor_factors_predicts_long_ter",
+          "label": "Bilmoria MM, Lauwers GY, Doherty DA, et al. Underlying liver disease, not tumor factors, predicts long-term survival after resection of hepatocellular carcinoma. Arch Surg. 2001;136:528-535.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ishak_k_baptista_a_bianchi_l_et_al_histologic_grading_and_staging_of_chronic_hepatitis_j_hepatol_199",
+          "label": "Ishak K, Baptista A, Bianchi L, et al. Histologic grading and staging of chronic hepatitis. J Hepatol. 1995;22:696-699.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "international_working_party_terminology_of_nodular_hepatocellular_lesions_hepatology_199522983_993",
+          "label": "International Working Party. Terminology of nodular hepatocellular lesions. Hepatology. 1995;22:983-993.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

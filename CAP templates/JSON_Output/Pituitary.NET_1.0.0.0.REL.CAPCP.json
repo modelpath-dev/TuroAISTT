@@ -1,0 +1,1352 @@
+{
+  "template_id": "Pituitary.NET_1.0.0.0.REL.CAPCP",
+  "organ": "Pituitary Neuroendocrine Tumor",
+  "protocol_posting_date": "March 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_number",
+          "label": "Tumor Number",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "single_pituitary_neuroendocrine_tumor",
+              "label": "Single pituitary neuroendocrine tumor"
+            },
+            {
+              "value": "multiple_pituitary_neuroendocrine_tumors",
+              "label": "Multiple pituitary neuroendocrine tumors"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "tumor_characteristics",
+          "label": "Tumor Characteristics",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_multiple_pituitary_neuroendocrine_tumors_repeat_the_following_5_elements_for_each_distinct_pitui",
+          "label": "For multiple pituitary neuroendocrine tumors, repeat the following 5 elements for each distinct pituitary",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_tumor_tumor_types_and_subtypes_tumor_proliferative_activity_histologically_confirmed",
+          "label": "neuroendocrine tumor (Tumor Types and Subtypes, Tumor Proliferative Activity, Histologically Confirmed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "invasion_histochemical_features_and_immunohistochemical_features_this_section_can_be_repeated_up_to_",
+          "label": "Invasion, Histochemical Features, and Immunohistochemical Features). This section can be repeated up to 10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_tumor_types_and_subtype",
+          "label": "Histologic Tumor Type(s) and Subtype",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "tpit_lineage_pituitary_neuroendocrine_tumor",
+              "label": "TPIT-lineage pituitary neuroendocrine tumor (corticotroph tumor)"
+            },
+            {
+              "value": "densely_granulated_corticotroph_tumor",
+              "label": "Densely granulated corticotroph tumor"
+            },
+            {
+              "value": "sparsely_granulated_corticotroph_tumor",
+              "label": "Sparsely granulated corticotroph tumor"
+            },
+            {
+              "value": "crooke_cell_tumor",
+              "label": "Crooke cell tumor"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pit1_lineage_pituitary_neuroendocrine_tumor",
+              "label": "PIT1-lineage pituitary neuroendocrine tumor"
+            },
+            {
+              "value": "somatotroph_tumor_densely_granulated",
+              "label": "Somatotroph tumor, densely granulated"
+            },
+            {
+              "value": "somatotroph_tumor_sparsely_granulated",
+              "label": "Somatotroph tumor, sparsely granulated"
+            },
+            {
+              "value": "lactotroph_tumor_densely_granulated",
+              "label": "Lactotroph tumor, densely granulated"
+            },
+            {
+              "value": "lactotroph_tumor_sparsely_granulated",
+              "label": "Lactotroph tumor, sparsely granulated"
+            },
+            {
+              "value": "thyrotroph_tumor",
+              "label": "Thyrotroph tumor"
+            },
+            {
+              "value": "mammosomatotroph_tumor",
+              "label": "Mammosomatotroph tumor"
+            },
+            {
+              "value": "mature_pit1_lineage_plurihormonal_tumor",
+              "label": "Mature PIT1-lineage plurihormonal tumor"
+            },
+            {
+              "value": "immature_pit1_lineage_tumor",
+              "label": "Immature PIT1-lineage tumor"
+            },
+            {
+              "value": "acidophil_stem_cell_tumor",
+              "label": "Acidophil stem cell tumor"
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "condition": "s",
+          "guidance": "For each tumor component specify tumor subtype as listed above for somatotroph and lactotroph tumors"
+        },
+        {
+          "field_id": "eg_mixed_sparsely_granulated_somatotroph_tumor_and_sparsely_granulated_lactotroph_tumor",
+          "label": "(e.g., mixed sparsely granulated somatotroph tumor and sparsely granulated lactotroph tumor).",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mixed_somatotroph_and_lactotroph_tumor",
+              "label": "Mixed somatotroph and lactotroph tumor# (specify subtype): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "sf1_lineage_pituitary_neuroendocrine_tumor",
+              "label": "SF1-lineage pituitary neuroendocrine tumor"
+            },
+            {
+              "value": "gonadotroph_tumor",
+              "label": "Gonadotroph tumor"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pituitary_neuroendocrine_tumor_of_no_distinct_cell_lineage",
+              "label": "Pituitary neuroendocrine tumor of no distinct cell lineage"
+            },
+            {
+              "value": "null_cell_tumor",
+              "label": "Null cell tumor"
+            },
+            {
+              "value": "unusual_plurihormonal",
+              "label": "Unusual plurihormonal (multilineage) pituitary neuroendocrine tumors (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pituitary_neuroendocrine_tumor_nos",
+              "label": "Pituitary neuroendocrine tumor, NOS"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_proliferative_activity",
+          "label": "Tumor Proliferative Activity",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "ki_67_labeling_index",
+          "label": "Ki-67 Labeling Index#",
+          "required": true,
+          "type": "free_text",
+          "guidance": "The Ki-67 proliferation assessment should follow the IARC / WHO guidelines. Visual estimation based on"
+        },
+        {
+          "field_id": "routine_microscopic_examination_also_known_as_eyeballing_is_not_allowed",
+          "label": "routine microscopic examination (also known as eyeballing) is not allowed.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_ki_67_percentage",
+              "label": "Specify Ki-67 percentage: _________________ %",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ki_67_methodology",
+          "label": "Ki-67 Methodology",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "manual_count",
+              "label": "Manual count"
+            },
+            {
+              "value": "automated_image_analysis",
+              "label": "Automated image analysis"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "mitotic_count",
+          "label": "Mitotic Count",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_number_of_mitoses_per_2_mm2",
+              "label": "Specify number of mitoses per 2 mm2: _________________ mitoses per 2 mm2",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologically_confirmed_invasion",
+          "label": "Histologically Confirmed Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "reticulin_histochemistry",
+          "label": "Reticulin Histochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "disrupted",
+              "label": "Disrupted"
+            },
+            {
+              "value": "expanded_acini",
+              "label": "Expanded acini"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "pas_histochemistry",
+          "label": "PAS Histochemistry",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "immunohistochemical_features",
+          "label": "Immunohistochemical Features",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "pit1",
+      "section_name": "PIT1",
+      "fields": [
+        {
+          "field_id": "sf1",
+          "label": "SF1",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "gata3",
+          "label": "GATA3",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "er_alpha",
+          "label": "ER-alpha",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "alpha_subunit",
+          "label": "Alpha-subunit",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "acth",
+          "label": "ACTH",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only for TPIT lineage tumors"
+        },
+        {
+          "field_id": "gh",
+          "label": "GH",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only for PIT1 lineage tumors"
+        },
+        {
+          "field_id": "prl",
+          "label": "PRL",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only for PIT1 lineage tumors"
+        },
+        {
+          "field_id": "beta_tsh",
+          "label": "Beta-TSH",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required only for PIT1 lineage tumors"
+        },
+        {
+          "field_id": "beta_fsh",
+          "label": "Beta-FSH",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "beta_lh",
+          "label": "Beta-LH",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive_diffuse",
+              "label": "Positive, diffuse"
+            },
+            {
+              "value": "positive_focal",
+              "label": "Positive, focal"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "p27",
+          "label": "p27",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "lost",
+              "label": "Lost"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "atrx",
+          "label": "ATRX",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "lost",
+              "label": "Lost"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "p53",
+          "label": "p53",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "abnormal",
+              "label": "Abnormal"
+            },
+            {
+              "value": "wild_type",
+              "label": "Wild-type"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "low_molecular_weight_keratins_required_for_pit1_and_tpit_lineage_tumors_and_those_with_no",
+          "label": "Low Molecular Weight Keratins (required for PIT1 and TPIT lineage tumors, and those with no",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distinct_cell_lineages_eg_null_cell_tumor",
+          "label": "distinct cell lineages (e.g., null cell tumor))",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (specify, e.g., CAM5.2, CK8/18): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "extent_of_reactivity",
+          "label": "Extent of Reactivity",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "diffuse",
+              "label": "Diffuse"
+            },
+            {
+              "value": "focal",
+              "label": "Focal (non-diffuse)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pattern_of_reactivity",
+          "label": "Pattern of Reactivity",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "fibrous_bodies",
+              "label": "Fibrous bodies (accounting for greater than 70% of the tumor)"
+            },
+            {
+              "value": "fibrous_bodies",
+              "label": "Fibrous bodies (variable / scattered, accounting for less than 70% of the tumor)"
+            },
+            {
+              "value": "perinuclear_cytoplasmic",
+              "label": "Perinuclear cytoplasmic"
+            },
+            {
+              "value": "diffuse_dense_cytoplasmic",
+              "label": "Diffuse dense cytoplasmic"
+            },
+            {
+              "value": "ring_like_cytoplasmic",
+              "label": "Ring-like cytoplasmic"
+            },
+            {
+              "value": "membranous",
+              "label": "Membranous"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_markers",
+          "label": "Other Markers",
+          "required": true,
+          "type": "free_text",
+          "condition": "repeat this section for up to 10 markers"
+        },
+        {
+          "field_id": "other_marker_specify",
+          "label": "Other Marker (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_results",
+          "label": "Specify Results: _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastatic_sites_required_only_if_applicable",
+          "label": "Metastatic Site(s) (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "cerebrospinal",
+              "label": "Cerebrospinal (specify site(s)): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver"
+            },
+            {
+              "value": "bone",
+              "label": "Bone"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "non_tumorous_pituitary_sites",
+          "label": "Non-tumorous Pituitary Site(s)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "adenohypophysis_identified",
+              "label": "Adenohypophysis identified"
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "crookes_hyaline_change_of_the_non_tumorous_corticotrophs_required_for_all_corticotroph",
+          "label": "Crooke’s Hyaline Change of the Non-tumorous Corticotrophs (required for all corticotroph",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors",
+          "label": "tumors)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pituitary_hyperplasia",
+          "label": "Pituitary Hyperplasia",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "neurohypophysis_identified",
+              "label": "Neurohypophysis identified"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "hypophysitis",
+              "label": "Hypophysitis (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "craniopharyngioma",
+              "label": "Craniopharyngioma (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "rathkes_cleft_cyst",
+              "label": "Rathke’s cleft cyst (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "acute_hemorrhagic_necrosis",
+              "label": "Acute hemorrhagic necrosis (apoplexy)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_reporting_of_pituitary_neuroendocrine_tumors_is_improved_by_the_provision_of_a_case_summary_that",
+          "label": "The reporting of pituitary neuroendocrine tumors is improved by the provision of a case summary that consolidates the clinical, biochemical, radiologic, morphologic and immunohistochemical features. The use of a structured report ensures completeness of the data required to achieve clinico-pathological correlations for a correct diagnosis and an appropriate treatment plan. This case summary attempts to remain simple while ensuring the collection of all relevant data in accordance with the World Health Organization (WHO) Classification of Tumors.1,2 Patients with pituitary tumors may have hormone excess syndromes and these should be specified.2,3,4 Unlike most other cancers, there is no TNM staging method approved as yet for sellar tumors; this remains a work in progress and will likely follow systems that have shown clinical utility for prognosis but have been misclassified as “grade” and are based on tumor size from imaging and extent of invasion. This protocol is to be used as a guide and resource, an adjunct to diagnosing and managing pituitary neuroendocrine tumors (PitNETs) in a standardized manner as per the 5th edition of the WHO classification of Endocrine and Neuroendocrine Tumors.1,2 It should not be used as a substitute for dissection or grossing techniques and does not give histologic parameters to reach the diagnosis. Subjectivity is always a factor, and elements listed are not meant to be arbitrary but are meant to provide uniformity of reporting across all the disciplines that use the information. It is a foundation of practical information that will help to meet the requirements of daily practice to benefit both clinicians and patients alike.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_lyon_france_inter",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours. Lyon (France): International Agency for Research on Cancer; forthcoming. (WHO classification of tumours series, 5th ed.; vol. 10). https://publications.iarc.fr.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_perry_a_osamura_ry_overview_of_the_2022_who_classification_of_pituitary_tumors_endocr_",
+          "label": "Asa SL, Mete O, Perry A, Osamura RY. Overview of the 2022 WHO Classification of Pituitary Tumors. Endocr Pathol. 2022 Mar;33(1):6-26.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_clinicopathological_correlations_in_pituitary_adenomas_brain_pathol_2012_jul224443_53",
+          "label": "Mete O, Asa SL. Clinicopathological correlations in pituitary adenomas. Brain Pathol. 2012 Jul;22(4):443-53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_perry_a_tumors_of_the_pituitary_gland_atlas_of_tumor_and_nontumor_pathology_series_5_fascicle",
+          "label": "Asa SL, Perry A. Tumors of the Pituitary Gland. Atlas of Tumor and Nontumor Pathology, Series 5, Fascicle 1. Arlington VA: ARP Press, 2020.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "most_pituitary_tumors_arise_in_the_sella_turcica_and_the_surgical_procedures_include_transsphenoidal",
+          "label": "Most pituitary tumors arise in the sella turcica and the surgical procedures include transsphenoidal approaches or transcranial resections. The approach is an indication of the clinical extent of disease and also plays a role in determining the type of specimen that will be obtained, since transsphenoidal surgeries usually result in fragmented small pieces of tissue. Rarely tumors can occur in ectopic locations1,2,3 or can be diagnosed from their invasive fronts (e.g., sinonasal mucosa involvement),3 or can be encountered in a teratoma,4 and these should be noted. It is encouraged to document the size of the specimen to highlight the discordance with the tumor size since some specimens may be composed largely of non-tumorous parenchyma or may consist of a very limited amount of tumor; this may help to correlate with the tumor size on imaging. Because of the importance of immunohistochemistry in tumor classification, it is encouraged to document if the tissue was received fresh or in formalin for immunohistochemical biomarkers and also ultrastructure examination (rare tumors).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_wenig_bm_update_from_the_5th_edition_of_the_world_health_organization_classification_of_head_",
+          "label": "Mete O, Wenig BM. Update from the 5th Edition of the World Health Organization Classification of Head and Neck Tumors: Overview of the 2022 WHO Classification of Head and Neck Neuroendocrine Neoplasms. Head Neck Pathol. 2022 Mar;16(1):123-142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_perry_a_osamura_ry_overview_of_the_2022_who_classification_of_pituitary_tumors_endocr_",
+          "label": "Asa SL, Mete O, Perry A, Osamura RY. Overview of the 2022 WHO Classification of Pituitary Tumors. Endocr Pathol. 2022 Mar;33(1):6-26.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hyrcza_md_ezzat_s_mete_o_asa_sl_pituitary_adenomas_presenting_as_sinonasal_or_nasopharyngeal_masses_",
+          "label": "Hyrcza MD, Ezzat S, Mete O, Asa SL. Pituitary Adenomas Presenting as Sinonasal or Nasopharyngeal Masses: A Case Series Illustrating Potential Diagnostic Pitfalls. Am J Surg Pathol. 2017 Apr;41(4):525-534.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hodgson_a_pakbaz_s_shenouda_c_francis_ja_mete_o_mixed_sparsely_granulated_lactotroph_and_densely_gra",
+          "label": "Hodgson A, Pakbaz S, Shenouda C, Francis JA, Mete O. Mixed Sparsely Granulated Lactotroph and Densely Granulated Somatotroph Pituitary Neuroendocrine Tumor Expands the Spectrum of Neuroendocrine Neoplasms in Ovarian Teratomas: The Role of Pituitary Neuroendocrine Cell Lineage Biomarkers. Endocr Pathol. 2020 Sep;31(3):315-319.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "most_pituitary_tumors_are_solitary_neoplasms_but_in_about_1_of_cases_there_may_be_multiple_synchrono",
+          "label": "Most pituitary tumors are solitary neoplasms but in about 1% of cases there may be multiple synchronous tumors in a single patient and usually in a single specimen.1 It is important to consider this possibility when the immunohistochemical profile is unusual; the findings may represent two discrete lesions with different patterns of immunoreactivity.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_alshaikh_om_cintosun_a_ezzat_s_asa_sl_synchronous_multiple_pituitary_neuroendocrine_tumors_of",
+          "label": "Mete O, Alshaikh OM, Cintosun A, Ezzat S, Asa SL. Synchronous Multiple Pituitary Neuroendocrine Tumors of Different Cell Lineages. Endocr Pathol. 2018 Dec;29(4):332-338.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_structure_function_and_morphology_in_the_classification_of_pituitary_neuroendocrine_tu",
+          "label": "Mete O, Asa SL. Structure, Function, and Morphology in the Classification of Pituitary Neuroendocrine Tumors: The Importance of Routine Analysis of Pituitary Transcription Factors. Endocr Pathol. 2020 Dec;31(4):330-336.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_classification_of_pitnets_is_based_almost_exclusively_on_the_expression_of_transcription_factors",
+          "label": "The classification of PitNETs is based almost exclusively on the expression of transcription factors and hormones.1,2,3,4 The WHO has endorsed a cytogenetic classification based on cell lineage.1,5 Staining for PIT1, TPIT and SF1 is required to identify the appropriate lineage.1,2,3,4,5,6 The addition of GATA3 and ERα stains allows a more accurate classification (Table 1). Staining for all of the known hormones is not required for TPIT and SF1 lineage tumors; however, within the PIT1-lineage tumors, the use of PIT1-lineage hormones (Growth hormone, Prolactin and Thyroid stimulating hormone) does enhance the ability to accurately classify individual PIT1-lineage tumors and facilitates the identification of tumor subtypes as well as uncommon tumors.1,2 From such a perspective, the distribution of hormone positivity is important; some tumors (such as the immature PIT1-lineage tumor and acidophil stem cell tumor) are specifically recognized by focal positivity that contrasts with the more diffuse patterns seen in most mature adenohypophyseal neuroendocrine cells. Components of mixed somatotroph and lactotroph tumors should be subtyped using the WHO tumor subtyping (e.g., mixed sparsely granulated somatotroph tumor and sparsely granulated lactotroph tumor). Similarly, for multiple PitNETs of distinct cell lineages, one should subtype each tumor component (e.g., multiple PitNETs consisting of densely granulated corticotroph tumor and sparsely granulated lactotroph tumor).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "keratin_staining_is_critical_for_most_pitnets_although_the_use_of_keratin_is_strongly_encouraged_in_",
+          "label": "Keratin staining is critical for most PitNETs. Although the use of keratin is strongly encouraged in all PitNETs, it is required in all PIT1 and TPIT lineage tumors6 as well as in the setting of PitNETs with no distinct cell lineages (e.g., null cell tumors). The most widely used stain is CAM5.2 that is mimicked by CK18, but some labs use AE1/AE3.4,7 Some tumor types, such as sparsely granulated somatotroph tumors, are defined by their keratin pattern.1,2 Classification of a null cell tumor is a diagnosis of exclusion from other neuroendocrine neoplasms (e.g., sellar paragangliomas [keratin-negative/non-epithelial neuroendocrine neoplasm of paraganglia] and metastatic neuroendocrine neoplasms) and requires lack of reactivity for the various transcription factors and hormones.1,2,8,9 Thus, this section requires completion of Section G on Immunohistochemical Features.10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_classification_of_pituitary_neuroendocrine_tumors",
+          "label": "Table 1. Classification of Pituitary Neuroendocrine Tumors",
+          "required": true,
+          "type": "free_text",
+          "condition": "PitNETs"
+        },
+        {
+          "field_id": "tpit_t_box_transcription_factor_pit1_pituitary_transcription_factor_1_sf1_steroidogenic_factor_1_er_",
+          "label": "TPIT: T-box transcription factor; PIT1: Pituitary transcription factor 1; SF1: Steroidogenic factor 1; ER: Estrogen receptor; PAS: Periodic Acid Shiff; ACTH: Adrenocorticotropic hormone; GH: Growth hormone; PRL: Prolactin; TSH: Thyroid stimulating hormone; FSH: Follicle-stimulating hormone; LH: Luteinizing hormone; *non-diffuse variable (e.g., focal or patchy) reactivity; ** can be diffuse or focal; ***not a specific finding since rare fibrous bodies can occur in other PitNETs particularly in PIT1 lineage tumors; ****Alone GATA3 is not a diagnostic feature of gonadotroph tumor; † biochemically non-functional densely granulated corticotroph and sparsely granulated corticotroph tumors are known as silent corticotroph tumors type I and type II, respectively; however, silent corticotroph tumors are not histologic subtypes of TPIT-lineage PitNETs.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_perry_a_osamura_ry_overview_of_the_2022_who_classification_of_pituitary_tumors_endocr_",
+          "label": "Asa SL, Mete O, Perry A, Osamura RY. Overview of the 2022 WHO Classification of Pituitary Tumors. Endocr Pathol. 2022 Mar;33(1):6-26.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_structure_function_and_morphology_in_the_classification_of_pituitary_neuroendocrine_tu",
+          "label": "Mete O, Asa SL. Structure, Function, and Morphology in the Classification of Pituitary Neuroendocrine Tumors: The Importance of Routine Analysis of Pituitary Transcription Factors. Endocr Pathol. 2020 Dec;31(4):330-336.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_cusimano_md_mccutcheon_ie_perry_a_yamada_s_nishioka_h_casar_borota_o_uccella_s_la_rosa",
+          "label": "Asa SL, Mete O, Cusimano MD, McCutcheon IE, Perry A, Yamada S, Nishioka H, Casar-Borota O, Uccella S, La Rosa S, Grossman AB, Ezzat S; Attendees of the 15th Meeting of the International Pituitary Pathology Club, Istanbul October 2019. Pituitary neuroendocrine tumors: a model for neuroendocrine tumor classification. Mod Pathol. 2021 Sep;34(9):1634-1650.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_cintosun_a_pressman_i_asa_sl_epidemiology_and_biomarker_profile_of_pituitary_adenohypophysial",
+          "label": "Mete O, Cintosun A, Pressman I, Asa SL. Epidemiology and biomarker profile of pituitary adenohypophysial tumors. Mod Pathol. 2018 Jun;31(6):900-909.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_lyon_france_inter",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours. Lyon (France): International Agency for Research on Cancer; forthcoming. (WHO classification of tumours series, 5th ed.; vol. 10). https://publications.iarc.fr.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mcdonald_wc_pituitary_adenoma_classification_tools_to_improve_the_current_system_free_neuropathol_20",
+          "label": "McDonald WC. Pituitary adenoma classification: Tools to improve the current system. Free Neuropathol. 2024 Jan 10; 5:5-2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_cytokeratin_profiles_in_pituitary_neuroendocrine_tumors_hum_pathol_2021_jan_10787_95",
+          "label": "Asa SL, Mete O. Cytokeratin profiles in pituitary neuroendocrine tumors. Hum Pathol. 2021 Jan; 107:87-95.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_wenig_bm_update_from_the_5th_edition_of_the_world_health_organization_classification_of_head_",
+          "label": "Mete O, Wenig BM. Update from the 5th Edition of the World Health Organization Classification of Head and Neck Tumors: Overview of the 2022 WHO Classification of Head and Neck Neuroendocrine Neoplasms. Head Neck Pathol. 2022 Mar;16(1):123-142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_lopes_mb_overview_of_the_2017_who_classification_of_pituitary_tumors_endocr_pathol_2017_sep28",
+          "label": "Mete O, Lopes MB. Overview of the 2017 WHO Classification of Pituitary Tumors. Endocr Pathol. 2017 Sep;28(3):228-243.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_immunohistochemical_biomarkers_in_pituitary_pathology_endocr_pathol_2018_jun292130_136",
+          "label": "Asa SL, Mete O. Immunohistochemical Biomarkers in Pituitary Pathology. Endocr Pathol. 2018 Jun;29(2):130-136.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "like_other_neuroendocrine_neoplasms_clinical_behavior_and_prognosis_are_determined_in_part_by_growth",
+          "label": "Like other neuroendocrine neoplasms, clinical behavior and prognosis are determined in part by growth rate that is reflected in mitotic activity and Ki-67 labeling. Most of the published data are based on Ki-67 labeling, but documenting the mitotic count is also desirable. Similar to other neuroendocrine neoplasms, the mitotic count is reported as number of mitoses per 2mm2, at least 10mm2 evaluated in the most mitotically active part(s) of the tumor. The hot spot mitotic counting may apply contiguous round fields or random counting that uses a randomization method to avoid bias.1 As specified by the WHO and based on accuracy studies, the Ki-67 assessment should be based on printout of a photo or an automated image analysis algorithm; eyeball estimates are not accurate or acceptable.2 In general, selecting multiple small hot spots (at least 500 tumor cells) from different hot spot regions of the tumor rather than a single larger area of the same tumor are recommended.3 Unlike other epithelial well differentiated neuroendocrine neoplasms (neuroendocrine tumors), PitNETs are not graded based on Ki67 or mitoses since classification by cell type typically provides more useful information.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cree_ia_tan_ph_travis_wd_wesseling_p_yagi_y_white_va_lokuhetty_d_scolyer_ra_counting_mitoses_size_ma",
+          "label": "Cree IA, Tan PH, Travis WD, Wesseling P, Yagi Y, White VA, Lokuhetty D, Scolyer RA. Counting mitoses: SI(ze) matters! Mod Pathol. 2021 Sep;34(9):1651-1657.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cree_ia_from_counting_mitoses_to_ki67_assessment_technical_pitfalls_in_the_new_who_classification_of",
+          "label": "Cree IA. From Counting Mitoses to Ki67 Assessment: Technical Pitfalls in the New WHO Classification of Endocrine and Neuroendocrine Tumors. Endocr Pathol. 2022 Mar;33(1):3-5.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "volynskaya_z_mete_o_pakbaz_s_al_ghamdi_d_asa_sl_ki67_quantitative_interpretation_insights_using_imag",
+          "label": "Volynskaya Z, Mete O, Pakbaz S, Al-Ghamdi D, Asa SL. Ki67 Quantitative Interpretation: Insights using Image Analysis. J Pathol Inform. 2019 Mar 8; 10:8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_perry_a_osamura_ry_overview_of_the_2022_who_classification_of_pituitary_tumors_endocr_",
+          "label": "Asa SL, Mete O, Perry A, Osamura RY. Overview of the 2022 WHO Classification of Pituitary Tumors. Endocr Pathol. 2022 Mar;33(1):6-26.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_there_is_no_accepted_tnm_staging_of_pitnets_local_invasion_is_a_well_documented_variable_of",
+          "label": "Although there is no accepted TNM staging of PitNETs, local invasion is a well-documented variable of prognostic significance.1,2,3  It is important to include this information in the report when it is available. Invasion of dura (less clinically relevant), bone, respiratory (sinus) mucosa or brain tissue are the common sites of invasion identified in pathology specimens.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "knosp_e_steiner_e_kitz_k_matula_c_pituitary_adenomas_with_invasion_of_the_cavernous_sinus_space_a_ma",
+          "label": "Knosp E, Steiner E, Kitz K, Matula C. Pituitary adenomas with invasion of the cavernous sinus space: a magnetic resonance imaging classification compared with surgical findings. Neurosurgery. 1993 Oct;33(4):610-7; discussion 617-8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "raverot_g_ilie_md_lasolle_h_amodru_v_trouillas_j_castinetti_f_brue_t_aggressive_pituitary_tumours_an",
+          "label": "Raverot G, Ilie MD, Lasolle H, Amodru V, Trouillas J, Castinetti F, Brue T. Aggressive pituitary tumours and pituitary carcinomas. Nat Rev Endocrinol. 2021 Nov;17(11):671-684.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "trouillas_j_roy_p_sturm_n_et_al_a_new_prognostic_clinicopathological_classification_of_pituitary_ade",
+          "label": "Trouillas J, Roy P, Sturm N, et al. A new prognostic clinicopathological classification of pituitary adenomas: a multicentric case-control study of 410 patients with 8 years post-operative follow-up. Acta Neuropathol. 2013 Jul;126(1):123-35.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "as_indicated_above_in_d_the_classification_of_pitnets_is_based_on_their_immunoprofile1234_the_distin",
+          "label": "As indicated above in D, the classification of PitNETs is based on their immunoprofile.1,2,3,4 The distinction of neoplasia from hyperplasia relies on reticulin staining that allows the identification of complete breakdown of acinar architecture in neoplasms, as opposed to the expanded but intact acini of hyperplasia.3,5 The use of PAS in addition to ACTH is encouraged since it is often cleaner and easier to interpret. Staining for transcription factors and hormones is discussed above in D.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_stains_that_are_helpful_for_pitnets_include_p27_and_atrx12346_loss_of_p27_is_reflective_o",
+          "label": "Additional stains that are helpful for PitNETs include p27 and ATRX1,2,3,4,6. Loss of p27 is reflective of clinical function by corticotroph tumors, since glucocorticoid excess suppresses p27 whereas clinically silent corticotroph tumors are usually associated with retained nuclear p27 staining.4  ATRX loss and p53 alterations have been reported in aggressive PitNETs.6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_perry_a_osamura_ry_overview_of_the_2022_who_classification_of_pituitary_tumors_endocr_",
+          "label": "Asa SL, Mete O, Perry A, Osamura RY. Overview of the 2022 WHO Classification of Pituitary Tumors. Endocr Pathol. 2022 Mar;33(1):6-26.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_structure_function_and_morphology_in_the_classification_of_pituitary_neuroendocrine_tu",
+          "label": "Mete O, Asa SL. Structure, Function, and Morphology in the Classification of Pituitary Neuroendocrine Tumors: The Importance of Routine Analysis of Pituitary Transcription Factors. Endocr Pathol. 2020 Dec;31(4):330-336.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_perry_a_tumors_of_the_pituitary_gland_atlas_of_tumor_and_nontumor_pathology_series_5_fascicle",
+          "label": "Asa SL, Perry A. Tumors of the Pituitary Gland. Atlas of Tumor and Nontumor Pathology, Series 5, Fascicle 1. Arlington VA: ARP Press, 2020.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_cintosun_a_pressman_i_asa_sl_epidemiology_and_biomarker_profile_of_pituitary_adenohypophysial",
+          "label": "Mete O, Cintosun A, Pressman I, Asa SL. Epidemiology and biomarker profile of pituitary adenohypophysial tumors. Mod Pathol. 2018 Jun;31(6):900-909.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_clinicopathological_correlations_in_pituitary_adenomas_brain_pathol_2012_jul224443_53",
+          "label": "Mete O, Asa SL. Clinicopathological correlations in pituitary adenomas. Brain Pathol. 2012 Jul;22(4):443-53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "casar_borota_o_boldt_hb_engström_be_andersen_ms_baussart_b_bengtsson_d_berinder_k_ekman_b_feldt_rasm",
+          "label": "Casar-Borota O, Boldt HB, Engström BE, Andersen MS, Baussart B, Bengtsson D, Berinder K, Ekman B, Feldt-Rasmussen U, Höybye C, Jørgensen JOL, Kolnes AJ, Korbonits M, Rasmussen ÅK, Lindsay JR, Loughrey PB, Maiter D, Manojlovic-Gacic E, Pahnke J, Poliani PL, Popovic V, Ragnarsson O, Schalin-Jäntti C, Scheie D, Tóth M, Villa C, Wirenfeldt M, Kunicki J, Burman P. Corticotroph Aggressive Pituitary Tumors and Carcinomas Frequently Harbor ATRX Mutations. J Clin Endocrinol Metab. 2021 Mar 25;106(4):1183-1194.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "burman_p_casar_borota_o_perez_rivas_lg_dekkers_om_aggressive_pituitary_tumors_and_pituitary_carcinom",
+          "label": "Burman P, Casar-Borota O, Perez-Rivas LG, Dekkers OM. Aggressive Pituitary Tumors and Pituitary Carcinomas: From Pathology to Treatment. J Clin Endocrinol Metab. 2023 Jun 16;108(7):1585-1601. doi: 10.1210/clinem/dgad098. Erratum in: J Clin Endocrinol Metab. 2023 Sep 18;108(10):e1163.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rarely_aggressive_pitnets_can_metastasize12_the_commonest_sites_are_liver_bone_and_brain1_spread_thr",
+          "label": "Rarely aggressive PitNETs can metastasize.1,2 The commonest sites are liver, bone and brain.1 Spread through the CNS is discontinuous and this must be distinguished from local infiltration into the hypothalamus that does not count as metastasis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "alshaikh_om_asa_sl_mete_o_ezzat_s_an_institutional_experience_of_tumor_progression_to_pituitary_carc",
+          "label": "Alshaikh OM, Asa SL, Mete O, Ezzat S. An Institutional Experience of Tumor Progression to Pituitary Carcinoma in a 15-Year Cohort of 1055 Consecutive Pituitary Neuroendocrine Tumors. Endocr Pathol. 2019 Jun;30(2):118-127.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_ezzat_s_pituitary_carcinoma_reclassification_and_implications_in_the_net_schema_endocr_oncol_",
+          "label": "Asa SL, Ezzat S. Pituitary carcinoma: reclassification and implications in the NET schema. Endocr Oncol. 2022 Mar 30;2(1): R14-R23.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_non_tumorous_pituitary_is_an_important_feature_to_note_for_several_reasons_firstly_i",
+          "label": "The presence of non-tumorous pituitary is an important feature to note for several reasons. Firstly, it confirms the location of the tumor and may indicate local invasion. Secondly, it provides internal positive controls for the various immunohistochemical biomarkers. Thirdly, it can provide useful information about the functional status of the patient. The identification of Crooke’s hyaline change is a critical feature to document in patients with Cushing disease.1,2,3,4  Other findings that may be associated with PitNETs include hypophysitis, craniopharyngioma, Rathke’s cleft cyst or acute hemorrhagic necrosis (apoplexy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "akirov_a_larouche_v_shimon_i_asa_sl_mete_o_sawka_am_gentili_f_ezzat_s_significance_of_crookes_hyalin",
+          "label": "Akirov A, Larouche V, Shimon I, Asa SL, Mete O, Sawka AM, Gentili F, Ezzat S. Significance of Crooke's Hyaline Change in Nontumorous Corticotrophs of Patients with Cushing Disease. Front Endocrinol (Lausanne). 2021 Mar 18; 12:620005.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_perry_a_tumors_of_the_pituitary_gland_atlas_of_tumor_and_nontumor_pathology_series_5_fascicle",
+          "label": "Asa SL, Perry A. Tumors of the Pituitary Gland. Atlas of Tumor and Nontumor Pathology, Series 5, Fascicle 1. Arlington VA: ARP Press, 2020.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_clinicopathological_correlations_in_pituitary_adenomas_brain_pathol_2012_jul224443_53",
+          "label": "Mete O, Asa SL. Clinicopathological correlations in pituitary adenomas. Brain Pathol. 2012 Jul;22(4):443-53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gomez_hernandez_k_ezzat_s_asa_sl_mete_ö_clinical_implications_of_accurate_subtyping_of_pituitary_ade",
+          "label": "Gomez-Hernandez K, Ezzat S, Asa SL, Mete Ö. Clinical Implications of Accurate Subtyping of Pituitary Adenomas: Perspectives from the Treating Physician. Turk Patoloji Derg. 2015;31 Suppl 1:4-17.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

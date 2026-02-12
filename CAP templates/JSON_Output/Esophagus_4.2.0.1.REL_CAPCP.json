@@ -1,0 +1,1784 @@
+{
+  "template_id": "Esophagus_4.2.0.1.REL_CAPCP",
+  "organ": "ESOPHAGUS",
+  "protocol_posting_date": "June 2022",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "cervical",
+              "label": "Cervical (proximal) esophagus: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mid_esophagus_upper_thoracic_esophagus",
+              "label": "Mid esophagus, upper thoracic esophagus: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mid_esophagus_middle_thoracic_esophagus",
+              "label": "Mid esophagus, middle thoracic esophagus: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mid_esophagus_not_otherwise_specified",
+              "label": "Mid esophagus, not otherwise specified: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal_esophagus",
+              "label": "Distal esophagus (low thoracic esophagus): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "esophagogastric_junction",
+              "label": "Esophagogastric junction (EGJ): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "proximal_stomach_cardia",
+              "label": "Proximal stomach / cardia: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "esophagus_not_otherwise_specified",
+              "label": "Esophagus, not otherwise specified: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "relationship_of_tumor_to_esophagogastric_junction",
+          "label": "Relationship of Tumor to Esophagogastric Junction",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "tumor_is_entirely_located_within_the_tubular_esophagus_and_does_not_involve_the_esophagogastric_junc",
+              "label": "Tumor is entirely located within the tubular esophagus and does not involve the esophagogastric junction"
+            },
+            {
+              "value": "tumor_midpoint_lies_in_the_distal_esophagus_and_tumor_involves_the_esophagogastric_junction",
+              "label": "Tumor midpoint lies in the distal esophagus AND tumor involves the esophagogastric junction"
+            },
+            {
+              "value": "tumor_midpoint_is_located_at_the_esophagogastric_junction",
+              "label": "Tumor midpoint is located at the esophagogastric junction"
+            },
+            {
+              "value": "tumor_midpoint_is_2_cm_or_less_into_the_proximal_stomach_or_cardia_and_tumor_involves_the_esophagoga",
+              "label": "Tumor midpoint is 2 cm or less into the proximal stomach or cardia and tumor involves the esophagogastric junction#"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ],
+          "guidance": "Use the stomach checklist if either (1) the tumor involves the EGJ, but the midpoint is more than 2 cm into the proximal stomach or (2) the midpoint is less than 2 cm into the proximal stomach, but the tumor does not involve the EGJ"
+        },
+        {
+          "field_id": "distance_of_tumor_center_from_esophagogastric_junction",
+          "label": "Distance of Tumor Center from Esophagogastric Junction",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_in_centimeters",
+              "label": "Specify in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma"
+            },
+            {
+              "value": "adenoid_cystic_carcinoma",
+              "label": "Adenoid cystic carcinoma"
+            },
+            {
+              "value": "mucoepidermoid_carcinoma",
+              "label": "Mucoepidermoid carcinoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma"
+            },
+            {
+              "value": "basaloid_squamous_cell_carcinoma",
+              "label": "Basaloid squamous cell carcinoma"
+            },
+            {
+              "value": "spindle_cell_squamous_cell_carcinoma",
+              "label": "Spindle cell squamous cell carcinoma"
+            },
+            {
+              "value": "verrucous_squamous_cell_carcinoma",
+              "label": "Verrucous squamous cell carcinoma"
+            },
+            {
+              "value": "undifferentiated_carcinoma",
+              "label": "Undifferentiated carcinoma"
+            },
+            {
+              "value": "lymphoepithelioma_like_carcinoma",
+              "label": "Lymphoepithelioma-like carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "neuroendocrine_carcinoma",
+              "label": "Neuroendocrine carcinoma (poorly differentiated)#"
+            },
+            {
+              "value": "mixed_squamous_cell_carcinoma_neuroendocrine_carcinoma",
+              "label": "Mixed squamous cell carcinoma-neuroendocrine carcinoma"
+            },
+            {
+              "value": "mixed_adenocarcinoma_neuroendocrine_carcinoma",
+              "label": "Mixed adenocarcinoma-neuroendocrine carcinoma"
+            },
+            {
+              "value": "mixed_adenocarcinoma_neuroendocrine_tumor",
+              "label": "Mixed adenocarcinoma-neuroendocrine tumor"
+            },
+            {
+              "value": "g1_well_differentiated_neuroendocrine_tumor",
+              "label": "G1, well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "g2_well_differentiated_neuroendocrine_tumor",
+              "label": "G2, well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "g3_well_differentiated_neuroendocrine_tumor",
+              "label": "G3, well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ],
+          "guidance": "Select this option only if large cell or small cell cannot be determined."
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated_undifferentiated",
+              "label": "G3, poorly differentiated, undifferentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "guidance": "This histologic grade is not applicable to adenoid cystic carcinoma, mucoepidermoid carcinoma, well-differentiated neuroendocrine tumor and high-grade neuroendocrine carcinoma."
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "high_grade_dysplasia_carcinoma_in_situ",
+              "label": "High-grade dysplasia / carcinoma in situ (defined as malignant cells confined to the epithelium by the basement membrane)"
+            },
+            {
+              "value": "invades_lamina_propria",
+              "label": "Invades lamina propria"
+            },
+            {
+              "value": "invades_muscularis_mucosae",
+              "label": "Invades muscularis mucosae"
+            },
+            {
+              "value": "invades_submucosa",
+              "label": "Invades submucosa"
+            },
+            {
+              "value": "invades_muscularis_propria",
+              "label": "Invades muscularis propria"
+            },
+            {
+              "value": "invades_adventitia",
+              "label": "Invades adventitia"
+            },
+            {
+              "value": "invades_adjacent_structure",
+              "label": "Invades adjacent structure(s) or organ(s)"
+            },
+            {
+              "value": "pleura",
+              "label": "Pleura: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pericardium",
+              "label": "Pericardium: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "azygos_vein",
+              "label": "Azygos vein: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "diaphragm",
+              "label": "Diaphragm: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "peritoneum",
+              "label": "Peritoneum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "aorta",
+              "label": "Aorta: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vertebral_body",
+              "label": "Vertebral body: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "airway",
+              "label": "Airway: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "present_with_no_viable_cancer_cells",
+              "label": "Present, with no viable cancer cells (complete response, score 0)"
+            },
+            {
+              "value": "present_with_single_cells_or_rare_small_groups_of_cancer_cells",
+              "label": "Present, with single cells or rare small groups of cancer cells (near complete response, score 1)"
+            },
+            {
+              "value": "present_with_residual_cancer_showing_evident_tumor_regression_but_more_than_single_cells_or_rare_sma",
+              "label": "Present, with residual cancer showing evident tumor regression, but more than single cells or rare small groups of cancer cells (partial response, score 2)"
+            },
+            {
+              "value": "present",
+              "label": "Present (not otherwise specified)"
+            },
+            {
+              "value": "absent_with_extensive_residual_cancer_and_no_evident_tumor_regression",
+              "label": "Absent, with extensive residual cancer and no evident tumor regression (poor or no response, score 3)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "lymphovascular_invasion",
+          "label": "Lymphovascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_invasive_carcinoma",
+          "label": "Closest Margin(s) to Invasive Carcinoma",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "radial",
+              "label": "Radial: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "radial",
+              "label": "Radial: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_dysplasia_and_intestinal_metaplasia",
+          "label": "Margin Status for Dysplasia and Intestinal Metaplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_dysplasia",
+              "label": "All margins negative for dysplasia"
+            },
+            {
+              "value": "low_grade_squamous_dysplasia_present_at_margin",
+              "label": "Low-grade squamous dysplasia present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_low_grade_squamous_dysplasia",
+          "label": "Margin(s) Involved by Low-Grade Squamous Dysplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_squamous_dysplasia_present_at_margin",
+              "label": "High-grade squamous dysplasia present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_high_grade_squamous_dysplasia",
+          "label": "Margin(s) Involved by High-Grade Squamous Dysplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "low_grade_glandular_dysplasia_present_at_margin",
+              "label": "Low-grade glandular dysplasia present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_low_grade_glandular_dysplasia",
+          "label": "Margin(s) Involved by Low-Grade Glandular Dysplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_glandular_dysplasia_present_at_margin",
+              "label": "High-grade glandular dysplasia present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_high_grade_glandular_dysplasia",
+          "label": "Margin(s) Involved by High-Grade Glandular Dysplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "intestinal_metaplasia",
+              "label": "Intestinal metaplasia (Barrett esophagus) without dysplasia present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_intestinal_metaplasia",
+          "label": "Margin(s) Involved by Intestinal Metaplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_regional_lymph_node",
+              "label": "Non-regional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pathologic_stage_classification",
+          "label": "PATHOLOGIC STAGE CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ],
+          "condition": "pTNM, AJCC 8th Edition"
+        },
+        {
+          "field_id": "tnm_descriptors",
+          "label": "TNM Descriptors",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "m",
+              "label": "m (multiple primary tumors)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrent)"
+            },
+            {
+              "value": "y",
+              "label": "y (post-treatment)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: High-grade dysplasia, defined as malignant cells confined to the epithelium by the basement membrane"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_invades_the_lamina_propria_muscularis_mucosae_or_submucosa",
+          "label": "pT1: Tumor invades the lamina propria, muscularis mucosae, or submucosa",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor invades the lamina propria or muscularis mucosae"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor invades the submucosa"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor invades the muscularis propria"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor invades adventitia"
+            }
+          ]
+        },
+        {
+          "field_id": "pt4_tumor_invades_adjacent_structures",
+          "label": "pT4: Tumor invades adjacent structures",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Tumor invades the pleura, pericardium, azygos vein, diaphragm, or peritoneum"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Tumor invades other adjacent structures, such as the aorta, vertebral body, or airway"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis in one or two regional lymph nodes"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2: Metastasis in three to six regional lymph nodes"
+            },
+            {
+              "value": "pn3",
+              "label": "pN3: Metastasis in seven or more regional lymph nodes"
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "intestinal_metaplasia",
+              "label": "Intestinal metaplasia (Barrett's esophagus)"
+            },
+            {
+              "value": "low_grade_squamous_dysplasia",
+              "label": "Low-grade squamous dysplasia"
+            },
+            {
+              "value": "high_grade_squamous_dysplasia",
+              "label": "High-grade squamous dysplasia"
+            },
+            {
+              "value": "low_grade_glandular_dysplasia",
+              "label": "Low-grade glandular dysplasia"
+            },
+            {
+              "value": "high_grade_glandular_dysplasia",
+              "label": "High-grade glandular dysplasia"
+            },
+            {
+              "value": "esophagitis",
+              "label": "Esophagitis (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gastritis",
+              "label": "Gastritis (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "for_her2_reporting_the_cap_gastric_her2_template_should_be_used_pending_biomarker_studies_should_be_",
+          "label": "For HER2 reporting, the CAP Gastric HER2 template should be used. Pending biomarker studies should be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to1",
+          "label": "This protocol applies to1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "all_carcinomas_arising_in_the_esophagus",
+          "label": "All carcinomas arising in the esophagus",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinomas_involving_the_esophagogastric_junction_egj_with_tumor_midpoint_2_cm_into_the_proximal_sto",
+          "label": "Carcinomas involving the esophagogastric junction (EGJ), with tumor midpoint ≤2 cm into the proximal stomach/cardia",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "well_differentiated_neuroendocrine_tumors_who_grade_1_2_and_grade_3_stage_grouping_for_prognosis_is_",
+          "label": "Well-differentiated neuroendocrine tumors, WHO grade 1, 2 and grade 3 (stage grouping for prognosis is not used)#",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_does_not_apply_to",
+          "label": "This protocol DOES NOT apply to",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinomas_involving_the_egj_with_tumor_midpoint_2_cm_into_the_proximal_stomach",
+          "label": "Carcinomas involving the EGJ, with tumor midpoint >2 cm into the proximal stomach",
+          "required": true,
+          "type": "free_text",
+          "condition": "use CAP protocol for gastric cancer"
+        },
+        {
+          "field_id": "carcinomas_of_the_cardiaproximal_stomach_without_involvement_of_the_egj_even_if_tumor_midpoint_is_2_",
+          "label": "Carcinomas of the cardia/proximal stomach without involvement of the EGJ even if tumor midpoint is ≤2 cm into the proximal stomach",
+          "required": true,
+          "type": "free_text",
+          "condition": "use CAP protocol for gastric cancer"
+        },
+        {
+          "field_id": "lymphomas_gastrointestinal_stromal_tumors_and_sarcomas",
+          "label": "Lymphomas, gastrointestinal stromal tumors, and sarcomas.",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Esophageal well-differentiated neuroendocrine tumors are so rare, a separate staging system is not warranted."
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_location_of_the_tumor_in_the_esophagus_cervical_upper_thoracic_middle_thoracic_lower_thoracic_ab",
+          "label": "The location of the tumor in the esophagus (cervical, upper thoracic, middle thoracic, lower thoracic, abdominal) and with respect to the macroscopic EGJ (defined as where the tubular esophagus meets the stomach, as measured from the top of the gastric folds) should be noted whenever possible (Figure 1). Cancers located in the cervical esophagus are staged as upper thoracic esophageal cancer. The abdominal esophagus is included in the lower thoracic esophagus. The macroscopic EGJ often does not correspond to the junction of esophageal squamous mucosa and columnar mucosa because of the common finding in esophageal resection specimens of glandular mucosa involving the distal esophagus. Because anatomic divisions of the esophagus are defined by anatomic boundaries and relationships to other structures,1 it may not be possible for the pathologist to determine exact tumor location from the resection specimen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_anatomic_subdivisions_of_the_esophagus_from_amin_et_al1_used_with_permission_of_the_america",
+          "label": "Figure 1.  Anatomic subdivisions of the esophagus. From Amin et al.1 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual, 8th edition (2017) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_tumors_involving_the_egj_specific_observations_should_be_recorded_in_an_attempt_to_establish_the",
+          "label": "For tumors involving the EGJ, specific observations should be recorded in an attempt to establish the exact site of origin of the tumor. The EGJ is defined as the junction of the tubular esophagus and the stomach, irrespective of the type of epithelial lining of the esophagus. The pathologist should record the maximum longitudinal dimension of the tumor mass (see Note E), the distance of the tumor midpoint from the EGJ, and the relative proportions of the tumor mass located in the esophagus and in the stomach.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "siewart_classification_divides_adenocarcinomas_involving_the_egj_into_3_categories_based_upon_locati",
+          "label": "Siewart classification divides adenocarcinomas involving the EGJ into 3 categories, based upon location of the midpoint of the tumor.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "type_i_carcinoma_of_the_distal_esophagus_with_or_without_infiltration_of_the_egj_from_above",
+          "label": "Type I:\t\tCarcinoma of the distal esophagus, with or without infiltration of the EGJ from above",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "type_ii_true_carcinoma_of_the_gastric_cardia_arising_from_the_cardiac_epithelium_or_short_segments_w",
+          "label": "Type II: \tTrue carcinoma of the gastric cardia, arising from the cardiac epithelium or short segments with intestinal metaplasia at the EGJ",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "type_iii_subcardial_gastric_carcinoma_which_infiltrates_the_egj_and_distal_esophagus_from_below",
+          "label": "Type III: \tSubcardial gastric carcinoma, which infiltrates the EGJ and distal esophagus from below",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_the_ajcc_8th_edition_tumors_involving_the_egj_that_have_a_midpoint_within_the_proximal_2_cm_of_th",
+          "label": "In the AJCC 8th edition, tumors involving the EGJ that have a midpoint within the proximal 2 cm of the cardia/proximal stomach are to be staged as esophageal cancers. Cancers whose midpoint is more than 2 cm distal from the EGJ, even if EGJ is involved, should be staged using the stomach cancer TNM and stage groupings.1 Based on the AJCC 8th edition, all Siewart type I and some of Siewart type II tumors use the esophageal cancer TNM and stage groupings.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "feith_m_stein_hj_siewert_jr_adenocarcinoma_of_the_esophagogastric_junction_surgical_therapy_based_on",
+          "label": "Feith M, Stein HJ, Siewert JR. Adenocarcinoma of the esophagogastric junction: surgical therapy based on 1602 consecutive resected patients. Surg Oncol Clin North Am. 2006;15(4):751-764.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_proposed_by_the_who_is_recommended1_howev",
+          "label": "For consistency in reporting, the histologic classification proposed by the WHO is recommended.1 However, this protocol does not preclude the use of other systems of classification or histologic types. This protocol includes esophageal well-differentiated neuroendocrine tumors due to the fact that well-differentiated neuroendocrine tumors are extremely rare in the esophagus.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "worldwide_squamous_cell_carcinoma_continues_to_be_predominant_as_the_most_common_histologic_type_but",
+          "label": "Worldwide, squamous cell carcinoma continues to be predominant as the most common histologic type, but numerous population-based studies document the increasing incidence of adenocarcinoma of the esophagus and EGJ in Western countries.2 More than 50% of esophageal carcinomas diagnosed in the United States since 1900 are adenocarcinomas. Other subtypes, such as adenoid cystic carcinoma and mucoepidermoid carcinoma, which resemble their counterparts arising in salivary gland, are rarely encountered.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_for_esophageal_carcinomas_incorporates_tumor_grade_and_histologic_type_in_the",
+          "label": "The TNM staging system for esophageal carcinomas incorporates tumor grade and histologic type in the stage groupings (see Note H). Mixed histologic types, such as adenosquamous carcinomas, are staged using the squamous cell carcinoma stage grouping.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "keeney_s_bauer_tl_epidemiology_of_adenocarcinoma_of_the_esophagogastric_junction_surg_oncol_clin_nor",
+          "label": "Keeney S, Bauer TL. Epidemiology of adenocarcinoma of the esophagogastric junction. Surg Oncol Clin North Am. 2006;15(4):687-696.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_histologic_grades_for_esophageal_squamous_cell_carcinomas_are_as_follows",
+          "label": "The histologic grades for esophageal squamous cell carcinomas are as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_grade_cannot_be_assessed",
+          "label": "Grade X \tGrade cannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1 \tWell differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2 \tModerately differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated_undifferentiated",
+          "label": "Grade 3 \tPoorly differentiated, undifferentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_there_are_variations_in_the_differentiation_within_the_tumor_the_highest_least_favorable_grade_is",
+          "label": "If there are variations in the differentiation within the tumor, the highest (least favorable) grade is recorded. Every effort should be avoid signing out a histologic grade as “undifferentiated.” If this cannot be resolved, the cancer should be staged as a G3 squamous cell carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_adenocarcinomas_a_suggested_grading_system_based_on_the_proportion_of_the_tumor_that_is_composed",
+          "label": "For adenocarcinomas, a suggested grading system based on the proportion of the tumor that is composed of glands is as follows",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_grade_cannot_be_assessed",
+          "label": "Grade X \tGrade cannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1\tWell-differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "greater than 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2 \tModerately differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "50% to 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated",
+          "label": "Grade 3\tPoorly differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "49% or less of tumor composed of glands"
+        },
+        {
+          "field_id": "for_purposes_of_staging_all_undifferentiated_carcinomas_are_staged_as_grade_3_squamous_cell1_small_c",
+          "label": "For purposes of staging, all undifferentiated carcinomas are staged as grade 3 squamous cell.1 Small cell and large cell neuroendocrine carcinomas are not typically graded but are high-grade tumors. In general, mucoepidermoid carcinoma and adenoid cystic carcinoma of the esophagus are not amenable to grading.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "well_differentiated_neuroendocrine_tumors_nets_of_the_esophagus_are_extremely_rare_the_who_classific",
+          "label": "Well-differentiated neuroendocrine tumors (NETs) of the esophagus are extremely rare. The WHO classification of the digestive NETs can be used to grade the tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_purposes_of_data_reporting_barretts_esophagus_with_high_grade_dysplasia_in_an_esophageal_resecti",
+          "label": "For purposes of data reporting, Barrett’s esophagus with high-grade dysplasia in an esophageal resection specimen is reported as carcinoma in situ. The term carcinoma in situ is not widely applied to glandular neoplastic lesions in the gastrointestinal tract but is retained for tumor registry reporting purposes as specified by law in many states. Invasion of the lamina propria may be difficult to assess for glandular neoplasms in the esophagus.  The muscularis mucosae (Figure 2) is commonly duplicated and thickened in Barrett’s esophagus; invasion of this layer should not be misinterpreted as invasion of the muscularis propria.1  It should be noted that the muscularis mucosae varies in organization from relatively sparse bundles of smooth muscle in the cervical esophagus to a thickened reticulated network in the distal esophagus.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_microscopic_anatomy_of_the_esophagus_from_amin_et_al3_used_with_permission_of_the_american_",
+          "label": "Figure 2.  Microscopic anatomy of the esophagus. From Amin et al.3 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual, 8th edition (2017) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_channels_are_present_in_the_entire_layer_of_the_esophagus_including_the_lamina_propria_but",
+          "label": "Lymphatic channels are present in the entire layer of the esophagus, including the lamina propria, but they are most concentrated in the submucosa. The longitudinal nature of the submucosal lymphatic plexus allows lymphatic spread orthogonal to depth of tumor invasion. Occasionally skip lesions are present in the resection specimens, possibly caused by longitudinal lymphatic spread. If there are multiple discrete lesions, the tumor length is measured from the top of the highest lesion to the bottom of the lowest. 3The suffix “m” is required in this instance (see Note H). Tumor length may be a strong predictor for the presence or absence of nodal disease in early to intermediate-stage esophageal cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abraham_sc_krasinskas_am_correa_am_et_al_duplication_of_the_muscularis_mucosae_in_barrett_esophagus_",
+          "label": "Abraham SC, Krasinskas AM, Correa AM, et al. Duplication of the muscularis mucosae in Barrett esophagus: an underrecognized feature and its implication for staging of adenocarcinoma. Am J Surg Pathol. 2007;31(11):1719-1725.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nagai_k_noguchi_t_hashimoto_t_uchida_y_shimada_t_the_organization_of_the_lamina_muscularis_mucosae_i",
+          "label": "Nagai K, Noguchi T, Hashimoto T, Uchida Y, Shimada T. The organization of the lamina muscularis mucosae in the human esophagus. Arch Histol Cytol. 2003;66(3):281-288.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "response_of_tumor_to_previous_chemotherapy_or_radiation_therapy_should_be_reported_several_systems_f",
+          "label": "Response of tumor to previous chemotherapy or radiation therapy should be reported. Several systems for tumor response have been advocated, and a modified Ryan scheme is suggested, which has been shown to provide good interobserver reproducibility provide prognostic significance in rectal cancer.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_ryan_scheme_for_tumor_regression_score1",
+          "label": "Modified Ryan Scheme for Tumor Regression Score1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sizable_pools_of_acellular_mucin_may_be_present_after_chemoradiation_but_should_not_be_interpreted_a",
+          "label": "Sizable pools of acellular mucin may be present after chemoradiation but should not be interpreted as representing residual tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_does_not_preclude_the_use_of_other_systems_for_assessment_of_tumor_response234",
+          "label": "This protocol does not preclude the use of other systems for assessment of tumor response.2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ryan_r_gibbons_d_hyland_jm_et_al_pathological_response_following_long_course_neoadjuvant_chemoradiot",
+          "label": "Ryan R, Gibbons D, Hyland JM, et al. Pathological response following long-course neoadjuvant chemoradiotherapy for locally advanced rectal cancer. Histopathology. 2005;47(2):141-146.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brucher_bldm_becker_k_lordick_f_et_al_the_clinical_impact_of_histopathologic_response_assessment_by_",
+          "label": "Brucher BLDM, Becker K, Lordick F, et al. The clinical impact of histopathologic response assessment by residual tumor cell quantification in esophageal squamous cell carcinomas. Cancer. 2006;106(10):2119-2127.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hermann_rm_horstmann_o_haller_f_et_al_histomorphological_tumor_regression_grading_of_esophageal_carc",
+          "label": "Hermann RM, Horstmann O, Haller F, et al. Histomorphological tumor regression grading of esophageal carcinoma after neoadjuvant radiochemotherapy: which score to use? Dis Esoph. 2006;19(5):329-334.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wu_t_t_chirieac_lr_abraham_sc_et_al_excellent_interobserver_agreement_on_grading_the_extent_of_resid",
+          "label": "Wu T-T, Chirieac LR, Abraham SC, et al. Excellent interobserver agreement on grading the extent of residual carcinoma after preoperative chemoradiation in esophageal and esophagogastric junction carcinoma: a reliable predictor for patient outcome. Am J Surg Pathol. 2007;31(1):58-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins_include_the_proximal_distal_and_radial_margins_the_radial_margin_represents_the_adventitial_",
+          "label": "Margins include the proximal, distal, and radial margins. The radial margin represents the adventitial soft tissue margin closest to the deepest penetration of tumor. Sections to evaluate the proximal and distal resections margins can be obtained in 2 orientations: (1) en face sections parallel to the margin or (2) longitudinal sections perpendicular to the margin. Depending on the closeness of the tumor to the margin, select the orientation(s) that will most clearly demonstrate the status of the margin. The distance from the tumor edge to the closest resection margin(s) should be measured if all margins are uninvolved by invasive carcinoma. Proximal and distal resection margins should be evaluated for Barrett’s esophagus and for squamous and glandular dysplasia if they are not involved by invasive carcinoma. It may be helpful to mark the margin(s) closest to the tumor with ink. Margins marked by ink should be so designated in the macroscopic description.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_for_esophageal_carcinoma_of_the_american_joint_committee_on_cancer_ajcc_and_t",
+          "label": "The TNM staging system for esophageal carcinoma of the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) is recommended (Figure 3).1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_t_n_and_m_classifications_for_esophageal_carcinoma_from_amin_et_al1_used_with_permission_of",
+          "label": "Figure 3.  T, N, and M classifications for esophageal carcinoma. From Amin et al.1 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual, 8th edition (2017) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previ",
+          "label": "According to AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (eg, when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. In the AJCC 8th edition, “y” affects the stage grouping.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (ie, before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prognosticstage_groupings",
+          "label": "Prognostic/Stage Groupings",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "different_stage_groupings_are_used_for_squamous_cell_carcinomas_and_adenocarcinomas_in_addition_a_se",
+          "label": "Different stage groupings are used for squamous cell carcinomas and adenocarcinomas. In addition, a separate stage grouping is used to stage patients receiving neoadjuvant treatment due to the fact that prognostic implication for ypTNM differs from those of equivalent pTNM.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "location_plays_a_role_in_the_stage_grouping_of_esophageal_squamous_cell_carcinomas",
+          "label": "Location plays a role in the stage grouping of esophageal squamous cell carcinomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_descriptors",
+          "label": "Additional Descriptors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion",
+          "label": "Lymphovascular Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion_lvi_indicates_whether_microscopic_lymphovascular_invasion_is_identified_in_t",
+          "label": "Lymphovascular invasion (LVI) indicates whether microscopic lymphovascular invasion is identified in the pathology report. LVI includes lymphatic invasion, vascular invasion, or lymph-vascular invasion. By AJCC/UICC convention, LVI does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes_figure_4_extend_from_periesophageal_cervical_nodes_for_the_cervical_esophagus_t",
+          "label": "Regional lymph nodes (Figure 4) extend from periesophageal cervical nodes for the cervical esophagus to celiac lymph nodes for the distal esophagus.1 Number of involved lymph nodes has consistently emerged as a prognostic indicator on multivariate analysis.2,3  Extranodal extension may identify a subset of node-positive patients with a particularly poor prognosis.4 Total number of lymph nodes containing metastases (positive nodes) is demonstrated to be an important prognostic factor for esophageal cancer. For that reason, lymph node involvement is coarsely grouped into N0 (no positive lymph node), N1 (1-2 positive lymph nodes), N2 (3-6 positive lymph nodes), and N3 (7 or more positive lymph nodes).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_regional_lymph_nodes_of_the_esophagus_from_amin_et_al1_used_with_permission_of_the_american",
+          "label": "Figure 4.  Regional lymph nodes of the esophagus. From Amin et al.1 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Manual, 8th edition (2017) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "christein_jd_hollinger_ef_millikan_kw_prognostic_factors_associated_with_resectable_carcinoma_of_the",
+          "label": "Christein JD, Hollinger EF, Millikan KW. Prognostic factors associated with resectable carcinoma of the esophagus. Am Surg. 2002;68(3):258-262; discussion 262-263.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gu_y_swisher_sg_ajani_ja_et_al_the_number_of_lymph_nodes_with_metastasis_predicts_survival_in_patien",
+          "label": "Gu Y, Swisher SG, Ajani JA, et al. The number of lymph nodes with metastasis predicts survival in patients with esophageal or esophagogastric junction adenocarcinoma who receive preoperative chemoradiation. Cancer. 2006;106(5):1017-1025.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lagarde_sm_ten_kate_fjw_de_boer_dj_busch_orc_obertop_h_van_lanschot_jjb_extracapsular_lymph_node_inv",
+          "label": "Lagarde SM, ten Kate FJW, de Boer DJ, Busch ORC, Obertop H, van Lanschot JJB. Extracapsular lymph node involvement in node-positive patients with adenocarcinoma of the distal esophagus or gastroesophageal junction. Am J Surg Pathol. 2006;30(2):171-176.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "most_esophageal_adenocarcinomas_develop_in_the_setting_of_barretts_esophagus_which_is_defined_as_alt",
+          "label": "Most esophageal adenocarcinomas develop in the setting of Barrett’s esophagus, which is defined as alteration of the mucosal lining of the esophagus from the normal squamous epithelium to metaplastic columnar epithelium in response to esophagogastric reflux. Although in some cases the columnar epithelium may resemble gastric oxyntic or cardiac mucosa, only the specialized columnar epithelium with goblet cells is considered to carry significant risk of cancer and is designated as Barrett’s esophagus for diagnostic purposes in the United States. However, controversy remains whether the definition should be limited to columnar epithelium with goblet cells or should be expanded to include non-goblet cell columnar epithelium.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

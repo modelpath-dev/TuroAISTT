@@ -1,0 +1,1314 @@
+{
+  "template_id": "Thymus_5.0.0.0.REL.CAPCP",
+  "organ": "THYMUS",
+  "protocol_posting_date": "December 2024",
+  "standards": [
+    "AJCC 9"
+  ],
+  "sections": [
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "thymectomy",
+              "label": "Thymectomy"
+            },
+            {
+              "value": "partial_thymectomy",
+              "label": "Partial thymectomy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "thymus",
+              "label": "Thymus"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "thymoma",
+          "label": "Thymoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "type_a_thymoma",
+              "label": "Type A thymoma (including atypical subtype)"
+            },
+            {
+              "value": "type_ab_thymoma",
+              "label": "Type AB thymoma"
+            },
+            {
+              "value": "type_b1_thymoma",
+              "label": "Type B1 thymoma"
+            },
+            {
+              "value": "type_b2_thymoma",
+              "label": "Type B2 thymoma"
+            },
+            {
+              "value": "type_b3_thymoma",
+              "label": "Type B3 thymoma"
+            },
+            {
+              "value": "micronodular_thymoma_with_lymphoid_stroma",
+              "label": "Micronodular thymoma with lymphoid stroma"
+            },
+            {
+              "value": "metaplastic_thymoma",
+              "label": "Metaplastic thymoma"
+            },
+            {
+              "value": "thymoma_with_more_than_one_histological_pattern",
+              "label": "Thymoma with more than one histological pattern"
+            }
+          ]
+        },
+        {
+          "field_id": "histological_patterns_present_percentages_must_total_100",
+          "label": "Histological Patterns Present (percentages must total 100%)",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "a",
+              "label": "A: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "b1",
+              "label": "B1: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "b2",
+              "label": "B2: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "b3",
+              "label": "B3: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "squamous_carcinomas",
+          "label": "Squamous Carcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma_nos",
+              "label": "Squamous cell carcinoma, NOS"
+            },
+            {
+              "value": "basaloid_carcinoma",
+              "label": "Basaloid carcinoma"
+            },
+            {
+              "value": "lymphoepithelial_carcinoma",
+              "label": "Lymphoepithelial carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "adenocarcinomas",
+          "label": "Adenocarcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma_nos",
+              "label": "Adenocarcinoma, NOS"
+            },
+            {
+              "value": "low_grade_papillary_adenocarcinoma",
+              "label": "Low-grade papillary adenocarcinoma"
+            },
+            {
+              "value": "thymic_carcinoma_with_adenoid_cystic_carcinoma_like_features",
+              "label": "Thymic carcinoma with adenoid cystic carcinoma-like features"
+            },
+            {
+              "value": "enteric_type_adenocarcinoma",
+              "label": "Enteric-type adenocarcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "adenosquamous_carcinomas",
+          "label": "Adenosquamous Carcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "nut_carcinomas",
+          "label": "NUT Carcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "nut_carcinoma",
+              "label": "NUT carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "salivary_gland_like_carcinomas",
+          "label": "Salivary gland-like Carcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mucoepidermoid_carcinoma",
+              "label": "Mucoepidermoid carcinoma"
+            },
+            {
+              "value": "clear_cell_carcinoma",
+              "label": "Clear cell carcinoma"
+            },
+            {
+              "value": "sarcomatoid_carcinoma",
+              "label": "Sarcomatoid carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "undifferentiated_carcinomas",
+          "label": "Undifferentiated Carcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "undifferentiated_carcinoma",
+              "label": "Undifferentiated carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "thymic_carcinomas",
+          "label": "Thymic Carcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "thymic_carcinoma_nos",
+              "label": "Thymic carcinoma, NOS"
+            }
+          ]
+        },
+        {
+          "field_id": "neuroendocrine_tumors",
+          "label": "Neuroendocrine Tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "carcinoid_tumor_nos_neuroendocrine_tumor_nos",
+              "label": "Carcinoid tumor, NOS / Neuroendocrine tumor, NOS"
+            },
+            {
+              "value": "typical_carcinoid_neuroendocrine_tumor_grade_1",
+              "label": "Typical carcinoid / Neuroendocrine tumor, grade 1"
+            },
+            {
+              "value": "atypical_carcinoid_neuroendocrine_tumor_grade_2",
+              "label": "Atypical carcinoid / Neuroendocrine tumor, grade 2"
+            }
+          ]
+        },
+        {
+          "field_id": "neuroendocrine_carcinomas",
+          "label": "Neuroendocrine Carcinomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "small_cell_carcinoma",
+              "label": "Small cell carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_residual_viable_tumor",
+          "label": "Percentage of Residual Viable Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "sites_involved_by_direct_tumor_invasion",
+          "label": "Site(s) Involved by Direct Tumor Invasion",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "tumor_limited_to_the_thymus",
+              "label": "Tumor limited to the thymus"
+            },
+            {
+              "value": "mediastinal_fat",
+              "label": "Mediastinal fat"
+            },
+            {
+              "value": "mediastinal_pleura",
+              "label": "Mediastinal pleura"
+            },
+            {
+              "value": "pericardium",
+              "label": "Pericardium (either partial or full thickness)"
+            },
+            {
+              "value": "phrenic_nerve",
+              "label": "Phrenic nerve"
+            },
+            {
+              "value": "lung",
+              "label": "Lung (specify lobe(s) involved): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "brachiocephalic_vein",
+              "label": "Brachiocephalic vein"
+            },
+            {
+              "value": "superior_vena_cava",
+              "label": "Superior vena cava"
+            },
+            {
+              "value": "chest_wall",
+              "label": "Chest wall"
+            },
+            {
+              "value": "extrapericardial_pulmonary_artery",
+              "label": "Extrapericardial pulmonary artery"
+            },
+            {
+              "value": "extrapericardial_pulmonary_veins",
+              "label": "Extrapericardial pulmonary veins"
+            },
+            {
+              "value": "ascending_aorta",
+              "label": "Ascending aorta"
+            },
+            {
+              "value": "aortic_arch",
+              "label": "Aortic arch"
+            },
+            {
+              "value": "descending_aorta",
+              "label": "Descending aorta"
+            },
+            {
+              "value": "arch_vessels",
+              "label": "Arch vessels"
+            },
+            {
+              "value": "intrapericardial_pulmonary_artery",
+              "label": "Intrapericardial pulmonary artery"
+            },
+            {
+              "value": "intrapericardial_pulmonary_veins",
+              "label": "Intrapericardial pulmonary veins"
+            },
+            {
+              "value": "myocardium",
+              "label": "Myocardium"
+            },
+            {
+              "value": "trachea",
+              "label": "Trachea"
+            },
+            {
+              "value": "esophagus",
+              "label": "Esophagus"
+            },
+            {
+              "value": "diaphragm",
+              "label": "Diaphragm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_invasive_tumor",
+          "label": "Closest Margin(s) to Invasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_closest_margin",
+              "label": "Specify closest margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_tumor_to_closest_margin",
+          "label": "Distance from Tumor to Closest Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_present_at_margin",
+              "label": "Tumor present at margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margins_involved_by_tumor",
+          "label": "Margin(s) Involved by Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_with_tumor",
+          "label": "Nodal Site(s) with Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "anterior",
+              "label": "Anterior (perithymic): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep_intrathoracic",
+              "label": "Deep intrathoracic: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cervical",
+              "label": "Cervical: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "pleural_nodule",
+              "label": "Pleural nodule(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pericardial_nodule",
+              "label": "Pericardial nodule(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "intraparenchymal_pulmonary_nodule",
+              "label": "Intraparenchymal pulmonary nodule(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_distant_organs",
+              "label": "Other distant organs (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ],
+          "condition": "AJCC Version 9"
+        },
+        {
+          "field_id": "involvement_must_be_microscopically_confirmed_in_pathological_staging_if_possible",
+          "label": "Involvement must be microscopically confirmed in pathological staging, if possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_limited_to_the_thymus_with_or_without_encapsulation_or_directly_invades_into_the_mediastin",
+          "label": "pT1: Tumor limited to the thymus with or without encapsulation, or directly invades into the mediastinal fat only, or directly invades the mediastinal pleura but does not involve any other mediastinal structure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor less than or equal to 5 cm in greatest dimension limited to the thymus with or without"
+            }
+          ]
+        },
+        {
+          "field_id": "invades_the_mediastinal_pleura_but_does_not_involve_any_other_mediastinal_structure",
+          "label": "invades the mediastinal pleura but does not involve any other mediastinal structure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor greater than 5 cm in greatest dimension limited to the thymus with or without"
+            }
+          ]
+        },
+        {
+          "field_id": "mediastinal_pleura_but_does_not_involve_any_other_mediastinal_structure",
+          "label": "mediastinal pleura but does not involve any other mediastinal structure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor with direct invasion of the pericardium (either partial or full thickness), or the lung, or the"
+            }
+          ]
+        },
+        {
+          "field_id": "phrenic_nerve",
+          "label": "phrenic nerve",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor with direct invasion into any of the following: brachiocephalic vein, superior vena cava,"
+            }
+          ]
+        },
+        {
+          "field_id": "chest_wall_or_extrapericardial_pulmonary_arteries_or_veins",
+          "label": "chest wall, or extrapericardial pulmonary arteries or veins",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor with direct invasion into any of the following: aorta (ascending, arch, or descending), arch"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No tumor involvement of regional lymph node(s)"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Tumor involvement of anterior (perithymic) lymph nodes"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2: Tumor involvement of deep intrathoracic or cervical lymph nodes (e.g., paratracheal, subcarinal,"
+            }
+          ]
+        },
+        {
+          "field_id": "n_suffix_required_only_if_applicable",
+          "label": "N Suffix (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(sn) Sentinel node procedure"
+            },
+            {
+              "value": "",
+              "label": "(f) FNA or core needle biopsy"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_microscopic_confirmation_of_distant_metastasis",
+          "label": "pM1: Microscopic confirmation of distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Microscopic confirmation of separate pleural or pericardial nodule(s)"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Microscopic confirmation of pulmonary intraparenchymal nodule or other distant metastasis"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "age_appropriate_involutional_changes",
+              "label": "Age-appropriate involutional changes"
+            },
+            {
+              "value": "fibrosis",
+              "label": "Fibrosis"
+            },
+            {
+              "value": "follicular_thymic_hyperplasia",
+              "label": "Follicular thymic hyperplasia"
+            },
+            {
+              "value": "epithelial_thymic_hyperplasia",
+              "label": "Epithelial thymic hyperplasia"
+            },
+            {
+              "value": "true_thymic_hyperplasia",
+              "label": "True thymic hyperplasia"
+            },
+            {
+              "value": "cystic_changes_in_tumor",
+              "label": "Cystic changes in tumor"
+            },
+            {
+              "value": "cystic_changes_in_adjacent_thymus",
+              "label": "Cystic changes in adjacent thymus"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "immunohistochemistry_specify_stains_and_results",
+          "label": "Immunohistochemistry (specify stains and results): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_histologic_classification_published_by_the_world_health_organizatio",
+          "label": "For consistency in reporting, the histologic classification published by the World Health Organization (WHO) for tumors of the thymus is recommended.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "type_a_ab_and_b_thymomas_show_thymic_architectural_features1_sclerosing_thymoma_was_removed_from_the",
+          "label": "Type A, AB, and B thymomas show thymic architectural features.1 Sclerosing thymoma was removed from the fifth edition of the WHO classification because it is thought to represent sclerotic changes in various types of thymomas rather than a distinctive form of thymoma. The protocol now supports reporting of thymomas exhibiting more than one histological pattern. It is recommended that the diagnosis lists the predominant histological pattern observed, followed by minor components (e.g., “thymoma, with type B2 (80%) and type B3 (20%) components”.1 However, type AB thymoma should be reported as such and not divided into type A and type B components.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thymic_carcinomas_are_a_heterogeneous_group_of_malignant_epithelial_tumors_with_diverse_morphology_s",
+          "label": "Thymic carcinomas are a heterogeneous group of malignant epithelial tumors with diverse morphology showing morphologies that resemble carcinomas encountered outside the thymus.1 The classification of thymic carcinomas in the fifth edition of the WHO classification is basically similar to that in the fourth edition. Micronodular thymic carcinoma with lymphoid hyperplasia is provisionally added as a subtype of squamous cell carcinoma. Clear cell carcinoma, a hyalinizing subtype characterized by EWSR1 gene translocation is recognized, analogous to hyalinizing clear cell carcinoma of salivary gland. For primary thymic adenocarcinoma, the various subtypes are maintained, but with minor changes in terminology, from “papillary adenocarcinoma” to “low-grade papillary adenocarcinoma”, and from “mucinous adenocarcinoma” to “enteric-type adenocarcinoma”.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_nomenclature_and_diagnostic_criteria_for_thymic_neuroendocrine_tumors_typical_and_atypical_carci",
+          "label": "The nomenclature and diagnostic criteria for thymic neuroendocrine tumors (typical and atypical carcinoids, large cell neuroendocrine carcinoma [LCNEC], and small cell carcinoma) are retained from previous editions of the WHO classification.1,2 The descriptive terms “well-differentiated neuroendocrine carcinoma” (referring to carcinoids) and “poorly differentiated neuroendocrine carcinoma” (referring to LCNEC and small cell carcinoma) should not be used.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_thoracic_tumours_lyon_france_international_agency_for_",
+          "label": "WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "marx_a_chan_jk_coindre_jm_detterbeck_f_et_al_the_2015_world_health_organization_classification_of_tu",
+          "label": "Marx A, Chan JK, Coindre JM, Detterbeck F, et al. The 2015 World Health Organization Classification of Tumors of the Thymus: Continuity and Changes. J Thorac Oncol. 2015;10(10):1383-1395.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thymectomy_involves_dissection_and_mobilization_of_the_thymus_from_the_pericardium_and_mediastinal_p",
+          "label": "Thymectomy involves dissection and mobilization of the thymus from the pericardium and mediastinal pleura. In most thymectomy specimens, the posterior surface constitutes a true margin. Unless it has been marked by the surgeon, the posterior surface of thymectomy specimens is difficult to locate. If the completeness of excision is in question, the orientation of the specimen should be confirmed by the surgeon before grossing, and all surgical margins inked. In addition to thymus, some specimens also include attached neighboring structures (e.g., pleura, pericardium, lung). The margins of any attached structures should be properly identified by the surgeon and inked to facilitate accurate histologic assessment of margin status. In addition to tumor stage and histologic type, completeness of resection is an important prognostic parameter.1,2 Current protocol requires to specify the closest margin to invasive tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "huang_j_detterbeck_fc_wang_z_loehrer_pj_sr_standard_outcome_measures_for_thymic_malignancies_j_thora",
+          "label": "Huang J, Detterbeck FC, Wang Z, Loehrer PJ Sr. Standard outcome measures for thymic malignancies. J Thorac Oncol. 2010;5(12):2017-2023.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detterbeck_fc_moran_c_huang_j_et_al_which_way_is_up_policies_and_procedures_for_surgeons_and_patholo",
+          "label": "Detterbeck FC, Moran C, Huang J, et al. Which way is up?: policies and procedures for surgeons and pathologists regarding resection specimens of thymic malignancy. J Thorac Oncol. 2011;6(7 Suppl 3):S1730.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_8th_edition_of_the_ajcc_staging_manual_introduced_a_tnm_classification_and_staging_system_for_th",
+          "label": "The 8th edition of the AJCC staging manual introduced a TNM classification and staging system for thymic tumors. It includes thymoma, thymic carcinoma, thymic neuroendocrine tumors, and combined thymic carcinoma. The AJCC staging is based on the proposal by the International Association for the Study of Lung Cancer (IASLC) and the International Thymic Malignancy Interest Group (ITMIG) that is founded on the analyses of an international database with 10,808 patients from 105 sites.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_ajcc_version_9_includes_sub_classification_of_t1_category_into_t1a_5_cm_and_t1b_5_cm_irrespectiv",
+          "label": "The AJCC Version 9 includes sub classification of T1 category into T1a (<5 cm) and T1b (>5 cm), irrespective of mediastinal pleura invasion;T2 includes direct invasion of the pericardium, lung, or phrenic nerve; T3 denotes direct invasion of the brachiocephalic vein, superior vena cava, chest wall, or extrapericardial pulmonary arteries and veins; and T4 category remains the same as in the eighth edition classification, involving direct invasion of the aorta and arch vessels, intrapericardial pulmonary arteries and veins, myocardium, trachea, or esophagus.4 No changes are proposed from the eighth edition for the N and M components.5 The Masaoka-Koga system is the most frequently used staging system for thymic neoplasms.6,7,8 However, there are significant discrepancies in the interpretation of ambiguously defined criteria between different institutions. Classification of a thymoma according to the Masaoka-Koga system should always be accompanied by (and does not replace) TNM classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_modified_masaoka_staging_scheme_requires_assessment_of_capsular_invasion_and_invasion_of_adjacen",
+          "label": "The modified Masaoka staging scheme requires assessment of capsular invasion and invasion of adjacent structures. Encapsulated thymomas are completely surrounded by a fibrous capsule of variable thickness. Tumors that invade into, but not through, the capsule should still be considered encapsulated. Assessment of capsular invasion is sometimes difficult, because a capsule may be either partially or entirely lacking in some thymomas and in a substantial proportion of thymic carcinomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adherence_to_pleura_or_pericardium_is_interpreted_by_the_itmig_as_making_removal_of_these_structures",
+          "label": "Adherence to pleura or pericardium is interpreted by the ITMIG as, “making removal of these [structures] necessary during resection, with microscopic confirmation of perithymic invasion, but without microscopic extension into or through the mediastinal pleura or into the fibrous layer of the pericardium\".8 Areas of tumor adherence to mediastinal or other structures could be the result of tumor invasion or only chronic inflammation with fibrosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_currently_not_enough_data_to_support_a_particular_t_category_for_thymomas_extending_direct",
+          "label": "There are currently not enough data to support a particular T category for thymomas extending directly into the diaphragm because they are exceedingly rare. Until this situation is revisited when more data are available, it is probably fair to assume that the outcome of such tumors resembles thymomas classified pT3.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detterbeck_fc_asamura_h_crowley_j_et_al_the_iaslcitmig_thymic_malignancies_staging_project_developme",
+          "label": "Detterbeck FC, Asamura H, Crowley J, et al. The IASLC/ITMIG thymic malignancies staging project: development of a stage classification for thymic malignancies. J Thorac Oncol. 2013;8(12):1467-1473.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detterbeck_fc_stratton_k_giroux_d_et_al_the_iaslcitmig_thymic_epithelial_tumors_staging_project_prop",
+          "label": "Detterbeck FC, Stratton K, Giroux D, et al. The IASLC/ITMIG Thymic Epithelial Tumors Staging Project: proposal for an evidence-based stage classification system for the forthcoming (8th) edition of the TNM classification of malignant tumors. J Thorac Oncol. 2014;9(9 Suppl 2):S65-S72.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nicholson_ag_detterbeck_fc_marino_m_et_al_the_iaslcitmig_thymic_epithelial_tumors_staging_project_pr",
+          "label": "Nicholson AG, Detterbeck FC, Marino M, et al. The IASLC/ITMIG Thymic Epithelial Tumors Staging Project: proposals for the T component for the forthcoming (8th) edition of the TNM classification of malignant tumors. J Thorac Oncol. 2014;9(9 Suppl 2):S73-S80.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "okumura_m_marino_m_cilento_v_goren_e_ruffini_e_et_al_the_international_association_for_the_study_of_",
+          "label": "Okumura M, Marino M, Cilento V, Goren E, Ruffini E, et al. The International Association for the Study of Lung Cancer Thymic Epithelial Tumor Staging Project: Proposal for the T Component for the Forthcoming (Ninth) Edition of the TNM Classification of Malignant Tumors. J Thorac Oncol. 2023 Dec;18(12):1638-1654.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fang_w_girard_n_cilento_v_et_al_the_international_association_for_the_study_of_lung_cancer_thymic_ep",
+          "label": "Fang W, Girard N, Cilento V, et al. The International Association for the Study of Lung Cancer Thymic Epithelial Tumors Staging Project: Proposals for the N and the M Components for the Forthcoming (Ninth) Edition of the TNM Classification of Malignant Tumors. J Thorac Oncol. 2024 Jan;19(1):52-70.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "masaoka_a_monden_y_nakahara_k_tanioka_t_follow_up_study_of_thymomas_with_special_reference_to_their_",
+          "label": "Masaoka A, Monden Y, Nakahara K, Tanioka T. Follow-up study of thymomas with special reference to their clinical stages. Cancer. 1981;48:2485-2492.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "koga_k_matsuno_y_noguchi_m_et_al_a_review_of_79_thymomas_modification_of_staging_system_and_reapprai",
+          "label": "Koga K, Matsuno Y, Noguchi M, et al. A review of 79 thymomas: modification of staging system and reappraisal of conventional division into invasive and non-invasive thymoma. Pathol Int. 1994;44:359-367.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detterbeck_fc_nicholson_ag_kondo_k_van_schil_p_moran_c_the_masaoka_koga_stage_classification_for_thy",
+          "label": "Detterbeck FC, Nicholson AG, Kondo K, Van Schil P, Moran C. The Masaoka-Koga stage classification for thymic malignancies and definition of terms. J Thorac Oncol. 2011;6(7 Suppl 3); S1710-S1716.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ancillary_studies_such_as_immunohistochemistry_are_often_employed_in_the_diagnosis_of_thymic_epithel",
+          "label": "Ancillary studies, such as immunohistochemistry, are often employed in the diagnosis of thymic epithelial neoplasms. The types of ancillary studies utilized vary with the histologic appearance of the tumor. Immunostaining for cytokeratins is helpful in distinguishing between thymomas and lymphoid lesions. In selected cases, the use of immunohistochemistry for CD1a and terminal deoxynucleotidyl transferase (TdT) may be helpful in defining the cortical thymocyte phenotype of thymoma, as distinguished from the typical peripheral T-cell phenotype of tumor-infiltrating lymphocytes associated with other tumors. CD5, CD117, and MUC1 are expressed in about 70% of all thymic carcinomas and in about 80% of thymic squamous cell carcinomas, and may potentially be helpful in separating thymic carcinoma from thymoma. It should be noted that about 3% of thymomas, particularly B3 type, may express CD5 and CD117.1,2 Pax8 immunohistochemical staining in thymic epithelial tumors is commonly seen with polyclonal, but not monoclonal, Pax8 antibodies.3 Immunostains for human chorionic gonadotropin (HCG), placental alkaline phosphatase (PLAP), carcinoembryonic antigen (CEA), α-fetoprotein, SALL4, OCT4, and CD30 are helpful in differentiating between thymic carcinomas and mediastinal germ cell tumors. The diagnosis of NUT carcinoma is confirmed by immunohistochemical, FISH, or molecular studies.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_thoracic_tumours_lyon_france_international_agency_for_",
+          "label": "WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "marx_a_chan_jk_coindre_jm_detterbeck_f_et_al_the_2015_world_health_organization_classification_of_tu",
+          "label": "Marx A, Chan JK, Coindre JM, Detterbeck F, et al. The 2015 World Health Organization Classification of Tumors of the Thymus: Continuity and Changes. J Thorac Oncol. 2015;10(10):1383-1395.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weissferdt_a_moran_ca_pax8_expression_in_thymic_epithelial_neoplasms_an_immunohistochemical_analysis",
+          "label": "Weissferdt A, Moran CA. Pax8 expression in thymic epithelial neoplasms: an immunohistochemical analysis. Am J Surg Pathol. 2011 Sep;35(9):1305-1310.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

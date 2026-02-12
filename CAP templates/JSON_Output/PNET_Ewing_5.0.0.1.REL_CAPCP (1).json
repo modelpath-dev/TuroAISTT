@@ -1,0 +1,1152 @@
+{
+  "template_id": "PNET_Ewing_5.0.0.1.REL_CAPCP_(1)",
+  "organ": "EWING SARCOMA: Resection",
+  "protocol_posting_date": "June 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "expert_consultation",
+      "section_name": "EXPERT CONSULTATION",
+      "fields": [
+        {
+          "field_id": "expert_consultation",
+          "label": "Expert Consultation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pending_completion_of_this_cap_cancer_protocol_is_awaiting_expert_consultation",
+              "label": "Pending - Completion of this CAP Cancer Protocol is awaiting expert consultation"
+            },
+            {
+              "value": "completed_this_cap_cancer_protocol_or_some_elements_have_been_performed_following_expert",
+              "label": "Completed - This CAP Cancer Protocol or some elements have been performed following expert"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "consultation",
+          "label": "consultation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "preresection_treatment",
+          "label": "Preresection Treatment",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "no_known_preresection_therapy",
+              "label": "No known preresection therapy"
+            },
+            {
+              "value": "chemotherapy_performed",
+              "label": "Chemotherapy performed"
+            },
+            {
+              "value": "radiation_therapy_performed",
+              "label": "Radiation therapy performed"
+            },
+            {
+              "value": "therapy_performed_type_not_specified",
+              "label": "Therapy performed, type not specified"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen",
+          "label": "SPECIMEN",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "resection",
+              "label": "Resection"
+            },
+            {
+              "value": "amputation",
+              "label": "Amputation (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "limb_salvage_procedure",
+              "label": "Limb salvage procedure (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "multiple_primary_sites",
+          "label": "Multiple Primary Sites",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "present",
+              "label": "Present: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "please_complete_a_separate_checklist_for_each_primary_site",
+          "label": "Please complete a separate checklist for each primary site",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "osseous",
+              "label": "Osseous"
+            },
+            {
+              "value": "long_bones_of_upper_limb_scapula_and_associated_joints",
+              "label": "Long bones of upper limb, scapula and associated joints (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "short_bones_of_upper_limb_and_associated_joints",
+              "label": "Short bones of upper limb and associated joints (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "long_bones_of_lower_limb_and_associated_joints",
+              "label": "Long bones of lower limb and associated joints (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "short_bones_of_lower_limb_and_associated_joints",
+              "label": "Short bones of lower limb and associated joints (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "overlapping_lesion_of_bones_joints_and_articular_cartilage_of_limbs",
+              "label": "Overlapping lesion of bones, joints and articular cartilage of limbs (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone_of_limb_nos",
+              "label": "Bone of limb, NOS (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bones_of_skull_and_face_and_associated_joints",
+              "label": "Bones of skull and face and associated joints (excluding mandible C41.1) (specify):"
+            },
+            {
+              "value": "mandible",
+              "label": "Mandible (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vertebral_column",
+              "label": "Vertebral column (excluding sacrum and coccyx C41.4) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "rib_sternum_clavicle_and_associated_joints",
+              "label": "Rib, sternum, clavicle and associated joints (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pelvic_bones_sacrum_coccyx_and_associated_joints",
+              "label": "Pelvic bones, sacrum, coccyx and associated joints (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "overlapping_lesion_of_bones_joints_and_articular_cartilage",
+              "label": "Overlapping lesion of bones, joints and articular cartilage (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone_nos",
+              "label": "Bone, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "extraosseous",
+              "label": "Extraosseous"
+            },
+            {
+              "value": "heart_mediastinum",
+              "label": "Heart / mediastinum"
+            },
+            {
+              "value": "heart",
+              "label": "Heart (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_mediastinum",
+              "label": "Anterior mediastinum (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "posterior_mediastinum",
+              "label": "Posterior mediastinum (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mediastinum_nos",
+              "label": "Mediastinum, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "overlapping_lesion_of_heart_mediastinum_and_pleura",
+              "label": "Overlapping lesion of heart, mediastinum and pleura (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "peritoneum_and_or_retroperitoneum",
+              "label": "Peritoneum and / or retroperitoneum"
+            },
+            {
+              "value": "retroperitoneum",
+              "label": "Retroperitoneum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "peritoneum_including_omentum_and_mesentery",
+              "label": "Peritoneum, including omentum and mesentery (specify parts): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "peritoneum_nos",
+              "label": "Peritoneum, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_soft_tissue",
+              "label": "Other soft tissue"
+            },
+            {
+              "value": "head_face_and_neck",
+              "label": "Head, face, and neck (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "upper_limb_and_shoulder",
+              "label": "Upper limb and shoulder (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lower_limb_and_hip",
+              "label": "Lower limb and hip (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "thorax",
+              "label": "Thorax (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "abdomen",
+              "label": "Abdomen (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pelvis",
+              "label": "Pelvis (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "trunk",
+              "label": "Trunk (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "overlapping_lesion",
+              "label": "Overlapping lesion (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_nos",
+              "label": "Other, NOS: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "sites_involved_by_direct_tumor_extension",
+          "label": "Site(s) Involved by Direct Tumor Extension",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "epiphysis_or_apophysis",
+              "label": "Epiphysis or apophysis"
+            },
+            {
+              "value": "metaphysis",
+              "label": "Metaphysis"
+            },
+            {
+              "value": "diaphysis",
+              "label": "Diaphysis"
+            },
+            {
+              "value": "cortex",
+              "label": "Cortex"
+            },
+            {
+              "value": "medullary_cavity",
+              "label": "Medullary cavity"
+            },
+            {
+              "value": "surface",
+              "label": "Surface"
+            },
+            {
+              "value": "joint",
+              "label": "Joint"
+            },
+            {
+              "value": "adjacent_soft_tissue",
+              "label": "Adjacent soft tissue: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "treatment_effect_includes_necrosis_fibrosis_and_other_treatment_related_changes",
+          "label": "Treatment effect includes necrosis, fibrosis and other treatment related changes.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no preresection therapy)"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_treatment_effect",
+          "label": "Percentage of Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_tumor",
+          "label": "Closest Margin(s) to Tumor",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "bone",
+              "label": "Bone (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "soft_tissue",
+              "label": "Soft tissue (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "parenchymal",
+              "label": "Parenchymal (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_tumor_to_closest_margin",
+          "label": "Distance from Tumor to Closest Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_present_at_margin",
+              "label": "Tumor present at margin"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "margins_involved_by_tumor",
+          "label": "Margin(s) Involved by Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "number_cannot_be_determined",
+              "label": "Number cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "the_ajcc_staging_systems_for_bone_and_soft_tissue_based_tumors_may_be_used_for_pathologic_staging_if",
+          "label": "The AJCC staging systems for bone and soft tissue based tumors may be used for pathologic staging if desired.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "results_of_these_studies_may_not_be_available_at_the_time_of_the_final_report",
+          "label": "Results of these studies may not be available at the time of the final report",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_specify",
+          "label": "Immunohistochemistry (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cytogenetic_findings",
+          "label": "Cytogenetic Findings",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "ewsr1_rearrangement_fusion_partner_not_known",
+              "label": "EWSR1 rearrangement, fusion partner not known"
+            },
+            {
+              "value": "ewsr1_fli1_gene_rearrangement",
+              "label": "EWSR1-FLI1 gene rearrangement"
+            },
+            {
+              "value": "ewsr1_erg_gene_rearrangement",
+              "label": "EWSR1-ERG gene rearrangement"
+            },
+            {
+              "value": "other_ewsr1_gene_rearrangement",
+              "label": "Other EWSR1 gene rearrangement (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "non_ewsr1_variant_translocation",
+              "label": "Non-EWSR1 variant translocation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_rearrangement_identified",
+              "label": "No rearrangement identified"
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            }
+          ]
+        },
+        {
+          "field_id": "method_for_cytogenetic_studies",
+          "label": "Method for Cytogenetic Studies",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (Cytogenetic Studies not performed)"
+            },
+            {
+              "value": "conventional_karyotyping",
+              "label": "Conventional karyotyping"
+            },
+            {
+              "value": "fluorescent_in_situ_hybridization",
+              "label": "Fluorescent in situ hybridization (FISH)"
+            },
+            {
+              "value": "reverse_transcriptase_polymerase_chain_reaction",
+              "label": "Reverse transcriptase polymerase chain reaction (RT-PCR)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_known",
+              "label": "Not known"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings_specify",
+          "label": "Additional Findings (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "expert_consultation_is_not_required_this_question_has_been_added_to_annotate_if_so_desired_that_the_",
+          "label": "Expert consultation is not required. This question has been added to annotate, if so desired, that the case has been sent out for consultation and thus items of the CAP protocol could not be completed pending expert consultation.  Completion of the CAP protocol will then be performed following consultation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tissue_specimens_optimally_are_received_freshunfixed_because_of_the_importance_of_ancillary_studies_",
+          "label": "Tissue specimens optimally are received fresh/unfixed because of the importance of ancillary studies, such as cytogenetics and molecular testing, which may prefer fresh tissue. First priority should always be given to formalin-fixed tissues (FFPE) for morphologic evaluation.  Ideally, some tissue can be submitted for FPPE without decalcification or following decalcification in EDTA or ETDA+acid decalcification solutions to preserve nucleic acids for molecular testing, to including FISH, RT-PCR, and/or next generation sequencing (NGS). Decalcification in pure acid decalcification solutions degrade nucleic acids and limit molecular testing. Following submission of FFPE, submission of fresh tissue for cytogenetics and/or snap freezing a minimum of 100 mg of viable tumor may be needed potential molecular studies and/or COG study purposes.1 Molecular testing on formalin-fixed paraffin-embedded tissue may be performed for FISH evaluation of EWSR1 rearrangement, for RT-PCR evaluation of EWSR1-FLI1, EWSR1-ERG, and other ES translocations, or NGS. When the amount of tissue is limited, the pathologist can keep the frozen tissue aliquot used for frozen section (usually done to determine sample adequacy and viability) in a frozen state (-70°C is preferable). Translocations may be detected using RT-PCR on frozen or fixed paraffin-embedded tissue, or FISH on touch preparations made from fresh tissue or formalin-fixed paraffin-embedded tissue.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "note_that_classification_of_many_subtypes_of_sarcoma_is_not_always_dependent_upon_special_studies_su",
+          "label": "Note that classification of many subtypes of sarcoma is not always dependent upon special studies, such as cytogenetics or molecular genetics, but frozen tissue may be required to enter patients into treatment protocols. Discretion should be used in triaging tissue from sarcomas. Adequate tissue should be submitted for conventional light microscopy before tissue has been taken for cytogenetics, electron microscopy, or molecular analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "qualman_sj_morotti_ra_risk_assignment_in_pediatric_soft_tissue_sarcoma_an_evolving_molecular_classif",
+          "label": "Qualman SJ, Morotti RA. Risk assignment in pediatric soft-tissue sarcoma: an evolving molecular classification. Curr Oncol Rep. 2002; 4:123-130.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_resection_resection_specimens_may_be_intralesional_marginal_wide_or_radical_in_extent1_intrale",
+          "label": "Tumor Resection\nResection specimens may be intralesional, marginal, wide, or radical in extent.1 Intralesional resections extend through tumor planes, with gross or microscopic residual tumor identifiable at surgical margins. A marginal resection involves a margin formed by reactive tissue surrounding the tumor. A wide radical resection has surgical margins that extend through normal tissue, usually external to the anatomic compartment containing the tumor. For all types of resections, marking (tattoo with ink followed by use of a mordant) and orientation of the specimen (prior to cutting) by the surgeon are highly recommended for accurate pathologic evaluation.2 Full representative mapping of the specimen is also recommended,2 as discussed below.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_full_sagittal_section_of_a_bone_tumor_resection_specimen3_as_illustrated_in_figure_1_allows_for_ma",
+          "label": "A full sagittal section of a bone tumor resection specimen,3 as illustrated in Figure 1, allows for mapping of the entire central face of the tumor and adjacent marginal tissue. Sectioning the specimen in a longitudinal plane that allows for evaluation of the tumor in its greatest cross-sectional dimension is important. Soft tissue and bone marrow margins should be inked and taken prior to sectioning the specimen with both amputation and limb salvage specimens. Freezing of the specimen prior to cutting with a bone saw (with intraosseous specimens) is the preferred method at some institutions. This face of the specimen should be documented using digital imaging photography or alternatively by a photocopy of the specimen when sealed in a plastic bag. As shown in Figure 1 of an amputation specimen with soft tissue in place, the central full face of the specimen and lesional region can be mapped and blocked following fixation and with adequate decalcification for complete microscopic examination, including estimate of percentage of tumor necrosis. If possible, at least one section of tumor without decalcification or decalcification with less harsh decalcification methods to include EDTA or ETDA+formic acid is recommended to preserve integrity of nuclei acids.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_grid_diagram_of_histologic_sections_taken_superimposed_on_photograph_of_a_sagittally_sectio",
+          "label": "Figure 1. Grid diagram of histologic sections taken, superimposed on photograph of a sagittally-sectioned amputation specimen including the distal femur and proximal tibia.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "conrad_eu_bradford_l_chonsky_ha_pediatric_soft_tissue_sarcomas_orthop_clin_north_am_1996_27655_664",
+          "label": "Conrad EU, Bradford L, Chonsky HA. Pediatric soft tissue sarcomas. Orthop Clin North Am. 1996; 27:655-664.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "coffin_cm_dehner_lp_pathologic_evaluation_of_pediatric_soft_tissue_tumors_am_j_clin_pathol_1998109su",
+          "label": "Coffin CM, Dehner LP. Pathologic evaluation of pediatric soft tissue tumors. Am J Clin Pathol. 1998;109(suppl 1): S38-S52.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "patterson_k_the_pathologic_handling_of_skeletal_tumors_am_j_clin_pathol_1998109suppl_1_s53_s66",
+          "label": "Patterson K. The pathologic handling of skeletal tumors. Am J Clin Pathol. 1998;109(suppl 1): S53-S66.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "d_lymphatic_andor_vascular_invasion",
+          "label": "D. Lymphatic and/or Vascular Invasion",
+          "required": true,
+          "type": "free_text",
+          "condition": "LVI"
+        },
+        {
+          "field_id": "lymphatic_andor_vascular_invasion_lvi_indicates_whether_microscopic_lymphovascular_invasion_is_ident",
+          "label": "Lymphatic and/or vascular invasion (LVI) indicates whether microscopic lymphovascular invasion is identified in the pathology report. LVI includes lymphatic invasion, vascular invasion, or lymphovascular invasion. Evaluation of LVI may require immunohistochemical staining for endothelial markers (CD31, CD34, D240, etc.). By American Joint Committee on Cancer (AJCC) and International Union Against Cancer (UICC) convention, LVI does not affect the T category indicating local extent of tumor unless specifically included in the definition of the T category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "typically_es_has_a_lobular_growth_pattern_consisting_of_tumor_cells_that_are_distinctly_monotonous_i",
+          "label": "Typically, ES has a lobular growth pattern consisting of tumor cells that are distinctly monotonous in their nuclear uniformity. Nuclei measure 10 µm to 15 µm in diameter with distinct nuclear membranes, finely granular chromatin, and 1 to 2 inconspicuous nucleoli. Cytoplasm is poorly defined, scant, pale-staining, and may be vacuolated due to irregular glycogen deposition. Some cases of ES may show increased nuclear size, more pronounced atypia, and increased mitotic activity. Multinucleated giant cells are not seen. Large areas of tumor necrosis with “ghost-like tumor cells” may be striking and in some biopsy specimens may represent the majority of the tumor. Areas of neuroectodermal differentiation (Homer-Wright rosettes; rarely Flexner-Wintersteiner rosettes, ganglionic differentiation or primitive neuroepithelium) may be evident in some tumors. Some cases may show extensive epithelial differentiation, in particular the adamantinoma-like variant most commonly seen in the head-neck region. Currently, extraosseous Ewing sarcoma receives identical therapy as intraosseous Ewing sarcoma. There are no histopathologic ES subtypes that possess an established prognostic importance. \n\nA summary of the prognostic factors is detailed below.1 Of all prognostic factors, age at onset, tumor size, site, and stage have proven to be the most important in predicting outcome.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "definition_efs_event_free_survival_histologic_response_to_chemotherapy_is_an_excellent_predictor_of_",
+          "label": "Definition: EFS, event-free survival.\n\nHistologic response to chemotherapy is an excellent predictor of outcome in osteosarcomas and may also be of value in ES. However, the evaluation of percentage necrosis in ES can be difficult, because unlike osteosarcoma, there is no residual acellular osteoid framework left to demarcate the original tumor bed. Furthermore, data regarding correlation of necrosis with outcome in extraosseous ES is not available. Currently, histologic assessment of percentage necrosis is not used formally to guide therapy in ES; however, it is recommended that the report includes the estimated percentage of necrosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grier_he_krailo_md_tarbell_nj_et_al_addition_of_ifosfamide_and_etoposide_to_standard_chemotherapy_fo",
+          "label": "Grier HE, Krailo MD, Tarbell NJ, et al. Addition of ifosfamide and etoposide to standard chemotherapy for Ewing's sarcoma and primitive neuroectodermal tumor of bone. N Engl J Med. 2003; 348:694-701.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_extent_of_resection_ie_gross_residual_disease_versus_complete_resection_with_negative_margins_ha",
+          "label": "The extent of resection (i.e., gross residual disease versus complete resection with negative margins) has the strongest influence on local control of malignancy.1 The definition of what constitutes a sufficiently “wide” margin of normal tissue in the management of ES and the significance of reactive and/or necrotic tissue at the margin are current study questions for the Children’s Oncology Group, and may evolve in the future. Currently, any tumor at the margin, whether viable, nonviable, or treated, is considered positive. The significance of treated tumor at the margin when there has been an excellent chemotherapeutic response (i.e., greater than 90% tumor necrosis) remains unclear. There is currently no consensus as to whether margins involved by treated tumor require further treatment, and this is considered a negative margin on some studies. The presence of treated tumor at the margin should be reported, however, and can be included in the comment section of the checklist. The following margins are considered adequate",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cortical_bone_margin_2_to_5_cm",
+          "label": "Cortical bone margin: 2 to 5 cm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fascia_periosteum_and_intermuscular_septa_2_mm",
+          "label": "Fascia, periosteum, and intermuscular septa: 2 mm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fat_muscle_and_medullary_bone_5_mm",
+          "label": "Fat, muscle, and medullary bone: 5 mm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "with_ewing_sarcoma_involving_an_encapsulated_organ_surgical_margins_are_considered_to_be_negative_if",
+          "label": "With Ewing sarcoma involving an encapsulated organ, surgical margins are considered to be negative if the organ’s capsule is not surgically violated or breached by the tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fletcher_c_kempson_rl_weiss_s_recommendations_for_reporting_soft_tissue_sarcomas_am_j_clin_pathol_19",
+          "label": "Fletcher C, Kempson RL, Weiss S. Recommendations for reporting soft tissue sarcomas. Am J Clin Pathol. 1999; 111:594-598.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_ajcc_tnm_staging_system_for_bone_or_soft_tissue_tumors1_may_be_used_for_pathologic_staging_of_ew",
+          "label": "The AJCC TNM staging system for bone or soft tissue tumors1 may be used for pathologic staging of Ewing sarcoma and can be reported in the Comment section. However, the presence or absence of metastatic disease (a feature that may not be known to the pathologist) is the primary factor in the staging and treatment of pediatric patients with Ewing sarcoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_immunohistochemistry_with_monoclonal_antibodies_against_the_cell_surface_glycop",
+          "label": "Immunohistochemistry\nImmunohistochemistry with monoclonal antibodies against the cell surface glycoprotein CD99 is positive in virtually all cases of ES.1 This glycoprotein is diffusely expressed in the vast majority of cases in a membranous pattern (Figure 2). The results of staining using monoclonal antibodies O13, HBA71, and 12E7 are similar, but individual tumors may exhibit better staining with one of these antibodies versus other antibodies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_cd99_staining_in_ewing_sarcoma_shows_strong_diffuse_membranous_staining_cd99_antibody_o13_w",
+          "label": "Figure 2. CD99 staining in Ewing sarcoma shows strong, diffuse, membranous staining. (CD99 antibody O13 with hematoxylin counterstain.) \n\nLymphoblastic lymphomas/leukemias, rhabdomyosarcomas, synovial sarcomas, solitary fibrous tumors, rhabdoid tumors, neuroendocrine tumors, desmoplastic small round cell tumors, and mesenchymal chondrosarcomas may also demonstrate immunoreactivity to CD99. In some of these tumors, CD99 immunostaining is often weakly granular and intracytoplasmic; in others (lymphoblastic lymphoma/leukemia, occasional cases of poorly differentiated synovial sarcoma, alveolar rhabdomyosarcoma), distinct membrane staining is present, as seen in ES. Because these other tumors with small round cell morphology can exhibit CD99 expression, it is very important to consider including other immunohistochemical stains such as muscle markers (desmin, muscle-specific actin, myoD1, myogenin), S-100, epithelial markers (epithelial membrane antigen, cytokeratin), INI-1, and lymphoid markers (CD45, CD30, Tdt, T-cell and/or B-cell markers) when CD99 is performed to properly exclude CD99-expressing tumors. Cytokeratin positivity may be seen in ES and may be diffusely positive in the adamantinoma-like variant of Ewing sarcoma.2,3 Newer immunohistochemical antibodies, such as NKX2.2, may also be useful for the diagnosis of ES, although NKX2.2 staining may rarely be seen in other small round cell tumors.4 The value of other immunohistochemical markers for diagnosis, such as Ki-67, p53, and C-kit (CD117), has not been established.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chromosomal_translocations_the_2020_world_health_organization_who_classification_of_bone_and_soft_ti",
+          "label": "Chromosomal Translocations\nThe 2020 World Health Organization (WHO) classification of bone and soft tissue tumors defines Ewing sarcoma as a round cell sarcoma harboring a FET-ETS gene fusion. FET represents a family of genes to include FUS, EWSR1, and TAF15; whereas the ETS gene family is a large family of transcription factors involved in cell cycle regulation, cellular differentiation, among other functions.  In relation to Ewing sarcoma, the characteristic translocations involve the EWSR1 gene at 22q12, most often either the FLI1 gene at 11q24 (90-95%) or the ERG gene at 21q22 (5-10%). These two fusions account for the vast majority of genetic alterations in ES. It should be emphasized that there are numerous other EWSR1 or FUS gene partners that occur in a minority (5%-10%) of ES. The failure to identify an EWSR1-FLI or EWSR1-ERG translocation by RT-PCR or cytogenetics does not exclude ES from the diagnosis. If RT-PCR is negative, in the context of a tumor suspicious for ES, other molecular studies (cytogenetics, NGS) may be important for identification of the less common ES translocations and for discovering novel EWSR1 translocations in ES. Some of the less common ES translocations involve FUS (ch16) rather than EWSR1, or involve other ETS partners including ETV1, ETV4, or FEV. FISH analysis for EWSR1 (or FUS) is helpful as a first step and may confirm the diagnosis in those tumors with histomorphologic features and immunohistochemical phenotypes of ES. Because other small round cell tumors of childhood can have EWSR1 rearrangements with specific tumor-defining partners, EWSR1 FISH positivity alone is not diagnostic of ES. Some of these tumors with EWSR1 rearrangement include angiomatoid fibrous histiocytoma, clear cell sarcoma of soft parts, desmoplastic round cell tumor, and extraskeletal myxoid chondrosarcoma, as well as a subset of myxoid liposarcomas and myoepithelial carcinoma. This underscores the necessity for histologic and immunohistochemical correlation with FISH and/or cytogenetic data.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "therefore_considerations_when_choosing_testing_methodologies_may_include_classic_versus_non_classic_",
+          "label": "Therefore, considerations when choosing testing methodologies may include, classic versus non-classic histomorphology, immunophentype, need to confirm translocation partner, turnaround time, cost, and ultimately may be depend on the availability of testing modalities at each institution. While obtaining evidence of a diagnostic fusion is recommended, it should be noted that absence of a fusion can either result from 1) true lack of fusion, 2) test failure (eg. FISH for EWSR-ERG fusions can miss rearrangements) or 3) mismatch between the testing approach and the fusion present (eg. EWSR1-ERG present and test is for RT-PCR for EWSR1-FLI1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "of_note_the_specific_ewsr1_translocation_and_subtype_based_upon_exon_fusion_type_do_not_influence_tr",
+          "label": "Of note, the specific EWSR1 translocation and subtype based upon exon fusion type do not influence treatment, prognosis, or outcome.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "collini_p_sampietro_g_bertulli_r_et_al_cytokeratin_immunoreactivity_in_41_cases_of_ewing_sarcomaprim",
+          "label": "Collini P, Sampietro G, Bertulli R, et al. Cytokeratin immunoreactivity in 41 cases of Ewing sarcoma/primitive neuroectodermal tumor confirmed by molecular diagnostic studies. Am J Surg Pathol. 2001; 25:273-274.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ambros_im_ambros_pf_strehl_s_kovar_h_gadner_h_salzer_kuntschik_m_mic2_is_a_specific_marker_for_ewing",
+          "label": "Ambros IM, Ambros PF, Strehl S, Kovar H, Gadner H, Salzer-Kuntschik M. MIC2 is a specific marker for Ewing’s sarcoma and peripheral primitive neuroectodermal tumor: evidence for a common histogenesis of Ewing’s sarcoma and peripheral neuroectodermal tumors from MIC2 expression and specific chromosome aberration. Cancer. 1992; 67:1886-1893.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "folpe_al_goldblum_jr_rubin_bp_shehata_bm_liu_w_dei_tos_ap_weiss_sw_morphologic_and_immunophenotypic_",
+          "label": "Folpe AL, Goldblum JR, Rubin BP, Shehata BM, Liu W, Dei Tos AP, Weiss SW. Morphologic and immunophenotypic diversity in Ewing family tumors: a study of 66 genetically confirmed cases. Am J Surg Pathol. 2005; 29:1025-1033.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "machado_i_yoshida_a_lopez_guerrero_ja_nieto_mg_navarro_s_picci_p_llombart_bosch_a_immunohistochemica",
+          "label": "Machado I, Yoshida A, Lopez-Guerrero JA, Nieto MG, Navarro S, Picci P, Llombart-Bosch A. Immunohistochemical analysis of NKX2.2, ETV4 and BCOR in a large series of genetically confirmed Ewing sarcoma family tumors. Pathol Res Pract. 2017;213(9):1048-1053.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tsokos_m_allagio_rd_dehner_lp_et_al_ewing_sarcomaperipheral_neuroectodermal_tumor_and_related_tumors",
+          "label": "Tsokos M, Allagio RD, Dehner LP, et al. Ewing sarcoma/peripheral neuroectodermal tumor and related tumors. Pediatr Dev Pathol. 2012;15(1 suppl):108-126.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_doorninck_ja_ji_l_schaub_b_et_al_current_treatment_protocols_have_eliminated_the_prognostic_adva",
+          "label": "Van Doorninck JA, Ji L, Schaub B, et al. Current treatment protocols have eliminated the prognostic advantage of Type 1 fusions in Ewing sarcoma: a report from the Children’s Oncology Group. J Clin Oncol. 2010; 28:1989-1994.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

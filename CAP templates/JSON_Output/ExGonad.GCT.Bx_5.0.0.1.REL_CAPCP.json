@@ -1,0 +1,1093 @@
+{
+  "template_id": "ExGonad.GCT.Bx_5.0.0.1.REL_CAPCP",
+  "organ": "EXTRAGONADAL GERM CELL TUMOR: Biopsy",
+  "protocol_posting_date": "June 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "expert_consultation",
+      "section_name": "EXPERT CONSULTATION",
+      "fields": [
+        {
+          "field_id": "expert_consultation",
+          "label": "Expert Consultation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pending_completion_of_this_cap_cancer_protocol_is_awaiting_expert_consultation",
+              "label": "Pending - Completion of this CAP Cancer Protocol is awaiting expert consultation"
+            },
+            {
+              "value": "completed_this_cap_cancer_protocol_or_some_elements_have_been_performed_following_expert",
+              "label": "Completed - This CAP Cancer Protocol or some elements have been performed following expert"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "consultation",
+          "label": "consultation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (expert consultation not required)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "patient_age",
+          "label": "Patient Age",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "congenital_neonatal",
+              "label": "Congenital / neonatal (birth - 6 months)"
+            },
+            {
+              "value": "childhood_pre_pubertal",
+              "label": "Childhood / pre-pubertal (7 months - 10 years)"
+            },
+            {
+              "value": "post_pubertal_adult",
+              "label": "Post-pubertal / adult (greater than or equal to 11 years)"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "core_needle_biopsy",
+              "label": "Core needle biopsy"
+            },
+            {
+              "value": "incisional_biopsy",
+              "label": "Incisional biopsy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "head_and_neck_region",
+              "label": "Head and neck region (including thyroid; excluding intracranial): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mediastinum",
+              "label": "Mediastinum (pericardium, heart, thymus, and lung): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retroperitoneum_abdomen",
+              "label": "Retroperitoneum / abdomen (intraperitoneal): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "sacrococcygeal",
+              "label": "Sacrococcygeal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vaginal",
+              "label": "Vaginal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "teratoma",
+          "label": "Teratoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mature_teratoma",
+              "label": "Mature teratoma"
+            },
+            {
+              "value": "immature_teratoma",
+              "label": "Immature teratoma"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_teratoma_composed_of_immature_elements",
+          "label": "Percentage of Teratoma Composed of Immature Elements",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "mature_or_immature_teratoma_with_associated_somatic_type_malignancy",
+              "label": "Mature or immature teratoma with associated somatic-type malignancy (specify type, e.g., epithelial"
+            }
+          ]
+        },
+        {
+          "field_id": "malignant_germ_cell",
+          "label": "Malignant Germ Cell",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "yolk_sac_tumor",
+              "label": "Yolk sac tumor"
+            },
+            {
+              "value": "dysgerminoma_seminoma",
+              "label": "Dysgerminoma / Seminoma"
+            },
+            {
+              "value": "embryonal_carcinoma",
+              "label": "Embryonal carcinoma"
+            },
+            {
+              "value": "choriocarcinoma",
+              "label": "Choriocarcinoma"
+            },
+            {
+              "value": "mixed_germ_cell_tumor",
+              "label": "Mixed germ cell tumor (any combination of the above, with or without teratoma) (specify"
+            }
+          ]
+        },
+        {
+          "field_id": "components",
+          "label": "components): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "1",
+              "label": "1 (low grade)"
+            },
+            {
+              "value": "2",
+              "label": "2 (high grade)"
+            },
+            {
+              "value": "3",
+              "label": "3 (high grade)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ],
+          "condition": "applicable to immature teratomas only"
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "associated_syndromes",
+          "label": "Associated Syndrome(s)",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_known",
+              "label": "Not known"
+            },
+            {
+              "value": "klinefelter",
+              "label": "Klinefelter"
+            },
+            {
+              "value": "down",
+              "label": "Down"
+            },
+            {
+              "value": "gonadal_dysgenesis",
+              "label": "Gonadal dysgenesis (specify type, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (e.g., intersex, Li Fraumeni) (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "germ_cell_associated_hematologic_malignancy_not_part_of_the_extragonadal_germ_cell_tumor",
+          "label": "Germ Cell Associated Hematologic Malignancy (not part of the extragonadal germ cell tumor)",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "leukemia",
+              "label": "Leukemia (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "myelodysplastic_syndrome",
+              "label": "Myelodysplastic syndrome (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_clinical_findings_specify",
+          "label": "Other Clinical Findings (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G",
+            "H"
+          ]
+        },
+        {
+          "field_id": "immunohistochemistry",
+          "label": "Immunohistochemistry",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sall4_ihc",
+          "label": "SALL4 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "oct34_ihc",
+          "label": "OCT3/4 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "cd30_ihc",
+          "label": "CD30 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "afp_ihc",
+          "label": "AFP IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "glypican_3_ihc",
+          "label": "Glypican-3 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "beta_hcg_ihc",
+          "label": "Beta-HCG IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "lin28_ihc",
+          "label": "LIN28 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "cd117_ihc",
+          "label": "CD117 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "d2_40_ihc",
+          "label": "D2-40 IHC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "other_immunohistochemistry_ihc_studies_specify",
+          "label": "Other Immunohistochemistry (IHC) Studies (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cytogenetic_studies",
+          "label": "Cytogenetic Studies",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "results_of_cytogenetic_studies",
+          "label": "Results of Cytogenetic Studies",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "normal_karyotype",
+              "label": "Normal karyotype"
+            },
+            {
+              "value": "isochromosome_12p_abnormality_i",
+              "label": "Isochromosome 12p abnormality [i(12p)]"
+            },
+            {
+              "value": "other_eg_del",
+              "label": "Other [e.g., del(5q), trisomy 8, 11q23 abnormality] (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "serologic_markers",
+          "label": "Serologic Markers",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "serologic_marker_testing",
+          "label": "Serologic Marker Testing",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "serum_alpha_fetoprotein",
+              "label": "Serum alpha-fetoprotein (AFP) (specify level): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "serum_human_chorionic_gonadotropin",
+              "label": "Serum human chorionic gonadotropin (hCG) (specify level): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "expert_consultation_is_not_required_this_question_has_been_added_to_annotate_if_so_desired_that_the_",
+          "label": "Expert consultation is not required. This question has been added to annotate, if so desired, that the case has been sent out for consultation and thus items of the CAP protocol could not be completed pending expert consultation. Completion of the CAP protocol will then be performed following consultation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_behavior_of_pre_pubertal_pediatric_vs_adolescent_and_young_adult_extragonadal_germ_cell_tumors_e",
+          "label": "The behavior of pre-pubertal pediatric vs. adolescent and young adult extragonadal germ cell tumors (EG GCTs) is quite distinct.1 As outlined below, the prognosis for pre-pubertal GCT is better than for adolescents and young adults. The site and histology of the disease also is distinctly different by age in the pre- vs. post-pubertal child vs. adolescent/young adult. These differences arise in all likelihood from different timing of the origins of GCT. The pre-pubertal GCT arises earlier in development, as demonstrated by incomplete loss of imprinting, whereas the post-pubertal GCT features complete loss of imprinting. These differences in biology and clinical presentation are the basis for the classification system proposed by Oosterhuis and Loojjenga who proposed a classification system that includes all pre-pubertal GCT as Type I and all post-pubertal GCT as Type II GCT.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_notes_that_follow_are_divided_into_congenitalneonatal_eg_gcts_birth_to_6_months_and_childhoodpre",
+          "label": "The notes that follow are divided into congenital/neonatal EG GCTs (birth to 6 months) and childhood/pre-pubertal GCTs (7 months to approximately 10 years) because of the well-documented differences in their pathology and prognosis. Post-pubertal/AYA EG ECTs are defined as occurring in patients 11 years and older.\n\nThese notes describe important differences in the pathologic diagnosis and prognosis of EG GCTs in different age groups: congenital/neonatal, children (prepubertal), and adult (post-pubertal). They are summarized in Table 1. Within each age group, the significance of anatomic site and morphologic subtyping is emphasized. Other issues discussed include post-chemotherapy evaluation, unique associated malignancies, and associated syndromes. Finally, a discussion of differential diagnoses is presented based on anatomic location and patient age.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "frazier_al_hale_jp_rodriguez_galindo_c_et_al_revised_risk_classification_for_pediatric_extracranial_",
+          "label": "Frazier AL, Hale JP, Rodriguez-Galindo C, et al. Revised risk classification for pediatric extracranial germ cell tumors based on 25 years of clinical trial data from the United Kingdom and United States. J Clin Oncol. 2015 Jan 10;33(2):195-201.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oosterhuis_jw_looijenga_lh_testicular_germ_cell_tumours_in_a_broader_perspective_nat_rev_cancer_2005",
+          "label": "Oosterhuis JW, Looijenga LH. Testicular germ-cell tumours in a broader perspective. Nat Rev Cancer. 2005 Mar;5(3):210-22.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "congenitalneonataltype_i_the_congenitalneonatal_eg_gct_is_most_commonly_matureimmature_teratoma_othe",
+          "label": "Congenital/Neonatal/Type I\nThe congenital/neonatal EG GCT is most commonly mature/immature teratoma. Other than direct effects on local vital organs, the behavior of congenital and neonatal extragonadal GCTs seems to be independent of anatomic location.1 Sacrococcygeal teratomas are the most common GCT of the neonate, occurring three times more frequently in girls than boys. After saccrococcygeal teratomas, other more common sites of neonatal teratoma include the head and neck region (including thyroid), the mediastinum (pericardium, heart, thymus, and lung), and the retroperitoneum. Neonatal teratomas may occur anywhere along the body midline, following the course of migration of the primordial germ cell into the gonadal ridge. These tumors have a similar morphology at each site.\n\nPre-pubertal/Child/Type I\nSacrococcygeal tumors in the older infant and child are typically Altman Type 4, meaning that there was no externalized mass noted at birth. The likelihood of a malignant component in these tumors is very high; almost always due to yolk sac tumor.2 It is thought that many of these tumors represent congenital sacrococcygeal GCTs (SGCTs) with an overgrowth of yolk sac tumor, analogous to the malignant recurrences of yolk sac tumors in children with incompletely excised congenital SGCT.3\n\nMixed malignant GCTs comprised of teratoma, yolk sac tumor, embryonal carcinoma, and rarely choriocarcinoma are more frequent with increasing age. Germinoma is generally not seen in children less than 10 years of age.4 As in congenital teratoma, the prognosis of mediastinal GCTs in children is significantly affected by tumor stage and completeness of surgical excision (see Notes F and G).5 Rarely, sarcomatous elements are reported in pediatric mediastinal GCTs.\n\nAlthough pelvic and/or retroperitoneal extension of a sacrococcygeal tumor is not unusual, an exclusively retroperitoneal or abdominal location is uncommon, comprising less than 5% of all EG GCTs.\n\nPost-pubertal/Adult/Type II\nThe mediastinum is the most common anatomic site for extragonadal GCTs in adolescents and young adults (AYA). Mediastinal GCT are much more common in males than females. The histologic classification of GCTs at this site is as previously described: seminomatous (pure), nonseminomatous (yolk sac tumor, embryonal carcinoma, choriocarcinoma, and mixed GCTs), and teratomas. One important difference is that, unlike the situation in the adult testis or in congenital/pediatric GCT, the distinction between mature and immature teratoma is important in the adult mediastinum.\n\nSacrococcygeal GCTs in this age group are extremely rare. The location is similar to that seen in pediatric cases except that most are intrapelvic because tumors with an external component would be expected to have been discovered in childhood. Most purely retroperitoneal GCTs in adults represent metastases from an undiscovered or occult primary in the testicle or, rarely, in the ovary. A testicular primary should be excluded by careful ultrasound analysis of the testes; It is not unusual to find evidence of a “burned out” primary tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "marina_n_london_wb_frazier_al_et_al_prognostic_factors_in_children_with_extragonadal_malignant_germ_",
+          "label": "Marina N, London WB, Frazier AL, et al. Prognostic factors in children with extragonadal malignant germ cell tumors: a pediatric intergroup study. J Clin Oncol. 2006;24(16):2544-2548.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rescorla_fj_sawin_rs_coran_ag_dillon_pw_azizkhan_rg_long_term_outcome_for_infants_and_children_with_",
+          "label": "Rescorla FJ, Sawin RS, Coran AG, Dillon PW, Azizkhan RG. Long-term outcome for infants and children with sacrococcygeal teratoma: a report from the Childrens Cancer Group. J Pediatr Surg. 1998;33(2):171-176.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gobel_u_schneider_dt_calaminus_g_et_al_germ_cell_tumors_in_childhood_and_adolescence_gpoh_makei_and_",
+          "label": "Gobel U, Schneider DT, Calaminus G, et al. Germ-cell tumors in childhood and adolescence. GPOH MAKEI and the MAHO study groups. Ann Oncol. 2000;11(3):263-271.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schneider_dt_calaminus_g_koch_s_et_al_epidemiologic_analysis_of_1442_children_and_adolescents_regist",
+          "label": "Schneider DT, Calaminus G, Koch S, et al. Epidemiologic analysis of 1,442 children and adolescents registered in the German germ cell tumor protocols. Pediatr Blood Cancer. 2004;42(2):169-175.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schneider_dt_calaminus_g_reinhard_h_et_al_primary_mediastinal_germ_cell_tumors_in_children_and_adole",
+          "label": "Schneider DT, Calaminus G, Reinhard H, et al. Primary mediastinal germ cell tumors in children and adolescents: results of the German cooperative protocols MAKEI 83/86, 89, and 96. J Clin Oncol. 2000;18(4):832-839.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_world_health_organization_who_classification_of_germ_cell_tumors_is_the_basis_for_most_contempor",
+          "label": "The World Health Organization (WHO) classification of germ cell tumors is the basis for most contemporary classifications and is the one generally used for EGCTs. Due to a lack of specific nomenclature, extragonadal germ cell neoplasms can be classified for histopathology using mediastinal nomenclature. In the most recent 2021 WHO classification, mediastinal germ cell neoplasms are divided into seminomas, non-seminomatous germ cell tumors (including mature and immature teratomas, choriocarcinoma, yolk sac tumor, embryonal carcinoma, or mixed germ cell tumor), and germ cell tumors with somatic-type malignancy, including solid and hematologic malignancy.1 The most common extragonadal germ cell tumors occurring in the perinatal period in order of rank are teratoma, and yolk sac tumor. According to this classification, fetus in fetu is regarded as a form of mature teratoma.2,3 In addition, embryonic-type neuroectodermal tumor (ENET; formerly “primitive neuroectodermal tumor”) is another relatively common somatic-type malignancy for which WHO has adopted new terminology.4 These tumors represent an overgrowth of embryonic central-type neuroectodermal tissue that is commonly seen in teratomas and often categorized as an immature neuroectodermal component.\n\nCongenital/Neonatal/Type I\nMost germ cell tumors of the fetus and neonate are histologically benign and comprise teratoma (mature or immature and yolk sac tumors. Somatic mutations are usually not identified in type I teratomas.5 Yolk sac tumor (endodermal sinus tumor) is the leading malignant germ cell tumor of the perinatal period and throughout childhood. In the fetus and neonate, it occurs most often with a teratoma and adversely affects the prognosis.\n\nThe sacrococcygeal area is the location associated with the highest incidence of malignancy, in the form of yolk sac tumor. The overall frequency of neonatal sacrococcygeal teratomas with a yolk sac tumor is approximately 10%.2 The values cited in the literature range from 2.5%-25%.2,6 The incidence of malignancy in the neonate is approximately 10%, approaching almost 100% by 3 years.6,7,8\n\nPre-pubertal/Child/Type I\nThe occurrence of admixed yolk sac tumor or recurrence as yolk sac tumor is more common with the presentation of teratoma in patients older than 6 months. Similarly, in older infants (after 7 months), the incidence of teratoma falls, whereas the incidence of pure yolk sac tumor increases. Most yolk sac tumors are diagnosed between 7 months and the third year of life. Pure embryonal carcinomas are rare before 5 years old.9 As noted, prognosis worsens with increasing age, and the prognosis (i.e., recurrence rate) of completely resected EGCTs worsens at approximately 7 months. The designation of a child as prepubertal is sometimes difficult, but at least 1 study out of 9 suggests 11 years or older is a significant age boundary.\n\nPost-pubertal/Adult/ Type II\nType II germ cell tumors are malignant, include seminomas and non-seminomatous germ cell tumors, and occur in adolescents and adult men.4 Approximately 43% of all mediastinal GCTs contain teratoma and include mature teratoma (63%), immature teratoma (4%), and teratoma with other malignant components (i.e., sarcoma, other malignant germ cell element, or carcinoma; 33%).2 Because histologically mature teratomas behave in a clinically benign fashion regardless of patient age, and immature teratomas have the potential for aggressive behavior, the distinction is critical to patient management in adults. Germinoma/dysgerminoma/seminoma do not develop in the sacrococcygeal region. Mature teratomas are histologically similar to those occurring in the ovary. Despite their similarity to ovarian GCTs, monodermal teratomas such as struma ovarii have not been described in the mediastinum. \n\nType II tumors are characterized by gain of chromosome 12p, commonly as an isochromosome of 12p. In addition, in seminomas, activating KIT mutations and rarely case KRAS mutation are described.10 In adults, the most common nonteratomatous component is germinoma/seminoma, but yolk sac tumor, embryonal carcinoma, and choriocarcinoma may also occur. Mediastinal germinoma frequently involves the thymus, with resultant cyst formation and thymic epithelial cell hyperplasia.11 This may make the recognition of the germinomatous component difficult. A high level of suspicion is necessary in the case of cystic lesions of the thymus, especially if associated with a granulomatous response. The morphology of nonteratomatous components is otherwise identical to those in the gonads and is reviewed in detail elsewhere.12 All nonteratomatous elements should be regarded as malignant in adults.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "roden_ac_ulbright_tm_marom_em_moreira_a_germ_cell_tumours_of_the_mediastinum_in_who_classification_o",
+          "label": "Roden AC, Ulbright TM, Marom EM, Moreira A. Germ cell tumours of the mediastinum. In: WHO Classification of Tumours Editorial Board. Thoracic tumours. Lyon (France): International Agency for Research on Cancer; 2021. (WHO classification of tumours series, 5th ed.; vol. 5). https://publications.iarc.fr/595.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "isaacs_jr_h_perinatal_fetal_and_neonatal_germ_cell_tumors_j_pediatr_surg_20043971003_1013",
+          "label": "Isaacs Jr. H. Perinatal (fetal and neonatal) germ cell tumors. J Pediatr Surg. 2004;39(7):1003-1013.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "isaacs_jr_h_germ_cell_tumors_tumors_of_the_fetus_and_newborn_vol_35_philadelphia_pa_saunders_1997",
+          "label": "Isaacs Jr. H. Germ Cell Tumors: Tumors of the Fetus and Newborn. Vol 35. Philadelphia, PA: Saunders; 1997.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "michael_h_hull_mt_ulbright_tm_foster_rs_miller_kd_primitive_neuroectodermal_tumors_arising_in_testic",
+          "label": "Michael H, Hull MT, Ulbright TM, Foster RS, Miller KD. Primitive neuroectodermal tumors arising in testicular germ cell neoplasms. Am J Surg Pathol. 1997 Aug;21(8):896-904. doi: 10.1097/00000478-199708000-00003. PMID: 9255252.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kao_cs_bangs_cd_aldrete_g_cherry_am_ulbright_tm_a_clinicopathologic_and_molecular_analysis_of_34_med",
+          "label": "Kao CS, Bangs CD, Aldrete G, Cherry AM, Ulbright TM. A Clinicopathologic and Molecular Analysis of 34 Mediastinal Germ Cell Tumors Suggesting Different Modes of Teratoma Development. Am J Surg Pathol. 2018 Dec;42(12):1662-1673. doi: 10.1097/PAS.0000000000001164. PMID: 30256256.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "noseworthy_j_lack_ee_kozakewich_hp_vawter_gf_welch_kj_sacrococcygeal_germ_cell_tumors_in_childhood_a",
+          "label": "Noseworthy J, Lack EE, Kozakewich HP, Vawter GF, Welch KJ. Sacrococcygeal germ cell tumors in childhood: an updated experience with 118 patients. J Pediatr Surg. 1981;16(3):358-364.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dehner_lp_neoplasms_of_the_fetus_and_neonate_in_naeye_rl_kissane_jm_kaufman_n_eds_perinatal_diseases",
+          "label": "Dehner LP. Neoplasms of the fetus and neonate. In: Naeye RL, Kissane JM, Kaufman N, eds. Perinatal Diseases, International Academy of Pathology. Vol. 22. Baltimore, MD: Williams and Wilkins; 1981:286-345.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schneider_dt_calaminus_g_koch_s_et_al_epidemiologic_analysis_of_1442_children_and_adolescents_regist",
+          "label": "Schneider DT, Calaminus G, Koch S, et al. Epidemiologic analysis of 1,442 children and adolescents registered in the German germ cell tumor protocols. Pediatr Blood Cancer. 2004;42(2):169-175.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "marina_n_london_wb_frazier_al_et_al_prognostic_factors_in_children_with_extragonadal_malignant_germ_",
+          "label": "Marina N, London WB, Frazier AL, et al. Prognostic factors in children with extragonadal malignant germ cell tumors: a pediatric intergroup study. J Clin Oncol. 2006;24(16):2544-2548.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "przygodzki_rm_hubbs_ae_zhao_fq_oleary_tj_primary_mediastinal_seminomas_evidence_of_single_and_multip",
+          "label": "Przygodzki RM, Hubbs AE, Zhao FQ, O'Leary TJ. Primary mediastinal seminomas: evidence of single and multiple KIT mutations. Lab Invest. 2002 Oct;82(10):1369-75. doi: 10.1097/01.lab.0000032410.46986.7b. PMID: 12379771.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moran_ca_suster_s_mediastinal_seminomas_with_prominent_cystic_changes_a_clinicopathologic_study_of_1",
+          "label": "Moran CA, Suster S. Mediastinal seminomas with prominent cystic changes: a clinicopathologic study of 10 cases. Am J Surg Pathol. 1995;19(9):1047-53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ulbright_tm_amin_mb_young_rh_tumors_of_the_testis_adnexa_spermatic_cord_and_scrotum_washington_dc_ar",
+          "label": "Ulbright TM, Amin MB, Young RH. Tumors of the Testis, Adnexa, Spermatic Cord, and Scrotum. Washington, DC: Armed Forces Institute of Pathology; 1999.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "e_grade",
+          "label": "E. Grade",
+          "required": true,
+          "type": "free_text",
+          "condition": "Immature Teratomas"
+        },
+        {
+          "field_id": "the_histologic_grade_of_the_tumor_is_based_on_3_factors_degree_of_immaturity_presence_of_a_neuroepit",
+          "label": "The histologic grade of the tumor is based on 3 factors: degree of immaturity, presence of a neuroepithelial component, and the quantity of the latter.1\n\nGrade 1 is given to neoplasms with some immaturity but with neuroepithelium absent or limited to a rare low-power magnification (X40) field within the tumor, and not more than 1 such focus in any slide.\n\nGrade 2 is given when immaturity and neuroepithelium were present to a greater degree than grade 1. Neuroepithelium is common but does not exceed 3 low-power microscopic fields in any 1 slide.\n\nGrade 3 is given when immaturity and neuroepithelium were prominent, the latter occupying 4 or more low-magnification microscopic fields within individual sections.\n\nCare should be taken in establishing a grade on biopsy specimens, and limitations of sampling should be noted. Of note, in gonadal (specifically ovarian) immature teratomas, there is a trend to utilize a two-tier system of grading, which has somewhat improved reproducibility.2 This low versus high grade system divides grade 1 tumors into low grade tumors, and a combination of grades 2 and 3 are considered high-grade tumors. Whether this is applicable in children or in extragonadal tumors remains to be determined.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "congenitalneonataltype_i_the_presence_or_grade_of_immaturity_as_defined_by_norris_et_al_for_ovarian_",
+          "label": "Congenital/Neonatal/Type I\nThe presence or grade of immaturity, as defined by Norris et al. for ovarian teratomas, is not predictive of malignant behavior in congenital EGCTs, although immature teratomas are more likely to have admixed yolk sac tumor. It is well recognized that incomplete surgical resection of neonatal teratomas is associated with recurrences of a pure yolk sac tumor, as seen in cases of sacrococcygeal teratoma for which coccygectomy was not performed.3 In some cases with recurrence, foci of the yolk sac tumor could not be identified in the original resected teratoma. It is unclear whether that is due to incomplete sampling of the original lesion or whether elements of a residual immature teratoma can give rise to a yolk sac tumor.\n\nPre-pubertal/Child/Type I\nIncreased patient age, sacrococcygeal location, and grade 2 to 3 immaturity are more frequently associated with admixed yolk sac tumor.3\n\nPost-pubertal/Adult/Type II\nImmature teratomas, like their testicular counterparts, are most commonly identified by cellular spindled stroma (i.e., immature mesenchyme) surrounding glandular epithelium. Immature neuroepithelial elements similar to those seen in immature teratomas of the ovary may also be identified. Immature neuroepithelium should be distinguished from mature ependyma, a relatively common finding in mature teratomas. Other admixed immature elements frequently include cartilage and glandular epithelium, but the diagnosis of immaturity does not typically depend on these elements. At present, there is no grading schema for extragonadal immature teratomas; however, it is reasonable to report the percentage of immature elements.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "norris_hj_zirkin_hj_benson_wl_immature_malignant_teratoma_of_the_ovary_a_clinical_and_pathologic_stu",
+          "label": "Norris HJ, Zirkin HJ, Benson WL. Immature (malignant) teratoma of the ovary: a clinical and pathologic study of 58 cases. Cancer. 1976;37(5):2359-2372.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oconnor_dm_norris_hj_the_influence_of_grade_on_the_outcome_of_stage_i_ovarian_immature_malignant_ter",
+          "label": "O’Connor DM, Norris HJ. The influence of grade on the outcome of stage I ovarian immature (malignant) teratomas and the reproducibility of grading. Int J Gynecol Pathol. 1994;13(4): 283e9.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "marina_nm_cushing_b_giller_r_et_al_complete_surgical_excision_is_effective_treatment_for_children_wi",
+          "label": "Marina NM, Cushing B, Giller R, et al. Complete surgical excision is effective treatment for children with immature teratomas with or without malignant elements: a Pediatric Oncology Group/Children's Cancer Group Intergroup study. J Clin Oncol. 1999;17(7):2137-2143.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "some_constitutional_syndromes_are_thought_to_have_an_increased_incidence_of_egcts_including_klinefel",
+          "label": "Some constitutional syndromes are thought to have an increased incidence of EGCTs, including Klinefelter1 and Down syndrome.2 The association of hematopoietic malignancies with mediastinal EGCTs was described in the Cytogenetics Note. Sarcomatous differentiation, which is most frequent in the mediastinum, may occur in association with teratomas or, less commonly, with other malignant GCTs. As in the gonads, secondary squamous cell carcinoma, adenosquamous carcinoma, and colonic-type adenocarcinoma may rarely complicate extragonadal teratomas.3 The presence of sarcomatous or carcinomatous elements portend a very poor prognosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aguirre_d_nieto_k_lazos_m_et_al_extragonadal_germ_cell_tumors_are_often_associated_with_klinefelter_",
+          "label": "Aguirre D, Nieto K, Lazos M, et al. Extragonadal germ cell tumors are often associated with Klinefelter syndrome. Hum Pathol. 2006;37(4):477-480.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "satge_d_sommelet_d_geneix_a_et_al_a_tumor_profile_in_down_syndrome_am_j_med_genet_1998783207_216",
+          "label": "Satge D, Sommelet D, Geneix A, et al. A tumor profile in Down syndrome. Am J Med Genet. 1998;78(3):207-216.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ulbright_tm_loehrer_pj_roth_lm_et_al_the_development_of_non_germ_cell_malignancies_within_germ_cell_",
+          "label": "Ulbright TM, Loehrer PJ, Roth LM, et al. The development of non-germ cell malignancies within germ cell tumors: a clinicopathologic study of 11 cases. Cancer. 1984;54(9):1824-1833.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_well_documented_that_type_ipediatric_gcts_are_distinct_from_type_iiaya_gcts_cytogenetically_al",
+          "label": "It is well documented that Type I/pediatric GCTs are distinct from Type II/AYA GCTs cytogenetically. Although the majority of AYA malignant GCTs have the isochromosome 12p abnormality, this aberration is detectable in <50% of children younger than 10 years.1 Recently, alterations in the WNT pathway have been documented in both Type I and Type II GCT.2\n\nThere is an unusual association between mediastinal GCTs, hematologic malignancies, and cytogenetics.3 Although it is unknown why they are associated with only mediastinal tumors, genetic studies have demonstrated that both the GCT and hematopoietic components are clonally related. The germ cell component is typically yolk sac tumor, but immature teratomas and other nonseminomatous GCTs are also described. The hematopoietic component frequently shows an isochromosome 12 [i(12p)], the most common genetic alteration in GCTs, but may additionally harbor translocations more typical of the specific morphologic phenotype [e.g., del (5q), trisomy 8]. This finding suggests that the non-i(12p) aberration determines the tumor phenotype.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "germ_cell_tumor_associated_acute_leukemias_are_an_ominous_finding_because_they_are_typically_refract",
+          "label": "Germ cell tumor-associated acute leukemias are an ominous finding because they are typically refractory to current treatment modalities, with a reported survival of less than 2 years in all reported patients. The main differential diagnostic consideration in this setting is a therapy-related myelodysplastic syndrome or acute leukemia. Therapy-related diseases can be distinguished by their occurrence later in the course (25 to 60 months), the absence of i(12p), and the possible presence of an etoposide-related translocation such as 11q23.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bussey_kj_lawce_hj_olson_sb_et_al_chromosome_abnormalities_of_eighty_one_pediatric_germ_cell_tumors_",
+          "label": "Bussey KJ, Lawce HJ, Olson SB, et al. Chromosome abnormalities of eighty-one pediatric germ cell tumors: sex-, age-, site-, and histopathology-related differences: a Children's Cancer Group study. Genes Chromosomes Cancer. 1999;25(2):134-146.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "xu_l_pierce_jl_sanchez_a_et_al_integrated_genomic_analysis_reveals_aberrations_in_wnt_signaling_in_g",
+          "label": "Xu L, Pierce JL, Sanchez A, et al. Integrated genomic analysis reveals aberrations in WNT signaling in germ cell tumors of childhood and adolescence. Nat Commun. 2023 May 6;14(1):2636.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ladanyi_m_samaniego_f_reuter_ve_et_al_cytogenetic_and_immunohistochemical_evidence_for_the_germ_cell",
+          "label": "Ladanyi M, Samaniego F, Reuter VE, et al. Cytogenetic and immunohistochemical evidence for the germ cell origin of a subset of acute leukemias associated with mediastinal germ cell tumors. J Natl Cancer Inst. 1990;82(3):221-227.4. Felix CA. Leukemias related to treatment with DNA topoisomerase II inhibitors. Med Pediatr Oncol. 2001;36(5):525-53.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "felix_ca_leukemias_related_to_treatment_with_dna_topoisomerase_ii_inhibitors_med_pediatr_oncol_20013",
+          "label": "Felix CA. Leukemias related to treatment with DNA topoisomerase II inhibitors. Med Pediatr Oncol. 2001;36(5):525-535.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tissue_immunohistochemistry_extragonadal_gcts_typically_show_immunoreactivity_patterns_identical_to_",
+          "label": "Tissue Immunohistochemistry\nExtragonadal GCTs typically show immunoreactivity patterns identical to their gonadal counterparts.1 In general, embryonal carcinoma, yolk sac tumor, choriocarcinoma, and the epithelial elements of teratoma all show cytokeratin AE1/AE3 reactivity. A dotlike paranuclear reactivity pattern to low-molecular-weight cytokeratin (i.e., CAM 5.2) is seen in up to 80% of mediastinal seminomas.\n\nStrong membranous CD117 (c-KIT) immunoreactivity has been reported in 75%-100% of seminomas2, but it is not specific. CD30 is also used in the workup of a poorly differentiated malignant neoplasm because it is positive in more than 80% of embryonal carcinomas, and it also marks a spectrum of hematopoietic malignancies.3\n\nNewer markers show better specificity for germ cells tumors. Nearly 100% of seminomas and embryonal carcinomas show nuclear reactivity for OCT4.4 OCT4 is rapidly becoming the marker of choice for documenting germ cell origin (i.e., seminoma or embryonal carcinoma) in the workup of an undifferentiated neoplasm. Yolk sac tumors and choriocarcinoma show cytoplasmic and membranous reactivity for the oncofetal protein glypican-3, with no significant reactivity in embryonal carcinoma or germinoma.5 Most recently, SALL4 has been shown to demonstrate strong nuclear staining in germinoma, embryonal carcinoma, and yolk sac tumors. SALL4 appears more sensitive than either glypican-3 or AFP for the diagnosis of yolk sac tumor.6 The mononuclear trophoblast cells of choriocarcinoma are also reactive for SALL4. LIN28 is a cytoplasmic marker that has a similar staining pattern of germ cell tumors as SALL4, including seminoma, embryonal carcinoma, yolk sac tumor, and choriocarcinoma. LIN28 also stains non-germ cell neoplasms, 7α-Fetoprotein.7\n\nα-Fetoprotein\nThe presence of minute, occult, yolk sac tumor elements in large sacrococcygeal teratomas can be overlooked. Histologic detection of foci of yolk sac tumor in sacrococcygeal teratomas is very important because serum AFP levels are not always helpful as a marker, being normally high in the newborn period as a result of fetal production.8 Moreover, primitive gut and liver tissues in preterm teratomas also react with the AFP antibody, which makes establishing the histologic diagnosis of this sometimes subtle malignancy difficult.\n\nMost of the tumor recurrences after congenital teratoma are yolk sac tumor, and AFP is useful in following these patients if the tumor is secretory. Neonatal levels are normally elevated, and the initial AFP level does not seem to correlate with the presence or absence of yolk sac tumor in neonatal teratomas. Postoperative monitoring can be useful, because the AFP level should fall after tumor excision, as it normally would in the neonate.9,10\n\nHuman Chorionic Gonadotropin\nSerum ß-HCG immunohistochemistry can be used to identify choriocarcinoma. Isolated syncytial trophoblasts can stain positively in seminomas or other tumor types with syncytial-trophoblasts. Evaluation of serum ß-HCG is also helpful in establishing the presence of occult choriocarcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "suster_s_moran_ca_dominguez_malagon_h_quevedo_blanco_p_germ_cell_tumors_of_the_mediastinum_and_testi",
+          "label": "Suster S, Moran CA, Dominguez-Malagon H, Quevedo-Blanco P. Germ cell tumors of the mediastinum and testis: a comparative immunohistochemical study of 120 cases. Hum Pathol. 1998;29(7):737-742.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leroy_x_augusto_d_leteurtre_e_gosselin_b_cd30_and_cd117_c_kit_used_in_combination_are_useful_for_dis",
+          "label": "Leroy X, Augusto D, Leteurtre E, Gosselin B. CD30 and CD117 (c-kit) used in combination are useful for distinguishing embryonal carcinoma from seminoma. J Histochem Cytochem. 2002;50(2):283-285.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ferreiro_ja_ber_h2_expression_in_testicular_germ_cell_tumors_hum_pathol_1994255522_524",
+          "label": "Ferreiro JA. Ber-H2 expression in testicular germ cell tumors. Hum Pathol. 1994;25(5):522-524.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "emerson_re_ulbright_tm_the_use_of_immunohistochemistry_in_the_differential_diagnosis_of_tumors_of_th",
+          "label": "Emerson RE, Ulbright TM. The use of immunohistochemistry in the differential diagnosis of tumors of the testis and paratestis. Semin Diagn Pathol. 2005;22(1):33-50.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zynger_dl_everton_mj_dimov_nd_chou_pm_yang_xj_expression_of_glypican_3_in_ovarian_and_extragonadal_g",
+          "label": "Zynger DL, Everton MJ, Dimov ND, Chou PM, Yang XJ. Expression of glypican 3 in ovarian and extragonadal germ cell tumors. Am J Clin Pathol. 2008;130(2):224-230.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cao_d_li_j_guo_cc_allan_rw_humphrey_pa_sall4_is_a_novel_diagnostic_marker_for_testicular_germ_cell_t",
+          "label": "Cao D, Li J, Guo CC, Allan RW, Humphrey PA. SALL4 is a novel diagnostic marker for testicular germ cell tumors. Am J Surg Pathol. 2009;33(7):1065-1077.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cao_d_liu_a_wang_f_allan_rw_mei_k_peng_y_du_j_guo_s_abel_tw_lane_z_ma_j_rodriguez_m_akhi_s_dehiya_n_",
+          "label": "Cao D, Liu A, Wang F, Allan RW, Mei K, Peng Y, Du J, Guo S, Abel TW, Lane Z, Ma J, Rodriguez M, Akhi S, Dehiya N, Li J. RNA-binding protein LIN28 is a marker for primary extragonadal germ cell tumors: an immunohistochemical study of 131 cases. Mod Pathol. 2011 Feb;24(2):288-96.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hawkins_e_issacs_h_cushing_b_rogers_p_occult_malignancy_in_neonatal_sacrococcygeal_teratomas_a_repor",
+          "label": "Hawkins E, Issacs H, Cushing B, Rogers P. Occult malignancy in neonatal sacrococcygeal teratomas: a report from a Combined Pediatric Oncology Group and Children's Cancer Group study. Am J Pediatr Hematol Oncol. 1993;15(4):406-409.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heerema_mckenney_a_harrison_mr_bratton_b_farrell_j_zaloudek_c_congenital_teratoma_a_clinicopathologi",
+          "label": "Heerema-McKenney A, Harrison MR, Bratton B, Farrell J, Zaloudek C. Congenital teratoma: a clinicopathologic study of 22 fetal and neonatal tumors. Am J Surg Pathol. 2005;29(1):29-38.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rescorla_fj_sawin_rs_coran_ag_dillon_pw_azizkhan_rg_long_term_outcome_for_infants_and_children_with_",
+          "label": "Rescorla FJ, Sawin RS, Coran AG, Dillon PW, Azizkhan RG. Long-term outcome for infants and children with sacrococcygeal teratoma: a report from the Childrens Cancer Group. J Pediatr Surg. 1998;33(2):171-176.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

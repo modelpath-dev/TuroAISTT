@@ -1,0 +1,2143 @@
+{
+  "template_id": "CentralNervousSystem.Bx.Res_1.0.0.1.REL_CAPCP",
+  "organ": "CENTRAL NERVOUS SYSTEM",
+  "protocol_posting_date": "September 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "history_of_prior_therapy_for_this_neoplasm",
+          "label": "History of Prior Therapy for this Neoplasm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_administered",
+              "label": "Not administered"
+            },
+            {
+              "value": "not_known",
+              "label": "Not known: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "administered",
+              "label": "Administered"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chemotherapy",
+          "label": "___ Chemotherapy",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radiation_therapy",
+          "label": "___ Radiation therapy",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "corticosteroids",
+          "label": "___ Corticosteroids",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "embolization",
+          "label": "___ Embolization",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "therapy_performed_type_not_specified",
+          "label": "___ Therapy performed, type not specified",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_specify",
+          "label": "___ Other (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "history_of_previous_tumor_and_or_familial_syndrome",
+          "label": "History of Previous Tumor and / or Familial Syndrome",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_known",
+              "label": "Not known: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "known",
+              "label": "Known (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "A"
+          ],
+          "condition": "not the current neoplasm"
+        },
+        {
+          "field_id": "neuroimaging_findings",
+          "label": "Neuroimaging Findings",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify",
+              "label": "Specify: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_available",
+              "label": "Not available"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "open_biopsy",
+              "label": "Open biopsy"
+            },
+            {
+              "value": "biopsy_with_intraoperative_consultation",
+              "label": "Biopsy with intraoperative consultation"
+            },
+            {
+              "value": "stereotactic_biopsy",
+              "label": "Stereotactic biopsy"
+            },
+            {
+              "value": "resection",
+              "label": "Resection"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "specimen_size_gross_description",
+          "label": "Specimen Size, Gross Description",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "for_fragmented_tissue_an_aggregate_size_may_be_given",
+          "label": "For fragmented tissue, an aggregate size may be given",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "skull_bone",
+              "label": "Skull / Bone"
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "frontal",
+              "label": "Frontal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "parietal",
+              "label": "Parietal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "temporal",
+              "label": "Temporal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "occipital",
+              "label": "Occipital: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "dura",
+              "label": "Dura"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "convexity_lobe",
+              "label": "Convexity / lobe (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "falx",
+              "label": "Falx"
+            },
+            {
+              "value": "tentorium",
+              "label": "Tentorium"
+            },
+            {
+              "value": "posterior_fossa",
+              "label": "Posterior fossa"
+            },
+            {
+              "value": "sphenoid_wing",
+              "label": "Sphenoid wing"
+            },
+            {
+              "value": "skull_base",
+              "label": "Skull base"
+            },
+            {
+              "value": "spinal",
+              "label": "Spinal"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "leptomeninges",
+              "label": "Leptomeninges"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "cerebral_convexity_lobe",
+              "label": "Cerebral convexity / lobe (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "posterior_fossa",
+              "label": "Posterior fossa"
+            },
+            {
+              "value": "spinal",
+              "label": "Spinal"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "brain",
+              "label": "Brain"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "cerebral_lobes",
+              "label": "Cerebral lobes"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "frontal",
+              "label": "Frontal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "temporal",
+              "label": "Temporal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "parietal",
+              "label": "Parietal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "occipital",
+              "label": "Occipital: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep_grey_matter",
+              "label": "Deep grey matter"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "basal_ganglia",
+              "label": "Basal ganglia"
+            },
+            {
+              "value": "thalamus",
+              "label": "Thalamus"
+            },
+            {
+              "value": "hypothalamus",
+              "label": "Hypothalamus"
+            },
+            {
+              "value": "ventricle",
+              "label": "Ventricle"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "lateral",
+              "label": "Lateral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "third",
+              "label": "Third: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "fourth",
+              "label": "Fourth: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cerebral_aqueduct",
+              "label": "Cerebral Aqueduct: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cerebellum",
+              "label": "Cerebellum"
+            },
+            {
+              "value": "brain_stem",
+              "label": "Brain stem"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "midbrain",
+              "label": "Midbrain: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pons",
+              "label": "Pons: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "medulla",
+              "label": "Medulla: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cerebellopontine_angle",
+              "label": "Cerebellopontine angle"
+            },
+            {
+              "value": "sellar_suprasellar_pituitary",
+              "label": "Sellar / Suprasellar / Pituitary"
+            },
+            {
+              "value": "pineal",
+              "label": "Pineal"
+            },
+            {
+              "value": "cranial_nerve",
+              "label": "Cranial nerve"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_i_xii_if_known",
+          "label": "Specify I-XII, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "i",
+              "label": "I"
+            },
+            {
+              "value": "ii",
+              "label": "II"
+            },
+            {
+              "value": "iii",
+              "label": "III"
+            },
+            {
+              "value": "iv",
+              "label": "IV"
+            },
+            {
+              "value": "v",
+              "label": "V"
+            },
+            {
+              "value": "vi",
+              "label": "VI"
+            },
+            {
+              "value": "vii",
+              "label": "VII"
+            },
+            {
+              "value": "viii",
+              "label": "VIII"
+            },
+            {
+              "value": "ix",
+              "label": "IX"
+            },
+            {
+              "value": "x",
+              "label": "X"
+            },
+            {
+              "value": "xi",
+              "label": "XI"
+            },
+            {
+              "value": "xii",
+              "label": "XII"
+            },
+            {
+              "value": "spine_bone",
+              "label": "Spine / Bone (vertebral column)"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "c1",
+              "label": "C1"
+            },
+            {
+              "value": "c2",
+              "label": "C2"
+            },
+            {
+              "value": "c3",
+              "label": "C3"
+            },
+            {
+              "value": "c4",
+              "label": "C4"
+            },
+            {
+              "value": "c5",
+              "label": "C5"
+            },
+            {
+              "value": "c6",
+              "label": "C6"
+            },
+            {
+              "value": "c7",
+              "label": "C7"
+            },
+            {
+              "value": "t1",
+              "label": "T1"
+            },
+            {
+              "value": "t2",
+              "label": "T2"
+            },
+            {
+              "value": "t3",
+              "label": "T3"
+            },
+            {
+              "value": "t4",
+              "label": "T4"
+            },
+            {
+              "value": "t5",
+              "label": "T5"
+            },
+            {
+              "value": "t6",
+              "label": "T6"
+            },
+            {
+              "value": "t7",
+              "label": "T7"
+            },
+            {
+              "value": "t8",
+              "label": "T8"
+            },
+            {
+              "value": "t9",
+              "label": "T9"
+            },
+            {
+              "value": "t10",
+              "label": "T10"
+            },
+            {
+              "value": "t11",
+              "label": "T11"
+            },
+            {
+              "value": "t12",
+              "label": "T12"
+            },
+            {
+              "value": "l1",
+              "label": "L1"
+            },
+            {
+              "value": "l2",
+              "label": "L2"
+            },
+            {
+              "value": "l3",
+              "label": "L3"
+            },
+            {
+              "value": "l4",
+              "label": "L4"
+            },
+            {
+              "value": "l5",
+              "label": "L5"
+            },
+            {
+              "value": "sacrum",
+              "label": "Sacrum"
+            },
+            {
+              "value": "coccyx",
+              "label": "Coccyx"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "spinal_cord",
+              "label": "Spinal cord"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "c1",
+              "label": "C1"
+            },
+            {
+              "value": "c2",
+              "label": "C2"
+            },
+            {
+              "value": "c3",
+              "label": "C3"
+            },
+            {
+              "value": "c4",
+              "label": "C4"
+            },
+            {
+              "value": "c5",
+              "label": "C5"
+            },
+            {
+              "value": "c6",
+              "label": "C6"
+            },
+            {
+              "value": "c7",
+              "label": "C7"
+            },
+            {
+              "value": "t1",
+              "label": "T1"
+            },
+            {
+              "value": "t2",
+              "label": "T2"
+            },
+            {
+              "value": "t3",
+              "label": "T3"
+            },
+            {
+              "value": "t4",
+              "label": "T4"
+            },
+            {
+              "value": "t5",
+              "label": "T5"
+            },
+            {
+              "value": "t6",
+              "label": "T6"
+            },
+            {
+              "value": "t7",
+              "label": "T7"
+            },
+            {
+              "value": "t8",
+              "label": "T8"
+            },
+            {
+              "value": "t9",
+              "label": "T9"
+            },
+            {
+              "value": "t10",
+              "label": "T10"
+            },
+            {
+              "value": "t11",
+              "label": "T11"
+            },
+            {
+              "value": "t12",
+              "label": "T12"
+            },
+            {
+              "value": "l1",
+              "label": "L1"
+            },
+            {
+              "value": "l2",
+              "label": "L2"
+            },
+            {
+              "value": "l3",
+              "label": "L3"
+            },
+            {
+              "value": "l4",
+              "label": "L4"
+            },
+            {
+              "value": "l5",
+              "label": "L5"
+            },
+            {
+              "value": "sacral",
+              "label": "Sacral"
+            },
+            {
+              "value": "coccygeal",
+              "label": "Coccygeal"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "spinal_nerve_root",
+              "label": "Spinal nerve root(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_precise_location_if_known",
+          "label": "Specify Precise Location, if known",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "c1",
+              "label": "C1"
+            },
+            {
+              "value": "c2",
+              "label": "C2"
+            },
+            {
+              "value": "c3",
+              "label": "C3"
+            },
+            {
+              "value": "c4",
+              "label": "C4"
+            },
+            {
+              "value": "c5",
+              "label": "C5"
+            },
+            {
+              "value": "c6",
+              "label": "C6"
+            },
+            {
+              "value": "c7",
+              "label": "C7"
+            },
+            {
+              "value": "t1",
+              "label": "T1"
+            },
+            {
+              "value": "t2",
+              "label": "T2"
+            },
+            {
+              "value": "t3",
+              "label": "T3"
+            },
+            {
+              "value": "t4",
+              "label": "T4"
+            },
+            {
+              "value": "t5",
+              "label": "T5"
+            },
+            {
+              "value": "t6",
+              "label": "T6"
+            },
+            {
+              "value": "t7",
+              "label": "T7"
+            },
+            {
+              "value": "t8",
+              "label": "T8"
+            },
+            {
+              "value": "t9",
+              "label": "T9"
+            },
+            {
+              "value": "t10",
+              "label": "T10"
+            },
+            {
+              "value": "t11",
+              "label": "T11"
+            },
+            {
+              "value": "t12",
+              "label": "T12"
+            },
+            {
+              "value": "l1",
+              "label": "L1"
+            },
+            {
+              "value": "l2",
+              "label": "L2"
+            },
+            {
+              "value": "l3",
+              "label": "L3"
+            },
+            {
+              "value": "l4",
+              "label": "L4"
+            },
+            {
+              "value": "l5",
+              "label": "L5"
+            },
+            {
+              "value": "sacral",
+              "label": "Sacral"
+            },
+            {
+              "value": "coccygeal",
+              "label": "Coccygeal"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_laterality",
+          "label": "Tumor Laterality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "midline",
+              "label": "Midline"
+            },
+            {
+              "value": "bilateral",
+              "label": "Bilateral"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal (specify number of lesions): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "integrated_diagnosis",
+          "label": "Integrated Diagnosis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gliomas_glioneuronal_tumors_and_neuronal_tumors",
+              "label": "Gliomas, glioneuronal tumors, and neuronal tumors"
+            }
+          ],
+          "notes": [
+            "F",
+            "G"
+          ],
+          "condition": "CNS WHO 2021"
+        },
+        {
+          "field_id": "adult_type_diffuse_gliomas",
+          "label": "Adult-type diffuse gliomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "astrocytoma_idh_mutant",
+              "label": "Astrocytoma, IDH-mutant"
+            },
+            {
+              "value": "oligodendroglioma_idh_mutant_and_1p19q_codeleted",
+              "label": "Oligodendroglioma, IDH-mutant and 1p/19q-codeleted"
+            },
+            {
+              "value": "glioblastoma_idh_wildtype",
+              "label": "Glioblastoma, IDH-wildtype"
+            }
+          ]
+        },
+        {
+          "field_id": "pediatric_type_diffuse_low_grade_gliomas",
+          "label": "Pediatric-type diffuse low-grade gliomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "diffuse_astrocytoma_myb_or_mybl1_altered",
+              "label": "Diffuse astrocytoma, MYB- or MYBL1-altered"
+            },
+            {
+              "value": "angiocentric_glioma",
+              "label": "Angiocentric glioma"
+            },
+            {
+              "value": "polymorphous_low_grade_neuroepithelial_tumor_of_the_young",
+              "label": "Polymorphous low-grade neuroepithelial tumor of the young"
+            },
+            {
+              "value": "diffuse_low_grade_glioma_mapk_pathway_altered",
+              "label": "Diffuse low-grade glioma, MAPK pathway-altered"
+            }
+          ]
+        },
+        {
+          "field_id": "pediatric_type_diffuse_high_grade_gliomas",
+          "label": "Pediatric-type diffuse high-grade gliomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "diffuse_midline_glioma_h3_k27_altered",
+              "label": "Diffuse midline glioma, H3 K27-altered"
+            },
+            {
+              "value": "diffuse_hemispheric_glioma_h3_g34_mutant",
+              "label": "Diffuse hemispheric glioma, H3 G34-mutant"
+            },
+            {
+              "value": "diffuse_pediatric_type_high_grade_glioma_h3_wildtype_and_idh_wildtype",
+              "label": "Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype"
+            },
+            {
+              "value": "infant_type_hemispheric_glioma",
+              "label": "Infant-type hemispheric glioma"
+            }
+          ]
+        },
+        {
+          "field_id": "circumscribed_astrocytic_gliomas",
+          "label": "Circumscribed astrocytic gliomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pilocytic_astrocytoma",
+              "label": "Pilocytic astrocytoma"
+            },
+            {
+              "value": "high_grade_astrocytoma_with_piloid_features",
+              "label": "High-grade astrocytoma with piloid features"
+            },
+            {
+              "value": "pleomorphic_xanthoastrocytoma",
+              "label": "Pleomorphic xanthoastrocytoma"
+            },
+            {
+              "value": "subependymal_giant_cell_astrocytoma",
+              "label": "Subependymal giant cell astrocytoma"
+            },
+            {
+              "value": "chordoid_glioma",
+              "label": "Chordoid glioma"
+            },
+            {
+              "value": "astroblastoma_mn1_altered",
+              "label": "Astroblastoma, MN1-altered"
+            }
+          ]
+        },
+        {
+          "field_id": "glioneuronal_and_neuronal_tumors",
+          "label": "Glioneuronal and neuronal tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ganglioglioma",
+              "label": "Ganglioglioma"
+            },
+            {
+              "value": "gangliocytoma",
+              "label": "Gangliocytoma"
+            },
+            {
+              "value": "desmoplastic_infantile_ganglioglioma",
+              "label": "Desmoplastic infantile ganglioglioma"
+            },
+            {
+              "value": "desmoplastic_infantile_astrocytoma",
+              "label": "Desmoplastic infantile astrocytoma"
+            },
+            {
+              "value": "dysembryoplastic_neuroepithelial_tumor",
+              "label": "Dysembryoplastic neuroepithelial tumor"
+            },
+            {
+              "value": "diffuse_glioneuronal_tumor_with_oligodendroglioma_like_features_and_nuclear_clusters",
+              "label": "Diffuse glioneuronal tumor with oligodendroglioma-like features and nuclear clusters"
+            },
+            {
+              "value": "papillary_glioneuronal_tumor",
+              "label": "Papillary glioneuronal tumor"
+            },
+            {
+              "value": "rosette_forming_glioneuronal_tumor",
+              "label": "Rosette-forming glioneuronal tumor"
+            },
+            {
+              "value": "myxoid_glioneuronal_tumor",
+              "label": "Myxoid glioneuronal tumor"
+            },
+            {
+              "value": "diffuse_leptomeningeal_glioneuronal_tumor",
+              "label": "Diffuse leptomeningeal glioneuronal tumor"
+            },
+            {
+              "value": "multinodular_and_vacuolating_neuronal_tumor",
+              "label": "Multinodular and vacuolating neuronal tumor"
+            },
+            {
+              "value": "dysplastic_cerebellar_gangliocytoma",
+              "label": "Dysplastic cerebellar gangliocytoma (Lhermitte-Duclos disease)"
+            },
+            {
+              "value": "central_neurocytoma",
+              "label": "Central neurocytoma"
+            },
+            {
+              "value": "extraventricular_neurocytoma",
+              "label": "Extraventricular neurocytoma"
+            },
+            {
+              "value": "cerebellar_liponeurocytoma",
+              "label": "Cerebellar liponeurocytoma"
+            }
+          ]
+        },
+        {
+          "field_id": "ependymal_tumors",
+          "label": "Ependymal tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "supratentorial_ependymoma",
+              "label": "Supratentorial ependymoma"
+            },
+            {
+              "value": "supratentorial_ependymoma_zfta_fusion_positive",
+              "label": "Supratentorial ependymoma, ZFTA fusion-positive"
+            },
+            {
+              "value": "supratentorial_ependymoma_yap1_fusion_positive",
+              "label": "Supratentorial ependymoma, YAP1 fusion-positive"
+            },
+            {
+              "value": "posterior_fossa_ependymoma",
+              "label": "Posterior fossa ependymoma"
+            },
+            {
+              "value": "posterior_fossa_group_a",
+              "label": "Posterior fossa group A (PFA) ependymoma"
+            },
+            {
+              "value": "posterior_fossa_group_b",
+              "label": "Posterior fossa group B (PFB) ependymoma"
+            },
+            {
+              "value": "spinal_ependymoma",
+              "label": "Spinal ependymoma"
+            },
+            {
+              "value": "spinal_ependymoma_mycn_amplified",
+              "label": "Spinal ependymoma, MYCN-amplified"
+            },
+            {
+              "value": "myxopapillary_ependymoma",
+              "label": "Myxopapillary ependymoma"
+            },
+            {
+              "value": "subependymoma",
+              "label": "Subependymoma"
+            },
+            {
+              "value": "choroid_plexus_tumors",
+              "label": "Choroid plexus tumors"
+            },
+            {
+              "value": "choroid_plexus_papilloma",
+              "label": "Choroid plexus papilloma"
+            },
+            {
+              "value": "atypical_choroid_plexus_papilloma",
+              "label": "Atypical choroid plexus papilloma"
+            },
+            {
+              "value": "choroid_plexus_carcinoma",
+              "label": "Choroid plexus carcinoma"
+            },
+            {
+              "value": "medulloblastoma",
+              "label": "Medulloblastoma"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "must_select_both_molecularly_defined_and_histologically_defined_subtypes",
+          "label": "Must select both molecularly defined and histologically defined subtypes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "molecularly_defined_medulloblastomas",
+          "label": "Molecularly Defined Medulloblastomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "medulloblastoma_wnt_activated",
+              "label": "Medulloblastoma, WNT-activated"
+            },
+            {
+              "value": "medulloblastoma_shh_activated_and_tp53_wildtype",
+              "label": "Medulloblastoma, SHH-activated and TP53-wildtype"
+            },
+            {
+              "value": "medulloblastoma_shh_activated_and_tp53_mutant",
+              "label": "Medulloblastoma, SHH-activated and TP53-mutant"
+            },
+            {
+              "value": "medulloblastoma_non_wnt_non_shh",
+              "label": "Medulloblastoma, non-WNT / non-SHH"
+            }
+          ]
+        },
+        {
+          "field_id": "histologically_defined_medulloblastomas",
+          "label": "Histologically Defined Medulloblastomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "classic_medulloblastoma",
+              "label": "Classic medulloblastoma"
+            },
+            {
+              "value": "desmoplastic_nodular_medulloblastoma",
+              "label": "Desmoplastic / nodular medulloblastoma"
+            },
+            {
+              "value": "medulloblastoma_with_extensive_nodularity",
+              "label": "Medulloblastoma with extensive nodularity"
+            },
+            {
+              "value": "large_cell_anaplastic_medulloblastoma",
+              "label": "Large cell / anaplastic medulloblastoma"
+            },
+            {
+              "value": "other_cns_embryonal_tumors",
+              "label": "Other CNS embryonal tumors"
+            },
+            {
+              "value": "atypical_teratoid_rhabdoid_tumor",
+              "label": "Atypical teratoid / rhabdoid tumor"
+            },
+            {
+              "value": "cribriform_neuroepithelial_tumor",
+              "label": "Cribriform neuroepithelial tumor"
+            },
+            {
+              "value": "embryonal_tumor_with_multilayered_rosettes",
+              "label": "Embryonal tumor with multilayered rosettes"
+            },
+            {
+              "value": "cns_neuroblastoma_foxr2_activated",
+              "label": "CNS neuroblastoma, FOXR2-activated"
+            },
+            {
+              "value": "cns_tumor_with_bcor_internal_tandem_duplication",
+              "label": "CNS tumor with BCOR internal tandem duplication"
+            },
+            {
+              "value": "cns_embryonal_tumor_nec_nos",
+              "label": "CNS embryonal tumor, NEC / NOS"
+            },
+            {
+              "value": "pineal_tumors",
+              "label": "Pineal tumors"
+            },
+            {
+              "value": "pineocytoma",
+              "label": "Pineocytoma"
+            },
+            {
+              "value": "pineal_parenchymal_tumor_of_intermediate_differentiation",
+              "label": "Pineal parenchymal tumor of intermediate differentiation"
+            },
+            {
+              "value": "pineoblastoma",
+              "label": "Pineoblastoma"
+            },
+            {
+              "value": "papillary_tumor_of_the_pineal_region",
+              "label": "Papillary tumor of the pineal region"
+            },
+            {
+              "value": "desmoplastic_myxoid_tumor_of_the_pineal_region_smarcb1_mutant",
+              "label": "Desmoplastic myxoid tumor of the pineal region, SMARCB1-mutant"
+            },
+            {
+              "value": "cranial_and_paraspinal_nerve_tumors",
+              "label": "Cranial and paraspinal nerve tumors"
+            },
+            {
+              "value": "schwannoma",
+              "label": "Schwannoma"
+            },
+            {
+              "value": "neurofibroma",
+              "label": "Neurofibroma"
+            },
+            {
+              "value": "plexiform_neurofibroma",
+              "label": "Plexiform neurofibroma"
+            },
+            {
+              "value": "perineurioma",
+              "label": "Perineurioma"
+            },
+            {
+              "value": "hybrid_nerve_sheath_tumor",
+              "label": "Hybrid nerve sheath tumor (specify subtype(s), if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "malignant_melanotic_nerve_sheath_tumor",
+              "label": "Malignant melanotic nerve sheath tumor"
+            },
+            {
+              "value": "malignant_peripheral_nerve_sheath_tumor",
+              "label": "Malignant peripheral nerve sheath tumor"
+            },
+            {
+              "value": "cauda_equina_neuroendocrine_tumor",
+              "label": "Cauda equina neuroendocrine tumor (previously paraganglioma)"
+            },
+            {
+              "value": "meningioma",
+              "label": "Meningioma (specify subtype(s), if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mesenchymal_non_meningothelial_tumors_involving_the_cns",
+              "label": "Mesenchymal, non-meningothelial tumors involving the CNS"
+            }
+          ]
+        },
+        {
+          "field_id": "fibroblastic_and_myofibroblastic_tumors",
+          "label": "Fibroblastic and myofibroblastic tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "solitary_fibrous_tumor",
+              "label": "Solitary fibrous tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "vascular_tumors",
+          "label": "Vascular tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "hemangioma",
+              "label": "Hemangioma"
+            },
+            {
+              "value": "cavernous_malformation",
+              "label": "Cavernous malformation"
+            },
+            {
+              "value": "arteriovenous_malformation",
+              "label": "Arteriovenous malformation"
+            },
+            {
+              "value": "capillary_telangiectasia",
+              "label": "Capillary telangiectasia"
+            },
+            {
+              "value": "hemangioblastoma",
+              "label": "Hemangioblastoma"
+            }
+          ]
+        },
+        {
+          "field_id": "skeletal_muscle_tumors",
+          "label": "Skeletal muscle tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "embryonal_rhabdomyosarcoma",
+              "label": "Embryonal rhabdomyosarcoma"
+            },
+            {
+              "value": "alveolar_rhabdomyosarcoma",
+              "label": "Alveolar rhabdomyosarcoma"
+            },
+            {
+              "value": "rhabdomyosarcoma_pleomorphic_type",
+              "label": "Rhabdomyosarcoma, pleomorphic type"
+            },
+            {
+              "value": "spindle_cell_rhabdomyosarcoma",
+              "label": "Spindle cell rhabdomyosarcoma"
+            }
+          ]
+        },
+        {
+          "field_id": "tumors_of_uncertain_differentiation",
+          "label": "Tumors of uncertain differentiation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intracranial_mesenchymal_tumor_fet",
+              "label": "Intracranial mesenchymal tumor, FET::CREB fusion-positive"
+            },
+            {
+              "value": "cic_rearranged_sarcoma",
+              "label": "CIC-rearranged sarcoma"
+            },
+            {
+              "value": "primary_intracranial_sarcoma_dicer1_mutant",
+              "label": "Primary intracranial sarcoma, DICER1-mutant"
+            },
+            {
+              "value": "ewing_sarcoma",
+              "label": "Ewing sarcoma"
+            }
+          ]
+        },
+        {
+          "field_id": "chondrogenic_tumors",
+          "label": "Chondrogenic tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mesenchymal_chondrosarcoma",
+              "label": "Mesenchymal chondrosarcoma"
+            },
+            {
+              "value": "chondrosarcoma",
+              "label": "Chondrosarcoma"
+            },
+            {
+              "value": "dedifferentiated_chondrosarcoma",
+              "label": "Dedifferentiated chondrosarcoma"
+            }
+          ]
+        },
+        {
+          "field_id": "notochordal_tumors",
+          "label": "Notochordal tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "chordoma",
+              "label": "Chordoma"
+            },
+            {
+              "value": "melanocytic_tumors",
+              "label": "Melanocytic tumors"
+            }
+          ]
+        },
+        {
+          "field_id": "diffuse_meningeal_melanocytic_neoplasms",
+          "label": "Diffuse meningeal melanocytic neoplasms",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "meningeal_melanocytosis",
+              "label": "Meningeal melanocytosis"
+            },
+            {
+              "value": "meningeal_melanomatosis",
+              "label": "Meningeal melanomatosis"
+            }
+          ]
+        },
+        {
+          "field_id": "circumscribed_meningeal_melanocytic_neoplasms",
+          "label": "Circumscribed meningeal melanocytic neoplasms",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "meningeal_melanocytoma",
+              "label": "Meningeal melanocytoma"
+            },
+            {
+              "value": "meningeal_melanoma",
+              "label": "Meningeal melanoma"
+            },
+            {
+              "value": "hematolymphoid_tumors_involving_the_cns",
+              "label": "Hematolymphoid tumors involving the CNS"
+            }
+          ]
+        },
+        {
+          "field_id": "cns_lymphomas",
+          "label": "CNS Lymphomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "primary_diffuse_large_b_cell_lymphoma_of_the_cns",
+              "label": "Primary diffuse large B-cell lymphoma of the CNS"
+            },
+            {
+              "value": "immunodeficiency_associated_cns_lymphoma",
+              "label": "Immunodeficiency-associated CNS lymphoma"
+            },
+            {
+              "value": "lymphomatoid_granulomatosis",
+              "label": "Lymphomatoid granulomatosis"
+            },
+            {
+              "value": "intravascular_large_b_cell_lymphoma",
+              "label": "Intravascular large B-cell lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "miscellaneous_rare_lymphomas_in_the_cns",
+          "label": "Miscellaneous rare lymphomas in the CNS",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "malt_lymphoma_of_the_dura",
+              "label": "MALT lymphoma of the dura"
+            },
+            {
+              "value": "other_low_grade_b_cell_lymphomas_of_the_cns",
+              "label": "Other low-grade B-cell lymphomas of the CNS (specify subtype(s), if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anaplastic_large_cell_lymphoma",
+              "label": "Anaplastic large cell lymphoma (ALK+ / ALK-)"
+            },
+            {
+              "value": "t_cell_lymphoma",
+              "label": "T-cell lymphoma"
+            },
+            {
+              "value": "nk_t_cell_lymphoma",
+              "label": "NK / T-cell lymphoma"
+            }
+          ]
+        },
+        {
+          "field_id": "histiocytic_tumors",
+          "label": "Histiocytic tumors",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "erdheim_chester_disease",
+              "label": "Erdheim-Chester disease"
+            },
+            {
+              "value": "rosai_dorfman_disease",
+              "label": "Rosai-Dorfman disease"
+            },
+            {
+              "value": "juvenile_xanthogranuloma",
+              "label": "Juvenile xanthogranuloma"
+            },
+            {
+              "value": "langerhans_cell_histiocytosis",
+              "label": "Langerhans cell histiocytosis"
+            },
+            {
+              "value": "histiocytic_sarcoma",
+              "label": "Histiocytic sarcoma"
+            },
+            {
+              "value": "germ_cell_tumors",
+              "label": "Germ cell tumors"
+            },
+            {
+              "value": "mature_teratoma",
+              "label": "Mature teratoma"
+            },
+            {
+              "value": "immature_teratoma",
+              "label": "Immature teratoma"
+            },
+            {
+              "value": "teratoma_with_somatic_type_malignancy",
+              "label": "Teratoma with somatic-type malignancy"
+            },
+            {
+              "value": "germinoma",
+              "label": "Germinoma"
+            },
+            {
+              "value": "embryonal_carcinoma",
+              "label": "Embryonal carcinoma"
+            },
+            {
+              "value": "yolk_sac_tumor",
+              "label": "Yolk sac tumor"
+            },
+            {
+              "value": "choriocarcinoma",
+              "label": "Choriocarcinoma"
+            },
+            {
+              "value": "mixed_germ_cell_tumor",
+              "label": "Mixed germ cell tumor (specify subtype(s), if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumors_of_the_sellar_region",
+              "label": "Tumors of the sellar region"
+            },
+            {
+              "value": "adamantinomatous_craniopharyngioma",
+              "label": "Adamantinomatous craniopharyngioma"
+            },
+            {
+              "value": "papillary_craniopharyngioma",
+              "label": "Papillary craniopharyngioma"
+            },
+            {
+              "value": "pituicytoma",
+              "label": "Pituicytoma"
+            },
+            {
+              "value": "granular_cell_tumor_of_the_sellar_region",
+              "label": "Granular cell tumor of the sellar region"
+            },
+            {
+              "value": "spindle_cell_oncocytoma",
+              "label": "Spindle cell oncocytoma"
+            },
+            {
+              "value": "pituitary_adenoma_pituitary_neuroendocrine_tumor",
+              "label": "Pituitary adenoma / pituitary neuroendocrine tumor (PitNET)"
+            },
+            {
+              "value": "pituitary_blastoma",
+              "label": "Pituitary blastoma"
+            },
+            {
+              "value": "other",
+              "label": "Other (e.g., NEC, NOS) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            }
+          ]
+        },
+        {
+          "field_id": "specify_histologic_type",
+          "label": "Specify Histologic Type: _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_type_comments",
+          "label": "Histologic Type Comments: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "integrated_histologic_molecular_grade",
+          "label": "Integrated Histologic Molecular Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cns_who_grade_1",
+              "label": "CNS WHO grade 1"
+            },
+            {
+              "value": "cns_who_grade_2",
+              "label": "CNS WHO grade 2"
+            },
+            {
+              "value": "cns_who_grade_3",
+              "label": "CNS WHO grade 3"
+            },
+            {
+              "value": "cns_who_grade_4",
+              "label": "CNS WHO grade 4"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_assessed",
+              "label": "Cannot be assessed: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "H"
+          ],
+          "condition": "CNS WHO 2021"
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "I"
+          ],
+          "condition": "histological evidence of prior therapy"
+        },
+        {
+          "field_id": "specify_percentage_of_tumor_that_is_necrotic",
+          "label": "Specify Percentage of Tumor that is Necrotic: _________________ %",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_pathologic_findings_specify",
+          "label": "Additional Pathologic Findings (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "molecular_information",
+          "label": "Molecular Information",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "specify_test",
+              "label": "Specify test(s) and results: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pending",
+              "label": "Pending (specify test(s)): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "designate_blocks_for_future_studies",
+          "label": "Designate Block(s) for Future Studies: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "previous_therapy_for_cns_tumors_surgery_radiation_and_chemotherapy_are_standard_therapeutic_options_",
+          "label": "Previous Therapy for CNS Tumors\nSurgery, radiation, and chemotherapy are standard therapeutic options for brain tumors. However, these therapies pose neurotoxicity risks with long-term complications including radiation necrosis, chemotherapy-associated leukoencephalopathy, and secondary neoplasms. A tissue diagnosis remains the gold standard to assess for treatment response and treatment-related changes. Treatment-associated changes such as cytologic atypia, inflammation, vasculopathy, and tumor necrosis can create diagnostic challenges, so providing a detailed therapy history is essential for adequate specimen interpretation.1\n\nPrevious Diagnoses or CNS Biopsies\nKnowledge of the presence or absence of previous intracranial or extracranial disease (e.g., immunosuppression or previous CNS or other primary neoplasm) is essential for specimen interpretation. If a previous tumor is included in the differential diagnosis, it is useful to have microscopic slides of the lesion available for review and comparison.2\n\nFamily History of Cancer or Primary CNS Tumors\nSeveral genetic conditions/syndromes are associated with an increased predisposition to the development of specific forms of CNS neoplasms (e.g., neurofibromatosis types 1 and 2, constitutional mismatch repair syndrome, Lynch syndrome, tuberous sclerosis, von Hippel-Lindau, Cowden, Li-Fraumeni, and Gorlin syndromes).3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bette_kleinschmidt_demasters_tarik_tihan_fausto_rodriguez_diagnostic_pathology_neuropathology_2nd_ed",
+          "label": "Bette Kleinschmidt-DeMasters, Tarik Tihan, Fausto Rodriguez. Diagnostic Pathology: Neuropathology. 2nd ed, Philadelphia: Elsevier; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perry_a_brat_dj_practical_surgical_pathology_a_diagnostic_approach_2nd_ed_philadelphia_elsevier_2018",
+          "label": "Perry A, Brat DJ. Practical Surgical Pathology: A Diagnostic Approach. 2nd ed. Philadelphia: Elsevier; 2018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "knowledge_of_neuroimaging_features_is_extremely_helpful_in_specimen_interpretation123_a_differential",
+          "label": "Knowledge of neuroimaging features is extremely helpful in specimen interpretation.1,2,3 A differential diagnosis may be generated based on patient age, tumor location, and neuroimaging features. Neuroimaging also can be helpful in providing correlation with or highlighting discrepancies with pathologic diagnosis (e.g., contrast enhancement with hypocellularity). A close collaboration with the neuroradiologist and neurosurgeon is essential.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vincentelli_c_hwang_sn_holder_ca_brat_dj_the_use_of_neuroimaging_to_guide_the_histologic_diagnosis_o",
+          "label": "Vincentelli C, Hwang SN, Holder CA, Brat DJ. The use of neuroimaging to guide the histologic diagnosis of central nervous system lesions. Adv Anat Pathol. 2012; 19:97-107.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "glastonbury_cm_tihan_t_practical_neuroimaging_of_central_nervous_system_tumors_for_surgical_patholog",
+          "label": "Glastonbury CM, Tihan T. Practical neuroimaging of central nervous system tumors for surgical pathologists. Surg Pathol Clin. 2015 Mar;8(1):1-2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jaimes_c_poussaint_ty_primary_neoplasms_of_the_pediatric_brain_radiol_clin_north_am_2019_nov5761163_",
+          "label": "Jaimes C, Poussaint TY. Primary Neoplasms of the Pediatric Brain. Radiol Clin North Am. 2019 Nov;57(6):1163-1175.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_useful_to_know_if_the_specimen_was_procured_by_open_craniotomy_or_stereotactic_biopsy_since_tu",
+          "label": "It is useful to know if the specimen was procured by open craniotomy or stereotactic biopsy. Since tumors may be heterogeneous, adequate sampling is an issue. The reliability of the prognostic information derived from such specimens may vary depending on how the specimen was obtained.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_most_cns_tumors_specimen_size_is_not_used_for_grading_however_in_heterogeneous_lesions_tissue_sa",
+          "label": "For most CNS tumors, specimen size is not used for grading. However, in heterogeneous lesions, tissue sampling may become important, and the size of the biopsy relative to the overall size of the lesion provides useful information concerning whether the sample is representative of the overall lesion. The total specimen size may not correspond to the tumor size within the specimen, and this discrepancy should be noted. The protocol may not be applicable to a biopsy specimen if the tissue sample is limited.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "since_the_anatomic_site_of_a_neoplasm_may_correlate_with_tumor_type_and_prognosis_it_should_be_recor",
+          "label": "Since the anatomic site of a neoplasm may correlate with tumor type and prognosis, it should be recorded, if known.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_skull_location_specify_bone_involved_such_as_frontal_parietal_temporal_occipital_etc_if_known_th",
+          "label": "For skull location, specify bone involved, such as frontal, parietal, temporal, occipital, etc., if known. The College of American Pathologists (CAP) cancer protocol for bone should be used for primary tumors of bone.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_dural_location_indicate_cerebral_convexitylobe_falx_tentorium_posterior_fossa_sphenoid_wing_skul",
+          "label": "For dural location, indicate cerebral convexity/lobe, falx, tentorium, posterior fossa, sphenoid wing, skull base, spinal, or other, if known.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_leptomeningeal_location_indicate_cerebral_convexitylobe_posterior_fossa_spinal_or_other_if_known",
+          "label": "For leptomeningeal location, indicate cerebral convexity/lobe, posterior fossa, spinal, or other, if known.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_cerebral_lobe_location_indicate_frontal_temporal_parietal_or_occipital_lobe_if_known",
+          "label": "For cerebral lobe location, indicate frontal, temporal, parietal, or occipital lobe, if known.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_a_deep_gray_matter_location_indicate_basal_ganglia_thalamus_or_hypothalamus",
+          "label": "For a deep gray matter location, indicate basal ganglia, thalamus, or hypothalamus.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_an_intraventricular_location_indicate_lateral_third_fourth_or_cerebral_aqueduct_if_known",
+          "label": "For an intraventricular location, indicate lateral, third, fourth, or cerebral aqueduct, if known.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_a_brain_stem_location_indicate_midbrain_pons_or_medulla_if_known",
+          "label": "For a brain stem location, indicate midbrain, pons, or medulla, if known.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_spine_vertebral_bone_spinal_cord_spinal_root_or_spinal_ganglion_indicate_level_eg_c5_t2_l3_if_kn",
+          "label": "For spine (vertebral bone), spinal cord, spinal root or spinal ganglion, indicate level (e.g., C5, T2, L3), if known. The CAP cancer protocol for bone should be used for primary tumors of bone.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_laterality_of_a_neoplasm_should_be_indicated_as_involving_the_left_or_right_side_of_the_cns_stru",
+          "label": "The laterality of a neoplasm should be indicated as involving the left or right side of the CNS structure. In some instances, such as tumors arising in the pineal, pituitary, third ventricle, or other locations, the tumor will be situated in the midline. A tumor would be considered bilateral if it involved both sides of the brain, such as glioblastoma extending across the corpus callosum to involve the left and right hemispheres. The focality of a lesion should be indicated, if possible. Multifocality implies that multiple, noncontiguous lesions are noted on neuroimaging, such as might be seen in primary CNS lymphoma. A solitary lesion would be considered unifocal.\n\nMargins\nResection margins provide no prognostic information and generally are not required for most CNS neoplasms.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "laurini_ja_protocol_for_the_examination_of_resection_specimens_from_patients_with_primary_tumors_of_",
+          "label": "Laurini JA. Protocol for the examination of resection specimens from patients with primary tumors of bone. 2021. Available at www.cap.org/cancerprotocols.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "historically_the_diagnosis_and_classification_of_cns_tumors_have_been_based_exclusively_on_the_histo",
+          "label": "Historically, the diagnosis and classification of CNS tumors have been based exclusively on the histologic appearance of the tumor. In recent decades, however, our knowledge of the molecular basis of many of these tumors has increased significantly. In the 5th edition of the WHO Classification of Tumours of the Central Nervous System,1 molecular information is now integrated into many of the tumor diagnostic entities. In such cases, including the diffuse gliomas and embryonal tumors, the final diagnosis should reflect the integration of both histologic and molecular information.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "one_optional_method_of_reporting_the_histologic_and_molecular_information_is_through_a_layered_repor",
+          "label": "One optional method of reporting the histologic and molecular information is through a “layered” report format with the tumor site as follows:2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "layer_1_integrated_diagnosis",
+          "label": "Layer 1: Integrated diagnosis",
+          "required": true,
+          "type": "free_text",
+          "condition": "combined tissue-based histological and molecular diagnosis"
+        },
+        {
+          "field_id": "layer_2_histopathological_classification",
+          "label": "Layer 2: Histopathological classification",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "layer_3_cns_who_grade",
+          "label": "Layer 3: CNS WHO grade",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "layer_4_molecular_information",
+          "label": "Layer 4: Molecular Information",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "at_centers_where_molecular_testing_is_not_available_an_nos_not_otherwise_specified_designation_is_av",
+          "label": "At centers where molecular testing is not available, an NOS (not otherwise specified) designation is available for tumor entities that include molecular alterations as part of the definitions. The NOS designation implies that insufficient information is available to provide a more specific integrated diagnosis and may occasionally be used for tumors that do not precisely fit into one of the defined tumor categories. A designation of NEC (not elsewhere classified) can be added when necessary diagnostic testing was successfully performed but the results do not readily permit a WHO diagnosis. Both NOS and NEC can be used for all tumor types.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "louis_dn_perry_a_burger_p_et_al_international_society_of_neuropathology_haarlem_consensus_guidelines",
+          "label": "Louis DN, Perry A, Burger P, et al. International Society of Neuropathology-Haarlem Consensus guidelines for nervous system tumor classification and grading. Brain Pathol. 2014; 24:429-435.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "classification_should_be_made_according_to_the_who_classification_of_tumors_of_the_nervous_system_an",
+          "label": "Classification should be made according to the WHO classification of tumors of the nervous system and the WHO classification of tumors of the endocrine organs whenever possible.1,2  Table 1 listed in Note H (Histologic Grade) contains WHO 2021 diagnostic entities for which the Central Nervous System (CNS) Cancer Protocol is recommended.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "below_is_a_list_of_possible_who_grades_for_cns_tumors_the_who_grading_of_some_of_the_more_common_cns",
+          "label": "Below is a list of possible WHO grades for CNS tumors. The WHO grading of some of the more common CNS tumors is shown in Table 1. There is no formal TNM-based classification and staging system for CNS tumors. \nCNS WHO Grades for CNS Tumors\nCNS WHO grade 1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "knowledge_of_preoperative_treatment_including_radiation_therapy_chemotherapy_corticosteroid_therapy_",
+          "label": "Knowledge of preoperative treatment, including radiation therapy, chemotherapy, corticosteroid therapy, embolization, and other therapy, is helpful for specimen interpretation.1,2,3 In particular, prior radiation therapy or radiosurgery may alter the interpretation of specimens in which there is increased cellular atypia, decreased proliferative activity, or large areas of radiation-induced change (e.g., coagulative [nonpalisading] necrosis, vascular hyalinization, and gliosis). The addition of chemotherapy to radiation may further alter histomorphological appearance. For patients with malignant gliomas, the presence and degree of radiation necrosis appear to be of prognostic significance. Tumors that show evidence of radiation necrosis are associated with a longer survival, and the degree of necrosis appears to be prognostically significant.1,2,3 Corticosteroid treatment can alter the pathologic features of some CNS diseases. In particular, the treatment of primary CNS lymphoma with corticosteroids can be associated with widespread tumor cell dropout and infiltration by macrophages, which may limit or misguide interpretation. Embolization of certain tumor types, especially meningiomas, may introduce histologic changes in the neoplasm.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perry_a_brat_dj_practical_surgical_pathology_a_diagnostic_approach_2nd_ed_philadelphia_elsevier_2018",
+          "label": "Perry A, Brat DJ. Practical Surgical Pathology: A Diagnostic Approach. 2nd ed. Philadelphia: Elsevier; 2018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bette_kleinschmidt_demasters_tarik_tihan_fausto_rodriguez_diagnostic_pathology_neuropathology_2nd_ed",
+          "label": "Bette Kleinschmidt-DeMasters, Tarik Tihan, Fausto Rodriguez. Diagnostic Pathology: Neuropathology. 2nd ed, Philadelphia: Elsevier; 2016.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemical_and_molecular_genetic_studies_are_often_performed_to_assist_with_diagnosis_progn",
+          "label": "Immunohistochemical and molecular genetic studies are often performed to assist with diagnosis, prognosis, or to predict therapeutic response.1 The most recent update of the World Health Organization’s Classification of Tumours of the Central Nervous System has incorporated many of these biomarkers into this formal diagnostic classification system, thereby formally encouraging their use in the evaluation of these neoplasms. Currently, the 2021 WHO Classification of Tumours of the Central Nervous System and the 2022 (WHO) Endocrine and Neuroendocrine Tumours incorporate molecular genetic studies into many entities while the diagnoses of some CNS tumors remain largely morphologic.1,2 As our understanding of the pathobiology of CNS tumors is ever expanding, the list of entities requiring molecular genetic studies will continue to grow. New methodologies of biomarker tests must be accompanied with careful validation studies to support their use.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

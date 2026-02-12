@@ -1,0 +1,2631 @@
+{
+  "template_id": "Prostate_4.3.0.0.REL_CAPCP",
+  "organ": "PROSTATE GLAND: Radical Prostatectomy",
+  "protocol_posting_date": "September 2023",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "glandular",
+          "label": "Glandular",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "acinar_adenocarcinoma_conventional",
+              "label": "Acinar adenocarcinoma, conventional (usual)"
+            },
+            {
+              "value": "acinar_adenocarcinoma_signet_ring_like_cell",
+              "label": "Acinar adenocarcinoma, signet-ring-like cell"
+            },
+            {
+              "value": "acinar_adenocarcinoma_pleomorphic_giant_cell",
+              "label": "Acinar adenocarcinoma, pleomorphic giant cell"
+            },
+            {
+              "value": "acinar_adenocarcinoma_sarcomatoid",
+              "label": "Acinar adenocarcinoma, sarcomatoid"
+            },
+            {
+              "value": "acinar_adenocarcinoma_prostatic_intraepithelial_neoplasia_like",
+              "label": "Acinar adenocarcinoma, prostatic intraepithelial neoplasia-like"
+            },
+            {
+              "value": "intraductal_carcinoma",
+              "label": "Intraductal carcinoma"
+            },
+            {
+              "value": "ductal_adenocarcinoma",
+              "label": "Ductal adenocarcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "squamous",
+          "label": "Squamous",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma"
+            },
+            {
+              "value": "basal_cell",
+              "label": "Basal cell (adenoid cystic) carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "neuroendocrine",
+          "label": "Neuroendocrine",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma_with_neuroendocrine_differentiation",
+              "label": "Adenocarcinoma with neuroendocrine differentiation"
+            },
+            {
+              "value": "well_differentiated_neuroendocrine_tumor",
+              "label": "Well-differentiated neuroendocrine tumor"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "grade",
+          "label": "Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "grade_group_1",
+              "label": "Grade group 1 (Gleason Score 3 + 3 = 6)"
+            },
+            {
+              "value": "grade_group_2",
+              "label": "Grade group 2 (Gleason Score 3 + 4 = 7)"
+            }
+          ]
+        },
+        {
+          "field_id": "minor_tertiary_pattern_5_less_than_5",
+          "label": "Minor Tertiary Pattern 5 (less than 5%)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_not_identified",
+              "label": "Not applicable / not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "percentage_of_pattern_4",
+          "label": "Percentage of Pattern 4",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_or_equal_to_5",
+              "label": "Less than or equal to 5%"
+            },
+            {
+              "value": "6_10",
+              "label": "6 - 10%"
+            },
+            {
+              "value": "11_20",
+              "label": "11 - 20%"
+            },
+            {
+              "value": "21_30",
+              "label": "21 - 30%"
+            },
+            {
+              "value": "31_40",
+              "label": "31 - 40%"
+            },
+            {
+              "value": "greater_than_40",
+              "label": "Greater than 40%"
+            },
+            {
+              "value": "grade_group_3",
+              "label": "Grade group 3 (Gleason Score 4 + 3 = 7)"
+            }
+          ]
+        },
+        {
+          "field_id": "minor_tertiary_pattern_5_less_than_5",
+          "label": "Minor Tertiary Pattern 5 (less than 5%)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_not_identified",
+              "label": "Not applicable / not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "percentage_of_pattern_4",
+          "label": "Percentage of Pattern 4",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_61",
+              "label": "Less than 61%"
+            },
+            {
+              "value": "61_70",
+              "label": "61 - 70%"
+            },
+            {
+              "value": "71_80",
+              "label": "71 - 80%"
+            },
+            {
+              "value": "81_90",
+              "label": "81 - 90%"
+            },
+            {
+              "value": "greater_than_90",
+              "label": "Greater than 90%"
+            },
+            {
+              "value": "grade_group_4",
+              "label": "Grade group 4 (Gleason Score 4 + 4 = 8)"
+            },
+            {
+              "value": "grade_group_4",
+              "label": "Grade group 4 (Gleason Score 3 + 5 = 8)"
+            },
+            {
+              "value": "grade_group_4",
+              "label": "Grade group 4 (Gleason Score 5 + 3 = 8)"
+            },
+            {
+              "value": "grade_group_5",
+              "label": "Grade group 5 (Gleason Score 4 + 5 = 9)"
+            },
+            {
+              "value": "grade_group_5",
+              "label": "Grade group 5 (Gleason Score 5 + 4 = 9)"
+            },
+            {
+              "value": "grade_group_5",
+              "label": "Grade group 5 (Gleason Score 5 + 5 = 10)"
+            },
+            {
+              "value": "cannot_be_assessed",
+              "label": "Cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "if_gleason_score_is_greater_than_7_specify_percentage_of_pattern_4",
+          "label": "If Gleason Score is Greater Than 7 Specify Percentage of Pattern 4: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_gleason_score_is_greater_than_7_specify_percentage_of_pattern_5",
+          "label": "If Gleason Score is Greater Than 7 Specify Percentage of Pattern 5: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intraductal_carcinoma",
+          "label": "Intraductal Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "condition": "IDC"
+        },
+        {
+          "field_id": "idc_incorporated_into_grade",
+          "label": "IDC Incorporated into Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "cribriform_glands",
+          "label": "Cribriform Glands",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "applicable to Gleason score 7 or 8 cancer only"
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "radiation_therapy_effect_present",
+              "label": "Radiation therapy effect present: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "hormonal_therapy_effect_present",
+              "label": "Hormonal therapy effect present: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other_therapy_effect",
+              "label": "Other therapy effect(s) present (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_quantitation",
+          "label": "TUMOR QUANTITATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "tumor_quantitation",
+          "label": "Tumor Quantitation",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "via_percentage",
+              "label": "Via percentage"
+            }
+          ]
+        },
+        {
+          "field_id": "estimated_percentage_of_prostate_involved_by_tumor",
+          "label": "Estimated Percentage of Prostate Involved by Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_1",
+              "label": "Less than 1%"
+            },
+            {
+              "value": "1_5",
+              "label": "1 - 5%"
+            },
+            {
+              "value": "6_10",
+              "label": "6 - 10%"
+            },
+            {
+              "value": "11_20",
+              "label": "11 - 20%"
+            },
+            {
+              "value": "21_30",
+              "label": "21 - 30%"
+            },
+            {
+              "value": "31_40",
+              "label": "31 - 40%"
+            },
+            {
+              "value": "41_50",
+              "label": "41 - 50%"
+            },
+            {
+              "value": "51_60",
+              "label": "51 - 60%"
+            },
+            {
+              "value": "61_70",
+              "label": "61 - 70%"
+            },
+            {
+              "value": "71_80",
+              "label": "71 - 80%"
+            },
+            {
+              "value": "81_90",
+              "label": "81 - 90%"
+            },
+            {
+              "value": "greater_than_90",
+              "label": "Greater than 90%"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "and_or",
+          "label": "and / or",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "via_dimension",
+              "label": "Via dimension"
+            }
+          ]
+        },
+        {
+          "field_id": "greatest_dimension_of_dominant_nodule_in_millimeters_mm___________________mm",
+          "label": "Greatest Dimension of Dominant Nodule in Millimeters (mm): _________________ mm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additional_dimension_of_dominant_nodule_in_millimeters_mm______x______mm",
+          "label": "Additional Dimension of Dominant Nodule in Millimeters (mm): ____ x ____ mm",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "location_of_dominant_nodule",
+          "label": "Location of Dominant Nodule: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extraprostatic_extension",
+          "label": "Extraprostatic Extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_focal",
+              "label": "Present, focal"
+            },
+            {
+              "value": "present_nonfocal",
+              "label": "Present, nonfocal"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ],
+          "condition": "EPE"
+        },
+        {
+          "field_id": "location_of_extraprostatic_extension",
+          "label": "Location of Extraprostatic Extension",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_apical",
+              "label": "Right apical"
+            },
+            {
+              "value": "right_bladder_neck",
+              "label": "Right bladder neck"
+            },
+            {
+              "value": "right_anterior",
+              "label": "Right anterior"
+            },
+            {
+              "value": "right_lateral",
+              "label": "Right lateral"
+            },
+            {
+              "value": "right_posterolateral",
+              "label": "Right posterolateral (neurovascular bundle)"
+            },
+            {
+              "value": "right_posterior",
+              "label": "Right posterior"
+            },
+            {
+              "value": "left_apical",
+              "label": "Left apical"
+            },
+            {
+              "value": "left_bladder_neck",
+              "label": "Left bladder neck"
+            },
+            {
+              "value": "left_anterior",
+              "label": "Left anterior"
+            },
+            {
+              "value": "left_lateral",
+              "label": "Left lateral"
+            },
+            {
+              "value": "left_posterolateral",
+              "label": "Left posterolateral (neurovascular bundle)"
+            },
+            {
+              "value": "left_posterior",
+              "label": "Left posterior"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "urinary_bladder_neck_invasion",
+          "label": "Urinary Bladder Neck Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "seminal_vesicle_invasion",
+          "label": "Seminal Vesicle Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present_right",
+              "label": "Present, right"
+            },
+            {
+              "value": "present_left",
+              "label": "Present, left"
+            },
+            {
+              "value": "present_bilateral",
+              "label": "Present, bilateral"
+            },
+            {
+              "value": "present_laterality_cannot_be_determined",
+              "label": "Present, laterality cannot be determined"
+            },
+            {
+              "value": "no_seminal_vesicle_present",
+              "label": "No seminal vesicle present (Note H)"
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not Identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "J"
+          ]
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_assessed",
+              "label": "Cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "linear_length_of_margins_involved_by_carcinoma",
+          "label": "Linear Length of Margin(s) Involved by Carcinoma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_exact_length_in_millimeters",
+              "label": "Specify exact length in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_3_mm",
+              "label": "Less than 3 mm (limited)"
+            },
+            {
+              "value": "greater_than_or_equal_to_3_mm",
+              "label": "Greater than or equal to 3 mm (non-limited)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "focality_of_margin_involvement",
+          "label": "Focality of Margin Involvement",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right_apical",
+              "label": "Right apical"
+            },
+            {
+              "value": "right_bladder_neck",
+              "label": "Right bladder neck"
+            },
+            {
+              "value": "right_anterior",
+              "label": "Right anterior"
+            },
+            {
+              "value": "right_lateral",
+              "label": "Right lateral"
+            },
+            {
+              "value": "right_posterolateral",
+              "label": "Right posterolateral (neurovascular bundle)"
+            },
+            {
+              "value": "right_posterior",
+              "label": "Right posterior"
+            },
+            {
+              "value": "left_apical",
+              "label": "Left apical"
+            },
+            {
+              "value": "left_bladder_neck",
+              "label": "Left bladder neck"
+            },
+            {
+              "value": "left_anterior",
+              "label": "Left anterior"
+            },
+            {
+              "value": "left_lateral",
+              "label": "Left lateral"
+            },
+            {
+              "value": "left_posterolateral",
+              "label": "Left posterolateral (neurovascular bundle)"
+            },
+            {
+              "value": "left_posterior",
+              "label": "Left posterior"
+            },
+            {
+              "value": "other",
+              "label": "Other(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_involvement_by_invasive_carcinoma_in_area_of_extraprostatic_extension",
+          "label": "Margin Involvement by Invasive Carcinoma in Area of Extraprostatic Extension",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "condition": "EPE"
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma_in_area_of_epe",
+          "label": "Margin(s) Involved by Invasive Carcinoma in Area of EPE: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gleason_pattern_at_margins_involved_by_carcinoma",
+          "label": "Gleason Pattern at Margin(s) Involved by Carcinoma",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "pattern_3",
+              "label": "Pattern 3"
+            },
+            {
+              "value": "pattern_4",
+              "label": "Pattern 4"
+            },
+            {
+              "value": "pattern_5",
+              "label": "Pattern 5"
+            }
+          ],
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodal_sites_with_tumor",
+          "label": "Nodal Site(s) with Tumor",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "hypogastric",
+              "label": "Hypogastric: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "obturator",
+              "label": "Obturator: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "internal_iliac",
+              "label": "Internal iliac: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "external_iliac",
+              "label": "External iliac: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "iliac_nos",
+              "label": "Iliac, NOS: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pelvic_nos",
+              "label": "Pelvic, NOS: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lateral_sacral",
+              "label": "Lateral sacral: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "presacral",
+              "label": "Presacral: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "promontory",
+              "label": "Promontory: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "sacral_nos",
+              "label": "Sacral, NOS: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "laterality",
+          "label": "Laterality",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "nodal_site_with_largest_metastatic_deposit_specify_site",
+          "label": "Nodal Site with Largest Metastatic Deposit (specify site): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "size_of_largest_lymph_node_with_tumor",
+          "label": "Size of Largest Lymph Node with Tumor",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "largest_lymph_node_with_tumor_specify_site",
+          "label": "Largest Lymph Node with Tumor (specify site): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "nonregional_lymph_node",
+              "label": "Nonregional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "L"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification",
+          "label": "Modified Classification",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Organ confined"
+            }
+          ],
+          "guidance": "There is no pathologic T1 classification."
+        },
+        {
+          "field_id": "pt3_extraprostatic_extension",
+          "label": "pT3: Extraprostatic extension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3a",
+              "label": "pT3a: Extraprostatic extension or microscopic invasion of bladder neck"
+            },
+            {
+              "value": "pt3b",
+              "label": "pT3b: Tumor invades seminal vesicle(s)"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor is fixed or invades adjacent structures other than seminal vesicles such as external"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No positive regional nodes"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis in regional nodes"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category_required_only_if_confirmed_pathologically",
+          "label": "pM Category (required only if confirmed pathologically)#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "guidance": "When more than 1 site of metastasis is present, the most advanced category is used. M1c is most advanced."
+        },
+        {
+          "field_id": "pm1_distant_metastasis",
+          "label": "pM1: Distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Nonregional lymph node(s)"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Bone(s)"
+            },
+            {
+              "value": "pm1c",
+              "label": "pM1c: Other site(s) with or without bone disease"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "atypical_intraductal_proliferation",
+              "label": "Atypical intraductal proliferation (AIP)"
+            },
+            {
+              "value": "high_grade_prostatic_intraepithelial_neoplasia",
+              "label": "High-grade prostatic intraepithelial neoplasia (PIN): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "atypical_adenomatous_hyperplasia",
+              "label": "Atypical adenomatous hyperplasia (adenosis)"
+            },
+            {
+              "value": "nodular_prostatic_hyperplasia",
+              "label": "Nodular prostatic hyperplasia"
+            },
+            {
+              "value": "inflammation",
+              "label": "Inflammation (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "ancillary_studies",
+          "label": "Ancillary Studies",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify",
+              "label": "Specify: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "testing_performed_on_block_numbers",
+          "label": "Testing Performed on Block Number(s): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_radical_prostatectomy_rp_specimen_can_be_submitted_totally_or_partially_in_a_systematic_fashion123",
+          "label": "A radical prostatectomy (RP) specimen can be submitted totally or partially in a systematic fashion.1,2,3 The prostate is measured in three dimensions, separately from the seminal vesicles and the ejaculatory ducts. Unless fresh tissue is harvested for research, the specimen must be fixed in buffered formalin for 18 to 24 hours to obtain optimal sections. The entire outer prostate must be inked using at least two different colors to identify laterality (right and left) and outer extent or margin of the specimen. Prostate regions are usually orientable histologically using histoanatomic landmarks except for laterality.4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_partial_sampling_in_the_setting_of_a_grossly_visible_tumor_the_tumor_and_associated_periprostati",
+          "label": "For partial sampling in the setting of a grossly visible tumor, the tumor and associated periprostatic tissue and margins, along with the entire apical and bladder neck margins and the junction of each seminal vesicle with prostate proper, should be submitted. If available, correlation with biopsies and location of MRI-targeted cancer(s) is helpful in identifying the significant tumor(s) location.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_there_is_no_grossly_visible_tumor_a_number_of_systematic_sampling_strategies_may_be_used_one_that",
+          "label": "If there is no grossly visible tumor, a number of systematic sampling strategies may be used. One that yields excellent prognostic information involves submitting the posterior aspect of each transverse slice along with a mid anterior block from each side.6 The anterior sampling detects the T1c cases arising in the transition zone and extending anteriorly.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_entire_apical_and_bladder_neck_margins_and_the_junction_of_each_seminal_vesicle_with_the_prostat",
+          "label": "The entire apical and bladder neck margins and the junction of each seminal vesicle with the prostate should also be submitted in a standardized fashion.1,2 Apical and bladder neck sections may be taken with radial (cone) or parallel (parasagittal) sections. The latter method has the advantage of yielding more uniform sections.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "samaratunga_h_montironi_r_true_l_et_al_the_isup_prostate_consensus_group_international_society_of_ur",
+          "label": "Samaratunga H, Montironi R, True L, et al; The ISUP prostate consensus group. International Society of Urological Pathology (ISUP) Consensus Conference on Handling and Staging of Radical Prostatectomy Specimens: Working group 1: specimen handling. Mod Pathol. 2011;24:6-15.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_magi_galluzzi_c_amin_mb_srigley_jr_adenocarcinoma_of_the_prostate_in_amin_mb_grignon_dj_sri",
+          "label": "Paner GP, Magi-Galluzzi C, Amin MB, Srigley JR: Adenocarcinoma of the prostate. In: Amin MB, Grignon DJ, Srigley JR, Eble JN, eds. Urological Pathology. Philadelphia, PA: Lippincott William & Wilkins; 2014:559-673.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "srigley_jr_key_issues_in_handling_and_reporting_radical_prostatectomy_specimens_arch_pathol_lab_med_",
+          "label": "Srigley JR. Key issues in handling and reporting radical prostatectomy specimens. Arch Pathol Lab Med. 2006;30:303-317.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_microanatomy_and_zonal_variations_prostate_gland_and_seminal_vesicle_in_amin_mb_tickoo_sk_e",
+          "label": "Paner GP. Microanatomy and zonal variations. Prostate gland and seminal vesicle. In: Amin MB, Tickoo SK, eds. Diagnostic Pathology. Genitourinary 2nd Ed . Salt Lake City, UT: Elsevier; 2016;544-553.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fine_sw_reuter_ve_anatomy_of_the_prostate_revisited_implications_for_prostate_biopsy_and_zonal_origi",
+          "label": "Fine SW, Reuter VE. Anatomy of the prostate revisited: implications for prostate biopsy and zonal origins of prostate cancer. Histopathology 2012;60:142-52.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sehdev_ae_pan_cc_epstein_ji_comparative_analysis_of_sampling_methods_for_grossing_radical_prostatect",
+          "label": "Sehdev AE, Pan CC, Epstein JI. Comparative analysis of sampling methods for grossing radical prostatectomy specimens performed for nonpapable (stage T1c) prostatic adenocarcinoma. Hum Pathol. 2001;32:494-499.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to_invasive_adenocarcinomas_and_other_carcinomas_of_the_prostate_gland1_carcin",
+          "label": "This protocol applies to invasive adenocarcinomas and other carcinomas of the prostate gland.1  Carcinomas other than adenocarcinoma are exceptionally uncommon, accounting for less than 1% of prostatic tumors. Tumors such as neuroendocrine and squamous cell carcinomas may occur in pure form or are admixed with adenocarcinoma. This protocol does not apply to urothelial carcinoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_kench_jg_rubin_ma_et_al_tumours_of_the_prostate_in_who_classification_of_tumours_editorial_b",
+          "label": "Amin MB, Kench JG, Rubin MA, et al. Tumours of the prostate. In: WHO Classification of Tumours Editorial Board, eds. Urinary and Male Genital Tumours. WHO Classification of Tumours. Geneva, Switzerland: WHO Press; 2022:193-234.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gleason_score",
+          "label": "Gleason Score",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_gleason_grading_system_is_recommended_for_use_in_all_prostatic_specimens_containing_adenocarcino",
+          "label": "The Gleason grading system is recommended for use in all prostatic specimens containing adenocarcinoma, with the exception of those showing treatment effects, usually in the setting of hormonal ablation and radiation therapy.1,2,3 Readers are referred to the recommendations of three ISUP consensus conferences and the GUPS position paper dealing with the contemporary usage of the Gleason system in RP specimens (also see Figure 1).4,5,6,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_gleason_score_is_the_sum_of_the_primary_most_predominant_in_terms_of_surface_area_of_involvement",
+          "label": "The Gleason score is the sum of the primary (most predominant in terms of surface area of involvement) Gleason grade and the secondary (second most predominant) Gleason grade. If no secondary Gleason grade exists, the primary Gleason grade is doubled to determine a Gleason score. The primary and secondary grades should be reported in addition to the Gleason score, that is, Gleason score 7(3+4) or 7(4+3).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_2015_modified_isup_gleason_schematic_diagram5",
+          "label": "Figure 1. 2015 modified ISUP Gleason schematic diagram.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tertiary_gleason_patterns_are_common_in_rp_specimens6789_a_gleason_pattern_5_present_as_a_minor_tert",
+          "label": "Tertiary Gleason patterns are common in RP specimens.6,7,8,9 A Gleason pattern 5 present as a minor tertiary (less than 5%) pattern should be recognized in the report. For instance, if the primary Gleason pattern is 3, the secondary pattern is 4, and there is less than 5% Gleason pattern 5, the report should indicate a Gleason score of 7(3+4) with minor tertiary Gleason pattern 5. If Gleason pattern 5 is 5% or higher and constitutes the third most common pattern, it should be included as the secondary pattern, rather than as the minor tertiary pattern.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_two_manners_of_reporting_grade_for_tumors_with_more_than_95_gleason_pattern_3_and_less_tha",
+          "label": "There are two manners of reporting grade for tumors with more than 95% Gleason pattern 3 and less than 5% (or minor secondary) Gleason pattern 4. One approach is to grade the tumor as 7(3+4) and report the small percentage of Gleason pattern 4.6 The second approach is to grade as 6(3+3) without including the less than 5% Gleason pattern 4 as the secondary pattern.7 If the latter grading approach is performed, it is recommended that a comment on the presence of the less than 5% Gleason pattern 4 should be made.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gleason_score_should_be_assigned_to_the_dominant_nodules_if_present4_in_some_cases_where_a_dominant_",
+          "label": "Gleason score should be assigned to the dominant nodule(s), if present.4 In some cases where a dominant nodule is not identified, grading is based on all carcinomatous foci. If more than one separate tumor is clearly identified, the Gleason scores of individual tumors can be recorded separately, or, at the very least, a Gleason score of the dominant or most significant lesion (highest Gleason score or pT category, if not the largest) should be recorded. For instance, if there is a Gleason score 8(4+4) in the right peripheral zone and a separate smaller Gleason score 6(3+3) at the left peripheral zone, both scores should be reported, or, at least, the former score should be reported rather than these scores being averaged (also see Figure 2).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_in_multifocal_tumors_the_dominant_tumor_should_be_graded_separately_in_this_case_the_domina",
+          "label": "Figure 2. In multifocal tumors, the dominant tumor should be graded separately. In this case, the dominant tumor grade is Gleason score 4+4=8 (Grade group 4) and the two scores should not be averaged (as Gleason score 4+3=7).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_is_recent_inflation_of_gleason_score_7_tumors_in_rp_specimens_because_of_grading_refinements_a",
+          "label": "There is recent inflation of Gleason score 7 tumors in RP specimens because of grading refinements and with more patients with Gleason score 6 cancers staying on active surveillance.10 Studies showed that Gleason score 7 (3+4 and 4+3) tumors are prognostically heterogeneous and can be further stratified prognostically by percentage and architectures of Gleason pattern 4.11,12 Among Gleason pattern 4 architectures, cribriform has been shown to be an independent predictor of poorer outcome in Gleason score 7 tumors.13,14 Both ISUP and GUPS recommend commenting on the presence of cribriform architecture in Gleason score 7 tumors.6,7 There are recent attempts to standardize the definition of cribriform pattern.15  ISUP defines cribriform patterns as a confluent sheet of contiguous malignant epithelial cells with multiple glandular lumina that are easily visible at low power (objective magnification x10) and with no intervening stroma or mucin separating individual or fused glandular structures. Until more evidence is accumulated, reporting the percentage of Gleason pattern 4 for Gleason score 7 tumors in RP specimen is recommended but not required.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_treatment_effects_to_cancer_such_as_prior_hormonal_or_radiation_therapy_effects_shou",
+          "label": "The presence of treatment effects to cancer such as prior hormonal or radiation therapy effects should be reported and is important especially if Gleason grading is rendered not applicable.3 It should be recognized that in post-treatment settings, grading may still be applied for prostate cancers lacking treatment effects, particularly in new-onset (de novo) cancers.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_group",
+          "label": "Grade Group",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_recognized_that_contemporary_gleason_scores_can_be_grouped_into_five_prognostic_categories_gra",
+          "label": "It is recognized that contemporary Gleason scores can be grouped into five prognostic categories, Grade groups 1-5.5,16 This grade grouping has also been subsequently validated by other independent studies in surgical cohorts showing significant correlation with outcome.17,18 The new grade grouping has been endorsed by ISUP, GUPS and has been included in the 2016 WHO classification.1,5,6,7 The grade group is also referred to as ISUP grade or WHO grade in other publications. The Grade group should be reported in parallel with the Gleason score.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_grade_groups",
+          "label": "Table: Grade Groups",
+          "required": true,
+          "type": "free_text",
+          "guidance": "For cases with greater than 95% poorly formed/fused/cribriform glands on a core or at radical prostatectomy, the component of less than 5% well-formed glands is not factored into the grade; should therefore be graded as grade group 4. Poorly formed/fused/cribriform glands can be a more minor component."
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "humphrey_p_amin_mb_berney_d_et_al_acinar_adenocarcinoma_in_moch_h_humphrey_pa_ulbright_t_reuter_ve_e",
+          "label": "Humphrey P, Amin MB, Berney D, et al. Acinar adenocarcinoma. In: Moch H, Humphrey PA, Ulbright T, Reuter VE, eds. Pathology and Genetics: Tumors of the Urinary System and Male Genital Organs. 4th edition. WHO Classification of Tumors. Zurich, Switzerland: WHO Press; 2015:3-28.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gleason_dr_mellinger_gt_the_veterans_administration_cooperative_urological_research_group_prediction",
+          "label": "Gleason DR, Mellinger GT, the Veterans Administration Cooperative Urological Research Group. Prediction of prognosis for prostate adenocarcinoma by combined histological grading and clinical staging. J Urol. 1974;111:58-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_magi_galluzzi_c_amin_mb_srigley_jr_adenocarcinoma_of_the_prostate_in_amin_mb_grignon_dj_sri",
+          "label": "Paner GP, Magi-Galluzzi C, Amin MB, Srigley JR: Adenocarcinoma of the prostate. In: Amin MB, Grignon DJ, Srigley JR, Eble JN, eds. Urological Pathology. Philadelphia, PA: Lippincott William & Wilkins; 2014:559-673.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_allsbrook_jr_wc_amin_mb_egevad_l_isup_grading_committee_the_2005_international_society_of",
+          "label": "Epstein JI, Allsbrook Jr WC, Amin MB, Egevad L, ISUP Grading Committee. The 2005 International Society of Urological Pathology (ISUP) Consensus Conference on Gleason Grading of Prostatic Carcinoma. Am J Surg Pathol. 2005;29:1228-1242.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_egevad_l_amin_mb_delahunt_b_srigley_jr_humphrey_pa_and_the_grading_committee_the_2014_int",
+          "label": "Epstein JI, Egevad L, Amin MB, Delahunt B, Srigley JR, Humphrey PA; and the Grading Committee The 2014 International Society of Urological Pathology (ISUP) Consensus Conference on Gleason Grading of Prostatic Carcinoma: definition of grading patterns and proposal for a new grading system. Am J Surg Pathol. 2016; 40: 244-252.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_amin_mb_fine_sw_et_al_the_2019_genitourinary_pathology_society_gups_white_paper_on_contem",
+          "label": "Epstein JI, Amin MB, Fine SW, et al. The 2019 Genitourinary Pathology Society (GUPS) White Paper on Contemporary Grading of Prostate Cancer. Arch Path Lab Med. 2021;145:461-493.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_leenders_gjlh_van_der_kwast_th_grignon_dj_et_al_the_2019_international_society_of_urological_pat",
+          "label": "van Leenders GJLH, van der Kwast TH, Grignon DJ, et al. The 2019 International Society of Urological Pathology (ISUP) Consensus Conference on Grading of Prostatic Carcinoma. Am J Surg Pathol 2020;44:e87-e99.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_amin_mb_reuter_ve_et_al_contemporary_gleason_grading_of_prostate_carcinoma_an_update_with",
+          "label": "Epstein JI, Amin MB, Reuter VE, et al. Contemporary Gleason grading of prostate carcinoma. An update with discussion on practical issues to implement the International Society of Urological Pathology (ISUP) consensus conference on Gleason grading of prostatic carcinoma. Am J Surg Pathol. 2017;41:e1-e7.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_gandhi_j_choy_b_et_al_essential_updates_in_grading_morphotyping_reporting_and_staging_of_pr",
+          "label": "Paner GP, Gandhi J, Choy B, et al. Essential updates in grading, morphotyping, reporting and staging of prostate carcinoma for general surgical pathologists. Arch Pathol Lab Med. 2019;140:55-564.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "danneman_d_drevin_l_robinson_d_stattin_p_egevad_l_gleason_inflation_1998_2011_a_registry_of_97168_bj",
+          "label": "Danneman D, Drevin L, Robinson D, Stattin P, Egevad L. Gleason inflation 1998-2011: a registry of 97,168. BJU Int. 2015;115:248-255.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sauter_g_steurer_s_clauditz_ts_et_al_clinical_utility_of_quantitative_gleason_grading_in_prostate_bi",
+          "label": "Sauter G, Steurer S, Clauditz TS, et al. Clinical Utility of Quantitative Gleason Grading in Prostate Biopsies and Prostatectomy Specimens. Eur Urol. 2016;69:592-598.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "choy_b_pearce_sm_anderson_bb_et_al_prognostic_significance_of_percentages_and_architectural_types_of",
+          "label": "Choy B, Pearce SM, Anderson BB, et al. Prognostic significance of percentages and architectural types of contemporary Gleason pattern 4 prostate cancer in radical prostatectomy. Am J Surg Pathol. 2016;40:1400-1406.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "iczkowski_ka_torkko_kc_kotnis_gr_et_al_digital_quantification_of_five_high_grade_prostate_cancer_pat",
+          "label": "Iczkowski KA, Torkko KC, Kotnis GR, et al. Digital quantification of five high-grade prostate cancer patterns, including the cribriform pattern, and their association with adverse outcome. Am J Clin Pathol. 2011;136:98-107.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dong_f_yang_p_wang_c_et_al_architectural_heterogeneity_and_cribriform_pattern_predict_adverse_clinic",
+          "label": "Dong F, Yang P, Wang C, et al. Architectural heterogeneity and cribriform pattern predict adverse clinical outcome for Gleason grade 4 prostatic adenocarcinoma. Am J Surg Pathol. 2013;37:1855-1861.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pierorazio_pm_walsh_pc_partin_aw_epstein_ji_prognostic_gleason_grade_grouping_data_based_on_the_modi",
+          "label": "Pierorazio PM, Walsh PC, Partin AW, Epstein JI. Prognostic Gleason grade grouping: data based on the modified Gleason scoring system. BJU Int. 2013;111:753-760.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_zelefsky_mj_sjoberg_dd_et_al_a_contemporary_prostate_cancer_grading_system_a_validated_al",
+          "label": "Epstein JI, Zelefsky MJ, Sjoberg DD, et al. A contemporary prostate cancer grading system: a validated alternative to the Gleason score. Eur Urol. 2016;69:428-435.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "berney_dm_beltran_l_fisher_g_et_al_validation_of_a_contemporary_prostate_cancer_grading_system_using",
+          "label": "Berney DM, Beltran L, Fisher G, et al. Validation of a contemporary prostate cancer grading system using prostate cancer death as outcome. Br J Cancer. 2016;114(10):1078-1083.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "d_intraductal_carcinoma",
+          "label": "D. Intraductal Carcinoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "IDC"
+        },
+        {
+          "field_id": "intraductal_carcinoma_idc_identified_in_rp_specimen_is_associated_with_higher_gleason_score_and_stag",
+          "label": "Intraductal carcinoma (IDC) identified in RP specimen is associated with higher Gleason score and stage and lower progression-free or cancer-specific survival.1,2,3,4,5 It is important to distinguish IDC from high-grade prostatic intraepithelial neoplasia (PIN) and atypical intraductal proliferation (AIP). Both ISUP and GUPS recommend that Gleason scores or grade groups should not be assigned to pure IDC, which is exceedingly rare in RP specimens.6,7,8 However, grading invasive cancer with concomitant IDC is controversial. ISUP recommends incorporating IDC in determining the grade while GUPS recommends not to include IDC in determining the grade. It is recommended to specify which of these two approaches is applied when grading invasive cancer with concomitant IDC.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distinction_between_idc_and_invasive_cribriform_or_comedonecrosis_patterns_should_be_based_on_morpho",
+          "label": "Distinction between IDC and invasive cribriform or comedonecrosis patterns should be based on morphological examination. In the approach where IDC is not incorporated in grading, immunohistochemistry for basal cells can be used if the results will change the grade.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "guo_cc_and_epstein_ji_intraductal_carcinoma_of_the_prostate_on_needle_biopsy_histologic_features_and",
+          "label": "Guo CC and Epstein JI. Intraductal carcinoma of the prostate on needle biopsy: Histologic features and clinical significance. Mod Pathol. 2006;19(12):1528-1535.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cohen_rj_wheeler_tm_bonkhoff_h_and_rubin_ma_a_proposal_on_the_identification_histologic_reporting_an",
+          "label": "Cohen RJ, Wheeler TM, Bonkhoff H and Rubin MA. A proposal on the identification, histologic reporting, and implications of intraductal prostatic carcinoma. Arch Pathol Lab Med. 2007;131(7):1103-1109.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zhou_m_intraductal_carcinoma_of_the_prostate_the_whole_story_pathology_2013456533_539",
+          "label": "Zhou M. Intraductal carcinoma of the prostate: the whole story. Pathology. 2013;45(6):533-539.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "montironi_r_zhou_m_magi_galluzzi_c_epstein_ji_features_and_prognostic_significance_of_intraductal_ca",
+          "label": "Montironi R, Zhou M, Magi-Galluzzi C, Epstein JI. Features and prognostic significance of intraductal carcinoma of the prostate. Eur Urol Oncol. 2018;1:21-28.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "varma_m_intraductal_carcinoma_of_the_prostate_a_guide_for_the_practicing_pathologist_adv_anat_pathol",
+          "label": "Varma M. Intraductal Carcinoma of the Prostate: A Guide for the Practicing Pathologist. Adv Anat Pathol. 2021 Jul 1;28(4):276-287.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_egevad_l_amin_mb_delahunt_b_srigley_jr_humphrey_pa_and_the_grading_committee_the_2014_int",
+          "label": "Epstein JI, Egevad L, Amin MB, Delahunt B, Srigley JR, Humphrey PA; and the Grading Committee The 2014 International Society of Urological Pathology (ISUP) Consensus Conference on Gleason Grading of Prostatic Carcinoma: definition of grading patterns and proposal for a new grading system. Am J Surg Pathol. 2016; 40: 244-252.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_amin_mb_fine_sw_et_al_the_2019_genitourinary_pathology_society_gups_white_paper_on_contem",
+          "label": "Epstein JI, Amin MB, Fine SW, et al. The 2019 Genitourinary Pathology Society (GUPS) White Paper on Contemporary Grading of Prostate Cancer. Arch Path Lab Med. 2021;145:461-493.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_leenders_gjlh_van_der_kwast_th_grignon_dj_et_al_the_2019_international_society_of_urological_pat",
+          "label": "van Leenders GJLH, van der Kwast TH, Grignon DJ, et al. The 2019 International Society of Urological Pathology (ISUP) Consensus Conference on Grading of Prostatic Carcinoma. Am J Surg Pathol. 2020;44:e87-e99.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "studies_have_shown_that_prostate_cancer_volume_is_predictive_of_biochemical_recurrence_and_metastase",
+          "label": "Studies have shown that prostate cancer volume is predictive of biochemical recurrence and metastases. However, data are conflicting as to its independent prognostic significance.1,2,3,4,5 In subtotal and radical prostatectomy specimens, the percentage of tissue involved by tumor can be quantified by simple visual inspection.6 Additionally, it may be possible to measure a dominant tumor nodule in at least 2 dimensions and/or to indicate the number of blocks involved by tumor out of the total number of prostatic blocks submitted.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stamey_t_mcneal_j_yemoto_c_et_al_biological_determinants_of_cancer_progression_in_men_with_prostate_",
+          "label": "Stamey T, McNeal J, Yemoto C, et al. Biological determinants of cancer progression in men with prostate cancer. JAMA. 1999;281:1395-1400.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "salomon_l_levrel_o_anastasiadis_a_et_al_prognostic_significance_of_tumor_volume_after_radical_prosta",
+          "label": "Salomon L, Levrel O, Anastasiadis A, et al. Prognostic significance of tumor volume after radical prostatectomy: a multivariate analysis of pathological prognostic factors. Eur Urol. 2003;43:39-44.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_prognostic_significance_of_tumor_volume_in_radical_prostatectomy_and_needle_biopsy_j_urol",
+          "label": "Epstein JI. Prognostic significance of tumor volume in radical prostatectomy and needle biopsy. J Urol. 2011;187:790-7.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_magi_galluzzi_c_amin_mb_srigley_jr_adenocarcinoma_of_the_prostate_in_amin_mb_grignon_dj_sri",
+          "label": "Paner GP, Magi-Galluzzi C, Amin MB, Srigley JR: Adenocarcinoma of the prostate. In: Amin MB, Grignon DJ, Srigley JR, Eble JN,eds. Urological Pathology. Philadelphia, PA: Lippincott William & Wilkins; 2014:559-673.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ito_y_vertosick_ea_sjoberg_dd_et_al_in_organ_confined_prostate_cancer_tumor_quantitation_not_found_t",
+          "label": "Ito Y, Vertosick EA, Sjoberg DD, et al. In organ-confined prostate cancer, tumor quantitation not found to aid in prediction of biochemical recurrence. Am J Surg Pathol. 2019;43:1061-1065.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "van_der_kwast_t_amin_m_billis_a_epstein_j_et_al_the_isup_prostate_consensus_group_international_soci",
+          "label": "van der Kwast T, Amin M, Billis A, Epstein J, et al; The ISUP prostate consensus group. International Society of Urological Pathology (ISUP) Consensus Conference on Handling of Radical Prostatectomy Specimens: working group 2: T2 substaging and prostate cancer volume. Mod Pathol. 2011;24:16-25.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extraprostatic_extension_epe_is_the_preferred_term_for_the_presence_of_tumor_beyond_the_confines_of_",
+          "label": "Extraprostatic extension (EPE) is the preferred term for the presence of tumor beyond the confines of the prostate glands.1,2,3,4 EPE is a well-known adverse prognosticator and identification is important in RP specimen. Tumor admixed with fat or tumor involving loose connective tissue in the plane of fat or beyond, even in the absence of direct contact between tumor and adipocytes, indicates EPE. EPE is uncommon in contemporary Gleason score 6 cancers, especially with small volume tumors.5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_specific_locations_and_the_number_of_sites_blocks_of_epe_are_useful_to_report_since_more_than_50",
+          "label": "The specific location(s) and the number of sites (blocks) of EPE are useful to report. Since more than 50% of patients with EPE do not progress, descriptors of EPE (focal versus nonfocal) can be used to quantify its extent.7,8,9 Focal EPE equates with only a few neoplastic glands outside the prostate or a tumor involving less than 1 high-power field in 1 or 2 sections; nonfocal EPE is more extensively spread beyond the prostatic edge.7 The 5-year progression-free survival is 73% for focal EPE and 42% for non-focal EPE.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "srigley_jr_key_issues_in_handling_and_reporting_radical_prostatectomy_specimens_arch_pathol_lab_med_",
+          "label": "Srigley JR. Key issues in handling and reporting radical prostatectomy specimens. Arch Pathol Lab Med. 2006;30:303-317.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "magi_galluzzi_c_evans_a_epstein_j_et_al_the_isup_prostate_consensus_group_international_society_of_u",
+          "label": "Magi-Galluzzi C, Evans A, Epstein J, et al; The ISUP prostate consensus group. International Society of Urological Pathology (ISUP) Consensus Conference on Handling and Staging of Radical Prostatectomy Specimens: Working group 3: extraprostatic extension lymphovascular invasion and locally advanced disease. Mod Pathol. 2011;24:26-38.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_magi_galluzzi_c_amin_mb_srigley_jr_adenocarcinoma_of_the_prostate_in_amin_mb_grignon_dj_sri",
+          "label": "Paner GP, Magi-Galluzzi C, Amin MB, Srigley JR: Adenocarcinoma of the prostate. In: Amin MB, Grignon DJ, Srigley JR, Eble JN,eds. Urological Pathology. Philadelphia, PA: Lippincott William & Wilkins; 2014:559-673.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grignon_dj_prostate_cancer_reporting_and_staging_needle_biopsy_and_radical_prostatectomy_specimens_m",
+          "label": "Grignon DJ. Prostate cancer reporting and staging: needle biopsy and radical prostatectomy specimens. Mod Pathol. 2018;31:S96-S109.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anderson_bb_oberlin_dt_razmaria_aa_et_al_extraprostatic_extension_is_extremely_rare_for_contemporary",
+          "label": "Anderson BB, Oberlin DT, Razmaria AA, et al. Extraprostatic extension is extremely rare for contemporary Gleason score 6 prostate cancer. Eur Urol. 2017;72:455-460.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kryvenko_on_epstein_ji_definition_of_insignificant_tumor_volume_of_gleason_score_3_3_6_grade_group_1",
+          "label": "Kryvenko ON, Epstein JI. Definition of insignificant tumor volume of Gleason score 3 + 3 = 6 (Grade group 1) prostate cancer at radical prostatectomy – is it time to increase the threshold? J Urol. 2016;196:1664-1669.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wheeler_tm_dillioglugil_o_kattan_mw_et_al_clinical_and_pathological_significance_of_the_level_and_ex",
+          "label": "Wheeler TM, Dillioglugil O, Kattan MW, et al. Clinical and pathological significance of the level and extent of capsular invasion in clinical stage T1-2 prostate cancer. Hum Pathol. 1998;29:856-862.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_ji_carmichael_mj_pizov_g_et_al_influence_of_capsular_penetration_on_progression_following_ra",
+          "label": "Epstein JI, Carmichael MJ, Pizov G, et al. Influence of capsular penetration on progression following radical prostatectomy: a study of 196 cases with long-term follow up. J Urol. 1993;150:135-141",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jeong_bc_chalfin_hj_lee_sb_et_al_the_relationship_between_the_extent_of_extraprostatic_extension_and",
+          "label": "Jeong BC, Chalfin HJ, Lee SB, et al. The relationship between the extent of extraprostatic extension and survival following radical prostatectomy. Eur Urol. 2015;67:342-346.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "invasion_of_the_urinary_bladder_neck_is_identified_when_neoplastic_glands_involve_the_thick_intersec",
+          "label": "Invasion of the urinary bladder neck is identified when neoplastic glands involve the thick intersecting smooth muscle bundles characteristic of the bladder neck region in the absence of associated benign prostate glandular tissue.1,2,3 This definition also applies to specimens separately submitted as “bladder neck” margin. Microscopic bladder neck involvement is a significant predictor of PSA recurrence similar to extraprostatic extension3,4,5 and is considered a criterion for category pT3a disease (AJCC 8th edition).6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "magi_galluzzi_c_evans_a_epstein_j_et_al_the_isup_prostate_consensus_group_international_society_of_u",
+          "label": "Magi-Galluzzi C, Evans A, Epstein J, et al; The ISUP prostate consensus group. International Society of Urological Pathology (ISUP) Consensus Conference on Handling and Staging of Radical Prostatectomy Specimens: Working group 3: extraprostatic extension lymphovascular invasion and locally advanced disease. Mod Pathol.  2011;24:26-38.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pierorazio_pm_epstein_ji_humphreys_e_han_m_walsh_pc_and_partin_aw_the_significance_of_a_positive_bla",
+          "label": "Pierorazio PM, Epstein JI, Humphreys E, Han M, Walsh PC and Partin AW. The significance of a positive bladder neck margin after radical prostatectomy: the American Joint Committee on Cancer Pathological Stage T4 designation is not warranted. J Urol. 2010;183:151-157.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "zhou_m_reuther_am_levin_hs_falzarano_sm_kodjoe_e_myles_j_klein_e_and_magi_galluzzi_c_microscopic_bla",
+          "label": "Zhou M, Reuther AM, Levin HS, Falzarano SM, Kodjoe E, Myles J, Klein E and Magi-Galluzzi C. Microscopic bladder neck involvement by prostate carcinoma in radical prostatectomy specimens is not a significant independent prognostic factor. Mod Pathol. 2009;22(3):385–392.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dash_a_sanda_mg_yu_m_taylor_jm_fecko_a_rubin_ma_prostate_cancer_involving_the_bladder_neck_recurrenc",
+          "label": "Dash A, Sanda MG, Yu M, Taylor JM, Fecko A, Rubin MA. Prostate cancer involving the bladder neck: recurrence-free survival and implications for AJCC staging modification. American Joint Committee on Cancer. Urology. 2002;60(2):276–280.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yossepowitch_o_engelstein_d_konichezky_m_sella_a_livne_pm_and_baniel_j_bladder_neck_involvement_at_r",
+          "label": "Yossepowitch O, Engelstein D, Konichezky M, Sella A, Livne PM and Baniel J. Bladder neck involvement at radical prostatectomy: positive margins or advanced T4 disease? Urology. 2000;56(3):448–452.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "seminal_vesicle_invasion_is_a_significant_adverse_prognostic_factor_associated_with_increased_risk_o",
+          "label": "Seminal vesicle invasion is a significant adverse prognostic factor associated with increased risk of PSA recurrence and worse than EPE.1,2,3 There are several mechanisms of seminal vesicle invasion including: (1) direct invasion of the seminal vesicle from the base of the prostate; (2) EPE from prostate with subsequent invasion of seminal vesicle walls; (3) involvement along the ejaculatory duct into the seminal vesicle; and (4) discontinuous involvement, the latter which likely represents vascular spread.4 Seminal vesicle involvement is defined as tumor invasion of the muscular wall of seminal vesicle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "only_extraprostatic_seminal_vesicle_involvement_is_included_in_the_definition_of_seminal_vesicle_inv",
+          "label": "Only extraprostatic seminal vesicle involvement is included in the definition of seminal vesicle invasion (pT3b category).3,5 Intraprostatic seminal vesicle and ejaculatory duct can be difficult to differentiate, and involvement of these structures is not considered pT3b disease.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tefilli_m_gheiler_e_tiguert_r_et_al_prognostic_indicators_in_patients_with_seminal_vesicle_involveme",
+          "label": "Tefilli M, Gheiler E, Tiguert R, et al. Prognostic indicators in patients with seminal vesicle involvement following radical prostatectomy for clinically localized prostate cancer. J Urol. 1998;160:802-806.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epstein_j_partin_a_potter_s_et_al_adenocarcinoma_of_the_prostate_invading_seminal_vesicle_prognostic",
+          "label": "Epstein J, Partin A, Potter S, et al. Adenocarcinoma of the prostate invading seminal vesicle: prognostic stratification based on pathologic parameters. Urology. 2000;56:283-288.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "berney_d_wheeler_t_grignon_d_et_al_the_isup_prostate_consensus_group_international_society_of_urolog",
+          "label": "Berney D, Wheeler T, Grignon D, et al; The ISUP prostate consensus group. International Society of Urological Pathology (ISUP) Consensus Conference on Handling and Staging of Radical Prostatectomy Specimens: Working group 4: seminal vesicles and lymph nodes. Mod Pathol. 2011;24:39-47.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ohori_m_scardino_pt_lapin_sl_seale_hawkins_c_link_j_wheeler_tm_the_mechanisms_and_prognostic_signifi",
+          "label": "Ohori M, Scardino PT, Lapin SL, Seale-Hawkins C, Link J, Wheeler TM. The mechanisms and prognostic significance of seminal vesicle involvement by prostate cancer. Am J Surg Pathol. 1993;17:1252-1261.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al. eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_andor_vascular_invasion_lvi_is_an_independent_predictor_of_biochemical_recurrence_and_prog",
+          "label": "Lymphatic and/or Vascular Invasion (LVI) is an independent predictor of biochemical recurrence and progression and has been associated with metastasis and decreased survival after RP.1,2,3,4,5 LVI is characterized by tumor cells within an endothelial-lined space that is usually devoid of a muscular wall. LVI is reported in up to 21.5% of RP specimens. LVI can be confirmed by endothelial-associated markers, although this is not often necessary.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kang_m_oh_j_lee_s_et_al_perineural_invasion_and_lymphovascular_invasion_are_associated_with_increase",
+          "label": "Kang M, Oh J, Lee S, et al. Perineural invasion and lymphovascular invasion are associated with increased risk of biochemical recurrence in patients undergoing radical prostatectomy. Ann Surg Oncol. 2016 2016;23:2699-2706.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "park_y_kim_y_choi_i_et_al_is_lymphovascular_invasion_is_a_powerful_predictor_of_biochemical_recurren",
+          "label": "Park Y, Kim Y, Choi I, et al. Is lymphovascular invasion is a powerful predictor of biochemical recurrence in pT3 N0 prostate cancer? Results from the K-CaP database. Sci Rep. 2016;6:25419.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fajkovic_h_mathieu_r_lucca_i_et_al_validation_of_lymphovascular_invasion_as_an_independent_prognosti",
+          "label": "Fajkovic H, Mathieu R, Lucca I, et al. Validation of lymphovascular invasion as an independent prognostic factor for biochemical recurrence after radical prostatectomy. Urol Oncol. 2016;34:233e231-233e236.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "galiabovitch_e_hovens_c_peters_j_et_al_routinely_reported_equivocal_lymphovascular_invasion_in_prost",
+          "label": "Galiabovitch E, Hovens C, Peters J, et al. Routinely reported “equivocal” lymphovascular invasion in prostatectomy specimens is associated with adverse outcomes. BJU Int. 2017;119:567-572.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kang_y_kim_h_s_jang_w_et_al_impact_of_lymphovascular_invasion_on_lymph_node_metastasis_for_patients_",
+          "label": "Kang Y, Kim H-S, Jang W, et al. Impact of lymphovascular invasion on lymph node metastasis for patients undergoing radical prostatectomy with negative resection margin. BMC Cancer. 2017;17:321.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perineural_invasion_pni_is_a_common_finding_in_radical_prostatectomy12_most_studies_have_shown_that_",
+          "label": "Perineural invasion (PNI) is a common finding in radical prostatectomy.1,2 Most studies have shown that PNI is not an independent predictor of outcome in radical prostatectomy and reporting its presence is considered optional.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ng_jc_koch_mo_daggy_jk_cheng_l_perineural_invasion_in_radical_prostatectomy_specimens_lack_of_progno",
+          "label": "Ng JC, Koch MO, Daggy JK, Cheng L. Perineural invasion in radical prostatectomy specimens: lack of prognostic significance. J Urol. 2004;172:2249-2251.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kozal_s_peyronnet_b_cattarino_s_et_al_influence_of_pathological_factors_on_oncological_outcomes_afte",
+          "label": "Kozal S, Peyronnet B, Cattarino S, et al. Influence of pathological factors on oncological outcomes after robot-assisted radical prostatectomy for localized prostate cancer: results of prospective study. Urol Oncol. 2014;33:330e331-330e337.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margin_positivity_is_a_well_known_significant_adverse_prognostic_factor_after_rp1_to_properly_evalua",
+          "label": "Margin positivity is a well-known significant adverse prognostic factor after RP.1 To properly evaluate surgical margins, the entire surface of the prostate should be inked. The apex should be carefully examined because it is a common site of margin positivity. The apical and bladder neck surgical margins should be submitted entirely, preferably with a perpendicular sectioning technique.2,3,4 Usually, surgical margins should be designated as “negative” if tumor is not present at the inked margin and as “positive” if tumor cells touch the ink at the margin. When tumor is located very close to an inked surface but is not actually in contact with the ink, the margin is considered negative.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "positive_surgical_margins_should_not_be_interpreted_as_epe_intraprostatic_margins_are_positive_in_th",
+          "label": "Positive surgical margins should not be interpreted as EPE. Intraprostatic margins are positive in the setting of intraprostatic or capsular incision (so-called pT2+ disease; also see Figure 3).1,2,3,5,6 If the surgical margin finding is positive, the pathologist should state that explicitly, although this finding is not relied upon for pathologic staging. It is also important to indicate whether the positive margin is incisional or in an area of EPE.7,8,9 The latter has more adverse prognostic significance than the former.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_surgical_incision_can_create_stage_pt2_from_either_pt2_or_pt3_disease",
+          "label": "Figure 3.  Surgical incision can create stage pT2+ from either pT2 or pT3 disease.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "quantification_of_the_extent_of_surgical_margin_positivity_has_been_shown_to_correlate_with_outcome8",
+          "label": "Quantification of the extent of surgical margin positivity has been shown to correlate with outcome.8,10,11,12,13,14 Several studies have shown that a total length of 3 mm is a useful cut-off to stratify prognosis.8,10,12,13,14",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_location_of_positive_margins_varies_and_is_most_common_at_the_apex_posterior_and_posterolateral_",
+          "label": "The location of positive margins varies and is most common at the apex, posterior, and posterolateral aspects of the prostate.13,15 Positive margin at posterolateral prostate may carry a higher risk for progression, however, location has not been shown to be an independent predictor of PSA recurrence. Multifocal positive margins have been suggested to be associated with increased risk of PSA recurrence.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "recent_studies_showed_that_the_gleason_grade_or_score_at_a_site_of_margin_positivity_independently_c",
+          "label": "Recent studies showed that the Gleason grade or score at a site of margin positivity independently correlated with PSA recurrence.12,16,17,18 The presence of any pattern 4 or 5 in tumor at a margin doubled the risk of PSA recurrence compared to only Gleason pattern 3 at margin. The Gleason grade or score at the positive margin may be similar or lower to that of the main tumor and it is recommended to be reported.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tan_ph_cheng_l_srigley_j_et_al_the_isup_prostate_consensus_group_international_society_of_urological",
+          "label": "Tan, PH, Cheng L, Srigley J, et al; The ISUP prostate consensus group. International Society of Urological Pathology (ISUP) Consensus Conference on Handling and Staging of Radical Prostatectomy Specimens: Working Group 5: Surgical margins. Mod Pathol. 2011;24:48-57.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paner_gp_magi_galluzzi_c_amin_mb_srigley_jr_adenocarcinoma_of_the_prostate_in_amin_mb_grignon_dj_sri",
+          "label": "Paner GP, Magi-Galluzzi C, Amin MB, Srigley JR: Adenocarcinoma of the prostate. In: Amin MB, Grignon DJ, Srigley JR, Eble JN,eds. Urological Pathology. Philadelphia, PA: Lippincott William & Wilkins; 2014:559-673.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "srigley_jr_key_issues_in_handling_and_reporting_radical_prostatectomy_specimens_arch_pathol_lab_med_",
+          "label": "Srigley JR. Key issues in handling and reporting radical prostatectomy specimens. Arch Pathol Lab Med. 2006;30:303-317.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "samarantunga_h_montironi_r_true_l_et_al_the_isup_prostate_consensus_group_international_society_of_u",
+          "label": "Samarantunga H, Montironi R, True L, et al; The ISUP prostate consensus group. International Society of Urological Pathology (ISUP) Consensus Conference on Handling and Staging of Radical Prostatectomy Specimens: Working group 1: handling of the specimen. Mod Pathol. 2011;24:6-15.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shuford_m_cookson_m_chang_s_et_al_adverse_prognostic_significance_of_capsular_incision_with_radical_",
+          "label": "Shuford M, Cookson M, Chang S, et al. Adverse prognostic significance of capsular incision with radical retropubic prostatectomy. J Urol. 2004;172:119–123.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "preston_m_carriere_m_raju_g_et_al_the_prognostic_significance_of_capsular_incision_into_tumor_during",
+          "label": "Preston M, Carriere M, Raju G, et al. The prognostic significance of capsular incision into tumor during radical prostatectomy. Eur Urol. 2011;59:613–618.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ohori_m_wheeler_t_kattan_m_et_al_prognostic_significance_of_positive_surgical_margins_in_radical_pro",
+          "label": "Ohori M, Wheeler T, Kattan M, et al. Prognostic significance of positive surgical margins in radical prostatectomy specimens. J Urol. 1995;154:1818–1824.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chuang_a_nielsen_m_hernandez_d_et_al_the_significance_of_positive_surgical_margin_in_areas_of_capsul",
+          "label": "Chuang A, Nielsen M, Hernandez D, et al. The significance of positive surgical margin in areas of capsular incision in otherwise organ confined disease at radical prostatectomy. J Urol. 2007;178:1306–1310.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gupta_r_oconnell_r_haynes_a_m_et_al_extraprostatic_extension_epe_of_prostatic_carcinoma_is_its_proxi",
+          "label": "Gupta R, O'Connell R, Haynes A-M, et al. Extraprostatic extension (EPE) of prostatic carcinoma: is its proximity to the surgical margin or Gleason score important? BJU Int. 2015;116:343–350.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "babaian_r_troncoso_p_bhadkamkar_v_et_al_analysis_of_clinicopathological_factors_predicting_outcome_a",
+          "label": "Babaian R, Troncoso P, Bhadkamkar V, et al. Analysis of clinicopathological factors predicting outcome after radical prostatectomy. Cancer. 2001;91:1414-1422.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "alkhateeb_s_alibhai_s_fleshner_n_et_al_impact_of_positive_surgical_margins_after_radical_prostatecto",
+          "label": "Alkhateeb S, Alibhai S, Fleshner N, et al. Impact of positive surgical margins after radical prostatectomy differs by disease group. J Urol. 2010;183:145–150.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brimo_f_partin_aw_and_epstein_ji_tumor_grade_at_margins_of_resection_in_radical_prostatectomy_specim",
+          "label": "Brimo F, Partin AW and Epstein JI. Tumor grade at margins of resection in radical prostatectomy specimens is an independent predictor of prognosis. Urology. 2010;76:1206-1209.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sooriakumaran_p_ploumidis_a_nyberg_t_et_al_the_impact_of_length_and_location_of_positive_margins_in_",
+          "label": "Sooriakumaran P, Ploumidis A, Nyberg T, et al. The impact of length and location of positive margins in predicting biochemical recurrence after robot-assisted radical prostatectomy with minimum follow-up of 5 years. BJU Int. 2015;115:106–113.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kozal_s_peyronnet_b_cattarino_s_et_al_influence_of_pathological_factors_on_oncological_outcomes_afte",
+          "label": "Kozal S, Peyronnet B, Cattarino S, et al. Influence of pathological factors on oncological outcomes after robot-assisted radical prostatectomy for localized prostate cancer: results of a prospective study. Urol Oncol. 2015;33:330e331–330e337.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fleshner_n_evans_a_chadwick_k_et_al_clinical_significance_of_the_positive_surgical_margin_based_upon",
+          "label": "Fleshner N, Evans A, Chadwick K, et al. Clinical significance of the positive surgical margin based upon location, grade, and stage. Urol Oncol. 2010;28: 197–204.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "savdie_r_horvath_lg_benito_rp_et_al_high_gleason_grade_carcinoma_at_a_positive_surgical_margin_predi",
+          "label": "Savdie R, Horvath LG, Benito RP, et al. High Gleason grade carcinoma at a positive surgical margin predicts biochemical failure after radical prostatectomy and may guide adjuvant radiotherapy. BJU Int. 2010;109:1794-1800.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cao_d_kibel_a_gao_f_et_al_the_gleason_score_of_tumor_at_the_margin_in_radical_prostatectomy_is_predi",
+          "label": "Cao D, Kibel A, Gao F, et al. The Gleason score of tumor at the margin in radical prostatectomy is predictive of biochemical recurrence. Am J Surg Pathol. 2010;34:994–1001.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kates_m_sopko_na_han_m_partin_aw_and_epstein_ji_importance_of_reporting_the_gleason_score_at_the_pos",
+          "label": "Kates M, Sopko NA, Han M, Partin AW and Epstein JI. Importance of reporting the Gleason score at the positive surgical margin site: an analysis of 4,082 consecutive radical prostatectomy cases. J Urol. 2015.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_recommends_the_use_of_the_tnm_staging_system_for_carcinoma_of_the_prostate_of_the_ameri",
+          "label": "The protocol recommends the use of the TNM Staging System for carcinoma of the prostate of the American Joint Committee on Cancer (AJCC).1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajcc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_treated_",
+          "label": "By AJCC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically unfeasible), and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer. Tumor confined to the prostate gland irrespective of amount and distribution is considered pT2. pT3a and pT3b are illustrated in Figure 4.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_t3a_is_defined_as_a_tumor_with_unilateral_extraprostatic_extension_as_shown_in_a_or_with_bi",
+          "label": "Figure 4. T3a is defined as a tumor with unilateral extraprostatic extension, as shown in A, or with bilateral extension, as shown in B.  Microscopic extension into the bladder neck is also pT3a. T3b tumor invading the seminal vesicle. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, III.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_and_distant_lymph_nodes",
+          "label": "Regional and Distant Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "Regional Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_regional_lymph_nodes_are_the_nodes_of_the_true_pelvis_which_essentially_are_the_pelvic_nodes_bel",
+          "label": "The regional lymph nodes are the nodes of the true pelvis, which essentially are the pelvic nodes below the bifurcation of the common iliac arteries. They include the following groups",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pelvic_nos",
+          "label": "Pelvic, NOS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hypogastric",
+          "label": "Hypogastric",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "obturator",
+          "label": "Obturator",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "iliac",
+          "label": "Iliac",
+          "required": true,
+          "type": "free_text",
+          "condition": "internal, external, or NOS"
+        },
+        {
+          "field_id": "sacral",
+          "label": "Sacral",
+          "required": true,
+          "type": "free_text",
+          "condition": "lateral, presacral, promontory [Gerota’s], or NOS"
+        },
+        {
+          "field_id": "laterality_does_not_affect_the_n_classification",
+          "label": "Laterality does not affect the N classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distant_lymph_nodes",
+          "label": "Distant Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distant_lymph_nodes_lie_outside_the_confines_of_the_true_pelvis_they_can_be_imaged_using_ultrasound_",
+          "label": "Distant lymph nodes lie outside the confines of the true pelvis. They can be imaged using ultrasound, computed tomography, magnetic resonance imaging, or lymphangiography. Although enlarged lymph nodes can occasionally be visualized on radiographic imaging, fewer patients are initially discovered with clinically evident metastatic disease. In lower risk patients, imaging tests have proven unhelpful. In lieu of imaging, risk tables are many times used to determine individual patient risk of nodal involvement prior to therapy. Involvement of distant lymph nodes is classified as M1a. The distant lymph nodes include the following",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aortic",
+          "label": "Aortic",
+          "required": true,
+          "type": "free_text",
+          "condition": "paraaortic lumbar"
+        },
+        {
+          "field_id": "common_iliac",
+          "label": "Common iliac",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "inguinal_deep",
+          "label": "Inguinal, deep",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "superficial_inguinal",
+          "label": "Superficial inguinal",
+          "required": true,
+          "type": "free_text",
+          "condition": "femoral"
+        },
+        {
+          "field_id": "supraclavicular",
+          "label": "Supraclavicular",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cervical",
+          "label": "Cervical",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "scalene",
+          "label": "Scalene",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "retroperitoneal_nos",
+          "label": "Retroperitoneal, NOS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_the_y_r_and_a_pr",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and the “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval, and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_andor_vascular_invasion",
+          "label": "Lymphatic and/or Vascular Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_andor_vascular_invasion_lvi_indicates_whether_microscopic_lymph_vascular_invasion_is_ident",
+          "label": "Lymphatic and/or Vascular invasion (LVI) indicates whether microscopic lymph-vascular invasion is identified. LVI includes lymphatic invasion, vascular invasion, or lymphovascular invasion. By AJCC convention, LVI does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

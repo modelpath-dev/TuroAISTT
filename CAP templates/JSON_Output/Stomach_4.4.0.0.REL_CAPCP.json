@@ -1,0 +1,1775 @@
+{
+  "template_id": "Stomach_4.4.0.0.REL_CAPCP",
+  "organ": "STOMACH",
+  "protocol_posting_date": "March 2023",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "use_the_esophageal_checklist_if_the_tumor_involves_the_egj_and_the_tumor_midpoint_is_2_cm_or_less_in",
+          "label": "Use the esophageal checklist if the tumor involves the EGJ and the tumor midpoint is 2 cm or less into the proximal stomach.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cardia",
+              "label": "Cardia: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "fundus",
+              "label": "Fundus: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_wall",
+              "label": "Anterior wall"
+            },
+            {
+              "value": "posterior_wall",
+              "label": "Posterior wall"
+            },
+            {
+              "value": "body",
+              "label": "Body: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_wall",
+              "label": "Anterior wall"
+            },
+            {
+              "value": "posterior_wall",
+              "label": "Posterior wall"
+            },
+            {
+              "value": "lesser_curvature",
+              "label": "Lesser curvature"
+            },
+            {
+              "value": "greater_curvature",
+              "label": "Greater curvature"
+            },
+            {
+              "value": "antrum",
+              "label": "Antrum: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_wall",
+              "label": "Anterior wall"
+            },
+            {
+              "value": "posterior_wall",
+              "label": "Posterior wall"
+            },
+            {
+              "value": "lesser_curvature",
+              "label": "Lesser curvature"
+            },
+            {
+              "value": "greater_curvature",
+              "label": "Greater curvature"
+            },
+            {
+              "value": "pylorus",
+              "label": "Pylorus: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "adenocarcinoma_classification",
+          "label": "Adenocarcinoma Classification",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "tubular_adenocarcinoma",
+              "label": "Tubular adenocarcinoma"
+            },
+            {
+              "value": "poorly_cohesive_carcinoma",
+              "label": "Poorly cohesive carcinoma (includes signet-ring cell carcinoma and other variants)"
+            },
+            {
+              "value": "mucinous_adenocarcinoma",
+              "label": "Mucinous adenocarcinoma (greater than 50% mucinous)"
+            },
+            {
+              "value": "papillary_adenocarcinoma",
+              "label": "Papillary adenocarcinoma"
+            },
+            {
+              "value": "mixed_carcinoma",
+              "label": "Mixed carcinoma (mixture of discrete glandular (tubular / papillary) and signet-ring / poorly"
+            }
+          ],
+          "condition": "based on WHO"
+        },
+        {
+          "field_id": "lauren_classification_of_adenocarcinoma",
+          "label": "Lauren Classification of Adenocarcinoma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intestinal_type",
+              "label": "Intestinal type"
+            },
+            {
+              "value": "diffuse_type",
+              "label": "Diffuse type (includes signet-ring carcinoma, classified as greater than 50% signet-ring cells)"
+            },
+            {
+              "value": "mixed",
+              "label": "Mixed (approximately equal amounts of intestinal and diffuse)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "hepatoid_adenocarcinoma",
+              "label": "Hepatoid adenocarcinoma"
+            },
+            {
+              "value": "",
+              "label": "(Adeno)carcinoma with lymphoid stroma"
+            },
+            {
+              "value": "micropapillary_adenocarcinoma",
+              "label": "Micropapillary adenocarcinoma"
+            },
+            {
+              "value": "adenocarcinoma_of_fundic_gland_type",
+              "label": "Adenocarcinoma of fundic-gland type"
+            },
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "undifferentiated",
+              "label": "Undifferentiated (anaplastic) carcinoma"
+            },
+            {
+              "value": "gastroblastoma",
+              "label": "Gastroblastoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "neuroendocrine_carcinoma",
+              "label": "Neuroendocrine carcinoma (poorly differentiated)#"
+            },
+            {
+              "value": "mixed_adenocarcinoma_neuroendocrine_carcinoma",
+              "label": "Mixed adenocarcinoma-neuroendocrine carcinoma (small cell or large cell neuroendocrine"
+            }
+          ],
+          "guidance": "Select this option only if large cell or small cell cannot be determined."
+        },
+        {
+          "field_id": "carcinoma",
+          "label": "carcinoma)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mixed_adenocarcinoma_neuroendocrine_tumor",
+              "label": "Mixed adenocarcinoma-neuroendocrine tumor"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated_undifferentiated",
+              "label": "G3, poorly differentiated, undifferentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_extent",
+          "label": "Tumor Extent",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "carcinoma_in_situ",
+              "label": "Carcinoma in situ (intraepithelial tumor without invasion of the lamina propria, high-grade dysplasia)"
+            },
+            {
+              "value": "invades_lamina_propria",
+              "label": "Invades lamina propria"
+            },
+            {
+              "value": "invades_muscularis_mucosae",
+              "label": "Invades muscularis mucosae"
+            },
+            {
+              "value": "invades_submucosa",
+              "label": "Invades submucosa"
+            },
+            {
+              "value": "invades_muscularis_propria",
+              "label": "Invades muscularis propria"
+            },
+            {
+              "value": "penetrates_subserosal_connective_tissue_without_invasion_of_visceral_peritoneum_or_adjacent_structur",
+              "label": "Penetrates subserosal connective tissue without invasion of visceral peritoneum or adjacent structures"
+            },
+            {
+              "value": "invades_serosa",
+              "label": "Invades serosa (visceral peritoneum)"
+            },
+            {
+              "value": "directly_invades_adjacent_structure",
+              "label": "Directly invades adjacent structure(s) or organ(s)#"
+            },
+            {
+              "value": "spleen",
+              "label": "Spleen"
+            },
+            {
+              "value": "transverse_colon",
+              "label": "Transverse colon"
+            },
+            {
+              "value": "liver",
+              "label": "Liver"
+            },
+            {
+              "value": "diaphragm",
+              "label": "Diaphragm"
+            },
+            {
+              "value": "pancreas",
+              "label": "Pancreas"
+            },
+            {
+              "value": "abdominal_wall",
+              "label": "Abdominal wall"
+            },
+            {
+              "value": "adrenal_gland",
+              "label": "Adrenal gland"
+            },
+            {
+              "value": "kidney",
+              "label": "Kidney"
+            },
+            {
+              "value": "small_intestine",
+              "label": "Small Intestine"
+            },
+            {
+              "value": "retroperitoneum",
+              "label": "Retroperitoneum"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ],
+          "guidance": "Intramural extension to the duodenum or esophagus is not considered invasion of an adjacent structure, but is classified using the depth of the greatest invasion in any of these sites."
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "present_with_no_viable_cancer_cells",
+              "label": "Present, with no viable cancer cells (complete response, score 0)"
+            },
+            {
+              "value": "present_with_single_cells_or_rare_small_groups_of_cancer_cells",
+              "label": "Present, with single cells or rare small groups of cancer cells (near complete response, score 1)"
+            },
+            {
+              "value": "present_with_residual_cancer_showing_evident_tumor_regression_but_more_than_single_cells_or_rare_sma",
+              "label": "Present, with residual cancer showing evident tumor regression, but more than single cells or rare small groups of cancer cells (partial response, score 2)"
+            },
+            {
+              "value": "present",
+              "label": "Present (not otherwise specified)"
+            },
+            {
+              "value": "absent_with_extensive_residual_cancer_and_no_evident_tumor_regression",
+              "label": "Absent, with extensive residual cancer and no evident tumor regression (poor or no response, score 3)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "closest_margins_to_invasive_carcinoma",
+          "label": "Closest Margin(s) to Invasive Carcinoma",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "omental",
+              "label": "Omental (radial): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_omental",
+              "label": "Greater omental: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lesser_omental",
+              "label": "Lesser omental: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "omental",
+              "label": "Omental (radial): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "deep",
+              "label": "Deep: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_dysplasia",
+          "label": "Margin Status for Dysplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_dysplasia",
+              "label": "All margins negative for dysplasia"
+            },
+            {
+              "value": "carcinoma_in_situ",
+              "label": "Carcinoma in situ (high-grade dysplasia) present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_carcinoma_in_situ",
+          "label": "Margin(s) Involved by Carcinoma in Situ",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "low_grade_dysplasia_present_at_margin",
+              "label": "Low-grade dysplasia present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_low_grade_dysplasia",
+          "label": "Margin(s) Involved by Low-Grade Dysplasia",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal",
+              "label": "Proximal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucosal",
+              "label": "Mucosal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_regional_lymph_node",
+              "label": "Non-regional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: Carcinoma in situ: intraepithelial tumor without invasion of the lamina propria, high-grade dysplasia"
+            }
+          ]
+        },
+        {
+          "field_id": "pt1_tumor_invades_the_lamina_propria_muscularis_mucosae_or_submucosa",
+          "label": "pT1: Tumor invades the lamina propria, muscularis mucosae, or submucosa",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor invades the lamina propria or muscularis mucosae"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor invades the submucosa"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor invades the muscularis propria#"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor penetrates the subserosal connective tissue without invasion of the visceral peritoneum or adjacent structures##, ###"
+            }
+          ],
+          "guidance": "A tumor may penetrate the muscularis propria with extension into the gastrocolic or gastrohepatic ligaments, or into the greater or lesser omentum, without perforation of the visceral peritoneum covering these structures. In this case, the tumor is classified as T3. If there is perforation of the visceral peritoneum covering the gastric ligaments or the omentum, the tumor should be classified as T4. The adjacent structures of the stomach include the spleen, transverse colon, liver, diaphragm, pancreas, abdominal wall, adrenal gland, kidney, small intestine, and retroperitoneum. Intramural extension to the duodenum or esophagus is not considered invasion of an adjacent structure, but is classified using the depth of the greatest invasion in any of these sites."
+        },
+        {
+          "field_id": "pt4_tumor_invades_the_serosa_visceral_peritoneum_or_adjacent_structures",
+          "label": "pT4: Tumor invades the serosa (visceral peritoneum) or adjacent structures##, ###",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Tumor invades the serosa (visceral peritoneum)"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Tumor invades adjacent structures / organs"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis in one or two regional lymph nodes"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2: Metastasis in three to six regional lymph nodes"
+            }
+          ],
+          "condition": "required only if applicable",
+          "guidance": "Metastatic tumor deposits in the subserosal fat adjacent to a gastric carcinoma, without evidence of residual lymph node tissue, are considered regional lymph node metastases for purposes of gastric cancer staging."
+        },
+        {
+          "field_id": "pn3_metastasis_in_seven_or_more_regional_lymph_nodes",
+          "label": "pN3: Metastasis in seven or more regional lymph nodes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn3a",
+              "label": "pN3a: Metastasis in seven to 15 regional lymph nodes"
+            },
+            {
+              "value": "pn3b",
+              "label": "pN3b: Metastasis in 16 or more regional lymph nodes"
+            },
+            {
+              "value": "pn3",
+              "label": "pN3 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "intestinal_metaplasia",
+              "label": "Intestinal metaplasia"
+            },
+            {
+              "value": "low_grade_dysplasia",
+              "label": "Low-grade dysplasia"
+            },
+            {
+              "value": "high_grade_dysplasia",
+              "label": "High-grade dysplasia"
+            },
+            {
+              "value": "chronic_gastritis",
+              "label": "Chronic gastritis"
+            },
+            {
+              "value": "helicobacter_pylori_present",
+              "label": "Helicobacter pylori present"
+            },
+            {
+              "value": "polyp",
+              "label": "Polyp(s) (type[s]): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "autoimmune_atrophic_chronic_gastritis",
+              "label": "Autoimmune atrophic chronic gastritis"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "for_her2_reporting_the_cap_gastric_her2_template_should_be_used_pending_biomarker_studies_should_be_",
+          "label": "For HER2 reporting, the CAP Gastric HER2 Template should be used. Pending biomarker studies should be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to_all_carcinomas_that_arise_in_the_stomach_including",
+          "label": "This protocol applies to all carcinomas that arise in the stomach, including",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinomas_involving_the_esophagogastric_junction_egj_with_tumor_midpoint_2_cm_into_the_proximal_sto",
+          "label": "Carcinomas involving the esophagogastric junction (EGJ) with tumor midpoint >2 cm into the proximal stomach",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinomas_of_the_cardiaproximal_stomach_without_involvement_of_the_egj_even_if_tumor_midpoint_is_2_",
+          "label": "Carcinomas of the cardia/proximal stomach without involvement of the EGJ even if tumor midpoint is ≤2 cm into the proximal stomach",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_does_not_apply_to",
+          "label": "This protocol DOES NOT apply to",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinomas_involves_the_egj_with_tumor_midpoint_2_cm_into_the_proximal_stomach",
+          "label": "Carcinomas involves the EGJ with tumor midpoint ≤2 cm into the proximal stomach",
+          "required": true,
+          "type": "free_text",
+          "condition": "use CAP protocol for esophageal cancer"
+        },
+        {
+          "field_id": "well_differentiated_neuroendocrine_tumors",
+          "label": "Well-differentiated neuroendocrine tumors",
+          "required": true,
+          "type": "free_text",
+          "condition": "use CAP protocol for neuroendocrine tumors of the stomach"
+        },
+        {
+          "field_id": "lymphomas_gastrointestinal_stromal_tumors_and_sarcomas",
+          "label": "Lymphomas, gastrointestinal stromal tumors, and sarcomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_location_should_be_described_in_relation_to_the_following_landmarks_figure_1",
+          "label": "Tumor location should be described in relation to the following landmarks (Figure 1)",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_anatomical_subsites_of_the_stomach_used_with_permission_of_the_american_joint_committee_on_",
+          "label": "Figure 1.  Anatomical subsites of the stomach. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original and primary source for this information is the AJCC Cancer Staging Manual, Eighth Edition (2017) published by Springer Science+Business Media.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_involving_the_egj_with_a_midpoint_2cm_into_the_proximal_stomach_are_classified_for_purposes_o",
+          "label": "Tumors involving the EGJ with a midpoint ≤ 2cm into the proximal stomach are classified for purposes of staging as esophageal carcinomas,1 and the CAP protocol for the esophagus should be used for such tumors. Tumors involving the EGJ with a midpoint >2 cm into the proximal stomach and any tumors in the stomach, including cardia cancers, without involvement of the EGJ should use the CAP protocol for the stomach.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_proximal_stomach_located_immediately_below_the_diaphragm_is_cardia_the_remaining_portions_are_th",
+          "label": "The proximal stomach located immediately below the diaphragm is cardia. The remaining portions are the fundus and the body. The distal portion of the stomach is the antrum. The pylorus is composed of muscular ring and a connection between the antrum and the first portion of the duodenum. The medial curvature of the stomach is the lesser curvature, whereas the lateral curvature is the greater curvature. The EGJ is defined as the junction of the tubular esophagus and the stomach irrespective of the type of epithelial lining of the esophagus.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_consistency_in_reporting_the_recently_revised_histologic_classification_proposed_by_the_who_is_r",
+          "label": "For consistency in reporting, the recently revised histologic classification proposed by the WHO is recommended1 (Table 1) but not required for clinical use. However, this classification scheme does not distinguish between intestinal and diffuse types of gastric carcinoma but includes signet-ring cell carcinoma in the poorly cohesive carcinoma category. Thus, the Laurén classification2 may be used in conjunction with the WHO system.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "with_the_exception_of_the_rare_small_cell_carcinoma_of_the_stomach_which_has_an_unfavorable_prognosi",
+          "label": "With the exception of the rare small cell carcinoma of the stomach, which has an unfavorable prognosis, most multivariate analyses show no effect of tumor type, independent of stage, on prognosis.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_who_classification_of_carcinoma_of_the_stomach2",
+          "label": "Table 1. WHO Classification of Carcinoma of the Stomach2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_well_differentiated_neuroendocrine_tumors_the_cap_protocol_for_neuroendocrine_tumors_of_the_stom",
+          "label": "For well-differentiated neuroendocrine tumors, the CAP protocol for neuroendocrine tumors of the stomach applies.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_laurén_classification_namely_intestinal_diffuse_or_mixed_type_andor_the_ming_classification_name",
+          "label": "The Laurén classification, namely intestinal, diffuse, or mixed type, and/or the Ming classification, namely expanding or infiltrating type, may also be included. In general, significant correlation is seen between the various classification systems.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_who_classifies_premalignant_lesions_of_the_gastrointestinal_tract_as_intraepithelial_neoplasia_f",
+          "label": "The WHO classifies premalignant lesions of the gastrointestinal tract as intraepithelial neoplasia. For purposes of data reporting, high-grade dysplasia in a gastric resection specimen is reported as “carcinoma in situ.” The term “carcinoma in situ” is not widely applied to glandular neoplastic lesions in the gastrointestinal tract but is retained for tumor registry reporting purposes as specified by law in many states.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_digestive_system_tumours_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon (France): International Agency for Research on Cancer; 2019. (WHO classification of tumours series, 5th ed.; vol. 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lauren_p_the_two_histological_main_types_of_gastric_carcinoma_acta_pathol_microbiol_scand_19656431_4",
+          "label": "Lauren P. The two histological main types of gastric carcinoma. Acta Pathol Microbiol Scand. 1965;64:31-49.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "talamonti_ms_kim_sp_yao_ka_et_al_surgical_outcomes_of_patients_with_gastric_carcinoma_the_importance",
+          "label": "Talamonti MS, Kim SP, Yao KA, et al. Surgical outcomes of patients with gastric carcinoma: the importance of primary tumor location and microvessel invasion. Surgery. Oct 2003;134(4):720 727; discussion 727-729.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "luebke_t_baldus_se_grass_g_et_al_histological_grading_in_gastric_cancer_by_ming_classification_corre",
+          "label": "Luebke T, Baldus SE, Grass G, et al. Histological grading in gastric cancer by Ming classification: correlation with histopathological subtypes, metastasis, and prognosis. World J Surg. 2005;29(11):1422-1427; discussion 1428.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_adenocarcinomas_a_histologic_grading_system_that_is_based_on_the_extent_of_glandular_differentia",
+          "label": "For adenocarcinomas, a histologic grading system that is based on the extent of glandular differentiation is suggested, as shown below.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_cannot_be_assessed",
+          "label": "Grade X            Cannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1 \tWell differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "greater than 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2 \tModerately differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "50% to 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated",
+          "label": "Grade 3 \tPoorly differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "49% or less of tumor composed of glands"
+        },
+        {
+          "field_id": "signet_ring_cell_carcinomas_are_high_grade_and_are_classified_as_grade_3",
+          "label": "Signet-ring cell carcinomas are high grade and are classified as grade 3.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_the_ajcc_8the_edition_undifferentiated_carcinoma_is_grouped_together_with_poorly_differentiated_c",
+          "label": "In the AJCC 8the edition, undifferentiated carcinoma is grouped together with poorly differentiated carcinoma as grade 3. Small cell neuroendocrine carcinomas, which were classified as grade 4, are now considered as grade 3.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_grade_has_been_shown_to_have_little_impact_on_survival_for_patients_undergoing_complete_tum",
+          "label": "Although grade has been shown to have little impact on survival for patients undergoing complete tumor resection,1 it has a significant impact on margin-negative resectability, with higher grade tumors less likely to be resectable.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "inoue_k_nakane_y_michiura_t_et_al_histopathological_grading_does_not_affect_survival_after_r0_surger",
+          "label": "Inoue K, Nakane Y, Michiura T, et al. Histopathological grading does not affect survival after R0 surgery for gastric cancer. Eur J Surg Oncol. 2002;28(6):633-636.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "response_of_tumor_to_previous_chemotherapy_or_radiation_therapy_should_be_reported_although_grading_",
+          "label": "Response of tumor to previous chemotherapy or radiation therapy should be reported. Although grading systems for tumor response have not been established, in general, 3-category systems provide good interobserver reproducibility.1 The following system is suggested",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sizable_pools_of_acellular_mucin_may_be_present_after_chemoradiation_but_should_not_be_interpreted_a",
+          "label": "Sizable pools of acellular mucin may be present after chemoradiation but should not be interpreted as representing residual tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_does_not_preclude_the_use_of_other_systems_for_assessment_of_tumor_response_such_as_th",
+          "label": "This protocol does not preclude the use of other systems for assessment of tumor response, such as the schemes reported by Memorial Sloan-Kettering Cancer Center investigators and others.2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ryan_r_gibbons_d_hyland_jmp_et_al_pathological_response_following_long_course_neoadjuvant_chemoradio",
+          "label": "Ryan R, Gibbons D, Hyland JMP, et al. Pathological response following long-course neoadjuvant chemoradiotherapy for locally advanced rectal cancer. Histopathology. 2005;47:141-146.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mansour_jc_tang_l_shah_m_et_al_does_graded_histologic_response_after_neoadjuvant_chemotherapy_predic",
+          "label": "Mansour JC, Tang L, Shah M, et al. Does graded histologic response after neoadjuvant chemotherapy predict survival for completely resected gastric cancer? Ann Surg Oncol. 2007;14(12):3412-3418",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rohatgi_pr_mansfield_pf_crane_ch_et_al_surgical_pathology_stage_by_american_joint_commission_on_canc",
+          "label": "Rohatgi PR, Mansfield PF, Crane CH, et al. Surgical pathology stage by American Joint Commission on Cancer criteria predicts patient survival after preoperative chemoradiation for localized gastric carcinoma. Cancer. 2006;107(7):1475-1482.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "both_venous1_and_lymphatic_vessel2_invasion_have_been_shown_to_be_adverse_prognostic_factors3_and_ar",
+          "label": "Both venous1 and lymphatic vessel2 invasion have been shown to be adverse prognostic factors3 and are predictive of lymph node metastases in early gastric cancers.4 However, the microscopic presence of tumor in lymphatic vessels or veins does not qualify as local extension of tumor as defined by the T classification (also see Note I).5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fotia_g_marrelli_d_de_stefano_a_pinto_e_roviello_f_factors_influencing_outcome_in_gastric_cancer_inv",
+          "label": "Fotia G, Marrelli D, De Stefano A, Pinto E, Roviello F. Factors influencing outcome in gastric cancer involving muscularis and subserosal layer. Eur J Surg Oncol. 2004;30(9):930-934.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "talamonti_ms_kim_sp_yao_ka_et_al_surgical_outcomes_of_patients_with_gastric_carcinoma_the_importance",
+          "label": "Talamonti MS, Kim SP, Yao KA, et al. Surgical outcomes of patients with gastric carcinoma: the importance of primary tumor location and microvessel invasion. Surgery. Oct 2003;134(4):720 727; discussion 727-729.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mansour_jc_tang_l_shah_m_et_al_does_graded_histologic_response_after_neoadjuvant_chemotherapy_predic",
+          "label": "Mansour JC, Tang L, Shah M, et al. Does graded histologic response after neoadjuvant chemotherapy predict survival for completely resected gastric cancer? Ann Surg Oncol. 2007;14(12):3412-3418",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "an_jy_baik_yh_choi_mg_noh_jh_sohn_ts_kim_s_predictive_factors_for_lymph_node_metastasis_in_early_gas",
+          "label": "An JY, Baik YH, Choi MG, Noh JH, Sohn TS, Kim S. Predictive factors for lymph node metastasis in early gastric cancer with submucosal invasion: analysis of a single institutional experience. Ann Surg. 2007;246(5):749-753.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perineural_invasion_has_been_shown_to_be_an_adverse_prognostic_factor1_and_has_been_associated_with_",
+          "label": "Perineural invasion has been shown to be an adverse prognostic factor1 and has been associated with lymph node metastases in early gastric cancer in univariate but not multivariate analyses.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mansour_jc_tang_l_shah_m_et_al_does_graded_histologic_response_after_neoadjuvant_chemotherapy_predic",
+          "label": "Mansour JC, Tang L, Shah M, et al. Does graded histologic response after neoadjuvant chemotherapy predict survival for completely resected gastric cancer? Ann Surg Oncol. 2007;14(12):3412-3418.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "an_jy_baik_yh_choi_mg_noh_jh_sohn_ts_kim_s_predictive_factors_for_lymph_node_metastasis_in_early_gas",
+          "label": "An JY, Baik YH, Choi MG, Noh JH, Sohn TS, Kim S. Predictive factors for lymph node metastasis in early gastric cancer with submucosal invasion: analysis of a single institutional experience. Ann Surg. 2007;246(5):749-753.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_surgical_resection_specimens_margins_include_the_proximal_distal_and_radial_margins_the_radial_m",
+          "label": "For surgical resection specimens, margins include the proximal, distal, and radial margins. The radial margins represent the nonperitonealized soft tissue margins closest to the deepest penetration of tumor. In the stomach, the lesser omental (hepatoduodenal and hepatogastric ligaments) and greater omental resection margins are the only radial margins. For endoscopic resection specimens, margins include peripheral mucosal margins and the deep margin of resection. It may be helpful to mark the margin(s) closest to the tumor with ink. Margins marked by ink should be designated in the macroscopic description.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_specific_regional_nodal_areas_of_the_stomach_figure_2_are_listed_below1",
+          "label": "The specific regional nodal areas of the stomach (Figure 2) are listed below.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_regional_lymph_nodes_of_the_stomach_used_with_permission_of_the_american_joint_committee_on",
+          "label": "Figure 2.  Regional lymph nodes of the stomach. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, IL. The original source for this material is the AJCC Cancer Staging Atlas (2006) edited by Greene et al2 and published by Springer Science and Business Media, LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perigastric_along_the_greater_curvature",
+          "label": "Perigastric along the greater curvature",
+          "required": true,
+          "type": "free_text",
+          "condition": "including greater curvature, greater omental"
+        },
+        {
+          "field_id": "perigastric_along_the_lesser_curvature",
+          "label": "Perigastric along the lesser curvature",
+          "required": true,
+          "type": "free_text",
+          "condition": "including lesser curvature, lesser omental"
+        },
+        {
+          "field_id": "right_and_left_paracardial",
+          "label": "Right and left paracardial",
+          "required": true,
+          "type": "free_text",
+          "condition": "cardioesophageal"
+        },
+        {
+          "field_id": "suprapyloric",
+          "label": "Suprapyloric",
+          "required": true,
+          "type": "free_text",
+          "condition": "including gastroduodenal"
+        },
+        {
+          "field_id": "infrapyloric",
+          "label": "Infrapyloric",
+          "required": true,
+          "type": "free_text",
+          "condition": "including gastroepiploic"
+        },
+        {
+          "field_id": "left_gastric_artery",
+          "label": "Left gastric artery",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "celiac_artery",
+          "label": "Celiac artery",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "common_hepatic_artery",
+          "label": "Common hepatic artery",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hepatoduodenal",
+          "label": "Hepatoduodenal",
+          "required": true,
+          "type": "free_text",
+          "condition": "along the proper hepatic artery, including portal"
+        },
+        {
+          "field_id": "splenic_artery",
+          "label": "Splenic artery",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "splenic_hilum",
+          "label": "Splenic hilum",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_gastrectomy_specimens_at_least_16_regional_lymph_nodes_should_be_removed_and_assessed_pathologic",
+          "label": "For gastrectomy specimens, at least 16 regional lymph nodes should be removed and assessed pathologically.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "involvement_of_other_intra_abdominal_lymph_nodes_such_as_retropancreatic_pancreaticoduodenal_peripan",
+          "label": "Involvement of other intra-abdominal lymph nodes, such as retropancreatic, pancreaticoduodenal, peripancreatic, superior mesenteric, middle colic, para-aortic, or retroperitoneal nodes, is classified as distant metastasis.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_for_gastric_carcinoma_of_the_american_joint_committee_on_cancer_ajcc_and_the_",
+          "label": "The TNM staging system for gastric carcinoma of the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) is recommended and shown below.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previ",
+          "label": "According to AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (eg, when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. In the AJCC 8th edition, “y” affects the stage grouping.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (ie, before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion",
+          "label": "Lymphovascular Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphovascular_invasion_lvi_indicates_whether_microscopic_lymphatic_andor_vascular_invasion_is_ident",
+          "label": "Lymphovascular invasion (LVI) indicates whether microscopic lymphatic and/or vascular invasion is identified in the pathology report. LVI includes lymphatic invasion, vascular invasion, or lymph-vascular invasion. By AJCC/UICC convention, LVI does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category (also see Note G).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "t_category_considerations_figures_3_5figure_3_definitions_of_t1_t2_and_t3_tumor_invading_the_lamina_",
+          "label": "T Category Considerations (Figures 3-5)Figure 3.  Definitions of T1, T2, and T3. Tumor invading the lamina propria is classified as T1a (left side in T1 illustration), whereas tumor invading the submucosa is classified as T1b (right side). T2 tumor invades the muscularis propria. T3 tumor invades the subserosal adipose tissue. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, IL. The original source for this material is the AJCC Cancer Staging Atlas (2006) edited by Greene et al2 and published by Springer Science and Business Media, LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_t3_is_defined_as_tumor_that_invades_the_subserosa_a_t3_tumor_may_penetrate_the_muscularis_p",
+          "label": "Figure 4. T3 is defined as tumor that invades the subserosa.  A T3 tumor may penetrate the muscularis propria with extension into the gastrocolic or gastrohepatic ligaments, or into the greater or lesser omentum (upper panel), without perforation of the visceral peritoneum covering these structures. Distal extension to duodenum (lower panel) does not affect T category. Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, IL. The original source for this material is the AJCC Cancer Staging Atlas (2006) edited by Greene et al2 and published by Springer Science and Business Media, LLC, www.springerlink.com",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_5_t4a_tumor_penetrates_the_serosa_visceral_peritoneum_without_invasion_of_adjacent_structures",
+          "label": "Figure 5.  T4a tumor penetrates the serosa (visceral peritoneum) without invasion of adjacent structures, whereas T4b tumor invades adjacent structures, such as the pancreas (shown). Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, IL. The original source for this material is the AJCC Cancer Staging Atlas (2006) edited by Greene et al2 and published by Springer Science and Business Media, LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastatic_tumor_deposits_in_the_subserosal_fat_adjacent_to_a_gastric_carcinoma_without_evidence_of_",
+          "label": "Metastatic tumor deposits in the subserosal fat adjacent to a gastric carcinoma, without evidence of residual lymph node tissue, are considered regional lymph node metastases for purposes of gastric cancer staging.1 Tumor deposits are defined as discrete tumor nodules within the lymph drainage area of the primary carcinoma without identifiable lymph node tissue or identifiable vascular or neural structure. Shape, contour, and size of the deposit are not considered in these designations. Nodules implanted on the peritoneal surface are considered distant metastases (M1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "one_of_the_most_important_risk_factors_for_development_of_gastric_carcinoma_is_long_standing_infecti",
+          "label": "One of the most important risk factors for development of gastric carcinoma is long-standing infection with Helicobacter pylori, which leads to chronic gastritis and mucosal atrophy with intestinal metaplasia; autoimmune atrophic chronic gastritis, also a chronic inflammatory condition, is also associated with increased risk.1 Occasionally, gastric carcinoma arises in a preexisting gastric polyp, most commonly large hyperplastic polyps in the setting of atrophic gastritis. Previous gastric surgery, such as Bilroth I or Bilroth II procedures for both benign and malignant indications, predisposes to the development of carcinoma in the remnant stomach; such tumors typically arise approximately 25 years after surgery for benign diseases.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kelley_jr_duggan_jm_gastric_cancer_epidemiology_and_risk_factors_j_clin_epidemiol_20035611_9",
+          "label": "Kelley JR, Duggan JM. Gastric cancer epidemiology and risk factors. J Clin Epidemiol. 2003;56(1):1-9.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "an_jy_choi_mg_noh_jh_sohn_ts_kim_s_the_outcome_of_patients_with_remnant_primary_gastric_cancer_compa",
+          "label": "An JY, Choi MG, Noh JH, Sohn TS, Kim S. The outcome of patients with remnant primary gastric cancer compared with those having upper one-third gastric cancer. Am J Surg. 2007;194(2):143 147.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

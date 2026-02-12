@@ -1,0 +1,1521 @@
+{
+  "template_id": "Neuroblastoma.Bx_5.0.0.1.REL_CAPCP",
+  "organ": "NEUROBLASTOMA: Biopsy",
+  "protocol_posting_date": "June 2025",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "expert_consultation",
+      "section_name": "EXPERT CONSULTATION",
+      "fields": [
+        {
+          "field_id": "expert_consultation",
+          "label": "Expert Consultation",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pending_completion_of_this_cap_cancer_protocol_is_awaiting_expert_consultation",
+              "label": "Pending - Completion of this CAP Cancer Protocol is awaiting expert consultation"
+            },
+            {
+              "value": "completed_this_cap_cancer_protocol_or_some_elements_have_been_performed_following_expert",
+              "label": "Completed - This CAP Cancer Protocol or some elements have been performed following expert"
+            }
+          ],
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "consultation",
+          "label": "consultation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "clinical",
+      "section_name": "CLINICAL",
+      "fields": [
+        {
+          "field_id": "patient_age",
+          "label": "Patient Age",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_18_months",
+              "label": "Less than 18 months"
+            },
+            {
+              "value": "greater_than_or_equal_to_18_months_and_less_than_5_years",
+              "label": "Greater than or equal to 18 months and less than 5 years"
+            },
+            {
+              "value": "greater_than_or_equal_to_5_years",
+              "label": "Greater than or equal to 5 years"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "specimen",
+      "section_name": "SPECIMEN",
+      "fields": [
+        {
+          "field_id": "procedure",
+          "label": "Procedure",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "needle_core_biopsy",
+              "label": "Needle core biopsy"
+            },
+            {
+              "value": "incisional_biopsy",
+              "label": "Incisional biopsy"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "tissue_allocation",
+          "label": "Tissue Allocation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "formalin_fixed_paraffin_embedded",
+              "label": "Formalin fixed paraffin embedded (FFPE)"
+            },
+            {
+              "value": "snap_frozen",
+              "label": "Snap frozen"
+            },
+            {
+              "value": "tissue_culture_media",
+              "label": "Tissue culture media"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "adrenal_periadrenal",
+              "label": "Adrenal / periadrenal"
+            },
+            {
+              "value": "retroperitoneal_nonadrenal",
+              "label": "Retroperitoneal, nonadrenal"
+            },
+            {
+              "value": "thoracic_paraspinal",
+              "label": "Thoracic paraspinal"
+            },
+            {
+              "value": "cervical",
+              "label": "Cervical"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "neuroblastoma",
+              "label": "Neuroblastoma"
+            },
+            {
+              "value": "ganglioneuroblastoma_nodular_subtype",
+              "label": "Ganglioneuroblastoma, nodular subtype#"
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "guidance": "For nodular (composite) ganglioneuroblastomas with more than 1 nodule, degree of differentiation and mitotic-karyorrhectic index (MKI) must be given for each nodule. Please indicate the differentiation and MKI for the least favorable nodule in the checklist below. Classification of additional nodules can be described in the comment."
+        },
+        {
+          "field_id": "number_of_nodules",
+          "label": "Number of Nodules",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_number",
+              "label": "Specify number: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nodular_subtypes_repeat_for_each_nodule",
+          "label": "Nodular Subtype(s) (repeat for each nodule): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ganglioneuroblastoma_intermixed_subtype",
+              "label": "Ganglioneuroblastoma, intermixed subtype"
+            },
+            {
+              "value": "ganglioneuroma",
+              "label": "Ganglioneuroma"
+            },
+            {
+              "value": "neuroblastic_tumor_unclassifiable",
+              "label": "Neuroblastic tumor, unclassifiable: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "degree_of_differentiation",
+          "label": "Degree of Differentiation",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ],
+          "condition": "neuroblastic component"
+        },
+        {
+          "field_id": "report_neuroblastic_component_if_not_previously_treated",
+          "label": "Report neuroblastic component if not previously treated",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "undifferentiated",
+              "label": "Undifferentiated"
+            },
+            {
+              "value": "poorly_differentiated",
+              "label": "Poorly differentiated"
+            },
+            {
+              "value": "differentiating",
+              "label": "Differentiating"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "mitotic_karyorrhectic_index",
+          "label": "Mitotic-Karyorrhectic Index",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ],
+          "condition": "MKI"
+        },
+        {
+          "field_id": "report_neuroblastic_component_if_not_previously_treated",
+          "label": "Report neuroblastic component if not previously treated.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "low",
+              "label": "Low (less than 100 per 5000 cells; less than 2%)"
+            },
+            {
+              "value": "intermediate",
+              "label": "Intermediate (100-200 per 5000 cells; 2%-4%)"
+            },
+            {
+              "value": "high",
+              "label": "High (greater than 200 per 5000 cells; greater than 4%)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "pathology_classification",
+      "section_name": "PATHOLOGY CLASSIFICATION",
+      "fields": [
+        {
+          "field_id": "international_neuroblastoma_pathology_classification",
+          "label": "International Neuroblastoma Pathology Classification",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ],
+          "condition": "INPC"
+        },
+        {
+          "field_id": "inpc_applies_to_untreated_primary_tumors_and_tumors_in_metastatic_sites_provided_that_there_is_suffi",
+          "label": "INPC applies to untreated primary tumors and tumors in metastatic sites provided that there is sufficient material to classify histologically. Classification based on limited material (biopsy or incomplete resection) may be subject to sampling error and should be noted, accordingly. Bone marrow biopsy is useful only for evaluation of degree of neuroblastic differentiation, but is not eligible for MKI determination.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "favorable_histopathology_as_sampled",
+              "label": "Favorable histopathology, as sampled"
+            },
+            {
+              "value": "neuroblastoma_poorly_differentiated_subtype_low_or_intermediate_mki_less_than_18_months_old",
+              "label": "Neuroblastoma, poorly differentiated subtype, low or intermediate MKI, less than 18 months old"
+            },
+            {
+              "value": "neuroblastoma_differentiating_subtype_intermediate_mki_less_than_18_months_old",
+              "label": "Neuroblastoma, differentiating subtype, intermediate MKI, less than 18 months old"
+            },
+            {
+              "value": "neuroblastoma_differentiating_subtype_low_mki_less_than_5_years_old",
+              "label": "Neuroblastoma, differentiating subtype, low MKI, less than 5 years old"
+            },
+            {
+              "value": "ganglioneuroblastoma_nodular_poorly_differentiated_subtype_low_or_intermediate_mki_less_than",
+              "label": "Ganglioneuroblastoma, nodular, poorly differentiated subtype, low or intermediate MKI, less than"
+            }
+          ]
+        },
+        {
+          "field_id": "18_months_old",
+          "label": "18 months old",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ganglioneuroblastoma_nodular_differentiating_subtype_intermediate_mki_less_than_18_months",
+              "label": "Ganglioneuroblastoma, nodular, differentiating subtype, intermediate MKI, less than 18 months"
+            }
+          ]
+        },
+        {
+          "field_id": "old",
+          "label": "old",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ganglioneuroblastoma_nodular_differentiating_subtype_low_mki_less_than_5_years_old",
+              "label": "Ganglioneuroblastoma, nodular, differentiating subtype, low MKI, less than 5 years old"
+            },
+            {
+              "value": "ganglioneuroblastoma_intermixed_any_age",
+              "label": "Ganglioneuroblastoma, intermixed, any age"
+            },
+            {
+              "value": "ganglioneuroma_any_age",
+              "label": "Ganglioneuroma, any age"
+            },
+            {
+              "value": "unfavorable_histopathology_as_sampled",
+              "label": "Unfavorable histopathology, as sampled"
+            },
+            {
+              "value": "neuroblastoma_undifferentiated_subtype_any_mki_any_age",
+              "label": "Neuroblastoma, undifferentiated subtype, any MKI, any age"
+            },
+            {
+              "value": "neuroblastoma_poorly_differentiated_subtype_high_mki_any_age",
+              "label": "Neuroblastoma, poorly differentiated subtype, high MKI, any age"
+            },
+            {
+              "value": "neuroblastoma_poorly_differentiated_subtype_low_or_intermediate_mki_greater_than_or_equal_to_18",
+              "label": "Neuroblastoma, poorly differentiated subtype, low or intermediate MKI, greater than or equal to 18"
+            }
+          ]
+        },
+        {
+          "field_id": "months_old",
+          "label": "months old",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "neuroblastoma_differentiating_subtype_high_mki_any_age",
+              "label": "Neuroblastoma, differentiating subtype, high MKI, any age"
+            },
+            {
+              "value": "neuroblastoma_differentiating_subtype_intermediate_mki_greater_than_or_equal_to_18_months",
+              "label": "Neuroblastoma, differentiating subtype, intermediate MKI, greater than or equal to 18 months"
+            },
+            {
+              "value": "neuroblastoma_differentiating_subtype_low_mki_greater_than_or_equal_to_5_years_old",
+              "label": "Neuroblastoma, differentiating subtype, low MKI, greater than or equal to 5 years old"
+            },
+            {
+              "value": "ganglioneuroblastoma_nodular_undifferentiated_subtype_any_mki_any_age",
+              "label": "Ganglioneuroblastoma, nodular, undifferentiated subtype, any MKI, any age"
+            },
+            {
+              "value": "ganglioneuroblastoma_nodular_poorly_differentiated_subtype_high_mki_any_age",
+              "label": "Ganglioneuroblastoma, nodular, poorly differentiated subtype, high MKI, any age"
+            },
+            {
+              "value": "ganglioneuroblastoma_nodular_poorly_differentiated_subtype_low_or_intermediate_mki_greater",
+              "label": "Ganglioneuroblastoma, nodular, poorly differentiated subtype, low or intermediate MKI, greater"
+            }
+          ]
+        },
+        {
+          "field_id": "than_18_months_old",
+          "label": "than 18 months old",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ganglioneuroblastoma_nodular_differentiating_subtype_intermediate_mki_greater_than_or_equal_to",
+              "label": "Ganglioneuroblastoma, nodular, differentiating subtype, intermediate MKI, greater than or equal to"
+            }
+          ]
+        },
+        {
+          "field_id": "18_months_old",
+          "label": "18 months old",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ganglioneuroblastoma_nodular_differentiating_subtype_high_mki_any_age",
+              "label": "Ganglioneuroblastoma, nodular, differentiating subtype, high MKI, any age"
+            },
+            {
+              "value": "ganglioneuroblastoma_nodular_differentiating_subtype_low_mki_greater_than_or_equal_to_5_years",
+              "label": "Ganglioneuroblastoma, nodular, differentiating subtype, low MKI, greater than or equal to 5 years"
+            }
+          ]
+        },
+        {
+          "field_id": "old",
+          "label": "old",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined_secondary_to_insufficient_material",
+              "label": "Cannot be determined secondary to insufficient material"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "additional_findings",
+      "section_name": "ADDITIONAL FINDINGS",
+      "fields": [
+        {
+          "field_id": "additional_findings_specify",
+          "label": "Additional Findings (specify) : _________________",
+          "required": false,
+          "type": "free_text",
+          "notes": [
+            "H",
+            "I"
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J",
+            "K"
+          ]
+        },
+        {
+          "field_id": "mycn_amplification_status",
+          "label": "MYCN Amplification Status",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ],
+          "condition": "required for all tumors except ganglioneuroma"
+        },
+        {
+          "field_id": "results_of_mycn_amplification_information_may_not_be_available_to_the_pathologist_at_the_time_of_the",
+          "label": "Results of MYCN amplification information may not be available to the pathologist at the time of the report.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "not_amplified",
+              "label": "Not amplified"
+            },
+            {
+              "value": "amplified",
+              "label": "Amplified: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gain",
+              "label": "Gain: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "molecular_genetic_studies",
+          "label": "Molecular Genetic Studies",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "pending",
+              "label": "Pending"
+            },
+            {
+              "value": "segmental_chromosomal_aberration_analysis",
+              "label": "Segmental chromosomal aberration analysis (e.g., 1p deletion, 11q deletion, and / or 17g gain)"
+            }
+          ],
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "specify_results",
+          "label": "(specify results): _________________",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "alk_mutation_amplification",
+              "label": "ALK mutation / amplification (specify results): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "method_for_molecular_genetic_studies",
+          "label": "Method for Molecular Genetic Studies",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "fluorescence_in_situ_hybridization",
+              "label": "Fluorescence in situ hybridization (FISH)"
+            },
+            {
+              "value": "sequencing",
+              "label": "Sequencing (specify type, if known): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "microarray",
+              "label": "Microarray"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_ancillary_studies_specify",
+          "label": "Other Ancillary Studies (specify) : _________________",
+          "required": false,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "expert_consultation_is_not_required_this_question_has_been_added_to_annotate_if_so_desired_that_the_",
+          "label": "Expert consultation is not required. This question has been added to annotate, if so desired, that the case has been sent out for consultation and thus items of the CAP protocol could not be completed pending expert consultation. Completion of the CAP protocol should then be performed following consultation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "needle_core_biopsies_andor_open_biopsies_may_be_performed_as_diagnostic_methods_in_neuroblastic_tumo",
+          "label": "Needle core biopsies and/or open biopsies may be performed as diagnostic methods in neuroblastic tumors. Less invasive modalities may be better tolerated in younger children and may be associated with lower risks of complications1, but adequate tissue is required to permit both the histologic and molecular testing needed to accurately risk stratify patients for clinical decision making.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_needle_core_biopsies_can_obtain_sufficient_material_for_morphologic_diagnosis_and_special_stud",
+          "label": "While needle core biopsies can obtain sufficient material for morphologic diagnosis and special studies, sampling problems may limit tumor subtyping or grading, especially in tumors that are heterogeneous (i.e., ganglioneuroblastoma, nodular type). Thus, histologic classification based on limited material should be noted in these cases. If, as a minimum procedure, only core biopsies are performed, multiple (3-5) cores should be obtained from multiple areas of the tumor, for formalin fixation and snap-freezing. Additionally, a minimum of 100 mg snap-frozen tissue (e.g., at least 8-10, 2 cm, 18G cores) may be necessary for each ancillary study. Limited specimens may not be sufficient for prognostic histopathologic evaluation.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_handling_an_excisional_biopsy_specimen_sections_should_be_obtained_from_central_and_peripheral_",
+          "label": "When handling an excisional biopsy specimen, sections should be obtained from central and peripheral areas of the tumor according to common guidelines (at least 1 tumor section per centimeter in the longest dimension).2 All grossly visible nodules or hemorrhagic foci in the tumor should be individually sampled.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "submission_of_tissue_from_these_samples",
+          "label": "Submission of Tissue from These Samples",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "first_priority_should_always_be_given_to_formalin_fixed_paraffin_embedded_ffpe_tissue_for_morphologi",
+          "label": "First priority should always be given to formalin-fixed paraffin-embedded (FFPE) tissue for morphologic evaluation. Special studies (e.g., fluorescence in situ hybridization for MYCN amplification status, SNP array, next generation sequencing, and/or ploidy analysis) are critical to the molecular workup of neuroblastoma and second priority should be aliquoting at least 1 g of viable tumor tissue (1 cm3 from an open biopsy or 10-50 needle cores, depending on gauge and length). The International Neuroblastoma Pathology Committee recommends this additional material be allocated as follows2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "1_mycn_analysis_tumor_tissue_in_culture_media_touch_preps_or_snap_frozen_depending_on_the_methodolog",
+          "label": "1.  MYCN analysis: tumor tissue in culture media, touch preps, or snap-frozen depending on the methodology used. Imprints (for FISH study of MYCN), if needed, should always be made from fresh tumor tissue.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "2_ploidy_and_additional_molecular_genetic_studies_loh_for_1p_and_11q_segmental_chromosomal_aberratio",
+          "label": "2. Ploidy and additional molecular genetic studies (LOH for 1p and 11q, segmental chromosomal aberrations): tumor tissue in culture media or snap-frozen depending on the methodology used.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "3_remainder_snap_frozen_in_liquid_nitrogen_and_stored_at_80_c_for_other_molecular_testing_see_note_i",
+          "label": "3. Remainder snap-frozen in liquid nitrogen and stored at –80 C for other molecular testing (see Note I, below). The above recommendations are applicable when the entire or a large proportion of the tumor is resected, or when 1 or more large biopsy specimens are available. If the amount of tumor tissue is restricted, morphologic diagnosis is the prime consideration.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastatic_andor_bone_marrow_samples",
+          "label": "Metastatic and/or Bone Marrow Samples",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grading_can_be_performed_on_samples_from_metastatic_sites_provided_that_the_specimen_is_large_enough",
+          "label": "Grading can be performed on samples from metastatic sites, provided that the specimen is large enough to be representative. However, evaluation of MKI class is not feasible on bone marrow biopsy samples, because (1) usually small numbers of tumor cells are available and (2) the MKI category of bone marrow samples is not always the same as that of primary or other metastatic sites (unpublished data).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hassan_sf_mathur_s_magliaro_tj_larimer_el_ferrell_lb_vasudevan_sa_patterson_dm_louis_cu_russell_hv_n",
+          "label": "Hassan SF, Mathur S, Magliaro TJ, Larimer EL, Ferrell LB, Vasudevan SA, Patterson DM, Louis CU, Russell HV, Nuchtern JG, Kim ES. Needle core vs open biopsy for diagnosis of intermediate- and high-risk neuroblastoma in children. J Pediatr Surg. 2012 Jun;47(6):1261-6. doi: 10.1016/j.jpedsurg.2012.03.040. PMID: 22703803.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shimada_h_ambros_im_dehner_lp_hata_j_joshi_vv_roald_b_terminology_and_morphologic_criteria_of_neurob",
+          "label": "Shimada H, Ambros IM, Dehner LP, Hata J, Joshi VV, Roald B. Terminology and morphologic criteria of neuroblastic tumors: recommendations by the International Neuroblastoma Pathology Committee. Cancer. 1999;86(2):349-363.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_abdomen_is_the_most_common_primary_site_of_neuroblastoma_with_more_than_70_of_tumors_arising_in_",
+          "label": "The abdomen is the most common primary site of neuroblastoma, with more than 70% of tumors arising in the adrenal glands or in the paravertebral sympathetic chains. Patients with abdominal primaries may present with abdominal distension with or without abdominal pain. The posterior mediastinum is the second most common primary site; respiratory symptoms may prompt evaluation, or masses may be noted incidentally. Cervical neuroblastoma typically presents as a mass with or without Horner syndrome (oculosympathetic palsy). All neuroblastomas, regardless of biologic risk, can extend along radicular nerves, through spinal foramina, and into the epidural space, forming a dumbbell-shaped mass. Similarly, primary tumors in the pelvis may present with constipation or urinary symptoms, including dysuria, infection, flank pain, or urinary retention.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "it_is_recommended_that_the_international_neuroblastoma_classification123_described_below_be_used_whe",
+          "label": "It is recommended that the International Neuroblastoma Classification1,2,3 described below be used when describing untreated tumor samples.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "there_are_4_specific_categories_in_this_group_of_tumors",
+          "label": "There are 4 specific categories in this group of tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroblastoma",
+          "label": "Neuroblastoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "Schwannian stroma-poor"
+        },
+        {
+          "field_id": "ganglioneuroblastoma_intermixed",
+          "label": "Ganglioneuroblastoma, intermixed",
+          "required": true,
+          "type": "free_text",
+          "condition": "Schwannian stroma-rich"
+        },
+        {
+          "field_id": "ganglioneuroma",
+          "label": "Ganglioneuroma",
+          "required": true,
+          "type": "free_text",
+          "condition": "Schwannian stroma-dominant"
+        },
+        {
+          "field_id": "ganglioneuroblastoma_nodular",
+          "label": "Ganglioneuroblastoma, nodular",
+          "required": true,
+          "type": "free_text",
+          "condition": "composite, Schwannian stroma-rich/stroma-dominant and stroma-poor"
+        },
+        {
+          "field_id": "neuroblastoma_schwannian_stroma_poor_category",
+          "label": "Neuroblastoma (Schwannian Stroma-Poor) Category",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "microscopically_tumors_in_the_neuroblastoma_category_are_composed_of_neuroblastic_cells_that_form_gr",
+          "label": "Microscopically, tumors in the neuroblastoma category are composed of neuroblastic cells that form groups or nests separated by delicate, often incomplete stromal septa without or with limited Schwannian proliferation (comprising less than 50% of the tumor).1,3 See Note E for more details on neuroblastic differentiation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ganglioneuroblastoma_intermixed_schwannian_stroma_rich_category",
+          "label": "Ganglioneuroblastoma, Intermixed (Schwannian Stroma-Rich) Category",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ganglioneuromatous_component_please_see_below_of_the_tumor_exceeds_50_neuroblastic_component_is_pres",
+          "label": "Ganglioneuromatous component (please see below) of the tumor exceeds 50%. Neuroblastic component is present in an intermixed or randomly distributed pattern of microscopic nests. In those microscopic nests, tumor cells are in various stages of differentiation (often predominantly differentiating neuroblasts) with clearly recognizable naked neuritic processes around their cytoplasm (neuropil). Histologically, tumors in this category are one step behind the final stage of complete maturation toward ganglioneuroma. Macroscopic hemorrhagic/necrotic nodules are absent.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ganglioneuroma_schwannian_stroma_dominant_category",
+          "label": "Ganglioneuroma (Schwannian Stroma-Dominant) Category",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_this_category_schwannian_stroma_is_predominant_and_maturing_and_mature_ganglion_cells_are_individ",
+          "label": "In this category, Schwannian stroma is predominant, and maturing and mature ganglion cells are individually distributed or forming small clusters in the stroma.  Completely mature ganglion cells are covered with satellite cells. Please note, in order to avoid confusion here, ganglion cells are distinguished from differentiating neuroblasts based on the presence or absence of naked neuritic processes (neuropil) detected by H&E-stained section around their cytoplasm. Neuritic processes of the differentiating neuroblasts are still segmentally naked and not completely covered by Schwannian stromal cells, whereas no naked neuritic processes are identifiable around the ganglion cells since they are immediately and completely incorporated in the cytoplasm of Schwannian stromal cells. In summary, no microscopic foci of neuroblastic cells with detectable naked neuritic processes are found in tumors of the Ganglioneuroma category.\n\nGanglioneuroblastoma, Nodular (Composite, Schwannian Stroma-Rich/Stroma-Dominant and Stroma-Poor) Category",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_in_this_category_are_composed_of_multiple_clones_1_or_more_neuroblastoma_schwannian_stroma_po",
+          "label": "Tumors in this category are composed of multiple clones: 1 or more Neuroblastoma (Schwannian stroma-poor) nodules set within a background of Ganglioneuroblastoma, Intermixed (Schwannian stroma-rich), or Ganglioneuroma (Schwannian stroma-dominant) tissue.3 Please note that Neuroblastoma nodules are often hemorrhagic and/or necrotic, and Ganglioneuroblastoma, Intermixed/Ganglioneuroma component is tan-yellow and solid.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroblastic_tumor_unclassifiable",
+          "label": "Neuroblastic Tumor, Unclassifiable",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroblastic_cells_evident_sample_insufficient_for_categorization_into_1_of_the_4_basic_categories_a",
+          "label": "Neuroblastic cells evident; sample insufficient for categorization into 1 of the 4 basic categories. A small biopsy taken from a large tumor can result in this designation.\n\nPost-Chemotherapy Specimens",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroblastomas_may_undergo_extensive_morphologic_changes_post_chemotherapy_for_this_reason_biopsies_",
+          "label": "Neuroblastomas may undergo extensive morphologic changes post-chemotherapy. For this reason, biopsies or resections of treated tumors should be simply referred to as “neuroblastoma with treatment effect” or “treated neuroblastoma”, with reference to the original diagnostic subtype, if known. Similarly, recurrent disease should not be re-classified.\n\nImmunohistochemistry",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "recent_advancements_in_immunohistochemistry_have_aided_in_the_diagnosis_of_challenging_cases_particu",
+          "label": "Recent advancements in immunohistochemistry have aided in the diagnosis of challenging cases, particularly undifferentiated neuroblastoma. Phox2B protein, positive for neural crest tumors of neuronal and neuroendocrine differentiation, is now recognized as the most sensitive and specific immunohistochemical marker for neuroblastoma.4,5 Please note that Phox2B is positive for all peripheral neuroblastic tumors as well as paraganglioma/pheochromocytoma. Thus, Phox2B is not entirely specific, but immensely helpful adjunct for neuroblastoma diagnosis when dealing with pediatric small round cell tumors (Ewing sarcoma, alveolar rhabdomyosarcoma, among others). Phox2B may also be employed to aid in identification of metastatic neuroblastoma in bone marrow or other sites.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_less_specific_immunohistochemical_markers_may_also_be_frequently_positive_in_neuroblastoma_to_",
+          "label": "Other less specific immunohistochemical markers may also be frequently positive in neuroblastoma, to include PGP9.5, CD56, and NB84. Neuroblasts are also typically positive for synaptophysin and neuron-specific enolase, although these are less specific. Schwann cells are positive for S100 protein. Undifferentiated neuroblastoma cells may, on rare occasions, express vimentin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shimada_h_ambros_im_dehner_lp_hata_j_joshi_vv_roald_b_terminology_and_morphologic_criteria_of_neurob",
+          "label": "Shimada H, Ambros IM, Dehner LP, Hata J, Joshi VV, Roald B. Terminology and morphologic criteria of neuroblastic tumors: recommendations by the International Neuroblastoma Pathology Committee. Cancer. 1999;86(2):349-363.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shimada_h_ambros_im_dehner_lp_et_al_the_international_neuroblastoma_pathology_classification_the_shi",
+          "label": "Shimada, H, Ambros IM, Dehner LP, et al. The International Neuroblastoma Pathology Classification (the Shimada system). Cancer. 1999;86(2):364-372.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "peuchmaur_m_damore_es_joshi_vv_et_al_revision_of_the_international_neuroblastoma_pathology_classific",
+          "label": "Peuchmaur M, d'Amore ES, Joshi VV, et al. Revision of the International Neuroblastoma Pathology Classification: confirmation of favorable and unfavorable prognostic subsets in ganglioneuroblastoma, nodular. Cancer. 2003;98(10):2274-2281.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bielle_f_fréneaux_p_jeanne_pasquier_c_maran_gonzalez_a_rousseau_a_lamant_l_paris_r_pierron_g_nicolas",
+          "label": "Bielle F, Fréneaux P, Jeanne-Pasquier C, Maran-Gonzalez A, Rousseau A, Lamant L, Paris R, Pierron G, Nicolas AV, Sastre-Garau X, Delattre O, Bourdeaut F, Peuchmaur M. PHOX2B immunolabeling: a novel tool for the diagnosis of undifferentiated neuroblastomas among childhood small round blue-cell tumors. Am J Surg Pathol. 2012 Aug;36(8):1141-9.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hata_jl_correa_h_krishnan_c_esbenshade_aj_black_jo_chung_dh_mobley_bc_diagnostic_utility_of_phox2b_i",
+          "label": "Hata JL, Correa H, Krishnan C, Esbenshade AJ, Black JO, Chung DH, Mobley BC. Diagnostic utility of PHOX2B in primary and treated neuroblastoma and in neuroblastoma metastatic to the bone marrow. Arch Pathol Lab Med. 2015 Apr;139(4):543-6.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "degree_of_neuroblastic_differentiation_should_be_applied_to_the_initial_diagnostic_material_eg_pre_c",
+          "label": "Degree of neuroblastic differentiation should be applied to the initial diagnostic material (e.g., pre-chemotherapy). All tumors in the Neuroblastoma (Schwannian stroma-poor) category and neuroblastic components of the Ganglioneuroblastoma, Nodular (Composite, Schwannian stroma-rich/stroma-dominant, and stroma-poor) category are further classified into 1 of 3 subtypes1:\n\nUndifferentiated Subtype",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "no_neuritic_process_formation_by_tumor_cells_no_tumor_cell_differentiation_to_include_no_formation_o",
+          "label": "No neuritic process formation by tumor cells. No tumor cell differentiation to include no formation of rosettes or other secondary structures; diagnosis relies heavily on ancillary techniques, such as immunohistochemistry and/or molecular/cytogenetic analysis. Some tumors in this subtype show a “starry-sky” appearance. \n\nPoorly Differentiated Subtype",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuritic_process_formation_by_tumor_cells_evident_in_background_less_than_5_of_tumor_cells_show_feat",
+          "label": "Neuritic process formation by tumor cells evident in background; less than 5% of tumor cells show features of differentiating neuroblasts with synchronous differentiation of the nucleus (enlarged, vesicular with a single prominent nucleolus) and the cytoplasm (conspicuous, eosinophilic, or amphophilic, and twice the diameter of the nucleus).\n\nDifferentiating Subtype",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greater_than_5_of_tumor_cells_show_the_appearance_of_differentiating_neuroblasts_active_neuritic_pro",
+          "label": "Greater than 5% of tumor cells show the appearance of differentiating neuroblasts; active neuritic process production by the tumor cells; some tumors can show substantial Schwannian stromal development, frequently at their periphery, and a transition zone between neuroblastomatous and ganglioneuromatous regions can develop (although this zone lacks well-defined borders and comprises less than 50% of the tumor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shimada_h_ambros_im_dehner_lp_hata_j_joshi_vv_roald_b_terminology_and_morphologic_criteria_of_neurob",
+          "label": "Shimada H, Ambros IM, Dehner LP, Hata J, Joshi VV, Roald B. Terminology and morphologic criteria of neuroblastic tumors: recommendations by the International Neuroblastoma Pathology Committee. Cancer. 1999;86(2):349-363.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_mitotic_karyorrhectic_index_mki12_is_the_number_of_mitotic_figures_and_karyorrhectic_nuclei_per_",
+          "label": "The mitotic-karyorrhectic index (MKI)1,2 is the number of mitotic figures and karyorrhectic nuclei per 5000 neuroblastic cells. At initial diagnosis, it is a useful prognostic indicator for tumors in the neuroblastoma (Schwannian stroma-poor) category and should be determined as an average of all tumor sections available. The method described by Joshi et al.2 can be used to calculate MKI without the need to count 5000 cells. In summary, cellular density is usually estimated under low power, and the tumor is classified as either a dense (1000-1500 cells per 400X high-power fields [HPFs])#, moderate (~800 tumor cells per HPF)#, sparse (<500 cells per HPF)#, or mixed category (a mixed tumor has variable cellularity under different HPFs). Once categorized, random HPFs are chosen to count mitotic and karyorrhectic cells. High-power fields on specimens in the mixed category are selected to be proportional to the cellular density in the specimen; for example, in a sample with 70% dense cellularity and 30% sparse cellularity, 70% of the HPF should be in dense areas and 30% in sparse areas. In highly cellular tumors, the MKI can be determined in 6 to 8 HPFs, whereas in tumors with low cellularity and prominent neuropil, 20 or more HPFs may be necessary.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specimens_are_assigned_to_1_of_3_prognostic_categories",
+          "label": "Specimens are assigned to 1 of 3 prognostic categories",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "1_low_mki",
+          "label": "(1) Low MKI",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "less_than_100_mitotic_and_karyorrhectic_cells5000_tumor_cells_or_less_than_2_of_tumor_consisting_of_",
+          "label": "Less than 100 mitotic and karyorrhectic cells/5000 tumor cells, or less than 2% of tumor consisting of mitotic and karyorrhectic cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "2_intermediate_mki",
+          "label": "(2) Intermediate MKI",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "3_high_mki",
+          "label": "(3) High MKI",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greater_than_200_mitotic_and_karyorrhectic_cells5000_tumor_cells_or_greater_than_4_of_tumor_consisti",
+          "label": "Greater than 200 mitotic and karyorrhectic cells/5000 tumor cells, or greater than 4% of tumor consisting of mitotic and karyorrhectic cells",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Numbers of neuroblastic cells in each HPF (denominator for MKI determination) can vary, based on the type of microscope used (some practice is required for assessing the number of neuroblastic cells per HPF on a given microscope). The range of cells per HPF listed in parentheses in the above discussion are for a standard microscope setup with regular oculars. With a super-wide-field type of ocular, there may be an increased number of cells (1200 to 1500 cells per HPF in a dense category)."
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shimada_h_ambros_im_dehner_lp_hata_j_joshi_vv_roald_b_terminology_and_morphologic_criteria_of_neurob",
+          "label": "Shimada H, Ambros IM, Dehner LP, Hata J, Joshi VV, Roald B. Terminology and morphologic criteria of neuroblastic tumors: recommendations by the International Neuroblastoma Pathology Committee. Cancer.1999;86(2):349-363.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "joshi_vv_chatten_j_sather_hn_shimada_h_evaluation_of_the_shimada_classification_in_advanced_neurobla",
+          "label": "Joshi VV, Chatten J, Sather HN, Shimada H. Evaluation of the Shimada classification in advanced neuroblastoma with a special reference to the mitosis-karyorrhexis index: a report from the Children’s Cancer Study Group. Mod Pathol.1991;4(2):139-147.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_international_neuroblastoma_pathology_classification_inpc1_uses_age_neuroblastic_maturation_schw",
+          "label": "The International Neuroblastoma Pathology Classification (INPC)1 uses age, neuroblastic maturation, Schwannian stromal content, and MKI as prognostic indicators. Unfavorable indicators include undifferentiated neuroblastoma (especially in older patients) and high MKI. An important revision was added in 2003.2 The original INPC classified all tumors in the category of ganglioneuroblastoma, nodular, as unfavorable.1 The revised INPC distinguishes 2 prognostic subsets in this category, favorable and unfavorable, by applying the same age-linked histopathology evaluation to the nodular (neuroblastoma) components2 (Table 1).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_international_neuroblastoma_pathology_prognostic_classification",
+          "label": "Table 1. International Neuroblastoma Pathology Prognostic Classification",
+          "required": true,
+          "type": "free_text",
+          "condition": "INPC",
+          "guidance": "The neuroblastic nodule(s) of the ganglioneuroblastoma, nodular subtype are graded with the INPC age-linked histopathology evaluation and based on that evaluation classified as favorable or unfavorable. For multinodular tumors, each nodule is graded separately, and the least favorable nodule determines the classification."
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shimada_h_ambros_im_dehner_lp_et_al_the_international_neuroblastoma_pathology_classification_the_shi",
+          "label": "Shimada, H, Ambros IM, Dehner LP, et al. The International Neuroblastoma Pathology Classification (the Shimada system). Cancer. 1999;86(2):364-372.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "peuchmaur_m_damore_es_joshi_vv_et_al_revision_of_the_international_neuroblastoma_pathology_classific",
+          "label": "Peuchmaur M, d'Amore ES, Joshi VV, et al. Revision of the International Neuroblastoma Pathology Classification: confirmation of favorable and unfavorable prognostic subsets in ganglioneuroblastoma, nodular. Cancer. 2003;98(10):2274-2281.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "given_the_increasing_importance_of_pretreatment_imaging_characteristics_the_pathologist_is_not_requi",
+          "label": "Given the increasing importance of pretreatment imaging characteristics, the pathologist is not required to report on staging for patients with neuroblastoma. The current INRG staging system is described below and can be included in the comment section if desired.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "international_neuroblastoma_risk_group_inrg_staging_system_inrgss_recently_a_new_clinical_staging_sy",
+          "label": "International Neuroblastoma Risk Group (INRG) Staging System (INRGSS)\nRecently, a new clinical staging system, the INRGSS, has been proposed and increasingly adopted.1 Unlike the INSS, which relies on postsurgical data, the INRGSS relies only on pretreatment imaging, patient age, and clinical extent of disease. The INRGSS can be summarized as localized disease (stage L1), regional disease (stage L2), metastatic disease (stage L3), and “special stage” (stage MS, similar to the INSS stage 4S). However, this schema relies heavily on image-defined risk factors* and may be difficult for pathologists to implement.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_l1",
+          "label": "Stage L1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "localized_tumor_not_involving_vital_structures_as_defined_by_the_list_of_image_defined_risk_factors_",
+          "label": "Localized tumor not involving vital structures as defined by the list of image-defined risk factors and confined to one body compartment",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_l2",
+          "label": "Stage L2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "locoregional_tumor_with_presence_of_1_or_more_image_defined_risk_factors",
+          "label": "Locoregional tumor with presence of 1 or more image-defined risk factors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_m",
+          "label": "Stage M",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distant_metastatic_disease",
+          "label": "Distant metastatic disease",
+          "required": true,
+          "type": "free_text",
+          "condition": "except stage MS"
+        },
+        {
+          "field_id": "stage_ms",
+          "label": "Stage MS",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastatic_disease_in_children_younger_than_18_months_with_metastases_confined_to_skin_liver_andor_b",
+          "label": "Metastatic disease in children younger than 18 months with metastases confined to skin, liver, and/or bone marrow with minimal marrow involvement as described in stage 4S, above.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ipsilateral_tumor_extension_within_2_body_compartments",
+          "label": "Ipsilateral tumor extension within 2 body compartments",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neck_chest_chest_abdomen_abdomen_pelvis",
+          "label": "Neck-chest, chest-abdomen, abdomen-pelvis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neck",
+          "label": "Neck",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_encasing_carotid_andor_vertebral_artery_andor_internal_jugular_vein",
+          "label": "Tumor encasing carotid and/or vertebral artery and/or internal jugular vein",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_extending_to_base_of_skull",
+          "label": "Tumor extending to base of skull",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_compressing_the_trachea",
+          "label": "Tumor compressing the trachea",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cervico_thoracic_junction",
+          "label": "Cervico-thoracic junction",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_encasing_brachial_plexus_roots",
+          "label": "Tumor encasing brachial plexus roots",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_encasing_subclavian_vessels_andor_vertebral_andor_carotid_artery",
+          "label": "Tumor encasing subclavian vessels and/or vertebral and/or carotid artery",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_compressing_the_trachea",
+          "label": "Tumor compressing the trachea",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thorax",
+          "label": "Thorax",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_encasing_the_aorta_andor_major_branches",
+          "label": "Tumor encasing the aorta and/or major branches",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_compressing_the_trachea_andor_principal_bronchi",
+          "label": "Tumor compressing the trachea and/or principal bronchi",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lower_mediastinal_tumor_infiltrating_the_costo_vertebral_junction_between_t9_and_t12",
+          "label": "Lower mediastinal tumor, infiltrating the costo-vertebral junction between T9 and T12",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thoraco_abdominal",
+          "label": "Thoraco-abdominal",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_encasing_the_aorta_andor_vena_cava",
+          "label": "Tumor encasing the aorta and/or vena cava",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abdomenpelvis",
+          "label": "Abdomen/pelvis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_infiltrating_the_porta_hepatis_andor_the_hepatoduodenal_ligament",
+          "label": "Tumor infiltrating the porta hepatis and/or the hepatoduodenal ligament",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_encasing_branches_of_the_superior_mesenteric_artery_at_the_mesenteric_root",
+          "label": "Tumor encasing branches of the superior mesenteric artery at the mesenteric root",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_encasing_the_origin_of_the_coeliac_axis_andor_of_the_superior_mesenteric_artery",
+          "label": "Tumor encasing the origin of the coeliac axis, and/or of the superior mesenteric artery",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_invading_1_or_both_renal_pedicles",
+          "label": "Tumor invading 1 or both renal pedicles",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_encasing_the_aorta_andor_vena_cava",
+          "label": "Tumor encasing the aorta and/or vena cava",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_encasing_the_iliac_vessels",
+          "label": "Tumor encasing the iliac vessels",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pelvic_tumor_crossing_the_sciatic_notch",
+          "label": "Pelvic tumor crossing the sciatic notch",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intraspinal_tumor_extension_whatever_the_location_provided_that_more_than_one_third_of_the_spinal_ca",
+          "label": "Intraspinal tumor extension whatever the location provided that: more than one-third of the spinal canal in the axial plane is invaded and/or the perimedullary leptomeningeal spaces are not visible and/or the spinal cord signal is abnormal",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "infiltration_of_adjacent_organsstructures",
+          "label": "Infiltration of adjacent organs/structures",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pericardium_diaphragm_kidney_liver_duodeno_pancreatic_block_and_mesentery",
+          "label": "Pericardium, diaphragm, kidney, liver, duodeno-pancreatic block, and mesentery",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "conditions_to_be_recorded_but_not_considered_image_defined_risk_factors",
+          "label": "Conditions to be recorded, but not considered image-defined risk factors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "multifocal_primary_tumors",
+          "label": "Multifocal primary tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pleural_effusion_with_or_without_malignant_cells",
+          "label": "Pleural effusion, with or without malignant cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ascites_with_or_without_malignant_cells",
+          "label": "Ascites, with or without malignant cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "risk_groups",
+          "label": "Risk Groups",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "risk_group_assessment_can_be_defined_by_clinical_and_biological_variables_the_risk_grouping_scheme_f",
+          "label": "Risk group assessment can be defined by clinical and biological variables. The risk-grouping scheme for clinical trials of the Children’s Oncology Group Neuroblastoma Studies was based on the combination of INRGSS clinical stage, age at diagnosis, MYCN status, histopathology classification, loss of heterozygosity at 1p or 11q and DNA index. (Table 2).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_risk_grouping_scheme_for_the_international_neuroblastoma_risk_group_inrg_system",
+          "label": "Table 2. Risk Grouping Scheme for the International Neuroblastoma Risk Group (INRG) System",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abbreviations_gn_ganglioneuroma_gnb_ganglioneuroblastoma_na_not_applicable_amp_amplified_nb_neurobla",
+          "label": "Abbreviations: GN, ganglioneuroma; GNB, ganglioneuroblastoma; NA, not applicable; Amp, amplified, NB, neuroblastoma.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "monclair_t_brodeur_gm_ambros_pf_et_al_inrg_task_force_the_international_neuroblastoma_risk_group_inr",
+          "label": "Monclair T, Brodeur GM, Ambros PF, et al.; INRG Task Force. The International Neuroblastoma Risk Group (INRG) staging system: an INRG Task Force report. J Clin Oncol. 2009;27(2):298-303.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_opsoclonus_myoclonus_ataxia_syndrome_omas_is_the_most_common_example_of_a_paraneoplastic_manifes",
+          "label": "The opsoclonus-myoclonus ataxia syndrome (OMAS) is the most common example of a paraneoplastic manifestation of neuroblastoma. This is thought to occur due to cross-reactivity between antineuroblastoma antibodies and the Purkinje cells of the cerebellum. In keeping with the proposed immune mechanism, neuroblastic tumors in patients with OMAS near-always have diffuse and extensive lymphoid infiltration with lymphoid follicles. About three-quarters of OMAS-associated tumors are neuroblastoma, with ganglioneuroblastoma and ganglioneuroma less common; nonetheless, only about 50% of OMAS cases occur in patients with a known or discoverable tumor, and only 2-4% of neuroblastic tumors are associated with OMAS.1,2 A note should be made in the “Additional Pathologic Findings” section when a tumor has lymphocytes and lymphoid aggregates occupying more than half of any high-powered field. Although patients with OMAS usually have an excellent prognosis with respect to their neuroblastoma, many patients with OMAS may have persistent neurologic, developmental or behavioral issues despite complete tumor resection. \n\nSeveral rarer paraneoplastic syndromes can be associated with neuroblastoma. ROHHAD syndrome (rapid-onset obesity with hypothalamic dysfunction, hypoventilation, autonomic dysregulation) is usually associated with ganglioneuromas, and less frequently with other neuroblastic tumors.3 This syndrome may be associated with lymphocytic infiltration of the hypothalamus. Intriguingly, there is significant clinical overlap between ROHHAD and congenital central hypoventilation, the latter of which has pathogenic PHOX2B mutations.4 \n\nTumor secretion of excess vasoactive intestinal peptide (VIP) can cause profuse watery diarrhea with resultant electrolyte abnormalities; this too may improve with tumor resection. Histologically, VIP-excreting tumors tend to demonstrate a more well-differentiated phenotype (differentiating neuroblastoma or ganglioneuroblastoma) and have a better prognosis.5,6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cooper_r_khakoo_y_matthay_kk_lukens_jn_seeger_rc_stram_do_gerbing_rb_nakagawa_a_shimada_h_opsoclonus",
+          "label": "Cooper R, Khakoo Y, Matthay KK, Lukens JN, Seeger RC, Stram DO, Gerbing RB, Nakagawa A, Shimada H. Opsoclonus-myoclonus-ataxia syndrome in neuroblastoma: histopathologic features-a report from the Children's Cancer Group. Med Pediatr Oncol. 2001 Jun;36(6):623-9. doi: 10.1002/mpo.1139. PMID: 11344493.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meena_jp_seth_r_chakrabarty_b_gulati_s_agrawala_s_naranje_p_neuroblastoma_presenting_as_opsoclonus_m",
+          "label": "Meena JP, Seth R, Chakrabarty B, Gulati S, Agrawala S, Naranje P. Neuroblastoma presenting as opsoclonus-myoclonus: A series of six cases and review of literature. J Pediatr Neurosci. 2016 Oct-Dec;11(4):373-377. doi: 10.4103/1817-1745.199462. PMID: 28217170; PMCID: PMC5314861.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pranzatelli_mr_tate_ed_mcgee_nr_demographic_clinical_and_immunologic_features_of_389_children_with_o",
+          "label": "Pranzatelli MR, Tate ED, McGee NR. Demographic, Clinical, and Immunologic Features of 389 Children with Opsoclonus-Myoclonus Syndrome: A Cross-sectional Study. Front Neurol. 2017 Sep 11; 8:468. doi: 10.3389/fneur.2017.00468. PMID: 28959231; PMCID: PMC5604058.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maloney_ma_kun_ss_keens_tg_perez_ia_congenital_central_hypoventilation_syndrome_diagnosis_and_manage",
+          "label": "Maloney MA, Kun SS, Keens TG, Perez IA. Congenital central hypoventilation syndrome: diagnosis and management. Expert Rev Respir Med. 2018 Apr;12(4):283-292. doi: 10.1080/17476348.2018.1445970. Epub 2018 Feb 28. PMID: 29486608.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "qualman_sj_odorisio_ms_fleshman_dj_shimada_h_odorisio_tm_neuroblastoma_correlation_of_neuropeptide_e",
+          "label": "Qualman SJ, O'Dorisio MS, Fleshman DJ, Shimada H, O'Dorisio TM. Neuroblastoma. Correlation of neuropeptide expression in tumor tissue with other prognostic factors. Cancer. 1992 Oct 1;70(7):2005-12. doi: 10.1002/1097-0142(19921001)70:7<2005:aid-cncr2820700733>3.0.co;2-h. PMID: 1381992.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bourdeaut_f_de_carli_e_timsit_s_coze_c_chastagner_p_sarnacki_s_delattre_o_peuchmaur_m_rubie_h_michon",
+          "label": "Bourdeaut F, de Carli E, Timsit S, Coze C, Chastagner P, Sarnacki S, Delattre O, Peuchmaur M, Rubie H, Michon J; Neuroblastoma Committee of the Société Française des Cancers et Leucémies de l'Enfant et de l'Adolescent. VIP hypersecretion as primary or secondary syndrome in neuroblastoma: A retrospective study by the Société Française des Cancers de l'Enfant (SFCE). Pediatr Blood Cancer. 2009 May;52(5):585-90. doi: 10.1002/pbc.21912. PMID: 19143025.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "imaging",
+          "label": "Imaging",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cross_sectional_imaging_computed_tomography_or_magnetic_resonance_imaging_provides_important_informa",
+          "label": "Cross-sectional imaging (computed tomography or magnetic resonance imaging) provides important information about the primary tumor, including location, vascular encasement status, and the status of regional lymph nodes. Hepatic and bony metastases can be visualized, as can less common sites of disease. MRI can be particularly helpful in delineating the relationship of tumor to structures near the spine.  \n\nNuclear medicine imaging is important for treatment planning and assessment of extent of disease. Approximately 90% of neuroblastomas will take up meta-iodobenzylguanidine (MIBG), and therefore MIBG whole body scans can be helpful in delineating sites of metastatic disease, particularly disease involving bone and bone marrow. For patients with neuroblastoma whose disease is MIBG non-avid, fluoro-deoxyglucose-positron emission tomography (FDG-PET) imaging is used for detection of metastatic lesions.\n\nUrinary catecholamines",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "urinary_catecholamine_secretion_is_increased_in_neuroblastoma_and_is_useful_as_a_confirmatory_diagno",
+          "label": "Urinary catecholamine secretion is increased in neuroblastoma and is useful as a confirmatory diagnostic marker. Vanillylmandelic acid (VMA) and homovanillic acid (HVA) are the 2 catecholamine metabolites commonly measured1 via high-performance liquid chromatography. Due to concerns regarding the sensitivity and specificity of urinary catecholamines for assessment of disease status, measurement of HVA and VMA are no longer included as components of response assessment according to the International Neuroblastoma Response Criteria.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "park_jr_bagatell_r_cohn_sl_pearson_ad_villablanca_jg_berthold_f_burchill_s_boubaker_a_mchugh_k_nucht",
+          "label": "Park JR, Bagatell R, Cohn SL, Pearson AD, Villablanca JG, Berthold F, Burchill S, Boubaker A, McHugh K, Nuchtern JG, London WB, Seibel NL, Lindwasser OW, Maris JM, Brock P, Schleiermacher G, Ladenstein R, Matthay KK, Valteau-Couanet D. Revisions to the International Neuroblastoma Response Criteria: A Consensus Statement from the National Cancer Institute Clinical Trials Planning Meeting. Journal of Clinical Oncology. 2017; 35 (22): 2580-2587.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mycn_amplification_the_most_prognostically_relevant_genetic_alteration_in_neuroblastoma_is_mycn_ampl",
+          "label": "MYCN Amplification\nThe most prognostically relevant genetic alteration in neuroblastoma is MYCN amplification. MYCN gene amplification is associated with high-risk neuroblastic tumors and poor patient prognosis. MYCN is a proto-oncogene located on the short arm of chromosome 2, the amplification of which leads to inhibiting cellular differentiation and promoting cellular proliferation and apoptosis/karyorrhexis. Not surprisingly, amplification is associated with undifferentiated and poorly differentiated neuroblastomas with a high mitotic-karyorrhectic index.1\n\nMYCN overexpression usually occurs by gene amplification in 1 or both of the following ways: (1) gene duplication adjacent to the usual locus on 2p, forming homogeneously staining regions (HSRs) seen on chromosomal banding patterns; and (2) formation of double minutes, small, circular extrachromosomal fragments of DNA that harbor copies of the MYCN gene and are replicated during mitosis. These mechanisms can occur individually or simultaneously in a given tumor cell.\n\nThe MYCN status of a given neuroblastic tumor can be determined by FISH within a relatively short period of time after the surgery/biopsy using touch preparation slides or formalin-fixed, paraffin-embedded sections . A double-staining procedure is required in order to compare the number of chromosome 2 and MYCN signals in the same tumor nuclei. Additional MYCN signals associated with a similar increase in the number of chromosome 2 signals do not represent MYCN amplification. MYCN status is defined as “amplified” when MYCN signals exceed chromosome 2 signals by 3 times or more in the given tumor cell nuclei. The prognostic significance of tumors showing increased MYCN signals, but not more than 3 times that of chromosome 2 signals (MYCN gain), is yet to be determined.\n\nRecent studies have identified a subset of neuroblastic tumors with “discordance” between the genotype (MYCN amplification status) and the phenotype (differentiation, MKI, and histologic classification)2. In cases with amplification of the MYCN gene but favorable histologic features (differentiating neuroblasts and/or low-intermediate MKI), the cells do not produce active N-myc protein and lack the classic “bulls eye” nucleoli.2 In cases that lack MYCN amplification but have unfavorable histologic features (undifferentiated neuroblasts and/or high MKI), C-myc protein is often being expressed instead.3\n\nMYCN amplification is also correlated with advanced-stage tumors often having chromosome 1p deletions, especially del 1p36.3.4 The deletion of 14q has also been shown to be unfavorable, as has loss of 11q and gain of 17q.5\n\nALK Mutation and Amplification\nStudies have demonstrated mutations in the anaplastic lymphoma kinase (ALK) gene in a subset of neuroblastic tumors, as well as in the germline of patients with a familial predisposition to this disease.6,7,8 Single base missense mutations within the kinase domain of ALK occur in approximately 8% to 10% of neuroblastoma, and another approximate 2% have ALK gene amplification. These ALK aberrations are associated with higher risk and worse prognosis.9 While ALK immunohistochemistry is commonly performed in pathology laboratories to demonstrate ALK protein expression which correlates with ALK fusion status in tumors such as anaplastic large cell lymphoma (ALCL) or inflammatory myofibroblastic tumor (IMT), ALK immunohistochemistry does NOT correlate with ALK mutational status in neuroblastic tumors. Therefore, in the setting of treatment-refractory patients who might be candidates for tyrosine kinase inhibitors, ALK gene sequencing (especially of the kinase regions and mutational hotspots) is needed for mutational analysis; FISH may be employed to evaluate for gene amplification.\n\nDNA Index\nDetermination of DNA index by flow cytometry is also important; however, a minimum of 100 mg and preferably 1g of fresh tumor is typically required for this purpose . A DNA index near diploid/tetraploid is unfavorable, while hyperdiploid (near triploid) tumors have a better prognosis. However, the prognostic effects of DNA index are reported to be limited to those patients diagnosed at younger than 1 year of age.5\n\nSegmental Chromosomal Aberrations\nSegmental chromosomal aberrations (SCA; especially 1p deletion, 11q deletion, and/or 17q gain) are typically associated with high-risk tumors, whereas alterations in the numbers of whole chromosomes are associated with lower risk tumors.10,11 Most labs assess the presence of SCA using next generation sequencing assays or variations of microarray techniques (see Note B). Risk group assignment may be affected by ploidy status.12\n\nOther\nAdditional genetic abnormalities may have clinicopathologic significance in neuroblastic tumors but are not yet routinely assessed. One important category is genes involved in the telomere maintenance or alternate lengthening of telomeres (ALT) pathway, as abnormal lengthening of telomeres can prolong tumor cell survival.13,14 Mutations in the alpha-thalassemia/mental retardation X-linked syndrome (ATRX) gene, a member of the SWI/SNF family of chromatin remodeling proteins, are only found in 2%-3% of all neuroblastic tumors overall but occur in the vast majority of high-stage tumors in older children and adolescents (whereas congenital and infantile tumors only exceedingly rarely have them).9,15 The ATRX gene product plays a role in telomere maintenance, and tumor cells with mutated ATRX have longer-than-usual telomeres, prolonging their survival. Likewise, rearrangements in the telomere reverse transcriptase gene, TERT, are associated with high-risk neuroblastic tumors, and occur exclusively of MYCN amplication and ATRX mutations.16 In fact, aberrations of MYCN, ATRX, and TERT appear to represent three separate genetic categories of neuroblastoma with minimal overlap but a shared poor prognosis.17\n\nNeuroblastic tumors are usually wild-type for TP53, although p53 activity may be altered through other mechanisms.18 PHOX2B mutations are frequently seen in familial neuroblastomas, but only rarely in sporadic tumors.19",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "goto_s_umehara_s_gerbing_rb_et_al_histopathology_and_mycn_status_in_peripheral_neuroblastic_tumors_a",
+          "label": "Goto S, Umehara S, Gerbing RB, et al. Histopathology and MYCN status in peripheral neuroblastic tumors: a report from the Children’s Cancer Group. Cancer. 2001;92(10):2699-2708.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "suganuma_r_wang_ll_sano_h_et_al_peripheral_neuroblastic_tumors_with_genotype_phenotype_discordance_a",
+          "label": "Suganuma R, Wang LL, Sano H, et al. Peripheral neuroblastic tumors with genotype-phenotype discordance: a report from the Children's Oncology Group and the International Neuroblastoma Pathology Committee. Pediatr Blood Cancer. Mar;60(3):363-370.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wang_ll_suganuma_r_ikegaki_n_et_al_neuroblastoma_of_undifferentiated_subtype_prognostic_significance",
+          "label": "Wang LL, Suganuma R, Ikegaki N, et al. Neuroblastoma of undifferentiated subtype, prognostic significance of prominent nucleolar formation, and MYC/MYCN protein expression: a report from the Children's Oncology Group. Cancer. 2013;119(20):3718-3726.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "attiyeh_ef_london_wb_mossé_yp_et_al_childrens_oncology_group_chromosome_1p_and_11q_deletions_and_out",
+          "label": "Attiyeh EF, London WB, Mossé YP, et al; Children's Oncology Group. Chromosome 1p and 11q deletions and outcome in neuroblastoma. N Engl J Med. 2005;353(21):2243-2253.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "look_at_hayes_fa_shuster_jj_et_al_clinical_relevance_of_tumor_cell_ploidy_and_n_myc_gene_amplificati",
+          "label": "Look AT, Hayes FA, Shuster JJ, et al. Clinical relevance of tumor cell ploidy and N-myc gene amplification in childhood neuroblastoma: a Pediatric Oncology Group study. J Clin Oncol. 1991;9(4):581-591.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mosse_yp_laudenslager_m_longo_l_et_al_identification_of_alk_as_a_major_familial_neuroblastoma_predis",
+          "label": "Mosse YP, Laudenslager M, Longo L, et al. Identification of ALK as a major familial neuroblastoma predisposition gene. Nature. 2008;455(7215):930-936.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "janoueix_lerosey_i_lequin_d_brugières_l_et_al_somatic_and_germline_activating_mutations_of_the_alk_k",
+          "label": "Janoueix-Lerosey I, Lequin D, Brugières L, et al. Somatic and germline activating mutations of the ALK kinase receptor in neuroblastoma. Nature. 2008;455(7215):967-970.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_y_takita_j_choi_yl_et_al_oncogenic_mutations_of_alk_kinase_in_neuroblastoma_nature_200845572159",
+          "label": "Chen Y, Takita J, Choi YL, et al. Oncogenic mutations of ALK kinase in neuroblastoma. Nature. 2008;455(7215):971-974.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pugh_tj_morozova_o_attiyeh_ef_et_al_the_genetic_landscape_of_high_risk_neuroblastoma_nat_genet_20134",
+          "label": "Pugh TJ, Morozova O, Attiyeh EF, et al. The genetic landscape of high-risk neuroblastoma. Nat Genet. 2013;45(3):279-284.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schleiermacher_g_mosseri_v_london_wb_et_al_segmental_chromosomal_alterations_have_prognostic_impact_",
+          "label": "Schleiermacher G, Mosseri V, London WB, et al. Segmental chromosomal alterations have prognostic impact in neuroblastoma: a report from the INRG project. Br J Cancer. 2012;107(8):1418-1422.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "normand_c_michon_j_janoueix_lerosey_i_et_al_genetic_alterations_in_neuroblastoma_and_their_usefulnes",
+          "label": "Normand C, Michon J, Janoueix-Lerosey I, et al. Genetic alterations in neuroblastoma and their usefulness for clinical management. Bull Cancer. 2011;98(5):477-488.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cohn_sl_pearson_ad_london_wb_monclair_t_ambros_pf_brodeur_gm_faldum_a_hero_b_iehara_t_machin_d_mosse",
+          "label": "Cohn SL, Pearson AD, London WB, Monclair T, Ambros PF, Brodeur GM, Faldum A, Hero B, Iehara T, Machin D, Mosseri V, Simon T, Garaventa A, Castel V, Matthay KK; INRG Task Force. The International Neuroblastoma Risk Group (INRG) classification system: an INRG Task Force report. J Clin Oncol. 2009 Jan 10;27(2):289-97. doi: 10.1200/JCO.2008.16.6785. Epub 2008 Dec 1. PMID: 19047291; PMCID: PMC2650388.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "duan_xf_zhao_q_tert_mediated_and_atrx_mediated_telomere_maintenance_and_neuroblastoma_j_pediatr_hema",
+          "label": "Duan XF, Zhao Q. TERT-mediated and ATRX-mediated Telomere Maintenance and Neuroblastoma. J Pediatr Hematol Oncol. 2018 Jan;40(1):1-6. doi: 10.1097/MPH.0000000000000840. PMID: 28452859.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "koneru_b_lopez_g_farooqi_a_conkrite_kl_nguyen_th_macha_sj_modi_a_rokita_jl_urias_e_hindle_a_davidson",
+          "label": "Koneru B, Lopez G, Farooqi A, Conkrite KL, Nguyen TH, Macha SJ, Modi A, Rokita JL, Urias E, Hindle A, Davidson H, Mccoy K, Nance J, Yazdani V, Irwin MS, Yang S, Wheeler DA, Maris JM, Diskin SJ, Reynolds CP. Telomere Maintenance Mechanisms Define Clinical Outcome in High-Risk Neuroblastoma. Cancer Res. 2020 Jun 15;80(12):2663-2675. doi: 10.1158/0008-5472.CAN-19-3068. Epub 2020 Apr 14. PMID: 32291317; PMCID: PMC7313726.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheung_nk_zhang_j_lu_c_et_al_association_of_age_at_diagnosis_and_genetic_mutations_in_patients_with_",
+          "label": "Cheung NK, Zhang J, Lu C, et al. Association of age at diagnosis and genetic mutations in patients with neuroblastoma. JAMA. 2012;307(10):1062-1071.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "peifer_m_hertwig_f_roels_f_dreidax_d_gartlgruber_m_menon_r_krämer_a_roncaioli_jl_sand_f_heuckmann_jm",
+          "label": "Peifer M, Hertwig F, Roels F, Dreidax D, Gartlgruber M, Menon R, Krämer A, Roncaioli JL, Sand F, Heuckmann JM, Ikram F, Schmidt R, Ackermann S, Engesser A, Kahlert Y, Vogel W, Altmüller J, Nürnberg P, Thierry-Mieg J, Thierry-Mieg D, Mariappan A, Heynck S, Mariotti E, Henrich KO, Gloeckner C, Bosco G, Leuschner I, Schweiger MR, Savelyeva L, Watkins SC, Shao C, Bell E, Höfer T, Achter V, Lang U, Theissen J, Volland R, Saadati M, Eggert A, de Wilde B, Berthold F, Peng Z, Zhao C, Shi L, Ortmann M, Büttner R, Perner S, Hero B, Schramm A, Schulte JH, Herrmann C, O'Sullivan RJ, Westermann F, Thomas RK, Fischer M. Telomerase activation by genomic rearrangements in high-risk neuroblastoma. Nature. 2015 Oct 29;526(7575):700-4. doi: 10.1038/nature14980. Epub 2015 Oct 14. PMID: 26466568; PMCID: PMC4881306.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "akter_j_kamijo_t_how_do_telomere_abnormalities_regulate_the_biology_of_neuroblastoma_biomolecules_20",
+          "label": "Akter J, Kamijo T. How Do Telomere Abnormalities Regulate the Biology of Neuroblastoma? Biomolecules. 2021 Jul 28;11(8):1112. doi: 10.3390/biom11081112. PMID: 34439779; PMCID: PMC8392161.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lerone_m_ognibene_m_pezzolo_a_martucciello_g_zara_f_morini_m_mazzocco_k_molecular_genetics_in_neurob",
+          "label": "Lerone M, Ognibene M, Pezzolo A, Martucciello G, Zara F, Morini M, Mazzocco K. Molecular Genetics in Neuroblastoma Prognosis. Children (Basel). 2021 May 29;8(6):456. doi: 10.3390/children8060456. PMID: 34072462; PMCID: PMC8226597.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "raabe_eh_laudenslager_m_winter_c_et_al_prevalence_and_functional_consequence_of_phox2b_mutations_in_",
+          "label": "Raabe EH, Laudenslager M, Winter C, et al. Prevalence and functional consequence of PHOX2B mutations in neuroblastoma. Oncogene. 2008;27(4):469-476.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

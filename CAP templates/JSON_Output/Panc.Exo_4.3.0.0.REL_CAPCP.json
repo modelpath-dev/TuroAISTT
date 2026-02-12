@@ -1,0 +1,1872 @@
+{
+  "template_id": "Panc.Exo_4.3.0.0.REL_CAPCP",
+  "organ": "PANCREAS (EXOCRINE",
+  "protocol_posting_date": "June 2025",
+  "standards": [
+    "AJCC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "pancreatic_head",
+              "label": "Pancreatic head: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "uncinate_process",
+              "label": "Uncinate process: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_body",
+              "label": "Pancreatic body: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_tail",
+              "label": "Pancreatic tail: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ductal_adenocarcinoma_nos",
+              "label": "Ductal adenocarcinoma, NOS"
+            },
+            {
+              "value": "colloid_carcinoma",
+              "label": "Colloid carcinoma (mucinous carcinoma)"
+            },
+            {
+              "value": "poorly_cohesive_carcinoma",
+              "label": "Poorly cohesive carcinoma"
+            },
+            {
+              "value": "signet_ring_carcinoma",
+              "label": "Signet-ring carcinoma"
+            },
+            {
+              "value": "intraductal_papillary_mucinous_neoplasm_with_associated_invasive_carcinoma",
+              "label": "Intraductal papillary mucinous neoplasm with associated invasive carcinoma"
+            },
+            {
+              "value": "intraductal_oncocytic_papillary_neoplasm_with_associated_invasive_carcinoma",
+              "label": "Intraductal oncocytic papillary neoplasm with associated invasive carcinoma"
+            },
+            {
+              "value": "intraductal_tubulopapillary_neoplasm_with_associated_invasive_carcinoma",
+              "label": "Intraductal tubulopapillary neoplasm with associated invasive carcinoma"
+            },
+            {
+              "value": "mucinous_cystic_neoplasm_with_associated_invasive_carcinoma",
+              "label": "Mucinous cystic neoplasm with associated invasive carcinoma"
+            },
+            {
+              "value": "medullary_carcinoma",
+              "label": "Medullary carcinoma"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "hepatoid_carcinoma",
+              "label": "Hepatoid carcinoma"
+            },
+            {
+              "value": "large_cell_carcinoma_with_rhabdoid_phenotype",
+              "label": "Large cell carcinoma with rhabdoid phenotype"
+            },
+            {
+              "value": "undifferentiated_carcinoma_nos",
+              "label": "Undifferentiated carcinoma, NOS"
+            },
+            {
+              "value": "undifferentiated_carcinoma_with_osteoclast_like_giant_cells",
+              "label": "Undifferentiated carcinoma with osteoclast-like giant cells"
+            },
+            {
+              "value": "acinar_cell_carcinoma",
+              "label": "Acinar cell carcinoma"
+            },
+            {
+              "value": "acinar_cell_cystadenocarcinoma",
+              "label": "Acinar cell cystadenocarcinoma"
+            },
+            {
+              "value": "mixed_acinar_ductal_carcinoma",
+              "label": "Mixed acinar-ductal carcinoma"
+            },
+            {
+              "value": "pancreatoblastoma",
+              "label": "Pancreatoblastoma"
+            },
+            {
+              "value": "solid_pseudopapillary_neoplasm",
+              "label": "Solid-pseudopapillary neoplasm"
+            },
+            {
+              "value": "solid_pseudopapillary_neoplasm_with_high_grade_carcinoma",
+              "label": "Solid-pseudopapillary neoplasm with high grade carcinoma"
+            },
+            {
+              "value": "large_cell_neuroendocrine_carcinoma",
+              "label": "Large cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "small_cell_neuroendocrine_carcinoma",
+              "label": "Small cell neuroendocrine carcinoma"
+            },
+            {
+              "value": "mixed_neuroendocrine_non_neuroendocrine_neoplasm",
+              "label": "Mixed neuroendocrine-non-neuroendocrine neoplasm (MiNEN) (specify components):"
+            },
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well-differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "condition": "required only for ductal carcinoma"
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal_invasive_carcinoma",
+              "label": "Unifocal invasive carcinoma"
+            },
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "multifocal_invasive_carcinoma_in_association_with_intraductal_neoplasms",
+              "label": "Multifocal invasive carcinoma in association with intraductal neoplasms (intraductal papillary"
+            }
+          ]
+        },
+        {
+          "field_id": "neoplasm_and_mucinous_cystic_neoplasm",
+          "label": "neoplasm) and mucinous cystic neoplasm",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "size_of_the_largest_focus_of_invasive_carcinoma_in_centimeters",
+              "label": "Size of the largest focus of invasive carcinoma in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "aggregate_size_that_combines_sizes_of_all_foci_of_invasive_carcinoma_in_centimeters",
+          "label": "Aggregate Size that Combines Sizes of all Foci of Invasive Carcinoma in Centimeters",
+          "required": true,
+          "type": "free_text",
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_if_known___________________cm",
+          "label": "(specify, if known): _________________ cm",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "invasive_component_as_a_percentage_of_entire_tumor_specify_if_known",
+          "label": "Invasive Component as a Percentage of Entire Tumor (specify, if known)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "",
+              "label": "%"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "sites_involved_by_direct_tumor_extension",
+          "label": "Site(s) Involved by Direct Tumor Extension",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "no_invasion",
+              "label": "No invasion (carcinoma in situ / high-grade dysplasia)"
+            },
+            {
+              "value": "confined_to_pancreas",
+              "label": "Confined to pancreas"
+            },
+            {
+              "value": "vascular_bed_groove",
+              "label": "Vascular bed / groove (corresponding to superior mesenteric vein / portal vein)"
+            },
+            {
+              "value": "ampulla_of_vater_or_sphincter_of_oddi",
+              "label": "Ampulla of Vater or sphincter of Oddi"
+            },
+            {
+              "value": "duodenal_wall",
+              "label": "Duodenal wall"
+            },
+            {
+              "value": "peripancreatic_soft_tissues",
+              "label": "Peripancreatic soft tissues"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "retroperitoneal_soft_tissue",
+              "label": "Retroperitoneal soft tissue"
+            },
+            {
+              "value": "mesenteric_adipose_tissue",
+              "label": "Mesenteric adipose tissue"
+            },
+            {
+              "value": "mesocolon",
+              "label": "Mesocolon"
+            },
+            {
+              "value": "other_peripancreatic_soft_tissue",
+              "label": "Other peripancreatic soft tissue (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "extrapancreatic_common_bile_duct",
+              "label": "Extrapancreatic common bile duct"
+            },
+            {
+              "value": "stomach",
+              "label": "Stomach"
+            },
+            {
+              "value": "superior_mesenteric_vein",
+              "label": "Superior mesenteric vein"
+            },
+            {
+              "value": "portal_vein",
+              "label": "Portal vein"
+            },
+            {
+              "value": "celiac_axis",
+              "label": "Celiac axis"
+            },
+            {
+              "value": "superior_mesenteric_artery",
+              "label": "Superior mesenteric artery"
+            },
+            {
+              "value": "common_hepatic_artery",
+              "label": "Common hepatic artery"
+            },
+            {
+              "value": "other_adjacent_organ",
+              "label": "Other adjacent organ(s) or structure(s) (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "no_evidence_of_primary_tumor",
+              "label": "No evidence of primary tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "pancreatic_surface_involvement_required_only_if_applicable",
+          "label": "Pancreatic Surface Involvement (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "posterior_surface",
+              "label": "Posterior surface: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_surface",
+              "label": "Anterior surface: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "treatment_effect",
+          "label": "Treatment Effect",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_known_presurgical_therapy",
+              "label": "No known presurgical therapy"
+            },
+            {
+              "value": "present_with_no_viable_cancer_cells",
+              "label": "Present, with no viable cancer cells (complete response, score 0)"
+            },
+            {
+              "value": "present_with_single_cells_or_rare_small_groups_of_cancer_cells",
+              "label": "Present, with single cells or rare small groups of cancer cells (near complete response, score 1)"
+            },
+            {
+              "value": "present_with_residual_cancer_showing_evident_tumor_regression_but_more_than_single_cells_or_rare",
+              "label": "Present, with residual cancer showing evident tumor regression, but more than single cells or rare"
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "small_groups_of_cancer_cells",
+          "label": "small groups of cancer cells",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "present_nos",
+              "label": "Present, NOS"
+            },
+            {
+              "value": "absent_with_extensive_residual_cancer_and_no_evident_tumor_regression",
+              "label": "Absent, with extensive residual cancer and no evident tumor regression (poor or no response, score"
+            }
+          ],
+          "condition": "partial response, score 2"
+        },
+        {
+          "field_id": "3",
+          "label": "3)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "margin_status_for_invasive_carcinoma",
+          "label": "Margin Status for Invasive Carcinoma#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_invasive_carcinoma",
+              "label": "All margins negative for invasive carcinoma"
+            }
+          ],
+          "guidance": "Includes surgical margins as well as surface involvement"
+        },
+        {
+          "field_id": "closest_margins_to_invasive_carcinoma",
+          "label": "Closest Margin(s) to Invasive Carcinoma",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "distal_pancreatic_parenchymal",
+              "label": "Distal pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "proximal_pancreatic_parenchymal",
+              "label": "Proximal pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_neck_parenchymal",
+              "label": "Pancreatic neck / parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "uncinate",
+              "label": "Uncinate (retroperitoneal / superior mesenteric artery): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bile_duct",
+              "label": "Bile duct: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "proximal",
+              "label": "Proximal (gastric or duodenal): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal (duodenal or jejunal): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_surface",
+              "label": "Anterior surface: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "posterior_surface",
+              "label": "Posterior surface: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vascular_groove",
+              "label": "Vascular groove: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_carcinoma_to_closest_margin",
+          "label": "Distance from Invasive Carcinoma to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_cm",
+              "label": "Exact distance in cm: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_1_cm",
+              "label": "Greater than 1 cm"
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance_in_mm",
+              "label": "Exact distance in mm: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_10_mm",
+              "label": "Greater than 10 mm"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_carcinoma_present_at_margin",
+              "label": "Invasive carcinoma present at margin"
+            }
+          ]
+        },
+        {
+          "field_id": "margins_involved_by_invasive_carcinoma",
+          "label": "Margin(s) Involved by Invasive Carcinoma",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "proximal_pancreatic_parenchymal",
+              "label": "Proximal pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal_pancreatic_parenchymal",
+              "label": "Distal pancreatic parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pancreatic_neck_parenchymal",
+              "label": "Pancreatic neck / parenchymal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "uncinate",
+              "label": "Uncinate (retroperitoneal / superior mesenteric artery): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bile_duct",
+              "label": "Bile duct: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "proximal",
+              "label": "Proximal (gastric or duodenal): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "distal",
+              "label": "Distal (duodenal or jejunal): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_surface",
+              "label": "Anterior surface: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "posterior_surface",
+              "label": "Posterior surface: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vascular_groove",
+              "label": "Vascular groove: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ]
+        },
+        {
+          "field_id": "margin_status_for_dysplasia_and_intraepithelial_neoplasia",
+          "label": "Margin Status for Dysplasia and Intraepithelial Neoplasia#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_high_grade_dysplasia_and_or_high_grade_intraepithelial_neoplasia",
+              "label": "All margins negative for high-grade dysplasia and / or high-grade intraepithelial neoplasia"
+            },
+            {
+              "value": "high_grade_dysplasia_and_or_high_grade_intraepithelial_neoplasia_present_at_margin",
+              "label": "High-grade dysplasia and / or high-grade intraepithelial neoplasia present at margin"
+            }
+          ],
+          "guidance": "Includes surgical margins as well as surface involvement"
+        },
+        {
+          "field_id": "margins_involved_by_high_grade_dysplasia_and_or_high_grade_intraepithelial_neoplasia",
+          "label": "Margin(s) Involved by High-Grade Dysplasia and / or High-Grade Intraepithelial Neoplasia",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "non_regional_lymph_node",
+              "label": "Non-regional lymph node(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt0",
+              "label": "pT0: No evidence of primary tumor"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: Carcinoma in situ (this includes high-grade pancreatic intraepithelial neoplasia (PanIN-3),"
+            }
+          ],
+          "guidance": "Size of invasive component should be used for determining the T category."
+        },
+        {
+          "field_id": "pt1_tumor_less_than_or_equal_to_2_cm_in_greatest_dimension",
+          "label": "pT1: Tumor less than or equal to 2 cm in greatest dimension",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt1a",
+              "label": "pT1a: Tumor less than or equal to 0.5 cm in greatest dimension"
+            },
+            {
+              "value": "pt1b",
+              "label": "pT1b: Tumor greater than 0.5 cm and less than 1 cm in greatest dimension"
+            },
+            {
+              "value": "pt1c",
+              "label": "pT1c: Tumor 1-2 cm in greatest dimension"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1 (subcategory cannot be determined)"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor greater than 2 cm and less than or equal to 4 cm in greatest dimension"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor greater than 4 cm in greatest dimension"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4: Tumor involves the celiac axis or the superior mesenteric artery, and / or common hepatic"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis in one to three regional lymph nodes"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2: Metastasis in four or more regional lymph nodes"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "pancreatic_intraepithelial_neoplasia",
+              "label": "Pancreatic intraepithelial neoplasia (PanIN) (specify highest grade): _______________",
+              "has_free_text": true
+            },
+            {
+              "value": "chronic_pancreatitis",
+              "label": "Chronic pancreatitis"
+            },
+            {
+              "value": "acute_pancreatitis",
+              "label": "Acute pancreatitis"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "ancillary_studies",
+          "label": "Ancillary Studies",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify",
+              "label": "Specify: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ],
+          "notes": [
+            "L"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_applies_to_epithelial_tumors_of_the_exocrine_pancreas_it_excludes_endocrine_tumors_and",
+          "label": "This protocol applies to epithelial tumors of the exocrine pancreas. It excludes endocrine tumors and tumors of the ampulla of Vater. More than 90% to 95% of malignant tumors of the pancreas are exocrine carcinomas.  For these tumors, surgical resection remains the only potentially curative approach, and the prognosis is primarily dependent on the anatomic extent of disease and performance status.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_anatomic_subdivisions_defining_location_of_tumors_of_the_pancreas_figure_1_are_as_follows1",
+          "label": "The anatomic subdivisions defining location of tumors of the pancreas (Figure 1) are as follows:1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_of_the_head_of_the_pancreas_are_those_arising_to_the_right_of_the_left_border_of_the_superior",
+          "label": "Tumors of the head of the pancreas are those arising to the right of the left border of the superior mesenteric vein. The uncinate process is part of the head.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_of_the_body_of_the_pancreas_are_those_arising_between_the_left_border_of_the_superior_mesente",
+          "label": "Tumors of the body of the pancreas are those arising between the left border of the superior mesenteric vein and the left border of the aorta.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumors_of_the_tail_of_the_pancreas_are_those_arising_between_the_left_border_of_the_aorta_and_the_hi",
+          "label": "Tumors of the tail of the pancreas are those arising between the left border of the aorta and the hilum of the spleen.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_anatomic_subsites_of_the_pancreas_from_greene_et_al2_used_with_permission_of_the_american_j",
+          "label": "Figure 1. Anatomic subsites of the pancreas. From Greene et al.2 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_ny_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York, NY: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "a_classification_of_malignant_epithelial_tumors_of_the_exocrine_pancreas_is_recommended_by_the_world",
+          "label": "A classification of malignant epithelial tumors of the exocrine pancreas is recommended by the World Health Organization (WHO),1 however; this protocol does not preclude the use of other histologic types or systems of classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gill_aj_klimstra_ds_lam_ak_washington_mk_eds_tumours_of_the_pancreas_in_who_classification_of_tumour",
+          "label": "Gill AJ, Klimstra DS, Lam AK, Washington MK eds. Tumours of the pancreas. In: WHO Classification of Tumours Editorial Board. Digestive system tumours. Lyon, France 2019. pp 295-371.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_adenocarcinomas_a_histologic_grade_based_on_the_extent_of_glandular_differentiation_is_shown_bel",
+          "label": "For adenocarcinomas, a histologic grade based on the extent of glandular differentiation is shown below:1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_cannot_be_assessed",
+          "label": "Grade X       Cannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1        Well-differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "greater than 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2        Moderately differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "50% to 95% of tumor composed of glands"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated",
+          "label": "Grade 3        Poorly differentiated",
+          "required": true,
+          "type": "free_text",
+          "condition": "49% or less of tumor composed of glands"
+        },
+        {
+          "field_id": "certain_histologic_subtypes_including_acinar_cell_carcinoma_acinar_cell_cystadenocarcinoma_serous_cy",
+          "label": "Certain histologic subtypes, including acinar cell carcinoma, acinar cell cystadenocarcinoma, serous cystadenocarcinoma, and solid-pseudopapillary neoplasm, are not assigned a grade. By convention, signet-ring cell carcinomas are assigned grade 3. Undifferentiated carcinomas lack morphologic or immunohistochemical evidence of glandular, squamous, or neuroendocrine differentiation. This grading scheme is not applicable to poorly differentiated neuroendocrine carcinomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_pancreatic_ductal_carcinoma_histologic_grade_has_been_shown_to_have_prognostic_significance_with",
+          "label": "For pancreatic ductal carcinoma, histologic grade has been shown to have prognostic significance, with high grade (grade 3) being an unfavorable prognostic factor.1,2 Kloeppel grading scheme uses a combination of glandular differentiation, mucin production, mitoses, and nuclear pleomorphism. No differences in predictive value have been demonstrated in comparisons between the Klöppel grading system and the grading system based on glandular differentiation alone.2 Other systems based on patterns of infiltration of predominant and secondary tumor patterns have been proposed1 but have not been widely adopted.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adsay_nv_basturk_o_bonnett_m_et_al_a_proposal_for_a_new_and_more_practical_grading_scheme_for_pancre",
+          "label": "Adsay NV, Basturk O, Bonnett M, et al. A proposal for a new and more practical grading scheme for pancreatic ductal adenocarcinoma. Am J Surg Pathol. 2005;29(6):724-733.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "giulianotti_pc_boggi_u_fornaciari_g_et_al_prognostic_value_of_histological_grading_in_ductal_adenoca",
+          "label": "Giulianotti PC, Boggi U, Fornaciari G, et al. Prognostic value of histological grading in ductal adenocarcinoma of the pancreas: Kloppel vs TNM grading. Int J Pancreatol. 1995;17(3):279-289.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_invasive_component_in_intraductal_neoplasms_intraductal_papillary_mucinous_neoplasm_intraductal_",
+          "label": "The invasive component in intraductal neoplasms (intraductal papillary mucinous neoplasm, intraductal oncocytic papillary neoplasm, and intraductal tubulopapillary neoplasm) and mucinous cystic neoplasm may be unifocal or multifocal. In multifocal invasive carcinoma, it is recommended to include the size of the largest focus, the combined size of all invasive foci, and/or the percentage of invasive tumor relative to the gross tumor size (See also Note J).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "venous_as_well_as_lymphatic_small_vessel_invasion_has_been_shown_to_be_an_adverse_prognostic_factor1",
+          "label": "Venous as well as lymphatic (small vessel) invasion has been shown to be an adverse prognostic factor.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "garcea_g_dennison_ar_ong_sl_et_al_tumour_characteristics_predictive_of_survival_following_resection_",
+          "label": "Garcea G, Dennison AR, Ong SL, et al. Tumour characteristics predictive of survival following resection for ductal adenocarcinoma of the head of pancreas. Eur J Surg Oncol. 2007;33(7):892-897.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_jw_bhandari_m_astill_ds_et_al_predicting_patient_survival_after_pancreaticoduodenectomy_for_mal",
+          "label": "Chen JW, Bhandari M, Astill DS, et al. Predicting patient survival after pancreaticoduodenectomy for malignancy: histopathological criteria based on perineural infiltration and lymphovascular invasion. HPB (Oxford). 2010;12(2):101-108.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "perineural_invasion_has_been_shown_to_be_an_adverse_prognostic_factor12",
+          "label": "Perineural invasion has been shown to be an adverse prognostic factor.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_jw_bhandari_m_astill_ds_et_al_predicting_patient_survival_after_pancreaticoduodenectomy_for_mal",
+          "label": "Chen JW, Bhandari M, Astill DS, et al. Predicting patient survival after pancreaticoduodenectomy for malignancy: histopathological criteria based on perineural infiltration and lymphovascular invasion. HPB (Oxford). 2010;12(2):101-108.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chatterjee_d_katz_mh_rashid_a_et_al_perineural_and_intra_neural_invasion_in_posttherapy_pancreaticod",
+          "label": "Chatterjee D, Katz MH, Rashid A, et al. Perineural and intra-neural invasion in posttherapy pancreaticoduodenectomy specimens predicts poor prognosis in patients with pancreatic ductal adenocarcinoma. Am J Surg Pathol. 2012;36(3):409.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "response_of_tumor_to_previous_chemotherapy_or_radiation_therapy_should_be_reported_several_scoring_s",
+          "label": "Response of tumor to previous chemotherapy or radiation therapy should be reported.  Several scoring systems have been described, and a modified Ryan scheme1 is recommended, as below",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_ryan_scheme_for_tumor_regression_score1",
+          "label": "Modified Ryan Scheme for Tumor Regression Score1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sizable_pools_of_acellular_mucin_may_be_present_after_chemoradiation_but_should_not_be_interpreted_a",
+          "label": "Sizable pools of acellular mucin may be present after chemoradiation but should not be interpreted as representing residual tumor. It is suggested that to estimate the approximate size of the tumor by adding the size of all the viable tumor foci within the tumor mass based in the histologic evaluation. Only the extent or the size of the viable tumor should be used to assign the ypT category as site appropriate, and this requires a combined assessment of both gross and microscopic findings.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_protocol_does_not_preclude_the_use_of_other_systems_for_assessment_of_tumor_response23456_a_mod",
+          "label": "This protocol does not preclude the use of other systems for assessment of tumor response.2,3,4,5,6 A modification of the above scoring scheme into a 3-tier scheme has been shown to correlate better with outcome: no residual carcinoma (grade 0), minimal residual carcinoma defined as single cells or small groups of cancer cells, <5% residual carcinoma (grade 1), 5% or more residual carcinoma (grade 2).7,8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ryan_r_gibbons_d_hyland_jmp_et_al_pathological_response_following_long_course_neoadjuvant_chemoradio",
+          "label": "Ryan R, Gibbons D, Hyland JMP, et al. Pathological response following long-course neoadjuvant chemoradiotherapy for locally advanced rectal cancer. Histopathology. 2005; 47:141-146.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "evans_db_rich_ta_byrd_dr_et_al_preoperative_chemoradiation_and_pancreaticoduodenectomy_for_adenocarc",
+          "label": "Evans DB, Rich TA, Byrd DR, et al. Preoperative chemoradiation and pancreaticoduodenectomy for adenocarcinoma of the pancreas. Arch Surg. 1992; 127:1335-1339.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "breslin_tm_hess_kr_harbison_db_et_al_neoadjuvant_chemoradiotherapy_for_adenocarcinoma_of_the_pancrea",
+          "label": "Breslin TM, Hess KR, Harbison DB, et al. Neoadjuvant chemoradiotherapy for adenocarcinoma of the pancreas: treatment variables and survival duration. Ann Surg Oncol. 2001;8(2):123-132.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wang_h_chetty_r_hosseini_m_et_al_pathologic_examination_of_pancreatic_specimens_resected_for_treated",
+          "label": "Wang H, Chetty R, Hosseini M, et al. Pathologic Examination of Pancreatic Specimens Resected for Treated Pancreatic Ductal Adenocarcinoma: Recommendations from the Pancreatobiliary Pathology Society. Am J Surg Pathol. 2022;46(6):754-764.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "janssen_bv_tutucu_f_roessel_s_et_al_amsterdam_international_consensus_meeting_tumor_response_scoring",
+          "label": "Janssen BV, Tutucu F, Roessel S, et al. Amsterdam International Consensus Meeting: Tumor Response Scoring in the Pathology Assessment of Resected Pancreatic Cancer After Neoadjuvant Therapy. Mod Pathol. 2021;34(1):4-12.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "janssen_bv_roessel_s_dieren_s_et_al_histopathological_tumor_response_scoring_in_resected_pancreatic_",
+          "label": "Janssen BV, Roessel S, Dieren S, et al. Histopathological Tumor Response Scoring in Resected Pancreatic Cancer Following Neoadjuvant Therapy: International Interobserver Study (ISGPP-1). Br J Surg. 2022;110(1):67-75.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chatterjee_d_katz_mh_rashid_a_et_al_histologic_grading_of_the_extent_of_residual_carcinoma_following",
+          "label": "Chatterjee D, Katz MH, Rashid A, et al. Histologic grading of the extent of residual carcinoma following neoadjuvant chemoradiation in pancreatic ductal adenocarcinoma: a predictor for patient outcome. Cancer. 2012;118(12):3182-3190.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lee_sm_katz_mh_liu_l_et_al_validation_of_a_proposed_tumor_regression_grading_scheme_for_pancreatic_d",
+          "label": "Lee SM, Katz MH, Liu L, et al. Validation of a proposed tumor regression grading scheme for pancreatic ductal adenocarcinoma after neoadjuvant therapy as a prognostic indicator for survival. Am J Surg Pathol. 2016;40(12):1653-1660.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_nonperitonealized_surface_of_the_uncinate_process_uncinate_margin_constitutes_the_inferior_poste",
+          "label": "The nonperitonealized surface of the uncinate process (uncinate margin) constitutes the inferior-posterior retroperitoneal margin of pancreaticoduodenectomy specimens (Figure 2) and should be inked; sections through the tumor at its closest approach to this margin should be submitted.1 This margin has also been referred to as retroperitoneal margin and superior mesenteric artery margin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_posterior_view_of_tumor_arising_in_the_pancreatic_head_with_dotted_line_indicating_the_loca",
+          "label": "Figure 2. Posterior view of tumor arising in the pancreatic head, with dotted line indicating the location of the confluence of the portal and superior mesenteric veins. The hatched area shows the retroperitoneal (uncinate process) margin. From Greene et al.2 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "because_local_recurrences_of_invasive_pancreatic_adenocarcinoma_arise_in_the_pancreatic_bed_correspo",
+          "label": "Because local recurrences of invasive pancreatic adenocarcinoma arise in the pancreatic bed corresponding to the uncinate margin and vascular groove, inking of the vascular groove corresponding to portal and superior mesenteric veins and submission of sections through the tumor at its closest approach to this surface is recommended. The classification of the vascular groove, anterior, and posterior surfaces as either anatomical \"surfaces\" or true margins remains a matter of debate. However, regardless of the terminology, it is essential to document their involvement, as this plays a critical role in evaluating the risk of local tumor spread and recurrence.1,2,3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "when_dealing_with_an_intraductal_tumor_the_pancreatic_neckparenchymal_resection_margin_and_the_commo",
+          "label": "When dealing with an intraductal tumor, the pancreatic (neck/parenchymal) resection margin and the common bile duct margin (Whipple resection) are the most critical. Complete en face sections through the pancreatic resection margin and the common bile duct margin should be taken.1 The presence of tumor at or within 1 mm of resection margin constitutes a positive margin.4,5,6 Margin status can be reported as negative (R0, no residual disease), R1 (positive, microscopic residual disease) and R2 (positive, macroscopic residual disease).3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dhall_d_shi_j_allende_ds_et_al_towards_a_more_standardized_approach_to_pathologic_reporting_of_pancr",
+          "label": "Dhall D, Shi J, Allende DS, et al. Towards a more standardized approach to pathologic reporting of pancreatoduodenectomy specimens for pancreatic ductal adenocarcinoma. Am J Surg Pathol. 2021; 45(10): 1364-1373.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_ny_springer2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York, NY: Springer;2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adsay_nv_basturk_o_saka_b_et_al_whipple_made_simple_for_surgical_pathologists_orientation_dissection",
+          "label": "Adsay NV, Basturk O, Saka B, et al. Whipple made simple for surgical pathologists: orientation, dissection, and sampling of pancreaticoduodenectomy specimens for a more practical and accurate evaluation of pancreatic, distal common bile duct, and ampullary tumors. Am J Surg Pathol. 2014;38(4):480-493.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "campbell_f_smith_ra_whelan_p_et_al_classification_of_r1_resections_for_pancreatic_cancer_the_prognos",
+          "label": "Campbell F, Smith RA, Whelan P, et al. Classification of R1 resections for pancreatic cancer: the prognostic relevance of tumour involvement within 1 mm of a resection margin. Histopathol. 2009;55(3):277-283.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "verbeke_cs_menon_kv_redefining_resection_margin_status_in_pancreatic_cancer_hpb_oxford_2009114282_28",
+          "label": "Verbeke CS, Menon KV. Redefining resection margin status in pancreatic cancer. HPB (Oxford). 2009;11(4):282-289.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_tnm_staging_system_for_carcinoma_of_the_exocrine_pancreas_of_the_american_joint_committee_on_can",
+          "label": "The TNM staging system for carcinoma of the exocrine pancreas of the American Joint Committee on Cancer (AJCC) and the International Union Against Cancer (UICC) is recommended and shown below.1 The postresection prognosis of a patient with pancreatic carcinoma is primarily determined by the anatomic extent of disease as defined by the TNM stage groupings.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previ",
+          "label": "According to AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (ie, neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "vessel_invasion",
+          "label": "Vessel Invasion",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_vessel_invasion_lymphatic_or_venous_does_not_affect_the_t_category_",
+          "label": "According to AJCC/UICC convention, vessel invasion (lymphatic or venous) does not affect the T category indicating local extent of tumor unless specifically included in the definition of a T category.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "t_category_considerations",
+          "label": "T Category Considerations",
+          "required": true,
+          "type": "free_text",
+          "condition": "Figures 3 and 4"
+        },
+        {
+          "field_id": "if_more_than_1_tumor_is_present_in_the_pancreas_the_tumor_with_the_highest_t_category_should_be_clas",
+          "label": "If more than 1 tumor is present in the pancreas, the tumor with the highest T category should be classified according to the pT definitions and either the multiplicity (“m”) or the actual number of simultaneous multiple tumors (e.g., “3”) should be indicated in parentheses after the T category of the primary tumor (e.g., pT3[m] or pT3[2]).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "this_applies_only_to_grossly_recognizable_synchronous_primary_carcinomas_and_not_to_a_single_grossly",
+          "label": "This applies only to grossly recognizable, synchronous primary carcinomas and not to a single, grossly detected tumor with multiple separate microscopic foci.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tis_includes_high_grade_pancreatic_intraepithelial_neoplasia_panin_3_intraductal_papillary_mucinous_",
+          "label": "Tis includes high-grade pancreatic intraepithelial neoplasia (PanIn-3), intraductal papillary mucinous neoplasm with high-grade dysplasia, intraductal oncocytic papillary neoplasm with high-grade dysplasia, intraductal tubulopapillary neoplasm with high-grade dysplasia, and mucinous cystic neoplasm with high-grade dysplasia.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_t_categories_t1_t3_are_defined_by_tumor_size_as_it_provides_better_prognostic_stratification_tha",
+          "label": "The T categories T1-T3 are defined by tumor size as it provides better prognostic stratification than classification based on extension into peripancreatic tissue.3,4,5,6,7 Tumor size is determined by measurement of the gross lesion and should be corroborated on microscopic assessment. For invasive carcinoma associated with intraductal papillary mucinous neoplasms, intraductal oncocytic papillary neoplasms, intraductal tubulopapillary neoplasms, and mucinous cystic neoplasms, only the invasive component should be used to determine the T category. A synoptic report is not required for accreditation if no invasive component is present. The invasive component may be unifocal or multifocal. In multifocal invasive carcinoma, it is unclear whether tumor outcome is determined by the size of the largest focus, the combined size of all invasive foci, or the percentage of invasive tumor relative to the gross tumor size. It is recommended to include these measurements in the pathology report (i.e., the dimension of the largest invasive focus, and the estimated aggregate size of all invasive foci, or the percentage of invasive tumor relative to the gross tumor size), and to apply the maximum linear dimension of the largest invasive focus for staging (see also Note E).8 Extension beyond the pancreas may include invasion of peripancreatic soft tissue, peritoneum (including mesocolon, greater/lesser omentum), extrapancreatic biliary system, and/or duodenum (including the ampulla of Vater) for pancreatic head tumors, while stomach, spleen, left adrenal, and peritoneum can be involved by direct extension of body/tail tumors. Tumor extension in these areas does not affect staging but should be noted in the pathology report. Invasion of the portal vein does not affect staging but has been shown to be an independent prognostic factor.9 T4 tumors are characterized by involvement of superior mesenteric artery, celiac axis and/or common hepatic artery. In most instances, these tumors are considered unresectable and hence T4 category is determined by radiologic studies and is not usually assigned by pathologists.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_t1_left_of_dotted_line_is_defined_as_tumor_measuring_2_cm_or_less_in_greatest_dimension_and",
+          "label": "Figure 3. T1 (left of dotted line) is defined as tumor measuring 2 cm or less in greatest dimension and limited to the pancreas.  T2 (right of dotted line) is defined as tumor measuring more than 2 cm in greatest dimension and less than 4 cm in greatest dimension. From Greene et al.10 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_t4_tumor_involves_the_celiac_axis_above_dotted_line_or_the_superior_mesenteric_artery_below",
+          "label": "Figure 4. T4 tumor involves the celiac axis (above dotted line) or the superior mesenteric artery (below dotted line). T4 tumors are considered unresectable and are rarely encountered in surgical pathology specimens. From Greene et al.10 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_regional_lymph_nodes_for_head_and_neck_cancers_include_lymph_nodes_along_common_bile_duct_common",
+          "label": "The regional lymph nodes for head and neck cancers include lymph nodes along common bile duct, common hepatic artery, portal vein, pyloric, anterior and posterior pancreaticoduodenal arcades, superior mesenteric vein and right lateral wall of superior mesenteric artery (Figures 5 and 6). The regional lymph nodes for the pancreatic body and tail cancers include lymph nodes along common hepatic artery, celiac axis, splenic artery, and splenic hilum. Tumor involvement of other nodal groups is considered distant metastasis. Anatomic division of lymph nodes is not necessary but separately submitted lymph nodes should be individually reported as received.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_node_metastasis_is_an_independent_adverse_prognostic_factor3511121314_microscopic_evaluation_o",
+          "label": "Lymph node metastasis is an independent adverse prognostic factor.3,5,11,12,13,14 Microscopic evaluation of at least 12 lymph nodes is recommended for Whipple resections.15,16 Based on outcome data, tumors with positive lymph nodes are now categorized as N1 or N2.17,18",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_5_regional_lymph_nodes_of_the_pancreas_anterior_view_from_greene_et_al10_used_with_permission",
+          "label": "Figure 5. Regional lymph nodes of the pancreas (anterior view). From Greene et al.10 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_6_regional_lymph_nodes_of_the_pancreas_anterior_view_with_pancreatic_body_removed_to_reveal_r",
+          "label": "Figure 6. Regional lymph nodes of the pancreas (anterior view with pancreatic body removed to reveal retroperitoneal vessels and lymph nodes). From Greene et al.10 Used with permission of the American Joint Committee on Cancer (AJCC), Chicago, Illinois. The original source for this material is the AJCC Cancer Staging Atlas (2006) published by Springer Science and Business Media LLC, www.springerlink.com.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "peritoneal_seeding_or_positive_peritoneal_cytology_is_considered_m1119",
+          "label": "Peritoneal seeding or positive peritoneal cytology is considered M1.1,19",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chen_jw_bhandari_m_astill_ds_et_al_predicting_patient_survival_after_pancreaticoduodenectomy_for_mal",
+          "label": "Chen JW, Bhandari M, Astill DS, et al. Predicting patient survival after pancreaticoduodenectomy for malignancy: histopathological criteria based on perineural infiltration and lymphovascular invasion. HPB (Oxford). 2010;12(2):101-108.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lim_je_chien_mw_earle_cc_prognostic_factors_following_curative_resection_for_pancreatic_adenocarcino",
+          "label": "Lim JE, Chien MW, Earle CC. Prognostic factors following curative resection for pancreatic adenocarcinoma: a population-based, linked database analysis of 396 patients. Ann Surg. 2003;237(1):74-85.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "matsumoto_g_muta_m_tsuruta_k_horiguchi_s_karasawa_k_okamoto_a_tumor_size_significantly_correlates_wi",
+          "label": "Matsumoto G, Muta M, Tsuruta K, Horiguchi S, Karasawa K, Okamoto A. Tumor size significantly correlates with postoperative liver metastases and COX-2 expression in patients with resectable pancreatic cancer. Pancreatology. 2007;7(2-3):167-173.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "moon_hj_an_jy_heo_js_choi_sh_joh_jw_kim_yi_predicting_survival_after_surgical_resection_for_pancreat",
+          "label": "Moon HJ, An JY, Heo JS, Choi SH, Joh JW, Kim YI. Predicting survival after surgical resection for pancreatic ductal adenocarcinoma. Pancreas. 2006;32(1):37-43.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "saka_b_balci_s_basturk_o_et_al_pancreatic_ductal_adenocarcinoma_is_spread_to_the_peripancreatic_soft",
+          "label": "Saka B, Balci S, Basturk O, et al. Pancreatic ductal adenocarcinoma is spread to the peripancreatic soft tissue in the majority of resected cases, rendering the AJCC T-stage protocol (7th Edition) inapplicable and insignificant: a size-based staging system (pT1: ≤2, pT2: >2-≤4, pT3: >4 cm) is more valid and clinically relevant. Ann Surg Oncol. 2016;23(6):2010-2018.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "allen_pj_kuk_d_castillo_cf_et_al_multi_institutional_validation_study_of_the_american_joint_commissi",
+          "label": "Allen PJ, Kuk D, Castillo CF, et al. Multi-institutional validation study of the American Joint Commission on Cancer (8th Edition) changes for T and N staging in patients with pancreatic adenocarcinoma. Ann Surg. 2017;265(1):185-191.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adsay_v_mino_kenudson_m_furukawa_t_et_al_pathologic_evaluation_and_reporting_of_intraductal_papillar",
+          "label": "Adsay V, Mino-Kenudson M, Furukawa T, et al. Pathologic evaluation and reporting of intraductal papillary mucinous neoplasm (IPMNs) of the pancreas and other tumoral intraepithelial neoplasms of pancreatobiliary tract: recommendations of VERONA consensus meeting. Ann Surg. 2016; 263(1): 162-17.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nakagohri_t_kinoshita_t_konishi_m_inoue_k_takahashi_s_survival_benefits_of_portal_vein_resection_for",
+          "label": "Nakagohri T, Kinoshita T, Konishi M, Inoue K, Takahashi S. Survival benefits of portal vein resection for pancreatic cancer. Am J Surg. 2003;186(2):149-153.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "greene_fl_compton_cc_fritz_ag_et_al_eds_ajcc_cancer_staging_atlas_new_york_ny_springer_2006",
+          "label": "Greene FL, Compton, CC, Fritz AG, et al, eds. AJCC Cancer Staging Atlas. New York, NY: Springer; 2006.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "garcea_g_dennison_ar_ong_sl_et_al_tumour_characteristics_predictive_of_survival_following_resection_",
+          "label": "Garcea G, Dennison AR, Ong SL, et al. Tumour characteristics predictive of survival following resection for ductal adenocarcinoma of the head of pancreas. Eur J Surg Oncol. 2007;33(7):892-897.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "geer_rj_brennan_mf_prognostic_indicators_for_survival_after_resection_of_pancreatic_adenocarcinoma_a",
+          "label": "Geer RJ, Brennan MF. Prognostic indicators for survival after resection of pancreatic adenocarcinoma. Am J Surg. 1993;165(1):68-73.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "house_mg_gonen_m_jarnagin_wr_et_al_prognostic_significance_of_pathologic_nodal_status_in_patients_wi",
+          "label": "House MG, Gonen M, Jarnagin WR, et al. Prognostic significance of pathologic nodal status in patients with resected pancreatic cancer. J Gastrointest Surg. 2007;11(11):1549-1555.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pawlik_tm_gleisner_al_cameron_jl_et_al_prognostic_relevance_of_lymph_node_ratio_following_pancreatic",
+          "label": "Pawlik TM, Gleisner AL, Cameron JL, et al. Prognostic relevance of lymph node ratio following pancreaticoduodenectomy for pancreatic cancer. Surgery. 2007;141(5):610-618.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tomlinson_js_jain_s_bentrem_dj_et_al_accuracy_of_staging_node_negative_pancreas_cancer_a_potential_q",
+          "label": "Tomlinson JS, Jain S, Bentrem DJ, et al. Accuracy of staging node-negative pancreas cancer: a potential quality measure. Arch Surg. 2007;142(8):767-773; discussion 773-774.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "schwarz_re_smith_dd_extent_of_lymph_node_retrieval_and_pancreatic_cancer_survival_information_from_a",
+          "label": "Schwarz RE, Smith DD. Extent of lymph node retrieval and pancreatic cancer survival: information from a large US population database. Ann Surg Oncol. 2006;13(9):1189-1200.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "strobel_o_hinz_u_gluth_a_et_al_pancreatic_adenocarcinoma_number_of_positive_nodes_allows_to_distingu",
+          "label": "Strobel O, Hinz U, Gluth A, et al. Pancreatic adenocarcinoma: number of positive nodes allows to distinguish several N categories. Ann Surg. 2015;261(5):961-969.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "olca_b_burcu_s_serdar_b_et_al_substaging_of_lymph_node_status_in_resected_pancreatic_ductal_adenocar",
+          "label": "Olca B, Burcu S, Serdar B, et al. Substaging of lymph node status in resected pancreatic ductal adenocarcinoma has strong prognostic correlations: proposal for a revised N classification for TNM staging. Ann Surg Oncol. 2015; 22:1187-1195.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wittekind_c_greene_fl_hutter_rvp_sobin_lh_henson_de_eds_tnm_supplement_a_commentary_on_uniform_use_3",
+          "label": "Wittekind C, Greene FL, Hutter RVP, Sobin LH, Henson DE, eds. TNM Supplement: A Commentary on Uniform Use. 3rd ed. New York, NY: Wiley-Liss; 2003.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pancreatic_intraepithelial_neoplasia",
+          "label": "Pancreatic Intraepithelial Neoplasia",
+          "required": true,
+          "type": "free_text",
+          "condition": "PanIN"
+        },
+        {
+          "field_id": "noninvasive_lesions_of_the_ductal_epithelium_often_are_found_in_the_pancreatic_parenchyma_surroundin",
+          "label": "Noninvasive lesions of the ductal epithelium often are found in the pancreatic parenchyma surrounding ductal adenocarcinoma. These lesions are collectively known as pancreatic intraepithelial neoplasia (PanIN). PanINs were previously classified into 3 grades.1 The most recent consensus recommends a 2-tier grading scheme for better reproducibility and for better alignment of the grades with treatment options.2 A similar 2-tier scheme is recommended for noninvasive mucinous cystic neoplasm (MCN), intraductal papillary mucinous neoplasm (IPMN), and intraductal tubulopapillary neoplasm.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "high_grade_panin_at_the_resection_margins_of_an_otherwise_completely_resected_malignancy_should_be_n",
+          "label": "High-grade PanIN at the resection margins of an otherwise completely resected malignancy should be noted in the pathology report. In this setting, the biologic significance of PanIN of any grade remains unclear. The presence of dysplasia at the margin of a noninvasive IPMN is also uncertain. The highest grade, even if focal, determines the final grade. For IPMN and MCN, the extent of high-grade dysplasia can be recorded, but does not currently have clinical relevance.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_findings",
+          "label": "Other Findings",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_addition_to_the_examination_of_other_tissues_and_organs_that_are_part_of_pancreaticoduodenectomy_",
+          "label": "In addition to the examination of other tissues and organs that are part of pancreaticoduodenectomy specimens, pathologic evaluation may also include examination of the gastric antrum for gastritis (e.g., Helicobacter pylori gastritis or chemical gastritis) and the duodenum for duodenitis, peptic ulcer disease, and ampullitis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hruban_rhmd_adsay_nvmd_albores_saavedra_jmd_et_al_pancreatic_intraepithelial_neoplasia_a_new_nomencl",
+          "label": "Hruban RHMD, Adsay NVMD, Albores-Saavedra JMD, et al. Pancreatic intraepithelial neoplasia: a new nomenclature and classification system for pancreatic duct lesions. Am J Surg Pathol. 2001; 25:579-586.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "basturk_o_hong_sm_wood_ld_et_al_a_revised_classification_system_and_recommendations_from_the_baltimo",
+          "label": "Basturk O, Hong SM, Wood LD, et al. A revised classification system and recommendations from the Baltimore consensus meeting for neoplastic precursor lesions in the pancreas. Am J Surg Pathol. 2015; 39:1730-1741.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adsay_v_mino_kenudson_m_furukawa_t_et_al_members_of_verona_consensus_meeting_2013_pathologic_evaluat",
+          "label": "Adsay V, Mino-Kenudson M, Furukawa T, et al; Members of Verona Consensus Meeting, 2013. Pathologic evaluation and reporting of intraductal papillary mucinous neoplasms of the pancreas and other tumoralintraepithelial neoplasms of pancreatobiliary tract: recommendations of Verona Consensus Meeting. Ann Surg. 2016;263(1):162-177.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "immunohistochemistry_mmr_ihc_andor_microsatellite_instability_msi_testing_are_now_essential_not_only",
+          "label": "Immunohistochemistry (MMR IHC) and/or microsatellite instability (MSI) testing are now essential not only for identifying Lynch syndrome but also for detecting mismatch repair deficient (dMMR) tumors because FDA approved immune checkpoint inhibitors are now available for any malignancy irrespective of histologic type or location.1,2 Now NCCN also suggests considering testing it for adenocarcinomas of the small intestine, stomach, pancreas, and biliary tract.3 Similarly, targeted therapies for HER2 have expanded beyond non-breast and non-gastric gastrointestinal cancers.4,5 HER2 testing for advanced gastrointestinal cancers (stage IV, recurrent, or unresectable) is becoming more common, although standardized reporting guidelines for non-gastric gastrointestinal cancers are still lacking. While criteria applicable for colorectal cancer have been developed,6,7 the ASCO/College of American Pathology guidelines for gastric cancer HER2 scoring have been applied in recent clinical trials for other gastrointestinal cancers.8 It is suggested that while reporting HER2 it is a good practice to indicate the criteria used. Further details about mismatch repair enzyme immunohistochemistry and PCR for MSI testing, as well as other ancillary molecular testing can be found in the CAP Biomarkers protocol.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bartley_an_mills_am_konnick_e_et_al_mismatch_repair_and_microsatellite_instability_testing_for_immun",
+          "label": "Bartley AN, Mills AM, Konnick E, et al. Mismatch Repair and Microsatellite Instability Testing for Immune Checkpoint Inhibitor Therapy: Guideline from the College of American Pathologists in Collaboration with the Association for Molecular Pathology and Fight Colorectal Cancer. Arch Pathol Lab Med. 2022, 146(10):1194-1210.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abrha_a_shukla_nd_hodan_r_et_al_universal_screening_of_gastrointestinal_malignancies_for_mismatch_re",
+          "label": "Abrha A, Shukla ND, Hodan R, et al. Universal Screening of Gastrointestinal Malignancies for Mismatch Repair Deficiency at Stanford. JNCI Cancer Spectr. 2020, 19; 4(5):pkaa054.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "weiss_jm_gupta_s_burke_ca_et_al_nccn_guidelines_insights_geneticfamilial_high_risk_assessment_colore",
+          "label": "Weiss JM, Gupta S, Burke CA, et al. NCCN Guidelines® Insights: Genetic/Familial High-Risk Assessment: Colorectal, Version 1.2021. J Natl Compr Canc Netw. 2021, 15;19(10):1122-1132.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yoon_j_and_do_youn_oh_dy_her2_targeted_therapies_beyond_breast_cancer_an_update_nat_rev_clin_oncol_2",
+          "label": "Yoon J and Do-Youn Oh DY. HER2-targeted therapies beyond breast cancer - an update. Nat Rev Clin Oncol. 2024, 21(9):675-700.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "valtorta_e_martino_c_sartore_bianchi_a_et_al_assessment_of_a_her2_scoring_system_for_colorectal_canc",
+          "label": "Valtorta E, Martino C, Sartore-Bianchi A, et al. Assessment of a HER2 scoring system for colorectal cancer: results from a validation study. Mod Pathol. 2015, 28(11):1481-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meric_bernstam_f_hurwitz_h_raghav_kps_et_al_pertuzumab_plus_trastuzumab_for_her2_amplified_metastati",
+          "label": "Meric-Bernstam F, Hurwitz H, Raghav KPS, et al. Pertuzumab plus trastuzumab for HER2-amplified metastatic colorectal cancer (MyPathway): an updated report from a multicentre, open-label, phase 2a, multiple basket study. Lancet Oncol. 2019, 20 (4): 518-530.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meric_bernstam_f_makker_v_oaknin_a_et_al_efficacy_and_safety_of_trastuzumab_deruxtecan_in_patients_w",
+          "label": "Meric-Bernstam F, Makker V, Oaknin A, et al. Efficacy and Safety of Trastuzumab Deruxtecan in Patients with HER2-Expressing Solid Tumors: Primary Results From the DESTINY-PanTumor02 Phase II Trial. J Clin Oncol. 2024, 42(1):47-58.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

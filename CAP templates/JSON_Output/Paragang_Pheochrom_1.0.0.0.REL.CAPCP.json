@@ -1,0 +1,1480 @@
+{
+  "template_id": "Paragang_Pheochrom_1.0.0.0.REL.CAPCP",
+  "organ": "Paraganglioma and Pheochromocytoma",
+  "protocol_posting_date": "March 2025",
+  "standards": [
+    "AJCC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "margins",
+      "section_name": "MARGINS",
+      "fields": [
+        {
+          "field_id": "margin_status",
+          "label": "Margin Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_margins_negative_for_tumor",
+              "label": "All margins negative for tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_tumor_to_closest_margin",
+          "label": "Distance from Tumor to Closest Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "tumor_present_at_margin",
+              "label": "Tumor present at margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "margins_involved_by_tumor",
+          "label": "Margin(s) Involved by Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_margin",
+              "label": "Specify involved margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "regional_lymph_nodes",
+      "section_name": "REGIONAL LYMPH NODES",
+      "fields": [
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distant_metastasis",
+          "label": "DISTANT METASTASIS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "applied_to_all_sympathetic_paragangliomas_and_pheochromocytomas_currently_there_is_no_defined_tnm_cl",
+          "label": "Applied to all sympathetic paragangliomas and pheochromocytomas. Currently there is no defined TNM Classification for parasympathetic paragangliomas and composite paragangliomas / pheochromocytomas but users can apply the TNM staging below (based on the tumor size cutoff of 5 cm and the status of invasion) to facilitate uniform data collection.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Pheochromocytoma less than 5 cm in greatest dimension, no extra-adrenal invasion"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Pheochromocytoma greater than or equal to 5 cm or paraganglioma-sympathetic of any size, no"
+            }
+          ]
+        },
+        {
+          "field_id": "extra_adrenal_invasion",
+          "label": "extra-adrenal invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor any size with invasion into surrounding organs / tissues (e.g., liver, pancreas, spleen,"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Regional lymph node metastasis"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pm1_distant_metastasis",
+          "label": "pM1: Distant metastasis",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pm1a",
+              "label": "pM1a: Distant metastasis to only bone"
+            },
+            {
+              "value": "pm1b",
+              "label": "pM1b: Distant metastasis to only distant lymph nodes / liver or lung"
+            },
+            {
+              "value": "pm1c",
+              "label": "pM1c: Distant metastasis to bone plus multiple other sites"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1 (subcategory cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "adrenal_medullary_hyperplasia",
+          "label": "Adrenal Medullary Hyperplasia",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "absent",
+              "label": "Absent"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "required for all adrenalectomy specimens"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "other_tumors",
+              "label": "Other tumors (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "special_studies",
+          "label": "SPECIAL STUDIES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "keratins",
+          "label": "Keratins",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ],
+          "condition": "e.g., low molecular weight keratin, AE1 / AE3"
+        },
+        {
+          "field_id": "chromogranin_a",
+          "label": "Chromogranin-A",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        },
+        {
+          "field_id": "tyrosine_hydroxylase",
+          "label": "Tyrosine Hydroxylase",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        },
+        {
+          "field_id": "gata3",
+          "label": "GATA3",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        },
+        {
+          "field_id": "s100_and_or_sox10_positive_sustentacular_cell_network",
+          "label": "S100 and / or SOX10-positive Sustentacular Cell Network",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "sdhb",
+          "label": "SDHB",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "loss",
+              "label": "Loss (deficient)"
+            },
+            {
+              "value": "retained",
+              "label": "Retained (normal staining)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "alpha_inhibin",
+          "label": "Alpha-inhibin",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        },
+        {
+          "field_id": "caix",
+          "label": "CAIX",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        },
+        {
+          "field_id": "fh",
+          "label": "FH",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "loss",
+              "label": "Loss (deficient)"
+            },
+            {
+              "value": "retained",
+              "label": "Retained (normal staining)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "2_sc",
+          "label": "2-SC",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ]
+        },
+        {
+          "field_id": "atrx",
+          "label": "ATRX",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "loss",
+              "label": "Loss (deficient)"
+            },
+            {
+              "value": "retained",
+              "label": "Retained (normal staining)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_markers",
+          "label": "Other Markers",
+          "required": true,
+          "type": "free_text",
+          "condition": "repeat this section for up to 10 markers"
+        },
+        {
+          "field_id": "other_marker_specify",
+          "label": "Other Marker (specify): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_results",
+          "label": "Specify Results: _________________",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "paraganglia_are_neural_crest_derived_neuroendocrine_organs_that_produce_predominantly_catecholamines",
+          "label": "Paraganglia are neural crest-derived neuroendocrine organs that produce predominantly catecholamines (dopamine, norepinephrine and epinephrine).1,2,3 Paraganglia are typically divided into two groups based on parasympathetic or sympathetic nervous system origin. Sympathetic paraganglia are further divided into two subgroups: the adrenal medulla, so-called “sympathoadrenal paraganglia” and extra-adrenal sympathetic paraganglia.1,2,3 The anatomic site impacts the nomenclature of tumors arising from paraganglia; while tumors arising from the adrenal medulla are termed “pheochromocytomas or adrenal paragangliomas”, tumors arising from extra-adrenal locations are called “paragangliomas (PGLs)” regardless of their sympathetic or parasympathetic origins.1,2,3,4 Pheochromocytomas and paragangliomas are collectively referred to PPGLs in the medical literature.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_etiology_of_most_sporadic_pgls_including_pheochromocytomas_is_not_known_however_it_is_now_well_r",
+          "label": "The etiology of most sporadic PGLs including pheochromocytomas is not known. However, it is now well-recognized that at least 40% of these tumors in adults are hereditary.1,2,3,4,5,6,7 caused by germline variants of at least 23 genes. Hereditary pheochromocytomas and extra-adrenal PGLs (PPGLs) arising in patients with different genotypes have characteristic distributions and biochemical profiles and different likelihoods of metastasis.1,2,3,4,5,6 In addition, a widening spectrum of associated tumors — including but not limited to gastrointestinal stromal tumors, renal cell carcinomas, and pituitary neuroendocrine tumors — are associated with multiple hereditary tumor syndromes. Discoveries of new susceptibility genes and genotype-phenotype correlations have led to the realization that individual patient care requires a complete integration of clinical, genetic, biochemical, imaging, and pathology findings. 2 While most patients lack family history, the identification of personal or family history of PPGL is often regarded a sign of hereditary disease in these neoplasms.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_pheochromocytomas_and_the_majority_of_sympathetic_pgls_are_often_associated_with_clinical_symp",
+          "label": "While pheochromocytomas and the majority of sympathetic PGLs are often associated with clinical symptoms, only a small percentage of parasympathetic PGLs are clinically symptomatic.1,8 The functional status of a PPGL should be based on the biochemical status of the tumor. Specific genotype-biochemical correlations highlight the importance of laboratory testing to characterize patterns of catecholamine excess. Since catecholamines (dopamine, norepinephrine, and epinephrine) are not continuously secreted in normal physiology, biochemical testing for the O-methylated metabolites of dopamine, norepinephrine and epinephrine (3-methoxytyramine, normetanephrine and metanephrine, respectively) in plasma and/or urine is superior to measurement of the parent catecholamines.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "progress_in_molecular_biology_has_established_genotype_phenotype_correlations_in_ppgls_with_respect_",
+          "label": "Progress in molecular biology has established genotype-phenotype correlations in PPGLs with respect to anatomic tumor distribution (e.g., intra-adrenal vs extra-adrenal), catecholamine production and risk of metastasis.2,3,4 For instance, functional VHL-driven PPGLs tend to be associated with norepinephrine excess whereas functional SDHx-related PPGLs can be associated with either mixed dopamine and norepinephrine or dopamine excess.1,2,3,4,9. RET-, NF1-, TMEM127- and MAX-related PPLs are associated with epinephrine production.1,2,3,4 Moreover, the risk of malignancy is increased in tumors with immature secretory phenotype characterized by the absence of epinephrine excess (e.g., SDHB-related PPGLs). SDHB-related tumors are more frequently observed in extra-adrenal locations and can reach larger tumor sizes with much lower tissue concentrations of catecholamines than other PGLs.3 These data are of clinical significance in that integration of the biochemical profile with other information, such as tumor location and dimensions, becomes an important part of comprehensive synoptic reporting. Similar to epithelial neuroendocrine neoplasms, PPGLs can produce and secrete other peptides that occasionally cause clinical hormone excess syndromes.8,10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "somatostatin_receptor_based_functional_imaging_techniques_have_revolutionized_our_ability_to_image_n",
+          "label": "Somatostatin receptor-based functional imaging techniques have revolutionized our ability to image neuroendocrine neoplasms including PPGLs. Functional imaging with radiotracers such as 123/131I-metaiodobenzylguanidine (123/131I-MIBG) have long been recognized as integral components in the diagnostic and therapeutic planning of patients with PPGLs.11 Subsequently, the reduced sensitivity in extra-adrenal PGL and metastatic forms of the disease prompted investigations of other tracers. Gallium 68 (68GA)-DOTATATE PET/CT, which received FDA approval in 2016, has emerged as the most commonly used functional imaging radiotracer for detection of SSTR positive disease.12 More recently in 2020, the FDA approved Copper DOTATATE PET (64Cu) imaging for these lesions. In a prospective head-to-head comparison between [64Cu]Cu-DOTATATE and [68Ga]Ga-DOTATOC PET/CT, Johnbeck et al. reported a slightly higher detection rate for the former (99.1% vs. 95.6%), with 701 concordant lesions on both scans.13  The integration of functional imaging data is of clinical interest to ensure completeness of the synoptic report since it provides staging, prognostic, and potentially theranostic information in tumors that over-express SSTR2.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "juhlin_cc_mete_o_advances_in_adrenal_and_extra_adrenal_paraganglioma_practical_synopsis_for_patholog",
+          "label": "Juhlin CC, Mete O. Advances in Adrenal and Extra-adrenal Paraganglioma: Practical Synopsis for Pathologists. Adv Anat Pathol. 2023 Jan 1;30(1):47-57.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_gill_aj_kimura_n_de_krijger_rr_tischler_a_overview_of_the_2022_who_classification_of_p",
+          "label": "Mete O, Asa SL, Gill AJ, Kimura N, de Krijger RR, Tischler A. Overview of the 2022 WHO Classification of Paragangliomas and Pheochromocytomas. Endocr Pathol. 2022 Mar;33(1):90-114.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_tischler_as_de_krijger_r_mcnicol_am_eisenhofer_g_pacak_k_ezzat_s_asa_sl_protocol_for_the_exam",
+          "label": "Mete O, Tischler AS, de Krijger R, McNicol AM, Eisenhofer G, Pacak K, Ezzat S, Asa SL. Protocol for the examination of specimens from patients with pheochromocytomas and extra-adrenal paragangliomas. Arch Pathol Lab Med. 2014 Feb;138(2):182-8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_ezzat_s_mete_o_the_diagnosis_and_clinical_significance_of_paragangliomas_in_unusual_locations",
+          "label": "Asa SL, Ezzat S, Mete O. The Diagnosis and Clinical Significance of Paragangliomas in Unusual Locations. J Clin Med. 2018 Sep 13;7(9):280.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fishbein_l_leshchiner_i_walter_v_danilova_l_robertson_ag_johnson_ar_lichtenberg_tm_murray_ba_ghayee_",
+          "label": "Fishbein L, Leshchiner I, Walter V, Danilova L, Robertson AG, Johnson AR, Lichtenberg TM, Murray BA, Ghayee HK, Else T, Ling S, Jefferys SR, de Cubas AA, Wenz B, Korpershoek E, Amelio AL, Makowski L, Rathmell WK, Gimenez-Roqueplo AP, Giordano TJ, Asa SL, Tischler AS; Cancer Genome Atlas Research Network; Pacak K, Nathanson KL, Wilkerson MD. Comprehensive Molecular Characterization of Pheochromocytoma and Paraganglioma. Cancer Cell. 2017 Feb 13;31(2):181-193.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_lyon_france_inter",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours. Lyon (France): International Agency for Research on Cancer; forthcoming. (WHO classification of tumours series, 5th ed.; vol. 10). https://publications.iarc.fr",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_genetic_tumour_syndromes_lyon_france_international_age",
+          "label": "WHO Classification of Tumours Editorial Board. Genetic tumour syndromes. Lyon (France): International Agency for Research on Cancer; forthcoming. (WHO classification of tumours series, 5th ed.; vol. 14). https://publications.iarc.fr",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "leibowitz_amit_r_mete_o_asa_sl_ezzat_s_joshua_am_malignant_pheochromocytoma_secreting_vasoactive_int",
+          "label": "Leibowitz-Amit R, Mete O, Asa SL, Ezzat S, Joshua AM. Malignant pheochromocytoma secreting vasoactive intestinal peptide and response to sunitinib: a case report and literature review. Endocr Pract. 2014 Aug;20(8): e145-50. Erratum in: Endocr Pract. 2015 Jan;21(1):94.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "taïeb_d_nölting_s_perrier_nd_fassnacht_m_carrasquillo_ja_grossman_ab_clifton_bligh_r_wanna_gb_schwam",
+          "label": "Taïeb D, Nölting S, Perrier ND, Fassnacht M, Carrasquillo JA, Grossman AB, Clifton-Bligh R, Wanna GB, Schwam ZG, Amar L, Bourdeau I, Casey RT, Crona J, Deal CL, Del Rivero J, Duh QY, Eisenhofer G, Fojo T, Ghayee HK, Gimenez-Roqueplo AP, Gill AJ, Hicks R, Imperiale A, Jha A, Kerstens MN, de Krijger RR, Lacroix A, Lazurova I, Lin FI, Lussey-Lepoutre C, Maher ER, Mete O, Naruse M, Nilubol N, Robledo M, Sebag F, Shah NS, Tanabe A, Thompson GB, Timmers HJLM, Widimsky J, Young WJ Jr, Meuter L, Lenders JWM, Pacak K. Management of phaeochromocytoma and paraganglioma in patients with germline SDHB pathogenic variants: an international expert Consensus statement. Nat Rev Endocrinol. 2024 Mar;20(3):168-184.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bayraktar_f_kebapcilar_l_kocdor_ma_asa_sl_yesil_s_canda_s_demir_t_saklamaz_a_seçil_m_akinci_b_yener_",
+          "label": "Bayraktar F, Kebapcilar L, Kocdor MA, Asa SL, Yesil S, Canda S, Demir T, Saklamaz A, Seçil M, Akinci B, Yener S, Comlekci A. Cushing's syndrome due to ectopic CRH secretion by adrenal pheochromocytoma accompanied by renal infarction. Exp Clin Endocrinol Diabetes. 2006 Sep;114(8):444-7.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wiseman_ga_pacak_k_odorisio_ms_neumann_dr_waxman_ad_mankoff_da_et_al_usefulness_of_123i_mibg_scintig",
+          "label": "Wiseman GA, Pacak K, O’Dorisio MS, Neumann DR, Waxman AD, Mankoff DA, et al. Usefulness of 123I-MIBG scintigraphy in the evaluation of patients with known or suspected primary or metastatic pheochromocytoma or paraganglioma: results from a prospective multicenter trial. J Nucl Med. 2009; 50:1448–1454.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diagnostic_performance_of_68ga_dotatate_petct_18f_fdg_petct_and_131i_mibg_scintigraphy_in_mapping_me",
+          "label": "Diagnostic Performance of 68Ga-DOTATATE PET/CT, 18F-FDG PET/CT and 131I-MIBG Scintigraphy in Mapping Metastatic Pheochromocytoma and Paraganglioma. Nucl Med Mol Imaging. 2015 Jun; 49(2): 143–151.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "johnbeck_cb_knigge_u_loft_a_et_al_head_to_head_comparison_of_64cu_dotatate_and_68ga_dotatoc_petct_a_",
+          "label": "Johnbeck CB, Knigge U, Loft A, et al. Head-to-head comparison of 64Cu-DOTATATE and 68Ga-DOTATOC PET/CT: a prospective study of 59 patients with neuroendocrine tumors. J Nucl Med. 2017; 58:451–457.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_procedure_used_to_resect_a_tumor_is_based_on_anatomic_locationsorgans_eg_adrenalectomy_for_pheoc",
+          "label": "The procedure used to resect a tumor is based on anatomic locations/organs (e.g., adrenalectomy for pheochromocytomas/adrenal PGLs). In some cases, PPGLs are resected laparoscopically resulting in morcellation/extensive fragmentation that can compromise the ability to determine completeness of surgical resection and microscopic assessment of the invasive growth.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_issue_of_tumor_multifocality_is_very_important_and_should_be_included_in_the_synoptic_report_pat",
+          "label": "The issue of tumor multifocality is very important and should be included in the synoptic report. Patients with multiple PPGLs should be investigated for the possibility of underlying genetic susceptibility and thus genetic testing is considered in the setting of multifocal PPGL.1,2,3 Multifocal PPGL include multiple pheochromocytomas including their subcentimeter counterparts (also known as micro-pheochromocytoma) or a combination of an extra-adrenal PGL with a pheochromocytoma or multifocal extra-adrenal PGLs.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_anatomic_locations_of_the_tumor_must_be_provided_to_the_pathologist_and_be_clearly_documented_in",
+          "label": "The anatomic location(s) of the tumor must be provided to the pathologist and be clearly documented in the synoptic report with the appropriate classification based on location. Similar to other guidelines, tumor size is a required field in surgical pathology reports. This information is required for tumor staging (see note F). Although the tumor size is not a universally accepted independent prognostic parameter in PPGLs, it is a component of the dynamic risk stratification since larger PPGLs (>5-7 cm) may be associated with an increased risk of metastasis..1,2,3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_concept_of_benign_or_malignant_ppgl_has_been_abandoned_since_the_2017_who_classification_of_endo",
+          "label": "The concept of “benign” or “malignant” PPGL has been abandoned since the 2017 WHO classification of endocrine tumors. PPGLs are malignant non-epithelial neuroendocrine neoplasms originating from paraganglia.1,2,3,4,5,6.Similar to other epithelial NENs, the term “metastatic PGL or pheochromocytoma” should be used in the setting of metastatic disease.3 PPGLs are associated with varying risk of metastatic spread without any clear-cut morphological harbingers. The 2022 WHO classification of PPGLs does not endorse the use of multifactorial scoring systems (e.g., PASS, GAPP, modified GAPP, COPPS)1,5,7 since all PPGLs are malignant neoplasms and PPGLs with higher scores may lead to overestimation of risk for metastasis, particularly in some subgroups.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_current_histological_classification_of_ppgls_table_1_follow_the_2022_who_classification_endocrin",
+          "label": "The current histological classification of PPGLs (Table 1) follow the 2022 WHO classification endocrine and neuroendocrine neoplasms7. In the 2022 WHO classification, the tumor formerly known as cauda equina PGL is now classified as cauda equina neuroendocrine tumor and the neoplasm known as gangliocytic paraganglioma has been renamed composite gangliocytoma/neuroma and neuroendocrine tumor (CoGNET).1,7,8,9,10 These unusual epithelial NENs are not PPGLs and should not be reported with this worksheet.1,7,8,9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_rare_composite_ppgls_are_diagnosed_when_a_typical_ppgl_is_combined_with_developmentally_related_",
+          "label": "The rare composite PPGLs are diagnosed when a typical PPGL is combined with developmentally-related distinct tumor component including ganglioneuroma (mature or maturing), ganglioneuroblastoma (nodular or intermixed), neuroblastoma (undifferentiated, poorly differentiated or differentiating) or malignant peripheral nerve sheath tumors.1,3,4,7 Scattered ganglion-like cells or neuropil-like degenerated stroma seen in PPGLs should not be misinterpreted as a component of a composite tumor. The composite elements are diagnosed and subtyped using universally defined histomorphology criteria (International Neuroblastoma Pathology Committee-INPC)11 and/or biomarker features.7 In the 2022 WHO classification, a minimum cut-off of 5% has been proposed for each tumor element to qualify as a composite PPGL; however, this would require adequate/thorough tumor sampling in an attempt to capture intra-tumoral heterogeneity.1,7 Composite PPGLs are not well studied and most prognostic variables are less recognized. At this time, diagnosticians can also document the extent of composite elements and mitotic-karyorrhectic index (MKI) in neuroblastic elements of composite PPGLs. Composite PPGLs may occur in the setting of pathogenic RET, MAX and NF1 variants.1,12",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "irrespective_of_the_anatomic_location_ppgls_show_overlapping_cytomorphologic_features_they_display_a",
+          "label": "Irrespective of the anatomic location, PPGLs show overlapping cytomorphologic features. They display a variety of growth patterns. Sympathetic PPGLs often consist of polygonal cells (chromaffin cells) with amphophilic to basophilic cytoplasm, whereas parasympathetic PGLs consist of polygonal cells (chief cells) with relatively clearer cytoplasm than their sympathetic counterparts. Genotype-phenotype correlations underscored that VHL-related PPGLs contain usually a thick vascular capsule, hyalinized vascular and myxoid stroma, round tumor cells intermingled with small vessels, oncocytic cells, cells with predominantly amphophilic and clear cell cytoplasm, absence of intracytoplasmic hyaline globules and lipid degeneration.1,2,7,13 SDHx-related PPGLs are often composed of tumor cells with variable intra-cytoplasmic vacuoles and/or oncocytic change.1,2,6,14",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "expanded_large_confluent_nests_with_central_comedo_necrosis_have_been_described_in_a_subset_of_metas",
+          "label": "Expanded large confluent nests with central comedo necrosis have been described in a subset of metastastic PPGLs.3 Degenerative changes should not be mistaken as tumor necrosis. Vascular and lymphatic invasion are critical elements in the dynamic risk stratification of PPGLs.1,3,5 Vascular invasion in endocrine neoplasia requires the documentation of tumor cells invading through a vessel wall and forming intravascular tumor-platelet/thrombus complex or intravascular tumor cells admixed with platelets-thrombus.6 In cases with subtle findings, CD61 immunohistochemistry can be used to highlight platelets admixed with intravascular tumor cells.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_8th_edition_ajcc_tnm_criteria15_also_requires_diagnosticians_to_document_the_text_of_histologica",
+          "label": "The 8th edition AJCC TNM criteria15 also requires diagnosticians to document the text of histologically confirmed invasion into adjacent tissues/structures and organs. Therefore, local invasion into surrounding organs should be clearly documented to facilitate the staging. In addition, the extent of invasiveness of these tumors may affect the ability to obtain a surgical cure.16 In morcellated or fragmented resection specimens, the status and extent of invasive growth and the completeness of the tumor excision cannot be assessed.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_classification_of_pheochromocytomas_and_extra_adrenal_paragangliomas",
+          "label": "Table 1. Classification of Pheochromocytomas and Extra-Adrenal Paragangliomas",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "paraganglioma",
+              "label": "Paraganglioma"
+            },
+            {
+              "value": "pheochromocytoma",
+              "label": "Pheochromocytoma (adrenal paraganglioma)"
+            },
+            {
+              "value": "micro_pheochromocytoma",
+              "label": "Micro-pheochromocytoma (subcentimeter adrenal paraganglioma)"
+            },
+            {
+              "value": "composite_paraganglioma",
+              "label": "Composite paraganglioma"
+            },
+            {
+              "value": "paraganglioma_and_ganglioneuroma_mature",
+              "label": "Paraganglioma and Ganglioneuroma, mature"
+            },
+            {
+              "value": "paraganglioma_and_ganglioneuroma_maturing",
+              "label": "Paraganglioma and Ganglioneuroma, maturing"
+            },
+            {
+              "value": "paraganglioma_and_ganglioneuroblastoma_intermixed_type",
+              "label": "Paraganglioma and Ganglioneuroblastoma, intermixed type"
+            },
+            {
+              "value": "paraganglioma_and_ganglioneuroblastoma_nodular_type",
+              "label": "Paraganglioma and Ganglioneuroblastoma, nodular type"
+            },
+            {
+              "value": "paraganglioma_and_neuroblastoma_undifferentiated_type",
+              "label": "Paraganglioma and Neuroblastoma, undifferentiated type"
+            },
+            {
+              "value": "paraganglioma_and_neuroblastoma_poorly_differentiated_type",
+              "label": "Paraganglioma and Neuroblastoma, poorly differentiated type"
+            },
+            {
+              "value": "paraganglioma_and_neuroblastoma_differentiating_type",
+              "label": "Paraganglioma and Neuroblastoma, differentiating type"
+            },
+            {
+              "value": "paraganglioma_and_neuroblastic_tumor_nos",
+              "label": "Paraganglioma and Neuroblastic tumor, NOS"
+            },
+            {
+              "value": "paraganglioma_and_malignant_peripheral_nerve_sheath_tumor",
+              "label": "Paraganglioma and Malignant peripheral nerve sheath tumor"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________",
+              "has_free_text": true
+            },
+            {
+              "value": "composite_pheochromocytoma",
+              "label": "Composite pheochromocytoma"
+            },
+            {
+              "value": "pheochromocytoma_and_ganglioneuroma_mature",
+              "label": "Pheochromocytoma and Ganglioneuroma, mature"
+            },
+            {
+              "value": "pheochromocytoma_and_ganglioneuroma_maturing",
+              "label": "Pheochromocytoma and Ganglioneuroma, maturing"
+            },
+            {
+              "value": "pheochromocytoma_and_ganglioneuroblastoma_intermixed_type",
+              "label": "Pheochromocytoma and Ganglioneuroblastoma, intermixed type"
+            },
+            {
+              "value": "pheochromocytoma_and_ganglioneuroblastoma_nodular_type",
+              "label": "Pheochromocytoma and Ganglioneuroblastoma, nodular type"
+            },
+            {
+              "value": "pheochromocytoma_and_neuroblastoma_undifferentiated_type",
+              "label": "Pheochromocytoma and Neuroblastoma, undifferentiated type"
+            },
+            {
+              "value": "pheochromocytoma_and_neuroblastoma_poorly_differentiated_type",
+              "label": "Pheochromocytoma and Neuroblastoma, poorly differentiated type"
+            },
+            {
+              "value": "pheochromocytoma_and_neuroblastoma_differentiating_type",
+              "label": "Pheochromocytoma and Neuroblastoma, differentiating type"
+            },
+            {
+              "value": "pheochromocytoma_and_neuroblastic_tumor_nos",
+              "label": "Pheochromocytoma and Neuroblastic tumor, NOS"
+            },
+            {
+              "value": "pheochromocytoma_and_malignant_peripheral_nerve_sheath_tumor",
+              "label": "Pheochromocytoma and Malignant peripheral nerve sheath tumor"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_gill_aj_kimura_n_de_krijger_rr_tischler_a_overview_of_the_2022_who_classification_of_p",
+          "label": "Mete O, Asa SL, Gill AJ, Kimura N, de Krijger RR, Tischler A. Overview of the 2022 WHO Classification of Paragangliomas and Pheochromocytomas. Endocr Pathol. 2022 Mar;33(1):90-114.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_ezzat_s_mete_o_the_diagnosis_and_clinical_significance_of_paragangliomas_in_unusual_locations",
+          "label": "Asa SL, Ezzat S, Mete O. The Diagnosis and Clinical Significance of Paragangliomas in Unusual Locations. J Clin Med. 2018 Sep 13;7(9):280.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_tischler_as_de_krijger_r_mcnicol_am_eisenhofer_g_pacak_k_ezzat_s_asa_sl_protocol_for_the_exam",
+          "label": "Mete O, Tischler AS, de Krijger R, McNicol AM, Eisenhofer G, Pacak K, Ezzat S, Asa SL. Protocol for the examination of specimens from patients with pheochromocytomas and extra-adrenal paragangliomas. Arch Pathol Lab Med. 2014 Feb;138(2):182-8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "juhlin_cc_mete_o_advances_in_adrenal_and_extra_adrenal_paraganglioma_practical_synopsis_for_patholog",
+          "label": "Juhlin CC, Mete O. Advances in Adrenal and Extra-adrenal Paraganglioma: Practical Synopsis for Pathologists. Adv Anat Pathol. 2023 Jan 1;30(1):47-57.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "juhlin_cc_mete_o_hot_trends_in_pheochromocytoma_and_paraganglioma_are_we_getting_closer_to_personali",
+          "label": "Juhlin CC, Mete O. Hot Trends in Pheochromocytoma and Paraganglioma: Are We Getting Closer to Personalized Dynamic Prognostication? Turk Patoloji Derg. 2024;40(3):143-148.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_wenig_bm_update_from_the_5th_edition_of_the_world_health_organization_classification_of_head_",
+          "label": "Mete O, Wenig BM. Update from the 5th Edition of the World Health Organization Classification of Head and Neck Tumors: Overview of the 2022 WHO Classification of Head and Neck Neuroendocrine Neoplasms. Head Neck Pathol. 2022 Mar;16(1):123-142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_lyon_france_inter",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours. Lyon (France): International Agency for Research on Cancer; forthcoming. (WHO classification of tumours series, 5th ed.; vol. 10). https://publications.iarc.fr",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mete_o_schüller_u_ramani_b_mirchia_k_perry_a_cauda_equina_neuroendocrine_tumors_distinct_epit",
+          "label": "Asa SL, Mete O, Schüller U, Ramani B, Mirchia K, Perry A. Cauda Equina Neuroendocrine Tumors: Distinct Epithelial Neuroendocrine Neoplasms of Spinal Origin. Am J Surg Pathol. 2023 Apr 1;47(4):469-475.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rindi_g_mete_o_uccella_s_basturk_o_la_rosa_s_brosens_laa_ezzat_s_de_herder_ww_klimstra_ds_papotti_m_",
+          "label": "Rindi G, Mete O, Uccella S, Basturk O, La Rosa S, Brosens LAA, Ezzat S, de Herder WW, Klimstra DS, Papotti M, Asa SL. Overview of the 2022 WHO Classification of Neuroendocrine Neoplasms. Endocr Pathol. 2022 Mar;33(1):115-154.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mamilla_d_manukyan_i_fetsch_pa_pacak_k_miettinen_m_immunohistochemical_distinction_of_paragangliomas",
+          "label": "Mamilla D, Manukyan I, Fetsch PA, Pacak K, Miettinen M. Immunohistochemical distinction of paragangliomas from epithelial neuroendocrine tumors-gangliocytic duodenal and cauda equina paragangliomas align with epithelial neuroendocrine tumors. Hum Pathol. 2020 Sep; 103:72-82.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shimada_h_ambros_im_dehner_lp_hata_j_joshi_vv_roald_b_terminology_and_morphologic_criteria_of_neurob",
+          "label": "Shimada H, Ambros IM, Dehner LP, Hata J, Joshi VV, Roald B. Terminology and morphologic criteria of neuroblastic tumors: recommendations by the International Neuroblastoma Pathology Committee. Cancer. 1999;86(2):349-363.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "seabrook_aj_harris_je_velosa_sb_kim_e_mcinerney_leo_am_dwight_t_hockings_ji_hockings_ng_kirk_j_leo_p",
+          "label": "Seabrook AJ, Harris JE, Velosa SB, Kim E, McInerney-Leo AM, Dwight T, Hockings JI, Hockings NG, Kirk J, Leo PJ, Love AJ, Luxford C, Marshall M, Mete O, Pennisi DJ, Brown MA, Gill AJ, Hockings GI, Clifton-Bligh RJ, Duncan EL. Multiple Endocrine Tumors Associated with Germline MAX Mutations: Multiple Endocrine Neoplasia Type 5? J Clin Endocrinol Metab. 2021 Mar 25;106(4):1163-1182.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cassol_c_mete_o_endocrine_manifestations_of_von_hippel_lindau_disease_arch_pathol_lab_med_2015_feb13",
+          "label": "Cassol C, Mete O. Endocrine manifestations of von Hippel-Lindau disease. Arch Pathol Lab Med. 2015 Feb;139(2):263-8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "duan_k_mete_o_familial_endocrine_tumor_syndromes_clinical_and_predictive_roles_of_molecular_histopat",
+          "label": "Duan K, Mete O. Familial endocrine tumor syndromes: Clinical and predictive roles of molecular histopathology. AJSP: Reviews and Reports. September/October 2017; 22(5):246-268.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fishbein_l_del_rivero_j_else_t_howe_jr_asa_sl_cohen_dl_dahia_plm_fraker_dl_goodman_ka_hope_ta_kunz_p",
+          "label": "Fishbein L, Del Rivero J, Else T, Howe JR, Asa SL, Cohen DL, Dahia PLM, Fraker DL, Goodman KA, Hope TA, Kunz PL, Perez K, Perrier ND, Pryma DA, Ryder M, Sasson AR, Soulen MC, Jimenez C. The North American Neuroendocrine Tumor Society Consensus Guidelines for Surveillance and Management of Metastatic and/or Unresectable Pheochromocytoma and Paraganglioma. Pancreas. 2021 Apr 1;50(4):469-493.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "like_epithelial_nens_clinical_behavior_and_prognosis_are_determined_in_part_by_growth_rate_that_is_r",
+          "label": "Like epithelial NENs, clinical behavior and prognosis are determined in part by growth rate that is reflected in Ki-67 labeling and mitotic count.1  The value of Ki-67 in tumor-related progression and metastasis has also been confirmed in the TCGA data.2  Although there is no formal WHO grading for PPGLs, increased proliferative activity is an important variable in the dynamic risk stratification of PPGLs.1,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "as_specified_by_the_2022_who_classification_and_based_on_accuracy_studies_the_ki_67_assessment_from_",
+          "label": "As specified by the 2022 WHO classification and based on accuracy studies, the Ki-67 assessment from hot spots should be based on printout of a photo or an automated image analysis algorithm; eyeball estimates are not accurate or acceptable.5,6 Similar to epithelial NENs, PPGLs can show intra-tumoral proliferative heterogeneity. In general, selecting multiple small hot spots (at least 500 tumor cells) from different hot spot regions of the tumor rather than a single larger area of the same tumor are often recommended.7 In the 2022 WHO classification proliferation in general is regarded as a dynamic variable rather than a static threshold, therefore, a precise numeric percentage or count should be provided for Ki67 labeling index or mitotic count of all neuroendocrine neoplasms.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_mitotic_rate_should_be_reported_as_number_of_mitoses_per_2mm2_at_least_10mm2_evaluated_in_the_mo",
+          "label": "The mitotic rate should be reported as number of mitoses per 2mm2, at least 10mm2 evaluated in the most mitotically active part(s) of the tumor. The hot spot mitotic counting may apply contiguous round fields or random counting that uses a randomization method to avoid bias.8 The documentation of the methodology used to count mitosis is also encouraged. Only clearly identifiable mitotic figures should be counted; hyperchromatic, karyorrhectic, or apoptotic nuclei should not be counted. The application of phosphoHistone-H3 immunohistochemistry can also be used to count mitotic figures.5,6. Because of variations in field size, the number of high-power fields (HPF) (at 40X magnification) for 10mm2 (thereby 2mm2) must be determined for each microscope (Table 2).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_number_of_hpf_required_for_10mm2_and_2mm2_using_microscopes_with_different_field_diameter",
+          "label": "Table 2. Number of HPF Required for 10mm2 and 2mm2 Using Microscopes with Different Field Diameter",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_gill_aj_kimura_n_de_krijger_rr_tischler_a_overview_of_the_2022_who_classification_of_p",
+          "label": "Mete O, Asa SL, Gill AJ, Kimura N, de Krijger RR, Tischler A. Overview of the 2022 WHO Classification of Paragangliomas and Pheochromocytomas. Endocr Pathol. 2022 Mar;33(1):90-114.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fishbein_l_leshchiner_i_walter_v_danilova_l_robertson_ag_johnson_ar_lichtenberg_tm_murray_ba_ghayee_",
+          "label": "Fishbein L, Leshchiner I, Walter V, Danilova L, Robertson AG, Johnson AR, Lichtenberg TM, Murray BA, Ghayee HK, Else T, Ling S, Jefferys SR, de Cubas AA, Wenz B, Korpershoek E, Amelio AL, Makowski L, Rathmell WK, Gimenez-Roqueplo AP, Giordano TJ, Asa SL, Tischler AS; Cancer Genome Atlas Research Network, Pacak K, Nathanson KL, Wilkerson MD. Comprehensive Molecular Characterization of Pheochromocytoma and Paraganglioma. Cancer Cell. 2017; 31:181–193.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "juhlin_cc_mete_o_advances_in_adrenal_and_extra_adrenal_paraganglioma_practical_synopsis_for_patholog",
+          "label": "Juhlin CC, Mete O. Advances in Adrenal and Extra-adrenal Paraganglioma: Practical Synopsis for Pathologists. Adv Anat Pathol. 2023 Jan 1;30(1):47-57.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "juhlin_cc_mete_o_hot_trends_in_pheochromocytoma_and_paraganglioma_are_we_getting_closer_to_personali",
+          "label": "Juhlin CC, Mete O. Hot Trends in Pheochromocytoma and Paraganglioma: Are We Getting Closer to Personalized Dynamic Prognostication? Turk Patoloji Derg. 2024;40(3):143-148.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cree_ia_from_counting_mitoses_to_ki67_assessment_technical_pitfalls_in_the_new_who_classification_of",
+          "label": "Cree IA. From Counting Mitoses to Ki67 Assessment: Technical Pitfalls in the New WHO Classification of Endocrine and Neuroendocrine Tumors. Endocr Pathol. 2022 Mar;33(1):3-5.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rindi_g_mete_o_uccella_s_basturk_o_la_rosa_s_brosens_laa_ezzat_s_de_herder_ww_klimstra_ds_papotti_m_",
+          "label": "Rindi G, Mete O, Uccella S, Basturk O, La Rosa S, Brosens LAA, Ezzat S, de Herder WW, Klimstra DS, Papotti M, Asa SL. Overview of the 2022 WHO Classification of Neuroendocrine Neoplasms. Endocr Pathol. 2022 Mar;33(1):115-154.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "volynskaya_z_mete_o_pakbaz_s_al_ghamdi_d_asa_sl_ki67_quantitative_interpretation_insights_using_imag",
+          "label": "Volynskaya Z, Mete O, Pakbaz S, Al-Ghamdi D, Asa SL. Ki67 Quantitative Interpretation: Insights using Image Analysis. J Pathol Inform. 2019 Mar 8; 10:8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cree_ia_tan_ph_travis_wd_wesseling_p_yagi_y_white_va_lokuhetty_d_scolyer_ra_counting_mitoses_size_ma",
+          "label": "Cree IA, Tan PH, Travis WD, Wesseling P, Yagi Y, White VA, Lokuhetty D, Scolyer RA. Counting mitoses: SI(ze) matters! Mod Pathol. 2021 Sep;34(9):1651-1657.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastases_are_typically_defined_as_pgls_in_locations_where_normally_paraganglia_do_not_exist1_the_2",
+          "label": "Metastases are typically defined as PGLs in locations where normally paraganglia do not exist.1 The 2022 WHO classification of PPGLs has addressed to concerns on the distinction of metastases.1 Knowledge of the distribution of the autonomous nervous system and recognition of germline disease related multifocal PPGLs have improved our distinction of metastatic disease from multifocal disease in anatomic locations that have been traditionally considered as a metastatic site (e.g., liver, lung).1,2 Lymph node and bone are the only reliable sites for unequivocal evidence of metastasis.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "primary_pgls_can_occur_in_several_organs_including_but_not_limited_to_lung_liver_prostate_kidney_uri",
+          "label": "Primary PGLs can occur in several organs including but not limited to lung, liver, prostate, kidney, urinary bladder, heart, mesentery.1,2,3 However, without the knowledge on germline status of a patient, the distinction of multifocal primary PPGLs from metastatic disease can be difficult. The status of intratumoral sustentacular cell network has now been recognized as a useful tool to facilitate this distinction.1 S100 and SOX10-positive sustentacular cells are thought to represent the non-neoplastic cellular component of PPGLs,4 and metastases have been associated with the lack of sustentacular cell network.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_gill_aj_kimura_n_de_krijger_rr_tischler_a_overview_of_the_2022_who_classification_of_p",
+          "label": "Mete O, Asa SL, Gill AJ, Kimura N, de Krijger RR, Tischler A. Overview of the 2022 WHO Classification of Paragangliomas and Pheochromocytomas. Endocr Pathol. 2022 Mar;33(1):90-114.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_ezzat_s_mete_o_the_diagnosis_and_clinical_significance_of_paragangliomas_in_unusual_locations",
+          "label": "Asa SL, Ezzat S, Mete O. The Diagnosis and Clinical Significance of Paragangliomas in Unusual Locations. J Clin Med. 2018 Sep 13;7(9):280.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "millar_ac_mete_o_cusimano_rj_fremes_se_keshavjee_s_morgan_cd_asa_sl_ezzat_s_gilbert_j_functional_car",
+          "label": "Millar AC, Mete O, Cusimano RJ, Fremes SE, Keshavjee S, Morgan CD, Asa SL, Ezzat S, Gilbert J. Functional cardiac paraganglioma associated with a rare SDHC mutation. Endocr Pathol. 2014 Sep;25(3):315-20.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "powers_jf_tischler_as_immunohistochemical_staining_for_sox10_and_sdhb_in_sdh_deficient_paraganglioma",
+          "label": "Powers JF, Tischler AS. Immunohistochemical Staining for SOX10 and SDHB in SDH-Deficient Paragangliomas Indicates that Sustentacular Cells Are Not Neoplastic. Endocr Pathol. 2020; 31:307-309.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "unger_p_hoffman_k_pertsemlidis_d_thung_s_wolfe_d_kaneko_m_s100_protein_positive_sustentacular_cells_",
+          "label": "Unger P, Hoffman K, Pertsemlidis D, Thung S, Wolfe D, Kaneko M. S100 protein-positive sustentacular cells in malignant and locally aggressive adrenal pheochromocytomas. Arch Pathol Lab Med. 1991; 115:484-487.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_8th_edition_of_the_tnm_staging_system_of_the_american_joint_committee_on_cancer_ajcc_is_now_reco",
+          "label": "The 8th edition of the TNM staging system of the American Joint Committee on Cancer (AJCC) is now recommended for staging sympathetic PGLs and pheochromocytomas.1 Accordingly, TNM staging is based on size, location and invasiveness of the primary tumor, the presence or absence of locoregional metastases, and both the presence and site of distant metastases. Bone metastases alone are associated with longer survival than metastases to lung or liver. Currently there is no TNM classification for parasympathetic PGLs and composite PPGLs; however, the authors of this protocol encourage all users to apply the current template (based on the tumor size cutoff of 5 cm and the status of invasion) to facilitate uniform data collection.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "according_to_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previ",
+          "label": "According to AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and is based on gross and microscopic examination. pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically infeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y,” “r,” and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_after_initial_mult",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or after initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor before multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval and is identified by the “r” prefix: rTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_designation_applies_only_to_grossly_recognizable_synchronous_primary_tumors_and_not_to_a_singl",
+          "label": "The “m” designation applies only to grossly recognizable, synchronous primary tumors and not to a single, grossly detected tumor with multiple separate microscopic foci. If more than 1 tumor is present, the tumor with the highest T category should be classified according to the pT definitions, and either the multiplicity (“m”) or the actual number of simultaneous multiple tumors (e.g., “3”) should be indicated in parentheses after the T category of the primary tumor (e.g., pT3[m] or pT3[2]).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "four_stage_groups_are_compiled_from_the_tnm_data",
+          "label": "Four stage groups are compiled from the TNM data",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor",
+          "label": "Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "pT"
+        },
+        {
+          "field_id": "t3_tumor_any_size_with_invasion_into_surrounding_organstissues",
+          "label": "T3: Tumor any size with invasion into surrounding organs/tissues",
+          "required": true,
+          "type": "free_text",
+          "condition": "e.g., liver, pancreas, spleen, kidneys"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "Regional lymph nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "distant_metastasis",
+          "label": "Distant metastasis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_groups",
+          "label": "Stage groups",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_1_t1_n0_m0",
+          "label": "Stage 1: T1, N0, M0",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_2_t2_n0_m0",
+          "label": "Stage 2: T2, N0, M0",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_3_t1_n1_m0_or_t2_n1_m0_or_t3_any_n_m0",
+          "label": "Stage 3: T1, N1, M0 or T2, N1, M0 or T3, any N, M0",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "stage_4_any_t_any_n_m1",
+          "label": "Stage 4: any T, any N, M1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amin_mb_edge_sb_greene_fl_et_al_eds_ajcc_cancer_staging_manual_8th_ed_new_york_ny_springer_2017",
+          "label": "Amin MB, Edge SB, Greene FL, et al, eds. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "diffuse_non_nodular_expansion_of_adrenal_medulla_which_expands_to_comprise_more_than_one_third_of_th",
+          "label": "Diffuse (non-nodular) expansion of adrenal medulla, which expands to comprise more than one-third of the adrenal gland thickness, qualifies for adrenal medullary hyperplasia that is a precursor lesion for inherited PPGLs in association with pathogenic RET (most common), MAX, TMEM127, and NF1 variants.1,2,3,4,5,6,7 Diagnosticians should also remember that adrenal medulla is normally present only in the head and body of the adrenal gland, but not in the tail of the gland with only minimal extension into the alae. So an abnormal location of the medulla (e.g., extension of the adrenal medulla into the tail) also warrants a diagnosis of diffuse adrenal medullary hyperplasia.2,3,8 Therefore, the non-tumorous adrenal gland should be sampled in toto. Irrespective of the size, any distinct nodular proliferation of chromaffin cell origin in the medulla would warrant a diagnosis of micro-pheochromocytoma.1,3 In the setting of diffuse compact cell adrenal cortical hyperplasia, the possibility of ectopic ACTH/CRH-production from a pheochromocytoma should be considered.8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_gill_aj_kimura_n_de_krijger_rr_tischler_a_overview_of_the_2022_who_classification_of_p",
+          "label": "Mete O, Asa SL, Gill AJ, Kimura N, de Krijger RR, Tischler A. Overview of the 2022 WHO Classification of Paragangliomas and Pheochromocytomas. Endocr Pathol. 2022 Mar;33(1):90-114.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_precursor_lesions_of_endocrine_system_neoplasms_pathology_2013_apr453316_30",
+          "label": "Mete O, Asa SL. Precursor lesions of endocrine system neoplasms. Pathology. 2013 Apr;45(3):316-30.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "duan_k_mete_o_familial_endocrine_tumor_syndromes_clinical_and_predictive_roles_of_molecular_histopat",
+          "label": "Duan K, Mete O. Familial endocrine tumor syndromes: Clinical and predictive roles of molecular histopathology. AJSP: Reviews and Reports. September/October 2017; 22(5):246-268.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "falhammar_h_stenman_a_calissendorff_j_juhlin_cc_presentation_treatment_histology_and_outcomes_in_adr",
+          "label": "Falhammar H, Stenman A, Calissendorff J, Juhlin CC. Presentation, Treatment, Histology, and Outcomes in Adrenal Medullary Hyperplasia Compared with Pheochromocytoma. Journal of the Endocrine Society 2019; 3:1518-1530.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "romanet_p_guerin_c_pedini_p_essamet_w_castinetti_f_sebag_f_roche_p_cascon_a_tischler_as_pacak_k_barl",
+          "label": "Romanet P, Guerin C, Pedini P, Essamet W, Castinetti F, Sebag F, Roche P, Cascon A, Tischler AS, Pacak K, Barlier A, Taïeb D. Pathological and Genetic Characterization of Bilateral Adrenomedullary Hyperplasia in a Patient with Germline MAX Mutation. Endocr Pathol. 2017; 28:302-307.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grogan_rh_pacak_k_pasche_l_huynh_tt_greco_rs_bilateral_adrenal_medullary_hyperplasia_associated_with",
+          "label": "Grogan RH, Pacak K, Pasche L, Huynh TT, Greco RS. Bilateral adrenal medullary hyperplasia associated with an SDHB mutation. J Clin Oncol. 2011;29: e200-202.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hernandez_kg_ezzat_s_morel_cf_swallow_c_otremba_m_dickson_bc_asa_sl_mete_o_familial_pheochromocytoma",
+          "label": "Hernandez KG, Ezzat S, Morel CF, Swallow C, Otremba M, Dickson BC, Asa SL, Mete O. Familial pheochromocytoma and renal cell carcinoma syndrome: TMEM127 as a novel candidate gene for the association. Virchows Arch. 2015; 466:727-732.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_tischler_as_de_krijger_r_mcnicol_am_eisenhofer_g_pacak_k_ezzat_s_asa_sl_protocol_for_the_exam",
+          "label": "Mete O, Tischler AS, de Krijger R, McNicol AM, Eisenhofer G, Pacak K, Ezzat S, Asa SL. Protocol for the examination of specimens from patients with pheochromocytomas and extra-adrenal paragangliomas. Arch Pathol Lab Med. 2014 Feb;138(2):182-8.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_application_of_routine_immunohistochemical_biomarkers_is_essential_in_the_field_of_nens_includin",
+          "label": "The application of routine immunohistochemical biomarkers is essential in the field of NENs including PPGLs. In the 2022 WHO classification of NENs, testing of keratin expression status is recommended for all NENs.1,2,3,4 While negativity alone does not exclude an epithelial NENs, PPGLs are typically negative for keratins. Chromogranin A is the classical biomarker to confirm neuroendocrine differentiation, and INSM1 is also useful in the appropriate morphological setting.1,2,3,4 The demonstration of intratumoral sustentacular cell network is not specific for PPGLs and can be seen in epithelial NENs.1,2 Positivity for GATA3 is commonly used to confirm the paraganglia origin in keratin-negative NENs; however, GATA3 is also expressed in other NENs which can sometimes be keratin-negative (e.g., gonadotroph tumor).  There are also other less frequently adopted markers including but not limited to PHOX2B5 and they have been shown to support the paraganglia origin, thus a PPGL diagnosis in the setting of a keratin-negative NEN.6,7 PHOX2B is also used in the distinction of ganglioneuronal elements of composite tumors. S100 and SOX10 can be used to highlight schwannian stroma in composite tumors.1 Tyrosine hydroxylase (the rate limiting enzyme in the synthesis of catecholamines) is typically positive in most functional PPGLs.1,2,3,4  However, immunohistochemical biomarkers should be used in a panel as positivity of a single marker may be misleading. Parasympathetic PGLs can have absent to reduced expression for chromogranin-A and tyrosine hydroxylase. The demonstration of intratumoral sustentacular cell network can facilitate the distinction of multifocal primary PPGLs from metastatic disease as discussed on note E. More importantly, reduced intra-tumoral sustentacular cell network in a primary PPGL is of interest as an emerging variable in the dynamic risk stratification of PPGLs.1,2  Loss of ATRX and increased MIB1 (Ki-67) labeling index (often >3%) are also adverse parameters in the dynamic risk stratification.1,2,4,7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_highly_heritable_nature_of_ppgls_and_lack_of_family_history_in_most_affected_patients_have_resul",
+          "label": "The highly heritable nature of PPGLs and lack of family history in most affected patients have resulted in reflex biomarker testing regarding their pathogenesis. The desirable molecular immunohistochemistry tools include SDHB, alpha-inhibin, CAIX, FH and 2SC.1 Global loss of cytoplasmic SDHB expression is referred to SDH deficiency and can be associated with any SDHx alterations.1 Positivity for alpha-inhibin can occur in PGLs and pheochromocytomas that are associated with pseudohypoxia pathway (e.g., SDHx- and VHL-related PPGLs) that manifest with dopaminergic or mixed dopaminergic and adrenergic tumors as well as in the setting of pure noradrenergic immature secretory phenotype.1,7 Membranous CAIX is also regarded a feature of VHL-related PPGLs.1,7,8,9  FH-related pathogenesis can be screened by loss of FH (fumarate hydratase) and positivity for 2-SC (2-succinocystein).1,10 If available, menin can be used to screen for MEN1-related pathogenesis.1,2,11The current experiences with MAX antibody (MEN5-related manifestation) are conflicting among experts. BAP1 immunohistochemistry is also unreliable.12 Although immunohistochemical biomarkers are very helpful in raising the possibility of heritable disease and/or underlying pathogenesis, the gold standard is germline genetic testing which should be offered in all patients with PPGLs.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_asa_sl_gill_aj_kimura_n_de_krijger_rr_tischler_a_overview_of_the_2022_who_classification_of_p",
+          "label": "Mete O, Asa SL, Gill AJ, Kimura N, de Krijger RR, Tischler A. Overview of the 2022 WHO Classification of Paragangliomas and Pheochromocytomas. Endocr Pathol. 2022 Mar;33(1):90-114.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rindi_g_mete_o_uccella_s_basturk_o_la_rosa_s_brosens_laa_ezzat_s_de_herder_ww_klimstra_ds_papotti_m_",
+          "label": "Rindi G, Mete O, Uccella S, Basturk O, La Rosa S, Brosens LAA, Ezzat S, de Herder WW, Klimstra DS, Papotti M, Asa SL. Overview of the 2022 WHO Classification of Neuroendocrine Neoplasms. Endocr Pathol. 2022 Mar;33(1):115-154.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_wenig_bm_update_from_the_5th_edition_of_the_world_health_organization_classification_of_head_",
+          "label": "Mete O, Wenig BM. Update from the 5th Edition of the World Health Organization Classification of Head and Neck Tumors: Overview of the 2022 WHO Classification of Head and Neck Neuroendocrine Neoplasms. Head Neck Pathol. 2022 Mar;16(1):123-142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_endocrine_and_neuroendocrine_tumours_lyon_france_inter",
+          "label": "WHO Classification of Tumours Editorial Board. Endocrine and neuroendocrine tumours. Lyon (France): International Agency for Research on Cancer; forthcoming. (WHO classification of tumours series, 5th ed.; vol. 10). https://publications.iarc.fr",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "miyauchi_m_akashi_t_furukawa_a_uchida_k_tamura_t_ando_n_kirimura_s_shintaku_h_yamamoto_k_ito_t_miura",
+          "label": "Miyauchi M, Akashi T, Furukawa A, Uchida K, Tamura T, Ando N, Kirimura S, Shintaku H, Yamamoto K, Ito T, Miura K, Kayamori K, Ariizumi Y, Asakage T, Kudo A, Tanabe M, Fujii Y, Ishibashi H, Okubo K, Murakami M, Yamada T, Takemoto A, Bae Y, Eishi Y, Ohashi K. PHOX2B is a Sensitive and Specific Marker for the Histopathological Diagnosis of Pheochromocytoma and Paraganglioma. Endocr Pathol. 2022 Dec;33(4):506-518.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "juhlin_cc_mete_o_hot_trends_in_pheochromocytoma_and_paraganglioma_are_we_getting_closer_to_personali",
+          "label": "Juhlin CC, Mete O. Hot Trends in Pheochromocytoma and Paraganglioma: Are We Getting Closer to Personalized Dynamic Prognostication? Turk Patoloji Derg. 2024;40(3):143-148.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_pakbaz_s_lerario_am_giordano_tj_asa_sl_significance_of_alpha_inhibin_expression_in_pheochromo",
+          "label": "Mete O, Pakbaz S, Lerario AM, Giordano TJ, Asa SL. Significance of Alpha-inhibin Expression in Pheochromocytomas and Paragangliomas. Am J Surg Pathol. 2021 Sep 1;45(9):1264-1273.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "favier_j_meatchi_t_robidel_e_badoual_c_sibony_m_nguyen_at_gimenez_roqueplo_ap_burnichon_n_carbonic_a",
+          "label": "Favier J, Meatchi T, Robidel E, Badoual C, Sibony M, Nguyen AT, Gimenez-Roqueplo AP, Burnichon N. Carbonic anhydrase 9 immunohistochemistry as a tool to predict or validate germline and somatic VHL mutations in pheochromocytoma and paraganglioma-a retrospective and prospective study. Mod Pathol. 2020 Jan;33(1):57-64.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "oldfield_le_grzybowski_j_grenier_s_chao_e_downs_gs_farncombe_km_stockley_tl_mete_o_kim_rh_vhl_mosaic",
+          "label": "Oldfield LE, Grzybowski J, Grenier S, Chao E, Downs GS, Farncombe KM, Stockley TL, Mete O, Kim RH. VHL mosaicism: the added value of multi-tissue analysis. NPJ Genom Med. 2022 Mar 18;7(1):21.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fuchs_tl_luxford_c_clarkson_a_sheen_a_sioson_l_elston_m_croxson_ms_dwight_t_benn_de_tacon_l_field_m_",
+          "label": "Fuchs TL, Luxford C, Clarkson A, Sheen A, Sioson L, Elston M, Croxson MS, Dwight T, Benn DE, Tacon L, Field M, Ahadi MS, Chou A, Clifton-Bligh RJ, Gill AJ. A Clinicopathologic and Molecular Analysis of Fumarate Hydratase-deficient Pheochromocytoma and Paraganglioma. Am J Surg Pathol. 2023 Jan 1;47(1):25-36.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "asa_sl_mohamed_a_menin_loss_in_pheochromocytoma_of_multiple_endocrine_neoplasia_type_1_endocr_pathol",
+          "label": "Asa SL, Mohamed A. Menin Loss in Pheochromocytoma of Multiple Endocrine Neoplasia Type 1. Endocr Pathol. 2023 Mar;34(1):156-158.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maffeis_v_cappellesso_r_nicolè_l_guzzardo_v_menin_c_elefanti_l_schiavi_f_guido_m_fassina_a_loss_of_b",
+          "label": "Maffeis V, Cappellesso R, Nicolè L, Guzzardo V, Menin C, Elefanti L, Schiavi F, Guido M, Fassina A. Loss of BAP1 in Pheochromocytomas and Paragangliomas Seems Unrelated to Genetic Mutations. Endocr Pathol. 2019 Dec;30(4):276-284.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

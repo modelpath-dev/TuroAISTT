@@ -1,0 +1,1040 @@
+{
+  "template_id": "Stomach.GIST.Bmk_1.1.0.0.REL_CAPCP",
+  "organ": "GIST Biomarker Reporting Template",
+  "protocol_posting_date": "December 2022",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "gist_biomarker_tests",
+      "section_name": "GIST BIOMARKER TESTS",
+      "fields": [
+        {
+          "field_id": "immunohistochemical_studies",
+          "label": "Immunohistochemical Studies",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "kit",
+          "label": "KIT",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ],
+          "condition": "CD117"
+        },
+        {
+          "field_id": "dog1",
+          "label": "DOG1",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            }
+          ],
+          "condition": "ANO1"
+        },
+        {
+          "field_id": "sdha",
+          "label": "SDHA",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "deficient",
+              "label": "Deficient"
+            }
+          ]
+        },
+        {
+          "field_id": "sdhb",
+          "label": "SDHB",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact",
+              "label": "Intact"
+            },
+            {
+              "value": "deficient",
+              "label": "Deficient"
+            }
+          ]
+        },
+        {
+          "field_id": "other_ihc_studies",
+          "label": "Other IHC Studies",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "test_name_repeat_this_question_as_needed",
+          "label": "Test Name (repeat this question as needed): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "molecular_genetic_studies",
+          "label": "Molecular Genetic Studies",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "kit_mutational_analysis",
+          "label": "KIT Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutation_detected",
+              "label": "No mutation detected"
+            },
+            {
+              "value": "mutation_identified",
+              "label": "Mutation identified (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "kit_exons_assessed",
+          "label": "KIT Exons Assessed",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "exon_9",
+              "label": "Exon 9"
+            },
+            {
+              "value": "exon_11",
+              "label": "Exon 11"
+            },
+            {
+              "value": "exon_13",
+              "label": "Exon 13"
+            },
+            {
+              "value": "exon_14",
+              "label": "Exon 14"
+            },
+            {
+              "value": "exon_17",
+              "label": "Exon 17"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "pdgfra_mutational_analysis",
+          "label": "PDGFRA Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutation_detected",
+              "label": "No mutation detected"
+            },
+            {
+              "value": "mutation_identified",
+              "label": "Mutation identified (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "pdgfra_exons_assessed",
+          "label": "PDGFRA Exons Assessed",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "exon_12",
+              "label": "Exon 12"
+            },
+            {
+              "value": "exon_14",
+              "label": "Exon 14"
+            },
+            {
+              "value": "exon_18",
+              "label": "Exon 18"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "sdh_a_b_c_d_mutational_analysis",
+          "label": "SDH A / B / C / D Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutation_detected",
+              "label": "No mutation detected"
+            },
+            {
+              "value": "mutation_identified",
+              "label": "Mutation identified (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "nf1_mutational_analysis",
+          "label": "NF1 Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutation_detected",
+              "label": "No mutation detected"
+            },
+            {
+              "value": "mutation_identified",
+              "label": "Mutation identified (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "braf_mutational_analysis",
+          "label": "BRAF Mutational Analysis",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "no_braf_mutation_detected",
+              "label": "No BRAF mutation detected"
+            },
+            {
+              "value": "braf_v600e",
+              "label": "BRAF V600E (c.1799T>A, exon 15) mutation"
+            },
+            {
+              "value": "other_braf_mutation",
+              "label": "Other BRAF mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "braf_fusion_gene_analysis",
+          "label": "BRAF Fusion Gene Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_fusion_detected",
+              "label": "No fusion detected"
+            },
+            {
+              "value": "fusion_identified",
+              "label": "Fusion identified (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "fgfr1_fusion_gene_analysis",
+          "label": "FGFR1 Fusion Gene Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_fusion_detected",
+              "label": "No fusion detected"
+            },
+            {
+              "value": "fusion_identified",
+              "label": "Fusion identified (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "other_gene_mutational_analysis",
+          "label": "Other Gene Mutational Analysis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mutation_name_repeat_this_question_as_needed",
+          "label": "Mutation Name (repeat this question as needed): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutation_detected",
+              "label": "No mutation detected"
+            },
+            {
+              "value": "mutation_identified",
+              "label": "Mutation identified (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_fusion_gene_event_analysis",
+          "label": "Other Fusion Gene Event Analysis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fusion_name_repeat_this_question_as_needed",
+          "label": "Fusion Name (repeat this question as needed): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_fusion_detected",
+              "label": "No fusion detected"
+            },
+            {
+              "value": "fusion_identified",
+              "label": "Fusion identified (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "consistent_gene_mutation_nomenclature_is_essential_for_efficient_and_accurate_reporting1_the_followi",
+          "label": "Consistent gene mutation nomenclature is essential for efficient and accurate reporting.1 The following are examples as recommended by Human Genome Variation Society (HGVS) for description of variant changes.2 It is also preferred that protein alterations are mentioned in the report in addition to genomic coordinates.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "examples_of_dna_rna_and_protein_nomenclature",
+          "label": "Examples of DNA, RNA, and Protein Nomenclature",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dna_a_g_c_t",
+          "label": "DNA: A, G, C, T",
+          "required": true,
+          "type": "free_text",
+          "condition": "example: c.957A>T"
+        },
+        {
+          "field_id": "rna_a_g_c_u",
+          "label": "RNA: a, g, c, u",
+          "required": true,
+          "type": "free_text",
+          "condition": "example: r.957 a>u"
+        },
+        {
+          "field_id": "protein_3_letter_amino_acid_code_x_stop_codon",
+          "label": "Protein: 3-letter amino acid code, X= Stop codon",
+          "required": true,
+          "type": "free_text",
+          "condition": "example: p. Glu78Gln"
+        },
+        {
+          "field_id": "examples_of_nomenclatures_for_types_of_sequence_variants",
+          "label": "Examples of Nomenclatures for Types of Sequence Variants",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "types_of_variation_examples",
+          "label": "Types of Variation\t\tExamples",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "substitution_c123ag",
+          "label": "Substitution\t\tc.123A>G",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "deletion_c123dela_c586_591deltggtca_or_c586_591del6",
+          "label": "Deletion\t\tc.123delA, c.586_591delTGGTCA or c.586_591del6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "duplication_c123dupa_c586_591duptggtca_or_c586_591dup6",
+          "label": "Duplication\t\tc.123dupA, c.586_591dupTGGTCA or c.586_591dup6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "insertion_c123_124insc_c1086_1087insgcgtga",
+          "label": "Insertion\t\tc.123_124insC, c.1086_1087insGCGTGA",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "frame_shift_p_arg83_fs_or_p_arg83ser_fsx15",
+          "label": "Frame shift\t\tp. Arg83 fs or p. Arg83Ser fsX15",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "deletioninsertions_indel_c112_117delaggtcainstg",
+          "label": "Deletion/insertions “indel”\t\tc.112_117delAGGTCAinsTG",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ogino_s_gulley_m_den_dunneb_jt_et_al_standard_mutation_nomenclature_in_molecular_diagnostics_practic",
+          "label": "Ogino S, Gulley M, den Dunneb JT, et al. Standard mutation nomenclature in molecular diagnostics: practical and educational challenges. J Mol Diagn. 2007;9(1):1-6.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "den_dunnen_jt_and_antonarakis_se_2003_mutation_nomenclature_current_protocols_in_human_genetics_37_7",
+          "label": "den Dunnen, J.T. and Antonarakis, S.E. (2003), Mutation Nomenclature. Current Protocols in Human Genetics, 37: 7.13.1-7.13.8. https://doi.org/10.1002/0471142905.hg0713s37. Accessed November 11, 2022.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "because_small_molecule_kinase_inhibitor_therapy_is_highly_effective_in_the_treatment_of_gist_it_has_",
+          "label": "Because small-molecule kinase inhibitor therapy is highly effective in the treatment of GIST, it has become imperative to distinguish GIST from its histologic mimics, mainly leiomyoma, leiomyosarcoma, schwannoma, and desmoid fibromatosis.1,2  Immunohistochemistry is instrumental in the workup of GIST. For the initial workup of GIST, a basic immunohistochemical panel including CD117 (KIT), DOG1 (Ano1), Desmin, S100 protein, and CD34 is recommended. GIST is immunoreactive for KIT (CD117) (approximately 95%) and/or DOG1(>99%).3,4,5 KIT immunoreactivity is usually strong and diffuse but can be more focal in unusual cases (Figure 1, A, and B). It is not unusual for GIST to exhibit dot-like perinuclear staining (Figure 1, C), while less commonly, some cases exhibit membranous staining (Figure 1, D). These patterns do not clearly correlate with mutation type or response to therapy. Most KIT-negative/DOG1 positive GIST is gastric or extra-visceral GIST and almost invariably harbor a platelet-derived growth factor receptor A (PDGFRA) mutation.6 DOG1 expression is not related to mutational status in GIST, and it may be a useful marker to identify a subset of patients with CD117-negative GIST, who might benefit from targeted therapy.4,5 Approximately 70% of GIST are positive for CD34, 30% to 40% are positive for smooth muscle actin, 5% are positive for S100 protein (usually focal), 5% are positive for desmin (usually focal), and 1% to 2% are positive for keratin (weak/focal).7\n \nNote: PanTrk immunohistochemistry may be positive in GIST, a tumor typically negative for NTRK fusion and this immunostain is not recommended.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "since_succinate_dehydrogenase_sdh_deficient_gist_may_be_familial_have_specific_implications_see_the_",
+          "label": "Since succinate dehydrogenase (SDH)-deficient GIST may be familial, have specific implications (see the following), it is recommended that all gastric GIST be screened for loss of SDH by immunohistochemistry, best accomplished by immunostaining for SDHB, which is lost in all independent of the SDH-subunit that is inactivated.8,9,10,11 Mutations in SDHA are detected in 30% of SDH-deficient GIST and loss of expression of SDHA specifically identifies tumors with SDHA mutations; other SDH-deficient GIST show normal (intact) cytoplasmic staining for SDHA.12,13 Patients with SDH-deficient GIST should be referred to a genetic counselor for appropriate workup.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_patterns_of_kit_staining_in_gastrointestinal_stromal_tumor_gist_a_diffuse_and_strong_immuno",
+          "label": "Figure 1. Patterns of KIT staining in gastrointestinal stromal tumor (GIST). A, Diffuse and strong immunoreactivity in a typical GIST. B, Focal and weak pattern in an epithelioid gastric GIST with a PDGFRA mutation. C, Dot-like perinuclear staining. D, Membranous pattern.",
+          "required": true,
+          "type": "free_text",
+          "condition": "Original magnification X400"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hornick_jl_fletcher_cd_immunohistochemical_staining_for_kit_cd117_in_soft_tissue_sarcomas_is_very_li",
+          "label": "Hornick JL, Fletcher CD. Immunohistochemical staining for KIT (CD117) in soft tissue sarcomas is very limited in distribution. Am J Clin Pathol. 2002;117(2):188-193.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "miettinen_m_sobin_lh_sarlomo_rikala_m_immunohistochemical_spectrum_of_gists_at_different_sites_and_t",
+          "label": "Miettinen M, Sobin LH, Sarlomo-Rikala M. Immunohistochemical spectrum of GISTs at different sites and their differential diagnosis with a reference to CD117 (KIT). Mod Pathol. 2000;13(10):1134-1142.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sarlomo_rikala_m_kovatich_aj_barusevicius_a_miettinen_m_cd117_a_sensitive_marker_for_gastrointestina",
+          "label": "Sarlomo-Rikala M, Kovatich AJ, Barusevicius A, Miettinen M. CD117: a sensitive marker for gastrointestinal stromal tumors that is more specific than CD34. Mod Pathol. 1998;11(8):728-734.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "espinosa_i_lee_ch_kim_mk_et_al_a_novel_monoclonal_antibody_against_dog1_is_a_sensitive_and_specific_",
+          "label": "Espinosa I, Lee CH, Kim MK, et al. A novel monoclonal antibody against DOG1 is a sensitive and specific marker for gastrointestinal stromal tumors. Am J Surg Path. 2008;32(2):210–218.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "miettinen_m_wang_zf_lasota_j_dog1_antibody_in_the_differential_diagnosis_of_gastrointestinal_stromal",
+          "label": "Miettinen M, Wang ZF, Lasota J. DOG1 antibody in the differential diagnosis of gastrointestinal stromal tumors: a study of 1840 cases. Am J Surg Pathol. 2009;33:1401–1408.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "medeiros_f_corless_cl_duensing_a_et_al_kit_negative_gastrointestinal_stromal_tumors_proof_of_concept",
+          "label": "Medeiros F, Corless CL, Duensing A, et al. KIT-negative gastrointestinal stromal tumors: proof of concept and therapeutic implications. Am J Surg Pathol. 2004;28(7):889-894.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fletcher_cd_berman_jj_corless_c_et_al_diagnosis_of_gastrointestinal_stromal_tumors_a_consensus_appro",
+          "label": "Fletcher CD, Berman JJ, Corless C, et al. Diagnosis of gastrointestinal stromal tumors: a consensus approach. Hum Pathol. 2002;33(5):459-465.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mei_l_smith_sc_faber_ac_et_al_gastrointestinal_stromal_tumors_the_gist_of_precision_medicine_trends_",
+          "label": "Mei L, Smith SC, Faber AC, et al. Gastrointestinal Stromal Tumors: The GIST of Precision Medicine. Trends Cancer. 2018;4:74-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gill_aj_succinate_dehydrogenase_sdh_and_mitochondrial_driven_neoplasia_pathology_2012_jun444285_92",
+          "label": "Gill AJ. Succinate dehydrogenase (SDH) and mitochondrial driven neoplasia. Pathology. 2012 Jun;44(4):285-92.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gill_aj_benn_de_chou_a_et_al_immunohistochemistry_for_sdhb_triages_genetic_testing_of_sdhb_sdhc_and_",
+          "label": "Gill AJ, Benn DE, Chou A, et al. Immunohistochemistry for SDHB triages genetic testing of SDHB, SDHC, and SDHD in paraganglioma-pheochromocytoma syndromes. Hum Pathol. 2010 Jun;41(6):805-14.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "doyle_la_nelson_d_heinrich_mc_et_al_loss_of_succinate_dehydrogenase_subunit_b_sdhb_expression_is_lim",
+          "label": "Doyle LA, Nelson D, Heinrich MC, et al. Loss of succinate dehydrogenase subunit B (SDHB) expression is limited to a distinctive subset of gastric wild-type gastrointestinal stromal tumours: a comprehensive genotype-phenotype correlation study. Histopathology. 2012;61(5):801-809.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wagner_aj_remillard_sp_zhang_yx_et_al_loss_of_expression_of_sdha_predicts_sdha_mutations_in_gastroin",
+          "label": "Wagner AJ, Remillard SP, Zhang YX, et al. Loss of expression of SDHA predicts SDHA mutations in gastrointestinal stromal tumors. Mod Pathol. 2013;26(2):289-294.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dwight_t_benn_de_clarkson_a_et_al_loss_of_sdha_expression_identifies_sdha_mutations_in_succinate_deh",
+          "label": "Dwight T, Benn DE, Clarkson A, et al. Loss of SDHA expression identifies SDHA mutations in succinate dehydrogenase-deficient gastrointestinal stromal tumors. Am J Surg Pathol. 2013;37(2):226-233.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "approximately_75_of_gist_possess_activating_mutations_in_the_kit_gene_whereas_another_10_have_activa",
+          "label": "Approximately 75% of GIST possess activating mutations in the KIT gene, whereas another 10% have activating mutations in the PDGFRA gene.1,2,3,4 These mutations result in virtually full-length KIT proteins that exhibit ligand-independent activation. KIT and PDGFRA each contain 21 exons. However, mutations cluster within “hotspots”: exons 9, 11, 13, and 17 in KIT and exons 12, 14, and 18 in PDGFRA (Figure 2). About 5% to 10% of GIST appear to be negative for both KIT and PDGFRA mutations. The most recent NCCN Task Force on GIST strongly encourages that KIT and PDGFRA mutational analysis be performed if tyrosine kinase inhibitors (TKIs) are considered as part of the treatment plan for unresectable or metastatic disease and that mutational analysis be considered for patients with primary disease, particularly those with high-risk tumors. KIT and PDGFRA mutation status can be determined easily from paraffin-embedded tissue. Secondary or acquired mutations can be associated with development of tumor resistance in the setting of long-term imatinib mesylate treatment. These are usually point mutations that occur most commonly in KIT exons 13, 14, and 17.5 The clinical utility of these mutations is an evolving concept, but it is important not to confuse them with the primary or initial mutation in GIST.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "recent_studies_focusing_on_the_molecular_classification_of_gist_recognized_two_major_subgroups_succi",
+          "label": "Recent studies focusing on the molecular classification of GIST recognized two major subgroups: succinate dehydrogenase (SHD)-competent and SDH-deficient GIST, both of which can arise in the sporadic or familial setting.6,7 SDH-competent GIST include tumors with mutations of KIT and PDGFRA as well of a subset of wild-type GIST with mutations mainly in NF1 and BRAF genes or rarely fusion gene events involving FGFR1 or BRAF.8,9,10,11,12,13 On the other hand, SDH-deficient GIST includes tumors with a genetic alteration in any of the SDH subunits leading to SDH dysfunction.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sdh_deficient_gist_represents_approximately_8_of_gist_although_these_may_arise_sporadically_the_majo",
+          "label": "SDH-deficient GIST represents approximately 8% of GIST, although these may arise sporadically. The majority of pediatric GIST arise in Carney triad and Carney-Stratakis syndrome and are SDH-deficient. SDH is a mitochondrial enzyme comprising four subunits (SDHA, SDHB, SDHC, and SDHD) that are involved in the Krebs cycle. Genetic alteration of any of the four subunits results in SDH dysfunction and subsequent loss of SDHB expression by immunohistochemistry. SDH-deficient GIST arises almost exclusive in the stomach, affects predominantly female patients, and tends to manifest at a young age. Pathologic features associated with SDH-deficient tumors include multinodular and/or plexiform growth pattern, epithelioid morphology, lymphovascular invasion, nodal involvement, and frequent metastasis to the liver and peritoneum. Importantly, germline mutations in the genes coding for any of the SDH subunits can lead to paragangliomas/pheochromocytomas, SDH-deficient renal cell carcinoma, and pituitary tumors in addition to GIST. It is recommended that all gastric GIST be screened for loss of SDHB by immunohistochemistry. All patients with SDH-deficient GIST identified by loss of SDHB immunostain should be referred to a genetic counselor.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_locations_and_frequency_of_activating_kit_and_pdgfra_mutations_in_gist_they_were_adapted_wi",
+          "label": "Figure 2. Locations and frequency of activating KIT and PDGFRA mutations in GIST. They were adapted with permission from Heinrich et al.1 Copyright 2003 by the American Society of Clinical Oncology. All rights reserved.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kit_and_pdgfra_are_excellent_targets_for_small_molecule_tyrosine_kinase_inhibitors_and_compounds_of_",
+          "label": "KIT and PDGFRA are excellent targets for small-molecule tyrosine kinase inhibitors, and compounds of this class, imatinib mesylate (Gleevec, Novartis Pharmaceuticals, Basel, Switzerland), sunitinib malate (Sutent, Pfizer Pharmaceuticals, New York, New York), avapritinib (Ayvakit, PDGFRA D842V (exon 18) mutant, may be resistant to standard therapy), regorafenib (3rd line), and ripretinib (4th line, Qinlock) have shown efficacy in clinical trials and have been approved by the US Food and Drug Administration for the treatment of GIST.14,15,16,17 SDH-deficient GIST is usually resistant to imatinib but may have a higher probability of response to sunitinib.6,18 Because different tyrosine kinase inhibitors (TKIs) may have differential efficacy depending on the type of mutation present in GIST, oncologists may want to know the mutation status of each GIST 19 because this may influence which drug the patient receives.1 Secondary resistance mutations may also affect drug selection as their significance is further defined.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heinrich_mc_corless_cl_demetri_gd_et_al_kinase_mutations_and_imatinib_response_in_patients_with_meta",
+          "label": "Heinrich MC, Corless CL, Demetri GD, et al. Kinase mutations and imatinib response in patients with metastatic gastrointestinal stromal tumor. J Clin Oncol. 2003;21(23):4342-4349.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heinrich_mc_corless_cl_duensing_a_et_al_pdgfra_activating_mutations_in_gastrointestinal_stromal_tumo",
+          "label": "Heinrich MC, Corless CL, Duensing A, et al. PDGFRA activating mutations in gastrointestinal stromal tumors. Science. 2003;299(5607):708-710.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hirota_s_isozaki_k_moriyama_y_et_al_gain_of_function_mutations_of_c_kit_in_human_gastrointestinal_st",
+          "label": "Hirota S, Isozaki K, Moriyama Y, et al. Gain-of-function mutations of c-kit in human gastrointestinal stromal tumors. Science. 1998;279(5350):577-580.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rubin_bp_singer_s_tsao_c_et_al_kit_activation_is_a_ubiquitous_feature_of_gastrointestinal_stromal_tu",
+          "label": "Rubin BP, Singer S, Tsao C, et al. KIT activation is a ubiquitous feature of gastrointestinal stromal tumors. Cancer Res. 2001;61(22):8118-8121.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heinrich_mc_corless_cl_blanke_cd_et_al_molecular_correlates_of_imatinib_resistance_in_gastrointestin",
+          "label": "Heinrich MC, Corless CL, Blanke CD, et al. Molecular correlates of imatinib resistance in gastrointestinal stromal tumors. J Clin Oncol. 2006;24(29):4764-4774.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mei_l_smith_sc_faber_ac_et_al_gastrointestinal_stromal_tumors_the_gist_of_precision_medicine_trends_",
+          "label": "Mei L, Smith SC, Faber AC, et al. Gastrointestinal Stromal Tumors: The GIST of Precision Medicine. Trends Cancer. 2018;4:74-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gill_aj_succinate_dehydrogenase_sdh_and_mitochondrial_driven_neoplasia_pathology_2012_jun444285_92",
+          "label": "Gill AJ. Succinate dehydrogenase (SDH) and mitochondrial driven neoplasia. Pathology. 2012 Jun;44(4):285-92.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dare_aj_gupta_aa_thipphavong_s_miettinen_m_gladdy_ra_abdominal_neoplastic_manifestations_of_neurofib",
+          "label": "Dare AJ, Gupta AA, Thipphavong S, Miettinen M, Gladdy RA. Abdominal neoplastic manifestations of neurofibromatosis type 1. Neurooncol Adv. 2020 Jun 25;2(Suppl 1):i124-i133. doi: 10.1093/noajnl/vdaa032. PMID: 32642738.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lasota_j_kowalik_a_felisiak_golabek_a_zięba_s_wang_zf_miettinen_m_new_mechanisms_of_mtor_pathway_act",
+          "label": "Lasota J, Kowalik A, Felisiak-Golabek A, Zięba S, Wang ZF, Miettinen M. New Mechanisms of mTOR Pathway Activation in KIT-mutant Malignant GISTs. Appl Immunohistochem Mol Morphol. 2019 Jan;27(1):54-58. PMID: 28777148.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shi_e_chmielecki_j_tang_cm_et_al_fgfr1_and_ntrk3_actionable_alterations_inwild_typegastrointestinal_",
+          "label": "Shi E, Chmielecki J, Tang CM, et al. FGFR1 and NTRK3 actionable alterations in“wild-type”gastrointestinal stromal tumors. J TranslMed. 2016;14(1):339.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pantaleo_ma_urbini_m_indio_v_et_al_genome_wide_analysis_identifies_men1_and_max_mutations_and_a_neur",
+          "label": "Pantaleo MA, Urbini M, Indio V, et al. Genome-wide analysis identifies MEN1 and MAX mutations and a neuroendocrine-like molecularheterogeneity in quadruple WT GIST. Mol Cancer Res. 2017;15(5):553-562.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "charo_lm_burgoyne_am_fanta_pt_patel_h_chmielecki_j_sicklick_jk_mchale_mt_a_novel_prkar1b_braf_fusion",
+          "label": "Charo LM, Burgoyne AM, Fanta PT, Patel H, Chmielecki J, Sicklick JK, McHale MT. A Novel PRKAR1B-BRAF Fusion in Gastrointestinal Stromal Tumor Guides Adjuvant Treatment Decision-Making During Pregnancy. J Natl Compr Canc Netw 2018;16:238-42.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "torrence_d_xie_z_zhang_l_chi_p_antonescu_cr_gastrointestinal_stromal_tumors_with_braf_gene_fusions_a",
+          "label": "Torrence D, Xie Z, Zhang L, Chi P, Antonescu CR. Gastrointestinal stromal tumors with BRAF gene fusions. A report of two cases showing low or absent KIT expression resulting in diagnostic pitfalls. Genes Chromosomes Cancer. 2021 Dec;60(12):789-795.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "demetri_gd_benjamin_rs_blanke_cd_et_al_nccn_task_force_nccn_task_force_report_management_of_patients",
+          "label": "Demetri GD, Benjamin RS, Blanke CD, et al; NCCN Task Force. NCCN Task Force report: management of patients with gastrointestinal stromal tumor (GIST)--update of the NCCN clinical practice guidelines. J Natl Compr Canc Netw. 2007;5(Suppl 2):S1-S29.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "demetri_gd_targeting_the_molecular_pathophysiology_of_gastrointestinal_stromal_tumors_with_imatinib_",
+          "label": "Demetri GD. Targeting the molecular pathophysiology of gastrointestinal stromal tumors with imatinib: mechanisms, successes, and challenges to rational drug development. Hematol Oncol Clin North Am. 2002;16(5):1115-1124.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "demetri_gd_van_oosterom_at_garrett_cr_et_al_efficacy_and_safety_of_sunitinib_in_patients_with_advanc",
+          "label": "Demetri GD, van Oosterom AT, Garrett CR, et al. Efficacy and safety of sunitinib in patients with advanced gastrointestinal stromal tumour after failure of imatinib: a randomised controlled trial. Lancet. 2006;368(9544):1329-1338.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kelly_cm_gutierrez_sainz_l_chi_p_the_management_of_metastatic_gist_current_standard_and_investigatio",
+          "label": "Kelly CM, Gutierrez Sainz L, Chi P. The management of metastatic GIST: current standard and investigational therapeutics. J Hematol Oncol 14:2, 2021.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "glod_j_arnaldez_fi_wiener_l_spencer_m_killian_jk_meltzer_p_dombi_e_derse_anthony_c_derdak_j_srinivas",
+          "label": "Glod J, Arnaldez FI, Wiener L, Spencer M, Killian JK, Meltzer P, Dombi E, Derse-Anthony C, Derdak J, Srinivasan R, Linehan WM, Miettinen M, Steinberg SM, Helman L, Widemann BC. A Phase II Trial of Vandetanib in Children and Adults with Succinate Dehydrogenase-Deficient Gastrointestinal Stromal Tumor. Clin Cancer Res. 2019 Nov 1;25(21):6302-6308. Epub 2019 Aug 22. PMID: 31439578.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "corless_cl_schroeder_a_griffith_d_et_al_pdgfra_mutations_in_gastrointestinal_stromal_tumors_frequenc",
+          "label": "Corless CL, Schroeder A, Griffith D, et al. PDGFRA mutations in gastrointestinal stromal tumors: frequency, spectrum and in vitro sensitivity to imatinib. J Clin Oncol. 2005;23(23):5357-5364.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_most_common_mutations_affect_the_juxta_membrane_domain_encoded_by_exon_11_two_thirds_of_gist_the",
+          "label": "The most common mutations affect the juxta membrane domain encoded by exon 11 (two-thirds of GIST). These mutations include in-frame deletions, substitutions, and insertions. Deletions (in particular codon 557 and/or 558) are associated with shorter progression-free and overall survival.1,2,3,4,5,6 The vast majority of exon 11-mutated GIST is located in the stomach. About 7% to 10% of the tumors harbor mutations in the extracellular domain encoded by exon 9 (most commonly insAY502-503).5,7 Exon 9-mutant GIST arises predominantly in the small bowel and has reduced sensitivity to imatinib which could be overcome by using higher doses.5 Primary mutations in the activation loop (exon 17) and ATP binding region (exon 13) are uncommon (1%). The majority of these mutations are substitutions.8  KIT exon 8 mutations are extremely rare (0.15%).9 Secondary or resistance mutations occur commonly in tumors harboring primary exon 11 mutations. These newly acquired secondary mutations are always located in exons encoding tyrosine kinase domain (exons 13, 14, 17).10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gastrointestinal_stromal_tumor_meta_analysis_group_metagist_comparison_of_two_doses_of_imatinib_for_",
+          "label": "Gastrointestinal Stromal Tumor Meta-Analysis Group (MetaGIST). Comparison of two doses of imatinib for the treatment of unresectable or metastatic gastrointestinal stromal tumor: a meta-analysis of 1640 patients. J Clin Oncol. 2010;28(7):1247-1253.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "heinrich_mc_corless_cl_blanke_cd_et_al_molecular_correlates_of_imatinib_resistance_in_gastrointestin",
+          "label": "Heinrich MC, Corless CL, Blanke CD, et al. Molecular correlates of imatinib resistance in gastrointestinal stromal tumors. J Clin Oncol.  2006;24(29):4764-4774.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "andersson_j_bumming_p_meis_kindblom_jm_et_al_gastrointestinal_stromal_tumors_with_kit_exon_11_deleti",
+          "label": "Andersson J, Bumming P, Meis-Kindblom JM, et al. Gastrointestinal stromal tumors with KIT exon 11 deletions are associated with poor prognosis. Gastroenterology. 2006;130(6):1573-1581.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "liu_xh_bai_cg_xie_q_et_al_prognostic_value_of_kit_mutation_in_gastrointestinal_stromal_tumors_world_",
+          "label": "Liu XH, Bai CG, Xie Q, et al. Prognostic value of KIT mutation in gastrointestinal stromal tumors. World J Gastroenterol. 2005;11(25):3948-3952.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mei_l_smith_sc_faber_ac_et_al_gastrointestinal_stromal_tumors_the_gist_of_precision_medicine_trends_",
+          "label": "Mei L, Smith SC, Faber AC, et al. Gastrointestinal Stromal Tumors: The GIST of Precision Medicine. Trends Cancer. 2018;4:74-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wozniak_a_rutkowski_p_schöffski_p_et_al_tumor_genotype_is_an_independent_prognostic_factor_in_primar",
+          "label": "Wozniak A, Rutkowski P, Schöffski P, et al. Tumor genotype is an independent prognostic factor in primary gastrointestinal stromal tumors of gastric origin: a European multicenter analysis based on ConticaGIST. Clin Cancer Res. 2014 Dec 1;20(23):6105-16.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wardelmann_e_losen_i_hans_v_et_al_deletion_of_trp_557_and_lys_558_in_the_juxtamembrane_domain_of_the",
+          "label": "Wardelmann E, Losen I, Hans V, et al. Deletion of Trp-557 and Lys-558 in the juxtamembrane domain of the c-kit protooncogene is associated with metastatic behavior of gastrointestinal stromal tumors. Int J Cancer. 2003;106(6):887-895.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lux_ml_rubin_bp_biase_tl_et_al_kit_extracellular_and_kinase_domain_mutations_in_gastrointestinal_str",
+          "label": "Lux ML, Rubin BP, Biase TL, et al. KIT extracellular and kinase domain mutations in gastrointestinal stromal tumors. Am J Pathol. 2000;156(3):791-795.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "huss_s_künstlinger_h_wardelmann_e_et_al_a_subset_of_gastrointestinal_stromal_tumors_previously_regar",
+          "label": "Huss S, Künstlinger H, Wardelmann E, et al.  A subset of gastrointestinal stromal tumors previously regarded as wild-type tumors carries somatic activating mutations in KIT exon 8 (p. D419del). Mod Pathol. 2013;26(7):1004-1012.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lasota_j_corless_cl_heinrich_mc_et_al_clinicopathologic_profile_of_gastrointestinal_stromal_tumors_g",
+          "label": "Lasota J, Corless CL, Heinrich MC, et al. Clinicopathologic profile of gastrointestinal stromal tumors (GISTs) with primary KIT exon 13 or 17 mutations: a multicenter study of 54 cases. Mod Pathol. 2008;21(4):476-484.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "more_than_80_of_kit_negative_gist_have_pdgfra_mutations_the_majority_of_pdgfra_mutated_gist_arises_i",
+          "label": "More than 80% of KIT-negative GIST have PDGFRA mutations. The majority of PDGFRA-mutated GIST arises in the stomach, usually with epithelioid or mixed epithelioid and spindle cell morphology and often with myxoid stromal changes.1,2 PDGFRA-mutated GIST tends to have a lower risk of recurrence.1,3 Activation of PDGFRA is seen in GIST harboring mutations in juxta membranous domain (exon 12), the ATP binding domain (exon 14), or the activation loop (exon 18).1,2 Mutations include substitutions and deletions. Primary resistance to imatinib is seen with the most common PDGFRA exon 18 D842V mutation.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mei_l_smith_sc_faber_ac_et_al_gastrointestinal_stromal_tumors_the_gist_of_precision_medicine_trends_",
+          "label": "Mei L, Smith SC, Faber AC, et al. Gastrointestinal Stromal Tumors: The GIST of Precision Medicine. Trends Cancer. 2018;4:74-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lasota_j_miettinen_m_clinical_significance_of_oncogenic_kit_and_pdgfra_mutations_in_gastrointestinal",
+          "label": "Lasota J, Miettinen M. Clinical significance of oncogenic KIT and PDGFRA mutations in gastrointestinal stromal tumors. Histopathology. 2008;53(3):245-266.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "barnett_cm_corless_cl_heinrich_mc_gastrointestinal_stromal_tumors_molecular_markers_and_genetic_subt",
+          "label": "Barnett CM, Corless CL, Heinrich MC. Gastrointestinal stromal tumors: molecular markers and genetic subtypes. Hematol Oncol Clin North Am. 2013 Oct;27(5):871-88.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "activating_mutations_of_braf_v600e_have_been_identified_in_a_small_subset_7_of_kitpdgfra_wild_type_g",
+          "label": "Activating mutations of BRAF (V600E) have been identified in a small subset (7%) of KIT/PDGFRA wild-type GIST. These tumors show a predilection for small bowel location, arise in middle-aged females, exhibit a high mitotic rate, and are associated with early metastasis.1,2 BRAF-mutated GIST shows primary resistance to imatinib but may respond to BRAF inhibitors.2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "agaram_np_wong_gc_guo_t_et_al_novel_v600e_braf_mutations_in_imatinib_naive_and_imatinib_resistant_ga",
+          "label": "Agaram NP, Wong GC, Guo T, et al. Novel V600E BRAF mutations in imatinib-naive and imatinib-resistant gastrointestinal stromal tumors. Genes Chromosomes Cancer. 2008;47(10):853–859.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mei_l_smith_sc_faber_ac_et_al_gastrointestinal_stromal_tumors_the_gist_of_precision_medicine_trends_",
+          "label": "Mei L, Smith SC, Faber AC, et al. Gastrointestinal Stromal Tumors: The GIST of Precision Medicine. Trends Cancer. 2018;4:74-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_succinate_dehydrogenase_sdh_complex_mitochondrial_complex_ii_participates_in_both_the_krebs_cycl",
+          "label": "The succinate dehydrogenase (SDH) complex (mitochondrial complex II) participates in both the Krebs cycle and the electron transport chain of oxidative phosphorylation. About 8% of GIST (all lacking mutations in KIT and PDGFRA) is caused by dysfunction of the SDH complex ('SDH-deficient GIST'). Around 50% of patients affected by such tumors harbor germline mutations in one of the SDH subunit genes (SDH A/B/C or D). SDHA-inactivating mutations are most common, detected in about 30% of SDH-deficient GIST. Mutations involve exons 2, 3, 5, 6, 7, 8, 9, 10, 11, 13, 14 of SDHA; exons 1, 2, 3, 4, 6, 7 of SDHB; exons 1, 4, 5 of SDHC; and exons 4 and 6 of SDHD. While the majority of the mutations are substitutions; deletions, splice-site mutations, frameshift, and duplications have also been reported.1,2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "doyle_la_hornick_jl_gastrointestinal_stromal_tumours_from_kit_to_succinate_dehydrogenase_histopathol",
+          "label": "Doyle LA, Hornick JL. Gastrointestinal stromal tumours: from KIT to succinate dehydrogenase. Histopathology. 2014;64(1):53-67.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "wagner_aj_remillard_sp_zhang_yx_et_al_loss_of_expression_of_sdha_predicts_sdha_mutations_in_gastroin",
+          "label": "Wagner AJ, Remillard SP, Zhang YX, et al. Loss of expression of SDHA predicts SDHA mutations in gastrointestinal stromal tumors. Mod Pathol. 2013;26(2):289-294.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fletcher_cd_berman_jj_corless_c_et_al_diagnosis_of_gastrointestinal_stromal_tumors_a_consensus_appro",
+          "label": "Fletcher CD, Berman JJ, Corless C, et al. Diagnosis of gastrointestinal stromal tumors: a consensus approach. Hum Pathol. 2002; 33(5):459-465.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nannini_m_biasco_b_astolfi_a_et_al_an_overview_on_molecular_biology_of_kitpdgfra_wild_type_wt_gastro",
+          "label": "Nannini, M, Biasco B, Astolfi A, et al. An overview on molecular biology of KIT/PDGFRA wild type (WT) gastrointestinal stromal tumours (GIST). J Med Genet. 2013;50(10):653-661.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "h_neurofibromatosis_type_1_nf1_mutational_analysis",
+          "label": "H. Neurofibromatosis Type 1 (NF1) Mutational Analysis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nf1_is_an_inherited_autosomal_dominant_disease_characterized_by_multiple_café_au_lait_spots_lisch_no",
+          "label": "NF1 is an inherited, autosomal dominant disease characterized by multiple café au lait spots, Lisch nodules, freckling, and development of neurofibromas. GIST in NF1 patients arises predominantly from the small intestine, including duodenum, can be multicentric, lack KIT and PDGFRA mutations and are associated with Cajal cell hyperplasia.1,2 Only a minority (approximately 7%) of NF1 patients develop NF1-mutated GIST, therefore, molecular testing for canonical mutations in KIT and PDGFRA is recommended for GIST arising in the setting of neurofibromatosis.2,3,4,5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nannini_m_biasco_b_astolfi_a_et_al_an_overview_on_molecular_biology_of_kitpdgfra_wild_type_wt_gastro",
+          "label": "Nannini, M, Biasco B, Astolfi A, et al. An overview on molecular biology of KIT/PDGFRA wild type (WT) gastrointestinal stromal tumours (GIST). J Med Genet. 2013;50(10):653-661.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mei_l_smith_sc_faber_ac_et_al_gastrointestinal_stromal_tumors_the_gist_of_precision_medicine_trends_",
+          "label": "Mei L, Smith SC, Faber AC, et al. Gastrointestinal Stromal Tumors: The GIST of Precision Medicine. Trends Cancer. 2018;4:74-91.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lee_jh_shin_sj_choe_ea_kim_j_hyung_wj_kim_hs_jung_m_beom_sh_kim_ti_ahn_jb_chung_hc_shin_sj_tropomyos",
+          "label": "Lee JH, Shin SJ, Choe EA, Kim J, Hyung WJ, Kim HS, Jung M, Beom SH, Kim TI, Ahn JB, Chung HC, Shin SJ. Tropomyosin-Related Kinase Fusions in Gastrointestinal Stromal Tumors. Cancers (Basel). 2022 27;14(11):2659. PMID: 35681640.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "castillon_m_kammerer_jacquet_sf_cariou_m_costa_s_conq_g_samaison_l_douet_guilbert_n_marcorelles_p_do",
+          "label": "Castillon M, Kammerer-Jacquet SF, Cariou M, Costa S, Conq G, Samaison L, Douet-Guilbert N, Marcorelles P, Doucet L, Uguen A. Fluorescent In Situ Hybridization Must be Preferred to pan-TRK Immunohistochemistry to Diagnose NTRK3-rearranged Gastrointestinal Stromal Tumors (GIST). Appl Immunohistochem Mol Morphol. 2021 Sep 1;29(8):626-634. PMID: 33758144.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "atiq_ma_davis_jl_hornick_jl_dickson_bc_fletcher_cdm_fletcher_ja_folpe_al_mariño_enríquez_a_mesenchym",
+          "label": "Atiq MA, Davis JL, Hornick JL, Dickson BC, Fletcher CDM, Fletcher JA, Folpe AL, Mariño-Enríquez A. Mesenchymal tumors of the gastrointestinal tract with NTRK rearrangements: a clinicopathological, immunophenotypic, and molecular study of eight cases, emphasizing their distinction from gastrointestinal stromal tumor (GIST). Mod Pathol. 2021 Jan;34(1):95-103. Epub 2020 Jul 15. PMID: 32669612.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "rare_cases_of_gist_lacking_other_driver_events_eg_kit_pdgfra_sdh_ras_or_nf1_mutations_quadruple_wild",
+          "label": "Rare cases of GIST lacking other driver events (e.g., KIT, PDGFRA, SDH, RAS, or NF1 mutations; quadruple wild-type GIST) have recently been reported to harbor fusion genes involving FGFR1 or BRAF. Identification of these alterations may impact therapeutic considerations.1,2,3,4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shi_e_chmielecki_j_tang_cm_wang_k_heinrich_mc_kang_g_corless_cl_hong_d_fero_ke_murphy_jd_et_al_fgfr1",
+          "label": "Shi, E.; Chmielecki, J.; Tang, C.M.; Wang, K.; Heinrich, M.C.; Kang, G.; Corless, C.L.; Hong, D.; Fero, K.E.; Murphy, J.D.; et al. FGFR1 and NTRK3 actionable alterations in “Wild-Type” gastrointestinal stromal tumors. J. Transl Med. 2016, 14, 339.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pantaleo_ma_urbini_m_indio_v_et_al_genome_wide_analysis_identifies_men1_and_max_mutations_and_a_neur",
+          "label": "Pantaleo MA, Urbini M, Indio V, et al. Genome-wide analysis identifies MEN1 and MAX mutations and a neuroendocrine-like molecularheterogeneity in quadruple WT GIST. Mol Cancer Res. 2017;15(5):553-562.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "charo_lm_burgoyne_am_fanta_pt_patel_h_chmielecki_j_sicklick_jk_mchale_mt_a_novel_prkar1b_braf_fusion",
+          "label": "Charo LM, Burgoyne AM, Fanta PT, Patel H, Chmielecki J, Sicklick JK, McHale MT. A Novel PRKAR1B-BRAF Fusion in Gastrointestinal Stromal Tumor Guides Adjuvant Treatment Decision-Making During Pregnancy. J Natl Compr Canc Netw 2018;16:238-42.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "torrence_d_xie_z_zhang_l_chi_p_antonescu_cr_gastrointestinal_stromal_tumors_with_braf_gene_fusions_a",
+          "label": "Torrence D, Xie Z, Zhang L, Chi P, Antonescu CR. Gastrointestinal stromal tumors with BRAF gene fusions. A report of two cases showing low or absent KIT expression resulting in diagnostic pitfalls. Genes Chromosomes Cancer. 2021 Dec;60(12):789-795.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2144 @@
+{
+  "template_id": "ColoRectal.Bmk_1.3.0.0.REL_CAPCP",
+  "organ": "Colon and Rectum Biomarker Reporting Template",
+  "protocol_posting_date": "June 2021",
+  "standards": [],
+  "sections": [
+    {
+      "section_id": "results",
+      "section_name": "RESULTS",
+      "fields": [
+        {
+          "field_id": "mismatch_repair",
+          "label": "Mismatch Repair",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "A"
+          ]
+        },
+        {
+          "field_id": "immunohistochemistry_ihc_testing_for_mismatch_repair_mmr_proteins",
+          "label": "Immunohistochemistry (IHC) Testing for Mismatch Repair (MMR) Proteins",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "mlh1",
+              "label": "MLH1"
+            }
+          ]
+        },
+        {
+          "field_id": "mlh1_result",
+          "label": "MLH1 Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msh2",
+              "label": "MSH2"
+            }
+          ]
+        },
+        {
+          "field_id": "msh2_result",
+          "label": "MSH2 Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msh6",
+              "label": "MSH6"
+            }
+          ]
+        },
+        {
+          "field_id": "msh6_result",
+          "label": "MSH6 Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pms2",
+              "label": "PMS2"
+            }
+          ]
+        },
+        {
+          "field_id": "pms2_result",
+          "label": "PMS2 Result",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intact_nuclear_expression",
+              "label": "Intact nuclear expression"
+            },
+            {
+              "value": "loss_of_nuclear_expression",
+              "label": "Loss of nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "background_nonneoplastic_tissue_internal_control_with_intact_nuclear_expression",
+              "label": "Background nonneoplastic tissue / internal control with intact nuclear expression"
+            }
+          ]
+        },
+        {
+          "field_id": "ihc_interpretation",
+          "label": "IHC Interpretation#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_loss_of_nuclear_expression_of_mmr_proteins",
+              "label": "No loss of nuclear expression of MMR proteins: low probability of MSI-H"
+            },
+            {
+              "value": "loss_of_nuclear_expression_of_mlh1_and_pms2",
+              "label": "Loss of nuclear expression of MLH1 and PMS2: testing for methylation of the MLH1 promoter and / or mutation of BRAF is indicated (the presence of a BRAF V600E mutation and / or MLH1 methylation suggests that the tumor is sporadic and germline evaluation is probably not indicated; absence of both MLH1 methylation and of BRAF V600E mutation suggests the possibility of Lynch syndrome and sequencing and / or large deletion / duplication testing of germline MLH1 may be indicated)"
+            },
+            {
+              "value": "loss_of_nuclear_expression_of_msh2_and_msh6",
+              "label": "Loss of nuclear expression of MSH2 and MSH6: high probability of Lynch syndrome (sequencing and / or large deletion / duplication testing of germline MSH2 may be indicated and, if negative, sequencing and / or large deletion / duplication testing of germline MSH6 may be indicated)"
+            },
+            {
+              "value": "loss_of_nuclear_expression_of_msh6_only",
+              "label": "Loss of nuclear expression of MSH6 only: high probability of Lynch syndrome (sequencing and / or large deletion / duplication testing of germline MSH6 may be indicated)"
+            },
+            {
+              "value": "loss_of_nuclear_expression_of_pms2_only",
+              "label": "Loss of nuclear expression of PMS2 only: high probability of Lynch syndrome (sequencing and / or large deletion / duplication testing of germline PMS2 may be indicated)"
+            }
+          ],
+          "guidance": "There are exceptions to the above IHC interpretations. These results should not be considered in isolation, and clinical correlation with genetic counseling is recommended to assess the need for germline testing."
+        },
+        {
+          "field_id": "microsatellite_instability",
+          "label": "Microsatellite Instability",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "msi_stable",
+              "label": "MSI-Stable (MSS)"
+            },
+            {
+              "value": "msi_low",
+              "label": "MSI-Low (MSI-L)"
+            },
+            {
+              "value": "1_29_of_the_national_cancer_institute",
+              "label": "1-29% of the National Cancer Institute (NCI) or mononucleotide markers exhibit instability"
+            },
+            {
+              "value": "1_of_the_nci_or_mononucleotide_markers_exhibits_instability",
+              "label": "1 of the NCI or mononucleotide markers exhibits instability"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msi_high",
+              "label": "MSI-High (MSI-H)"
+            },
+            {
+              "value": "greater_than_equal_to_30_of_the_nci_or_mononucleotide_markers_exhibit_instability",
+              "label": "Greater than equal to 30% of the NCI or mononucleotide markers exhibit instability"
+            },
+            {
+              "value": "2_or_more_of_the_nci_or_mononucleotide_markers_exhibit_instability",
+              "label": "2 or more of the NCI or mononucleotide markers exhibit instability"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "msi_cannot_be_determined",
+              "label": "MSI-Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "MSI"
+        },
+        {
+          "field_id": "loci_testing",
+          "label": "Loci Testing",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "mononucleotide_panel",
+              "label": "Mononucleotide Panel"
+            }
+          ]
+        },
+        {
+          "field_id": "bat_25",
+          "label": "BAT-25",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        },
+        {
+          "field_id": "bat_26",
+          "label": "BAT-26",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        },
+        {
+          "field_id": "nr_21",
+          "label": "NR-21",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        },
+        {
+          "field_id": "nr_24",
+          "label": "NR-24",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        },
+        {
+          "field_id": "mono_27",
+          "label": "Mono-27",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "nci_panel",
+              "label": "NCI Panel"
+            }
+          ]
+        },
+        {
+          "field_id": "bat_25",
+          "label": "BAT-25",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        },
+        {
+          "field_id": "bat_26",
+          "label": "BAT-26",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        },
+        {
+          "field_id": "d2s123",
+          "label": "D2S123",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        },
+        {
+          "field_id": "d5s346",
+          "label": "D5S346",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            }
+          ]
+        },
+        {
+          "field_id": "d17s250",
+          "label": "D17S250",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_performed",
+              "label": "Not performed"
+            },
+            {
+              "value": "other",
+              "label": "Other"
+            }
+          ]
+        },
+        {
+          "field_id": "other_markers_tested",
+          "label": "Other Markers Tested",
+          "required": true,
+          "type": "free_text",
+          "condition": "repeat as needed"
+        },
+        {
+          "field_id": "specify_marker",
+          "label": "Specify Marker: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable"
+            },
+            {
+              "value": "unstable",
+              "label": "Unstable"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "mlh1_promoter_methylation",
+          "label": "MLH1 Promoter Methylation",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "mlh1_promoter_methylation_analysis",
+          "label": "MLH1 Promoter Methylation Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mlh1_promoter_hypermethylation_present",
+              "label": "MLH1 promoter hypermethylation present"
+            },
+            {
+              "value": "mlh1_promoter_hypermethylation_absent",
+              "label": "MLH1 promoter hypermethylation absent"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "kras",
+          "label": "KRAS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "kras_mutational_analysis",
+          "label": "KRAS Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutation_detected",
+              "label": "No mutation detected"
+            },
+            {
+              "value": "mutation",
+              "label": "Mutation(s) identified"
+            }
+          ]
+        },
+        {
+          "field_id": "codon_12",
+          "label": "Codon 12",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gly12asp",
+              "label": "Gly12Asp (GGT>GAT)"
+            },
+            {
+              "value": "gly12val",
+              "label": "Gly12Val (GGT>GTT)"
+            },
+            {
+              "value": "gly12cys",
+              "label": "Gly12Cys (GGT>TGT)"
+            },
+            {
+              "value": "gly12ser",
+              "label": "Gly12Ser (GGT>AGT)"
+            },
+            {
+              "value": "gly12ala",
+              "label": "Gly12Ala (GGT>GCT)"
+            },
+            {
+              "value": "gly12arg",
+              "label": "Gly12Arg (GGT>CGT)"
+            },
+            {
+              "value": "codon_12_mutation_not_otherwise_specified",
+              "label": "Codon 12 mutation, not otherwise specified"
+            },
+            {
+              "value": "other_codon_12_mutation",
+              "label": "Other codon 12 mutation (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "codon_13",
+          "label": "Codon 13",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gly13asp",
+              "label": "Gly13Asp (GGC>GAC)"
+            },
+            {
+              "value": "gly13arg",
+              "label": "Gly13Arg (GGC>CGC)"
+            },
+            {
+              "value": "gly13cys",
+              "label": "Gly13Cys (GGC>TGC)"
+            },
+            {
+              "value": "gly13ala",
+              "label": "Gly13Ala (GGC>GCC)"
+            },
+            {
+              "value": "gly13val",
+              "label": "Gly13Val (GGC>GTC)"
+            },
+            {
+              "value": "codon_13_mutation_not_otherwise_specified",
+              "label": "Codon 13 mutation, not otherwise specified"
+            },
+            {
+              "value": "other_codon_13_mutation",
+              "label": "Other codon 13 mutation (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "codon_61",
+          "label": "Codon 61",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gln61leu",
+              "label": "Gln61Leu (CAA>CTA)"
+            },
+            {
+              "value": "gln61his",
+              "label": "Gln61His (CAA>CAC)"
+            },
+            {
+              "value": "codon_61_mutation_not_otherwise_specified",
+              "label": "Codon 61 mutation, not otherwise specified"
+            },
+            {
+              "value": "other_codon_61_mutation",
+              "label": "Other codon 61 mutation (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "codon_146",
+          "label": "Codon 146",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ala146thr",
+              "label": "Ala146Thr (G436A) (GCA>ACA)"
+            },
+            {
+              "value": "codon_146_mutation_not_otherwise_specified",
+              "label": "Codon 146 mutation, not otherwise specified"
+            },
+            {
+              "value": "other_codon_146_mutation",
+              "label": "Other codon 146 mutation (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_codon_specify",
+          "label": "Other Codon (specify): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "codons_assessed",
+          "label": "Codons Assessed",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "12",
+              "label": "12"
+            },
+            {
+              "value": "13",
+              "label": "13"
+            },
+            {
+              "value": "61",
+              "label": "61"
+            },
+            {
+              "value": "146",
+              "label": "146"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "nras",
+          "label": "NRAS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "nras_mutational_analysis",
+          "label": "NRAS Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutation_detected",
+              "label": "No mutation detected"
+            },
+            {
+              "value": "mutation",
+              "label": "Mutation(s) identified"
+            }
+          ]
+        },
+        {
+          "field_id": "codon_12",
+          "label": "Codon 12",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gly12asp",
+              "label": "Gly12Asp (GGT>GAT)"
+            },
+            {
+              "value": "gly12val",
+              "label": "Gly12Val (GGT>GTT)"
+            },
+            {
+              "value": "gly12cys",
+              "label": "Gly12Cys (GGT>TGT)"
+            },
+            {
+              "value": "gly12ser",
+              "label": "Gly12Ser (GGT>AGT)"
+            },
+            {
+              "value": "gly12ala",
+              "label": "Gly12Ala (GGT>GCT)"
+            },
+            {
+              "value": "gly12arg",
+              "label": "Gly12Arg (GGT>CGT)"
+            },
+            {
+              "value": "codon_12_mutation_not_otherwise_specified",
+              "label": "Codon 12 mutation, not otherwise specified"
+            },
+            {
+              "value": "other_codon_12_mutation",
+              "label": "Other codon 12 mutation (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "codon_13",
+          "label": "Codon 13",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gly13asp",
+              "label": "Gly13Asp (GGC>GAC)"
+            },
+            {
+              "value": "gly13arg",
+              "label": "Gly13Arg (GGC>CGC)"
+            },
+            {
+              "value": "gly13cys",
+              "label": "Gly13Cys (GGC>TGC)"
+            },
+            {
+              "value": "gly13ala",
+              "label": "Gly13Ala (GGC>GCC)"
+            },
+            {
+              "value": "gly13val",
+              "label": "Gly13Val (GGC>GTC)"
+            },
+            {
+              "value": "codon_13_mutation_not_otherwise_specified",
+              "label": "Codon 13 mutation, not otherwise specified"
+            },
+            {
+              "value": "other_codon_13_mutation",
+              "label": "Other codon 13 mutation (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "codon_61",
+          "label": "Codon 61",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "gln61lys",
+              "label": "Gln61Lys (CAA>AAA)"
+            },
+            {
+              "value": "gln61arg",
+              "label": "Gln61Arg (CAA>CGA)"
+            },
+            {
+              "value": "codon_61_mutation_not_otherwise_specified",
+              "label": "Codon 61 mutation, not otherwise specified"
+            },
+            {
+              "value": "other_codon_61_mutation",
+              "label": "Other codon 61 mutation (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "codon_146",
+          "label": "Codon 146",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "ala146thr",
+              "label": "Ala146Thr (G436A) (GCA>ACA)"
+            },
+            {
+              "value": "codon_146_mutation_not_otherwise_specified",
+              "label": "Codon 146 mutation, not otherwise specified"
+            },
+            {
+              "value": "other_codon_146_mutation",
+              "label": "Other codon 146 mutation (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "other_codon_specify",
+          "label": "Other Codon (specify): _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "codons_assessed",
+          "label": "Codons Assessed",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "12",
+              "label": "12"
+            },
+            {
+              "value": "13",
+              "label": "13"
+            },
+            {
+              "value": "61",
+              "label": "61"
+            },
+            {
+              "value": "146",
+              "label": "146"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "braf",
+          "label": "BRAF",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "braf_cytoplasmic_expression",
+          "label": "BRAF Cytoplasmic Expression",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive",
+              "label": "Positive"
+            },
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ],
+          "condition": "by immunohistochemistry"
+        },
+        {
+          "field_id": "braf_mutational_analysis",
+          "label": "BRAF Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutations_detected",
+              "label": "No mutations detected"
+            },
+            {
+              "value": "braf_v600e",
+              "label": "BRAF V600E (c.1799 T>A) mutation"
+            },
+            {
+              "value": "other_braf_mutation_identified",
+              "label": "Other BRAF mutation identified (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "braf_mutations_assessed",
+          "label": "BRAF Mutations Assessed",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "v600e",
+              "label": "V600E"
+            },
+            {
+              "value": "other_braf_v600_mutation",
+              "label": "Other BRAF V600 mutation (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pik3ca",
+          "label": "PIK3CA",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "D"
+          ]
+        },
+        {
+          "field_id": "pik3ca_mutational_analysis",
+          "label": "PIK3CA Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutations_detected",
+              "label": "No mutations detected"
+            },
+            {
+              "value": "exon_9_mutation_present",
+              "label": "Exon 9 mutation present (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "exon_20_mutation_present",
+              "label": "Exon 20 mutation present (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pten",
+          "label": "PTEN",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "pten_expression",
+          "label": "PTEN Expression",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "positive_cytoplasmic_and_or_nuclear_expression",
+              "label": "Positive cytoplasmic and / or nuclear expression"
+            },
+            {
+              "value": "negative_for_cytoplasmic_and_nuclear_expression",
+              "label": "Negative for cytoplasmic and nuclear expression"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "by immunohistochemistry"
+        },
+        {
+          "field_id": "pten_mutational_analysis",
+          "label": "PTEN Mutational Analysis",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "no_mutations_detected",
+              "label": "No mutations detected"
+            },
+            {
+              "value": "exon_1_9_mutation_present",
+              "label": "Exon 1-9 mutation present (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "multiparameter_gene_expression_protein_expression_assay",
+          "label": "Multiparameter Gene Expression / Protein Expression Assay",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_type",
+          "label": "Specify Type: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "results",
+          "label": "Results",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "low_risk",
+              "label": "Low risk"
+            },
+            {
+              "value": "moderate_risk",
+              "label": "Moderate risk"
+            },
+            {
+              "value": "high_risk",
+              "label": "High risk"
+            }
+          ]
+        },
+        {
+          "field_id": "recurrence_score",
+          "label": "Recurrence Score: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "her2",
+          "label": "HER2",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "tests_performed",
+          "label": "Test(s) Performed",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "her2",
+              "label": "HER2 (by immunohistochemistry)"
+            }
+          ]
+        },
+        {
+          "field_id": "results",
+          "label": "Results",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (Score 0)"
+            },
+            {
+              "value": "negative",
+              "label": "Negative (Score 1+)"
+            },
+            {
+              "value": "equivocal",
+              "label": "Equivocal (Score 2+)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (Score 3+)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "scoring_system",
+          "label": "Scoring System",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "asco_cap_her2_breast_cancer_2018",
+              "label": "ASCO / CAP HER2 Breast Cancer 2018"
+            },
+            {
+              "value": "cap_ascp_asco_her2_gastroesophageal_adenocarcinoma_2016",
+              "label": "CAP / ASCP / ASCO HER2 Gastroesophageal Adenocarcinoma 2016 (aka Ventana)"
+            },
+            {
+              "value": "heracles",
+              "label": "HERACLES"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "staining_intensity",
+          "label": "Staining Intensity",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "0",
+              "label": "0 (none)"
+            },
+            {
+              "value": "1",
+              "label": "1+ (faint or barely perceptible)"
+            },
+            {
+              "value": "2",
+              "label": "2+ (weak to moderate)"
+            },
+            {
+              "value": "3",
+              "label": "3+ (strong)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_tumor_cells_with_specific_membrane_staining",
+          "label": "Percentage of Tumor Cells with Specific Membrane Staining",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "less_than_10",
+              "label": "Less than 10%"
+            },
+            {
+              "value": "10_49",
+              "label": "10-49%"
+            },
+            {
+              "value": "greater_than_or_equal_to_50",
+              "label": "Greater than or equal to 50%"
+            },
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "her2",
+              "label": "HER2 (ERBB2) (by in situ hybridization)"
+            }
+          ],
+          "condition": "i.e., complete, basolateral, or lateral membrane"
+        },
+        {
+          "field_id": "her2_erbb2_by_ish",
+          "label": "HER2 (ERBB2) by ISH",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "results",
+          "label": "Results",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative (not amplified)"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (amplified)"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "scoring_system",
+          "label": "Scoring System",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "asco_cap_her2_breast_cancer_2018",
+              "label": "ASCO /CAP HER2 Breast Cancer 2018"
+            },
+            {
+              "value": "capascpasco_her2_gastroesophageal_adenocarcinoma_2016",
+              "label": "CAP/ASCP/ASCO HER2 Gastroesophageal Adenocarcinoma 2016 (aka Ventana)"
+            },
+            {
+              "value": "heracles",
+              "label": "HERACLES"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_invasive_cancer_cells_counted___________________cells",
+          "label": "Number of Invasive Cancer Cells Counted: _________________ cells",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "method",
+          "label": "Method",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "using_dual_probe_assay",
+              "label": "Using dual-probe assay"
+            }
+          ]
+        },
+        {
+          "field_id": "her2_erbb2cep17_ratio",
+          "label": "HER2 (ERBB2):CEP17 Ratio: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "average_number_of_her2_erbb2_signals_per_cancer_cell___________________signalscell",
+          "label": "Average Number of HER2 (ERBB2) Signals per Cancer Cell: _________________ signals/cell",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "average_number_of_cep17_signals_per_cancer_cell___________________signalscell",
+          "label": "Average Number of CEP17 Signals per Cancer Cell: _________________ signals/cell",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "range_of_number_of_her2_erbb2_signals_per_cancer_cell",
+          "label": "Range of Number of HER2 (ERBB2) Signals per Cancer Cell: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "using_single_probe_assay",
+              "label": "Using single-probe assay"
+            }
+          ]
+        },
+        {
+          "field_id": "average_number_of_her2_erbb2_signals_per_cancer_cell___________________signalscell",
+          "label": "Average Number of HER2 (ERBB2) Signals per Cancer Cell: _________________ signals/cell",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "range_of_number_of_her2_erbb2_signals_per_cancer_cell",
+          "label": "Range of Number of HER2 (ERBB2) Signals per Cancer Cell: _________________",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "her2",
+              "label": "HER2 (ERBB2) (by genomic test for amplification or mutation)"
+            }
+          ]
+        },
+        {
+          "field_id": "her2_erbb2_by_genomic_test",
+          "label": "HER2 (ERBB2) by Genomic Test",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "results",
+          "label": "Results",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "negative",
+              "label": "Negative"
+            },
+            {
+              "value": "positive",
+              "label": "Positive (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "methods",
+      "section_name": "METHODS",
+      "fields": [
+        {
+          "field_id": "specimen_processing",
+          "label": "Specimen Processing",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "G"
+          ]
+        },
+        {
+          "field_id": "dissection_methods",
+          "label": "Dissection Method(s)#",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "laser_capture_microdissection",
+              "label": "Laser capture microdissection (specify test name): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "manual_under_microscopic_observation",
+              "label": "Manual under microscopic observation (specify test name): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "manual_without_microscopic_observation",
+              "label": "Manual without microscopic observation (specify test name): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cored_from_block",
+              "label": "Cored from block (specify test name): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "whole_tissue_section_no_tumor_enrichment_procedure_employed",
+              "label": "Whole tissue section - no tumor enrichment procedure employed (specify test name): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "If more than 1 dissection method used, please specify which test was associated with each selected dissection method."
+        },
+        {
+          "field_id": "cellularity",
+          "label": "Cellularity",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "percent_tumor_cells_present_in_specimen",
+          "label": "Percent Tumor Cells Present in Specimen: _________________ %",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sequencing",
+          "label": "Sequencing",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "whole_genome_or_exome_sequencing",
+          "label": "Whole Genome or Exome Sequencing",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "whole_genome_sequencing",
+              "label": "Whole genome sequencing (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "whole_exome_sequencing",
+              "label": "Whole exome sequencing (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "microsatellite_instability",
+          "label": "Microsatellite Instability",
+          "required": true,
+          "type": "free_text",
+          "condition": "MSI"
+        },
+        {
+          "field_id": "number_of_msi_markers_tested_specify_number",
+          "label": "Number of MSI Markers Tested (specify number): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mlh1_promoter_methylation_testing_method",
+          "label": "MLH1 Promoter Methylation Testing Method",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "methylation_specific_real_time_polymerase_chain_reaction",
+              "label": "Methylation-specific real time polymerase chain reaction (PCR)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "kras_testing_methods",
+          "label": "KRAS Testing Method(s)#",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "direct_sanger_sequencing",
+              "label": "Direct Sanger sequencing (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pyrosequencing",
+              "label": "Pyrosequencing (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_resolution_melting_analysis",
+              "label": "High resolution melting analysis (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pcr_allele_specific_hybridization",
+              "label": "PCR, allele specific hybridization (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "real_time_pcr",
+              "label": "Real-time PCR (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify test and applicable codons): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Please specify if different testing methods are used for different codons."
+        },
+        {
+          "field_id": "nras_testing_methods",
+          "label": "NRAS Testing Method(s)#",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "direct_sanger_sequencing",
+              "label": "Direct Sanger sequencing (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pyrosequencing",
+              "label": "Pyrosequencing (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_resolution_melting_analysis",
+              "label": "High resolution melting analysis (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "pcr_allele_specific_hybridization",
+              "label": "PCR, allele specific hybridization (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "real_time_pcr",
+              "label": "Real-time PCR (specify applicable codons): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify test and applicable codons): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Please specify if different testing methods are used for different codons."
+        },
+        {
+          "field_id": "braf_testing_methods",
+          "label": "BRAF Testing Method(s)",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "direct_sanger_sequencing",
+              "label": "Direct Sanger sequencing"
+            },
+            {
+              "value": "pcr_allele_specific_hybridization",
+              "label": "PCR, allele-specific hybridization"
+            },
+            {
+              "value": "pyrosequencing",
+              "label": "Pyrosequencing"
+            },
+            {
+              "value": "real_time_pcr",
+              "label": "Real-time PCR"
+            },
+            {
+              "value": "immunohistochemistry_for_v600e_gene_product",
+              "label": "Immunohistochemistry for V600E gene product: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pik3ca_testing_method",
+          "label": "PIK3CA Testing Method",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "direct_sanger_sequencing",
+              "label": "Direct Sanger sequencing"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "pten_testing_method",
+          "label": "PTEN Testing Method",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "immunohistochemistry",
+              "label": "Immunohistochemistry (specify antibody): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "in_situ_hybridization",
+              "label": "In situ hybridization (specify probe): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "direct_sanger_sequencing",
+              "label": "Direct Sanger sequencing"
+            },
+            {
+              "value": "duplication_deletion_testing",
+              "label": "Duplication / deletion testing (MLPA)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "her2_protein_expression_by_immunohistochemistry",
+          "label": "HER2 protein expression by immunohistochemistry",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "primary_antibody",
+          "label": "Primary Antibody",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "a0485",
+              "label": "A0485"
+            },
+            {
+              "value": "cb11",
+              "label": "CB11"
+            },
+            {
+              "value": "dg44",
+              "label": "DG44"
+            },
+            {
+              "value": "ep3",
+              "label": "EP3"
+            },
+            {
+              "value": "sp3",
+              "label": "SP3"
+            },
+            {
+              "value": "herceptest",
+              "label": "HercepTest"
+            },
+            {
+              "value": "oracle",
+              "label": "Oracle"
+            },
+            {
+              "value": "pathway",
+              "label": "PATHWAY"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "her2_erbb2_by_in_situ_hybridization",
+          "label": "HER2 (ERBB2) by in situ hybridization",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        },
+        {
+          "field_id": "method",
+          "label": "Method",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "dual_probe_assay",
+              "label": "Dual-probe assay"
+            },
+            {
+              "value": "single_probe_assay",
+              "label": "Single-probe assay"
+            }
+          ]
+        },
+        {
+          "field_id": "her2_erbb2_by_genomic_test_for_amplification_or_mutation",
+          "label": "HER2 (ERBB2) by genomic test for amplification or mutation",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "food_and_drug_administration",
+              "label": "Food and Drug Administration (FDA) cleared (specify test / vendor): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "laboratory_developed_test",
+              "label": "Laboratory-developed test"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "detection_of_defective_mismatch_repair_in_colorectal_carcinomas_is_important_for_detection_of_lynch_",
+          "label": "Detection of defective mismatch repair in colorectal carcinomas is important for detection of Lynch syndrome (hereditary nonpolyposis colorectal cancer syndrome [HNPCC]), which accounts for approximately 2% to 3% of all colorectal carcinomas and has clinical implications for treatment of the affected patient and family members.  Microsatellite instability (MSI) testing can be used to cost-effectively screen colorectal cancer patients for possible Lynch syndrome.  Patients with a microsatellite instability-high (MSI-H) phenotype that indicates mismatch repair deficiency in their cancer may have a germline mutation in one of several DNA mismatch repair (MMR) genes (eg, MLH1, MSH2, MSH6, or PMS2) or an altered EPCAM (TACSTD1) gene.  After appropriate genetic counseling, patients may want to consider testing to identify the causative heritable abnormality.  An MSI-H phenotype is more frequently observed in sporadic colorectal cancer (about 15% of cases) due to somatic abnormalities, usually hypermethylation of the MLH1 gene promoter.  The specificity of MSI testing can be increased by using it primarily on at-risk populations, such as colorectal cancer patients younger than 50 years, or patients with a strong family history of Lynch-associated tumors (eg, colorectal, endometrial, gastric, or upper urinary tract urothelial carcinoma),1 but with sacrifice of sensitivity, since a sizeable minority of cases lacks these clinical characteristics.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "msi_testing_is_frequently_done_in_conjunction_with_immunohistochemical_ihc_testing_for_dna_mmr_prote",
+          "label": "MSI testing is frequently done in conjunction with immunohistochemical (IHC) testing for DNA MMR protein expression (ie, MLH1, MSH2, MSH6, and PMS expression). If DNA MMR IHC has not been performed, this testing should be recommended for any case that shows an MSI-H phenotype, because this information will help identify the gene that is most likely to have a germline mutation (eg, a patient whose tumor shows loss of MSH2 and MSH6 expression, but retention of MLH1 and PMS2 expression, is likely to have an MSH2 germline mutation). If the results of DNA MMR IHC and MSI testing are discordant (eg, MSI-H phenotype with normal IHC or abnormal IHC with MSS phenotype), then the laboratory should make sure that the same sample was used for MSI and IHC testing and that there was no sample mix-up. However, MSI-H may not occur in colorectal cancers of patients with germline MSH6 mutation. Intact expression of all 4 proteins indicates that MMR enzymes tested are intact but does not entirely exclude Lynch syndrome, as approximately 5% of families may have a missense mutation (especially in MLH1) that can lead to a nonfunctional protein with retained antigenicity. Defects in lesser-known MMR enzymes may also lead to a similar result, but this situation is rare.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "any_positive_reaction_in_the_nuclei_of_tumor_cells_is_considered_as_intact_expression_normal_and_it_",
+          "label": "Any positive reaction in the nuclei of tumor cells is considered as intact expression (normal), and it is common for intact staining to be somewhat patchy. An interpretation of expression loss in tumor cells should be made only if a positive reaction is seen in internal control cells, such as the nuclei of stromal, inflammatory, or nonneoplastic epithelial cells. Loss of expression of MLH1 may be due to Lynch syndrome or methylation of the MLH1 promoter region (as occurs in sporadic MSI colorectal carcinoma). Genetic testing is ultimately required for this distinction, although a specific BRAF gene mutation (V600E) is present in many sporadic cases, but not familial cancers. Loss of MSH2 expression strongly suggests Lynch syndrome. PMS2 loss is often associated with loss of MLH1 and is only independently meaningful if MLH1 is intact. MSH6 is similarly related to MSH2.  One should also keep in mind that nucleolar staining or complete loss of MSH6 staining has been described in colorectal cancer cases with prior radiation or chemotherapy,3 4 and a significant reduction of MSH6 staining has been described in a small percentage of colorectal carcinomas with somatic mutations of the coding region microsatellites of the MSH6 gene in MLH1/PMS2-deficient carcinomas.5",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "umar_a_boland_cr_terdiman_jp_et_al_revised_bethesda_guidelines_for_hereditary_nonpolyposis_colorecta",
+          "label": "Umar A, Boland CR, Terdiman JP, et al. Revised Bethesda guidelines for hereditary nonpolyposis colorectal cancer (Lynch syndrome) and microsatellite instability. J Natl Cancer Inst. 2004;96(4):261-268.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "boland_cr_thibodeau_sn_hamilton_sr_et_al_a_national_cancer_institute_workshop_on_microsatellite_inst",
+          "label": "Boland CR, Thibodeau SN, Hamilton SR, et al. A National Cancer Institute Workshop on Microsatellite Instability for cancer detection and familial predisposition: development of international criteria for the determination of microsatellite instability in colorectal cancer. Cancer Res. 1998;58(22):5248-5257.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bellizzi_am_crowder_cd_marsh_wl_hampel_h_frankel_wl_mismatch_repair_status_in_a_cohort_of_rectal_ade",
+          "label": "Bellizzi AM, Crowder CD, Marsh WL, Hampel H, Frankel WL. Mismatch repair status in a cohort of rectal adenocarcinomas before and after chemoradiation. Mod Pathol. 2010;23:137A.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radu_om_nikiforova_mn_farkas_lm_krasinskas_am_challenging_cases_encountered_in_colorectal_cancer_scr",
+          "label": "Radu OM, Nikiforova MN, Farkas LM, Krasinskas AM. Challenging cases encountered in colorectal cancer screening for Lynch syndrome reveal novel findings: nucleolar MSH6 staining and impact of prior chemoradiation therapy. Hum Pathol. 2011;42(9):1247-1258.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "shia_j_zhang_l_shike_m_et_al_secondary_mutation_in_a_coding_mononucleotide_tract_in_msh6_causes_loss",
+          "label": "Shia J, Zhang L, Shike M, et al. Secondary mutation in a coding mononucleotide tract in MSH6    causes loss of immunoexpression of MSH6 in colorectal carcinomas with MLH1/PMS2 deficiency. Mod Pathol. 2013;26(1):131-138.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "defective_mismatch_repair_in_sporadic_colorectal_cancer_is_most_often_due_to_inactivation_of_the_mlh",
+          "label": "Defective mismatch repair in sporadic colorectal cancer is most often due to inactivation of the MLH1 gene promoter by hypermethylation (epigenetic silencing).  The V600E mutation of the BRAF gene may be present in up to 70% of tumors with hypermethylation of the MLH1 promoter.  In colorectal cancer, this mutation has been associated with a limited clinical response to epidermal growth factor receptor (EGFR) targeted therapies (cetuximab or panitumumab). Analysis for somatic mutations in the V600E hot spot in BRAF may also be indicated for tumors that show MSI-H, as this mutation has been found in sporadic MSI-H tumors, but not in Lynch-associated cancers with MLH1 or MSH2 mutations.1 BRAF V600E mutations have been described in probands with monoallelic PMS2 mutations.2 Direct testing of MLH1 promoter hypermethylation and/or the use of BRAF V600E mutational analysis prior to germline genetic testing in patients with MSI-H tumors and loss of MLH1 by IHC may be a cost-effective means of identifying patients with sporadic tumors for whom further testing is not indicated.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "domingo_e_niessen_rc_oliveira_c_et_al_braf_v600e_is_not_involved_in_the_colorectal_tumorigenesis_of_",
+          "label": "Domingo E, Niessen RC, Oliveira C, et al. BRAF-V600E is not involved in the colorectal tumorigenesis of HNPCC in patients with functional MLH1 and MSH2 genes. Oncogene. 2005;24(24):3995-3998.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "senter_l_clendenning_m_sotamaa_k_et_al_the_clinical_phenotype_of_lynch_syndrome_due_to_germline_pms2",
+          "label": "Senter, L, Clendenning, M, Sotamaa, K, et al. The clinical phenotype of Lynch syndrome due to germline PMS2 mutations. Gastroenterology. 2008;135(2):419-428.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bessa_x_balleste_b_andreu_m_et_al_a_prospective_multicenter_population_based_study_of_braf_mutationa",
+          "label": "Bessa X, Balleste B, Andreu M, et al. A prospective, multicenter, population-based study of BRAF mutational analysis for Lynch syndrome screening. Clin Gastroenterol Hepatol. 2008;6(2):206-214.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_presence_of_a_kras_mutation_has_been_shown_to_be_associated_with_lack_of_clinical_response_to_th",
+          "label": "The presence of a KRAS mutation has been shown to be associated with lack of clinical response to therapies targeted at EGFR, such as cetuximab1 and panitumumab.2 While clinical guidelines for KRAS mutational analysis are evolving, current provisional recommendations from the American Society of Clinical Oncology are that all patients with stage IV colorectal carcinoma who are candidates for anti-EGFR antibody therapy should have their tumor tested for KRAS mutations.3  Anti-EGFR antibody therapy is not recommended for patients whose tumors show mutations in KRAS codon 12, 13, or 61, but data on codon 146 are currently insufficient. A recent study has shown that NRAS mutation, like KRAS mutation, has influence on response to anti-EGFR therapy.4 Although more studies are needed, these findings may lead to broad KRAS and NRAS panels to include codons 12, 13, 61, and 146 of both genes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lievre_a_bachet_j_b_le_corre_d_et_al_kras_mutation_status_is_predictive_of_response_to_cetuximab_the",
+          "label": "Lievre A, Bachet J-B, Le Corre D, et al. KRAS mutation status is predictive of response to cetuximab therapy in colorectal cancer. Cancer Res. 2006;66(8):3992-3995.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "amado_rg_wolf_m_peeters_m_et_al_wild_type_kras_is_required_for_panitumumab_efficacy_in_patients_with",
+          "label": "Amado RG, Wolf M, Peeters M, et al. Wild-type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol. 2008;26(10):1626-1634.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "allegra_cj_jessup_jm_somerfield_mr_et_al_american_society_of_clinical_oncology_provisional",
+          "label": "Allegra CJ, Jessup JM, Somerfield MR, et al. American Society of Clinical Oncology Provisional",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "clinical_opinion_testing_for_kras_gene_mutations_in_patients_with_metastatic_colorectal",
+          "label": "Clinical Opinion: testing for KRAS gene mutations in patients with metastatic colorectal",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "therapy_j_clin_oncol_200927122091_2096",
+          "label": "therapy. J Clin Oncol. 2009;27(12):2091-2096.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "douillard_jy_oliner_k_siena_s_et_al_panitumumab_folfox4_treatment_and_ras_mutations_in_colorectal_ca",
+          "label": "Douillard JY, Oliner K, Siena S, et al. Panitumumab-FOLFOX4 treatment and RAS mutations in colorectal cancer. N Engl J Med. 2013;369(11):1023–1034.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nosho_k_kawasaki_t_ohnishi_m_et_al_pik3ca_mutation_in_colorectal_cancer_relationship_with_genetic_an",
+          "label": "Nosho K, Kawasaki T, Ohnishi M, et al. PIK3CA mutation in colorectal cancer: relationship with genetic and epigenetic alterations. Neoplasia. 2008;10(6):534-541.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abubaker_j_bavi_p_al_harbi_s_et_al_clinicopathological_analysis_of_colorectal_cancers_with_pik3ca_mu",
+          "label": "Abubaker J, Bavi P, Al-Harbi S, et al. Clinicopathological analysis of colorectal cancers with PIK3CA mutations in Middle Eastern population. Oncogene. 2008;27(25):3539-3545.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ogino_s_nosho_k_kirkner_gj_et_al_pik3ca_mutation_is_associated_with_poor_prognosis_among_patients_wi",
+          "label": "Ogino S, Nosho K, Kirkner GJ, et al.  PIK3CA mutation is associated with poor prognosis among patients with curatively resected colon cancer.  J Clin Oncol. 2009;27(9):1477-1484.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "de_roock_claes_b_bernasconi_d_et_al_effects_of_kras_braf_nras_and_pik3ca_mutations_on_the_efficacy_o",
+          "label": "De Roock, Claes B, Bernasconi D, et al. Effects of KRAS, BRAF, NRAS, and PIK3CA mutations on the efficacy of cetuximab plus chemotherapy in chemotherapy-refractory metastatic colorectal cancer: a retrospective consortium analysis. Lancet Oncol. 2010;11(8):753-762.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "de_roock_de_vriendt_v_normanno_n_ciardiello_f_tejpar_s_kras_braf_pik3ca_and_pten_mutations_implicati",
+          "label": "De Roock, De Vriendt V, Normanno N, Ciardiello F, Tejpar S. KRAS, BRAF, PIK3CA, and PTEN mutations: implications for targeted therapies in metastatic colorectal cancer. Lancet Oncol. 2011;12(6):594-603.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prenen_h_de_schutter_j_jacobs_b_et_al_pik3ca_mutations_are_not_a_major_determinant_of_resistance_to_",
+          "label": "Prenen H, De Schutter J, Jacobs B, et al.  PIK3CA mutations are not a major determinant of resistance to the epidermal growth factor receptor inhibitor cetuximab in metastatic colorectal cancer.  Clin Cancer Res. 2009;15(9):3184-3188.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_role_of_pten_loss_in_colorectal_cancer_prognosis_and_therapy_is_unclear_it_has_been_suggested_th",
+          "label": "The role of PTEN loss in colorectal cancer prognosis and therapy is unclear. It has been suggested that loss of PTEN expression, as determined by immunohistochemistry, is associated with lack of benefit from cetuximab in metastatic colorectal cancer.1,2,3,4  Loss of PTEN has been found to co-occur with KRAS, BRAF, and PIK3CA mutations.1,4  The recorded frequency of loss of PTEN expression varies from 19% to 36%, with some studies reporting an effect on response rate and survival, whereas others found an effect only on progression-free or overall survival. Moreover, data on the loss of PTEN expression are not concordant in primary and metastatic tissues.3  There is currently no standardized method for PTEN expression analysis by immunohistochemistry.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "laurent_puig_p_cayre_a_manceau_g_et_al_analysis_of_pten_braf_and_egfr_status_in_determining_benefit_",
+          "label": "Laurent-Puig P, Cayre A, Manceau G, et al.  Analysis of PTEN, BRAF, and EGFR status in determining benefit from cetuximab therapy in wild-type KRAS metastatic colon cancer. J Clin Oncol. 2009;27(35):5924-5930.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "frattini_m_saletti_p_romagnani_e_et_al_pten_loss_of_expression_predicts_cetuximab_efficacy_in_metast",
+          "label": "Frattini M, Saletti P, Romagnani E, et al. PTEN loss of expression predicts cetuximab efficacy in metastatic colorectal cancer patients.  Br J Cancer. 2007;97(8):1139-1145.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "loupakis_f_pollina_l_stasi_i_et_al_pten_expression_and_kras_mutations_on_primary_tumors_and_metastas",
+          "label": "Loupakis F, Pollina L, Stasi I, et al. PTEN expression and KRAS mutations on primary tumors and metastases in the prediction of benefit from cetuximab plus irinotecan for patients with metastatic colorectal cancer. J Clin Oncol. 2009; 27(16):2622-2629.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sartore_bianchi_a_di_nicolantonio_f_nichelatti_m_et_al_multi_determinants_analysis_of_molecular_alte",
+          "label": "Sartore-Bianchi A, Di Nicolantonio F, Nichelatti M, et al. Multi-determinants analysis of molecular alterations for predicting clinical benefit to EGFR-targeted monoclonal antibodies in colorectal cancer. PLoS One. 2009;4(10):e7287",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "although_her2_is_most_familiar_as_an_oncogenic_driver_and_therapeutic_target_in_breast_and_gastroeso",
+          "label": "Although HER2 is most familiar as an oncogenic driver and therapeutic target in breast and gastroesophageal adenocarcinoma, it is receiving increased attention in other cancer types, including colorectal cancer. HER2 overexpression is identified in approximately 2% of colorectal cancers, and overexpression is generally mutually exclusive of RAS/RAF mutation such that HER2-positivity is seen in up to 5% of KRAS wild-type tumors.1,2 Although anti-HER2 therapy is still only FDA-approved in breast and gastroesophageal adenocarcinoma, the current (2021) NCCN colon cancer guideline recommends testing all metastatic colon cancers for HER2 (with the exception of those that are known to be RAS/RAF mutant).3 Phase II clinical trials of dual anti-HER2 therapy—trastuzumab combined with lapatinib (a small molecule inhibitor of HER2 and EGFR) or pertuzumab (an anti-HER2 monoclonal antibody that inhibits HER2/HER3 dimerization) or conjugated to deruxtecan (a topoisomerase inhibitor)—have shown positive signal, with objective response rates in the 15-45% range.4,5,6,7 Based on these emerging efficacy data, the NCCN has included dual anti-HER2 therapy as a potential first-line therapy in HER2-positive patients not appropriate for intensive therapy and as a potential second-line therapy or beyond in patients well enough to receive standard intensive first-line therapy.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anti_her2_colon_cancer_trials_have_used_differing_criteria_to_define_her2_positivity_which_has_led_t",
+          "label": "Anti-HER2 colon cancer trials have used differing criteria to define HER2-positivity, which has led to confusion among pathologists.1 The HERACLES trial had the unprecedented requirement of 3+ immunohistochemistry positivity in ≥50% of tumor cells or in situ hybridization amplification in ≥50% of tumor cells in patients who were initially found to be HER2 2+ by immunohistochemistry. Other clinical trials, including MyPathway and DESTINY, which enrolled patients based on more permissive criteria adapted from the 2016 CAP/ASCP/ASCO HER2 Testing in Gastroesophageal Adenocarcinoma Guideline, have shown anti-HER2 therapy to be similarly effective.8 The MyPathway trial also enrolled patients based on increased HER2 copy number or activating mutations as determined by molecular methods, and a recent study has shown good correlation between next generation sequencing and immunohistochemistry results.9,10",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bellizzi_am_her2_testing_in_colon_and_other_non_breastno_gastroesophageal_adenocarcinomas_cap_today_",
+          "label": "Bellizzi AM. HER2 testing in colon and other non-breast/no-gastroesophageal adenocarcinomas. CAP Today. 2019;34:64-67.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "richman_sd_southward_k_chambers_p_et_al_her2_overexpression_and_amplification_as_a_potential_therape",
+          "label": "Richman SD, Southward K, Chambers P, et al. HER2 overexpression and amplification as a potential therapeutic target in colorectal cancer: analysis of 3256 patients enrolled in the QUASAR, FOCUS and PICCOLO colorectal cancer trials. The Journal of pathology. 2016;238:562-570.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nccn_clinical_practice_guidelines_in_oncology_colon_cancer_version_22021_available_at_httpswwwnccnor",
+          "label": "NCCN Clinical Practice Guidelines in Oncology: Colon Cancer (Version 2.2021). Available at: https://www.nccn.org/professionals/physician_gls/pdf/colon.pdf.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sartore_bianchi_a_trusolino_l_martino_c_et_al_dual_targeted_therapy_with_trastuzumab_and_lapatinib_i",
+          "label": "Sartore-Bianchi A, Trusolino L, Martino C, et al. Dual-targeted therapy with trastuzumab and lapatinib in treatment-refractory, KRAS codon 12/13 wild-type, HER2-positive metastatic colorectal cancer (HERACLES): a proof-of-concept, multicentre, open-label, phase 2 trial. The Lancet Oncology. 2016;17:738-746.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meric_bernstam_f_hurwitz_h_raghav_kps_et_al_pertuzumab_plus_trastuzumab_for_her2_amplified_metastati",
+          "label": "Meric-Bernstam F, Hurwitz H, Raghav KPS, et al. Pertuzumab plus trastuzumab for HER2-amplified metastatic colorectal cancer (MyPathway): an updated report from a multicentre, open-label, phase 2a, multiple basket study. The Lancet Oncology. 2019;20:518-530.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gupta_r_garrett_mayer_e_halabi_s_et_al_pertuzumab_plus_trastuzumab_pt_in_patients_pts_with_colorecta",
+          "label": "Gupta R, Garrett-Mayer E, Halabi S, et al. Pertuzumab plus trastuzumab (P+T) in patients (Pts) with colorectal cancer (CRC) with ERBB2 amplification or overexpression: Results from the TAPUR Study. Journal of Clinical Oncology. 2020;38:132-132.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "siena_s_di_bartolomeo_m_raghav_k_et_al_trastuzumab_deruxtecan_ds_8201_in_patients_with_her2_expressi",
+          "label": "Siena S, Di Bartolomeo M, Raghav K, et al. Trastuzumab deruxtecan (DS-8201) in patients with HER2-expressing metastatic colorectal cancer (DESTINY-CRC01): a multicentre, open-label, phase 2 trial. The Lancet Oncology. 2021.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bartley_an_washington_mk_ventura_cb_et_al_her2_testing_and_clinical_decision_making_in_gastroesophag",
+          "label": "Bartley AN, Washington MK, Ventura CB, et al. HER2 Testing and Clinical Decision Making in Gastroesophageal Adenocarcinoma: Guideline From the College of American Pathologists, American Society for Clinical Pathology, and American Society of Clinical Oncology. Archives of pathology & laboratory medicine. 2016;140:1345-1363.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cenaj_o_ligon_ah_hornick_jl_et_al_detection_of_erbb2_amplification_by_next_generation_sequencing_pre",
+          "label": "Cenaj O, Ligon AH, Hornick JL, et al. Detection of ERBB2 Amplification by Next-Generation Sequencing Predicts HER2 Expression in Colorectal Carcinoma. American journal of clinical pathology. 2019;152:97-108.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ross_js_fakih_m_ali_sm_et_al_targeting_her2_in_colorectal_cancer_the_landscape_of_amplification_and_",
+          "label": "Ross JS, Fakih M, Ali SM, et al. Targeting HER2 in colorectal cancer: The landscape of amplification and short variant mutations in ERBB2 and ERBB3. Cancer. 2018;124:1358-1373.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "please_denote_the_manner_in_which_the_tissue_was_dissected_and_specify_the_biomarker_test_only_if_di",
+          "label": "Please denote the manner in which the tissue was dissected and specify the biomarker test only if different dissection methods are used for different tests.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "laser_capture_microdissection_lcm_use_of_a_laser_equipped_microscope_to_isolate_and_retrieve_specifi",
+          "label": "Laser capture microdissection (LCM):  Use of a laser-equipped microscope to isolate and retrieve specific cells of interest from a histopathologic region of interest.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "manual_under_microscopic_observation_hematoxylin_and_eosin_he_slide_is_examined_under_a_light_micros",
+          "label": "Manual under microscopic observation:  hematoxylin and eosin (H&E) slide is examined under a light microscope and marked by a pathologist for subsequent tumor dissection and retrieval.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "manual_without_microscopic_observation_he_slide_is_examined_without_a_microscope_and_marked_by_a_pat",
+          "label": "Manual without microscopic observation:  H&E slide is examined without a microscope and marked by a pathologist for subsequent tumor dissection and retrieval.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cored_from_block_area_of_interest_is_cored_from_a_paraffin_embedded_tissue_block",
+          "label": "Cored from block:  Area of interest is cored from a paraffin-embedded tissue block.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "whole_tissue_section_no_tumor_enrichment_procedure_employed_for_tissue_retrieval",
+          "label": "Whole tissue section:  No tumor enrichment procedure employed for tissue retrieval.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}

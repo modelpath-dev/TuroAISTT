@@ -1,0 +1,3519 @@
+{
+  "template_id": "HN.Oral_4.2.0.0.REL_CAPCP",
+  "organ": "ORAL CAVITY",
+  "protocol_posting_date": "June 2023",
+  "standards": [
+    "AJCC-UICC 8"
+  ],
+  "sections": [
+    {
+      "section_id": "tumor",
+      "section_name": "TUMOR",
+      "fields": [
+        {
+          "field_id": "tumor_focality",
+          "label": "Tumor Focality",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "unifocal",
+              "label": "Unifocal"
+            },
+            {
+              "value": "multifocal",
+              "label": "Multifocal: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "multiple_primary_sites",
+          "label": "Multiple Primary Sites",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no additional primary site(s) present)"
+            },
+            {
+              "value": "present",
+              "label": "Present: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "e.g., lower gingiva and floor of mouth"
+        },
+        {
+          "field_id": "please_complete_a_separate_checklist_for_each_primary_site",
+          "label": "Please complete a separate checklist for each primary site",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tumor_site",
+          "label": "Tumor Site",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "oral_cavity",
+              "label": "Oral cavity: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "B"
+          ]
+        },
+        {
+          "field_id": "tumor_subsite",
+          "label": "Tumor Subsite",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "wet_mucosa_of_upper_lip",
+              "label": "Wet mucosa of upper lip: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "wet_mucosa_of_lower_lip",
+              "label": "Wet mucosa of lower lip: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lateral_border_of_tongue",
+              "label": "Lateral border of tongue: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "ventral_surface_of_tongue",
+              "label": "Ventral surface of tongue: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "dorsal_surface_of_tongue",
+              "label": "Dorsal surface of tongue: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_two_thirds_of_tongue",
+              "label": "Anterior two-thirds of tongue: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "upper_gingiva",
+              "label": "Upper gingiva: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "lower_gingiva",
+              "label": "Lower gingiva: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "anterior_floor_of_mouth",
+              "label": "Anterior floor of mouth: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "floor_of_mouth",
+              "label": "Floor of mouth: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "hard_palate",
+              "label": "Hard palate: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "buccal_mucosa",
+              "label": "Buccal mucosa: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vestibule_of_mouth_maxillary",
+              "label": "Vestibule of mouth, maxillary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "vestibule_of_mouth_mandibular",
+              "label": "Vestibule of mouth, mandibular: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "alveolar_process_maxillary",
+              "label": "Alveolar process, maxillary: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "alveolar_process_mandibular",
+              "label": "Alveolar process, mandibular: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "retromolar_area",
+              "label": "Retromolar area: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_laterality",
+          "label": "Tumor Laterality",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "midline",
+              "label": "Midline"
+            },
+            {
+              "value": "not_specified",
+              "label": "Not specified"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_size",
+          "label": "Tumor Size",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "greatest_dimension_in_centimeters",
+              "label": "Greatest dimension in Centimeters (cm): _________________ cm",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "E"
+          ]
+        },
+        {
+          "field_id": "additional_dimension_in_centimeters_cm______x______cm",
+          "label": "Additional Dimension in Centimeters (cm): ____ x ____ cm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type",
+          "label": "Histologic Type",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "C"
+          ]
+        },
+        {
+          "field_id": "squamous_cell_carcinoma_and_subtypes",
+          "label": "Squamous cell carcinoma and subtypes",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma_and_subtypes",
+              "label": "Squamous cell carcinoma and subtypes"
+            }
+          ]
+        },
+        {
+          "field_id": "select_all_that_apply",
+          "label": "Select all that apply",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma_conventional",
+              "label": "Squamous cell carcinoma, conventional (keratinizing)"
+            },
+            {
+              "value": "squamous_cell_carcinoma_nonkeratinizing",
+              "label": "Squamous cell carcinoma, nonkeratinizing"
+            },
+            {
+              "value": "adenosquamous_carcinoma",
+              "label": "Adenosquamous carcinoma"
+            },
+            {
+              "value": "basaloid_squamous_cell_carcinoma",
+              "label": "Basaloid squamous cell carcinoma"
+            },
+            {
+              "value": "papillary_squamous_cell_carcinoma",
+              "label": "Papillary squamous cell carcinoma"
+            },
+            {
+              "value": "spindle_cell_squamous_carcinoma",
+              "label": "Spindle cell squamous carcinoma"
+            },
+            {
+              "value": "verrucous_carcinoma",
+              "label": "Verrucous carcinoma"
+            },
+            {
+              "value": "carcinoma_cuniculatum",
+              "label": "Carcinoma cuniculatum"
+            },
+            {
+              "value": "lymphoepithelial_carcinoma",
+              "label": "Lymphoepithelial carcinoma (non-nasopharyngeal)"
+            }
+          ]
+        },
+        {
+          "field_id": "carcinomas_of_minor_salivary_glands",
+          "label": "Carcinomas of minor salivary glands",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "carcinoma_ex_pleomorphic_adenoma",
+              "label": "Carcinoma ex pleomorphic adenoma"
+            }
+          ]
+        },
+        {
+          "field_id": "architectural_type",
+          "label": "Architectural Type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "required_in_addition_to_carcinoma_type",
+          "label": "Required in addition to carcinoma type",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "carcinoma_ex_pleomorphic_adenoma_minimally_invasive",
+              "label": "Carcinoma ex pleomorphic adenoma, minimally invasive"
+            },
+            {
+              "value": "carcinoma_ex_pleomorphic_adenoma_invasive",
+              "label": "Carcinoma ex pleomorphic adenoma, invasive"
+            },
+            {
+              "value": "carcinoma_ex_pleomorphic_adenoma_intracapsular",
+              "label": "Carcinoma ex pleomorphic adenoma, intracapsular (noninvasive)"
+            },
+            {
+              "value": "carcinoma_ex_pleomorphic_adenoma_extent_cannot_be_determined",
+              "label": "Carcinoma ex pleomorphic adenoma, extent cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "malignant_component_histologic_types",
+          "label": "Malignant Component Histologic Type(s)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "intraductal_pattern",
+              "label": "Intraductal pattern"
+            },
+            {
+              "value": "salivary_duct_carcinoma",
+              "label": "Salivary duct carcinoma"
+            },
+            {
+              "value": "epithelial_myoepithelial_carcinoma",
+              "label": "Epithelial-myoepithelial carcinoma"
+            },
+            {
+              "value": "myoepithelial_carcinoma",
+              "label": "Myoepithelial carcinoma"
+            },
+            {
+              "value": "carcinosarcoma",
+              "label": "Carcinosarcoma (sarcomatoid carcinoma)"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "mucoepidermoid_carcinoma",
+              "label": "Mucoepidermoid carcinoma"
+            },
+            {
+              "value": "adenoid_cystic_carcinoma_tubular_cribriform_pattern",
+              "label": "Adenoid cystic carcinoma, tubular / cribriform pattern"
+            },
+            {
+              "value": "adenoid_cystic_carcinoma_solid",
+              "label": "Adenoid cystic carcinoma, solid#"
+            }
+          ],
+          "guidance": "If multiple patterns are present, select the predominant pattern unless the solid pattern is greater than 30%, in which case the user should select the solid pattern."
+        },
+        {
+          "field_id": "percentage_of_solid_component_for_adenoid_cystic_carcinoma",
+          "label": "Percentage of Solid Component for Adenoid Cystic Carcinoma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "acinic_cell_carcinoma",
+              "label": "Acinic cell carcinoma"
+            },
+            {
+              "value": "secretory_carcinoma",
+              "label": "Secretory carcinoma"
+            },
+            {
+              "value": "polymorphous_adenocarcinoma_conventional",
+              "label": "Polymorphous adenocarcinoma, conventional"
+            },
+            {
+              "value": "polymorphous_adenocarcinoma_cribriform_subtype",
+              "label": "Polymorphous adenocarcinoma, cribriform subtype"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_papillary_component_for_polymorphous_adenocarcinoma",
+          "label": "Percentage of Papillary Component for Polymorphous Adenocarcinoma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "percentage_of_cribriform_component_for_polymorphous_adenocarcinoma",
+          "label": "Percentage of Cribriform Component for Polymorphous Adenocarcinoma",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_percentage",
+              "label": "Specify percentage: _________________ %",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "salivary_duct_carcinoma",
+              "label": "Salivary duct carcinoma"
+            },
+            {
+              "value": "epithelial_myoepithelial_carcinoma",
+              "label": "Epithelial-myoepithelial carcinoma"
+            },
+            {
+              "value": "hyalinizing_clear_cell_carcinoma",
+              "label": "Hyalinizing clear cell carcinoma"
+            },
+            {
+              "value": "microsecretory_adenocarcinoma",
+              "label": "Microsecretory adenocarcinoma"
+            },
+            {
+              "value": "intraductal_carcinoma",
+              "label": "Intraductal carcinoma (specify subtype): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "basal_cell_adenocarcinoma",
+              "label": "Basal cell adenocarcinoma"
+            },
+            {
+              "value": "carcinosarcoma",
+              "label": "Carcinosarcoma"
+            },
+            {
+              "value": "mucinous_adenocarcinoma_not_otherwise_specified",
+              "label": "Mucinous adenocarcinoma, not otherwise specified"
+            },
+            {
+              "value": "mucinous_adenocarcinoma_intraductal_papillary_mucinous_neoplasia_subtype",
+              "label": "Mucinous adenocarcinoma, intraductal papillary mucinous neoplasia subtype"
+            },
+            {
+              "value": "mucinous_adenocarcinoma_colloid_signet_ring_subtype",
+              "label": "Mucinous adenocarcinoma, colloid / signet ring subtype"
+            },
+            {
+              "value": "sclerosing_microcystic_adenocarcinoma",
+              "label": "Sclerosing microcystic adenocarcinoma"
+            },
+            {
+              "value": "lymphoepithelial_carcinoma",
+              "label": "Lymphoepithelial carcinoma"
+            },
+            {
+              "value": "myoepithelial_carcinoma",
+              "label": "Myoepithelial carcinoma"
+            },
+            {
+              "value": "sebaceous_adenocarcinoma",
+              "label": "Sebaceous adenocarcinoma"
+            },
+            {
+              "value": "sialoblastoma",
+              "label": "Sialoblastoma"
+            }
+          ]
+        },
+        {
+          "field_id": "neuroendocrine",
+          "label": "Neuroendocrine",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "neuroendocrine_tumor_grade_1",
+              "label": "Neuroendocrine tumor, grade 1"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_2",
+              "label": "Neuroendocrine tumor, grade 2"
+            },
+            {
+              "value": "neuroendocrine_tumor_grade_3",
+              "label": "Neuroendocrine tumor, grade 3"
+            },
+            {
+              "value": "neuroendocrine_carcinoma_small_cell_type",
+              "label": "Neuroendocrine carcinoma, small cell type"
+            },
+            {
+              "value": "neuroendocrine_carcinoma_large_cell_type",
+              "label": "Neuroendocrine carcinoma, large cell type"
+            },
+            {
+              "value": "combined",
+              "label": "Combined (or composite) neuroendocrine carcinoma"
+            }
+          ]
+        },
+        {
+          "field_id": "type_of_combined_histology",
+          "label": "Type of Combined Histology#",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "squamous_cell_carcinoma",
+              "label": "Squamous cell carcinoma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "adenocarcinoma",
+              "label": "Adenocarcinoma: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "neuroendocrine_carcinoma_small_cell_type",
+              "label": "Neuroendocrine carcinoma, small cell type"
+            },
+            {
+              "value": "neuroendocrine_carcinoma_large_cell_type",
+              "label": "Neuroendocrine carcinoma, large cell type"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Please note that the user must select at least one neuroendocrine type and at least one carcinoma type from the list below."
+        },
+        {
+          "field_id": "mucosal_melanoma",
+          "label": "Mucosal melanoma",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "mucosal_melanoma",
+              "label": "Mucosal melanoma"
+            }
+          ]
+        },
+        {
+          "field_id": "other",
+          "label": "Other",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "other_histologic_type_not_listed",
+              "label": "Other histologic type not listed (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "carcinoma_type_cannot_be_determined",
+              "label": "Carcinoma, type cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "histologic_type_comment",
+          "label": "Histologic Type Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "histologic_grade",
+          "label": "Histologic Grade#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "g1_well_differentiated",
+              "label": "G1, well differentiated"
+            },
+            {
+              "value": "g2_moderately_differentiated",
+              "label": "G2, moderately differentiated"
+            },
+            {
+              "value": "g3_poorly_differentiated",
+              "label": "G3, poorly differentiated"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "gx_cannot_be_assessed",
+              "label": "GX, cannot be assessed: _________________",
+              "has_free_text": true
+            }
+          ],
+          "notes": [
+            "D"
+          ],
+          "guidance": "Required for non-salivary, non-neuroendocrine carcinomas"
+        },
+        {
+          "field_id": "grade_intrinsic_biologic_potential",
+          "label": "Grade / Intrinsic Biologic Potential#",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "low",
+              "label": "Low"
+            },
+            {
+              "value": "intermediate",
+              "label": "Intermediate"
+            },
+            {
+              "value": "high_high_grade_transformation",
+              "label": "High / High-grade transformation"
+            },
+            {
+              "value": "cannot_be_assessed",
+              "label": "Cannot be assessed: _________________",
+              "has_free_text": true
+            }
+          ],
+          "guidance": "Required for salivary carcinomas"
+        },
+        {
+          "field_id": "tumor_depth_of_invasion",
+          "label": "Tumor Depth of Invasion",
+          "required": true,
+          "type": "free_text",
+          "condition": "DOI"
+        },
+        {
+          "field_id": "tumor_depth_of_invasion_is_required_only_for_squamous_cell_carcinomas",
+          "label": "Tumor depth of invasion is required only for squamous cell carcinomas.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "specify_depth_in_millimeters",
+              "label": "Specify depth in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least_in_millimeters",
+              "label": "At least in Millimeters (mm): _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "tumor_extent_specify_other_structures_involved",
+          "label": "Tumor Extent (specify other structures involved): _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphatic_and_or_vascular_invasion",
+          "label": "Lymphatic and / or Vascular Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "perineural_invasion",
+          "label": "Perineural Invasion",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "F"
+          ]
+        },
+        {
+          "field_id": "extent_type_of_perineural_invasion",
+          "label": "Extent / Type of Perineural Invasion#",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "intratumoral",
+              "label": "Intratumoral"
+            },
+            {
+              "value": "extratumoral",
+              "label": "Extratumoral"
+            },
+            {
+              "value": "intraneural",
+              "label": "Intraneural"
+            }
+          ],
+          "guidance": "Select the most aggressive type"
+        },
+        {
+          "field_id": "specify_diameter_of_involved_nerve_in_millimeters_mm___________________mm",
+          "label": "Specify Diameter of Involved Nerve in Millimeters (mm): _________________ mm",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "worst_pattern_of_invasion",
+          "label": "Worst Pattern of Invasion",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "wpoi_5",
+              "label": "WPOI 5"
+            },
+            {
+              "value": "wpoi_1_4",
+              "label": "WPOI 1-4"
+            }
+          ],
+          "notes": [
+            "G"
+          ],
+          "condition": "WPOI"
+        },
+        {
+          "field_id": "tumor_comment",
+          "label": "Tumor Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margins",
+          "label": "MARGINS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "H"
+          ]
+        },
+        {
+          "field_id": "specimen_margin_status_for_invasive_tumor",
+          "label": "Specimen Margin Status for Invasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_specimen_margins_negative_for_invasive_tumor",
+              "label": "All specimen margins negative for invasive tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_tumor_to_closest_specimen_margin",
+          "label": "Distance from Invasive Tumor to Closest Specimen Margin",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "closest_specimen_margins_to_invasive_tumor",
+          "label": "Closest Specimen Margin(s) to Invasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_location",
+              "label": "Specify location(s) of closest specimen margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "other_close_specimen_margins_to_invasive_tumor",
+          "label": "Other Close Specimen Margin(s) to Invasive Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_location",
+              "label": "Specify location(s) and distance(s) of other close specimen margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "invasive_tumor_present_at_specimen_margin",
+              "label": "Invasive tumor present at specimen margin"
+            }
+          ]
+        },
+        {
+          "field_id": "specimen_margins_involved_by_invasive_tumor",
+          "label": "Specimen Margin(s) Involved by Invasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_specimen_margin",
+              "label": "Specify involved specimen margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            }
+          ],
+          "condition": "per orientation"
+        },
+        {
+          "field_id": "specimen_margin_status_for_noninvasive_tumor",
+          "label": "Specimen Margin Status for Noninvasive Tumor",
+          "required": true,
+          "type": "free_text",
+          "condition": "High-grade Dysplasia"
+        },
+        {
+          "field_id": "margin_status_for_noninvasive_tumor_is_required_only_for_squamous_cell_carcinoma_when_closer_than_in",
+          "label": "Margin status for noninvasive tumor is required only for squamous cell carcinoma when closer than invasive tumor.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "all_specimen_margins_negative_for_high_grade_dysplasia_in_situ_disease",
+              "label": "All specimen margins negative for high-grade dysplasia / in situ disease"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_noninvasive_tumor_to_closest_specimen_margin",
+          "label": "Distance from Noninvasive Tumor to Closest Specimen Margin",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "closest_specimen_margins_to_noninvasive_tumor",
+          "label": "Closest Specimen Margin(s) to Noninvasive Tumor",
+          "required": false,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_closest_specimen_margin",
+              "label": "Specify closest specimen margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "high_grade_dysplasia_in_situ_disease_present_at_specimen_margin",
+              "label": "High-grade dysplasia / in situ disease present at specimen margin"
+            }
+          ],
+          "condition": "use orientation when provided"
+        },
+        {
+          "field_id": "specimen_margins_involved_by_noninvasive_tumor",
+          "label": "Specimen Margin(s) Involved by Noninvasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_specimen_margin",
+              "label": "Specify involved specimen margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "per orientation"
+        },
+        {
+          "field_id": "tumor_bed_margin_status",
+          "label": "Tumor Bed Margin Status",
+          "required": true,
+          "type": "free_text",
+          "condition": "separately submitted"
+        },
+        {
+          "field_id": "applicable_only_to_squamous_cell_carcinoma_and_its_histologic_subtypes",
+          "label": "Applicable only to squamous cell carcinoma and its histologic subtypes.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "tumor_bed_margins_assessed",
+              "label": "Tumor bed margins assessed"
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_bed_margin_orientation",
+          "label": "Tumor Bed Margin Orientation",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "oriented_to_true_margin_surface",
+              "label": "Oriented to true margin surface"
+            },
+            {
+              "value": "unoriented_to_true_margin_surface",
+              "label": "Unoriented to true margin surface"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "tumor_bed_margin_status_for_invasive_tumor",
+          "label": "Tumor Bed Margin Status for Invasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "all_tumor_bed_margins_negative_for_invasive_tumor",
+              "label": "All tumor bed margins negative for invasive tumor"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_invasive_tumor_to_true_margin_surface",
+          "label": "Distance from Invasive Tumor to True Margin Surface",
+          "required": false,
+          "type": "free_text",
+          "condition": "if oriented and sectioned perpendicularly"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "invasive_tumor_present_at_tumor_bed_margin",
+              "label": "Invasive tumor present at tumor bed margin"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "tumor_bed_margins_involved_by_invasive_tumor",
+          "label": "Tumor Bed Margin(s) Involved by Invasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_tumor_bed_margin",
+              "label": "Specify involved tumor bed margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "per part labeling"
+        },
+        {
+          "field_id": "tumor_bed_margin_status_for_noninvasive_tumor",
+          "label": "Tumor Bed Margin Status for Noninvasive Tumor",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "margin_status_for_noninvasive_tumor_is_required_only_for_squamous_cell_carcinoma_when_closer_than_in",
+          "label": "Margin status for noninvasive tumor is required only for squamous cell carcinoma when closer than invasive tumor.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "all_tumor_bed_margins_negative_for_high_grade_dysplasia_in_situ_disease",
+              "label": "All tumor bed margins negative for high-grade dysplasia / in situ disease"
+            }
+          ]
+        },
+        {
+          "field_id": "distance_from_noninvasive_tumor_to_true_margin_surface",
+          "label": "Distance from Noninvasive Tumor to True Margin Surface",
+          "required": false,
+          "type": "free_text",
+          "condition": "if oriented and sectioned perpendicularly"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "high_grade_dysplasia_in_situ_disease_present_at_tumor_bed_margins",
+              "label": "High-grade dysplasia / in situ disease present at tumor bed margins"
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "tumor_bed_margins_involved_by_noninvasive_tumor",
+          "label": "Tumor Bed Margin(s) Involved by Noninvasive Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "specify_involved_tumor_bed_margin",
+              "label": "Specify involved tumor bed margin(s): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "per orientation"
+        },
+        {
+          "field_id": "margin_comment",
+          "label": "Margin Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes",
+          "label": "REGIONAL LYMPH NODES",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_status",
+          "label": "Regional Lymph Node Status",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable (no regional lymph nodes submitted or found)"
+            },
+            {
+              "value": "regional_lymph_nodes_present",
+              "label": "Regional lymph nodes present"
+            },
+            {
+              "value": "all_regional_lymph_nodes_negative_for_tumor",
+              "label": "All regional lymph nodes negative for tumor"
+            },
+            {
+              "value": "tumor_present_in_regional_lymph_node",
+              "label": "Tumor present in regional lymph node(s)"
+            }
+          ]
+        },
+        {
+          "field_id": "number_of_lymph_nodes_with_tumor",
+          "label": "Number of Lymph Nodes with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "laterality_of_lymph_nodes_with_tumor",
+          "label": "Laterality of Lymph Node(s) with Tumor",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "ipsilateral",
+              "label": "Ipsilateral (including midline): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "contralateral",
+              "label": "Contralateral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bilateral",
+              "label": "Bilateral: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "not applicable for mucosal melanoma"
+        },
+        {
+          "field_id": "nodal_sites_with_tumor",
+          "label": "Nodal Site(s) with Tumor",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "intra_periparotid",
+              "label": "Intra / periparotid"
+            },
+            {
+              "value": "level_i",
+              "label": "Level I"
+            },
+            {
+              "value": "level_ii",
+              "label": "Level II"
+            },
+            {
+              "value": "level_iii",
+              "label": "Level III"
+            },
+            {
+              "value": "level_iv",
+              "label": "Level IV"
+            },
+            {
+              "value": "level_v",
+              "label": "Level V"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "size_of_largest_nodal_metastatic_deposit",
+          "label": "Size of Largest Nodal Metastatic Deposit",
+          "required": true,
+          "type": "free_text",
+          "condition": "not applicable for mucosal melanoma"
+        },
+        {
+          "field_id": "specify_in_centimeters",
+          "label": "Specify in Centimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "exact_size",
+              "label": "Exact size: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than",
+              "label": "Greater than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "less_than",
+              "label": "Less than: _________________ cm",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "cm"
+        },
+        {
+          "field_id": "extranodal_extension_ene",
+          "label": "Extranodal Extension (ENE)",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "not_identified",
+              "label": "Not identified"
+            },
+            {
+              "value": "present",
+              "label": "Present"
+            }
+          ],
+          "notes": [
+            "I"
+          ],
+          "condition": "not applicable for mucosal melanoma"
+        },
+        {
+          "field_id": "distance_of_ene_from_lymph_node_capsule",
+          "label": "Distance of ENE from Lymph Node Capsule",
+          "required": false,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_in_millimeters",
+          "label": "Specify in Millimeters",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_distance",
+              "label": "Exact distance: _________________ mm",
+              "has_free_text": true
+            },
+            {
+              "value": "greater_than_2_mm",
+              "label": "Greater than 2 mm (macroscopic ENE)"
+            },
+            {
+              "value": "less_than_or_equal_to_2_mm",
+              "label": "Less than or equal to 2 mm (microscopic ENE)"
+            },
+            {
+              "value": "less_than_1_mm",
+              "label": "Less than 1 mm"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined (explain): _________________",
+              "has_free_text": true
+            }
+          ],
+          "condition": "mm"
+        },
+        {
+          "field_id": "number_of_lymph_nodes_examined",
+          "label": "Number of Lymph Nodes Examined",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "exact_number",
+              "label": "Exact number (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "at_least",
+              "label": "At least (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined"
+            }
+          ]
+        },
+        {
+          "field_id": "regional_lymph_node_comment",
+          "label": "Regional Lymph Node Comment: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "distant_metastasis",
+      "section_name": "DISTANT METASTASIS",
+      "fields": [
+        {
+          "field_id": "distant_sites_involved_if_applicable",
+          "label": "Distant Site(s) Involved, if applicable",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "lung",
+              "label": "Lung: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "bone",
+              "label": "Bone: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "brain",
+              "label": "Brain: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "liver",
+              "label": "Liver: _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "cannot_be_determined",
+              "label": "Cannot be determined: _________________",
+              "has_free_text": true
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM CLASSIFICATION",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "J"
+          ],
+          "condition": "AJCC 8th Edition"
+        },
+        {
+          "field_id": "modified_classification_required_only_if_applicable",
+          "label": "Modified Classification (required only if applicable)",
+          "required": true,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "y",
+              "label": "y (post-neoadjuvant therapy)"
+            },
+            {
+              "value": "r",
+              "label": "r (recurrence)"
+            }
+          ]
+        },
+        {
+          "field_id": "ptnm_classification",
+          "label": "pTNM Classification",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "for_all_carcinomas",
+              "label": "For all carcinomas"
+            }
+          ]
+        },
+        {
+          "field_id": "superficial_erosion_alone_of_bone_tooth_socket_by_gingival_primary_is_not_sufficient_to_classify_a_t",
+          "label": "Superficial erosion alone of bone / tooth socket by gingival primary is not sufficient to classify a tumor as T4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "doi_is_depth_of_invasion_and_not_tumor_thickness",
+          "label": "DOI is depth of invasion and not tumor thickness.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt_not_assigned",
+              "label": "pT not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "ptis",
+              "label": "pTis: Carcinoma *in situ*"
+            },
+            {
+              "value": "pt1",
+              "label": "pT1: Tumor less than or equal to 2 cm with depth of invasion (DOI) less than or equal to 5 mm"
+            },
+            {
+              "value": "pt2",
+              "label": "pT2: Tumor less than or equal to 2 cm with DOI greater than 5 mm or tumor greater than 2 cm and less than or equal to 4 cm with DOI less than or equal to 10 mm"
+            },
+            {
+              "value": "pt3",
+              "label": "pT3: Tumor greater than 2 cm and less than or equal to 4 cm with DOI greater than 10 mm or tumor greater than 4 cm with DOI less than or equal to 10 mm"
+            }
+          ]
+        },
+        {
+          "field_id": "pt4_moderately_advanced_or_very_advanced_local_disease",
+          "label": "pT4: Moderately advanced or very advanced local disease",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Moderately advanced local disease. Tumor greater than 4 cm with DOI greater than 10 mm or tumor invades adjacent structures only (e.g., through cortical bone of the mandible or maxilla or involves the maxillary sinus or skin of the face)"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Very advanced local disease. Tumor invades masticator space, pterygoid plates, or skull base, and / or encases internal carotid artery"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4 (subgroup cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category#",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "I"
+          ],
+          "guidance": "Midline nodes are considered ipsilateral nodes."
+        },
+        {
+          "field_id": "pathological_ene_should_be_recorded_as_ene_or_ene",
+          "label": "Pathological ENE should be recorded as ENE(−) or ENE(+).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "measurement_of_the_metastatic_focus_in_the_lymph_nodes_is_based_on_the_largest_metastatic_deposit_si",
+          "label": "Measurement of the metastatic focus in the lymph nodes is based on the largest metastatic deposit size, which may include matted or fused lymph nodes.",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastasis"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Metastasis in a single ipsilateral lymph node, 3 cm or smaller in greatest dimension and ENE(-)"
+            }
+          ]
+        },
+        {
+          "field_id": "pn2_metastasis_in_a_single_ipsilateral_lymph_node_3_cm_or_smaller_in_greatest_dimension_and_ene_or_l",
+          "label": "pN2: Metastasis in a single ipsilateral lymph node, 3 cm or smaller in greatest dimension and ENE(+); or larger than 3 cm but not larger than 6 cm in greatest dimension and ENE(-); or metastases in multiple ipsilateral lymph nodes, none larger than 6 cm in greatest dimension and ENE(-); or in bilateral or contralateral lymph node(s), none larger than 6 cm in greatest dimension and ENE",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn2a",
+              "label": "pN2a: Metastasis in single ipsilateral node 3 cm or smaller in greatest dimension and ENE(+); or a single ipsilateral node larger than 3 cm but not larger than 6 cm in greatest dimension and ENE(-)"
+            },
+            {
+              "value": "pn2b",
+              "label": "pN2b: Metastases in multiple ipsilateral nodes, none larger than 6 cm in greatest dimension and ENE(-)"
+            },
+            {
+              "value": "pn2c",
+              "label": "pN2c: Metastases in bilateral or contralateral lymph node(s), none larger than 6 cm in greatest dimension and ENE(-)"
+            },
+            {
+              "value": "pn2",
+              "label": "pN2 (subgroup cannot be determined)"
+            }
+          ],
+          "condition": "-"
+        },
+        {
+          "field_id": "pn3_metastasis_in_a_lymph_node_larger_than_6_cm_in_greatest_dimension_and_ene_or_metastasis_in_a_sin",
+          "label": "pN3: Metastasis in a lymph node larger than 6 cm in greatest dimension and ENE(-); or metastasis in a single ipsilateral node larger than 3 cm in greatest dimension and ENE(+); or multiple ipsilateral, contralateral or bilateral nodes any with ENE(+); or a single contralateral node of any size and ENE",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn3a",
+              "label": "pN3a: Metastasis in a lymph node larger than 6 cm in greatest dimension and ENE(-)"
+            },
+            {
+              "value": "pn3b",
+              "label": "pN3b: Metastasis in a single ipsilateral node larger than 3 cm in greatest dimension and ENE(+); or multiple ipsilateral, contralateral or bilateral nodes any with ENE(+); or a single contralateral node of any size and ENE(+)"
+            },
+            {
+              "value": "pn3",
+              "label": "pN3 (subgroup cannot be determined)"
+            }
+          ],
+          "condition": "+"
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis"
+            },
+            {
+              "value": "for_mucosal_melanoma",
+              "label": "For mucosal melanoma (Note J)"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "pt_category",
+          "label": "pT Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt3",
+              "label": "pT3: Tumors limited to the mucosa and immediately underlying soft tissue, regardless of thickness or greatest dimension; for example, polypoid nasal disease, pigmented or nonpigmented lesions of the oral cavity, pharynx, or larynx"
+            }
+          ]
+        },
+        {
+          "field_id": "pt4_moderately_advanced_or_very_advanced_local_disease",
+          "label": "pT4: Moderately advanced or very advanced local disease",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pt4a",
+              "label": "pT4a: Moderately advanced disease. Tumor involving deep soft tissue, cartilage, bone, or overlying skin"
+            },
+            {
+              "value": "pt4b",
+              "label": "pT4b: Very advanced disease. Tumor involving brain, dura, skull base, lower cranial nerves (IX, X, XI, XII), masticator space, carotid artery, prevertebral space, or mediastinal structures"
+            },
+            {
+              "value": "pt4",
+              "label": "pT4 (subgroup cannot be determined)"
+            }
+          ]
+        },
+        {
+          "field_id": "t_suffix",
+          "label": "T Suffix",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable",
+              "label": "Not applicable"
+            },
+            {
+              "value": "",
+              "label": "(m) multiple primary synchronous tumors in a single organ"
+            }
+          ],
+          "condition": "required only if applicable"
+        },
+        {
+          "field_id": "pn_category",
+          "label": "pN Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (no nodes submitted or found)"
+            },
+            {
+              "value": "pn_not_assigned",
+              "label": "pN not assigned (cannot be determined based on available pathological information)"
+            },
+            {
+              "value": "pn0",
+              "label": "pN0: No regional lymph node metastases"
+            },
+            {
+              "value": "pn1",
+              "label": "pN1: Regional lymph node metastases present"
+            }
+          ]
+        },
+        {
+          "field_id": "pm_category",
+          "label": "pM Category",
+          "required": true,
+          "type": "single_select",
+          "options": [
+            {
+              "value": "not_applicable_pm_cannot_be_determined_from_the_submitted_specimen",
+              "label": "Not applicable - pM cannot be determined from the submitted specimen(s)"
+            },
+            {
+              "value": "pm1",
+              "label": "pM1: Distant metastasis present"
+            }
+          ],
+          "condition": "required only if confirmed pathologically"
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "ADDITIONAL FINDINGS",
+          "required": true,
+          "type": "free_text",
+          "notes": [
+            "K"
+          ]
+        },
+        {
+          "field_id": "additional_findings",
+          "label": "Additional Findings",
+          "required": false,
+          "type": "multi_select",
+          "options": [
+            {
+              "value": "none_identified",
+              "label": "None identified"
+            },
+            {
+              "value": "keratinizing_dysplasia_mild",
+              "label": "Keratinizing dysplasia, mild"
+            },
+            {
+              "value": "keratinizing_dysplasia_moderate",
+              "label": "Keratinizing dysplasia, moderate"
+            },
+            {
+              "value": "keratinizing_dysplasia_severe",
+              "label": "Keratinizing dysplasia, severe (carcinoma in situ)"
+            },
+            {
+              "value": "nonkeratinizing_dysplasia_mild",
+              "label": "Nonkeratinizing dysplasia, mild"
+            },
+            {
+              "value": "nonkeratinizing_dysplasia_moderate",
+              "label": "Nonkeratinizing dysplasia, moderate"
+            },
+            {
+              "value": "nonkeratinizing_dysplasia_severe",
+              "label": "Nonkeratinizing dysplasia, severe (carcinoma in situ)"
+            },
+            {
+              "value": "hpv_associated_oral_epithelial_dysplasia",
+              "label": "HPV-associated oral epithelial dysplasia"
+            },
+            {
+              "value": "proliferative_verrucous_leukoplakia_type_lesions",
+              "label": "Proliferative verrucous leukoplakia type lesions"
+            },
+            {
+              "value": "inflammation",
+              "label": "Inflammation (specify type): _________________",
+              "has_free_text": true
+            },
+            {
+              "value": "epithelial_hyperplasia",
+              "label": "Epithelial hyperplasia"
+            },
+            {
+              "value": "colonization_fungal",
+              "label": "Colonization, fungal"
+            },
+            {
+              "value": "colonization_bacterial",
+              "label": "Colonization, bacterial"
+            },
+            {
+              "value": "other",
+              "label": "Other (specify): _________________",
+              "has_free_text": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "special_studies",
+      "section_name": "SPECIAL STUDIES",
+      "fields": [
+        {
+          "field_id": "for_reporting_molecular_testing_and_other_cancer_biomarker_testing_results_the_cap_head_and_neck_bio",
+          "label": "For reporting molecular testing and other cancer biomarker testing results, the CAP Head and Neck Biomarker Template should be used. Pending biomarker studies should be listed in the Comments section of this report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "specify_tests",
+          "label": "Specify test(s)",
+          "required": true,
+          "type": "free_text",
+          "condition": "repeat as needed"
+        },
+        {
+          "field_id": "specify_test_and_result",
+          "label": "Specify Test and Result: _________________",
+          "required": false,
+          "type": "free_text"
+        }
+      ]
+    },
+    {
+      "section_id": "comments",
+      "section_name": "COMMENTS",
+      "fields": [
+        {
+          "field_id": "comments",
+          "label": "Comment(s): _________________",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "explanatory_notes",
+          "label": "Explanatory Notes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_reporting_of_oral_cancer_including_the_wet_mucosal_lip_is_facilitated_by_the_provision_of_a_case",
+          "label": "The reporting of oral cancer including the wet mucosal lip is facilitated by the provision of a case summary illustrating the features required for comprehensive patient care. However, there are many cases in which the individual practicalities of applying such a case summary may not be straightforward. Common examples include finding the prescribed number of lymph nodes, trying to determine the levels of the radical neck dissection, and determining if isolated tumor cells in a lymph node represent metastatic disease. Case summaries have evolved to include clinical, radiographic, morphologic, immunohistochemical, and molecular results in an effort to guide clinical management. Adjuvant and neoadjuvant therapy can significantly alter histologic findings, making accurate classification an increasingly complex and demanding task. This protocol tries to remain simple while still incorporating important pathologic features as proposed by the American Joint Committee on Cancer (AJCC) cancer staging manual, the World Health Organization (WHO) classification of tumors, the TNM classification,1 the American College of Surgeons Commission on Cancer, and the International Union on Cancer (UICC). This protocol is to be used as a guide and resource, an adjunct to diagnosing and managing cancers of the oral cavity in a standardized manner. It should not be used as a substitute for dissection or grossing techniques and does not give histologic parameters to reach the diagnosis. Subjectivity is always a factor, and the elements listed are not meant to be arbitrary but are meant to provide uniformity of reporting across all the disciplines that use the information. It is a foundation of practical information that will help to meet the requirements of daily practice to benefit both clinicians and patients alike.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gress_dm_edge_sb_greene_fl_et_al_principles_of_cancer_staging_in_amin_mb_ed_ajcc_cancer_staging_manu",
+          "label": "Gress DM, Edge SB, Greene FL, et al. Principles of cancer staging. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anatomic_sites_and_subsites_for_oral_cavity1",
+          "label": "Anatomic Sites and Subsites for Oral Cavity1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucosa_of_wet_upper_and_lower_lips",
+          "label": "Mucosa of wet upper and lower lips",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buccal_mucosa",
+          "label": "Buccal mucosa",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cheek_mucosa",
+          "label": "Cheek mucosa",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "retromolar_areas",
+          "label": "Retromolar areas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "upper_alveolus_and_gingiva",
+          "label": "Upper alveolus and gingiva",
+          "required": true,
+          "type": "free_text",
+          "condition": "upper gum"
+        },
+        {
+          "field_id": "lower_alveolus_and_gingiva",
+          "label": "Lower alveolus and gingiva",
+          "required": true,
+          "type": "free_text",
+          "condition": "lower gum"
+        },
+        {
+          "field_id": "hard_palate",
+          "label": "Hard palate",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "tongue",
+          "label": "Tongue",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dorsal_surface_and_lateral_borders_anterior_to_circumvallate_papillae",
+          "label": "Dorsal surface and lateral borders anterior to circumvallate papillae",
+          "required": true,
+          "type": "free_text",
+          "condition": "anterior two-thirds"
+        },
+        {
+          "field_id": "inferior_ventral_surface",
+          "label": "Inferior (ventral) surface",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "floor_of_mouth",
+          "label": "Floor of mouth",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_applies_to_all_carcinomas_arising_at_these_sites",
+          "label": "The protocol applies to all carcinomas arising at these sites.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucosal_lip_the_mucosal_lip_begins_at_the_junction_of_the_wet_and_dry_mucosa_of_the_lip_the_anterior",
+          "label": "Mucosal Lip. The mucosal lip begins at the junction of the wet and dry mucosa of the lip (the anterior border of the portion of the lip that comes into contact with the opposed lip) and extends posteriorly into the oral cavity to the attached gingiva of the alveolar ridge. For staging purposes, tumors of the dry vermilion lip and vermilion border are now grouped with cutaneous sites given their shared pathogenesis and similar embryologic origin of these subsites to skin; only mucosal sites are covered by this protocol.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "buccal_mucosa_inner_cheek_this_includes_all_the_membrane_lining_of_the_inner_surface_of_the_cheeks_a",
+          "label": "Buccal Mucosa (Inner Cheek). This includes all the membrane lining of the inner surface of the cheeks and lips from the line of contact of the opposing lips to the line of attachment of mucosa of the alveolar ridge (upper and lower) and pterygomandibular raphe.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lower_alveolar_ridge_this_refers_to_the_mucosa_overlying_the_alveolar_process_of_the_mandible_which_",
+          "label": "Lower Alveolar Ridge. This refers to the mucosa overlying the alveolar process of the mandible, which extends from the line of attachment of mucosa in the buccal gutter to the line of free mucosa of the floor of the mouth. Posteriorly it extends to the ascending ramus of the mandible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "upper_alveolar_ridge_this_refers_to_the_mucosa_overlying_the_alveolar_process_of_the_maxilla_which_e",
+          "label": "Upper Alveolar Ridge. This refers to the mucosa overlying the alveolar process of the maxilla, which extends from the line of attachment of mucosa in the upper gingival buccal gutter to the junction of the hard palate. Its posterior margin is the upper end of the pterygopalatine arch.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "retromolar_gingiva_retromolar_trigone_this_is_the_attached_mucosa_overlying_the_ascending_ramus_of_t",
+          "label": "Retromolar Gingiva (Retromolar Trigone). This is the attached mucosa overlying the ascending ramus of the mandible from the level of the posterior surface of the last molar tooth and the apex superiorly, adjacent to the tuberosity of the maxilla.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "floor_of_the_mouth_this_is_a_semilunar_space_over_the_myelohyoid_and_hypoglossus_muscles_extending_f",
+          "label": "Floor of the Mouth. This is a semilunar space over the myelohyoid and hypoglossus muscles, extending from the inner surface of the lower alveolar ridge to the undersurface of the tongue. Its posterior boundary is the base of the anterior pillar of the tonsil. It is divided into 2 sides of the submaxillary and sublingual salivary glands.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hard_palate_this_is_the_semilunar_area_between_the_upper_alveolar_ridge_and_the_mucous_membrane_cove",
+          "label": "Hard Palate. This is the semilunar area between the upper alveolar ridge and the mucous membrane covering the palatine process of the maxillary palatine bones. It extends from the inner surface of the superior alveolar ridge to the posterior edge of the palatine bone.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anterior_two_thirds_of_the_tongue_oral_tongue_this_is_the_freely_mobile_portion_of_the_tongue_that_e",
+          "label": "Anterior Two-Thirds of the Tongue (Oral Tongue). This is the freely mobile portion of the tongue that extends anteriorly from the line of circumvallate papillae to the undersurface of the tongue at the junction of the floor of the mouth. It is composed of 4 areas: the tip, the lateral borders, the dorsum, and the undersurface (nonvillous ventral surface of the tongue). The undersurface of the tongue is considered a separate category by the WHO.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_1_diagrams_illustrating_the_oral_cavity_anatomic_subsites_figure_courtesy_of_beth_israel_medi",
+          "label": "Figure 1. Diagrams illustrating the oral cavity anatomic subsites. Figure courtesy of Beth Israel Medical Center, St. Luke’s and Roosevelt Hospitals, New York.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ridge_ja_lydiatt_wm_patel_sg_et_al_oral_cavity_in_amin_mb_ed_ajcc_cancer_staging_manual_8th_ed_new_y",
+          "label": "Ridge JA, Lydiatt WM, Patel SG, et al. Oral Cavity. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_cell_carcinoma",
+          "label": "Squamous Cell Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_cell_carcinoma_conventional",
+          "label": "Squamous cell carcinoma, conventional",
+          "required": true,
+          "type": "free_text",
+          "condition": "keratinizing"
+        },
+        {
+          "field_id": "squamous_cell_carcinoma_nonkeratinizing",
+          "label": "Squamous cell carcinoma, nonkeratinizing",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenosquamous_carcinoma",
+          "label": "Adenosquamous carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "basaloid_squamous_cell_carcinoma",
+          "label": "Basaloid squamous cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "papillary_squamous_cell_carcinoma",
+          "label": "Papillary squamous cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spindle_cell_squamous_carcinoma",
+          "label": "Spindle cell squamous carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "verrucous_carcinoma",
+          "label": "Verrucous carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinoma_cuniculatum",
+          "label": "Carcinoma cuniculatum",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphoepithelial_carcinoma",
+          "label": "Lymphoepithelial carcinoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "non-nasopharyngeal"
+        },
+        {
+          "field_id": "carcinomas_of_the_minor_salivary_glands",
+          "label": "Carcinomas of the Minor Salivary Glands",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_histologic_classification_recommended_is_the_who_classification_of_salivary_gland_tumors1",
+          "label": "The histologic classification recommended is the WHO classification of salivary gland tumors.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucoepidermoid_carcinoma",
+          "label": "Mucoepidermoid carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "adenoid_cystic_carcinoma",
+          "label": "Adenoid cystic carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "acinic_cell_carcinoma",
+          "label": "Acinic cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "secretory_carcinoma",
+          "label": "Secretory carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "polymorphous_adenocarcinoma_conventional_classic_and_cribriform_subtypes",
+          "label": "Polymorphous adenocarcinoma, conventional (classic) and cribriform subtypes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "salivary_duct_carcinoma",
+          "label": "Salivary duct carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "epithelial_myoepithelial_carcinoma",
+          "label": "Epithelial-myoepithelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hyalinizing_clear_cell_carcinoma",
+          "label": "Hyalinizing clear cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "microsecretory_adenocarcinoma",
+          "label": "Microsecretory adenocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "intraductal_carcinoma",
+          "label": "Intraductal carcinoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "with subtypes"
+        },
+        {
+          "field_id": "basal_cell_adenocarcinoma",
+          "label": "Basal cell adenocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinosarcoma",
+          "label": "Carcinosarcoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucinous_adenocarcinoma",
+          "label": "Mucinous adenocarcinoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "with subtypes"
+        },
+        {
+          "field_id": "sclerosing_microcystic_adenocarcinoma",
+          "label": "Sclerosing microcystic adenocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymphoepithelial_carcinoma",
+          "label": "Lymphoepithelial carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "myoepithelial_carcinoma",
+          "label": "Myoepithelial carcinoma",
+          "required": true,
+          "type": "free_text",
+          "condition": "malignant myoepithelioma"
+        },
+        {
+          "field_id": "sebaceous_adenocarcinoma",
+          "label": "Sebaceous adenocarcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "squamous_cell_carcinoma",
+          "label": "Squamous cell carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sialoblastoma",
+          "label": "Sialoblastoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinoma_not_otherwise_specified",
+          "label": "Carcinoma, not otherwise specified",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_carcinoma",
+          "label": "Neuroendocrine Carcinoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_recommended_histologic_classification_for_neuroendocrine_neoplasms_has_been_standardized_across_",
+          "label": "The recommended histologic classification for neuroendocrine neoplasms has been standardized across all head and neck sites.1 The entities relevant to this protocol are listed below",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_tumor_grade_1_3",
+          "label": "Neuroendocrine tumor, grade 1-3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_carcinoma_small_cell_type",
+          "label": "Neuroendocrine carcinoma, small cell type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_carcinoma_large_cell_type",
+          "label": "Neuroendocrine carcinoma, large cell type",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "additionally_composite_tumors_with_non_neuroendocrine_ca_components_exist_throughout_the_upper_aerod",
+          "label": "Additionally, composite tumors with non-neuroendocrine CA components exist throughout the upper aerodigestive tract. The carcinoma component can then be captured in this protocol accordingly.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mucosal_melanoma",
+          "label": "Mucosal Melanoma",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "given_the_rarity_of_mucosal_melanoma_grading_and_subtyping_are_not_required",
+          "label": "Given the rarity of mucosal melanoma, grading, and subtyping are not required.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_head_and_neck_tumours_internet_beta_version_ahead_of_p",
+          "label": "WHO Classification of Tumours Editorial Board. Head and neck tumours [Internet; beta version ahead of print]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023, Jan 26]. (WHO classification of tumours series, 5th ed.; vol. 9). Available from: https://tumourclassification.iarc.who.int/chapters/52.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_histologic_types_of_carcinomas_that_are_amenable_to_grading_3_histologic_grades_are_suggested_as",
+          "label": "For histologic types of carcinomas that are amenable to grading, 3 histologic grades are suggested, as shown below. For conventional squamous cell carcinoma, histologic grading as a whole does not perform well as a prognosticator.1,2 Nonetheless, it should be recorded when applicable, as it is a basic tumor characteristic. Selecting either the most prevalent grade or the highest grade for this synoptic protocol is acceptable. Subtypes of squamous cell carcinoma (i.e., verrucous, basaloid, etc.) have an intrinsic biologic potential.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_1_well_differentiated",
+          "label": "Grade 1\tWell differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_2_moderately_differentiated",
+          "label": "Grade 2\tModerately differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_3_poorly_differentiated",
+          "label": "Grade 3\tPoorly differentiated",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "grade_x_cannot_be_assessed",
+          "label": "Grade X\tCannot be assessed",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_histologic_microscopic_grading_of_salivary_gland_carcinomas_has_been_shown_to_be_an_independent_",
+          "label": "The histologic (microscopic) grading of salivary gland carcinomas has been shown to be an independent predictor of behavior and plays a role in optimizing therapy. Further, there is often a positive correlation between histologic grade and clinical stage.3,4,5,6 However, most salivary gland carcinoma types have an intrinsic biologic behavior, and attempted application of a universal grading scheme is suboptimal given tumor specific nuances.5 Thus, a generic grading scheme is no longer recommended for salivary gland carcinomas.7",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "however_within_a_given_tumor_type_grade_remains_an_important_prognostic_parameter_carcinoma_types_fo",
+          "label": "However, within a given tumor type, grade remains an important prognostic parameter. Carcinoma types for which grading systems exist and are relevant are incorporated into histologic type. The classic categories that are still graded using three tier schemes include mucoepidermoid carcinoma, and carcinoma, not otherwise specified. While adenoid cystic carcinoma was historically stratified into three tiers, current classification no longer advocates for this.4,5,8  Additionally, several tumor types can at least be stratified into low and high grade. High grade transformation (historically designated as dedifferentiation) refers to the phenomenon of progression from a conventional, usually indolent phenotype, to a pleomorphic aggressive morphology.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "as_such_carcinomas_can_alternatively_be_stratified_by_their_risk_for_structural_recurrence_by_a_comb",
+          "label": "As such carcinomas can alternatively be stratified by their risk for structural recurrence by a combination of category, subtype, and category specific grade9 as in Table 1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_1_risk_stratification_of_salivary_gland_carcinomas",
+          "label": "Table 1:  Risk Stratification of Salivary Gland Carcinomas",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "abbreviations_hgt_high_grade_transformation_nos_not_otherwise_specified",
+          "label": "Abbreviations: HGT-high grade transformation. NOS-not otherwise specified",
+          "required": true,
+          "type": "free_text",
+          "guidance": "Carcinoma ex pleomorphic adenoma behavior is determined by carcinoma type and extent"
+        },
+        {
+          "field_id": "adenoid_cystic_carcinomas_were_historically_stratified_into_three_tiers_based_on_tubular_cribriform_",
+          "label": "Adenoid cystic carcinomas were historically stratified into three tiers based on tubular, cribriform, and solid (>30%) patterns respectively.8 However currently, while solid pattern remains an integral prognosticator, no standard grading scheme is endorsed. The histologic grading of mucoepidermoid carcinoma includes a combination of growth pattern characteristics (e.g., cystic, solid, neurotropism) and cytomorphologic findings (e.g., anaplasia, mitoses, necrosis).10,11,12 Carcinomas, not otherwise specified, do not have a formalized grading scheme and are graded intuitively based on cytomorphologic features.6 Polymorphous adenocarcinomas and intraductal carcinomas are to be graded as per current WHO recommendations. Polymorphous adenocarcinomas should be subtyped into conventional and cribriform types (i.e., cribriform adenocarcinoma of minor salivary gland). The latter is more frequently extrapalatal and locoregionally aggressive. Along these lines, papillary components (>10%) and cribriform components (>30%) regardless of subtype have been shown to be prognostically relevant and these can be recorded optionally.13 Intraductal carcinomas can be subtyped and graded, as both influence biologic behavior.14 Additionally, two-tier grading schema have shown prognostic relevance for other tumor types such as myoepithelial carcinoma,15 and acinic cell carcinoma.16 Low grade and high grade are generally separated by mitotic counts and/or necrosis.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_current_protocol_is_thus_structured_to_allow_for_provision_of_grade_or_biologic_potential_for_al",
+          "label": "The current protocol is thus structured to allow for provision of grade or biologic potential for almost every epithelial tumor type in at least a two-tier fashion as per Table 1. For instance, epithelial-myoepithelial carcinoma, basal cell adenocarcinoma, and hyalinizing clear cell carcinoma can be assigned a default low grade/biologic potential category.  Conversely, salivary duct carcinoma and lymphoepithelial carcinoma can be considered high grade/biologic potential category as a default. One key point is that adenoid cystic carcinoma should NEVER be assigned a low grade/biologic potential category. As this is one entity that does not fit into a standard risk of structural recurrence (i.e., discordant prevalence of local and regional aggression), this can be assigned N/A if non-solid and high grade if solid (>30%) or high grade transformed.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinoma_ex_pleomorphic_adenoma_is_subclassifed_by_histologic_type_andor_grade_and_extent_of_invasi",
+          "label": "Carcinoma ex pleomorphic adenoma is subclassifed by histologic type and/or grade and extent of invasion, the latter including minimally invasive, invasive, and intracapsular (noninvasive) cancers. Previously the cut-off for minimal invasion was designated as 1.5 mm; however, more recent studies have shown a favorable prognosis even with cut-offs of 4 mm to 6 mm.17 Thus, there is no agreement on an optimal cut-off. However, from a practical standpoint, the terms intracapsular and minimally invasive should only be applied to uninodular tumors (as opposed to carcinomas arising in multinodular recurrent pleomorphic adenomas) with a well-delineated interface for which the entire lesional border has been microscopically evaluated. Prognosis has been linked to degree of invasion with noninvasive and minimally invasive cancers apparently having a better prognosis than invasive cancers.5,17,18 Carcinosarcoma is a rare subtype morphology that while currently separated, appears to almost invariably arise in the setting of a precursor pleomorphic adenoma and should likely be regarded as a sarcomatoid carcinoma subtype ex pleomorphic adenoma.19",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "aside_from_pleomorphic_adenoma_other_precursor_lesions_most_notably_intercalated_duct_lesionadenoma1",
+          "label": "Aside from pleomorphic adenoma, other precursor lesions, most notably intercalated duct lesion/adenoma,1,20 exist. Though biologically and diagnostically relevant, documentation of these precursors is currently optional (non-core) as there is limited literature20 on these.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_who_5th_edition_has_standardized_the_terminology_for_head_and_neck_neuroendocrine_neoplasms_acro",
+          "label": "The WHO 5th edition has standardized the terminology for head and neck neuroendocrine neoplasms across all subsites.21 Tumors previously designated as carcinoid and well-differentiated neuroendocrine carcinoma would now be considered grade 1 neuroendocrine tumors while atypical carcinoids/moderately-differentiated neuroendocrine carcinomas are now considered grade 2 neuroendocrine tumors. Grade 3 neuroendocrine tumor is a provisional category with no historical analogue. It must be emphasized that this category in head and neck sites is provisional with no current evidence to support its use in head and neck sites. Practically speaking, tumors that exceed the mitotic rate for grade 2 neuroendocrine tumors are usually more in keeping with neuroendocrine carcinomas (see below). Grading of neuroendocrine tumors is summarized in Table 2. Ki-67 proliferation indices are recommended for neuroendocrine tumors of head and neck, but are not required elements, and delineation of grade 1 and 2 at this site by proliferation index is not yet established.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "table_2_who_classification_of_head_and_neck_neuroendocrine_tumors",
+          "label": "Table 2:  WHO Classification of Head and Neck Neuroendocrine Tumors",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "neuroendocrine_carcinoma_small_cell_types_and_large_cell_types_on_the_other_hand_have_not_changed_mu",
+          "label": "Neuroendocrine carcinoma, small cell types and large cell types on the other hand, have not changed much in terms of their designation and reflect poorly differentiated neuroendocrine malignancies that were previously labeled small cell and large cell neuroendocrine carcinomas respectively. These characteristically show necrosis and have mitotic counts that exceed 10 per two mm2. While neuroendocrine tumors and carcinomas are defined by neuroendocrine marker expression (synaptophysin, chromogranin, and/or INSM-1), other tumor types at each head and neck subsite may express these.  Morphologic, other immunophenotypic, and molecular features would then supersede this neuroendocrine marker expression for classification.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_head_and_neck_tumours_internet_beta_version_ahead_of_p",
+          "label": "WHO Classification of Tumours Editorial Board. Head and neck tumours [Internet; beta version ahead of print]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023, Jan 26]. (WHO classification of tumours series, 5th ed.; vol. 9). Available from: https://tumourclassification.iarc.who.int/chapters/52.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ridge_ja_lydiatt_wm_patel_sg_et_al_oral_cavity_in_amin_mb_ed_ajcc_cancer_staging_manual_8th_ed_new_y",
+          "label": "Ridge JA, Lydiatt WM, Patel SG, et al. Oral Cavity. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spiro_rh_thaler_ht_hicks_wf_kher_ua_huvos_ah_strong_ew_the_importance_of_clinical_staging_of_minor_s",
+          "label": "Spiro RH, Thaler HT, Hicks WF, Kher UA, Huvos AH, Strong EW. The importance of clinical staging of minor salivary gland carcinoma. Am J Surg. 1991;162(4):330-336.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "spiro_rh_huvos_ag_strong_ew_adenocarcinoma_of_salivary_origin_clinicopathologic_study_of_204_patient",
+          "label": "Spiro RH, Huvos AG, Strong EW. Adenocarcinoma of salivary origin. Clinicopathologic study of 204 patients. Am J Surg. 1982;144(4):423-431.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "seethala_rr_histologic_grading_and_prognostic_biomarkers_in_salivary_gland_carcinomas_adv_anat_patho",
+          "label": "Seethala RR. Histologic grading and prognostic biomarkers in salivary gland carcinomas. Adv Anat Pathol. 2011;18(1):29-45.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kane_wj_mccaffrey_tv_olsen_kd_lewis_je_primary_parotid_malignancies_a_clinical_and_pathologic_review",
+          "label": "Kane WJ, McCaffrey TV, Olsen KD, Lewis JE. Primary parotid malignancies. A clinical and pathologic review. Arch Otolaryngol Head Neck Surg. 1991 Mar;117(3):307-15. doi: 10.1001/archotol.1991.01870150075010. PMID: 1998571.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lydiatt_wm_mukherji_sk_osullivan_b_patel_sg_shah_jp_major_salivary_glands_in_amin_mb_ed_ajcc_cancer_",
+          "label": "Lydiatt WM, Mukherji SK, O'Sullivan B, Patel SG, Shah JP. Major salivary glands. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "szanto_pa_luna_ma_tortoledo_me_white_ra_histologic_grading_of_adenoid_cystic_carcinoma_of_the_saliva",
+          "label": "Szanto PA, Luna MA, Tortoledo ME, White RA. Histologic grading of adenoid cystic carcinoma of the salivary glands. Cancer. 1984;54(6):1062-1069.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ramalingam_n_thiagarajan_s_chidambaranathan_n_et_al_regression_derived_staging_model_to_predict_over",
+          "label": "Ramalingam N, Thiagarajan S, Chidambaranathan N, et al. Regression Derived Staging Model to Predict Overall and Disease Specific Survival in Patients With Major Salivary Gland Carcinomas With Independent External Validation. JCO Glob Oncol 2022;8:e2200150. doi: 10.1200/GO.22.00150 [published Online First: 2022/08/19].",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "katabi_n_ghossein_r_ali_s_dogan_s_klimstra_d_ganly_i_prognostic_features_in_mucoepidermoid_carcinoma",
+          "label": "Katabi N, Ghossein R, Ali S, Dogan S, Klimstra D, Ganly I. Prognostic features in mucoepidermoid carcinoma of major salivary glands with emphasis on tumour histologic grading. Histopathology. 2014 Dec;65(6):793-804. doi: 10.1111/his.12488. Epub 2014 Aug 26.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brandwein_ms_ivanov_k_wallace_di_et_al_mucoepidermoid_carcinoma_a_clinicopathologic_study_of_80_pati",
+          "label": "Brandwein MS, Ivanov K, Wallace DI, et al. Mucoepidermoid carcinoma: a clinicopathologic study of 80 patients with special reference to histological grading. Am J Surg Pathol. 2001;25(7):835-845.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "auclair_pl_goode_rk_ellis_gl_mucoepidermoid_carcinoma_of_intraoral_salivary_glands_evaluation_and_ap",
+          "label": "Auclair PL, Goode RK, Ellis GL. Mucoepidermoid carcinoma of intraoral salivary glands. Evaluation and application of grading criteria in 143 cases. Cancer. 1992;69(8):2021-2030.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "xu_b_aneja_a_ghossein_r_katabi_n_predictors_of_outcome_in_the_phenotypic_spectrum_of_polymorphous_lo",
+          "label": "Xu B, Aneja A, Ghossein R, Katabi N. Predictors of Outcome in the Phenotypic Spectrum of Polymorphous Low-grade Adenocarcinoma (PLGA) and Cribriform Adenocarcinoma of Salivary Gland (CASG): A Retrospective Study of 69 Patients. Am J Surg Pathol. 2016 Nov;40(11):1526-1537.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "thompson_ldr_bishop_ja_salivary_gland_intraductal_carcinoma_how_do_183_reported_cases_fit_into_a_dev",
+          "label": "Thompson LDR, Bishop JA. Salivary Gland Intraductal Carcinoma: How Do 183 Reported Cases Fit Into a Developing Classification. Adv Anat Pathol. 2023 Mar 1;30(2):112-129. doi: 10.1097/PAP.0000000000000362. Epub 2022 Aug 30. PMID: 36040027.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kong_m_drill_en_morris_l_west_l_klimstra_d_gonen_m_ghossein_r_katabi_n_prognostic_factors_in_myoepit",
+          "label": "Kong M, Drill EN, Morris L, West L, Klimstra D, Gonen M, Ghossein R, Katabi N. Prognostic factors in myoepithelial carcinoma of salivary glands: a clinicopathologic study of 48 cases. Am J Surg Pathol. 2015 Jul;39(7):931-8. doi: 10.1097/PAS.0000000000000452. PMID: 25970687; PMCID: PMC4939272.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "xu_b_saliba_m_ho_a_viswanathan_k_alzumaili_b_dogan_s_ghossein_r_katabi_n_head_and_neck_acinic_cell_c",
+          "label": "Xu B, Saliba M, Ho A, Viswanathan K, Alzumaili B, Dogan S, Ghossein R, Katabi N. Head and Neck Acinic Cell Carcinoma: A New Grading System Proposal and Diagnostic Utility of NR4A3 Immunohistochemistry. Am J Surg Pathol. 2022 Jul 1;46(7):933-941. doi: 10.1097/PAS.0000000000001867. Epub 2022 Jan 17. PMID: 35034042.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "katabi_n_chiosea_s_fonseca_i_et_al_carcinoma_ex_pleomorphic_adenoma_in_who_classification_of_tumours",
+          "label": "Katabi N, Chiosea S, Fonseca I et al. Carcinoma ex Pleomorphic adenoma. In: WHO Classification of Tumours Editorial Board. Head and neck tumours [Internet; beta version ahead of print]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 26]. (WHO classification of tumours series, 5th ed.; vol. 9). Available from: https://tumourclassification.iarc.who.int/chapters/52.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brandwein_m_huvos_ag_dardick_i_thomas_mj_theise_nd_noninvasive_and_minimally_invasive_carcinoma_ex_m",
+          "label": "Brandwein M, Huvos AG, Dardick I, Thomas MJ, Theise ND. Noninvasive and minimally invasive carcinoma ex mixed tumor: a clinicopathologic and ploidy study of 12 patients with major salivary tumors of low (or no?) malignant potential. Oral Surg Oral Med Oral Pathol Oral Radiol Endod. 1996;81(6):655-664.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ihrler_s_stiefel_d_jurmeister_p_sandison_a_chaston_n_laco_j_zidar_n_brcic_l_stoehr_r_agaimy_asalivar",
+          "label": "Ihrler S, Stiefel D, Jurmeister P, Sandison A, Chaston N, Laco J, Zidar N, Brcic L, Stoehr R, Agaimy A.Salivary carcinosarcoma: insight into multistep pathogenesis indicates uniform origin as sarcomatoid variant of carcinoma ex pleomorphic adenoma with frequent heterologous elements. Histopathology. 2023 Mar;82(4):576-586",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mclean_ac_rooper_lm_gagan_j_thompson_ldr_bishop_ja_a_subset_of_salivary_intercalated_duct_lesions_ha",
+          "label": "McLean AC, Rooper LM, Gagan J, Thompson LDR, Bishop JA. A Subset of Salivary Intercalated Duct Lesions Harbors Recurrent CTNNB1 and HRAS Mutations: A Molecular Link to Basal Cell Adenoma and Epithelial-Myoepithelial Carcinoma? Head Neck Pathol. 2022 Dec 8. doi: 10.1007/s12105-022-01513-x. Epub ahead of print. PMID: 36480093.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "mete_o_gill_a_and_nosé_v_neuroendocrine_neoplasms_and_paraganglioma_introduction_in_who_classificati",
+          "label": "Mete O, Gill A, and Nosé V.  Neuroendocrine neoplasms and paraganglioma: Introduction. In: WHO Classification of Tumours Editorial Board. Head and neck tumours [Internet; beta version ahead of print]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023 Jan 26]. (WHO classification of tumours series, 5th ed.; vol. 9). Available from: https://tumourclassification.iarc.who.int/chapters/52.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_microscopic_measurement_of_tumor_thickness_or_depth_of_invasion_doi_has_long_been_considered_a_v",
+          "label": "The microscopic measurement of tumor thickness or depth of invasion (DOI) has long been considered a valuable parameter for predicting regional nodal involvement and survival in oral cavity squamous cell carcinoma.1,2  Proper gross techniques (avoidance of tangential cuts and serial sectioning of the lesion at 2-3 mm intervals) will facilitate subsequent microscopic assessment. While thickness and DOI are often regarded as synonymous, they have slight differences.2 Thickness is usually measured from the mucosal surface of the tumor to the deepest point of tissue invasion in a perpendicular fashion with an optical micrometer or transparent ruler overlaid on the slide, while DOI is measured from the basement membrane of adjacent normal to the deepest point of invasion of the tumor. AJCC 8th edition now uses DOI for staging3 and a standard approach is outlined in Figure 2, A and B. While a similar approach has been implied for non-squamous cell carcinomas (i.e., minor salivary gland carcinomas), this is not substantiated and thus not required for non-squamous cell carcinomas.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_a_depth_of_invasion_doi_the_horizon_is_established_at_the_level_of_the_basement_membrane_re",
+          "label": "Figure 2, A. Depth of invasion (DOI). The horizon is established at the level of the basement membrane relative to the closest intact squamous mucosa. The greatest DOI is measured by dropping a “plumb line” from the horizon. From AJCC Cancer Staging Manual. 8th ed. New York: Springer; 2017. © American Joint Committee on Cancer. Reproduced with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_2_b_depth_of_invasion_doi_in_an_ulcerated_carcinoma_notice_how_tumor_thickness_would_be_decep",
+          "label": "Figure 2, B. Depth of invasion (DOI) in an ulcerated carcinoma. Notice how “tumor thickness” would be deceptively thinner than DOI. From AJCC Cancer Staging Manual. 8th ed. New York: Springer; 2017.  © American Joint Committee on Cancer. Reproduced with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pentenero_m_navone_r_motta_f_et_al_clinical_features_of_microinvasive_stage_i_oral_carcinoma_oral_di",
+          "label": "Pentenero M, Navone R, Motta F, et al. Clinical features of microinvasive stage I oral carcinoma. Oral Dis. 2011;17(3):298-303.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ebrahimi_a_gil_z_amit_m_international_consortium_for_outcome_research_icor_in_head_and_neck_cancer_p",
+          "label": "Ebrahimi A, Gil Z, Amit M. International Consortium for Outcome Research (ICOR) in Head and Neck Cancer. Primary tumor staging for oral cancer and a proposed modification incorporating depth of invasion: an international multicenter retrospective study. JAMA Otolaryngol Head Neck Surg. 2014;140(12):1138-1148.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ridge_ja_lydiatt_wm_patel_sg_et_al_lip_and_oral_cavity_in_amin_mb_ed_ajcc_cancer_staging_manual_8th_",
+          "label": "Ridge JA, Lydiatt WM, Patel SG, et al. Lip and oral cavity. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "calabrese_l_nocini_r_spirito_f_gazzini_l_dallari_v_girolami_i_lo_muzio_l_the_role_of_the_depth_of_in",
+          "label": "Calabrese L, Nocini R, Spirito F, Gazzini L, Dallari V, Girolami I, Lo Muzio L. The role of the depth of invasion (DOI) in minor salivary glands tumors according to the 8th TNM classification: Pitfalls and potential misinterpretations. Oral Oncol. 2022 Mar;126:105751.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "traditionally_the_presence_of_perineural_invasion_neurotropism_is_an_important_predictor_of_poor_pro",
+          "label": "Traditionally, the presence of perineural invasion (neurotropism) is an important predictor of poor prognosis in head and neck cancer of virtually all sites.1 The presence of perineural invasion (neurotropism) in the primary cancer is associated with poor local disease control and regional control, as well as being associated with metastasis to regional lymph nodes.1 Further, perineural invasion is associated with decrease in disease-specific survival and overall survival.1 There is conflicting data relative to an association between the presence of perineural invasion and the development of distant metastasis, with some studies showing an increased association with distant metastasis, while other studies showing no correlation with distant metastasis.1 The relationship between perineural invasion and prognosis is independent of nerve diameter.2 Additionally, emerging evidence suggests that extratumoral perineural invasion may be more prognostically relevant.3 Although perineural invasion of small unnamed nerves may not produce clinical symptoms, the reporting of perineural invasion includes nerves of all sizes including small peripheral nerves (i.e., less than 1 mm in diameter). Aside from the impact on prognosis, the presence of perineural invasion also guides therapy. Concurrent adjuvant chemoradiation therapy has been shown to improve outcomes in patients with perineural invasion (as well as in patients with extranodal extension and bone invasion).4,5 Given the significance relative to prognosis and treatment, perineural invasion is a required data element in the reporting of head and neck cancers. Extent of perineural invasion is an emerging element, and features such as extratumoral extent are suggested for reporting.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smith_bd_haffty_bg_prognostic_factoris_in_patients_with_head_and_neck_cancer_in_harrison_lb_sessions",
+          "label": "Smith BD, Haffty BG. Prognostic factoris in patients with head and neck cancer. In: Harrison LB, Sessions RB, Hong WK, eds. Head and Neck Cancer: A Multidisciplinary Approach. Philadelphia, PA: Lippincott Williams and Wilkins; 2009:51-75.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "fagan_jj_collins_b_barnes_l_et_al_perineural_invasion_in_squamous_cell_carcinoma_of_the_head_and_nec",
+          "label": "Fagan JJ, Collins B, Barnes L, et al. Perineural invasion in squamous cell carcinoma of the head and neck. Arch Otolaryngol Head Neck Surg. 1998;124(6):637-640.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "miller_me_palla_b_chen_q_et_al_a_novel_classification_system_for_perineural_invasion_in_noncutaneous",
+          "label": "Miller ME, Palla B, Chen Q, et al. A novel classification system for perineural invasion in noncutaneous head and neck squamous cell carcinoma: histologic subcategories and patient outcomes. Am J Otolaryngol. 2012;33(2):212-215.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "cooper_js_pajak_tf_forastiere_aa_et_al_postoperative_concurrent_radiotherapy_and_chemotherapy_for_hi",
+          "label": "Cooper JS, Pajak TF, Forastiere AA, et al. Postoperative concurrent radiotherapy and chemotherapy for high-risk squamous-cell carcinoma of the head and neck. N Engl J Med. 2004;350(19):1937-1944.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "bernier_j_domenge_c_ozsahin_m_et_al_postoperative_irradiation_with_or_without_concomitant_chemothera",
+          "label": "Bernier J, Domenge C, Ozsahin M, et al. Postoperative irradiation with or without concomitant chemotherapy for locally advanced head and neck cancer. N Engl J Med. 2004;350(19):1945-1952.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "g_worst_pattern_of_invasion",
+          "label": "G. Worst Pattern of Invasion",
+          "required": true,
+          "type": "free_text",
+          "condition": "WPOI"
+        },
+        {
+          "field_id": "worst_pattern_of_invasion_wpoi_has_been_validated_as_a_prognosticator_for_oral_cavity_squamous_carci",
+          "label": "Worst pattern of invasion (WPOI) has been validated as a prognosticator for oral cavity squamous carcinomas.1,2,3 While there are 5 patterns noted, distinction between WPOI-5 and other patterns is what is most relevant. WPOI-5 is defined by tumor dispersion ≥1 mm between tumor satellites. Examples of pattern 5 are shown in Figure 3. WPOI has been validated on multivariate analysis in oral tumors, also specifically in low stage tumors.  However, WPOI can be viewed as redundant and only optional for reporting purposes as extratumoral perineural invasion (PNI), and angiolymphatic invasion also count as WPOI-5.4",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_3_a_low_power_overview_demonstrating_generalized_tumor_dispersion_which_is_measured_at_the_ad",
+          "label": "Figure 3.  A. Low-power overview demonstrating generalized tumor dispersion, which is measured at the advancing tumor edge. Carcinoma satellites in the green box are shown in B., lower edge. The green line denotes spread of almost 2 mm, fulfilling criteria for WPOI-5. C. This carcinoma reveals rare, dispersed satellites fulfilling this criteria, likely due to extratumoral lymphovascular emboli. From AJCC Cancer Staging Manual. 8th ed. New York: Springer; 2017. © American Joint Committee on Cancer. Reproduced with permission.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brandwein_gensler_m_smith_rv_wang_b_et_al_validation_of_the_histologic_risk_model_in_a_new_cohort_of",
+          "label": "Brandwein-Gensler M, Smith RV, Wang B, et al. Validation of the histologic risk model in a new cohort of patients with head and neck squamous cell carcinoma. Am J Surg Pathol. 2010;34(5):676-688.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brandwein_gensler_m_teixeira_ms_lewis_cm_et_al_oral_squamous_cell_carcinoma_histologic_risk_assessme",
+          "label": "Brandwein-Gensler M, Teixeira MS, Lewis CM, et al. Oral squamous cell carcinoma: histologic risk assessment, but not margin status, is strongly predictive of local disease-free and overall survival. Am J Surg Pathol. 2005;29(2):167-178.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "li_y_bai_s_carroll_w_et_al_validation_of_the_risk_model_high_risk_classification_and_tumor_pattern_o",
+          "label": "Li Y, Bai S, Carroll W, et al. Validation of the risk model: high-risk classification and tumor pattern of invasion predict outcome for patients with low-stage oral cavity squamous cell carcinoma. Head Neck Pathol. 2013;7(3):211-223.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ridge_ja_lydiatt_wm_patel_sg_et_al_lip_and_oral_cavity_in_amin_mb_ed_ajcc_cancer_staging_manual_8th_",
+          "label": "Ridge JA, Lydiatt WM, Patel SG, et al. Lip and oral cavity. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_definition_of_a_positive_margin_is_somewhat_controversial_given_the_varied_results_from_prior_st",
+          "label": "The definition of a positive margin is somewhat controversial given the varied results from prior studies.1,2 However, overall, several studies support the definition of a positive margin to be invasive carcinoma or carcinoma in situ/high-grade dysplasia present at margins (microscopic cut-through of tumor).3 Furthermore, reporting of surgical margins should also include information regarding the distance of invasive carcinoma, carcinoma in situ, or high-grade dysplasia (moderate to severe) from the surgical margin. Tumors with “close” margins also carry an increased risk for local recurrence.2,3 The definition of a “close” margin is not standardized as the effective cut-off varies between studies and between anatomic subsites. Commonly used cut points to define close margins are 5 mm in general and 2 mm with respect to glottic larynx.2 However, values ranging from 3 mm to 7 mm have been used with success,2,4 and for glottic tumors as low as 1 mm.5 Thus, distance of tumor from the nearest margin should be recorded.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regarding_what_actually_represents_the_relevant_margin_status_it_becomes_increasingly_clear_that_mar",
+          "label": "Regarding what actually represents the relevant margin status, it becomes increasingly clear that margins obtained from the main resection specimen are of more reliable prognostic value.6,7,8,9 The clinical value of tumor bed margins (i.e., margins taken separately) is often undermined by their uncertain origin with respect to the main resection,10 infrequent orientation as to the new margin surface, and fragmentation. Biopsies of tumor bed (or tumor bed margins) have low sensitivity for detecting a positive margin from the actual resection specimen and, by definition, cannot identify “close” resection specimen margins. It is then justifiable to report the specimen margin status separately from the tumor bed margin status (see below). Of note, these findings have also been reported in other anatomic sites.7,11,12,13",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "nonetheless_tumor_bed_margin_status_is_still_utilized_in_various_practice_settings_for_patient_manag",
+          "label": "Nonetheless, tumor bed margin status is still utilized in various practice settings for patient management.14,15 However, the challenge for pathologists is to arrive at a “final” margin status, integrating both tumor bed and specimen margin status. As it is in multi-part resections, the pathologist’s ability to confidently establish the relationship between the main resected specimen and additional, separately submitted parts and to assess the adequacy of excision is compromised.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "to_optimize_reporting_both_specimen_margin_and_tumor_bed_margin_status_should_thus_be_reported_separ",
+          "label": "To optimize reporting, both specimen margin and tumor bed margin status should thus be reported separately.  The “final” margin status then becomes a multidisciplinary integration of these findings. For instance, in cases with differing margin statuses (i.e., resection specimen margin positive, corresponding tumor bed margin negative), the small size and lack of orientation of the tumor bed margin may preclude a reliable conversion to final negative margin. Conversely, in some cases the tumor bed specimen (e.g., revision of margin) may be a reliable indicator of a true final margin. This is a judgment call that requires close interaction between the surgeon and pathologist, but, generally, the following basic requirements are met: (1) tumor bed margins are quite large (i.e., thick enough to be readily processed as radial margins and large enough to match the corresponding aspect of the main specimen margin); (2) are oriented as to the new true margin surface (by ink or stitch); (3) the physical relationship between the main resection specimen and additional tumor bed margins is confirmed by pathologist and surgeon (usually through unequivocal labeling, and even fitting the tumor bed margin to the main specimen). In such a case, the tumor bed margin could be considered a final margin.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dysplasia",
+          "label": "Dysplasia",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_types_of_intraepithelial_dysplasia_of_the_upper_aerodigestive_tract_uadt_include_nonkeratinizing",
+          "label": "The types of intraepithelial dysplasia of the upper aerodigestive tract (UADT) include nonkeratinizing (“classic”) dysplasia and keratinizing dysplasia. Of the 2 types of dysplasias, the keratinizing dysplasias are significantly more common than the nonkeratinizing dysplasias. Unlike laryngeal dysplasia, a 3-tier system for oral dysplasia is not entirely abandoned though a 2-tier system is implied in the most recent WHO (see also Note K).16 Generally, mild dysplasia at a margin is considered low risk and negative, while severe dysplasia at margin is considered high risk and positive. Moderate dysplasia at margin implies an intermediate risk and is reported as positive. Other meaningful dysplasia/preneoplasia subtypes include HPV-associated oral epithelial dysplasia and lesions seen in proliferative verrucous leukoplakia.16",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "orientation_of_specimen",
+          "label": "Orientation of Specimen",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "complex_specimens_should_be_examined_and_oriented_with_the_assistance_of_the_operating_surgeons_dire",
+          "label": "Complex specimens should be examined and oriented with the assistance of the operating surgeon(s). Direct communication between the surgeon and pathologist is a critical component in specimen orientation and proper sectioning. Whenever possible, the tissue examination request form should include a drawing or photograph of the resected specimen showing the extent of the tumor and its relation to the anatomic structures of the region. The lines and extent of the resection can be depicted on preprinted adhesive labels and attached to the surgical pathology request forms.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "brandwein_gensler_m_teixeira_ms_lewis_cm_et_al_oral_squamous_cell_carcinoma_histologic_risk_assessme",
+          "label": "Brandwein-Gensler M, Teixeira MS, Lewis CM, et al. Oral squamous cell carcinoma: histologic risk assessment, but not margin status, is strongly predictive of local disease-free and overall survival. Am J Surg Pathol. 2005;29(2):167-178.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hinni_ml_ferlito_a_brandwein_gensler_ms_et_al_surgical_margins_in_head_and_neck_cancer_a_contemporar",
+          "label": "Hinni ML, Ferlito A, Brandwein-Gensler MS, et al. Surgical margins in head and neck cancer: a contemporary review. Head Neck. 2013;35(9):1362-1370.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "alicandri_ciufelli_m_bonali_m_piccinini_a_et_al_surgical_margins_in_head_and_neck_squamous_cell_carc",
+          "label": "Alicandri-Ciufelli M, Bonali M, Piccinini A, et al. Surgical margins in head and neck squamous cell carcinoma: what is 'close'? Eur Arch Otorhinolaryngol. 2013;270(10):2603-2609.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "liao_ct_chang_jt_wang_hm_et_al_analysis_of_risk_factors_of_predictive_local_tumor_control_in_oral_ca",
+          "label": "Liao CT, Chang JT, Wang HM, et al. Analysis of risk factors of predictive local tumor control in oral cavity cancer. Ann Surg Oncol. 2008;15(3):915-922.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ansarin_m_santoro_l_cattaneo_a_et_al_laser_surgery_for_early_glottic_cancer_impact_of_margin_status_",
+          "label": "Ansarin M, Santoro L, Cattaneo A, et al. Laser surgery for early glottic cancer: impact of margin status on local control and organ preservation. Arch Otolaryngol Head Neck Surg. 2009;135(4):385-390.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "miller_me_palla_b_chen_q_et_al_a_novel_classification_system_for_perineural_invasion_in_noncutaneous",
+          "label": "Miller ME, Palla B, Chen Q, et al. A novel classification system for perineural invasion in noncutaneous head and neck squamous cell carcinoma: histologic subcategories and patient outcomes. Am J Otolaryngol. 2012;33(2):212-215.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "chang_am_kim_sw_duvvuri_u_et_al_early_squamous_cell_carcinoma_of_the_oral_tongue_comparing_margins_o",
+          "label": "Chang AM, Kim SW, Duvvuri U, et al. Early squamous cell carcinoma of the oral tongue: comparing margins obtained from the glossectomy specimen to margins from the tumor bed. Oral Oncol. 2013;49(11):1077-1082.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "varvares_ma_poti_s_kenyon_b_christopher_k_walker_rj_surgical_margins_and_primary_site_resection_in_a",
+          "label": "Varvares MA, Poti S, Kenyon B, Christopher K, Walker RJ. Surgical margins and primary site resection in achieving local control in oral cancer resections. Laryngoscope. 2015;125(10):2298-2307.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "maxwell_jh_thompson_ld_brandwein_gensler_ms_et_al_early_oral_tongue_squamous_cell_carcinoma_sampling",
+          "label": "Maxwell JH, Thompson LD, Brandwein-Gensler MS, et al. Early oral tongue squamous cell carcinoma: sampling of margins from tumor bed and worse local control. JAMA Otolaryngol Head Neck Surg. 2015;141(12):1104-1110.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "kerawala_cj_ong_tk_relocating_the_site_of_frozen_sections_is_there_room_for_improvement_head_neck_20",
+          "label": "Kerawala CJ, Ong TK. Relocating the site of frozen sections - is there room for improvement? Head Neck. 2001;23(3):230-232.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "hagemann_is_lewis_jr_js_a_retrospective_comparison_of_2_methods_of_intraoperative_margin_evaluation_",
+          "label": "Hagemann IS, Lewis Jr. JS. A retrospective comparison of 2 methods of intraoperative margin evaluation during partial nephrectomy. J Urol. 2009;181(2):500-505.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dinardo_lj_lin_j_karageorge_ls_powers_cn_accuracy_utility_and_cost_of_frozen_section_margins_in_head",
+          "label": "DiNardo LJ, Lin J, Karageorge LS, Powers CN. Accuracy, utility, and cost of frozen section margins in head and neck cancer surgery. Laryngoscope. 2000;110(10 Pt 1):1773-1776.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "yahalom_r_dobriyan_a_vered_m_et_al_a_prospective_study_of_surgical_margin_status_in_oral_squamous_ce",
+          "label": "Yahalom R, Dobriyan A, Vered M, et al. A prospective study of surgical margin status in oral squamous cell carcinoma: a preliminary report. J Surg Oncol. 2008;98(8):572-578.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "black_c_marotti_j_zarovnaya_e_paydarfar_j_critical_evaluation_of_frozen_section_margins_in_head_and_",
+          "label": "Black C, Marotti J, Zarovnaya E, Paydarfar J. Critical evaluation of frozen section margins in head and neck cancer resections. Cancer. 2006;107(12):2792-2800.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "meier_jd_oliver_da_varvares_ma_surgical_margin_determination_in_head_and_neck_oncology_current_clini",
+          "label": "Meier JD, Oliver DA, Varvares MA. Surgical margin determination in head and neck oncology: current clinical practice. The results of an International American Head and Neck Society Member Survey. Head Neck. 2005;27(11):952-958.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "who_classification_of_tumours_editorial_board_head_and_neck_tumours_internet_beta_version_ahead_of_p",
+          "label": "WHO Classification of Tumours Editorial Board. Head and neck tumours [Internet; beta version ahead of print]. Lyon (France): International Agency for Research on Cancer; 2022 [cited 2023, Jan 26]. (WHO classification of tumours series, 5th ed.; vol. 9). Available from: https://tumourclassification.iarc.who.int/chapters/52.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "direct_extension_of_tumor_to_lymph_node",
+          "label": "Direct Extension of Tumor to Lymph Node",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_data_are_essentially_nonexistent_for_defining_n_status_for_lymph_nodes_involved_by_tumor_via_d",
+          "label": "While data are essentially nonexistent for defining N status for lymph nodes involved by tumor via direct extension for head and neck cancers, the general convention based on other organ sites is to consider these positive for N categorization and counting purposes. It is recommended however to denote in the report the number of lymph nodes involved in this manner as it may influence more nuanced management decisions.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "measurement_of_tumor_metastasis",
+          "label": "Measurement of Tumor Metastasis",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_cross_sectional_diameter_of_the_largest_lymph_node_metastasis_not_the_lymph_node_itself_is_measu",
+          "label": "The cross-sectional diameter of the largest lymph node metastasis (not the lymph node itself) is measured in the gross specimen at the time of macroscopic examination or, if necessary, on the histologic slide at the time of microscopic examination.1,2",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "special_procedures_for_lymph_nodes",
+          "label": "Special Procedures for Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "at_the_current_time_no_additional_special_techniques_are_required_other_than_routine_histology_for_t",
+          "label": "At the current time, no additional special techniques are required other than routine histology for the assessment of nodal metastases. Immunohistochemistry and polymerase chain reaction (PCR) to detect isolated tumor cells are considered investigational techniques at this time.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_node_number",
+          "label": "Lymph Node Number",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_assessment_of_pn_a_selective_neck_dissection_will_ordinarily_include_10_or_more_lymph_nodes_and_",
+          "label": "For assessment of pN, a selective neck dissection will ordinarily include 10 or more lymph nodes, and a comprehensive neck dissection (radical or modified radical neck dissection) will ordinarily include 15 or more lymph nodes. In oral cavity, a minimal adequate dissection of 18 lymph nodes has been proposed but not yet validated.3 Examination of fewer tumor-free nodes still mandates a pN0 designation.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "regional_lymph_nodes_pn0_isolated_tumor_cells",
+          "label": "Regional Lymph Nodes (pN0): Isolated Tumor Cells",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "isolated_tumor_cells_itcs_are_single_cells_or_small_clusters_of_cells_not_more_than_02_mm_in_greates",
+          "label": "Isolated tumor cells (ITCs) are single cells or small clusters of cells not more than 0.2 mm in greatest dimension. While the generic recommendation is that for lymph nodes with ITCs found by either histologic examination, immunohistochemistry, or nonmorphologic techniques (e.g., flow cytometry, DNA analysis, PCR amplification of a specific tumor marker), they should be classified as N0 or M0, respectively.4,5 Evidence for the validity of this practice in head and neck squamous cell carcinoma and other histologic subtypes is lacking. In fact, rare studies relevant to head and neck sites indicate that isolated tumor cells may actually be a poor prognosticator in terms of local control.6",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_purposes_of_pathologic_evaluation_lymph_nodes_are_organized_by_levels_as_shown_in_figure_4",
+          "label": "For purposes of pathologic evaluation, lymph nodes are organized by levels as shown in Figure 4.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "classification_of_neck_dissection",
+          "label": "Classification of Neck Dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "radical_neck_dissection",
+          "label": "Radical neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "modified_radical_neck_dissection_internal_jugular_vein_andor_sternocleidomastoid_muscle_spared",
+          "label": "Modified radical neck dissection, internal jugular vein and/or sternocleidomastoid muscle spared",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "selective_neck_dissection_snd_as_specified_by_the_surgeon_figure_4_defined_by_dissection_of_less_tha",
+          "label": "Selective neck dissection (SND), as specified by the surgeon (Figure 4), defined by dissection of less than the 5 traditional levels of a radical and modified radical neck dissection. The following dissections are now under this category2,7,8",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "supraomohyoid_neck_dissection",
+          "label": "Supraomohyoid neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "posterolateral_neck_dissection",
+          "label": "Posterolateral neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lateral_neck_dissection",
+          "label": "Lateral neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "central_compartment_neck_dissection",
+          "label": "Central compartment neck dissection",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "superselective_neck_dissection_ssnd_a_relatively_new_term_defined_by_dissection_of_the_fibrofatty_el",
+          "label": "Superselective neck dissection (SSND), a relatively new term defined by dissection of the fibrofatty elements of 2 or less levels9",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extended_radical_neck_dissection_as_specified_by_the_surgeon",
+          "label": "Extended radical neck dissection, as specified by the surgeon",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "figure_4_the_6_sublevels_of_the_neck_for_describing_the_location_of_lymph_nodes_within_levels_i_ii_a",
+          "label": "Figure 4. The 6 sublevels of the neck for describing the location of lymph nodes within levels I, II, and V. Level IA, submental group; level IB, submandibular group; level IIA, upper jugular nodes along the carotid sheath, including the subdigastric group; level IIB, upper jugular nodes in the submuscular recess; level VA, spinal accessory nodes; and level VB, the supraclavicular and transverse cervical nodes. From: Flint PW, et al, eds. Cummings Otolaryngology: Head and Neck Surgery. 5th ed. Philadelphia, PA; Saunders: 2010. Reproduced with permission © Elsevier.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "in_order_for_pathologists_to_properly_identify_these_nodes_they_must_be_familiar_with_the_terminolog",
+          "label": "In order for pathologists to properly identify these nodes, they must be familiar with the terminology of the regional lymph node groups and with the relationships of those groups to the regional anatomy. Which lymph node groups surgeons submit for histopathologic evaluation depends on the type of neck dissection they perform. Therefore, surgeons must supply information on the types of neck dissections that they perform and on the details of the local anatomy in the specimens they submit for examination or, in other manners, orient those specimens for pathologists.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "if_it_is_not_possible_to_assess_the_levels_of_lymph_nodes_for_instance_when_the_anatomic_landmarks_i",
+          "label": "If it is not possible to assess the levels of lymph nodes (for instance, when the anatomic landmarks in the excised specimens are not specified), then the lymph node levels may be estimated as follows: level II, upper third of internal jugular (IJ) vein or neck specimen; level III, middle third of IJ vein or neck specimen; level IV, lower third of IJ vein or neck specimen, all anterior to the sternocleidomastoid muscle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_i_submental_group",
+          "label": "Level I. Submental Group",
+          "required": true,
+          "type": "free_text",
+          "condition": "Sublevel IA"
+        },
+        {
+          "field_id": "lymph_nodes_within_the_triangular_boundary_of_the_anterior_belly_of_the_digastric_muscles_and_the_hy",
+          "label": "Lymph nodes within the triangular boundary of the anterior belly of the digastric muscles and the hyoid bone.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_i_submandibular_group",
+          "label": "Level I. Submandibular Group",
+          "required": true,
+          "type": "free_text",
+          "condition": "Sublevel IB"
+        },
+        {
+          "field_id": "lymph_nodes_within_the_boundaries_of_the_anterior_and_posterior_bellies_of_the_digastric_muscle_and_",
+          "label": "Lymph nodes within the boundaries of the anterior and posterior bellies of the digastric muscle and the body of the mandible. The submandibular gland is included in the specimen when the lymph nodes within this triangle are removed.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_ii_upper_jugular_group",
+          "label": "Level II. Upper Jugular Group",
+          "required": true,
+          "type": "free_text",
+          "condition": "Sublevels IIA and IIB"
+        },
+        {
+          "field_id": "lymph_nodes_located_around_the_upper_third_of_the_internal_jugular_vein_and_adjacent_spinal_accessor",
+          "label": "Lymph nodes located around the upper third of the internal jugular vein and adjacent spinal accessory nerve extending from the level of the carotid bifurcation (surgical landmark) or hyoid bone (clinical landmark) to the skull base. The posterior boundary is the posterior border of the sternocleidomastoid muscle, and the anterior boundary is the lateral border of the stylohyoid muscle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_iii_middle_jugular_group",
+          "label": "Level III. Middle Jugular Group",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_nodes_located_around_the_middle_third_of_the_internal_jugular_vein_extending_from_the_carotid_",
+          "label": "Lymph nodes located around the middle third of the internal jugular vein extending from the carotid bifurcation superiorly to the omohyoid muscle (surgical landmark), or cricothyroid notch (clinical landmark) inferiorly. The posterior boundary is the posterior border of the sternocleidomastoid muscle, and the anterior boundary is the lateral border of the sternohyoid muscle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_iv_lower_jugular_group",
+          "label": "Level IV. Lower Jugular Group",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_nodes_located_around_the_lower_third_of_the_internal_jugular_vein_extending_from_the_omohyoid_",
+          "label": "Lymph nodes located around the lower third of the internal jugular vein extending from the omohyoid muscle superiorly to the clavicle inferiorly. The posterior boundary is the posterior border of the sternocleidomastoid muscle, and the anterior boundary is the lateral border of the sternohyoid muscle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_v_posterior_triangle_group",
+          "label": "Level V. Posterior Triangle Group",
+          "required": true,
+          "type": "free_text",
+          "condition": "Sublevels VA and VB"
+        },
+        {
+          "field_id": "this_group_comprises_predominantly_the_lymph_nodes_located_along_the_lower_half_of_the_spinal_access",
+          "label": "This group comprises predominantly the lymph nodes located along the lower half of the spinal accessory nerve and the transverse cervical artery. The supraclavicular nodes are also included in this group. The posterior boundary of the posterior triangle is the anterior border of the trapezius muscle, the anterior boundary of the posterior triangle is the posterior border of the sternocleidomastoid muscle, and the inferior boundary of the posterior triangle is the clavicle.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_vi_anterior_central_compartment",
+          "label": "Level VI. Anterior (Central) Compartment",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_nodes_in_this_compartment_include_the_pre_and_paratracheal_nodes_precricoid_delphian_node_and_",
+          "label": "Lymph nodes in this compartment include the pre- and paratracheal nodes, precricoid (Delphian) node, and the perithyroidal nodes, including the lymph nodes along the recurrent laryngeal nerve. The superior boundary is the hyoid bone, the inferior boundary is the suprasternal notch, the lateral boundaries are the common carotid arteries, and the posterior boundary by the prevertebral fascia.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "level_vii_superior_mediastinal_lymph_nodes",
+          "label": "Level VII. Superior Mediastinal Lymph Nodes",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "metastases_at_level_vii_are_considered_regional_lymph_node_metastases_all_other_mediastinal_lymph_no",
+          "label": "Metastases at level VII are considered regional lymph node metastases; all other mediastinal lymph node metastases are considered distant metastases.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lymph_node_groups_removed_from_areas_not_included_in_the_above_levels_eg_scalene_suboccipital_and_re",
+          "label": "Lymph node groups removed from areas not included in the above levels, e.g., scalene, suboccipital, and retropharyngeal, should be identified and reported from all levels separately. Midline nodes are considered ipsilateral nodes.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "extranodal_extension",
+          "label": "Extranodal Extension",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_status_of_cervical_lymph_nodes_is_the_single_most_important_prognostic_factor_in_aerodigestive_c",
+          "label": "The status of cervical lymph nodes is the single most important prognostic factor in aerodigestive cancer. All macroscopically negative or equivocal lymph nodes should be submitted in toto. Grossly positive nodes may be partially submitted for microscopic documentation of metastasis, particularly if there is gross extranodal extension. However, generous sampling of the lymph node periphery is recommended if there is no gross extranodal extension to adequately assess microscopic extranodal extension. Reporting of lymph nodes containing metastasis should include whether there is presence or absence of extranodal extension (ENE),3 which is now part of N staging. This finding consists of extension of metastatic tumor, present within the confines of the lymph node, through the lymph node capsule into the surrounding connective tissue, with or without associated stromal reaction. A distance of extension from the native lymph node capsule is now suggested (but not yet required) with the proposed stratification of ENE into ENEma (>2 mm) and ENEmi  (≤2 mm).10,11,12,13 However, pitfalls in the measurement (i.e., in larger, matted lymph nodes, in nodes post fine-needle aspiration, and in nodes with near total replacement of lymph node architecture) and the disposition of soft tissue deposits is still not resolved. In general, absence of ENE in a large (>3 cm) lymph node, especially with traversing fibrous bands, should be viewed with skepticism. Soft tissue deposits for lymph node metastases based on limited studies appear to be the equivalent of a positive lymph node with ENE and should be recorded as such.14",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "other_elements",
+          "label": "Other Elements",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "anatomic_compartment_location_of_positive_lymph_nodes_is_now_a_non_core_element",
+          "label": "Anatomic compartment location of positive lymph nodes is now a non-core element.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "smith_bd_haffty_bg_prognostic_factoris_in_patients_with_head_and_neck_cancer_in_harrison_lb_sessions",
+          "label": "Smith BD, Haffty BG. Prognostic factoris in patients with head and neck cancer. In: Harrison LB, Sessions RB, Hong WK, eds. Head and Neck Cancer: A Multidisciplinary Approach. Philadelphia, PA: Lippincott Williams and Wilkins; 2009:51-75.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "seethala_rr_current_state_of_neck_dissection_in_the_united_states_head_neck_pathol_200933238_245",
+          "label": "Seethala RR. Current state of neck dissection in the United States. Head Neck Pathol. 2009;3(3):238-245.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ebrahimi_a_gil_z_amit_m_international_consortium_for_outcome_research_icor_in_head_and_neck_cancer_p",
+          "label": "Ebrahimi A, Gil Z, Amit M. International Consortium for Outcome Research (ICOR) in Head and Neck Cancer. Primary tumor staging for oral cancer and a proposed modification incorporating depth of invasion: an international multicenter retrospective study. JAMA Otolaryngol Head Neck Surg. 2014;140(12):1138-1148.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "sobin_lh_gospodarowicz_mk_wittekind_ch_eds_tnm_classification_of_malignant_tumours_new_york_ny_wiley",
+          "label": "Sobin LH, Gospodarowicz MK, Wittekind CH, eds. TNM Classification of Malignant Tumours. New York, NY: Wiley-Liss; 2009.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "singletary_se_greene_fl_sobin_lh_classification_of_isolated_tumor_cells_clarification_of_the_6th_edi",
+          "label": "Singletary SE, Greene FL, Sobin LH. Classification of isolated tumor cells: clarification of the 6th edition of the American Joint Committee on Cancer Staging Manual. Cancer. 2003;98(12):2740-2741.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "broglie_ma_haerle_sk_huber_gf_haile_sr_stoeckli_sj_occult_metastases_detected_by_sentinel_node_biops",
+          "label": "Broglie MA, Haerle SK, Huber GF, Haile SR, Stoeckli SJ. Occult metastases detected by sentinel node biopsy in patients with early oral and oropharyngeal squamous cell carcinomas: impact on survival. Head Neck. 2013;35(5):660-666.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ferlito_a_robbins_kt_shah_jp_et_al_proposal_for_a_rational_classification_of_neck_dissections_head_n",
+          "label": "Ferlito A, Robbins KT, Shah JP, et al. Proposal for a rational classification of neck dissections. Head Neck. 2011;33(3):445-450.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "robbins_kt_shaha_ar_medina_je_et_al_consensus_statement_on_the_classification_and_terminology_of_nec",
+          "label": "Robbins KT, Shaha AR, Medina JE, et al. Consensus statement on the classification and terminology of neck dissection. Arch Otolaryngol Head Neck Surg. 2008;134(5):536-538.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "suarez_c_rodrigo_jp_robbins_kt_et_al_superselective_neck_dissection_rationale_indications_and_result",
+          "label": "Suarez C, Rodrigo JP, Robbins KT, et al. Superselective neck dissection: rationale, indications, and results. Eur Arch Otorhinolaryngol. 2013.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ridge_ja_lydiatt_wm_patel_sg_et_al_lip_and_oral_cavity_in_amin_mb_ed_ajcc_cancer_staging_manual_8th_",
+          "label": "Ridge JA, Lydiatt WM, Patel SG, et al. Lip and oral cavity. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ebrahimi_a_clark_jr_amit_m_et_al_minimum_nodal_yield_in_oral_squamous_cell_carcinoma_defining_the_st",
+          "label": "Ebrahimi A, Clark JR, Amit M, et al. Minimum nodal yield in oral squamous cell carcinoma: defining the standard of care in a multicenter international pooled validation study. Ann Surg Oncol. 2014;21(9):3049-3055.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "prabhu_rs_hanasoge_s_magliocca_kr_et_al_extent_of_pathologic_extracapsular_extension_and_outcomes_in",
+          "label": "Prabhu RS, Hanasoge S, Magliocca KR, et al. Extent of pathologic extracapsular extension and outcomes in patients with nonoropharyngeal head and neck cancer treated with initial surgical resection. Cancer. 2014;120(10):1499-1506.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "dunne_aa_muller_hh_eisele_dw_et_al_meta_analysis_of_the_prognostic_significance_of_perinodal_spread_",
+          "label": "Dunne AA, Muller HH, Eisele DW, et al. Meta-analysis of the prognostic significance of perinodal spread in head and neck squamous cell carcinomas (HNSCC) patients. Eur J Cancer. 2006;42(12):1863-1868.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "jose_j_moor_jw_coatesworth_ap_johnston_c_maclennan_k_soft_tissue_deposits_in_neck_dissections_of_pat",
+          "label": "Jose J, Moor JW, Coatesworth AP, Johnston C, MacLennan K. Soft tissue deposits in neck dissections of patients with head and neck squamous cell carcinoma: prospective analysis of prevalence, survival, and its implications. Arch Otolaryngol Head Neck Surg. 2004;130(2):157-160.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_protocol_recommends_the_tnm_staging_system_of_the_american_joint_committee_on_cancer1_the_2_key_",
+          "label": "The protocol recommends the TNM staging system of the American Joint Committee on Cancer.1 The 2 key significant alterations in the 8th edition for lip and oral cavity are the incorporation of depth of invasion (DOI) into T stage and extranodal extension (ENE) into N stage.1,2 In essence, DOI increases the T category by 1 for each 5 mm of tumor depth (until ≥10 mm). Similarly, pathologic ENE(+) will increase the nodal category by 1.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_8th_edition_of_the_ajcc_staging_of_head_and_neck_cancers_includes_mucosal_melanomas_this_does_no",
+          "label": "The 8th edition of the AJCC staging of head and neck cancers includes mucosal melanomas; this does not show significant changes from the 7th edition.Approximately two-thirds of mucosal melanomas arise in the sinonasal tract, one quarter are found in the oral cavity and the remainder occur only sporadically in other mucosal sites of the head and neck. Even small cancers behave aggressively with high rates of recurrence and death. To reflect this aggressive behavior, primary cancers limited to the mucosa are considered T3 lesions. Advanced mucosal melanomas are classified as T4a and T4b. The anatomic extent criteria to define moderately advanced (T4a) and very advanced (T4b) disease are given below. The AJCC staging for mucosal melanomas does not provide for the histologic definition of a T3 lesion; as the majority of mucosal melanomas are invasive at presentation, mucosal based melanomas (T3 lesions) include those lesions that involve either the epithelium and/or lamina propria of the involved site. Rare examples of in situ mucosal melanomas occur, but In situ mucosal melanomas are excluded from staging, as they are extremely rare.3",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "carcinomas_of_minor_salivary_glands_of_the_upper_aerodigestive_tract_site_including_the_oral_cavity_",
+          "label": "Carcinomas of minor salivary glands of the upper aerodigestive tract site, including the oral cavity, are staged according to schemes corresponding to the anatomic site of occurrence. There is no currently accepted staging for central (primary intraosseous) salivary gland tumors.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "by_ajccuicc_convention_the_designation_t_refers_to_a_primary_tumor_that_has_not_been_previously_trea",
+          "label": "By AJCC/UICC convention, the designation “T” refers to a primary tumor that has not been previously treated. The symbol “p” refers to the pathologic classification of the TNM, as opposed to the clinical classification, and based on clinical stage information supplemented/modified by operative findings and gross and microscopic evaluation of the resected specimens.4 pT entails a resection of the primary tumor or biopsy adequate to evaluate the highest pT category, pN entails removal of nodes adequate to validate lymph node metastasis, and pM implies microscopic examination of distant lesions. Clinical classification (cTNM) is usually carried out by the referring physician before treatment during initial evaluation of the patient or when pathologic classification is not possible.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "pathologic_staging_is_usually_performed_after_surgical_resection_of_the_primary_tumor_pathologic_sta",
+          "label": "Pathologic staging is usually performed after surgical resection of the primary tumor. Pathologic staging depends on pathologic documentation of the anatomic extent of disease, whether or not the primary tumor has been completely removed. If a biopsied tumor is not resected for any reason (e.g., when technically unfeasible) and if the highest T and N categories or the M1 category of the tumor can be confirmed microscopically, the criteria for pathologic classification and staging have been satisfied without total removal of the primary cancer.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "for_identification_of_special_cases_of_tnm_or_ptnm_classifications_the_m_suffix_and_y_r_and_a_prefix",
+          "label": "For identification of special cases of TNM or pTNM classifications, the “m” suffix and “y”, “r”, and “a” prefixes are used. Although they do not affect the stage grouping, they indicate cases needing separate analysis. Reporting of pT, pN, and (when applicable) pM categories is based on information available to the pathologist at the time the report is issued. As per the AJCC (Chapter 1, 8th Ed.) it is the managing physician’s responsibility to establish the final pathologic stage based upon all pertinent information, including but potentially not limited to this pathology report.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_m_suffix_indicates_the_presence_of_multiple_primary_tumors_in_a_single_site_and_is_recorded_in_p",
+          "label": "The “m” suffix indicates the presence of multiple primary tumors in a single site and is recorded in parentheses: pT(m)NM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_y_prefix_indicates_those_cases_in_which_classification_is_performed_during_or_following_initial_",
+          "label": "The “y” prefix indicates those cases in which classification is performed during or following initial multimodality therapy (i.e., neoadjuvant chemotherapy, radiation therapy, or both chemotherapy and radiation therapy). The cTNM or pTNM category is identified by a “y” prefix. The ycTNM or ypTNM categorizes the extent of tumor actually present at the time of that examination. The “y” categorization is not an estimate of tumor prior to multimodality therapy (i.e., before initiation of neoadjuvant therapy).",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_r_prefix_indicates_a_recurrent_tumor_when_staged_after_a_documented_disease_free_interval_and_is",
+          "label": "The “r” prefix indicates a recurrent tumor when staged after a documented disease-free interval, and is identified by the “r” prefix: rTNM",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "the_a_prefix_designates_the_stage_determined_at_autopsy_atnm",
+          "label": "The “a” prefix designates the stage determined at autopsy: aTNM.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "ridge_ja_lydiatt_wm_patel_sg_et_al_lip_and_oral_cavity_in_amin_mb_ed_ajcc_cancer_staging_manual_8th_",
+          "label": "Ridge JA, Lydiatt WM, Patel SG, et al. Lip and oral cavity. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "patel_s_shah_jp_lip_and_oral_cavity_in_edge_sb_byrd_dr_carducci_ma_compton_ca_eds_ajcc_cancer_stagin",
+          "label": "Patel S, Shah JP. Lip and oral cavity. In: Edge SB, Byrd DR, Carducci MA, Compton CA, eds. AJCC Cancer Staging Manual. 7th ed. New York: Springer; 2009:29-40.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "lydiatt_wm_brandwein_gensler_ms_kraus_dh_et_al_mucosal_melanoma_of_the_head_and_neck_in_amin_mb_ed_a",
+          "label": "Lydiatt WM, Brandwein-Gensler MS, Kraus DH, et al. Mucosal melanoma of the head and neck. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "gress_dm_edge_sb_greene_fl_et_al_principles_of_cancer_staging_in_amin_mb_ed_ajcc_cancer_staging_manu",
+          "label": "Gress DM, Edge SB, Greene FL, et al. Principles of cancer staging. In: Amin MB, ed. AJCC Cancer Staging Manual. 8th ed. New York, NY: Springer; 2017.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "k_dysplasia_of_the_upper_aerodigestive_tract",
+          "label": "K. Dysplasia of the Upper Aerodigestive Tract",
+          "required": true,
+          "type": "free_text",
+          "condition": "UADT"
+        },
+        {
+          "field_id": "in_contrast_to_the_uterine_cervix_in_which_the_nonkeratinizing_classic_form_of_epithelial_dysplasia_",
+          "label": "In contrast to the uterine cervix in which the nonkeratinizing (“classic”) form of epithelial dysplasia is most common, resulting in a reproducible and clinically useful grading scheme of mild, moderate, and severe dysplasia (i.e., carcinoma in situ), the majority of the UADT mucosal lesions fall under the designation of keratinizing dysplasias, for which the aforementioned criteria are not as easily applied. Traditional assessment of dysplasia utilizes a “rule of thirds” approach, categorizing cytonuclear and architectural abnormalities confined to the basal one-third as mild dysplasia, mid one-third as moderate dysplasia, and upper one-third as severe dysplasia. The difficulty in applying this as the sole mechanism to assess keratinizing lesions is that there is frequent surface maturation, which may lead to downgrading a high-risk lesion with severe atypia restricted to the bottom third of the epithelium. In such instances, it is acceptable to deviate from this rule of thirds and upgrade a lesion as more biologically appropriate.",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "while_the_current_who_has_moved_to_a_2_tiered_scheme_for_laryngeal_dysplasia_oral_dysplasia_is_still",
+          "label": "While the current WHO has moved to a 2-tiered scheme for laryngeal dysplasia, oral dysplasia is still graded using 3 tiers, though a provisional 2-tier system is presented. Risk of progression for mild, moderate, and severe dysplasias in oral cavity are estimated at 6%, 18%, and 39%, respectively.1",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "references",
+          "label": "References",
+          "required": true,
+          "type": "free_text"
+        },
+        {
+          "field_id": "reibel_j_gale_n_hille_jj_et_al_oral_potentially_malignant_disorders_and_oral_epithelial_dysplasia_in",
+          "label": "Reibel J, Gale N, Hille JJ, et al. Oral potentially malignant disorders and oral epithelial dysplasia. In: El-Naggar AK, Chan JKC, Grandis JR, Takata T, Slootweg PJ, eds. World Health Organization (WHO) Classification of Head and Neck Tumours. 4th ed. Geneva, Switzerland: WHO Press; 2017:112-115.",
+          "required": true,
+          "type": "free_text"
+        }
+      ]
+    }
+  ]
+}
